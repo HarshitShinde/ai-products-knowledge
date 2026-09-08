@@ -1,0 +1,83 @@
+1. Machine Learning
+Machine learning (ML) is a subset of AI that operates on the principle that machines can learn from data, identify patterns, and make decisions with minimal human intervention. Providing machines with access to data enables them to learn autonomously. Essentially, the process involves enabling a computer to carry out tasks without being explicitly programmed to do so.
+
+There are three primary categories within ML:
+
+Supervised learning: Supervised learning is a category of machine learning that uses labeled datasets to train algorithms to predict outcomes and recognize patterns.
+Unsupervised learning: Unsupervised learning is a category of machine learning in which the algorithm learns patterns and structures from unlabeled data.
+Semi-supervised learning: Semi-supervised learning is a type of machine learning that combines supervised and unsupervised learning by using both labeled and unlabeled data to train the algorithms.
+
+2. Deep Learning
+Deep learning (DL) is a machine learning technique inspired by the structure and function of the brain. It uses artificial neural networks, which are simplified versions of the brain's interconnected neurons.
+
+DL uses multilayered neural networks, which are also called deep neural networks. This depth allows them to discover complex patterns in data. The figure below depicts a deep neural network with an input layer, two hidden layers, and a final output layer.
+DL models are trained on massive amounts of data. By analyzing this data, they learn to recognize patterns and make predictions. This data can be images, text, sounds, or even a combination of these.
+
+DL is behind many of the latest AI advancements. It's used in computer vision (e.g., facial recognition and self‑driving cars), NLP (e.g., machine translation and chatbots), and much more.
+
+3. Computer Vision
+Computer vision (CV) equips machines with the ability to “see” by converting raw pixels into meaningful information.
+
+CV systems learn visual patterns from large collections of labelled images and videos. Modern models use convolutional neural networks (CNNs) or vision transformers (ViTs) to recognize shapes, textures, and spatial relationships.
+
+Typical CV tasks include:
+
+Image classification — labeling a picture as cat, dog, stop sign
+Object detection — drawing a bounding box around each object in a scene
+Image segmentation — coloring every pixel that belongs to an object
+Activity recognition — understanding actions in video (e.g., waving)
+Everyday uses include facial unlock on smartphones, automated quality inspection on assembly lines, and the perception stack in self‑driving cars.
+
+4. Natural Language Processing
+Natural language processing (NLP) is an area of AI that focuses on computer applications based on human languages, such as translation services and chatbots that enable the interaction between computers and humans through natural language.
+
+This technology is employed to search, analyze, understand, and derive meaning from text data. Developers use NLP libraries to program computers to extract relevant information from text.
+
+Another common application of NLP is in email filtering, when algorithms analyze the subject line or body of an email to determine whether it is spam. This illustrates how NLP can be used to interpret and act on textual data in practical scenarios.
+
+5. Large Language Models (LLMs)
+Large language models (LLMs) are enormous neural networks trained to predict the next word in a sentence. Using the transformer architecture and trillions of words, they acquire broad linguistic knowledge.
+
+Key abilities include:
+
+Text generation — drafting emails, stories, or reports
+Question answering — responding to natural‑language queries
+Translation and summarization
+Code generation and explanation
+After pre‑training, an LLM is often fine‑tuned with task‑specific data such as coding or math. Chat assistants such as ChatGPT, Gemini, and Claude are built on LLMs
+
+6. Retrieval‑Augmented Generation (RAG)
+Retrieval-augmented generation (RAG) combines information retrieval with language generation to produce more accurate and up‑to‑date answers.
+
+Three‑step pipeline
+
+Retrieve relevant documents from a database or search engine.
+Augment the LLM’s prompt with the retrieved passages.
+Generate a response grounded in those passages, reducing hallucinations.
+Benefits include:
+
+Keeping answers current without retraining the model
+Providing citations for transparency
+Respecting data‑governance boundaries (private docs stay on premise)
+RAG is popular for enterprise chatbots, legal research assistants, and any scenario when the LLM must reference proprietary or frequently changing knowledge.
+
+7. Multimodal AI
+Multimodal AI models process two or more data types — for instance, text plus images, or audio plus video — inside a unified network.
+
+Why it matters: Humans naturally combine senses (e.g., seeing + speaking). Multimodal AI brings the same richness to software interfaces.
+
+Example products include:
+
+Image‑to‑text captioning for accessibility
+Voice‑controlled augmented‑reality glasses that "see" what you point at
+Search engines that answer questions about a diagram or chart
+8. Autonomous Agents
+An AI agent is a system that plans and executes a sequence of steps to accomplish a high‑level goal, adjusting its strategy as it observes results.
+
+Building blocks
+
+Planner — decomposes the goal into sub‑tasks
+Memory — stores intermediate results and history
+Tools — calls LLMs, databases, or external services
+Feedback loop — evaluates progress and decides the next action
+Example workflow: "Plan my weekend trip" → search flights → reserve a hotel → create an itinerary → email a summary — asking for user approval when needed.
