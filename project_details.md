@@ -8,9 +8,9 @@
 | **Alternate name options** | iReconX, iClearX, iTriageX, MatchIQ |
 | **Parent ecosystem** | Intellect Design Arena — sits at the boundary of iCPX (Corporate Procurement eXchange) and iAPX (Accounts Payable eXchange) |
 | **Organization** | Intellect Design Arena, Mumbai |
-| **Stage** | AI Design Process — Stage 1 (identifying target intelligence: performance metrics + scope) |
+| **Stage** | AI Design Process — Stage 2 (business process: strategic + operational fit) |
 | **Document owner** | Harshit Shinde |
-| **Last updated** | 2026-09-11 |
+| **Last updated** | 2026-09-13 |
 
 **One-line pitch:** iMatchX uses AI to automatically explain and resolve routine PO–GRN–Invoice mismatches, so Accounts Payable teams only spend time on the exceptions that genuinely need a human.
 
@@ -76,7 +76,47 @@ Each metric is anchored to the existing human baseline (what an AP clerk current
 
 ---
 
-## 5. Anything Else of Worth
+## 5. Stage 2 — Business Process
+
+Per the AI Design Process framework, Stage 2 addresses two questions: (a) the **strategic** role AI should play competitively, and (b) the **operational** business process AI will actually intervene in, with performance targets for that process.
+
+### 5.1 Strategic consideration (Delta Model fit)
+
+Of the three Delta Model strategies (best product, full customer solutions, network externalities), iMatchX is primarily a **full customer solutions** play, with a secondary best-product angle:
+
+| Strategy | Applies? | Rationale |
+|---|---|---|
+| **Best product** | Partially | Matching/classification accuracy is a real differentiator (false-approve rate is the trust metric that will make or break adoption), but iMatchX isn't sold as a standalone best-in-class matching engine — it's a feature of a larger suite. |
+| **Full customer solutions** | **Primary** | iMatchX's value is in completing the iCPX→iAPX procure-to-pay journey — it only matters because it plugs a gap between two existing product lines customers already run. The AI's role is to make the *existing* suite more complete and useful, not to win on AI alone. |
+| **Network externalities** | Not applicable (V1) | No user-base/data-network effect across customers in V1 — each deployment learns from its own tenant's historical data, not a shared pool. Could become relevant post-V1 if a cross-tenant benchmarking/model-sharing capability is added, but that's explicitly out of scope for now. |
+
+**Implication:** design and roadmap decisions should optimize for "makes the iCPX/iAPX suite more complete," not for iMatchX as a freestanding product. This affects buy vs. build, packaging, and how success is marketed internally (a suite completeness story, not a point-solution AI story).
+
+### 5.2 Operational consideration (the business process AI will support)
+
+**Business process selected:** the **AP invoice exception-handling workflow** — specifically, the manual triage step that happens after a 3-way match fails and before payment approval/rejection.
+
+- **Process boundary:** starts when a PO–GRN–Invoice mismatch is flagged by the existing matching engine; ends when the invoice is approved, rejected, or escalated to a human with a diagnosis.
+- **Current owner:** AP clerk (manual review of all three documents).
+- **Collateral assets AI must integrate with (not just the AI model itself):**
+  - The existing 3-way match/matching engine within iCPX/iAPX that flags mismatches (iMatchX classifies *why* it failed, it doesn't replace matching itself).
+  - The AP approval workflow/queue UI clerks already use — recommendations need to surface there, not in a separate tool.
+  - Audit/compliance logging already required for invoice approval decisions.
+  - Notification channels for the "notify-only" and "auto-approve + notify" rollout modes.
+- **Performance targets for this process (post-AI vs. current baseline):**
+  - Time-to-resolution: days → hours (already set in Stage 1 metrics; reconfirmed here as the operational target for this specific process step).
+  - Clerk effort per mismatch: shift from "diagnose + decide every case" to "review AI-flagged reason + decide only non-auto-resolved/high-risk cases."
+  - Consistency: reduce clerk-to-clerk variance in decisions for the four in-scope mismatch types (measurable via the reason-classification accuracy metric from Stage 1).
+- **Why this process, not a broader one:** it's the narrowest slice of the procure-to-pay cycle where AI has a clear, bounded task (compare three documents' fields) and an existing human baseline to measure against — consistent with the Stage 1 scope decision to exclude non-PO invoices, cross-currency cases, and fully autonomous payment release.
+
+### 5.3 Open items carried into Stage 3 (AI technology)
+
+- Confirm which team owns the IP/build decision (in-house iCPX/iAPX engineering vs. a vendor NLP/classification component) — this is a Stage 3 decision, but the "full customer solutions" positioning from 5.1 argues for building it as a native suite feature rather than an externally licensed bolt-on.
+- Data strategy (Stage 3) is still gated on the Stage 1 open question: confirming access to 12+ months of historical PO/GRN/Invoice + clerk-decision data from a pilot business unit.
+
+---
+
+## 6. Anything Else of Worth
 
 ### Why this problem was chosen (selection rationale)
 - **High volume, repetitive** — clear, measurable ROI in time and cost.
