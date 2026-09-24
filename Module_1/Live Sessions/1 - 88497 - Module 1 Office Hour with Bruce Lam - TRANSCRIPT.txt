@@ -1,0 +1,2258 @@
+WEBVTT
+
+1
+00:00:04.030 --> 00:00:05.980
+Bruce Lam: Welcome, welcome, everyone.
+
+2
+00:00:06.460 --> 00:00:07.680
+Bruce Lam: Happy Friday!
+
+3
+00:00:12.200 --> 00:00:20.000
+Bruce Lam: Good afternoon, and good evening, and is it morning for anyone? Is it Saturday for anyone?
+
+4
+00:00:23.820 --> 00:00:25.270
+Rangarajan Raman (Cohort 13): Yes, for myself.
+
+5
+00:00:27.160 --> 00:00:30.240
+Bruce Lam: Rana. Well, thank you for coming. Happy Saturday morning.
+
+6
+00:00:30.450 --> 00:00:34.119
+Bruce Lam: Let me go ahead and remove a couple of these.
+
+7
+00:00:34.380 --> 00:00:40.389
+Bruce Lam: Notetaker bots, and let the last few folks in, and we can go ahead and get started.
+
+8
+00:00:41.200 --> 00:00:43.950
+Bruce Lam: Carlos in Japan? Are you in Japan, Carlos?
+
+9
+00:00:50.030 --> 00:00:55.280
+Bruce Lam: I know that, last term we had some folks from Australia, so it was always early morning Saturday for them.
+
+10
+00:00:56.100 --> 00:01:00.109
+Bruce Lam: Okay, I think that does it. Oh, just got a couple more, sorry. Here we go.
+
+11
+00:01:00.300 --> 00:01:01.769
+Muneiah Ponnapa: Yeah, good evening, Bruce.
+
+12
+00:01:02.260 --> 00:01:03.510
+Bruce Lam: Good evening, good evening.
+
+13
+00:01:03.880 --> 00:01:07.770
+Bruce Lam: Welcome to… welcome to Week 1. I know it just opened up.
+
+14
+00:01:08.090 --> 00:01:16.130
+Bruce Lam: And don't worry about the pacing, so today will be a little bit ahead, unless you had some time last night to start looking at the material.
+
+15
+00:01:16.430 --> 00:01:19.870
+Bruce Lam: And then, once we do the networking session, we will be…
+
+16
+00:01:20.050 --> 00:01:23.539
+Bruce Lam: More backwards-looking, so maybe, like, a week.
+
+17
+00:01:23.680 --> 00:01:31.740
+Bruce Lam: behind, looking back on reviewing the material for the week, but for right now, we're going to be a little bit ahead for the next couple of weeks. So don't worry about that.
+
+18
+00:01:32.220 --> 00:01:39.469
+Bruce Lam: Were there any logistical questions about the platform? Does everyone know where to get all the recordings for the material?
+
+19
+00:01:40.010 --> 00:01:46.800
+Bruce Lam: When… if they can't make the live sessions, which is totally okay, there are lots of time zones that we're covering here.
+
+20
+00:01:47.210 --> 00:01:51.259
+Bruce Lam: So, just wanted to make sure that you knew logistically how to find everything.
+
+21
+00:01:51.500 --> 00:01:58.679
+Bruce Lam: Let me go over that really, really quickly, and then we can go ahead and get started into this week's material, Module 1 material.
+
+22
+00:02:00.380 --> 00:02:02.569
+Bruce Lam: Or to access the live recordings.
+
+23
+00:02:02.870 --> 00:02:07.879
+Bruce Lam: You go to the Live Sessions tab here in the corner, And it's a little bit…
+
+24
+00:02:08.360 --> 00:02:11.610
+Bruce Lam: Confusing, because you might think that you can go ahead and click this.
+
+25
+00:02:11.890 --> 00:02:17.290
+Bruce Lam: And it'll start playing, but you can't, it's just a thumbnail with a little… Play button on it.
+
+26
+00:02:17.570 --> 00:02:29.589
+Bruce Lam: And once you click into here, then you'll see the actual video load, and the slides will be under resources. So all the slides will always be here. The transcripts, and of course, an AI summary.
+
+27
+00:02:29.830 --> 00:02:34.940
+Bruce Lam: And then some chapters and breakdowns. So that'll be… that'll be there every week. Hi, Dan.
+
+28
+00:02:34.940 --> 00:02:39.889
+Diane Chan: Hi, do you have your… are you screen sharing? Because I don't see that, yeah.
+
+29
+00:02:39.890 --> 00:02:41.549
+Bruce Lam: Oh my goodness, thank you so much for telling me.
+
+30
+00:02:41.550 --> 00:02:42.460
+Diane Chan: Yeah, no problem.
+
+31
+00:02:44.310 --> 00:02:46.399
+Bruce Lam: Just got so excited to show you everything.
+
+32
+00:02:46.550 --> 00:02:52.950
+Bruce Lam: Okay, there you go. So, sorry, one more time. So, if we go under here to… Live sessions.
+
+33
+00:02:54.220 --> 00:02:58.019
+Bruce Lam: Under this tab here, we'll get to a page that has
+
+34
+00:02:59.010 --> 00:03:04.049
+Bruce Lam: The archive of all of the introductory… right now, there's only the introductory webinars, so you can click on one of those.
+
+35
+00:03:04.540 --> 00:03:13.049
+Bruce Lam: and then go under Resources, and that's where you'll find the slides for every week. So here's the slides from the intro webinar, the transcript.
+
+36
+00:03:13.320 --> 00:03:15.099
+Bruce Lam: And then there's AI summary.
+
+37
+00:03:15.440 --> 00:03:19.919
+Bruce Lam: So this is where all of the material will be for the live sessions, including the ones with professors.
+
+38
+00:03:20.240 --> 00:03:21.910
+Bruce Lam: The live sessions with the professors.
+
+39
+00:03:25.940 --> 00:03:36.500
+Bruce Lam: Okay, so let's go ahead and get started. We… this particular week, we introduce a framework for designing and building AI products and services. It's four stages and 8 choices.
+
+40
+00:03:36.740 --> 00:03:43.910
+Bruce Lam: We are going to really unpack that in office hours today, and then we'll go through a real case study that I did.
+
+41
+00:03:44.380 --> 00:03:52.570
+Bruce Lam: And, we'll talk about some limitations, and hopefully have time to briefly show you how to use the M-code platform, because…
+
+42
+00:03:52.720 --> 00:03:56.720
+Bruce Lam: Next week, week two, is when you'll start the optional coding notebooks.
+
+43
+00:03:57.000 --> 00:04:07.119
+Bruce Lam: I went over it a little bit in orientation, there's really not too much to worry about there. Very straightforward, very self-contained, but just so that you know what to expect.
+
+44
+00:04:08.130 --> 00:04:11.679
+Bruce Lam: Okay, so first, let's ground ourselves in definitions.
+
+45
+00:04:11.880 --> 00:04:24.449
+Bruce Lam: what is artificial intelligence? Because it's used for everything. Everything is called AI one way or another these days. And, you know, not all of it is really, truly artificial intelligence.
+
+46
+00:04:25.010 --> 00:04:36.990
+Bruce Lam: to me, artificial intelligence, and this is a diagram from Caltech, is a… it's a discipline. It's like physics. And then within physics, you have sub-disciplines, like astrophysics, and
+
+47
+00:04:37.130 --> 00:04:38.620
+Bruce Lam: You know,
+
+48
+00:04:38.890 --> 00:04:48.730
+Bruce Lam: and things like that, you know, physical sciences. So, artificial intelligence is the study, then within that, there's machine learning. Deep learning is a component of machine learning.
+
+49
+00:04:49.390 --> 00:04:56.359
+Bruce Lam: By the way, every large language model is A deep learning neural network.
+
+50
+00:04:56.540 --> 00:05:01.140
+Bruce Lam: But not every Deep Learning Neural Network is a large language model.
+
+51
+00:05:01.480 --> 00:05:06.299
+Bruce Lam: And throughout this course, that'll get clearer and clearer. We will unpack all of the aspects
+
+52
+00:05:06.570 --> 00:05:12.609
+Bruce Lam: of how generative AI, large language model, how all that works, so that'll become very, very clear as the week goes by.
+
+53
+00:05:13.140 --> 00:05:22.520
+Bruce Lam: In terms of what are agents, we'll talk about that as well. You know, what is a large language model agent? That is the AI system, the large language model wrapped in code.
+
+54
+00:05:22.720 --> 00:05:27.660
+Bruce Lam: To allow it to be able to do things outside of its little sandbox and outside of the chat box.
+
+55
+00:05:27.930 --> 00:05:31.299
+Bruce Lam: And we'll actually build some of those and go through that in the next few weeks.
+
+56
+00:05:31.490 --> 00:05:48.119
+Bruce Lam: So, I have these little templates with definitions on them all throughout the course, so that we can all stay on the same page, because I know we have vastly different backgrounds. Some of you are better at building agents than I am. Some of you have never seen this in your life, so just want to make sure that we all at least have some kind of common grounding.
+
+57
+00:05:51.440 --> 00:05:58.929
+Bruce Lam: Okay, so let's go ahead into this week's material. We introduced this framework, the AI Design Process Blueprint. There are four stages.
+
+58
+00:06:00.330 --> 00:06:05.789
+Bruce Lam: The first stage is intelligence. It's about defining the performance metrics and the scope.
+
+59
+00:06:05.920 --> 00:06:08.610
+Bruce Lam: of your AI and your desired behavior.
+
+60
+00:06:09.490 --> 00:06:17.839
+Bruce Lam: Stage 2 is your business process, which is deciding the strategic role, and we give you another framework in there called the Delta Model.
+
+61
+00:06:18.180 --> 00:06:19.940
+Bruce Lam: And your operational targets.
+
+62
+00:06:20.530 --> 00:06:26.519
+Bruce Lam: The third stage is choosing your technology stack, selecting the right IP and your data strategy.
+
+63
+00:06:26.760 --> 00:06:31.809
+Bruce Lam: And finally, it's about tinkering, which is a fancy way of saying iteration.
+
+64
+00:06:32.140 --> 00:06:36.879
+Bruce Lam: accelerating the feedback loop. The more and more I implement these systems, the more I realize
+
+65
+00:06:37.600 --> 00:06:40.279
+Bruce Lam: It's all about accelerating the feedback loop.
+
+66
+00:06:40.580 --> 00:06:42.050
+Bruce Lam: It's how do you…
+
+67
+00:06:42.180 --> 00:06:54.269
+Bruce Lam: Get your users to give you more feedback about your products faster, and utilize AI to implement that and integrate that into your systems, to improve your systems internally, and to improve your outcomes externally.
+
+68
+00:06:57.240 --> 00:07:04.750
+Bruce Lam: And, by the way, this is not linear. It's not like you need to go and do stage 1, and then 2, and then 3, and then 4.
+
+69
+00:07:05.290 --> 00:07:12.050
+Bruce Lam: you… there are different levels of maturity. You can start anywhere, and then jump to different locations as they make sense.
+
+70
+00:07:12.750 --> 00:07:18.699
+Bruce Lam: What I really, really want to point out is that this is a good framework
+
+71
+00:07:19.080 --> 00:07:25.270
+Bruce Lam: for building your AI product and service, However, it does…
+
+72
+00:07:27.000 --> 00:07:32.429
+Bruce Lam: It does assume that you already have a clearly defined and well-understood problem.
+
+73
+00:07:32.770 --> 00:07:38.400
+Bruce Lam: And, if you are in an executive, a corporate situation, that you have executive sponsorship.
+
+74
+00:07:38.510 --> 00:07:41.620
+Bruce Lam: So those are the prerequisites before applying this framework.
+
+75
+00:07:42.000 --> 00:07:46.409
+Bruce Lam: This framework is not going to solve the problem of a solution looking for a problem.
+
+76
+00:07:48.840 --> 00:07:54.019
+Bruce Lam: In fact, the study that came out a little earlier this year from MIT, that 95% of pilots
+
+77
+00:07:54.120 --> 00:07:55.880
+Bruce Lam: And corporations are failing.
+
+78
+00:07:55.980 --> 00:07:59.780
+Bruce Lam: A huge portion of those are because they were solutions looking for problems.
+
+79
+00:08:00.250 --> 00:08:04.190
+Bruce Lam: So, this doesn't change the… tried and true.
+
+80
+00:08:04.640 --> 00:08:09.939
+Bruce Lam: Design thinking approach of deeply, deeply understanding what's wrong, understanding the problem.
+
+81
+00:08:10.120 --> 00:08:13.510
+Bruce Lam: Before going through this framework to find the solution.
+
+82
+00:08:14.330 --> 00:08:20.199
+Bruce Lam: I want to go through these step-by-step at least one time, because there are some nuances, and I want you to understand those nuances.
+
+83
+00:08:20.340 --> 00:08:23.450
+Bruce Lam: Because either in the asynchronous videos, they go…
+
+84
+00:08:23.920 --> 00:08:27.810
+Bruce Lam: Not super fast, but they just kind of go over each one of these step by step.
+
+85
+00:08:28.130 --> 00:08:29.560
+Bruce Lam: So this one could be some framework.
+
+86
+00:08:29.830 --> 00:08:32.330
+Bruce Lam: Alright, so stage one in intelligence.
+
+87
+00:08:32.700 --> 00:08:42.870
+Bruce Lam: In terms of the performance metric with respect to the intelligence stage, this is about what is your current baseline. So what is your human benchmark
+
+88
+00:08:43.039 --> 00:08:44.800
+Bruce Lam: For your current baseline.
+
+89
+00:08:45.630 --> 00:08:51.939
+Bruce Lam: So this is not your KPI that you want to change, which is also a super, super important
+
+90
+00:08:52.080 --> 00:09:02.290
+Bruce Lam: factor. In fact, another large portion of those proofs of concepts that failed in that paper by MIT were because the metrics for success were not clear.
+
+91
+00:09:02.640 --> 00:09:09.679
+Bruce Lam: And so that's actually in Stage 2, Node 4, understanding your KPIs, your metrics, and your operational targets.
+
+92
+00:09:10.590 --> 00:09:17.999
+Bruce Lam: So those are the two, two big gotchas. One, not understanding the problem, not having the right leadership and sponsorship.
+
+93
+00:09:18.120 --> 00:09:23.720
+Bruce Lam: And then not having the operational metric well-defined to know if you actually move the needle or not.
+
+94
+00:09:24.070 --> 00:09:28.389
+Bruce Lam: So, already, if you solve for those 3 big pieces, you're already off to the races.
+
+95
+00:09:29.130 --> 00:09:32.019
+Bruce Lam: Then, the scope. This is…
+
+96
+00:09:32.660 --> 00:09:38.350
+Bruce Lam: one of those really tricky areas now, because AI can do anything. It can do anything.
+
+97
+00:09:38.550 --> 00:09:42.679
+Bruce Lam: But it can't do everything, and it definitely can't do everything all at once.
+
+98
+00:09:43.280 --> 00:09:52.959
+Bruce Lam: And so this is one of the big learnings. I was just at an event last night with Anthropic, and they were saying that they've learned that they really need to break down their
+
+99
+00:09:53.430 --> 00:09:57.850
+Bruce Lam: their features. You don't want to build an entire application in one shot.
+
+100
+00:09:58.020 --> 00:10:02.139
+Bruce Lam: That's super dangerous, and it rarely works. But, if you can build a foundation.
+
+101
+00:10:02.260 --> 00:10:08.649
+Bruce Lam: I start building one module at a time, with a very well-defined scope for each module. That tends to work really well.
+
+102
+00:10:10.870 --> 00:10:15.770
+Bruce Lam: And we can talk about some of their latest and greatest, what they're working on right now, a little bit later.
+
+103
+00:10:16.600 --> 00:10:21.770
+Bruce Lam: And then, stage 2, you have two decisions. Node 3 is going to be your strategic
+
+104
+00:10:22.200 --> 00:10:31.699
+Bruce Lam: Choice, which is very much dependent on your organizations. So, some organizations have different operating models.
+
+105
+00:10:31.880 --> 00:10:40.570
+Bruce Lam: And we'll actually see some examples of this to make this much clearer. But this one is very much aligned to your… your competitive structure, your…
+
+106
+00:10:41.000 --> 00:10:47.260
+Bruce Lam: How your company decides to operate and extract value from society.
+
+107
+00:10:47.790 --> 00:10:51.580
+Bruce Lam: And so then, Stage 2, Node 4, we talked about already, the operational target.
+
+108
+00:10:51.990 --> 00:11:01.490
+Bruce Lam: And then, this is where we'll spend a lot of time in this course, which is the technology piece. Stage 3, Note 5, your IP approach. Are you gonna build or buy?
+
+109
+00:11:01.760 --> 00:11:10.080
+Bruce Lam: You know, there is… there are trade-offs there. Number 6, your data strategy, which has ethical implications that we'll talk about in a week.
+
+110
+00:11:10.320 --> 00:11:11.790
+Bruce Lam: 7 or 8?
+
+111
+00:11:11.980 --> 00:11:14.780
+Bruce Lam: Which is, how are you going to acquire
+
+112
+00:11:15.040 --> 00:11:25.840
+Bruce Lam: govern your data, because your data is your… your blood flow to your AI systems. If you don't have a continuous, healthy flow of data, they are going to…
+
+113
+00:11:26.080 --> 00:11:28.590
+Bruce Lam: Degrade quite rapidly.
+
+114
+00:11:29.530 --> 00:11:35.490
+Bruce Lam: And then stage 4 is about rapid iteration, continuous iteration, continuous feedback.
+
+115
+00:11:35.660 --> 00:11:50.319
+Bruce Lam: There is, just like in software development, there is a AI and machine learning operations process where you… I'll actually show you a diagram here in a second, but it's where you get the data, you clean the data, you build the model, you refine the model.
+
+116
+00:11:50.460 --> 00:11:54.830
+Bruce Lam: You get the feedback, you retune the model, you retune the data, it's a continuous process.
+
+117
+00:11:55.140 --> 00:12:06.750
+Bruce Lam: And then note 8 is going to be about discussing the known pitfalls that we've seen so far in deploying AI products and services, and try to give you a heads up and an advantage to not.
+
+118
+00:12:07.070 --> 00:12:08.370
+Bruce Lam: Fall into those traps.
+
+119
+00:12:10.950 --> 00:12:14.870
+Bruce Lam: And assignment one is basically going through this entire process.
+
+120
+00:12:15.470 --> 00:12:20.699
+Bruce Lam: Yes, so this time, Chappelle, I am sharing screen… okay, hold on.
+
+121
+00:12:23.430 --> 00:12:27.339
+Bruce Lam: Sorry, that was a… Is everyone seeing the screen now?
+
+122
+00:12:29.240 --> 00:12:30.990
+Bruce Lam: Okay, great, so that was a bullet point.
+
+123
+00:12:31.170 --> 00:12:46.849
+Bruce Lam: Katerina, that is a really good question. How do we measure the human baseline, and where can we find out about levels of errors, hallucination? Oh, very good. So, the second one, I'm going to give you a chart today. I'm going to give you… that's what these tabs are for, these resources. That's for the second question. The first one, human baseline, that is kind of up to you to measure.
+
+124
+00:12:47.070 --> 00:13:00.050
+Bruce Lam: You know, how… and I'll actually show you where this was very challenging in my live case study when I was implementing this as the principal product manager for AI for DoorDash. That was an impossible question for us to answer.
+
+125
+00:13:00.210 --> 00:13:04.000
+Bruce Lam: What the human baseline is, because we assumed that humans were perfect.
+
+126
+00:13:04.320 --> 00:13:05.360
+Bruce Lam: Which they weren't.
+
+127
+00:13:05.990 --> 00:13:15.470
+Bruce Lam: So it gets easier if you do… if you can define what your human baseline is, but if you can't, you can make an assumption and then go with that and see if you have improvements.
+
+128
+00:13:18.170 --> 00:13:19.290
+Bruce Lam: Very good question.
+
+129
+00:13:20.780 --> 00:13:24.629
+Bruce Lam: At the corporate level, are those four stages the one you present to the management at the very…
+
+130
+00:13:24.760 --> 00:13:36.209
+Bruce Lam: Oh, Felipe, that's a good question. It can be, but you know some management teams are, again, depending on your organization, if they're very data-oriented.
+
+131
+00:13:36.320 --> 00:13:40.670
+Bruce Lam: Very technical. They'll probably want to see the details of your operational targets.
+
+132
+00:13:41.210 --> 00:13:46.210
+Bruce Lam: Very few executive teams, I think, want to know the ins and outs of your…
+
+133
+00:13:46.430 --> 00:13:49.560
+Bruce Lam: your AI ML stack and your process there.
+
+134
+00:13:51.190 --> 00:13:58.049
+Bruce Lam: So, maybe, maybe, depending on your team, it might be good to say, hey, here are my four stages that I'm going to…
+
+135
+00:13:58.280 --> 00:14:00.710
+Bruce Lam: Pursue to implement this at my company.
+
+136
+00:14:00.900 --> 00:14:03.709
+Bruce Lam: But then you just need to know yourself, know your company.
+
+137
+00:14:06.120 --> 00:14:12.930
+Bruce Lam: Yeah, Jamie, so human baseline is how well can a human perform the task? So, let's say it's about,
+
+138
+00:14:13.580 --> 00:14:25.649
+Bruce Lam: In terms of customer service, let's say in terms of customer service, the human baseline is 68% satisfaction rating. When they take the survey at the end of the call, 68% of the people get a
+
+139
+00:14:26.560 --> 00:14:35.389
+Bruce Lam: 4 stars or better. That would be one way to measure the human baseline. I mean, the example that I'm going to show you is in finance and accounting, which was… it's very meticulous.
+
+140
+00:14:35.530 --> 00:14:45.319
+Bruce Lam: And that's why we had to assume that the accountants at the time were not making any mistakes, although that was not a good assumption. They clearly did make mistakes with the data.
+
+141
+00:14:45.480 --> 00:14:47.249
+Bruce Lam: But in order for us to
+
+142
+00:14:47.750 --> 00:14:56.109
+Bruce Lam: get sponsorship for the AI product and service that we were deploying, we just had to make that assumption, and then go with it, and then measure the actual results afterwards.
+
+143
+00:14:56.110 --> 00:15:09.049
+Muneiah Ponnapa: Hi, Bruce, this is Mune here. Sorry for the interruption. Do we have any flow diagram or a prerequisite sites for all these four stages of the AI design and development?
+
+144
+00:15:10.520 --> 00:15:13.770
+Bruce Lam: Say that one more time, a flow diagram, or a what?
+
+145
+00:15:14.030 --> 00:15:16.360
+Muneiah Ponnapa: A prerequisite for every stage.
+
+146
+00:15:16.360 --> 00:15:17.310
+Bruce Lam: Oh.
+
+147
+00:15:17.430 --> 00:15:32.350
+Bruce Lam: I mean, this is why I made this slide for you, is really to solve for that, Muneia. Yep, so in the asynchronous videos and materials, you'll see that the professors, they have a different view of this, with less detail, with less of these prerequisite questions.
+
+148
+00:15:32.560 --> 00:15:36.520
+Bruce Lam: So yeah, so treat this as that diagram. I hope, I hope that helps.
+
+149
+00:15:36.700 --> 00:15:38.019
+Muneiah Ponnapa: Sure, thank you, Bruce.
+
+150
+00:15:38.200 --> 00:15:40.910
+Bruce Lam: Absolutely. Good question. Good question.
+
+151
+00:15:41.240 --> 00:15:45.940
+Bruce Lam: Okay, so let's just keep going. So, exactly to your question, what is the human baseline?
+
+152
+00:15:46.160 --> 00:15:51.980
+Bruce Lam: In this particular toy example, it is, let's say that it's 5% error.
+
+153
+00:15:52.080 --> 00:15:59.500
+Bruce Lam: For the human baseline, and so if we want to create an AI system that's gonna do better for that, it's gotta be better than 5%.
+
+154
+00:16:03.200 --> 00:16:06.559
+Bruce Lam: And it changes. It changes depending on your…
+
+155
+00:16:06.780 --> 00:16:15.339
+Bruce Lam: area of business, on your discipline. For customer support, the human baseline might be, 95% accuracy.
+
+156
+00:16:15.560 --> 00:16:21.460
+Bruce Lam: For answering FAQ questions. But then, like I said, in Stage 2, the business target is different.
+
+157
+00:16:21.650 --> 00:16:28.440
+Bruce Lam: The business target is about lowering uncompleted calls by 80% while keeping costs flat. So that's how the…
+
+158
+00:16:28.650 --> 00:16:32.910
+Bruce Lam: Intelligence performance metric differs from the business target.
+
+159
+00:16:33.030 --> 00:16:36.510
+Bruce Lam: And this is one that I get confused a lot, so that's why I made this slide.
+
+160
+00:16:36.670 --> 00:16:39.529
+Bruce Lam: If you're talking about OPEX, or efficiency.
+
+161
+00:16:39.630 --> 00:16:44.849
+Bruce Lam: The metric for the intelligence performance is that the model can process 1,000 tickets per minute.
+
+162
+00:16:45.400 --> 00:16:50.599
+Bruce Lam: But your business target would be you want to slash total calls that are caused by 70%.
+
+163
+00:16:50.740 --> 00:16:53.099
+Bruce Lam: While maintaining current service levels.
+
+164
+00:16:53.480 --> 00:16:59.710
+Bruce Lam: If you're in the legal and compliance space, you might be a high-fidelity translation of technical terms.
+
+165
+00:16:59.920 --> 00:17:04.129
+Bruce Lam: And the targets are cut down, cut document translation costs by 80%.
+
+166
+00:17:04.359 --> 00:17:06.829
+Bruce Lam: Via the review-only workflows.
+
+167
+00:17:07.119 --> 00:17:09.809
+Bruce Lam: If you're in Product User Experience.
+
+168
+00:17:09.920 --> 00:17:15.110
+Bruce Lam: The intelligence metrics would be something about the voice-to-text error rate needs to be less than 1%.
+
+169
+00:17:15.369 --> 00:17:25.749
+Bruce Lam: And then your target is to get 100% keyboard-free flight booking via automated voice workflows. For example, this is how you separate those two particular nodes.
+
+170
+00:17:28.290 --> 00:17:29.430
+Bruce Lam: Does that help, Jamie?
+
+171
+00:17:36.840 --> 00:17:37.590
+Bruce Lam: Okay.
+
+172
+00:17:37.890 --> 00:17:43.269
+Bruce Lam: Stage 2, this one's super interesting to me, because when I was taught
+
+173
+00:17:43.650 --> 00:17:51.670
+Bruce Lam: strategy in general, I was taught the Porter's Five Forces Model, which is a… maybe an antiquated and very adversarial
+
+174
+00:17:51.840 --> 00:17:59.140
+Bruce Lam: strategic model. It's all about defense. It's all about competitors. If you don't know the Five Forces, it is…
+
+175
+00:17:59.450 --> 00:18:14.920
+Bruce Lam: When you're considering entering a market, it is considered… you need to consider the threat of new entrants, like, how easy it is… how easy is it to get into this market, the bargaining power of the buyers in the market, the bargaining power of the suppliers in the market.
+
+176
+00:18:15.240 --> 00:18:18.129
+Bruce Lam: The threat of substitute products or services.
+
+177
+00:18:18.810 --> 00:18:36.349
+Bruce Lam: And then the rivalry among the existing players in the field, so it's very adversarial. It's all about watching all of your corners, put up your defenses and your barriers, and I still think there is some truth and value to this, even in this day. However, in this particular course, we present
+
+178
+00:18:36.450 --> 00:18:40.539
+Bruce Lam: a different model out of MIT called the Haxes Delta Model.
+
+179
+00:18:40.740 --> 00:18:58.339
+Bruce Lam: which has 3 different facets, and it's really about customer centricity, customer loyalty, and really being customer-obsessed. It's kind of like the Amazon… what the Amazon model was when they first started. One of those pillars is total customer solution, which is, can you service that customer end-to-end?
+
+180
+00:18:58.670 --> 00:19:09.359
+Bruce Lam: The next one is a system locked in, which is like a network effect, kind of like what Apple does. When you have the iPhone and the Mac and the Apple TV, they just all work seamlessly together.
+
+181
+00:19:09.580 --> 00:19:13.960
+Bruce Lam: And then the third pillar of the HACS model really is
+
+182
+00:19:14.930 --> 00:19:20.760
+Bruce Lam: about being the best in the market, and that's really where that model overlaps with the Porter Five Forces model.
+
+183
+00:19:20.980 --> 00:19:28.460
+Bruce Lam: And so, yeah, so it's about understanding your product and service, and then choosing which facet you want to play in.
+
+184
+00:19:28.730 --> 00:19:39.679
+Bruce Lam: And of course, whatever that is, that helps you define your business process, in terms of your operations, your customer targeting, and your innovation process. So those are where those are linked.
+
+185
+00:19:39.800 --> 00:19:43.669
+Bruce Lam: I want to go ahead and read off these 10 hexioms.
+
+186
+00:19:43.800 --> 00:19:48.349
+Bruce Lam: For strategy in the AI era, because I think some of them… we could have a discussion, too. These are not…
+
+187
+00:19:48.670 --> 00:19:52.919
+Bruce Lam: Gospel, these are not the only way to interpret this.
+
+188
+00:19:53.170 --> 00:19:56.440
+Bruce Lam: And I think they're quite useful.
+
+189
+00:19:56.740 --> 00:20:00.699
+Bruce Lam: Because you see a lot of companies, Netflix, Amazon.
+
+190
+00:20:01.070 --> 00:20:04.710
+Bruce Lam: With this customer centricity, they are really disrupting the markets.
+
+191
+00:20:05.150 --> 00:20:08.620
+Bruce Lam: So number one is the center of strategy is the customer.
+
+192
+00:20:08.730 --> 00:20:10.929
+Bruce Lam: You don't win by beating the competition.
+
+193
+00:20:11.140 --> 00:20:13.620
+Bruce Lam: You win by achieving customer bonding.
+
+194
+00:20:14.210 --> 00:20:16.340
+Bruce Lam: So strategy is not war, it's love.
+
+195
+00:20:16.870 --> 00:20:21.620
+Bruce Lam: Include customers, suppliers, and complementers as key constituencies.
+
+196
+00:20:22.070 --> 00:20:33.749
+Bruce Lam: Whereas the Port of Five Forces model says, you know, watch out for the suppliers, watch out for your competitors. This is saying, make them your friends. It's a bit of the art of war, right? My enemy of my enemy is my friend.
+
+197
+00:20:34.400 --> 00:20:38.850
+Bruce Lam: Understand your customer deeply. Strategy is done one customer at a time.
+
+198
+00:20:39.300 --> 00:20:43.440
+Bruce Lam: Number 6. Commodity… commodities only exist in the minds of the inept.
+
+199
+00:20:43.600 --> 00:20:48.720
+Bruce Lam: Number 7, strategy relies on customer segmentation and bundling unique competencies.
+
+200
+00:20:49.020 --> 00:20:53.900
+Bruce Lam: Number 8, reject truisms, like the customer is always right.
+
+201
+00:20:55.260 --> 00:21:00.340
+Bruce Lam: Strategic planning is a dialogue-seeking consensus on organizational direction.
+
+202
+00:21:00.610 --> 00:21:05.970
+Bruce Lam: And then 10. Metrics are essential, and experimentation is crucial.
+
+203
+00:21:06.100 --> 00:21:13.749
+Bruce Lam: And that's why those two particular nodes exist in the model. Metrics for your operational targets, metrics for your intelligence.
+
+204
+00:21:14.040 --> 00:21:18.300
+Bruce Lam: And then your feedback cycle here are absolutely critical.
+
+205
+00:21:20.910 --> 00:21:24.390
+Bruce Lam: So I was saying… sorry, this… I didn't make it clear, this particular…
+
+206
+00:21:24.610 --> 00:21:28.360
+Bruce Lam: Process about tinkering is your experimentation, your rapid iteration.
+
+207
+00:21:34.130 --> 00:21:43.029
+Bruce Lam: Okay, so then now we'll move into Stage 3, which is the fun part, which is the part of this course which I think you'll get a lot out of. A fair warning, starting in week 2,
+
+208
+00:21:43.450 --> 00:21:45.689
+Bruce Lam: There's gonna be some heavy, heavy math.
+
+209
+00:21:45.850 --> 00:21:52.919
+Bruce Lam: It's not that you need to understand every nuance, you know, you're not going to be quizzed on it, you're not going to be tested on it.
+
+210
+00:21:53.120 --> 00:22:06.399
+Bruce Lam: in some sense, it's just the way, you know, these are very brilliant people who are interested in this course here, PhDs, and it's just kind of how they think, and how they are doing their best to portray the technology to us.
+
+211
+00:22:06.530 --> 00:22:09.469
+Bruce Lam: So, make a little more time in Week 2.
+
+212
+00:22:09.720 --> 00:22:11.699
+Bruce Lam: Don't get overwhelmed by the math.
+
+213
+00:22:11.940 --> 00:22:23.920
+Bruce Lam: I'll break it down next week. I'll make it very, very practical to understand, hey, why are they storing these equations around? And by the end of this, we have this kind of wrap-up where you will be able to understand something very, very complex.
+
+214
+00:22:23.960 --> 00:22:35.040
+Bruce Lam: In terms of the world of AI, because you've learned all of these terms throughout the course. But this is my little funny tidbit here, my experience this summer. I went to a 48-hour AI hackathon.
+
+215
+00:22:35.180 --> 00:22:53.100
+Bruce Lam: Which I just can't do all-nighters anymore, this is just so difficult. But I had an intern with me, who is at UC Berkeley, and, you know, when we got to the hackathon, tried to come up with ideas for how, what are we gonna build in 48 hours, I started opening up tabs in Google, because in my time.
+
+216
+00:22:53.170 --> 00:22:57.380
+Bruce Lam: You know, Google became the word that we used for internet search.
+
+217
+00:22:57.490 --> 00:23:08.000
+Bruce Lam: And then my intern all of a sudden, about a minute later, said, hey, I've already set up this plan for us to execute, I talked to chat, and this is what we should do.
+
+218
+00:23:08.000 --> 00:23:19.559
+Bruce Lam: And I said, wow. It was a real shocker to me, because I was, you know, I always call it ChatGPT, or Claude, or Gemini, and she just called it Chat. So CHAT now means Large Language Model Used to consult.
+
+219
+00:23:19.770 --> 00:23:25.540
+Bruce Lam: For… for our, our strategy there. Just chat this, chat that. And so, it was a moment for me.
+
+220
+00:23:27.400 --> 00:23:44.460
+Bruce Lam: Okay, so to your question about how do we… there was another question, by Katerina. Oh, the errors and hallucination rates. So this is the, function calling leaderboard, which has been updated, so this is an old screenshot, but the newest one has been updated.
+
+221
+00:23:44.890 --> 00:24:02.800
+Bruce Lam: And what this shows you is it will take the newest models of the time this one was updated in April, so they do need to do another update, but what it'll do is, depending on the Agenta capability, it'll show you the overall accuracy of that particular model in its function calling capabilities.
+
+222
+00:24:04.020 --> 00:24:11.939
+Bruce Lam: You know, without a very sophisticated harness. And we'll talk about what hardness engineering is, and how we can get these accuracy numbers up.
+
+223
+00:24:12.240 --> 00:24:14.860
+Bruce Lam: By wrapping deterministic code around them.
+
+224
+00:24:15.070 --> 00:24:21.539
+Bruce Lam: But you can see the models on their own, even the… I mean, S4.5 is already a little outdated, I think we're on…
+
+225
+00:24:22.250 --> 00:24:27.919
+Bruce Lam: 4.8, no opus, maybe even 5 at this point in the last few months, but even that…
+
+226
+00:24:28.230 --> 00:24:30.880
+Bruce Lam: The kind of plateau right now is about 80%.
+
+227
+00:24:31.200 --> 00:24:34.319
+Bruce Lam: A single tool call, a single function call.
+
+228
+00:24:35.080 --> 00:24:39.870
+Bruce Lam: Is about 80%, and then multi-turn, of course, goes down.
+
+229
+00:24:40.110 --> 00:24:44.620
+Bruce Lam: And then under different, here's your hallucination measures there, Katarina.
+
+230
+00:24:45.060 --> 00:24:50.240
+Bruce Lam: For all the different models, and… So this is a good…
+
+231
+00:24:50.530 --> 00:24:53.860
+Bruce Lam: A good place to go to when you're looking for these, these answers.
+
+232
+00:24:55.710 --> 00:24:59.059
+Bruce Lam: Great AI with human performance is the error rate that we're primarily recognized.
+
+233
+00:25:00.880 --> 00:25:12.630
+Bruce Lam: Right, exactly. That's right. Katerina. Your question is, when comparing AI with human performance, is error rate really the right primary metric? An AI system may be slightly less accurate than a human, but deliver outcomes hundreds of times faster at much lower cost.
+
+234
+00:25:12.820 --> 00:25:18.670
+Bruce Lam: Yes, that's right. So, you have to choose. It's… that's where your subject matter expertise as professional comes in.
+
+235
+00:25:18.910 --> 00:25:32.229
+Bruce Lam: is what is the right metric to choose? If it's not error rate, can you… like you're saying, the return on investment, the pros and cons, the trade-off, can I tolerate a bit more error if I get 10x more volume?
+
+236
+00:25:32.470 --> 00:25:40.779
+Bruce Lam: Maybe, yes, maybe no. It depends on the discipline. If it's in surgery, you know, like heart surgery or brain surgery, probably not.
+
+237
+00:25:40.990 --> 00:25:49.499
+Bruce Lam: But if it's something like customer service, and you want super high volume, then maybe you can tolerate a few more errors in order to get the flow, the volume through.
+
+238
+00:25:49.760 --> 00:25:53.639
+Bruce Lam: Although, we'll talk about Klarna, which… who tried to replace
+
+239
+00:25:53.960 --> 00:26:01.259
+Bruce Lam: humans completely with, AI for customer service, and they had some really hard-learned lessons there that we'll talk about later in this course.
+
+240
+00:26:03.710 --> 00:26:18.130
+Bruce Lam: And to continue, the reason why that we need to know those baseline numbers is because if we do this naively, if we create an AI product or service naively, by just taking the large language model alone.
+
+241
+00:26:18.220 --> 00:26:36.509
+Bruce Lam: and what we call wrap, wrap it, wrap some code around it by itself, an LLM wrapper, what you start getting is compounding errors. So, like I said, we kind of have this plateau for some reason right now, around 80% accuracy, 80% task completion rate. So, if I build an AI product or service where, number one.
+
+242
+00:26:36.510 --> 00:26:48.200
+Bruce Lam: Let's say we take some sort of human input, whether that's text, you know, keyboard, or voice, to search for flights, and then we have another agent run to select the flight, and then we have a third to book the flight.
+
+243
+00:26:48.380 --> 00:26:52.269
+Bruce Lam: And each one of those steps only has an 80% chance of completing.
+
+244
+00:26:52.470 --> 00:26:59.769
+Bruce Lam: Well, guess what? We only have a 50% chance, because of that compounding error, of actually getting this particular task right.
+
+245
+00:27:05.120 --> 00:27:07.969
+Bruce Lam: So, we'll show you how to design around that.
+
+246
+00:27:08.420 --> 00:27:25.179
+Bruce Lam: The other resource that's quite good is on Hugging Face, which is the LLM leaderboard, which is quite a bit more up-to-date with Opus 5 here. And this will tell you in its different modes, in agent mode, in chat mode for text, search, vision, or documents.
+
+247
+00:27:25.360 --> 00:27:30.089
+Bruce Lam: What the different rankings and performance levels are, and my screen is really small right now.
+
+248
+00:27:30.620 --> 00:27:38.550
+Bruce Lam: Right, Felipe. I'm not sure if that actually went through. I saw a call yesterday where the founder of Hugging Face was reluctant to
+
+249
+00:27:38.690 --> 00:27:43.640
+Bruce Lam: Confirm or deny that, but if it actually went through today, then… Awesome.
+
+250
+00:27:45.170 --> 00:27:58.200
+Bruce Lam: This will tell you the price per million tokens, and so this is one metric that you will need for your capstone project. If you are going to go down this route and design an Agentic system, then you'll need to know roughly how much
+
+251
+00:27:58.430 --> 00:28:03.129
+Bruce Lam: Your cost is going to be compared to the equivalent human cost, right?
+
+252
+00:28:03.770 --> 00:28:09.220
+Bruce Lam: And the different types of models have different limitations, have different context windows.
+
+253
+00:28:09.620 --> 00:28:15.939
+Bruce Lam: And they do, you know, there's actually different languages too, English, Chinese, captioning, creative writing, homework.
+
+254
+00:28:16.160 --> 00:28:23.329
+Bruce Lam: There was, like, math as well, and then there's image generation, video, and so you've got all the metrics for all the different models here.
+
+255
+00:28:23.800 --> 00:28:30.299
+Bruce Lam: And this one, I really had to… it took me some time to swallow this one, but I guess this is one of the…
+
+256
+00:28:30.640 --> 00:28:37.029
+Bruce Lam: newest… benchmarking… Platforms for large language models.
+
+257
+00:28:37.390 --> 00:28:40.980
+Bruce Lam: called Artificial Analysis, which… You know.
+
+258
+00:28:41.560 --> 00:28:49.399
+Bruce Lam: That's part of the reason why I had a hesitation with this, is because the name sounded a little scammy, but I guess this really is what people are using quite a bit to reference
+
+259
+00:28:49.590 --> 00:28:51.129
+Bruce Lam: The performance of the models.
+
+260
+00:28:53.060 --> 00:28:55.750
+Bruce Lam: And that was this red, artificial analysis right here.
+
+261
+00:28:56.710 --> 00:28:59.080
+Bruce Lam: Now, two quick takes on this.
+
+262
+00:28:59.270 --> 00:29:04.729
+Bruce Lam: Satya Nadele has said two things recently. He's the CEO of Microsoft. He said, number one.
+
+263
+00:29:04.920 --> 00:29:07.040
+Bruce Lam: The model is no longer the moat.
+
+264
+00:29:08.170 --> 00:29:10.829
+Bruce Lam: So for a while, for the past couple years.
+
+265
+00:29:10.950 --> 00:29:18.120
+Bruce Lam: You could make some grounds chasing the latest and greatest model, wrapping that into your product and service, and you might gain an edge there.
+
+266
+00:29:18.490 --> 00:29:23.139
+Bruce Lam: And the point that I think he's trying to make here is that every frontier model, every…
+
+267
+00:29:23.440 --> 00:29:39.879
+Bruce Lam: Top-tier, ChatGPT, whatever they're on at this point, Opus, Fable, Gemini's a little behind, but, you know, any one of these top-tier models, they're all very, very good. So just using and having that model alone is not going to be where your competitive advantage is.
+
+268
+00:29:40.330 --> 00:29:45.000
+Bruce Lam: And then he says this too, don't use frontier models for non-frontier problems.
+
+269
+00:29:46.100 --> 00:29:52.179
+Bruce Lam: And this is where the light bulb went off for me. And I actually had a former student come back and do a fireside chat with me.
+
+270
+00:29:52.360 --> 00:29:57.819
+Bruce Lam: last week, and really opened my eyes to this. He's the head of Agentic development for his company.
+
+271
+00:29:58.380 --> 00:30:17.299
+Bruce Lam: And he says, we actually use different models because they have different architectures. Not because they are all frontier intelligence, but there are some open-source models, for example, that have humongous context windows. So right now, these state-of-the-art models for this leaderboard, right, you saw they had 1 million token context windows.
+
+272
+00:30:17.510 --> 00:30:31.350
+Bruce Lam: I haven't played with them myself, but he was telling me that some of these Chinese open source models have something maybe like 10 million context windows, and so he was saying that he uses those for quality assurance, because they can hold all of the context.
+
+273
+00:30:31.580 --> 00:30:38.800
+Bruce Lam: he doesn't use them to write code, he'll still use the Frontier models to write the code, build the product, but for QA,
+
+274
+00:30:39.070 --> 00:30:41.670
+Bruce Lam: He'll use a model that has a much larger context window.
+
+275
+00:30:42.080 --> 00:30:48.239
+Bruce Lam: And for me personally, I'm currently building systems for root cause analysis, and I actually…
+
+276
+00:30:49.210 --> 00:30:58.750
+Bruce Lam: there's so much context in the systems that I'm building, that I use more deterministic, Machine learning methods to…
+
+277
+00:30:58.890 --> 00:31:12.950
+Bruce Lam: really get the right context first, before I feed them into an LLM. And the LLMs that I use are very, very low power. They're like the flash levels, because they're fast and they're cheap, and I don't need them to do a lot of heavy lifting, I just need them to do interpretation and reporting.
+
+278
+00:31:13.060 --> 00:31:15.570
+Bruce Lam: So… Don't pick your models.
+
+279
+00:31:16.610 --> 00:31:20.720
+Bruce Lam: Based on… power and performance.
+
+280
+00:31:20.940 --> 00:31:26.159
+Bruce Lam: But understand the architecture and the limitations, and then choose and build your product based off of those.
+
+281
+00:31:26.940 --> 00:31:33.030
+Bruce Lam: John, a moat is a defensive… barrier, so…
+
+282
+00:31:33.320 --> 00:31:44.169
+Bruce Lam: Back in the days, when there were castles, you would dig this trench and fill it with water, and maybe put alligators in it, and that would be your way to defend yourself against the invaders.
+
+283
+00:31:44.500 --> 00:31:45.200
+Bruce Lam: So…
+
+284
+00:31:45.380 --> 00:31:49.989
+Bruce Lam: The model… in this case, the model is no longer the moat, it's what you do with the model.
+
+285
+00:31:53.650 --> 00:31:54.920
+Bruce Lam: Okay, very good.
+
+286
+00:31:56.060 --> 00:31:58.360
+Bruce Lam: Okay, and so this is an example of that. So.
+
+287
+00:31:58.670 --> 00:32:03.990
+Bruce Lam: Even in the world of just large language models, there are different agency levels.
+
+288
+00:32:04.120 --> 00:32:13.530
+Bruce Lam: You can have a simple processor. Well, the LM output has no impact on the program flow, you just want to get a response from it, and this would be the code example for how you would get that response.
+
+289
+00:32:14.110 --> 00:32:16.719
+Bruce Lam: Oh, there you go, John, yes, right.
+
+290
+00:32:16.960 --> 00:32:18.610
+Bruce Lam: Not an acronym in this case.
+
+291
+00:32:18.820 --> 00:32:24.490
+Bruce Lam: You can have it be a router, so you can have the intelligence of your large language model
+
+292
+00:32:24.850 --> 00:32:43.700
+Bruce Lam: trigger different operations, trigger different functions, and that's a little more intelligence. Then you can have it run a tool, you can have it run a search engine, or go check your mail, or go open an MCP to Figma, or something like that, or MCP to Slack, do something like that, and so that's even a little higher in terms of intelligence level.
+
+293
+00:32:43.880 --> 00:32:47.589
+Bruce Lam: And then you have multi-step agents, where you can…
+
+294
+00:32:47.740 --> 00:32:53.940
+Bruce Lam: Actually orchestrate different agents with each other, and that's even a little higher intelligence level.
+
+295
+00:32:54.160 --> 00:33:01.420
+Bruce Lam: You have multi-agent systems, so the multi-agent, multi… multi-step systems, and then multi-agent systems, which is even a little higher.
+
+296
+00:33:01.670 --> 00:33:06.980
+Bruce Lam: One Agentic workflow can start another workflow, also called sub-agents.
+
+297
+00:33:07.320 --> 00:33:15.659
+Bruce Lam: And then finally, one of the highest complexity, use cases is the LLM can actually act in your code.
+
+298
+00:33:16.180 --> 00:33:19.750
+Bruce Lam: Which is best model of now for code generation?
+
+299
+00:33:20.580 --> 00:33:22.350
+Bruce Lam: Sahid, I know it's…
+
+300
+00:33:22.480 --> 00:33:40.149
+Bruce Lam: The latest ChatGPT one, I don't even know what it's called now, Sol or Luna, whatever the top one is there, is pretty neck and neck with, Fable. Soul, thank you. Thank you, Kruna. It's pretty neck and neck with, Claude Fable, and those… they're both incredible, incredible models, and…
+
+301
+00:33:40.430 --> 00:33:41.960
+Bruce Lam: And can write very good code.
+
+302
+00:33:42.690 --> 00:33:53.469
+Bruce Lam: Soul vs. Opus 5. You know, this… this… it's gotten to the point where anything at that level, to me, I use them interchangeably. To me, when we're coding at that level.
+
+303
+00:33:53.740 --> 00:33:55.200
+Bruce Lam: It's… it's all about the segment.
+
+304
+00:33:55.360 --> 00:34:01.410
+Bruce Lam: Where the differentiator is, is how you manage the context, how you manage the skills, how you manage the evaluation.
+
+305
+00:34:01.620 --> 00:34:04.089
+Bruce Lam: That's where the real edge comes in.
+
+306
+00:34:04.780 --> 00:34:11.600
+Bruce Lam: the model is no longer as important at that level. But then use different models for different things. Use different models for different levels of intelligence.
+
+307
+00:34:11.820 --> 00:34:13.089
+Bruce Lam: That's where the key is.
+
+308
+00:34:14.760 --> 00:34:15.489
+Bruce Lam: Okay.
+
+309
+00:34:15.790 --> 00:34:21.700
+Bruce Lam: Stage 4 now, where business processes and approach. So this is the one that was the…
+
+310
+00:34:21.870 --> 00:34:24.409
+Bruce Lam: Biggest wake-up call for me.
+
+311
+00:34:24.739 --> 00:34:34.150
+Bruce Lam: So, I was a product manager for machine learning and AI at Electronic Arts, working on the soccer franchise. It's called FC now, it was called FIFA.
+
+312
+00:34:34.360 --> 00:34:46.609
+Bruce Lam: Awesome experience there. And then one of my professors said, hey, I'm doing this project, I'm building… and this was last year, this was 2025. He says, I'm working with DoorDash to create this
+
+313
+00:34:47.170 --> 00:34:59.219
+Bruce Lam: agent for finance and accounting, and that was when agents, you know, they're brand, brand new. Nobody had figured out what they were, nobody could even define what an agent is at that point, and he said, this thing works, you've got to see this.
+
+314
+00:34:59.360 --> 00:35:04.079
+Bruce Lam: And so I left my nice job at Electronic Arts, and I went with him to this incubator.
+
+315
+00:35:04.340 --> 00:35:07.099
+Bruce Lam: at DoorDash, and wanted to figure out
+
+316
+00:35:07.290 --> 00:35:09.029
+Bruce Lam: What they were doing there.
+
+317
+00:35:09.180 --> 00:35:15.649
+Bruce Lam: And sure enough, I got there, we started working through it. It was incredible, it really worked for finance and accounting, it could help
+
+318
+00:35:16.060 --> 00:35:21.669
+Bruce Lam: Automate these complex accounting workflows for closing and accounts receivable and accounts payable.
+
+319
+00:35:23.000 --> 00:35:29.100
+Bruce Lam: But when I was looking at how they were building these things successfully, it was 90%.
+
+320
+00:35:29.560 --> 00:35:31.760
+Bruce Lam: Traditional software engineering.
+
+321
+00:35:33.430 --> 00:35:41.579
+Bruce Lam: So, those processes… Those disciplines, I know, DevOps, everything there was still 100% relevant.
+
+322
+00:35:41.720 --> 00:35:43.929
+Bruce Lam: The AI systems didn't change any of that.
+
+323
+00:35:44.410 --> 00:35:52.870
+Bruce Lam: And to prove that point, or just to add to that point, let's say ChatGPT3, which I know seems like forever ago, but it was really not that long ago.
+
+324
+00:35:54.550 --> 00:36:00.680
+Bruce Lam: It's mainly the model, and then, in turn, to run that model, it was only 300 lines of code.
+
+325
+00:36:00.860 --> 00:36:02.029
+Bruce Lam: Just for context.
+
+326
+00:36:02.220 --> 00:36:10.129
+Bruce Lam: So ChatGPT3, the package, was whatever 50GB worth of model and parameters, and only 300 lines of code.
+
+327
+00:36:13.210 --> 00:36:24.960
+Bruce Lam: And it wasn't just me. This is from Armand Ruiz, who was the VP of Product for the AI platform at IBM, and he said building AI agents is 5% AI and 100% software engineering.
+
+328
+00:36:25.140 --> 00:36:30.500
+Bruce Lam: You need integration, reliability, scalability, and constant monitoring.
+
+329
+00:36:31.420 --> 00:36:34.700
+Bruce Lam: Which, I couldn't agree more. It was very, very much eye-opening.
+
+330
+00:36:34.890 --> 00:36:46.549
+Bruce Lam: And this is fresh off the press. We got this from Andrew Ng, who is one of the foremost thought leaders over at Stanford in the AI space, and he just released this document, I want to say maybe a week or two ago.
+
+331
+00:36:47.050 --> 00:36:53.099
+Bruce Lam: I'm talking about what do you need to build AI products and services, which is what this course is.
+
+332
+00:36:53.320 --> 00:36:56.659
+Bruce Lam: I look at one of the first things, it's software engineering fundamentals.
+
+333
+00:36:57.650 --> 00:36:59.090
+Bruce Lam: I mean, this is…
+
+334
+00:36:59.380 --> 00:37:04.549
+Bruce Lam: I'm glad we're seeing this trend, and all of these great minds are saying these same things.
+
+335
+00:37:04.670 --> 00:37:09.029
+Bruce Lam: Then he says, you know, using coding agents, understanding what to build.
+
+336
+00:37:09.260 --> 00:37:18.259
+Bruce Lam: And then in order to build AI Products and Services, you need LLM foundations, which is what we're going to give you in this course. It's going to get a little steep and a little deep, but we'll give you this.
+
+337
+00:37:18.390 --> 00:37:23.969
+Bruce Lam: We're gonna ground the models with data. This is RAG. We have a whole module. You're gonna build your own RAG pipeline.
+
+338
+00:37:24.280 --> 00:37:26.110
+Bruce Lam: I'm building Agentic systems.
+
+339
+00:37:26.350 --> 00:37:33.609
+Bruce Lam: Evaluation, operating and production, and then machine learning foundations. So week two is where we start with machine learning foundations.
+
+340
+00:37:34.340 --> 00:37:39.970
+Bruce Lam: It's gonna be… we're gonna do supervised and unsupervised learning in the same week, so it's going to be…
+
+341
+00:37:40.390 --> 00:37:41.110
+Bruce Lam: A lot.
+
+342
+00:37:44.990 --> 00:37:49.469
+Bruce Lam: Very good, Ann. RAG stands for Retrieval Augmented Generation.
+
+343
+00:37:49.750 --> 00:37:54.290
+Bruce Lam: It is a methodology to convert, let's say, proprietary information
+
+344
+00:37:54.590 --> 00:38:04.710
+Bruce Lam: Into a special database called a vector database that your large language model really understands and can retrieve from easily.
+
+345
+00:38:05.100 --> 00:38:12.050
+Bruce Lam: It is one methodology to solve for the context Conundrum, the context paradox.
+
+346
+00:38:12.230 --> 00:38:13.879
+Bruce Lam: Within AI systems.
+
+347
+00:38:14.060 --> 00:38:17.679
+Bruce Lam: And so, yeah, we'll… you'll learn… you'll know exactly what we're talking about in a few weeks here.
+
+348
+00:38:20.100 --> 00:38:25.880
+Bruce Lam: Okay, and so this, I thought, was quite… is always quite interesting. A couple years ago, Cassie Kosterkoff was the…
+
+349
+00:38:26.600 --> 00:38:34.239
+Bruce Lam: Chief Decision Scientist at Google, the first chief decision scientist at Google, and she's since left and moved on to do her own thing.
+
+350
+00:38:35.210 --> 00:38:43.250
+Bruce Lam: And if you were here last week during orientation, you saw my strategic timeline of artificial intelligence.
+
+351
+00:38:43.580 --> 00:38:48.219
+Bruce Lam: And you see that some of these algorithms, especially neural networks, they've been around for decades.
+
+352
+00:38:49.070 --> 00:38:51.229
+Bruce Lam: Right? So, why all of a sudden.
+
+353
+00:38:51.360 --> 00:38:59.440
+Bruce Lam: are they so hot? You know, like I said, the large language model, at its core, is a neural network. It's a deep learning neural network.
+
+354
+00:38:59.790 --> 00:39:02.260
+Bruce Lam: Why are they so, so hot right now?
+
+355
+00:39:02.380 --> 00:39:07.460
+Bruce Lam: And her argument is that it wasn't the technology that was the revolution.
+
+356
+00:39:07.640 --> 00:39:09.579
+Bruce Lam: But it was the user experience.
+
+357
+00:39:09.840 --> 00:39:17.870
+Bruce Lam: The ability to interact for the first time with a highly technical, highly complex piece of code, and a piece of…
+
+358
+00:39:18.220 --> 00:39:21.149
+Bruce Lam: algorithm, right? So that was really the…
+
+359
+00:39:21.470 --> 00:39:23.900
+Bruce Lam: The paradigm shift there, it wasn't the technology.
+
+360
+00:39:25.580 --> 00:39:29.969
+Bruce Lam: Okay, this is what I really want to warn you against, because…
+
+361
+00:39:30.170 --> 00:39:34.560
+Bruce Lam: For those of you who are going to come to office hours regularly, I don't think you'll have this.
+
+362
+00:39:35.440 --> 00:39:38.290
+Bruce Lam: But I see this so, so often.
+
+363
+00:39:38.530 --> 00:39:47.050
+Bruce Lam: And it makes me feel kind of bad. At the end of, you know, our 9 or 10 weeks together, we've gone through so much and so many details, and then people will still try to…
+
+364
+00:39:47.540 --> 00:39:52.459
+Bruce Lam: just say, hey, I'm gonna use an LLM to solve this problem. Instead of really decomposing.
+
+365
+00:39:52.560 --> 00:40:07.690
+Bruce Lam: The situation, decomposing the workflow, decomposing the process, understand where is the bottleneck in the process, understand where can you use intelligence, understand where that intelligence is going to be beneficial for your organization.
+
+366
+00:40:08.360 --> 00:40:16.820
+Bruce Lam: It's just too easy to say, hey, I'm gonna AI this, I'm gonna deep learning that, I am gonna LLM everything. So don't fall into that trap.
+
+367
+00:40:19.290 --> 00:40:28.149
+Bruce Lam: That's basically what I wanted to show you here. One of the biggest issues that we're currently combating, and you'll hear fancy terms like harness engineering and loop engineering.
+
+368
+00:40:28.580 --> 00:40:31.090
+Bruce Lam: These are all just attempts to…
+
+369
+00:40:32.120 --> 00:40:50.579
+Bruce Lam: wrangle the context, because really, the context is key. Last night at that talk that I said I was at was, there were 3 companies there. There was Vercel, there was Anthropic and Superbase, and it was funny. I don't think it was planned, but all 3 of them were trying to show out their latest and greatest methodologies for managing context.
+
+370
+00:40:50.690 --> 00:40:55.460
+Bruce Lam: It really is the biggest issue to be solved at the moment.
+
+371
+00:40:57.250 --> 00:40:58.040
+Bruce Lam: Okay.
+
+372
+00:40:58.310 --> 00:41:08.360
+Bruce Lam: So now I'm going to show you a real-life example. This is what I went through at DoorDash. It's a little bit, anonymized and sanitized, right, so I'm only sharing what I can share.
+
+373
+00:41:08.760 --> 00:41:18.770
+Bruce Lam: And so, the problem that we were trying to solve is how might we reduce time and effort to close the books and deliver financial reports using AI?
+
+374
+00:41:19.860 --> 00:41:22.580
+Bruce Lam: That was our mission statement, and so…
+
+375
+00:41:23.100 --> 00:41:29.260
+Bruce Lam: To everyone's point in the chat, it was so complicated for the intelligence performance metric piece, because
+
+376
+00:41:30.540 --> 00:41:49.820
+Bruce Lam: At first, we had to assume, you know, because we didn't want to incriminate anyone or make anyone feel bad, that the analysts did return 100% accuracy when they were asked to pull this data for their reports. We all know that's not true, we all know that there were mistakes, but no one was logging the mistakes, so there were no historical records about how often they were wrong.
+
+377
+00:41:49.840 --> 00:42:00.799
+Bruce Lam: And so we went in with that assumption, and to… who was it who made this awesome point? I think it was Katerina, yes. So then instead of using an accuracy or an error metric.
+
+378
+00:42:00.870 --> 00:42:02.929
+Bruce Lam: We switched to a time metric.
+
+379
+00:42:03.250 --> 00:42:20.560
+Bruce Lam: So the analyst plus the accountants together, depending on the report, whether it was closing, or whether it was a quarterly, or an annual statement, we found those timeframes, because we had those in record. How long does it take them to close the books for a certain department?
+
+380
+00:42:20.750 --> 00:42:26.709
+Bruce Lam: On a quarterly basis, on a weekly basis, on an annual basis, and let's use that as our human benchmark.
+
+381
+00:42:27.380 --> 00:42:31.950
+Bruce Lam: Right? The leap, that's right. Exactly. Okay, and here's the hard lesson learned.
+
+382
+00:42:32.280 --> 00:42:40.939
+Bruce Lam: Our scope was way too big. We wanted to do the entire finance workflow. Accounts receivable, accounts payable, general ledger…
+
+383
+00:42:41.060 --> 00:42:58.179
+Bruce Lam: FP&A, tax, treasury, closing, everything. We want to say, we didn't do this in one shot, right? We're gonna do everything. It's all the same data. That ended up being a huge bottleneck for us. The scope was just too big. We spent too much time trying to figure out how to narrow down the scope.
+
+384
+00:42:58.610 --> 00:43:02.919
+Bruce Lam: We wanted to do a full customer solution, clearly, that was our strategic choice.
+
+385
+00:43:03.030 --> 00:43:07.860
+Bruce Lam: And then our target was to reduce time to close by 50%. That was our target.
+
+386
+00:43:08.230 --> 00:43:13.290
+Bruce Lam: There was no real IP novelty in this particular approach.
+
+387
+00:43:13.540 --> 00:43:19.399
+Bruce Lam: And in terms of data strategy, we wanted to pursue a single source of truth, so one of the biggest challenges here
+
+388
+00:43:19.560 --> 00:43:23.110
+Bruce Lam: was… there was two, there was in the algorithm developments.
+
+389
+00:43:23.400 --> 00:43:26.280
+Bruce Lam: But also getting all the data
+
+390
+00:43:26.390 --> 00:43:30.989
+Bruce Lam: On the really disparate systems, they had so many different systems running, into one
+
+391
+00:43:31.770 --> 00:43:34.650
+Bruce Lam: Source of truth, or one area we could pull that data.
+
+392
+00:43:34.820 --> 00:43:38.589
+Bruce Lam: We used, an iterative feature development approach,
+
+393
+00:43:39.130 --> 00:43:45.639
+Bruce Lam: And then, we did have evaluations in a testing harness, and found that in this first iteration.
+
+394
+00:43:45.890 --> 00:43:48.619
+Bruce Lam: We were only getting 80% correct results.
+
+395
+00:43:49.630 --> 00:43:56.009
+Bruce Lam: So, what do we do? So then, Stage 4 is about tinkering, so then we try again. We take what we learned, and we try again.
+
+396
+00:43:56.370 --> 00:44:06.879
+Bruce Lam: So, of course, we cleared up our intelligence metric. We went from a time… from a accuracy-based metric to a time-based metric. We decided to significantly narrow the scope to just accounts payable.
+
+397
+00:44:07.300 --> 00:44:13.539
+Bruce Lam: Same metrics on strategic choice, same operational target, same IP, same data strategy.
+
+398
+00:44:13.940 --> 00:44:20.749
+Bruce Lam: the… technology approach, though, we changed. We decided to use a large language model
+
+399
+00:44:21.050 --> 00:44:23.859
+Bruce Lam: Not to necessarily pull the data.
+
+400
+00:44:24.120 --> 00:44:26.680
+Bruce Lam: But to understand the user intention.
+
+401
+00:44:26.830 --> 00:44:33.310
+Bruce Lam: And then very systematically extract the variables from that intention into…
+
+402
+00:44:33.660 --> 00:44:44.140
+Bruce Lam: just a standard SQL call. So we had deterministic 100% accuracy with the call, if we could get the intention correct. So it shifted from being this huge.
+
+403
+00:44:44.250 --> 00:44:50.429
+Bruce Lam: Technical problem into, hey, how do we get the right intention, and then fill in the right variables?
+
+404
+00:44:50.620 --> 00:44:52.320
+Bruce Lam: For the known good.
+
+405
+00:44:52.520 --> 00:45:03.240
+Bruce Lam: SQL calls. Nowadays, this is called text-to-SQL, and it's been solved, but it was very, very new back then. And from this approach, we were able to get 98% correct results.
+
+406
+00:45:03.380 --> 00:45:15.349
+Bruce Lam: Maybe not as good as the 100% of the humans, but we were able to dramatically reduce time to close. So I just wanted to show you that there were two different iterations, so this is not a one-and-done
+
+407
+00:45:15.840 --> 00:45:17.000
+Bruce Lam: process.
+
+408
+00:45:17.240 --> 00:45:20.370
+Bruce Lam: And yeah, you can make mistakes and you can learn.
+
+409
+00:45:20.680 --> 00:45:24.389
+Bruce Lam: And what I didn't know back then is that this was a very common
+
+410
+00:45:25.910 --> 00:45:37.390
+Bruce Lam: trial that teams go through. They start to write their SQL with just a large language model. They just throw their query and say, hey, I have this type of SQL, this is what I want to query, help me write it.
+
+411
+00:45:37.590 --> 00:45:39.670
+Bruce Lam: And, that was… that has…
+
+412
+00:45:40.550 --> 00:45:45.160
+Bruce Lam: challenging success rate, and then the next evolution of that is text-to-SQL, like I was saying.
+
+413
+00:45:45.370 --> 00:45:48.449
+Bruce Lam: And then there's the Agentic version of that.
+
+414
+00:45:48.720 --> 00:45:52.919
+Bruce Lam: And then now we're moving into the, Agentic, business intelligence.
+
+415
+00:45:53.270 --> 00:46:00.530
+Bruce Lam: And then I haven't really seen these… these ones here on the far right, these stages 5, 6, 7, 8. I haven't seen these in production yet.
+
+416
+00:46:00.700 --> 00:46:05.690
+Bruce Lam: But that's kind of where the vision is, in terms of… Business Intelligence.
+
+417
+00:46:06.440 --> 00:46:09.849
+Bruce Lam: Let me see, Rodrigo.
+
+418
+00:46:10.300 --> 00:46:12.899
+Bruce Lam: I find automated the niche friction points were better.
+
+419
+00:46:13.320 --> 00:46:14.870
+Bruce Lam: Yeah. Yeah.
+
+420
+00:46:15.180 --> 00:46:18.219
+Bruce Lam: Yeah, funny you say that, Rodrigo, because…
+
+421
+00:46:18.480 --> 00:46:21.669
+Bruce Lam: I was on that project, it was a contract roll, for 6 months.
+
+422
+00:46:21.890 --> 00:46:26.630
+Bruce Lam: And right when we delivered the first… this iteration with AP,
+
+423
+00:46:26.900 --> 00:46:34.260
+Bruce Lam: what was it? It was one of the big ERPs came out with their own internal solution to exactly what we were doing.
+
+424
+00:46:35.390 --> 00:46:39.290
+Bruce Lam: So yeah, I think people are seeing that it's better to take these one step at a time.
+
+425
+00:46:39.690 --> 00:46:43.759
+Bruce Lam: Thanks. Kenny, let me go ahead and remove that mark so it doesn't persist.
+
+426
+00:46:47.410 --> 00:46:48.070
+Bruce Lam: Okay.
+
+427
+00:46:51.400 --> 00:46:54.900
+Bruce Lam: Okay. So, looking at the time here, we've got about 10 minutes left.
+
+428
+00:46:55.160 --> 00:47:04.809
+Bruce Lam: This is a key fundamental, and I think we'll go with… we may see this case study again, so if we see it again next week, I apologize for the repetitiveness, but maybe it'll be a little different.
+
+429
+00:47:05.620 --> 00:47:10.630
+Bruce Lam: Interpretability and observability are so, so, so important.
+
+430
+00:47:10.860 --> 00:47:15.580
+Bruce Lam: And here is one of the… and this is not very old, a few years old.
+
+431
+00:47:15.990 --> 00:47:21.770
+Bruce Lam: One of the case studies that all of us in academia You know, this is our…
+
+432
+00:47:22.170 --> 00:47:31.320
+Bruce Lam: our test. We remember this because this happened live, and this happened, this was the University of Washington, and they were trying to build a machine vision system.
+
+433
+00:47:31.520 --> 00:47:36.620
+Bruce Lam: To determine the difference, or detect, look at a picture, and determine whether it was a wolf.
+
+434
+00:47:37.050 --> 00:47:38.140
+Bruce Lam: Or a husky.
+
+435
+00:47:39.500 --> 00:47:43.149
+Bruce Lam: So, I have a couple of dogs, you know, I love my dogs,
+
+436
+00:47:43.740 --> 00:47:51.540
+Bruce Lam: I don't know dogs that well, but if you were to ask me to do this, just look at these pictures and figure out, based on the features and the characteristics.
+
+437
+00:47:51.790 --> 00:47:53.630
+Bruce Lam: Which, what's a dog, what's a husky?
+
+438
+00:47:54.740 --> 00:48:01.079
+Bruce Lam: I'd be in trouble. And if this was intended so that if you're out camping by yourself in the wilderness, and…
+
+439
+00:48:01.310 --> 00:48:08.539
+Bruce Lam: A canine-type animal comes up to you, and you need to know whether it's a dog or a husky, whether it's friendly, or whether it's gonna, you know, attack you.
+
+440
+00:48:08.860 --> 00:48:10.649
+Bruce Lam: I would be in trouble.
+
+441
+00:48:11.640 --> 00:48:17.790
+Bruce Lam: Does anyone here, is anyone here a, you know, an animal expert, and is there actually a difference somewhere between a wolf and a husky?
+
+442
+00:48:32.340 --> 00:48:33.030
+Bruce Lam: No?
+
+443
+00:48:33.500 --> 00:48:36.239
+Bruce Lam: Sometimes some folks have some hypotheses.
+
+444
+00:48:36.370 --> 00:48:41.079
+Elena Volnova: There is a difference, for sure, but, what's the right answer?
+
+445
+00:48:41.610 --> 00:48:42.609
+Anne Moon: I think if I was to…
+
+446
+00:48:42.610 --> 00:48:43.140
+Elena Volnova: breath.
+
+447
+00:48:43.350 --> 00:48:59.309
+Anne Moon: Yeah, if I was to guess, it would have to be how the darkness of it goes right by its nose. So in the three pictures, the one to the top left, the top right, and then… I'm not sure about the puppy, but that's what I would guess.
+
+448
+00:49:00.020 --> 00:49:03.950
+Anne Moon: How the darkness of where the nose hits, and the more pointed ears.
+
+449
+00:49:05.200 --> 00:49:10.180
+Bruce Lam: Yeah, I think that is a good… I think… I think you're all keying in on some…
+
+450
+00:49:10.530 --> 00:49:18.249
+Bruce Lam: probably some really accurate key aspects. This algorithm out of the University of Washington was able to do it 90% accuracy.
+
+451
+00:49:18.370 --> 00:49:21.030
+Bruce Lam: 9 out of 10 times, was able to get it right.
+
+452
+00:49:21.310 --> 00:49:23.820
+Bruce Lam: It was astonishing. It was incredible.
+
+453
+00:49:26.090 --> 00:49:33.550
+Bruce Lam: Right. There's so many nuances that are not in these photos, you can't zoom in or do close-ups. If you could, maybe it would help.
+
+454
+00:49:33.770 --> 00:49:46.259
+Bruce Lam: But what they found was because when they first ran the model, it was very opaque. It was a deep learning neural network, very much like something like a large language model. It didn't know… they couldn't tell how it was able to tell.
+
+455
+00:49:46.480 --> 00:49:49.710
+Bruce Lam: Just with so much accuracy, the differences.
+
+456
+00:49:49.850 --> 00:49:53.100
+Bruce Lam: And then they really started picking apart the model.
+
+457
+00:49:53.340 --> 00:50:04.900
+Bruce Lam: testing certain aspects, and what they realized was it was… the model wasn't looking at the animal, so it was kind of disregarding the intention. It was looking at the background.
+
+458
+00:50:05.740 --> 00:50:12.150
+Bruce Lam: Because more often than not, a domesticated animal, like a husky, Is at a park.
+
+459
+00:50:12.520 --> 00:50:19.079
+Bruce Lam: Whereas in these photos, you see the one that I got wrong, this one with this pink X here? This is a husky in the snow.
+
+460
+00:50:20.170 --> 00:50:23.209
+Bruce Lam: Right? So it's not a husky at the park, it's a husky in the snow.
+
+461
+00:50:24.440 --> 00:50:29.480
+Bruce Lam: So, that is when this entire aha moment in the entire industry came.
+
+462
+00:50:29.890 --> 00:50:34.969
+Bruce Lam: And said, hey, whoa, whoa, time out. We can't just trust what these algorithms are telling us at face value.
+
+463
+00:50:35.240 --> 00:50:37.499
+Bruce Lam: Oh, this is not working. It's supposed… oh, there it is.
+
+464
+00:50:38.050 --> 00:50:42.190
+Bruce Lam: We need a way to improve interpretability and observability
+
+465
+00:50:43.190 --> 00:50:49.000
+Bruce Lam: And this is, you know, academia, so this is in detecting animals, which is probably not a good
+
+466
+00:50:49.140 --> 00:50:51.410
+Bruce Lam: Enterprise or business use case.
+
+467
+00:50:51.710 --> 00:50:54.900
+Bruce Lam: But I will show you some examples later where this becomes
+
+468
+00:50:55.380 --> 00:51:09.879
+Bruce Lam: super relevant, especially, with respect to… recently, Meta decided to train a whole bunch of its new, latest models on its employee behavior by tracking and training every typewriter… I mean, every keyboard,
+
+469
+00:51:10.030 --> 00:51:12.420
+Bruce Lam: Every keyboard stroke, every mouse click.
+
+470
+00:51:12.640 --> 00:51:21.120
+Bruce Lam: And that came back and bit them quite a bit because of the lack of interpretability and observability as well. So while this is a toy example, or an academic example.
+
+471
+00:51:21.160 --> 00:51:37.310
+Bruce Lam: using animals. I just want to show you the importance of interpretability. And so, just a few months after that, what University of Washington report was put out, Google released a solution to it, which then allows you to look at the different attributes within the model.
+
+472
+00:51:37.620 --> 00:51:39.410
+Bruce Lam: To say, hey, this is…
+
+473
+00:51:39.760 --> 00:51:49.280
+Bruce Lam: how this attribute was affecting the prediction, and so put some observability into this rather opaque problem.
+
+474
+00:51:50.550 --> 00:52:06.970
+Bruce Lam: And the version of that for large language models, this… there is no affiliation here, this is just one of the better platforms out there called, Arise. And you can see for the particular agent action, it tracks every single call, every single code call, every single tool call.
+
+475
+00:52:07.050 --> 00:52:14.979
+Bruce Lam: And allows you to track and see what it was doing, so this is… this observability piece is very, very important when you're building your AI products or services.
+
+476
+00:52:16.200 --> 00:52:22.800
+Bruce Lam: And this is… this one is kind of one of the most fun, is I'll show you some really cute examples, and I think we'll all laugh together.
+
+477
+00:52:23.340 --> 00:52:35.420
+Bruce Lam: Large language models, you know, especially in the AI space, they, Ethan Mollick, who is a professor at Wharton, he coined the term… he said they have very jagged intelligence.
+
+478
+00:52:35.560 --> 00:52:40.739
+Bruce Lam: Like, we were talking about coding in the chat. Some of them are very incredibly good at coding.
+
+479
+00:52:40.990 --> 00:52:48.009
+Bruce Lam: But they are so ignorant when it comes to so many other things. You know, a 5-year-old has more…
+
+480
+00:52:48.170 --> 00:52:53.850
+Bruce Lam: intuition that some of these models do. So the intelligence is very jagged, and that's one of the issues
+
+481
+00:52:54.040 --> 00:52:56.269
+Bruce Lam: An AI that you have to watch out for.
+
+482
+00:52:56.390 --> 00:53:03.220
+Bruce Lam: The professors in this course call them cancers. We'll look at some adversarial attacks, some prompt injections.
+
+483
+00:53:04.150 --> 00:53:13.080
+Bruce Lam: they don't generalize super well sometimes, depending on how you create your model and how you create the code around your model. There is absolutely bias.
+
+484
+00:53:13.220 --> 00:53:18.689
+Bruce Lam: All around, in the training data, in the execution. Look out for that.
+
+485
+00:53:19.020 --> 00:53:21.689
+Bruce Lam: Explainability, observability, we just talked about that.
+
+486
+00:53:21.960 --> 00:53:27.760
+Bruce Lam: And then, unintended behavior. At that conference that I was at last night, in fact.
+
+487
+00:53:27.960 --> 00:53:30.149
+Bruce Lam: One person was being a little bit…
+
+488
+00:53:31.500 --> 00:53:40.710
+Bruce Lam: difficult. They wanted to challenge the Anthropic folks, and they said, how are you doing governance for your AI agents? And they said, oh, we're giving them these
+
+489
+00:53:41.010 --> 00:53:46.139
+Bruce Lam: these identities and these permissions, and the adversarial person's like, they will…
+
+490
+00:53:46.700 --> 00:53:58.569
+Bruce Lam: they will go around those permissions every single time. In order to accomplish their goal, they will figure out how to get around your permissions and to get around your… your safeguards, so how are you preventing that? And so it was a good discussion.
+
+491
+00:53:59.140 --> 00:54:10.629
+Bruce Lam: Okay, and with the 5 minutes that we have left, I would really like to show you… give you a primer on how to run the notebooks for next week, because I think for those of you who want to.
+
+492
+00:54:11.580 --> 00:54:17.570
+Bruce Lam: like I've been saying, the more and more I research this, and I use these agents, it's…
+
+493
+00:54:17.750 --> 00:54:22.220
+Bruce Lam: The code portion of it is super important. And you don't have to write the code yourself.
+
+494
+00:54:22.410 --> 00:54:32.289
+Bruce Lam: It's just that you have to know that you need to wrap your functions, wrap your large language models, wrap your AI in code in order to improve the performance.
+
+495
+00:54:32.690 --> 00:54:37.410
+Bruce Lam: Okay, so let's go to week 2, and what you'll do is you will find your…
+
+496
+00:54:40.020 --> 00:54:44.269
+Bruce Lam: Your assignment, 2.1, which is optional, you know it's optional because it has zero points.
+
+497
+00:54:45.270 --> 00:54:49.149
+Bruce Lam: If you've never written a line of code before in your life, do not be intimidated.
+
+498
+00:54:49.290 --> 00:54:52.569
+Bruce Lam: This is… we handhold very, very much so.
+
+499
+00:54:52.860 --> 00:54:58.039
+Bruce Lam: A few things I want to show you is you click on this Load Assignment, And it does take…
+
+500
+00:54:58.520 --> 00:55:05.160
+Bruce Lam: Like, a minute to come up, so it's not… there's something… something's not wrong, it just takes a while to come up.
+
+501
+00:55:05.720 --> 00:55:13.219
+Bruce Lam: And while it's doing that, I'll show you that you can download The solution, right here.
+
+502
+00:55:13.330 --> 00:55:19.919
+Bruce Lam: And what we recommend that you do is keep a copy of that. Of course, they're really good starting points for your
+
+503
+00:55:20.200 --> 00:55:28.540
+Bruce Lam: your… we do everything. We do, you know, reinforcement learning and recurrent neural networks, so definitely use that as a starting point.
+
+504
+00:55:28.650 --> 00:55:38.660
+Bruce Lam: Use that code, use your large language models to help you improve that code, and specialize that code for your specific companies and your applications.
+
+505
+00:55:38.800 --> 00:55:46.349
+Bruce Lam: And… but once you leave the course, you will… you won't have access to M-code, but that's okay, but you will have access to if you have a Google account.
+
+506
+00:55:46.480 --> 00:55:54.330
+Bruce Lam: And I've had certain participants say, hey, I don't trust Google. Well, there are many, many options to run your Jupyter notebooks.
+
+507
+00:55:54.790 --> 00:55:58.659
+Bruce Lam: This is Google Colab, which I think is a fantastic…
+
+508
+00:55:59.100 --> 00:56:06.590
+Bruce Lam: a platform, and, like, for example, I am just opening up Assignment 2.1,
+
+509
+00:56:06.800 --> 00:56:11.019
+Bruce Lam: Which is about trading and testing. Let me see, it's been a minute since I've opened it.
+
+510
+00:56:11.220 --> 00:56:14.860
+Bruce Lam: So let me go ahead and just open 2.3 if I can't find 2.1.
+
+511
+00:56:15.680 --> 00:56:22.659
+Bruce Lam: Let's see… Yeah, it's been a while since I've opened it, but let's go 2.3 instead.
+
+512
+00:56:22.990 --> 00:56:29.819
+Bruce Lam: And so you just save it, you upload it, open it, and here's the exact same notebook that we have running on M-code.
+
+513
+00:56:30.150 --> 00:56:38.710
+Bruce Lam: Oops, well… Oh, thank you, Pankaj. That's probably why I can't access it. Module 2 is not open.
+
+514
+00:56:38.990 --> 00:56:49.269
+Bruce Lam: So, when it does come open, then you'll have access to the notebook, and all you really do is… actually, I'll just open it last term so that you can see this. I think it's important for you to see how this works.
+
+515
+00:56:50.250 --> 00:56:51.630
+Bruce Lam: Let's open last terms.
+
+516
+00:56:56.590 --> 00:57:02.680
+Bruce Lam: Pro, June… Let's see… Modules…
+
+517
+00:57:06.140 --> 00:57:10.150
+Bruce Lam: Thanks for… thanks for bringing that up to my attention. I was wondering why it wasn't working.
+
+518
+00:57:10.900 --> 00:57:14.710
+Bruce Lam: Let's see… Trade and Test, Assignment 2.1, Training and Testing, here we go.
+
+519
+00:57:16.330 --> 00:57:18.300
+Bruce Lam: And that'll load it here.
+
+520
+00:57:20.260 --> 00:57:22.580
+Bruce Lam: Let me see… It's not coming up yet.
+
+521
+00:57:23.180 --> 00:57:25.849
+Bruce Lam: Yeah, M-Code's not open yet for this term.
+
+522
+00:57:27.260 --> 00:57:31.620
+Bruce Lam: What it does, it'll look a lot like this, it won't look identically.
+
+523
+00:57:31.930 --> 00:57:39.170
+Bruce Lam: What you'll do is there will be these code blocks, there'll be a lot of text to show you what we're trying to do here, what the intention is.
+
+524
+00:57:39.380 --> 00:57:52.500
+Bruce Lam: And then all you do is you'll click on the particular code block, and up in M-code, there's a play button at the top here. In Colab, it's actually a little bit smoother. There's a play button right next to the code block. Actually, I need to run this one first.
+
+525
+00:57:52.740 --> 00:58:12.560
+Bruce Lam: So this is gonna fail. But that's the idea. You read it, there will be some pieces of code that it wants you to change, so you'll go ahead and change this to, let's say, 20 or something like that, whatever it instructs you to do, and then just run it again, and it will go ahead and report out your findings. You can type in your answers here.
+
+526
+00:58:12.900 --> 00:58:17.690
+Bruce Lam: Raman Yep, it's very, very user-friendly, step-by-step, so…
+
+527
+00:58:17.890 --> 00:58:27.469
+Bruce Lam: Highly encourage you do that, even if you've never written a line of code in your life before. It's about reading and understanding what's going on, and then changing a few variables, running it again, and seeing the difference.
+
+528
+00:58:29.680 --> 00:58:35.980
+Bruce Lam: Okay, and that brings us to right about on time, which is amazing.
+
+529
+00:58:36.140 --> 00:58:39.329
+Bruce Lam: Normally, I run quite a bit over, so…
+
+530
+00:58:39.450 --> 00:58:42.429
+Bruce Lam: Are there any questions? Let me see if I missed anything in the chat.
+
+531
+00:58:44.370 --> 00:58:57.159
+Rodrigo Camargo: the code, Bruce, is that temporary? When you click there, it will launch a virtual machine, I assume, and then an environment? Does it save what I don't, or it goes away after a while?
+
+532
+00:58:57.370 --> 00:58:57.950
+Bruce Lam: Hmm.
+
+533
+00:58:59.180 --> 00:59:05.630
+Bruce Lam: I think it… I mean, I'm not 100% sure, Rodrigo, to be… to be totally honest. I… I think it saves what you do.
+
+534
+00:59:06.190 --> 00:59:07.279
+Bruce Lam: I'm pretty sure it does.
+
+535
+00:59:07.280 --> 00:59:11.630
+Rodrigo Camargo: and then I prefer to do the Google collab, right? Right, right.
+
+536
+00:59:11.920 --> 00:59:16.870
+Bruce Lam: Yeah, and that's also another option, except that you'll have… you'll just have to…
+
+537
+00:59:17.800 --> 00:59:21.610
+Bruce Lam: Be truthful to yourself, because you'll have the answers in the Google Colab version.
+
+538
+00:59:22.330 --> 00:59:23.470
+Rodrigo Camargo: What a difference.
+
+539
+00:59:24.310 --> 00:59:24.970
+Rodrigo Camargo: Got it.
+
+540
+00:59:27.530 --> 00:59:28.640
+Bruce Lam: Okay, very good.
+
+541
+00:59:30.570 --> 00:59:36.580
+Denis Tambwe: I have a quick question. I would like to know, I have seen that there are already some videos
+
+542
+00:59:36.840 --> 00:59:56.689
+Denis Tambwe: when I saw… I go to the Emiratus, you know, the platform, there are some videos, video one, two, many lessons, okay? And also, we have these type of lessons where you teach immediately. So, my question is, do we study both in parallel? Do we do both,
+
+543
+00:59:56.720 --> 01:00:02.450
+Denis Tambwe: assignment in parallel, because I've seen also assignment for those video type of classes.
+
+544
+01:00:03.040 --> 01:00:04.960
+Denis Tambwe: What is the approach?
+
+545
+01:00:05.430 --> 01:00:10.390
+Bruce Lam: So, for us, we are supposed to be reinforcing the material.
+
+546
+01:00:10.390 --> 01:00:11.330
+Denis Tambwe: So…
+
+547
+01:00:11.590 --> 01:00:23.860
+Bruce Lam: I mean, I… I tend to make the… if the material is very technical, I tend to make it very applicable. Oh, okay. Yep, and so if it's… and if it's not deep enough, we'll go deeper.
+
+548
+01:00:24.100 --> 01:00:28.029
+Bruce Lam: So it's… it's hand-in-hand. You shouldn't… they shouldn't be different.
+
+549
+01:00:28.030 --> 01:00:31.099
+Denis Tambwe: Okay, they are… yes, they are related, yeah, okay.
+
+550
+01:00:31.390 --> 01:00:33.040
+Denis Tambwe: Okay. Thanks.
+
+551
+01:00:33.040 --> 01:00:39.729
+Bruce Lam: Very good, good question. And, yeah, Rodrigo, to your point, it is spinning up servers and VMs and stuff, and that's why it's having a hard time.
+
+552
+01:00:39.970 --> 01:00:43.179
+Bruce Lam: At this moment, or maybe the module is just not open.
+
+553
+01:00:43.680 --> 01:00:50.630
+Bruce Lam: But we'll check again next week. This is just to get you ready, just to get you mentally prepared, and to encourage everyone to try.
+
+554
+01:00:51.210 --> 01:00:53.420
+Bruce Lam: Because I know it can be a little bit intimidating.
+
+555
+01:00:55.380 --> 01:00:56.480
+Bruce Lam: All right.
+
+556
+01:00:56.660 --> 01:00:58.100
+Bruce Lam: Oh, thank you so much.
+
+557
+01:00:58.430 --> 01:01:04.029
+Bruce Lam: All right, well, thank you, everyone. Let's end it there today. Have a wonderful weekend. Have a wonderful week.
+
+558
+01:01:04.160 --> 01:01:07.000
+Bruce Lam: And we will see you next week. Thank you all so much!
+
+559
+01:01:08.250 --> 01:01:09.550
+Adil Shabbir: Thank you, Bruce, appreciate it.
+
+560
+01:01:09.550 --> 01:01:10.520
+Bruce Lam: Thank you, everyone.
+
+561
+01:01:10.830 --> 01:01:16.150
+Bruce Lam: Thank you so much. Yep, definitely reach out. Actually, let me give you my email address. Reach out if you ever need any…
+
+562
+01:01:16.330 --> 01:01:23.119
+Bruce Lam: So, again, I can't do anything with respect to the platform, like, I can't fix your login.
+
+563
+01:01:23.600 --> 01:01:32.029
+Bruce Lam: Give you an extension or anything like that, but if you have any technical questions about the material, definitely feel free to send me an email. I'm more than happy to set up one-on-one sessions.
+
+564
+01:01:32.220 --> 01:01:35.309
+Bruce Lam: And that goes beyond the course as well, you know?
+

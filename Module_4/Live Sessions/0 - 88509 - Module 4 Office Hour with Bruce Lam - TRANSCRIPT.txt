@@ -1,0 +1,2318 @@
+WEBVTT
+
+1
+00:00:05.620 --> 00:00:08.410
+Bruce Lam: Welcome, welcome, everyone! Happy Friday!
+
+2
+00:00:11.120 --> 00:00:14.790
+Bruce Lam: Good afternoon, good morning, Ranga.
+
+3
+00:00:16.990 --> 00:00:20.680
+Bruce Lam: Dude, evening, anyone? Eating for anyone yet? Probably some.
+
+4
+00:00:20.680 --> 00:00:22.550
+Rangarajan Raman (Cohort 13): Everyone's never going.
+
+5
+00:00:22.720 --> 00:00:24.260
+Adil Shabbir: Hi, Bruce, good to see you.
+
+6
+00:00:24.830 --> 00:00:25.880
+Bruce Lam: Good to see you as well.
+
+7
+00:00:26.700 --> 00:00:28.560
+Bruce Lam: Welcome back, happy Friday!
+
+8
+00:00:29.850 --> 00:00:31.380
+Adil Shabbir: Happy Friday to you, too.
+
+9
+00:00:31.850 --> 00:00:34.540
+Bruce Lam: Always look forward to seeing y'all on Friday.
+
+10
+00:00:34.540 --> 00:00:36.000
+Harry Karapetian: Happy Friday.
+
+11
+00:00:37.590 --> 00:00:43.829
+Bruce Lam: Alright, so this week, we had some fun with an AI avatar of Professor Brian.
+
+12
+00:00:44.340 --> 00:00:49.319
+Bruce Lam: Before I get into the material, any concerns, questions.
+
+13
+00:00:50.130 --> 00:00:53.519
+Bruce Lam: Thoughts, on the material, logistics?
+
+14
+00:00:53.880 --> 00:00:55.870
+Bruce Lam: Pankaj, happy Saturday.
+
+15
+00:00:57.110 --> 00:00:58.519
+Bruce Lam: And Rango, too.
+
+16
+00:00:59.590 --> 00:01:00.130
+Rangarajan Raman (Cohort 13): Yep.
+
+17
+00:01:02.400 --> 00:01:04.510
+Bruce Lam: Any logistics? Yes. Sushil, go ahead.
+
+18
+00:01:05.170 --> 00:01:19.500
+Sushil Goyal: So, Bruce, while we are getting to know about the various techniques and the various models, right, which are under the hood and used in various use cases, so I think the use cases are something which would help us understand, and the second aspect is.
+
+19
+00:01:19.660 --> 00:01:30.549
+Sushil Goyal: When do we get to the designing piece of it? I see that there are sessions in… falling from the sixth module onwards, so is it gonna get deep into, like, okay, what
+
+20
+00:01:30.550 --> 00:01:40.299
+Sushil Goyal: should we be going after designing? How should we be looking at building governance around it, or is it going to be at a pretty high level? So that's what I'm trying to understand, right?
+
+21
+00:01:40.570 --> 00:01:43.390
+Bruce Lam: Well, that's a good question. So, yes.
+
+22
+00:01:43.900 --> 00:01:52.910
+Bruce Lam: The governance piece we don't touch on as deeply as, we should, because I think most of these products and services are…
+
+23
+00:01:54.090 --> 00:02:01.169
+Bruce Lam: are thought of more as a product level, but you're right, if you're using this, like, internally for enterprise,
+
+24
+00:02:01.420 --> 00:02:11.469
+Bruce Lam: governance is really important, so we should add some… Let me think about that and add some context around that around… maybe next week. But this week, yeah, go ahead.
+
+25
+00:02:11.470 --> 00:02:29.230
+Sushil Goyal: Yeah, because what I'm thinking is, right, like, from a… when you're trying to build a model, fine, you're going to be designing it, but you need to take care of, explainability, transparency, responsibility, all of those aspects in building a responsible AI agent, or an AI model, whatsoever we are trying to build.
+
+26
+00:02:29.230 --> 00:02:35.710
+Sushil Goyal: So, how do you even think? So, my main focus from this course was to understand how do you take what you learn, like.
+
+27
+00:02:36.170 --> 00:02:47.170
+Sushil Goyal: Be it cloud, be it any of the technologies which are running right now, or be it the traditional ML practices, how do you bring it to life? That's what I'm expecting to learn out of this course, so that's…
+
+28
+00:02:47.170 --> 00:02:56.719
+Sushil Goyal: Something which I have not seen in the first session we… first module, we touched upon it briefly, like, how do you anchor it, but then it has gone a little too deep.
+
+29
+00:02:56.820 --> 00:03:00.609
+Sushil Goyal: when does that come reeling back, is what I wanted to know.
+
+30
+00:03:01.100 --> 00:03:08.660
+Bruce Lam: Yeah, a little bit today, so in terms of observability, explainability, I do have a, a case study that we're gonna go over today.
+
+31
+00:03:08.880 --> 00:03:14.440
+Bruce Lam: Yeah, no, so good question, Sushil, and I'll keep that in mind to bring more of that together.
+
+32
+00:03:14.950 --> 00:03:22.719
+John Andrews: Well, I do know… sorry to interrupt, this is John. I took the strategy course, the product and strategy course, and there's a lot of governance
+
+33
+00:03:22.970 --> 00:03:27.710
+John Andrews: topics and discussions in that other course. So there's the… I guess it's the…
+
+34
+00:03:28.160 --> 00:03:40.320
+John Andrews: The sister course to this one that includes product strategy and implementation and those type of things, which is really kind of, like, at a very high level, but it does talk a lot about governance and data security and how to
+
+35
+00:03:40.750 --> 00:03:43.379
+John Andrews: implement the ethical standards in your AI.
+
+36
+00:03:44.530 --> 00:03:45.100
+Sushil Goyal: Okay.
+
+37
+00:03:45.270 --> 00:03:46.449
+Sushil Goyal: Thanks for that, John.
+
+38
+00:03:48.710 --> 00:03:50.489
+Bruce Lam: Amunjin, go ahead.
+
+39
+00:03:50.950 --> 00:04:01.549
+Amungun Ngando: Oh, hi, thank you. So, I got a logistic question. My question is, is a lot of material in here, and I'm trying to go through, but some of it is really dense.
+
+40
+00:04:02.170 --> 00:04:17.879
+Amungun Ngando: And I feel like I'll need a little bit more time, or maybe to go over the material more than once. So I just wanted to find out, at the end of the course, how much access do we have to all the materials?
+
+41
+00:04:19.019 --> 00:04:26.419
+Bruce Lam: So, my understanding with this particular course is I do think it does close at the end of the course.
+
+42
+00:04:27.219 --> 00:04:40.829
+Bruce Lam: So, if I haven't shared this already, I think I have. What I recommend you do is go into a number of places. Let me just show you… I'll show everyone real quick as a… as a reminder.
+
+43
+00:04:40.959 --> 00:04:42.809
+Bruce Lam: So this is the August cohort.
+
+44
+00:04:43.669 --> 00:04:51.079
+Bruce Lam: And so, for the live sessions, like the one that you're at today, all of the transcripts, the slide decks.
+
+45
+00:04:51.189 --> 00:04:57.899
+Bruce Lam: They are all in here. We can go to last week, for example. Everyone's slide deck's in here.
+
+46
+00:04:58.329 --> 00:05:03.919
+Bruce Lam: And then you'll just go down to the bottom, where it says…
+
+47
+00:05:04.899 --> 00:05:08.959
+Bruce Lam: Resources, and you'll have the transcripts
+
+48
+00:05:09.249 --> 00:05:11.989
+Bruce Lam: You'll have the actual slide deck that we used.
+
+49
+00:05:12.099 --> 00:05:14.979
+Bruce Lam: So definitely take copies of those to review.
+
+50
+00:05:15.089 --> 00:05:17.419
+Bruce Lam: But in terms of the course content.
+
+51
+00:05:17.619 --> 00:05:21.199
+Bruce Lam: There is a, after every session, a really, really nice…
+
+52
+00:05:21.529 --> 00:05:25.839
+Bruce Lam: I always forget whether it's at the beginning or at the end, so you have to bear with me while I find it.
+
+53
+00:05:26.209 --> 00:05:33.769
+Bruce Lam: It is called the… Let's see…
+
+54
+00:05:34.549 --> 00:05:36.999
+Bruce Lam: Here we go, quick reference guide and transcripts.
+
+55
+00:05:37.179 --> 00:05:46.149
+Bruce Lam: So what this is, is not… the quick reference guide is a summary of the key and major concepts for this particular module.
+
+56
+00:05:46.489 --> 00:05:50.159
+Bruce Lam: So if you open that up, it'll tell you what the goals were for every module.
+
+57
+00:05:50.789 --> 00:05:54.209
+Bruce Lam: All the different kind of terms, and then it's pretty good.
+
+58
+00:05:54.339 --> 00:05:57.179
+Bruce Lam: And then, what's maybe just as good.
+
+59
+00:05:57.549 --> 00:06:03.179
+Bruce Lam: For long-term, is this is a… oops, sorry, this is a video transcript.
+
+60
+00:06:03.739 --> 00:06:12.809
+Bruce Lam: So everything that Professor Bryan says, or whichever one of the professors are in the asynchronous videos for that week, you'll have a transcript of everything that they said in the video.
+
+61
+00:06:12.929 --> 00:06:19.589
+Bruce Lam: So you can have a copy of that as well to take, you know, kind of… you won't have the video itself, but at least you'll have the text of the video.
+
+62
+00:06:19.719 --> 00:06:27.530
+Amungun Ngando: So, basically, the strategy is just to… Download all the, the transcripts.
+
+63
+00:06:28.310 --> 00:06:31.299
+Amungun Ngando: And, of course, the reference materials as well.
+
+64
+00:06:31.990 --> 00:06:35.079
+Bruce Lam: Yeah, that's definitely one strategy.
+
+65
+00:06:36.390 --> 00:06:37.900
+Amungun Ngando: Okay, thank you.
+
+66
+00:06:38.520 --> 00:06:41.649
+Bruce Lam: Yeah, absolutely, thanks for asking. Yeah, it does… it's a lot of material, I agree.
+
+67
+00:06:43.950 --> 00:06:59.119
+Bruce Lam: Okay, so to get practical, yeah, I want to make this super practical. So, if there aren't any more questions, we'll go ahead and start applying, because now we have given you… I know it's been a fire hose, but now we've given you kind of the foundations of the algorithms.
+
+68
+00:06:59.310 --> 00:07:03.139
+Bruce Lam: So now we can say, hey, how… what does this actually mean when it's applied?
+
+69
+00:07:03.500 --> 00:07:07.869
+Bruce Lam: So if there are no further questions, we'll go ahead and jump right into it.
+
+70
+00:07:08.210 --> 00:07:18.580
+Bruce Lam: Okay, so this is one of the most, impressive… again, there's no kickbacks, there's no associations, just in terms of making AI video avatars.
+
+71
+00:07:18.640 --> 00:07:29.170
+Bruce Lam: This was my… the first time that I saw something which really opened my eyes and said, oh, this is how you bring together deep learning, generative video.
+
+72
+00:07:29.300 --> 00:07:35.829
+Bruce Lam: To actually provide some value. And I saw this in a different context, and I haven't seen that video since.
+
+73
+00:07:37.630 --> 00:07:44.119
+Bruce Lam: vaguely, my memory, and it's probably incorrect because I'm a human, and my memory, you know, not reliable.
+
+74
+00:07:44.300 --> 00:07:52.330
+Bruce Lam: I thought it was during a Super Bowl video, where Mark Cuban was giving, like, a speech to, like, all of his companies around the world.
+
+75
+00:07:52.700 --> 00:07:55.460
+Bruce Lam: And in real time, as he was talking.
+
+76
+00:07:55.730 --> 00:08:05.319
+Bruce Lam: His… he was… his words were being translated in real time to the proper languages and the proper contexts around the world, so all of his businesses could understand what he was saying at the same time.
+
+77
+00:08:05.590 --> 00:08:12.820
+Bruce Lam: And that, to me, is what, one use case of what HeyGen can do. And let me make sure I'm sharing sound so you can hear it.
+
+78
+00:08:14.140 --> 00:08:15.549
+Bruce Lam: And of course, I wasn't.
+
+79
+00:08:15.840 --> 00:08:19.379
+Bruce Lam: Okay Go one more try… okay.
+
+80
+00:08:19.580 --> 00:08:22.720
+Bruce Lam: So, for example, if we start on this video.
+
+81
+00:08:24.750 --> 00:08:26.729
+Audio shared by Bruce Lam: Welcome to the world of HeyGen.
+
+82
+00:08:26.970 --> 00:08:31.640
+Audio shared by Bruce Lam: Where AI-powered storytelling brings your idea to life, without a camera.
+
+83
+00:08:31.920 --> 00:08:38.149
+Audio shared by Bruce Lam: Write once, generate everywhere. Need Spanish? French? Japanese?
+
+84
+00:08:38.280 --> 00:08:41.240
+Audio shared by Bruce Lam: Switch languages and keep perfect lip sync.
+
+85
+00:08:41.500 --> 00:08:44.120
+Audio shared by Bruce Lam: HeyGen makes video creation effortless.
+
+86
+00:08:45.220 --> 00:08:47.620
+Bruce Lam: That was the, the English one, and then here's the Spanish.
+
+87
+00:08:47.620 --> 00:09:00.180
+Audio shared by Bruce Lam: Bienvenido al mundo deijen, donde la narracion impulsada por ya da vida a tuidea sin necesidad de una camara. Escribe una vez, genera en todas partes. Necesitas espanol, frances.
+
+88
+00:09:00.500 --> 00:09:02.800
+Bruce Lam: And then here's the one, same thing, just in Chinese.
+
+89
+00:09:02.800 --> 00:09:18.920
+Audio shared by Bruce Lam: Yi Rangguan Mei.
+
+90
+00:09:19.810 --> 00:09:32.360
+Bruce Lam: And so, I don't know if this is a real person, you can generate an avatar of yourself, so you can upload some photos and videos of yourself, and it'll generate a character that you can use, just like Professor Bryan did in this week's material.
+
+91
+00:09:33.300 --> 00:09:44.929
+Bruce Lam: So, here's one use case for this technology, again, combining, most likely under the hood, some sort of a transformer generative technology in addition to a video generation technology here.
+
+92
+00:09:45.840 --> 00:09:47.780
+Bruce Lam: Has anyone used this before?
+
+93
+00:09:48.110 --> 00:09:49.419
+Bruce Lam: Or something similar?
+
+94
+00:09:54.220 --> 00:10:03.770
+Bruce Lam: So then the question becomes, here, I gave you one use case for this. Can you think of any other use cases? And there's a few up here, so before I show you what they think.
+
+95
+00:10:03.960 --> 00:10:05.570
+Bruce Lam: You could use this for.
+
+96
+00:10:06.890 --> 00:10:08.799
+Bruce Lam: What do you think you could use this for?
+
+97
+00:10:13.640 --> 00:10:15.589
+Amungun Ngando: International board meetings.
+
+98
+00:10:20.950 --> 00:10:25.300
+Denis Tambwe: We can use that for people who used to… who are used to…
+
+99
+00:10:25.750 --> 00:10:30.760
+Denis Tambwe: To speak to large audiences in different countries.
+
+100
+00:10:31.310 --> 00:10:37.410
+Denis Tambwe: They can use that for, you know, doing online and direct translation to other people, right?
+
+101
+00:10:38.930 --> 00:10:40.819
+Bruce Lam: Absolutely, absolutely. And…
+
+102
+00:10:41.310 --> 00:10:47.829
+Bruce Lam: I'm aware that I anchored you a little bit on the translation piece. Both of those ideas were fantastic.
+
+103
+00:10:48.360 --> 00:10:53.029
+Bruce Lam: If we take just the concept away from translation, but a…
+
+104
+00:10:53.900 --> 00:11:03.430
+Bruce Lam: an avatar that you can have articulate points, that you can have, essentially, be a digital twin of yourself. What could that be used for?
+
+105
+00:11:12.030 --> 00:11:13.460
+John Andrews: Attend meetings for you.
+
+106
+00:11:13.810 --> 00:11:22.259
+Bruce Lam: That's a little bit on the mischievous side there, John. But true, it's true.
+
+107
+00:11:24.180 --> 00:11:26.860
+Pradeep Hooda: about yourself on a LinkedIn profile or something?
+
+108
+00:11:27.910 --> 00:11:41.389
+Bruce Lam: There you go. Yeah, that's actually… there was… I'm not sure if I still have the demo, but Reed Hastings, who is the founder of LinkedIn, he actually did that, right? So he actually created a digital twin of himself using this avatar technology.
+
+109
+00:11:41.570 --> 00:11:47.010
+Bruce Lam: And… Yeah, kind of had a conversation with himself, so it was really interesting.
+
+110
+00:11:47.580 --> 00:11:48.890
+Bruce Lam: Atwa, go ahead.
+
+111
+00:11:50.090 --> 00:12:01.930
+Atwa Othman: Yeah, well, the use cases that the colleagues mentioned, one other thing is, the ability for you to multiply trainings, or…
+
+112
+00:12:02.030 --> 00:12:18.960
+Atwa Othman: our meetings or general messages, you have to pass through a team, company, customers, or whatever audience. You can do it in many different languages using your avatar, so you would be able to scale that and…
+
+113
+00:12:19.040 --> 00:12:22.679
+Atwa Othman: Speak, to more audiences.
+
+114
+00:12:22.980 --> 00:12:28.790
+Atwa Othman: No, I have a question on that, Bruce, and I even, like, used and tested,
+
+115
+00:12:29.130 --> 00:12:39.970
+Atwa Othman: Google Meets, real-time translation, where I'm speaking with you in English, and the other person, if they speak Spanish or whatever other language within their
+
+116
+00:12:40.170 --> 00:12:49.229
+Atwa Othman: their skills. It would translate real time. It's not perfect yet, it has some issues, but it's reasonable.
+
+117
+00:12:49.490 --> 00:12:52.960
+Atwa Othman: But… a question I have is…
+
+118
+00:12:53.270 --> 00:12:56.580
+Atwa Othman: This could be used for good or bad, right?
+
+119
+00:12:56.580 --> 00:12:57.060
+Bruce Lam: Somewhere.
+
+120
+00:12:57.060 --> 00:13:04.829
+Atwa Othman: has a picture of you, they could do an avatar of you talking something nice, or they can use it for bad also.
+
+121
+00:13:05.120 --> 00:13:13.569
+Atwa Othman: Is there a key, or are we gonna see something throughout our classes where I can,
+
+122
+00:13:13.940 --> 00:13:23.469
+Atwa Othman: start to hide or create an image, like a public profile that AI cannot,
+
+123
+00:13:23.910 --> 00:13:33.040
+Atwa Othman: Do this sort of, thing, or someone cannot do it over that, let's say, picture or image or profile.
+
+124
+00:13:33.190 --> 00:13:42.559
+Atwa Othman: Or is that something where… something that can deceive the AI from your real face? That would be my question.
+
+125
+00:13:43.030 --> 00:13:48.730
+Bruce Lam: There were several amazing questions there, Atwa, and in fact.
+
+126
+00:13:48.860 --> 00:14:01.510
+Bruce Lam: You know, OpenAI, they've tried, including video generation, which they abandoned, they've tried a number of different avenues, and in fact, one of them was kind of exactly what you're talking about. There was their first
+
+127
+00:14:01.630 --> 00:14:04.680
+Bruce Lam: Concept at a physical hardware product.
+
+128
+00:14:05.050 --> 00:14:15.249
+Bruce Lam: was a blockchain-based product that would, like, you'd be used to validate your identity. I think they called it WorldCoin or something like that, where everyone would have one of these items, and this would then
+
+129
+00:14:16.280 --> 00:14:24.450
+Bruce Lam: be your, you know, virtual ID to say, hey, this is real, this is me, and not some sort of an AI creation. So they saw this problem coming.
+
+130
+00:14:24.570 --> 00:14:30.000
+Bruce Lam: And in fact, most recently, And it's causing a bit of commotion. Claude.
+
+131
+00:14:30.260 --> 00:14:35.380
+Bruce Lam: has decided, Cloud of Anthropic has decided to… they call it a watermark.
+
+132
+00:14:36.580 --> 00:14:40.760
+Bruce Lam: So whenever you use Claude to write for you, it's going to…
+
+133
+00:14:41.020 --> 00:14:47.589
+Bruce Lam: Create certain patterns within the text that are really not that noticeable to a human.
+
+134
+00:14:47.980 --> 00:14:55.540
+Bruce Lam: But that if you were to run that same text directly to an AI detector, it would say, yeah, this was claud-generated.
+
+135
+00:14:55.770 --> 00:15:04.209
+Bruce Lam: And so that is… it's a… it's… you've identified a problem that's very, very prevalent right now. In fact, many participants who come through this course, they ask me.
+
+136
+00:15:04.370 --> 00:15:07.200
+Bruce Lam: Is there a way to definitely guarantee
+
+137
+00:15:07.490 --> 00:15:10.389
+Bruce Lam: detection of something, if it's AI-generated or not.
+
+138
+00:15:10.780 --> 00:15:17.569
+Bruce Lam: And not really. I mean, that's the… one of the questions that I got a couple cohorts ago was, I'm sure that when we… you submit your assignments.
+
+139
+00:15:17.860 --> 00:15:26.899
+Bruce Lam: that we over here on the MIT program side, we have these super advanced AI detectors that go through there and tell us if it's AI-generated or not, and the answer is no.
+
+140
+00:15:27.170 --> 00:15:31.149
+Bruce Lam: Because if you decide to take this course and put in all of this effort.
+
+141
+00:15:31.460 --> 00:15:40.179
+Bruce Lam: and just have Claude generate your homework assignments, you know, it's… it's kind of… you're the person who's losing out on the… the education piece of it, so…
+
+142
+00:15:40.420 --> 00:15:44.120
+Bruce Lam: It's very much a double-edged sword, Atwa, so thank you for bringing that up.
+
+143
+00:15:44.310 --> 00:15:51.260
+Bruce Lam: And it's not a solved problem. And if you want to solve it, there's definitely lots of companies coming up to try to understand this use case.
+
+144
+00:15:52.490 --> 00:16:03.570
+Bruce Lam: So, to wrap up this section, some of the other… someone said learning and development, so generating learning materials. In fact, we had one participant, I think, two cohorts ago, who… they had never seen this.
+
+145
+00:16:04.150 --> 00:16:20.290
+Bruce Lam: And they said, oh my gosh, we had literally just finished this huge learning and development campaign, it cost us, like, $2 million, or something like that. And if we would have had… if they had known this had existed, could have saved them a lot of effort by doing… by not having to do the localization.
+
+146
+00:16:20.700 --> 00:16:27.580
+Bruce Lam: Sales, marketing, localization, real estate is a new one that they just put up here recently.
+
+147
+00:16:27.810 --> 00:16:34.930
+Bruce Lam: So yeah, some really interesting use cases for how to use a technology like this. And now you kind of know a little bit how it works under the hood.
+
+148
+00:16:36.180 --> 00:16:39.880
+Bruce Lam: Jaime said, I saw a YouTube channel that looked entirely created by AI. Yep.
+
+149
+00:16:40.160 --> 00:16:42.800
+Bruce Lam: No doubt, no doubt. It's,
+
+150
+00:16:45.020 --> 00:16:53.559
+Bruce Lam: Okay, so to take a step back and to reground us into… and kind of do a little bit of a repetition, a little bit of a,
+
+151
+00:16:53.710 --> 00:17:02.949
+Bruce Lam: a recap, so that we get these… keep these concepts sharp. So, when we're in the world of deep learning, which is what this week is all about, applied deep learning.
+
+152
+00:17:03.440 --> 00:17:09.919
+Bruce Lam: The first step, right, in order for our data to be usable by our deep learning neural networks.
+
+153
+00:17:10.030 --> 00:17:15.979
+Bruce Lam: is to break down the components. So if it's text, like, we're also used to using these chatbots these days.
+
+154
+00:17:16.210 --> 00:17:24.010
+Bruce Lam: Your input needs to be tokenized, or broken down into those token sequences. And remember, it's not one-to-one.
+
+155
+00:17:24.240 --> 00:17:31.600
+Bruce Lam: Especially if it's in a different language other than one of the, you know, English or something like that, it's definitely not one-to-one. That's how you tokenize text.
+
+156
+00:17:31.840 --> 00:17:33.459
+Bruce Lam: Tokenize an image.
+
+157
+00:17:33.640 --> 00:17:39.169
+Bruce Lam: Very, very similarly, you break down that image into maybe its pixel or other logical components.
+
+158
+00:17:39.470 --> 00:17:49.840
+Bruce Lam: And that is how you… because that's what becomes the input into your deep learning model. If it's audio, you break that down by little clips, or little segments of the audio.
+
+159
+00:17:49.940 --> 00:17:52.479
+Bruce Lam: And then if it's video, you go frame by frame.
+
+160
+00:17:52.630 --> 00:17:56.370
+Bruce Lam: So, any input has to be broken down.
+
+161
+00:17:56.730 --> 00:17:58.310
+Bruce Lam: For our…
+
+162
+00:17:58.500 --> 00:18:03.980
+Bruce Lam: our AI systems in general, and then large language models specifically, in order for them to be able to process that.
+
+163
+00:18:07.260 --> 00:18:13.810
+Bruce Lam: Okay, after it's broken down, the next step, if we remember from last week, is we…
+
+164
+00:18:13.970 --> 00:18:21.310
+Bruce Lam: In training, we have created this mental model, this mental map, called an embedding space.
+
+165
+00:18:21.760 --> 00:18:38.180
+Bruce Lam: it is… it's like, all of us have some sort of a mental map of the world, of different geography, and when we say a country like Paris, we all know that's in Europe. It's that same sort of idea, except that this mental map was developed in training by training on the
+
+166
+00:18:38.440 --> 00:18:40.850
+Bruce Lam: Predominantly the data on the internet.
+
+167
+00:18:41.120 --> 00:18:47.299
+Bruce Lam: So the text and the words on the internet. So after tokenization, the words are assigned an address.
+
+168
+00:18:47.710 --> 00:18:53.769
+Bruce Lam: That address is called its embedding, it's its vector, and then it's embedded into that embedding space.
+
+169
+00:18:54.570 --> 00:19:00.689
+Bruce Lam: And that's how these systems understand context and understand what words are similar to each other.
+
+170
+00:19:01.720 --> 00:19:10.060
+Bruce Lam: So this was a little bit of a recap, but the reason I'm talking about this is because in the conversation in the Q&A this week, someone brought up the concept of hallucination.
+
+171
+00:19:11.260 --> 00:19:18.500
+Bruce Lam: And there are still… there's lots of very, very interesting research on why do especially large language models hallucinate.
+
+172
+00:19:18.740 --> 00:19:25.040
+Bruce Lam: And I was thinking about this in preparation for this course, and I realized that the term hallucination is not
+
+173
+00:19:25.850 --> 00:19:27.730
+Bruce Lam: precisely defined.
+
+174
+00:19:28.070 --> 00:19:30.950
+Bruce Lam: So, I think when the models
+
+175
+00:19:31.370 --> 00:19:34.940
+Bruce Lam: Present a result that is unexpected.
+
+176
+00:19:35.670 --> 00:19:40.609
+Bruce Lam: or misaligned with your inputs, people call that hallucination.
+
+177
+00:19:41.580 --> 00:19:47.600
+Bruce Lam: Fundamentally, we've talked about this a little bit, Is overfitting a hallucination.
+
+178
+00:19:47.960 --> 00:19:51.280
+Bruce Lam: Because one of the most…
+
+179
+00:19:52.480 --> 00:19:58.840
+Bruce Lam: One of the dangers of going into, like, a neural network where you lose observability is…
+
+180
+00:19:58.950 --> 00:20:02.689
+Bruce Lam: That they are very, very good at finding you an answer.
+
+181
+00:20:02.880 --> 00:20:16.260
+Bruce Lam: And in my experience, having gone from, you know, supervised learning models, having had to build neural networks by hand, you know, for grad school, they just, they overfit a lot.
+
+182
+00:20:16.520 --> 00:20:21.389
+Bruce Lam: And so, if you get a response out of a neural network, a prediction, a number.
+
+183
+00:20:21.700 --> 00:20:23.499
+Bruce Lam: And it happens to be wrong.
+
+184
+00:20:24.560 --> 00:20:33.479
+Bruce Lam: do we nowadays just automatically consider that a hallucination instead of categorizing that as overfitting? That's one question.
+
+185
+00:20:34.510 --> 00:20:35.390
+Bruce Lam: So…
+
+186
+00:20:36.080 --> 00:20:44.419
+Bruce Lam: Sorry for going on a little bit of a tangent, but it's all along the same topic. This is really interesting research out of Anthropic, and I really kind of like this…
+
+187
+00:20:44.770 --> 00:20:54.039
+Bruce Lam: hypotheses here on one reason why large language models hallucinate. It's not… it's not the be-all, end-all, but it's one possible hypothesis, one possible reason.
+
+188
+00:20:54.160 --> 00:21:05.439
+Bruce Lam: And it really works with what we've been learning here, so. So this particular three-dimensional graph here, this is the embedding space, just like this one that I showed you a couple seconds ago.
+
+189
+00:21:05.740 --> 00:21:12.459
+Bruce Lam: So this is an embedding space. So post-training, after the model has been… the large language model has been trained.
+
+190
+00:21:13.290 --> 00:21:18.409
+Bruce Lam: The researchers at Anthropic, what they do is they try to anchor the personality
+
+191
+00:21:18.900 --> 00:21:22.659
+Bruce Lam: Of the model, to be a very helpful assistant.
+
+192
+00:21:23.050 --> 00:21:31.499
+Bruce Lam: And this is the embedding space, and what's… what I also think is interesting here is you now understand what principal components are from Week 2.
+
+193
+00:21:31.690 --> 00:21:40.319
+Bruce Lam: Principal component analysis, and this embedding space is defined as having three different principal components, so there is a dimensionality reduction going on here.
+
+194
+00:21:41.140 --> 00:21:51.680
+Bruce Lam: And they try to align or anchor the model along this assistant axis, which is actually not a sharp
+
+195
+00:21:53.320 --> 00:21:55.570
+Bruce Lam: vertex. It is fuzzy.
+
+196
+00:21:55.690 --> 00:22:01.709
+Bruce Lam: So, assistant is somewhere in between a teacher and an evaluator, and a teacher and a librarian.
+
+197
+00:22:01.810 --> 00:22:17.780
+Bruce Lam: It's somewhere in between a sage and a demon, right? So these are the different personalities that just came out of all the stuff that it was… that it ingested from the internet. All of these… everything, you know, astronomy, astrophysics, astrology.
+
+198
+00:22:18.250 --> 00:22:25.140
+Bruce Lam: They were all… they were all sucked in, they were all trained on, so that's why these, personalities, these axes are so fuzzy.
+
+199
+00:22:25.860 --> 00:22:29.550
+Bruce Lam: And so this particular hypothesis
+
+200
+00:22:29.730 --> 00:22:34.609
+Bruce Lam: Is that when you first start a conversation from scratch with your large language model.
+
+201
+00:22:34.750 --> 00:22:38.469
+Bruce Lam: It's very much anchored onto this assistant axis.
+
+202
+00:22:38.610 --> 00:22:40.440
+Bruce Lam: But over time.
+
+203
+00:22:40.640 --> 00:22:48.610
+Bruce Lam: As your conversation starts maybe expanding a little bit, or the context starts growing and growing, it becomes decoupled.
+
+204
+00:22:48.720 --> 00:22:51.890
+Bruce Lam: From this axis, and it starts going down these
+
+205
+00:22:52.000 --> 00:22:56.720
+Bruce Lam: Other personality paths, and that's why sometimes it feels like it goes absolutely crazy.
+
+206
+00:22:58.080 --> 00:23:02.289
+Bruce Lam: One of the problems, or the dilemmas here.
+
+207
+00:23:02.720 --> 00:23:07.919
+Bruce Lam: Is that this makes them unreliable and not necessarily repeatable.
+
+208
+00:23:08.170 --> 00:23:15.810
+Bruce Lam: So, this just happened to me, literally yesterday. One of my co-founders had created a
+
+209
+00:23:16.440 --> 00:23:24.560
+Bruce Lam: an instruction file called a Markdown file for all of us to reference as we are building our AI agents together.
+
+210
+00:23:24.890 --> 00:23:29.109
+Bruce Lam: And he explicitly said in his file, do not let others
+
+211
+00:23:29.690 --> 00:23:42.960
+Bruce Lam: commit to this particular repository, because he was working on it, he wanted to be isolated, but we all have, you know, admin access to our code, so he just said, if I read this in an agent file, the agents shouldn't come in.
+
+212
+00:23:43.130 --> 00:23:44.810
+Bruce Lam: And change my code.
+
+213
+00:23:45.550 --> 00:23:52.140
+Bruce Lam: But it happened! One of our newest team members, his Cloud agents went and changed that code.
+
+214
+00:23:52.330 --> 00:23:58.589
+Bruce Lam: And then he was… my co-founder was really perplexed. He's like, I put this instruction explicitly
+
+215
+00:23:59.190 --> 00:24:01.529
+Bruce Lam: And, and it still happened.
+
+216
+00:24:01.700 --> 00:24:10.690
+Bruce Lam: And another example of this is one of my colleagues who is currently an organizational behavior researcher at Stanford.
+
+217
+00:24:11.080 --> 00:24:19.660
+Bruce Lam: said, same thing. She has created a set of… they're called skills, so procedures is one way to think about them for her AI agents.
+
+218
+00:24:19.900 --> 00:24:26.909
+Bruce Lam: And she expects them, whenever she triggers the skill, expects every step to be followed.
+
+219
+00:24:27.260 --> 00:24:39.770
+Bruce Lam: And she's finding that as she uses the skill more and more, it only… most recently, it started to only start to follow, like, the first three steps, and then just kind of drifts off and doesn't follow the entire skill to its conclusion.
+
+220
+00:24:40.850 --> 00:24:49.020
+Bruce Lam: Again, we don't know exactly why the systems decide to only do certain things, or only…
+
+221
+00:24:49.470 --> 00:24:54.820
+Bruce Lam: You know, abide by certain things, and ignore other instructions.
+
+222
+00:24:55.080 --> 00:25:01.860
+Bruce Lam: But in the context of long horizon conversations, as you're filling up your context window.
+
+223
+00:25:02.070 --> 00:25:10.060
+Bruce Lam: This one hypothesis from… Anthropics says that if you do start to inject concepts.
+
+224
+00:25:10.250 --> 00:25:22.650
+Bruce Lam: it will start following those concepts. So, for example, with my co-founder who said, do not let other people write to my repository. Now, that concept of writing to this repository
+
+225
+00:25:23.070 --> 00:25:25.420
+Bruce Lam: Is in the context.
+
+226
+00:25:25.710 --> 00:25:27.770
+Bruce Lam: So even though he wrote, do not.
+
+227
+00:25:28.030 --> 00:25:35.750
+Bruce Lam: You see that the words do… the words do not. They have some sort of weight, but the other words write to this repository
+
+228
+00:25:35.870 --> 00:25:42.719
+Bruce Lam: also are now in the context of the conversation. So…
+
+229
+00:25:43.340 --> 00:25:48.809
+Bruce Lam: That's… that's… if you… if you're following me here, it's like planting that seed, and if you've done this before.
+
+230
+00:25:48.910 --> 00:25:51.869
+Bruce Lam: Especially with video or,
+
+231
+00:25:52.360 --> 00:26:03.480
+Bruce Lam: photo generation, and you write something, and the photo doesn't come out quite right, you almost can't remove it. You can't remove those details because it's been locked into that context already.
+
+232
+00:26:03.790 --> 00:26:04.960
+Bruce Lam: Go ahead, Dennis.
+
+233
+00:26:08.730 --> 00:26:13.869
+Denis Tambwe: Can we conclude there? Can you argue that, can we argue that…
+
+234
+00:26:14.910 --> 00:26:17.119
+Denis Tambwe: To some extent, we are losing control.
+
+235
+00:26:17.390 --> 00:26:24.600
+Denis Tambwe: on the system. Because now the system is deciding without… Our instruction, right?
+
+236
+00:26:26.500 --> 00:26:38.150
+Bruce Lam: That's definitely one framing. In fact, who was it just today? Someone… oh, Jensen. Jensen Huang said that, you know, control is an engineering,
+
+237
+00:26:38.510 --> 00:26:40.809
+Bruce Lam: It's an engineering problem that can be solved.
+
+238
+00:26:41.140 --> 00:26:44.180
+Bruce Lam: I don't know. These things are quite opaque.
+
+239
+00:26:44.400 --> 00:26:53.349
+Bruce Lam: And, just to wrap up, it was a very good question, and Adil, that's exactly what's going on here as well. We've made this neural network
+
+240
+00:26:54.530 --> 00:27:03.769
+Bruce Lam: to mimic the human brain. And right, when I say, don't think of… when you say, don't think of an elephant, it's impossible to not think of an elephant. And,
+
+241
+00:27:04.210 --> 00:27:14.049
+Bruce Lam: Denis… See, control is such a human… concept. Such a, a,
+
+242
+00:27:15.190 --> 00:27:21.080
+Bruce Lam: I mean, if you think of it fundamentally about how these systems work, it makes sense to me, right? Whether that's…
+
+243
+00:27:22.090 --> 00:27:25.870
+Bruce Lam: whether, you know, whether I can tell you not to do something.
+
+244
+00:27:26.140 --> 00:27:29.410
+Bruce Lam: And, and you do it or not,
+
+245
+00:27:29.570 --> 00:27:33.860
+Bruce Lam: in human terms, if I tell you don't use AI for your homework assignment.
+
+246
+00:27:34.360 --> 00:27:42.499
+Bruce Lam: Are you gonna do it or not? I don't know, I can't control you. To me, to me, it's similar in these systems, just fundamentally about how they work.
+
+247
+00:27:42.810 --> 00:27:47.009
+Bruce Lam: I know there's a lot of discussion right now in the media about,
+
+248
+00:27:47.690 --> 00:27:54.809
+Bruce Lam: about whether there's lots of control, or rogue agents, or things like that. There's a lot of details around how those systems were set up.
+
+249
+00:27:55.180 --> 00:27:59.859
+Bruce Lam: That make it sound a little more controversial, a little more sci-fi, I think.
+
+250
+00:28:00.030 --> 00:28:10.539
+Denis Tambwe: So let's say, if I don't use the terminology of control, but I can still say the system can take its own route without following instruction, right?
+
+251
+00:28:10.800 --> 00:28:11.570
+Bruce Lam: Right.
+
+252
+00:28:11.570 --> 00:28:12.429
+Denis Tambwe: Foodie called it?
+
+253
+00:28:13.070 --> 00:28:15.819
+Bruce Lam: Call that a non-deterministic response, right?
+
+254
+00:28:15.820 --> 00:28:17.160
+Denis Tambwe: Okay, exactly, yeah.
+
+255
+00:28:17.160 --> 00:28:22.150
+Bruce Lam: Exactly, exactly. And what's nice about this feature, Denis.
+
+256
+00:28:22.390 --> 00:28:29.509
+Bruce Lam: Like we've been saying, it's a double-edged sword, but what's nice about this feature is that it does help you get around obstacles.
+
+257
+00:28:29.910 --> 00:28:31.820
+Bruce Lam: So if you have obstacles.
+
+258
+00:28:33.090 --> 00:28:48.620
+Bruce Lam: like, there's this… there's this one visualization that I saw one time about… is… it was in the… in the space of AI governance, where if… even if you… if you try to govern the AIs, the data agents, the way that we govern humans right now, giving them access codes and unlimited access, essentially.
+
+259
+00:28:48.890 --> 00:28:51.790
+Bruce Lam: Whitelisting what they can do.
+
+260
+00:28:51.930 --> 00:28:54.260
+Bruce Lam: The systems will find a way around that.
+
+261
+00:28:54.390 --> 00:28:56.320
+Bruce Lam: Because of this behavior.
+
+262
+00:28:57.020 --> 00:29:08.119
+Bruce Lam: But yeah, really, really good discussion here. So to conclude, with respect to persona drift and hallucinations, due to persona drift, with respect to coding, it's quite stable.
+
+263
+00:29:08.230 --> 00:29:21.070
+Bruce Lam: But once you start talking philosophy, you see, it just drops off of, it just goes, unanchored. It gets unanchored very, very quickly. Therapy gets unanchored very, very quickly.
+
+264
+00:29:21.230 --> 00:29:24.569
+Bruce Lam: And writing is, you know, somewhere in between. But coding…
+
+265
+00:29:24.750 --> 00:29:34.660
+Bruce Lam: For some reason, maybe coding is text-based, and it's very technical and, well-defined, and rigorous. I don't know, it just anchors to code really well in these days.
+
+266
+00:29:34.780 --> 00:29:36.040
+Bruce Lam: Stays anchored to code.
+
+267
+00:29:38.470 --> 00:29:46.849
+Bruce Lam: Okay, so a little bit of an aside, but I think it's really relevant to what we're learning, and also people were talking about it in the Q&A, so I wanted to talk about it live here.
+
+268
+00:29:47.090 --> 00:29:51.639
+Bruce Lam: But in terms of continuing along the themes of how do we apply these technologies.
+
+269
+00:29:51.800 --> 00:30:05.300
+Bruce Lam: I really thought that the professor set us up to talk about, you know, vision, hearing, smell, taste, and touch, our five senses, and how we can use deep learning specifically to augment these things. So we already talked about,
+
+270
+00:30:05.450 --> 00:30:12.610
+Bruce Lam: the AI avatars, which are a little bit in the realm of vision and voice, so sound and vision.
+
+271
+00:30:13.010 --> 00:30:19.429
+Bruce Lam: With respect to the concept of figure-ground separation, Or signal-noise separation.
+
+272
+00:30:19.600 --> 00:30:29.970
+Bruce Lam: There is a really nice, this is… I don't know if it's open source, but you can… it's free to use, called Segment Anything Model, called SAM, it's out of Meta.
+
+273
+00:30:30.330 --> 00:30:42.060
+Bruce Lam: And it's one of the most… most used in this particular use case where you're trying to identify an object and essentially cut that object or track that object through video.
+
+274
+00:30:42.270 --> 00:30:47.160
+Bruce Lam: And literally, two months ago, as I was creating this deck.
+
+275
+00:30:47.640 --> 00:31:06.850
+Bruce Lam: It was SAM2 at the time, and SAM2 had no generative AI components. It was a pure deep learning algorithm. They have since, in SAM3, introduced the ability to prompt and say, hey, find the dog in this video. But just, I want you to… I want you to separate the generative component from the actual deep learning component.
+
+276
+00:31:07.290 --> 00:31:14.719
+Bruce Lam: So there was no generative component to this. The underlying fundamental technology is not generative.
+
+277
+00:31:15.360 --> 00:31:26.440
+Bruce Lam: But they overlaid this generative, you know, assistant so that you could help do your work faster. And that's actually one way to think about what are the use cases for when I should use generative AI or not.
+
+278
+00:31:27.030 --> 00:31:30.070
+Bruce Lam: Alright, so real quick 2-minute video. Go ahead, Jaime.
+
+279
+00:31:30.570 --> 00:31:42.170
+Jaime V: Oh, I'm sorry, Bruce, we could do this now, or after the video, or at the end of the class, but if… I would like, if you can, go back to that concept that you were talking about of the do not
+
+280
+00:31:42.200 --> 00:31:51.939
+Jaime V: and the right to this repository are both in the context, because I almost got it, but I didn't… it didn't land with me, so we could just go back, circle back, maybe at the end of the class.
+
+281
+00:31:51.940 --> 00:32:02.150
+Bruce Lam: Yeah, no, no, let's do that here, because I think we'll lose the, we'll lose the context. So, it's like the example that, Adil just put in the chat there. It's the same thing as saying.
+
+282
+00:32:03.980 --> 00:32:07.189
+Bruce Lam: To a human, don't think of this elephant.
+
+283
+00:32:08.060 --> 00:32:12.760
+Bruce Lam: Just don't. I don't want you to do anything else, think of anything else, except for an elephant.
+
+284
+00:32:13.010 --> 00:32:22.689
+Bruce Lam: It's impossible. It's already been planted, it's already in your brain. The same thing with the large language models. The concept of being able to write to the repository
+
+285
+00:32:22.840 --> 00:32:27.750
+Bruce Lam: has been planted, and that's all that can really reference, and it's anchored to that.
+
+286
+00:32:27.980 --> 00:32:31.829
+Bruce Lam: If you've had this experience where you've tried to generate
+
+287
+00:32:32.150 --> 00:32:46.450
+Bruce Lam: images, like, the other day, I was trying to generate, it was like, I was trying to generate, like, a cartoon version of my dog, and I didn't like the way that it did this collar, but because the collar was already planted that way in the context, it just wouldn't change it.
+
+288
+00:32:46.540 --> 00:32:54.080
+Bruce Lam: Yeah. Which is, like, everything else around it, but it couldn't… it could not understand that I did not want that caller to be represented that way.
+
+289
+00:32:55.590 --> 00:33:10.099
+Jaime V: Yeah, that happened to me with a Gemini image. It was a DevOps workflow, and I kept saying, your arrows in this workflow are colliding, keep changing it, keep changing it, and it would acknowledge what it saw, but it wouldn't change it. It was so frustrating. Okay.
+
+290
+00:33:10.790 --> 00:33:15.600
+Bruce Lam: That's exactly the concept, that's exactly the concept. And, she's trying to explain…
+
+291
+00:33:15.830 --> 00:33:19.899
+Bruce Lam: Why that happens with this… within the context of hallucination.
+
+292
+00:33:20.740 --> 00:33:21.759
+Jaime V: Okay, thank you.
+
+293
+00:33:21.760 --> 00:33:25.369
+Bruce Lam: No, no, great question. Thanks for letting us have the time to clarify that.
+
+294
+00:33:25.530 --> 00:33:32.400
+Bruce Lam: Okay, so now back to the video, so kind of clear your minds from everything we've done so far. This is an application of vision-based
+
+295
+00:33:32.580 --> 00:33:39.940
+Bruce Lam: Deep learning, like, we call this, you know, machine vision, computer vision, segmenting, separating.
+
+296
+00:33:40.080 --> 00:33:43.599
+Bruce Lam: Your signal from your noise, or your figure from your ground.
+
+297
+00:33:44.630 --> 00:33:52.670
+Audio shared by Bruce Lam: SAM3 is here, a unified model for detection, segmentation, and tracking of objects in videos and images.
+
+298
+00:33:52.670 --> 00:34:16.930
+Audio shared by Bruce Lam: SAM3 takes the click prompting capability of Segment Anything 2 and builds on it, adding text prompting, a powerful tool to easily detect and segment multiple objects of a particular category at once. This speeds up workflows and eliminates the need for manual segmentation of each individual object. SAM3 also enables visual prompting.
+
+299
+00:34:16.929 --> 00:34:26.719
+Audio shared by Bruce Lam: Use object selection to find other similar objects in the same image. And the model also supports follow-up prompts to refine the predictions.
+
+300
+00:34:26.719 --> 00:34:42.699
+Audio shared by Bruce Lam: SAM3 is a powerful toolset for applications in wearables, robotics, entertainment, and creative fields. Try SAM3 in the Segment Anything playground. The Segment Anything line of models is enabling innovative new experiences
+
+301
+00:34:42.810 --> 00:34:49.280
+Audio shared by Bruce Lam: across Meta's apps, including the use of SAM3 for new effects in Instagram's Edits app.
+
+302
+00:34:53.989 --> 00:35:12.149
+Bruce Lam: Yep, so it's more than just, let me go to the next slide real quick. It's more than just video. You can also do audio, to do sound isolation. If you want to cut out some sound or isolate a certain instrument in your audio, you can also do that with this figure-ground separation concept.
+
+303
+00:35:13.469 --> 00:35:20.639
+Bruce Lam: So this is a cool technology. In fact, there's been several people who have tried to use this technology in their capstone projects.
+
+304
+00:35:20.889 --> 00:35:26.739
+Bruce Lam: One of them that I thought was really interesting, which I swear has been implemented now over here at my local
+
+305
+00:35:26.849 --> 00:35:34.469
+Bruce Lam: parking garage at the mall, which was… one of the participants of this course was, you know, running different parking garages, and they said, hey.
+
+306
+00:35:34.589 --> 00:35:46.669
+Bruce Lam: Instead of having counter technologies, or, like, the ticketing technologies that we've been using for so long, can we just use camera-based technologies to count the number of cars that come in and out, and say whether there are free spaces or not?
+
+307
+00:35:46.749 --> 00:36:01.009
+Bruce Lam: And just the other day, at my local garage here, I could just drive in, and it says, yeah, we've… we know that you're here, we know that you're here, you know. If you're here for, you know, fewer than 3 hours, it'll be free, you just drive in and drive out. And so, maybe she implemented it, I don't know, but it was,
+
+308
+00:36:01.089 --> 00:36:09.079
+Bruce Lam: It was a really good concept. And this particular part always, always makes me smile, because, in sports.
+
+309
+00:36:09.309 --> 00:36:26.239
+Bruce Lam: This particular concept of tracking the different motions of the players to run analytics to say, hey, if I want to track this one player, if they're shooting from this corner, what's their shooting percentage if they're shooting from this corner, is it different? If it is, then in real time, I can say, hey, defenders, push the person to this corner because they're weaker.
+
+310
+00:36:26.649 --> 00:36:32.399
+Bruce Lam: We had to create our own custom technology for this at Electronic Arts, when I was on the FIFA team.
+
+311
+00:36:32.919 --> 00:36:41.809
+Bruce Lam: Because… and here's the part where we say, hey, this is a solution looking for a problem to where is the value in this technology?
+
+312
+00:36:41.979 --> 00:36:47.229
+Bruce Lam: So if you know Electronic Arts, the FIFA, now called the FC franchise.
+
+313
+00:36:47.639 --> 00:36:58.219
+Bruce Lam: It's the soccer game, and one of the value propositions of EA's specific game is realism. They want to make the game as realistic as possible.
+
+314
+00:36:58.489 --> 00:37:02.749
+Bruce Lam: And so what we were doing with this technology is recording, segmenting.
+
+315
+00:37:02.899 --> 00:37:20.929
+Bruce Lam: the players' actions on the field, their little nuances, their little ticks, the way that they run, and then taking that, capturing those details, and then putting those into our in-game model, so that when you are playing as Holland or Messi, you run like them, and you really feel like you're that player.
+
+316
+00:37:21.139 --> 00:37:22.709
+Bruce Lam: So that is…
+
+317
+00:37:22.909 --> 00:37:30.939
+Bruce Lam: we understood that the value proposition, that players would buy our game for the realism. And so this was a solution to how do we increase the realism.
+
+318
+00:37:35.829 --> 00:37:38.819
+Bruce Lam: Any other thoughts on this particular application?
+
+319
+00:37:45.479 --> 00:37:53.149
+Bruce Lam: Okay. A very similar technology is called YOLO. You only look once. This one is a…
+
+320
+00:37:53.599 --> 00:37:57.259
+Bruce Lam: I call it a par-baked, it's a pre-trained model.
+
+321
+00:37:57.399 --> 00:38:04.199
+Bruce Lam: That you actually have to finalize. It's… it's… did I show you the example in this particular course?
+
+322
+00:38:04.549 --> 00:38:07.289
+Bruce Lam: It might be coming up here, so I don't want… let me just take a look at the slide.
+
+323
+00:38:07.649 --> 00:38:13.149
+Bruce Lam: I'm not… not yet. Okay, so there's another, if you want to… I'm actually…
+
+324
+00:38:13.409 --> 00:38:24.219
+Bruce Lam: build one of these models yourself? I mean, first of all, both, Sam and Teachable and both SAM and, YOLO you can play with. You can go ahead and either download it yourself.
+
+325
+00:38:24.469 --> 00:38:44.409
+Bruce Lam: Or go to Meta's website and play with. YOLO's a little different. But yeah, you can use these. You can use these in your projects right now. This one is pretty easy to use. It's called Teachable Machine, and I don't know if I have a slide on this, but I'll go ahead and put it in the chat. So you can actually go here, and this is also one of those deep learning neural networks that has been
+
+326
+00:38:45.209 --> 00:38:48.419
+Bruce Lam: Majority trained, so it's a pre-trained model.
+
+327
+00:38:48.649 --> 00:38:54.839
+Bruce Lam: And what you can do with this is you can bring your old… your own images and categories.
+
+328
+00:38:55.169 --> 00:39:01.539
+Bruce Lam: And train… finish training the model on, you know, you label your data, you say these are…
+
+329
+00:39:03.209 --> 00:39:12.319
+Bruce Lam: So one of the examples that I remember somebody doing is, like, records. Like, they had their, pop records, their classical music, you know, their…
+
+330
+00:39:12.439 --> 00:39:17.979
+Bruce Lam: show tunes, and they would upload all of their albums. And then when there was a new
+
+331
+00:39:18.259 --> 00:39:24.059
+Bruce Lam: album that came out, they could… they could put it into the system, and then it would automatically classify that album for them.
+
+332
+00:39:24.469 --> 00:39:31.569
+Bruce Lam: Or another one that one of my friends, did was… They were building this…
+
+333
+00:39:32.599 --> 00:39:38.119
+Bruce Lam: Like, video game escape room, but that had, real human elements to it, so instead of…
+
+334
+00:39:38.609 --> 00:39:44.379
+Bruce Lam: You know, instead of programming a complex system where you had to use different keys to open different locks, he had one key.
+
+335
+00:39:44.709 --> 00:39:46.319
+Bruce Lam: And,
+
+336
+00:39:47.229 --> 00:40:05.679
+Bruce Lam: that key, he would put it into the keyhole and use a vision, a camera to look at the key, and if that were the right key, then the lock would unlock, so he wouldn't have to build all of these fancy tumblers and different mechanisms. You know, if the player put the right key in there, it would just look at it, and he built that entire thing out of Teachable Machine and deployed it.
+
+337
+00:40:05.989 --> 00:40:11.249
+Bruce Lam: So very, very easy to do, and you can go into real-time production very, very quickly.
+
+338
+00:40:12.369 --> 00:40:15.939
+Bruce Lam: This is an interesting one, so, sorry, back to YOLO.
+
+339
+00:40:17.019 --> 00:40:19.409
+Bruce Lam: I've seen this used in…
+
+340
+00:40:20.639 --> 00:40:36.459
+Bruce Lam: windmill maintenance. So, before technology like this, humans, had… and there was this, this, I don't know if you want to call it a technique, but companies that are called RAT, Rope Access Technologies, and they would actually physically have to climb up
+
+341
+00:40:36.559 --> 00:40:47.589
+Bruce Lam: These immensely tall structures with harnesses, with ropes, and kind of look at them to the best of their ability as humans to say, hey, are there any damage… is there any damage, or are there any cracks?
+
+342
+00:40:47.709 --> 00:40:54.069
+Bruce Lam: On these windmill blades, And if there are, then we should probably take them down for maintenance and repair.
+
+343
+00:40:54.309 --> 00:41:07.519
+Bruce Lam: I saw this technology implemented with drones, where the drones can now fly up to the windmills and meticulously scan the surfaces of all of the windmills, and then identify in near real time, hey.
+
+344
+00:41:07.669 --> 00:41:17.769
+Bruce Lam: there's a crack here, and the model has been trained on what a crack is, so now you can report back to the operator, hey, there's a crack on this particular blade, so we should take this one down.
+
+345
+00:41:17.989 --> 00:41:21.109
+Bruce Lam: So, a lot more thorough, a lot less dangerous.
+
+346
+00:41:21.519 --> 00:41:24.329
+Bruce Lam: I thought that was a good application of this technology.
+
+347
+00:41:27.709 --> 00:41:29.199
+Bruce Lam: Any thoughts or questions?
+
+348
+00:41:36.409 --> 00:41:44.399
+Bruce Lam: Okay, I'm watching the time here. Okay, so now… so we've done quite a bit on vision, that's kind of the easy one. A little bit on sound so far.
+
+349
+00:41:44.979 --> 00:41:46.219
+Bruce Lam: What about touch?
+
+350
+00:41:46.389 --> 00:41:52.149
+Bruce Lam: I think this is where it gets quite interesting. I'm gonna ask you some questions about why this one is…
+
+351
+00:41:52.879 --> 00:42:04.959
+Bruce Lam: less prevalent, less prominent. So, real quick video. Again, it just happens to be from Meta, it's not… this module was not sponsored by Meta, it just happened to be, you know, some examples that I found.
+
+352
+00:42:13.300 --> 00:42:19.209
+Audio shared by Bruce Lam: Hi, I'm Mike. And I'm Mustafa. And we're working on touch perception at Metafair.
+
+353
+00:42:21.320 --> 00:42:33.430
+Audio shared by Bruce Lam: Our MetaFair team is excited to release several cutting-edge developments in robotics and touch perception that mark a significant step forward in our understanding of the physical world and our ability to interact with it in meaningful ways.
+
+354
+00:42:33.750 --> 00:42:41.160
+Audio shared by Bruce Lam: Let's begin with Sparsh. Sparsh is the first general-purpose touch representation that works across any tactile sensor and any task.
+
+355
+00:42:41.370 --> 00:42:59.910
+Audio shared by Bruce Lam: To achieve this, we train Sperch using 460,000 tactile images with self-supervised learning. In benchmarks, we find that Spurs outperforms task and sensor-specific models by an average of over 95%. Sperch unlocks pre-trained backbones that allow us to measure properties like forces and contacts, which are imperceptible through vision.
+
+356
+00:43:00.240 --> 00:43:04.820
+Audio shared by Bruce Lam: Our aim is to empower the community to build and scale these models towards novel applications.
+
+357
+00:43:05.640 --> 00:43:12.810
+Audio shared by Bruce Lam: Which leads us to Digit360, a breakthrough tactile sensor that perceives the world with human-level touch sensing capabilities.
+
+358
+00:43:12.810 --> 00:43:28.419
+Audio shared by Bruce Lam: With on-device AI, Digit 360 processes information locally and makes decisions inspired by the reflex function in people and animals. This allows the sensor to respond quickly to various inputs, such as the poke of a needle or the flex of a tennis ball.
+
+359
+00:43:28.420 --> 00:43:36.180
+Audio shared by Bruce Lam: It responds quickly to various inputs, mimicking the performance of a human finger, making it an innovative solution for multiple applications.
+
+360
+00:43:36.180 --> 00:43:54.949
+Audio shared by Bruce Lam: We've also paired Digit360 with DigitPlexus, a platform that standardizes robotic sensor connections and interactions, mimicking the human hand's touch information processing for embodied AI. DigitPlexus provides hardware and software components for easy integration of touch sensing technology into robotic systems.
+
+361
+00:43:55.720 --> 00:44:13.510
+Audio shared by Bruce Lam: Finally, we are partnering with Gelsight and WANIC Robotics, who are leaders in the industry, to develop and commercialize these touch sensing innovations. Our hope is to bring the community along and work together in driving the progress in AI and robotics. Beyond robotics, these advancements can help bring the physical world and the digital world closer together.
+
+362
+00:44:13.510 --> 00:44:20.899
+Audio shared by Bruce Lam: Imagine picking up an object in a game, or scanning a piece of fabric during online shopping. This could even lead to advancements in prosthetics.
+
+363
+00:44:21.250 --> 00:44:36.040
+Audio shared by Bruce Lam: Our hope is to build a driving community and ultimately make touch sensing practical out there in the real world. This work brings us one step closer to understanding what it means to digitize touch. And that future is almost within reach.
+
+364
+00:44:40.840 --> 00:44:43.589
+Bruce Lam: Hey, venu, I saw you come off of, first of all.
+
+365
+00:44:43.830 --> 00:44:49.130
+Bruce Lam: Welcome. And second of all, I saw you come off of mute before we started the video. Did you have a thought?
+
+366
+00:44:50.970 --> 00:44:57.349
+venu koneru: I saw the link, I clicked on it, and I was thinking, initially, you are presenting, sharing the screen.
+
+367
+00:44:59.270 --> 00:45:01.149
+Bruce Lam: Oh, yes, do you see my screen?
+
+368
+00:45:02.960 --> 00:45:05.079
+venu koneru: Don't see your screen, I can see you only.
+
+369
+00:45:05.610 --> 00:45:08.679
+Bruce Lam: Oh. Interesting. Is this happening for everyone, or is it just me?
+
+370
+00:45:08.680 --> 00:45:10.230
+venu koneru: Probably moved.
+
+371
+00:45:10.230 --> 00:45:11.000
+Bruce Lam: Oh, okay.
+
+372
+00:45:11.570 --> 00:45:14.330
+Bruce Lam: Alright, let me just restart it, just, just to be sure.
+
+373
+00:45:14.330 --> 00:45:16.899
+iPhone: We are able to see… okay.
+
+374
+00:45:17.140 --> 00:45:34.000
+Bruce Lam: Thank goodness, because I've been going through a lot of material for… if my screen hasn't been sharing, you all would be too polite. Okay, so, so many interesting things with this particular technology. Sparsh, first of all, really nice name. I learned through this course, someone told me that it's, I think, the Hindi word for touch.
+
+375
+00:45:34.100 --> 00:45:42.230
+Bruce Lam: Which I think is fantastic. Or correct me if I'm wrong, it might be, some other, like, sense?
+
+376
+00:45:42.230 --> 00:45:42.680
+venu koneru: or something.
+
+377
+00:45:43.060 --> 00:45:44.330
+venu koneru: No, no, you're ready.
+
+378
+00:45:45.730 --> 00:45:52.379
+Bruce Lam: So, how does this work? I mean, have we ever thought… have you ever thought about how would you digitize touch?
+
+379
+00:45:52.950 --> 00:45:57.689
+Bruce Lam: It's an interesting… it's an interesting phenomenon. We have… first of all, why is touch…
+
+380
+00:45:58.840 --> 00:46:00.650
+Bruce Lam: The next kind of frontier.
+
+381
+00:46:00.860 --> 00:46:02.750
+Bruce Lam: We have a lot of data
+
+382
+00:46:02.970 --> 00:46:07.199
+Bruce Lam: on vision. We have a lot of data on audio and visual
+
+383
+00:46:07.430 --> 00:46:20.500
+Bruce Lam: things. Touch. We haven't started collecting data on touch until probably very, very recently. And how do you even collect data on touch? Like, what is touch? And what they're doing at Meta, which is super interesting, is they're combining
+
+384
+00:46:20.830 --> 00:46:22.020
+Bruce Lam: video.
+
+385
+00:46:22.140 --> 00:46:24.879
+Bruce Lam: Audio and pressure sensors.
+
+386
+00:46:25.040 --> 00:46:29.759
+Bruce Lam: In order to collect data, on what touch is.
+
+387
+00:46:30.950 --> 00:46:40.650
+Bruce Lam: And they're using a touch embedding, so they're creating an embedding space. So they're using this training data, again, tokenizing that, vectorizing that, and putting it into an embedding space.
+
+388
+00:46:40.760 --> 00:46:45.539
+Bruce Lam: So that they can… When they see something different, they can associate
+
+389
+00:46:45.760 --> 00:46:54.870
+Bruce Lam: or pattern match that. So it's the same sort of process. If you can see over and over again, it's taking that input data, breaking it down into something that the machine can understand.
+
+390
+00:46:55.130 --> 00:46:59.570
+Bruce Lam: Putting that into an embedding space, and then retrieving from that embedding space.
+
+391
+00:47:05.500 --> 00:47:09.629
+Bruce Lam: Can we replace the mouse and keyboard? Jeremiah, tell me more.
+
+392
+00:47:21.600 --> 00:47:25.989
+Bruce Lam: Are you saying that have a robotic arm run the mouse and keyboard for you? So…
+
+393
+00:47:26.130 --> 00:47:34.149
+Bruce Lam: Oh, I see, I see. So, I forget… I think it's in week 6, when we talk about the human-computer interaction and the human-computer design.
+
+394
+00:47:35.000 --> 00:47:37.890
+Bruce Lam: Where there really are two schools of thought right now.
+
+395
+00:47:38.150 --> 00:47:42.879
+Bruce Lam: If you are in the OpenAI school of thought, you are trying to do what you're saying.
+
+396
+00:47:43.140 --> 00:47:57.049
+Bruce Lam: Which is have the AI systems use… have the AI systems use and be part of the human world where they start to learn how to use our computers. So computer use is very much an open AI
+
+397
+00:47:57.670 --> 00:47:59.230
+Bruce Lam: Frontier that they're trying to push.
+
+398
+00:47:59.450 --> 00:48:07.460
+Bruce Lam: But if you're on the anthropic side, you're saying, hey, you know what? I want to create a whole new world that is
+
+399
+00:48:08.020 --> 00:48:23.010
+Bruce Lam: built for AI systems, machine systems to use natively. So that's why they built, you know, MCP and things like that, because I don't want to… I don't want you to use the computer the way a human uses the computer. That is very inefficient. I want you to figure out a different way to use it.
+
+400
+00:48:23.120 --> 00:48:30.339
+Bruce Lam: So, I don't know if that's what you're asking, but very much so, there are different schools of thought trying to figure out what is the future of
+
+401
+00:48:30.670 --> 00:48:32.559
+Bruce Lam: Human-computer interaction look like?
+
+402
+00:48:34.230 --> 00:48:37.290
+Bruce Lam: Okay, so the next sense, the sense of smell.
+
+403
+00:48:37.810 --> 00:48:41.570
+Bruce Lam: This one is even more cutting edge.
+
+404
+00:48:41.780 --> 00:48:47.540
+Bruce Lam: more rare than touch. Because we haven't been collecting any of this data.
+
+405
+00:48:47.690 --> 00:48:55.079
+Bruce Lam: This one's nice because it's out of the MIT Media Lab here, and I… let me see if it's here or if it's the next one, okay.
+
+406
+00:48:55.270 --> 00:49:00.539
+Bruce Lam: And what I think is nice is, I think you all now can understand how this model works.
+
+407
+00:49:00.680 --> 00:49:05.620
+Bruce Lam: So you have an input substance, in this particular case it's cashews.
+
+408
+00:49:05.860 --> 00:49:20.440
+Bruce Lam: You have a model that's been trained on GCMS, so that's gas chromatography mass spec data, so you have this database that's been referenced, so it's been trained on this data. You have that sensor that is looking at the…
+
+409
+00:49:21.340 --> 00:49:30.459
+Bruce Lam: The inputs over time, and you have a supervised learning model that's doing a classification to predict what that substance is.
+
+410
+00:49:30.580 --> 00:49:38.890
+Bruce Lam: And also using multi-layer perceptrons, MLPs, those are these baby neural networks, not deep learning per se, but many of them strung together.
+
+411
+00:49:39.390 --> 00:49:44.459
+Bruce Lam: That is trying to create… to regenerate that GC mass spec representation.
+
+412
+00:49:44.580 --> 00:49:49.170
+Bruce Lam: And then do a matching similarity score to what that predicted substance is.
+
+413
+00:49:49.530 --> 00:49:52.309
+Bruce Lam: And, let me just show you in real time.
+
+414
+00:49:52.590 --> 00:49:55.670
+Bruce Lam: what that kind of looks like, again, out of the MIT Media Lab.
+
+415
+00:49:58.080 --> 00:50:00.609
+Bruce Lam: And there's no audio, so don't worry about that.
+
+416
+00:50:17.280 --> 00:50:22.959
+Amungun Ngando: Question, so I can understand the input for this, but what would the output look like?
+
+417
+00:50:23.660 --> 00:50:31.180
+Bruce Lam: Exactly right here. You see this, this particular chart here? Over time, as it's collecting the sample, it's making a prediction on what
+
+418
+00:50:31.480 --> 00:50:36.219
+Bruce Lam: that… substance is. So it's substance identification.
+
+419
+00:50:38.670 --> 00:50:40.450
+Amungun Ngando: Yeah, but how would you verify that?
+
+420
+00:50:40.920 --> 00:50:52.409
+Bruce Lam: Oh, well, you have the label data, so you know that that's cumin, for example. You know that that's cumin, and then you… now you're gonna do it again and run the algorithm, you see over time what it's trying to predict, and then you know
+
+421
+00:50:52.560 --> 00:50:58.359
+Bruce Lam: whether that's right or not. So, see, right now it thinks it's cloves, and then cumin's getting higher and higher.
+
+422
+00:50:58.730 --> 00:51:12.620
+Bruce Lam: And then, in the end, the human jumped… actually, so now it's… now it's, a little unstable, but then in the end, after… you know, we talked about epochs, like training or, runs last time, so after a certain number of epochs, it eventually got it right.
+
+423
+00:51:13.580 --> 00:51:16.340
+Bruce Lam: So that's why it's a supervised learning technique.
+
+424
+00:51:16.790 --> 00:51:20.689
+Bruce Lam: But really good question, though, Amunjin. Does that… does that make sense? Does that answer your question?
+
+425
+00:51:21.080 --> 00:51:36.770
+Amungun Ngando: I get it in the training, phase, but in the application phase, so probably you want to say you're trying to sniff whether this particular clove is still, what would you say, in good condition.
+
+426
+00:51:36.890 --> 00:51:41.430
+Amungun Ngando: How would you… how would the application, how would you, as a user.
+
+427
+00:51:41.560 --> 00:51:51.929
+Amungun Ngando: be able to trust the data that the AI is providing that, yes, this is what it actually is. What would you use to verify, is kind of the question.
+
+428
+00:51:52.660 --> 00:51:56.440
+Bruce Lam: Oh, I see. So, let's say, you know, this is…
+
+429
+00:51:56.650 --> 00:52:03.670
+Bruce Lam: A… an academic example where we're using you know, herbs.
+
+430
+00:52:04.020 --> 00:52:21.280
+Bruce Lam: But in the real world, you might train something on detecting explosives, and that you would have, instead of dogs in the airport, you would have, exactly, chemical spills, or drugs, or explosives. And so your asking is, how do you… at what point can you trust
+
+431
+00:52:21.490 --> 00:52:26.350
+Bruce Lam: That the sensor is not going to give you a false positive or a false negative.
+
+432
+00:52:26.480 --> 00:52:36.910
+Bruce Lam: And that just… that just comes with lots and lots and lots of training and lots and lots and lots of data. And I think… I think your intuition was 100% right. Data is so…
+
+433
+00:52:37.420 --> 00:52:46.500
+Bruce Lam: vital now. Now, in the… in the stage that we are in, in the AI cycle, it's all about data. I mean, any kind of data, so…
+
+434
+00:52:46.710 --> 00:52:47.710
+Bruce Lam: Very good question.
+
+435
+00:52:50.970 --> 00:52:52.450
+Bruce Lam: high-quality data.
+
+436
+00:53:01.690 --> 00:53:09.050
+Bruce Lam: Yep, Stanislav, agree. And so this was interesting, a couple years old, I'm not sure how much progress they've made on this one.
+
+437
+00:53:09.710 --> 00:53:13.940
+Bruce Lam: This concept was… I don't know how many of you have
+
+438
+00:53:14.120 --> 00:53:29.379
+Bruce Lam: wanted to, like, smell what was on TV. If you saw, like, a fresh-baked cookie, it'd be so nice to be able to smell that. This is, like, smell of vision. Whereas, same general concept as what the MIT Media Lab is doing, which is they take an input smell, they break it down.
+
+439
+00:53:29.440 --> 00:53:44.650
+Bruce Lam: and then they transmit that signal, you know, whatever its composition is, you know, over the internet, and on the other side, they recompose it. So they take the chemical signature on one side, send the data
+
+440
+00:53:44.920 --> 00:53:50.380
+Bruce Lam: Decomposition to another receiver on the other end, and then they recompose it, so…
+
+441
+00:53:51.020 --> 00:53:53.349
+Bruce Lam: Virtual touch. Virtual smell.
+
+442
+00:53:56.700 --> 00:54:01.770
+Bruce Lam: Jeremiah, that's an interesting question there. Will that impact the learning?
+
+443
+00:54:02.680 --> 00:54:15.360
+Bruce Lam: I guess if the subjective piece is about whether it spells good or not, that could, but if it is time, then it's time. If it's C4 explosive, it's C4 explosive. If it's…
+
+444
+00:54:15.650 --> 00:54:19.590
+Bruce Lam: You know, methamphetamine, it's methamphetamine.
+
+445
+00:54:19.770 --> 00:54:26.059
+Bruce Lam: So I think that… But you're right, different people have different levels of sensitivity.
+
+446
+00:54:26.350 --> 00:54:27.440
+Bruce Lam: Yep.
+
+447
+00:54:31.790 --> 00:54:38.399
+Bruce Lam: Very good. And so, I'm sorry, I jumped the gun before. I really was hoping I put this slide in, and I did, and so here is…
+
+448
+00:54:38.510 --> 00:54:44.439
+Bruce Lam: the ability to train your own vision-based deep learning model. I shared the link in the chat.
+
+449
+00:54:44.710 --> 00:54:47.060
+Bruce Lam: Give it a try. Highly recommend, it's really easy to use.
+
+450
+00:54:47.510 --> 00:54:50.779
+Bruce Lam: Okay, so let's kind of bring all of this home to…
+
+451
+00:54:51.260 --> 00:54:54.420
+Bruce Lam: What does this mean for actual use cases?
+
+452
+00:54:54.650 --> 00:54:58.800
+Bruce Lam: In finance, this is a pretty recent research paper.
+
+453
+00:54:59.030 --> 00:55:05.569
+Bruce Lam: by the Ant Group, which I believe is owned by Alibaba out of China. This one really surprised me.
+
+454
+00:55:05.850 --> 00:55:17.659
+Bruce Lam: So we've told… we've talked about this concept of having your input data, breaking that, tokenizing your input data, and then putting that into an embedding space, and then retrieving from that embedding space.
+
+455
+00:55:17.890 --> 00:55:21.919
+Bruce Lam: So we've talked about things like text and video and audio.
+
+456
+00:55:22.300 --> 00:55:24.250
+Bruce Lam: What if you could do this with people?
+
+457
+00:55:24.710 --> 00:55:41.450
+Bruce Lam: And specifically with personalities, with actions, with behaviors. And that's what Ant Group did. Of course, it's in China, so they probably have a lot more data on people than we are allowed to collect here, but they were allowed… they were able to get that user profile, you know.
+
+458
+00:55:41.720 --> 00:55:49.449
+Bruce Lam: Other information that they have based on the government, and also the trans… the environment in which the transactions occurred.
+
+459
+00:55:49.650 --> 00:56:03.160
+Bruce Lam: And look at what they did. They mapped that out, and then they tokenized that and turned that behavior into embeddings. So now, instead of having words, or images, or videos in their embedding space, they have people.
+
+460
+00:56:03.620 --> 00:56:08.810
+Bruce Lam: So they know now, if you… Have this personality, this behavior.
+
+461
+00:56:09.030 --> 00:56:18.690
+Bruce Lam: And your transaction deviates dramatically from where you live in that space, that can now be flagged as a fraudulent activity.
+
+462
+00:56:20.930 --> 00:56:27.410
+Bruce Lam: Same concept as what we've been learning here, but just applied to people and behavior instead of text and audio and video.
+
+463
+00:56:32.280 --> 00:56:35.830
+Bruce Lam: Now, this is cutting edge, and to me, this is…
+
+464
+00:56:37.090 --> 00:56:43.880
+Bruce Lam: It's amazing, but it's also an optimization to try to get the next, you know, 5%.
+
+465
+00:56:44.160 --> 00:56:55.969
+Bruce Lam: Some of the more prevalent… So first of all, this is a… if you're in the financial space, here are a couple of different papers talking about deep learning trends over time.
+
+466
+00:56:58.240 --> 00:57:14.589
+Bruce Lam: you know, kind of… this is… it's kind of ended at 2024, but I thought what was interesting is over time, the number of papers that were published in these certain industries has grown, so this green one here is credit cards have really taken off in the last
+
+467
+00:57:15.040 --> 00:57:16.930
+Bruce Lam: 6 years or so.
+
+468
+00:57:17.280 --> 00:57:23.189
+Bruce Lam: And also, up here, this yellow one, this one's payments. This one was interesting, because I guess.
+
+469
+00:57:23.490 --> 00:57:27.640
+Bruce Lam: During the pandemic and such, 2020, 2021, 2022,
+
+470
+00:57:27.800 --> 00:57:35.490
+Bruce Lam: The number of papers written on, using deep learning for payment systems wasn't that high, but now it's exploding.
+
+471
+00:57:35.800 --> 00:57:44.520
+Bruce Lam: Maybe because we're using, you know, Stripe and whatever other payment systems are out there, a lot more Venmo and such.
+
+472
+00:57:44.760 --> 00:57:47.159
+Bruce Lam: So yeah, some interesting trends there if you're in that space.
+
+473
+00:57:47.540 --> 00:57:54.530
+Bruce Lam: And this is the one that I really wanted to share, which is, we saw that chart last week where there's a trade-off between
+
+474
+00:57:55.750 --> 00:57:59.069
+Bruce Lam: Power of your model and explainability.
+
+475
+00:58:00.000 --> 00:58:02.270
+Bruce Lam: And I guess this gets to,
+
+476
+00:58:02.890 --> 00:58:07.039
+Bruce Lam: Whoever was asking about, at the beginning of the course today, about…
+
+477
+00:58:07.660 --> 00:58:12.010
+Bruce Lam: The necessity of observability and of governance.
+
+478
+00:58:12.800 --> 00:58:25.130
+Bruce Lam: So what you see is that over time, even though there are more and more papers being written on some of these, you know, NLP-type technologies, some of the most prevalent
+
+479
+00:58:25.470 --> 00:58:27.150
+Bruce Lam: And I would say…
+
+480
+00:58:27.770 --> 00:58:35.910
+Bruce Lam: highly functional technologies for the financial space are still random forests. So random forests, as we talked about 2 weeks ago, or 3 weeks ago now.
+
+481
+00:58:36.270 --> 00:58:41.319
+Bruce Lam: Very, very transparent compared to neural networks, and very, very powerful.
+
+482
+00:58:41.590 --> 00:58:49.360
+Bruce Lam: So, I guess the point I'm trying to make here is that I still think that these fundamental technologies that are very observable can get you
+
+483
+00:58:49.580 --> 00:58:52.490
+Bruce Lam: 60, 70, 80% of the way there.
+
+484
+00:58:52.610 --> 00:58:57.440
+Bruce Lam: And then, if you have the resources, and you need to get to that next 10%,
+
+485
+00:58:57.880 --> 00:59:00.860
+Bruce Lam: then I think this is amazing technology as well.
+
+486
+00:59:02.230 --> 00:59:04.489
+Bruce Lam: Okay, so, and this is a breakdown,
+
+487
+00:59:04.700 --> 00:59:10.519
+Bruce Lam: AI-generated graphic, by just breaking down everything we've talked about so far today, with a general process.
+
+488
+00:59:10.920 --> 00:59:16.620
+Bruce Lam: For training and developing and deploying a deep learning model, is you gotta break down your inputs.
+
+489
+00:59:16.750 --> 00:59:22.800
+Bruce Lam: You have to create an embedding space and be able to retrieve from that embedding space, and then you can deploy it
+
+490
+00:59:23.090 --> 00:59:25.790
+Bruce Lam: With a number of different software stacks.
+
+491
+00:59:25.930 --> 00:59:28.029
+Bruce Lam: To kind of run in real time.
+
+492
+00:59:30.420 --> 00:59:38.860
+Bruce Lam: And so that's just the pattern. I said it several times again, you break it down, you create your models, and then you deploy, and then you learn, and then you retrain.
+
+493
+00:59:41.230 --> 00:59:46.589
+Bruce Lam: We have talked a bit about the importance of data nowadays, and this company
+
+494
+00:59:46.830 --> 00:59:55.190
+Bruce Lam: is… was founded, I don't know when, but in 2023, which… gosh, I felt like I read this paper yesterday, or this magazine article.
+
+495
+00:59:55.310 --> 01:00:10.079
+Bruce Lam: Alexander Wong, who, if you don't know him, he was reportedly the youngest self-made billionaire by founding this company called Scale AI. So I guess they saw this problem, they were on the front end of this problem, where they said, hey.
+
+496
+01:00:10.440 --> 01:00:14.989
+Bruce Lam: Training these machine learning and AI systems is going to require a lot of data.
+
+497
+01:00:15.210 --> 01:00:22.119
+Bruce Lam: And so they would spend their money, you know, by paying people, Very, very low wages in…
+
+498
+01:00:22.280 --> 01:00:39.190
+Bruce Lam: corners of the world to validate that the data was right. Amungun, to your point, you know, having good training data is very, very important. So imagine having to sit there and look through the data and see if it's properly labeled or not. As a human, it was very, kind of, tedious.
+
+499
+01:00:39.410 --> 01:00:42.599
+Bruce Lam: Work, but they would pay very low wages for people to do this.
+
+500
+01:00:42.960 --> 01:00:46.880
+Bruce Lam: And then provide that clean data to companies to use to train their models.
+
+501
+01:00:47.050 --> 01:00:50.680
+Bruce Lam: On top of that, they would use synthetic data
+
+502
+01:00:51.250 --> 01:00:54.049
+Bruce Lam: Synthetic data can be derived from a simulation.
+
+503
+01:00:54.190 --> 01:01:02.690
+Bruce Lam: or from a neural network technique called a generative adversarial network, which we'll talk quite a bit about in week 7.
+
+504
+01:01:03.330 --> 01:01:06.980
+Bruce Lam: A long story short, is because of the foresight.
+
+505
+01:01:07.430 --> 01:01:11.990
+Bruce Lam: And the understanding of the demand for data in the AI age.
+
+506
+01:01:12.400 --> 01:01:19.150
+Bruce Lam: He was just acquihired by Meta. I don't know, this is a Meta… Meta-themed, Module.
+
+507
+01:01:19.430 --> 01:01:20.330
+Bruce Lam: just…
+
+508
+01:01:20.520 --> 01:01:31.300
+Bruce Lam: 2025, so a little over a year ago now, time flies, for $14.3 billion. So it was just him, and a few of his top people. They did not take the entire team.
+
+509
+01:01:31.700 --> 01:01:32.760
+Bruce Lam: So…
+
+510
+01:01:33.280 --> 01:01:40.520
+Bruce Lam: Now, he is the head of Meta's Superintelligence lab, so if you… they see things like we were just talking about coming out of Meta, that's driven by him.
+
+511
+01:01:40.730 --> 01:01:43.090
+Bruce Lam: So the importance of data there.
+
+512
+01:01:43.860 --> 01:01:59.880
+Bruce Lam: And we did talk this week in the Asynchronous material about training data augmentation, and there is this interesting company out of the UK called River, where they are trying to use or build delivery robots, so last-mile delivery, think, you know, your
+
+513
+01:02:00.430 --> 01:02:09.280
+Bruce Lam: Your delivery truck drives up to a certain neighborhood, and one or several of these little robots jump out with their packages and deliver the packages to your front door.
+
+514
+01:02:10.030 --> 01:02:25.859
+Bruce Lam: And when I saw this particular image, I said, wow, that… so that's how they do it. As we've been seeing, and actually, Amunjan, your observation was so brilliant, which is, how do you trust that your AI system is going to actually work in production?
+
+515
+01:02:26.020 --> 01:02:38.889
+Bruce Lam: Well, you need to have a lot of data, and so what they're doing in this particular case with synthetic data is in a virtual world, in a… this could be a game engine or something like that with all the physics defined.
+
+516
+01:02:39.000 --> 01:02:40.069
+Bruce Lam: They have…
+
+517
+01:02:40.540 --> 01:02:46.840
+Bruce Lam: Tens of thousands of these vehicles, and then simulations of these robots coming in and out of these trucks.
+
+518
+01:02:47.360 --> 01:02:50.780
+Bruce Lam: And they run this 24 hours a day, 7 days a week, so they know
+
+519
+01:02:51.270 --> 01:02:54.370
+Bruce Lam: All the variations, all the possible things that could go wrong.
+
+520
+01:02:54.630 --> 01:03:06.569
+Bruce Lam: And then out of the simulation, they record that data, and then they put that data from the virtual world into the real robot in the real world, and now, all of a sudden, it knows how to get in and out of the truck
+
+521
+01:03:07.090 --> 01:03:09.399
+Bruce Lam: Expertly, and knows how to walk upstairs.
+
+522
+01:03:10.010 --> 01:03:13.749
+Bruce Lam: So synthetic data and training data augmentation by
+
+523
+01:03:14.600 --> 01:03:18.380
+Bruce Lam: Doing this in an accelerated fashion, doing this, you know.
+
+524
+01:03:18.830 --> 01:03:21.330
+Bruce Lam: A million times a day at 10x speed.
+
+525
+01:03:23.690 --> 01:03:24.380
+Bruce Lam: Okay.
+
+526
+01:03:24.750 --> 01:03:31.659
+Bruce Lam: So… oh, we're already over time, so super sorry about that. I think I've shown this particular diagram to you before, it's something that I'm still working on.
+
+527
+01:03:32.040 --> 01:03:37.989
+Bruce Lam: But a few more examples, because Rangan… I know that you asked for real, examples.
+
+528
+01:03:38.190 --> 01:03:45.689
+Bruce Lam: In terms of that process of retraining, again, there's an interesting, relatively recent
+
+529
+01:03:46.330 --> 01:03:50.080
+Bruce Lam: concept called auto-research, where you actually have your AI agent
+
+530
+01:03:50.290 --> 01:04:05.169
+Bruce Lam: Pick a path, go see if it worked. If it didn't work, come back and try something else, and then run that autonomously while you're sleeping over and over and over and over again until it finds the right solution. It could be a real game changer for things like advertising and marketing.
+
+531
+01:04:06.630 --> 01:04:12.920
+Bruce Lam: Also out of TikTok, they're talking about using…
+
+532
+01:04:13.240 --> 01:04:20.129
+Bruce Lam: I mean, I don't have TikTok, I don't use it, but people tell me that this, the recommendation engine is incredible.
+
+533
+01:04:20.370 --> 01:04:22.369
+Bruce Lam: If anyone uses TikTok, you know.
+
+534
+01:04:22.480 --> 01:04:24.459
+Bruce Lam: Let me know if this is true or not.
+
+535
+01:04:24.720 --> 01:04:35.920
+Bruce Lam: And in this particular article, research paper, they say that they actually retrain, because they have so much data, they retrain their model, their deep learning model, every 10 seconds.
+
+536
+01:04:36.400 --> 01:04:47.930
+Bruce Lam: So that they can really keep up with the trends and what's going on. So imagine having so much data that you can retrain your deep learning model, which is so voracious, every 10 seconds.
+
+537
+01:04:49.770 --> 01:04:59.210
+Bruce Lam: This particular demo was out of Spotify… at Shopify, and Shopify was using this same sort of embedding technology here, Deep Learning.
+
+538
+01:04:59.340 --> 01:05:05.789
+Bruce Lam: And what they found was… It worked super well, except it didn't understand time.
+
+539
+01:05:05.930 --> 01:05:08.790
+Bruce Lam: So, let's say it would recommend a…
+
+540
+01:05:09.600 --> 01:05:14.689
+Bruce Lam: A super popular sweater in the summer, and so that just didn't really work well for them.
+
+541
+01:05:14.800 --> 01:05:22.379
+Bruce Lam: And so they realized they needed to augment their process, their, their tokenization, input process with a temporal aspect.
+
+542
+01:05:22.490 --> 01:05:25.820
+Bruce Lam: So I understood that there is a seasonality effect, too.
+
+543
+01:05:26.010 --> 01:05:32.640
+Bruce Lam: And not let that just get lost inside the neural network. They had to separate it out and make it really prominent.
+
+544
+01:05:33.230 --> 01:05:47.959
+Bruce Lam: This was the case that I was alluding to way earlier in the course about JPMorgan Chase. They were trying to understand and solve this problem of fraud detection. Actually, false positives in fraud detection, and I couldn't believe this.
+
+545
+01:05:48.460 --> 01:05:54.850
+Bruce Lam: But we had someone from JPMorgan Chase as one of these cohort members, and they said, yeah, this was the…
+
+546
+01:05:55.390 --> 01:06:00.400
+Bruce Lam: They know this fact, this, number in industry is that there is…
+
+547
+01:06:00.530 --> 01:06:05.000
+Bruce Lam: Traditional systems had a 95% false positive rate.
+
+548
+01:06:05.300 --> 01:06:21.760
+Bruce Lam: Which is wild. They worked, you know, they probably had a high precision, so when it was true, it was probably right, but they just had a lot of false positives. And so JP Morgan decided to create a deep learning system. They went, you know, unobservable, but way more complex.
+
+549
+01:06:21.860 --> 01:06:37.359
+Bruce Lam: So they built this engine, but the problem was, is they then became non-compliant, where there were these regulatory agencies that said that the institution must explain exactly why a credit decision or transaction was denied to the consumer.
+
+550
+01:06:37.570 --> 01:06:41.440
+Bruce Lam: And of course, if you're using these I'm…
+
+551
+01:06:43.360 --> 01:06:48.609
+Bruce Lam: These systems that have a lack of observability and interpretability, you can't say exactly why.
+
+552
+01:06:49.010 --> 01:06:55.810
+Bruce Lam: And so, they decided to separate out certain components, of the…
+
+553
+01:06:56.600 --> 01:07:02.589
+Bruce Lam: of the deep learning system, and actually used a technology called, SHAP, which we use a lot.
+
+554
+01:07:02.900 --> 01:07:07.859
+Bruce Lam: Which will actually tell you, for a given prediction, what were the inputs, weights.
+
+555
+01:07:07.990 --> 01:07:17.090
+Bruce Lam: that contributed most to that prediction. And so with this technology, in addition to, LIME, local interpretable Model Agnostic explanations.
+
+556
+01:07:17.290 --> 01:07:28.959
+Bruce Lam: Which I kind of explained what the mechanism is here. It's essentially narrowing down your prediction to a certain region and kind of drawing some known, interpretable
+
+557
+01:07:29.240 --> 01:07:42.309
+Bruce Lam: tangents to it. You can understand how the AI came to that decision. And between these two, they were able to get the regulatory board to say that, hey, we do actually understand, and we can
+
+558
+01:07:42.530 --> 01:07:45.510
+Bruce Lam: Show you why a decision was made on a given customer.
+
+559
+01:07:45.910 --> 01:07:48.029
+Bruce Lam: And they were able to have these…
+
+560
+01:07:48.310 --> 01:07:51.710
+Bruce Lam: Wonderful, gains in their operations.
+
+561
+01:07:53.210 --> 01:07:58.999
+Bruce Lam: And then this article just came out, what, 8 days ago? So I wanted to make this really, really,
+
+562
+01:07:59.250 --> 01:08:00.970
+Bruce Lam: Up to date with everyone.
+
+563
+01:08:01.360 --> 01:08:08.010
+Bruce Lam: And this is saying that SHAP, which we just talked about, which is basically what saved JP Morgan, and allowed them to…
+
+564
+01:08:08.230 --> 01:08:13.950
+Bruce Lam: Become compliant while still using deep learning for fraud detection and dramatically reducing their false positives.
+
+565
+01:08:14.090 --> 01:08:16.920
+Bruce Lam: Why it's actually not.
+
+566
+01:08:17.210 --> 01:08:18.279
+Bruce Lam: usable.
+
+567
+01:08:18.590 --> 01:08:21.609
+Bruce Lam: an Agentic AI for fraud detection.
+
+568
+01:08:22.670 --> 01:08:25.640
+Bruce Lam: We're way over time. Really interesting article.
+
+569
+01:08:25.930 --> 01:08:35.900
+Bruce Lam: Just everything's changing when you go from a model-based approach to an agent-based approach. And I'll try to unpack this when we talk about agents, you know, in a couple weeks.
+
+570
+01:08:36.200 --> 01:08:37.180
+Bruce Lam: So…
+
+571
+01:08:37.470 --> 01:08:45.209
+Bruce Lam: We went over time today, and sorry about that, everyone. Happy Friday or Saturday, it's good to see you. Any last-minute questions?
+
+572
+01:08:49.600 --> 01:08:54.809
+venu koneru: Yeah, two days class is very informal. I mean, I learned a lot of, new things.
+
+573
+01:08:55.180 --> 01:08:56.430
+venu koneru: I did.
+
+574
+01:08:57.439 --> 01:09:02.499
+Bruce Lam: Awesome, awesome. My privilege, everyone. Thank you so much. Have a wonderful weekend.
+
+575
+01:09:02.619 --> 01:09:07.809
+Bruce Lam: And, we will see you again shortly. You know, ping me if I could be of assistance.
+
+576
+01:09:08.740 --> 01:09:09.390
+Rangarajan Raman (Cohort 13): Thanks, Bruce.
+
+577
+01:09:09.399 --> 01:09:10.189
+iPhone: Thank you, Bruce.
+
+578
+01:09:10.459 --> 01:09:12.569
+Bruce Lam: Thank you, everyone. Take care. Bye!
+
+579
+01:09:12.569 --> 01:09:13.389
+John Andrews: Thanks, bud.
+

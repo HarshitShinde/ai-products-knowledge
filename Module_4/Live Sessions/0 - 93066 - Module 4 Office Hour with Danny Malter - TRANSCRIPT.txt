@@ -1,0 +1,1138 @@
+WEBVTT
+
+1
+00:00:05.830 --> 00:00:23.560
+Danny Malter: Alright, hello everyone, welcome, thank you for coming on today, and justin, I'm not gonna have my typical… this is… this office hour is replacing the one that I would typically do next Monday, and then after that, I'll be able to get back onto a regular schedule, so thanks for being a little bit accommodating there.
+
+2
+00:00:23.610 --> 00:00:36.410
+Danny Malter: Let's go ahead and get started. Today's office hour is gonna be a little bit different than my typical office hour. I'm gonna have a use case, business case study that we'll walk through with Airbnb as an example.
+
+3
+00:00:36.410 --> 00:00:44.079
+Danny Malter: Taking into account a lot of the concepts that we have talked about and learned about so far in this course, and how you might actually start to
+
+4
+00:00:44.250 --> 00:00:59.379
+Danny Malter: go and apply them in a real world or business situation. So, I'm gonna get started, we'll walk through examples. If you have questions, I would love for today to be conversational, so please feel free to raise your hand on Zoom, and I will, be happy to call on you.
+
+5
+00:00:59.480 --> 00:01:10.180
+Danny Malter: Okay, so let's go through an example from Airbnb. I would think most people would know Airbnb, but for whatever reason you don't. Airbnb is a platform where you can
+
+6
+00:01:10.360 --> 00:01:29.600
+Danny Malter: put up your home for a short-term listing that somebody could come stay at. So, let's walk… talk about how machine learning and AI maybe would be applicable for things that Airbnb is focusing on, and then we'll walk through some more specific examples
+
+7
+00:01:29.600 --> 00:01:36.810
+Danny Malter: of concepts that we've actually learned in this course, and apply them to Airbnb. And by the way, I don't work for Airbnb. Everything on here, I've
+
+8
+00:01:36.810 --> 00:01:42.529
+Danny Malter: found, through research and blogs that Airbnb is publicly disclosed.
+
+9
+00:01:43.440 --> 00:02:01.409
+Danny Malter: Okay, so potential use cases where AI might fit at Airbnb. For one, things like fraud detection, and fraud detection can play a part, of course, in lots of different industries and companies, but an example would be detecting which customers might be at risk for high, high risk of fraud.
+
+10
+00:02:01.410 --> 00:02:06.239
+Danny Malter: You might have some type of component, maybe, of a language model picking out
+
+11
+00:02:06.260 --> 00:02:17.219
+Danny Malter: maybe search words, or the way people are acting on a platform, on the platform of Airbnb, or possibly a predictive model where you have some type of predictive score
+
+12
+00:02:17.320 --> 00:02:31.809
+Danny Malter: predicting the likelihood of fraud. So maybe the output of a predicted model would be there's an 80% probability this person is likely to, you know, for whatever reason, not pay, or some other type of fraud at the property.
+
+13
+00:02:32.100 --> 00:02:49.140
+Danny Malter: Predicting when a customer might next stay at Airbnb. So, that might be through geographic location, or other means. Maybe there's a recommendation model in place. We talked a little bit about recommendation models, maybe my week one or week 2 office hour.
+
+14
+00:02:49.140 --> 00:02:57.389
+Danny Malter: Where you might have, different types of algorithms that give different types of outputs. So this is why, in the world of machine learning and AI,
+
+15
+00:02:57.390 --> 00:03:03.140
+Danny Malter: It's always important to really understand, at least at a somewhat deeper level, the algorithm that you're using.
+
+16
+00:03:03.210 --> 00:03:06.199
+Danny Malter: Because different algorithms will give different types of outputs.
+
+17
+00:03:06.400 --> 00:03:16.969
+Danny Malter: in the world of machine learning. So, an example would be, let's say, you are… your name is Joe, and, you know, you, Joe, are similar to Bob.
+
+18
+00:03:16.970 --> 00:03:32.869
+Danny Malter: Bob has stayed at properties in New York City, therefore Joe is also being shown properties in New York City. That would be what we call a user-based recommendation model. So the… because the users are similar, they're being shown similar properties in this case.
+
+19
+00:03:33.100 --> 00:03:47.649
+Danny Malter: We also have what's called an item-based recommendation model. So, Joe has stayed in New York City and London, which happen to be two big cities, therefore Joe is only recommended to stay in other big cities.
+
+20
+00:03:47.650 --> 00:04:01.160
+Danny Malter: Chicago, Tokyo, you name it. Different outputs, different recommendations, because we're using a different algorithm in this case. So that is what we call an item-based recommendation model. And then most
+
+21
+00:04:01.240 --> 00:04:16.309
+Danny Malter: Companies probably use what we call collaborative filtering, a combination between user-based and item-based recommendation models. So when you go on Amazon or Netflix, very likely that's a collaborative filtering recommendation model in the background.
+
+22
+00:04:16.600 --> 00:04:26.980
+Danny Malter: security, so some type of security system of people walking into homes. You know, I don't know that Airbnb would ever go so far as requiring some type of face detection, but face…
+
+23
+00:04:27.280 --> 00:04:38.680
+Danny Malter: spatial analysis, and I work in the space of identity, is starting to become a little bit more popular, at least in the United States. I mean, even in TSA, as you walk through the airports now, you can
+
+24
+00:04:38.690 --> 00:04:46.419
+Danny Malter: opt-in to provide your face, that you no longer have to… they have the touchless TSA now at some of the airports in the U.S.
+
+25
+00:04:46.420 --> 00:05:05.910
+Danny Malter: Now, there are very strict biometric policy acts in the United States at the state level, so Illinois, for example, has the strictest I know of, which is called BIPA, Bioinformation Policy Act, where users have to actively opt-in to using their face before any type of facial analysis data is stored or used on that person.
+
+26
+00:05:06.340 --> 00:05:17.910
+Danny Malter: Forecasting, so forecasting future demand, pricing recommendations, how do we optimize, maybe, or give, relevant information to a user. Hey, if you… there's a…
+
+27
+00:05:18.050 --> 00:05:31.829
+Danny Malter: 70% probability of making this amount of money if you list for $200 a night. There's an 80% probability of making this amount of money if you charge for $250 a night, and so on.
+
+28
+00:05:32.000 --> 00:05:45.399
+Danny Malter: And then finally, and one that's probably applicable to a lot of companies, is if you have a search on your website, relevance of search, producing the most accurate listing. So as people start to type, how do we auto-generate
+
+29
+00:05:45.400 --> 00:06:02.970
+Danny Malter: not just maybe what they're typing, but tie that into a recommendation model. Give them the relevant information that you think, or the machine learning thinks the user is going to be interested in before the user even knows, maybe, that they intended to search for that.
+
+30
+00:06:03.130 --> 00:06:10.080
+Danny Malter: So, alright, let's walk through a specific example now, or first of all, are there any questions or comments here?
+
+31
+00:06:21.120 --> 00:06:31.510
+Danny Malter: Okay, let's walk through a specific example, then. So, one project that Airbnb had been working on, categorizing listing photos. So, the purpose of this was…
+
+32
+00:06:31.640 --> 00:06:35.640
+Danny Malter: They want to provide the best experience for users searching listings.
+
+33
+00:06:35.810 --> 00:06:53.430
+Danny Malter: But much of what is up to… much of a good experience on Airbnb is left to the effort of the host, and how they describe a home. So, for example, if I'm hosting… if I'm putting up my home, or maybe I have an apartment that I own, and I'm putting that up on Airbnb.
+
+34
+00:06:54.020 --> 00:07:11.640
+Danny Malter: the descriptions, the quality of the photos is up to me. Airbnb is outside of control, has no control for the most part, in what maybe I put up, the information I put on about my home. So, to simplify this process and make it more mainstream, or uniform.
+
+35
+00:07:11.700 --> 00:07:14.780
+Danny Malter: Airbnb was working on machine learning algorithms.
+
+36
+00:07:15.040 --> 00:07:20.109
+Danny Malter: That train models to automate the process of detecting information in a photo.
+
+37
+00:07:20.170 --> 00:07:41.709
+Danny Malter: And, in a sense, doing that auto-labeling, auto information on behalf of the host. So the host no longer has to put in what type of photo this is, this is a living room, kitchen, bedroom, etc. The ML model will automatically be able to detect that, and then we'll talk about maybe even using a language model to go so far as describing what's inside of that photo.
+
+38
+00:07:42.610 --> 00:07:54.030
+Danny Malter: So before we start any type of ML project, like this computer vision project in this case, we need to label data. So, first and foremost, data is…
+
+39
+00:07:54.120 --> 00:08:08.510
+Danny Malter: always messy in the real world. You know, for those that have done the Python exercises, the optional Python exercises, you might be pulling in, for example, a wine dataset, which is very clean. There's no outliers, really, in that data.
+
+40
+00:08:08.710 --> 00:08:15.529
+Danny Malter: In the real world, data is very messy. There's complications to data. In these examples, we have
+
+41
+00:08:15.660 --> 00:08:26.999
+Danny Malter: photos that people had uploaded, stairway up to the bedroom and kitchen. Okay, well, we can't just automatically pick out certain words, bedroom or kitchen, and label this photo on the top left a bedroom or a kitchen.
+
+42
+00:08:27.120 --> 00:08:38.629
+Danny Malter: A human, an expert in this space, whoever is building this model, would have to actually go through photos and maybe remove outliers in this case, or photos that don't make sense.
+
+43
+00:08:38.860 --> 00:08:51.609
+Danny Malter: Any type of computer vision problem, it's essential for somebody to actually go look at the images, not just assume, even if you have some type of pre-labeling assigned to those images, assume that those pre-labels
+
+44
+00:08:51.610 --> 00:09:00.419
+Danny Malter: Are correct, because if you mislabel the data… the data that you're training your model on, well, then your model is not going to perform
+
+45
+00:09:00.510 --> 00:09:02.580
+Danny Malter: As well as it possibly could be.
+
+46
+00:09:02.660 --> 00:09:21.129
+Danny Malter: So, up on the top, we have hallway to the bedroom and the living room. Well, it's really neither for the most part. We wouldn't want to label that as a living room or a bedroom. Master room with bathroom and king-size bed. Well, that's not really the bedroom there. The view from the bedroom, okay, maybe that could be classified as a bedroom.
+
+47
+00:09:21.180 --> 00:09:27.979
+Danny Malter: And so on. So the labeling is just so critical to be able to produce a good output. It's probably the most…
+
+48
+00:09:28.110 --> 00:09:47.360
+Danny Malter: tedious part of a machine learning project. It's probably the most time-consuming part of a machine learning project. It's probably the least fun part of a machine learning project, but it's the most important part, because without good quality data, without good quality labeling, you will not be able to produce a good ML model.
+
+49
+00:09:48.490 --> 00:10:06.410
+Danny Malter: Who does the labeling? So the labeling, good question there. So the labeling could be done from the ML engineers, or the data scientists, so maybe that, in this case, the domain expertise isn't, like, so important that a data scientist, whoever is working on this model, could go and do that labeling.
+
+50
+00:10:06.410 --> 00:10:14.949
+Danny Malter: But in some cases where domain expertise is critical, for example, radiology, is there a tumor or not in this MRI image?
+
+51
+00:10:15.020 --> 00:10:23.410
+Danny Malter: Okay, you can't just rely on a random data scientist to do that type of labeling, so in that case, you would literally need radiologists or medical experts
+
+52
+00:10:23.410 --> 00:10:45.570
+Danny Malter: to do that labeling for you, and then a data scientist, ML engineer could use that labeling and feed it into their model. So, for the most part, data scientists, except for very specific situations. And, like, there might be very, specific situations in your industry, too, that are not healthcare-related, maybe manufacturing, and it takes an expert to understand what is or is not
+
+53
+00:10:45.570 --> 00:10:46.610
+Danny Malter: in an image.
+
+54
+00:10:53.740 --> 00:11:05.360
+Danny Malter: Philippe says… Philippe says, scale AI made billions just labeling pictures. Okay, I've never heard of them. But yeah, there's… labeling is a big business, and Amazon also has,
+
+55
+00:11:05.600 --> 00:11:15.800
+Danny Malter: what do they call it? Amazon Mechanical Turk? AWS Mechanical Turk? Well, you could outsource labeling, or assign labeling to other people in your, company as well. So I could…
+
+56
+00:11:15.800 --> 00:11:25.979
+Danny Malter: maybe I'm working on this project, I could assign it to various people on other teams in my company, or if it's not proprietary, you could actually even pay people external to your company to do labeling.
+
+57
+00:11:26.420 --> 00:11:46.340
+Danny Malter: Given they have instructions on what to label. There is high risk through that, though, because the more people that do labeling, the more different ways, you know, you could ask two people what color the sky is, and you'll get two different answers. So, in my experience, the more people that do labeling, the more variety of responses you might get.
+
+58
+00:11:48.100 --> 00:11:59.350
+Danny Malter: Okay, so what they've done here is label the data, then the next step would be actually the model building. In this case, the Airbnb team decided to use a ResNet50 model.
+
+59
+00:11:59.630 --> 00:12:05.720
+Danny Malter: So this is a convolutional neural network, which we've talked about, maybe in the last office hour.
+
+60
+00:12:06.220 --> 00:12:24.139
+Danny Malter: Convolutional neural networks are good for computer vision problems. They have a good balance in model performance and compute time. So anytime we think about using an algorithm, especially when we're training our own machine learning model in this case.
+
+61
+00:12:24.290 --> 00:12:41.600
+Danny Malter: We want to consider accuracy versus compute time. And in some cases, explainability, for the most part, when it comes to computer vision, explainability probably is not as important. But, when we're talking about model performance and compute time, there oftentimes are trade-offs.
+
+62
+00:12:41.920 --> 00:12:50.829
+Danny Malter: So, you know, the higher the performance we want to strive for, probably it's also going to require more compute time.
+
+63
+00:12:51.020 --> 00:13:09.610
+Danny Malter: A model like this, a convolutional neural network, will be… will need to be trained on a GPU, so we would also need a graphical processing unit, so we would also need to consider how we get access to a GPU? The cost of the GPU is going to be more expensive than a CPU. We're talking maybe…
+
+64
+00:13:09.810 --> 00:13:28.319
+Danny Malter: 5 or 6, 7 US dollars per hour, which, you know, at a per hour basis, not too bad, but maybe takes a week or two to train this model, your data scientist running the machine for, you know, 12, 18 hours a day, those costs could start to add up pretty quickly.
+
+65
+00:13:28.640 --> 00:13:34.420
+Danny Malter: So an example here of how this model would work is we feed in, labeled data.
+
+66
+00:13:34.420 --> 00:13:50.119
+Danny Malter: In this case, this image here would be hopefully labeled as a bedroom. We would go ahead and train our model, and our model would start to learn what this image is. And now when we get a new image, so let's assume this now is a new image that our model has never seen before.
+
+67
+00:13:50.120 --> 00:13:58.790
+Danny Malter: We could feed that new image into our model that was trained, and the output would be something like, there's a 70% accuracy, this is a bedroom.
+
+68
+00:13:58.860 --> 00:14:13.159
+Danny Malter: There's a… for whatever reason, a 2% ac… 2% chance there's a probability it's a kitchen, 10% chance it's a bathroom, and so on, and okay, well, bedroom has the highest probability, so we're going to…
+
+69
+00:14:13.280 --> 00:14:17.290
+Danny Malter: Classify this image here as being a bedroom.
+
+70
+00:14:17.380 --> 00:14:30.219
+Danny Malter: And the model, like, how does the model actually learn here? Well, the model doesn't know what a bed is, the model doesn't know what a window is, but bedrooms tend to have beds, which are… tend to be this type of a shape.
+
+71
+00:14:30.220 --> 00:14:38.470
+Danny Malter: They tend to have windows, maybe similar colors in a bedroom. You have maybe a little, nightstand next to the bed.
+
+72
+00:14:38.470 --> 00:14:43.539
+Danny Malter: So the model is learning all the characteristics of images that make up a bedroom.
+
+73
+00:14:43.570 --> 00:14:51.989
+Danny Malter: And that's how the CNN is actually learning how to classify an image here to be a bedroom versus another type of room.
+
+74
+00:14:55.540 --> 00:15:06.150
+Danny Malter: Okay, so we've labeled the data, we've trained the model with a CNN, the next step would be measuring the accuracy of the model.
+
+75
+00:15:06.610 --> 00:15:18.879
+Danny Malter: So, in this case, the Airbnb team had a high accuracy predicting bedrooms, because bedrooms were relatively standard from home to home. As I just mentioned, a bedroom, for the most part, no matter where you are in the world.
+
+76
+00:15:19.030 --> 00:15:24.480
+Danny Malter: Hopefully there's a bed, maybe a dresser, or a closet, and hopefully a window.
+
+77
+00:15:24.650 --> 00:15:41.550
+Danny Malter: Pretty much makes up at the very basic level what a bedroom is. So bedroom photos tend to have high quality of labeling as well. There's not a lot of confusion, because you don't have a kitchen inside of a bedroom like you might have with other types of rooms, maybe in a small apartment.
+
+78
+00:15:41.680 --> 00:15:55.359
+Danny Malter: So, because predicting bedrooms was relatively easier, they set a higher standard for what they must have as the precision in order to claim a photo… claim that the photo truly is a bedroom.
+
+79
+00:15:55.450 --> 00:16:02.199
+Danny Malter: So when we say precision, what I mean here is all of all of the images we predicted to be a bedroom.
+
+80
+00:16:02.490 --> 00:16:06.320
+Danny Malter: They had to have at least a 95% accuracy, or greater.
+
+81
+00:16:07.650 --> 00:16:16.449
+Danny Malter: And the graph on the right would show the recall versus precision. This is just a way that a data scientist would use to measure,
+
+82
+00:16:16.760 --> 00:16:22.960
+Danny Malter: To measure the model at a little bit more of a deeper level than accuracy alone.
+
+83
+00:16:23.590 --> 00:16:38.010
+Danny Malter: Okay, the next image type was living rooms. So living rooms were more difficult to predict than bedrooms, because there's more variety and diversity of what might be considered a living room. So again, a small apartment, maybe in a…
+
+84
+00:16:38.050 --> 00:16:59.719
+Danny Malter: you know, in New York City or Europe, you get the living room, and maybe there's a little kitchen area, and maybe you even have a pull-out bed all in the same space. So the… what somebody calls a living room is going to be a little bit more, more variety, more diversity in that type of labeling. It's going to be a more difficult class, a more difficult room to predict.
+
+85
+00:16:59.720 --> 00:17:04.119
+Danny Malter: So, because of that, they had a lower threshold of…
+
+86
+00:17:04.130 --> 00:17:12.780
+Danny Malter: what they might use to predict a living room. In other words, they're more likely to take on more risk labeling a living room than they were a bedroom.
+
+87
+00:17:13.050 --> 00:17:28.469
+Danny Malter: If they had a bedroom photo, let's go back to the bedroom, if they had a bedroom photo and labeled it as a kitchen, you know, that would look very silly. So that's why the threshold was very high for what they needed to meet. But if they had a living room photo and they labeled it a kitchen.
+
+88
+00:17:28.520 --> 00:17:33.560
+Danny Malter: Okay, maybe there was some gray area, it doesn't seem as silly, necessarily, of a prediction.
+
+89
+00:17:33.690 --> 00:17:47.389
+Danny Malter: So the point being here is, if you have a multi-class classification problem, one where you're predicting multiple classes, more than, more than two classes, you might not look at all of your classes equally.
+
+90
+00:17:47.610 --> 00:18:00.249
+Danny Malter: Some classes might be more or less important than others. For whatever reason, like, maybe it doesn't make sense in this case, but for whatever reason, maybe predicting bedrooms is more important than being able to correctly predict a living room.
+
+91
+00:18:01.790 --> 00:18:10.950
+Danny Malter: So, therefore, we need to ensure we're doing a higher, a better job, a higher accuracy, higher precision with bedrooms than we do for living rooms.
+
+92
+00:18:13.070 --> 00:18:22.989
+Danny Malter: Alright, I see a couple of questions, let me get to. Why would Airbnb train and label themselves instead of using existing models? So,
+
+93
+00:18:22.990 --> 00:18:36.880
+Danny Malter: When it comes to a CNN, that's a good question. When it comes to a… well, why would they train… why would they train themselves, is because sometimes you can't rely on an open source model to give the accuracy that you're intending for.
+
+94
+00:18:36.880 --> 00:18:42.109
+Danny Malter: So there are open source computer vision models that do a great job already at,
+
+95
+00:18:42.650 --> 00:18:58.269
+Danny Malter: predicting, for example, everyday… everyday objects. Stop signs, cars, bicycles, etc. But when you get to have a little bit more of a specific problem to your business, your use case, you can't rely just on an open source model for that.
+
+96
+00:18:58.450 --> 00:19:15.580
+Danny Malter: What you can do, though, is use an open source algorithm. So, for example, there… you could pull an open source convolutional neural network algorithm and use that algorithm to train on your own proprietary data in order to get better for your specific data.
+
+97
+00:19:15.940 --> 00:19:24.709
+Danny Malter: And we'll also talk about it in just a little bit here, why would you or would you not use a vision model, language vision model, to do this same type of work?
+
+98
+00:19:24.890 --> 00:19:34.180
+Danny Malter: Okay, in that image, this is a good example of a multi-class classified. Model has to note…
+
+99
+00:19:36.580 --> 00:19:51.779
+Danny Malter: Okay, I'm trying to see what the question is. How can I come up with probability? So is this… is the rooms trained in turn? No, so it comes up with the probability here, because I skipped over this a little bit, but you would have, as part of this training process, we would have had
+
+100
+00:19:51.980 --> 00:20:14.959
+Danny Malter: thousands of different bedroom images labeled, thousands of different kitchen rooms labeled, thousands of different living room rooms labeled, and so on. Feed all of those images through the training, and then the model starts to learn what makes up the characteristics and differences of a bedroom versus a kitchen, and that's how the model could start to come up with the probabilities associated with it.
+
+101
+00:20:18.130 --> 00:20:28.069
+Danny Malter: Who provides the requirements for the labeling? Domain experts or their business team? That's a good question. Probably, for the most part, domain experts, but…
+
+102
+00:20:28.420 --> 00:20:34.760
+Danny Malter: maybe for some reason it's the business team? I mean, the labeling is the labeling, like, there's no,
+
+103
+00:20:36.760 --> 00:20:46.709
+Danny Malter: I don't know why it would come from the business team, I can't think of an example off the top of my head, but it shouldn't really matter, because the most important thing is that the labeling is done correctly.
+
+104
+00:20:50.610 --> 00:20:56.579
+Danny Malter: I found myself more fine-tuning an existing model YOLO than training a model from scratch.
+
+105
+00:20:56.960 --> 00:20:59.829
+Danny Malter: Yeah, so when you, when you use,
+
+106
+00:20:59.980 --> 00:21:12.810
+Danny Malter: when you're using a YOLO model, you're probably using a CNN architecture underneath the hood of that. So, yeah, when I'm talking about training these models, you know, from YOLO, okay, maybe, like.
+
+107
+00:21:12.830 --> 00:21:30.919
+Danny Malter: if we're getting really specific in the definitions, you're, like, fine-tuning a YOLO model, but for the most part, you're still training to your own data in that sense. You're not building the whole model from scratch, but you're essentially, yeah, fine-tuning the existing model. It's getting pretty detailed there, but yes.
+
+108
+00:21:33.790 --> 00:21:34.960
+Danny Malter: Okay.
+
+109
+00:21:35.190 --> 00:21:45.710
+Danny Malter: Alright, so model evaluation, so here's where some of the results. The left two photos were correctly predicted as bedrooms, right two photos correctly predicted not as bedrooms.
+
+110
+00:21:47.260 --> 00:21:54.219
+Danny Malter: Left 2 photos here correctly predicted as pools, right 2 photos correctly predicted not as pools. I really like this example, because…
+
+111
+00:21:54.520 --> 00:22:02.450
+Danny Malter: when we think about a pool, and we think about how a neural network learns, what makes up a pool? Well, we have a, oops.
+
+112
+00:22:03.330 --> 00:22:04.969
+Danny Malter: Grab my pen…
+
+113
+00:22:04.970 --> 00:22:29.959
+Danny Malter: What makes up a pool? Well, we have this blue area, we have a bluish area, we have, you know, a blue sky for the most part, hopefully, a blue sky, we probably have trees around, we have trees, a green area, and so on. Well, the photos on the right also have, you know, blue sky, it has a big blue area, it has trees around, so the ability here to distinguish
+
+114
+00:22:29.960 --> 00:22:41.109
+Danny Malter: the differences of a pool versus, in this case, just not a pool. It doesn't matter that this is an aquarium or an ocean. The point is, it's just not a pool. The problem here is pool or not a pool.
+
+115
+00:22:41.110 --> 00:22:57.699
+Danny Malter: is actually pretty impressive for a model to do. Only can a model learn the differences by having enough labeled data of what's considered pools, not pools, and also, this is a good example of why the data going into the training is very important.
+
+116
+00:22:57.700 --> 00:23:06.990
+Danny Malter: If you did not have examples like this photo right here and this photo right here in your training data, then the model probably would have predicted those as pools.
+
+117
+00:23:07.120 --> 00:23:20.330
+Danny Malter: But if you did have examples of those types of images in your training data, and they were labeled not as pools, well, now your model could start to learn the differences between pool versus things that look like pools, but actually are not a pool.
+
+118
+00:23:21.120 --> 00:23:31.480
+Danny Malter: So the data that goes into the training is extremely, extremely important. Not just… we don't just want to randomly use, data that we might have.
+
+119
+00:23:32.590 --> 00:23:36.979
+Danny Malter: Okay, so when we think about quantifying this for a business problem.
+
+120
+00:23:37.290 --> 00:23:43.390
+Danny Malter: typically think about, projects like this, early stage, mid-stage, late stage. So, early stage.
+
+121
+00:23:43.390 --> 00:23:58.690
+Danny Malter: Not much is maybe known about the project, not much is known about the data. We're still in the exploratory data analysis phase, where we… it's what we call EDA in the data science world. Maybe we need to go find
+
+122
+00:23:58.690 --> 00:24:12.040
+Danny Malter: You know, what types of regulations might be applicable to the problem we're solving for, what types of, you know, policy acts, maybe are applicable to the problem that we're, solving for, security, and so on.
+
+123
+00:24:12.120 --> 00:24:20.140
+Danny Malter: The mid-stage, we're maybe starting to train a machine learning algorithm. We might start with something like gradient boosting or a decision tree.
+
+124
+00:24:20.230 --> 00:24:34.679
+Danny Malter: Now, in this case, if you're doing a computer vision problem, you probably know to just stick with a convolutional neural network, but let's say we're not doing computer vision, we might stick with a simpler algorithm before we move on to a more complicated algorithm.
+
+125
+00:24:34.720 --> 00:24:46.959
+Danny Malter: So that's where we get then to the later stage. Okay, first we've tried a simpler algorithm. Now let's do maybe an ensemble approach. Let's add a more sophisticated algorithm, like a neural network.
+
+126
+00:24:47.690 --> 00:24:59.889
+Danny Malter: Now, sometimes that's right, and sometimes that's wrong. When we do an ensemble approach, or we choose a more complicated algorithm, we can get to a higher accuracy, we can strive for a better precision.
+
+127
+00:25:00.070 --> 00:25:06.170
+Danny Malter: There are also downsides to that, though, and one of the downsides is that the problem starts to become more complicated.
+
+128
+00:25:06.480 --> 00:25:14.259
+Danny Malter: Or, let me say, as we add… as we add sophistication, the… the…
+
+129
+00:25:14.460 --> 00:25:29.589
+Danny Malter: complications sort of compound on each other. So, who's going to take care of this model in the future? Who understands the model? What if the ML engineer leaves your company and it was so complicated, so sophisticated, you need somebody else now to come in and learn that? Are they going to be able to?
+
+130
+00:25:29.690 --> 00:25:39.349
+Danny Malter: So generally speaking, when it comes to machine learning, what I have always been taught and what I preach is keep things simple as much as possible.
+
+131
+00:25:39.480 --> 00:25:43.959
+Danny Malter: Occam's Razor, if you have two things that give you the same output… outcome.
+
+132
+00:25:44.070 --> 00:25:53.909
+Danny Malter: Generally, you should be going for the simpler solution. Not always the case, but generally speaking, the simpler solution is probably going to be the better one in the long run.
+
+133
+00:25:55.440 --> 00:26:07.139
+Danny Malter: Alright, I'm gonna move now to an unsupervised learning approach, and then we'll talk about language model approach in just a minute here. Are there any questions or comments on any of the last few slides that I haven't touched on?
+
+134
+00:26:22.260 --> 00:26:23.889
+Danny Malter: Nothing from anyone?
+
+135
+00:26:30.090 --> 00:26:37.770
+Danny Malter: Okay, alright, I'll move on. So, another approach, possible approach for a problem like this,
+
+136
+00:26:38.480 --> 00:26:46.890
+Danny Malter: would be an unsupervised learning classification. Now, unsupervised and classification are sort of an oxymoron. We don't typically use
+
+137
+00:26:47.050 --> 00:26:53.179
+Danny Malter: Classification with unsupervised, because classification by itself is a supervised learning approach.
+
+138
+00:26:53.200 --> 00:27:11.740
+Danny Malter: But what we're going to do on this slide is use unsupervised learning to create our own classes. Now, remember, with unsupervised learning, the model is not telling the data scientist or the human what the output is. The model… the data scientist needs to infer that information
+
+139
+00:27:11.740 --> 00:27:13.860
+Danny Malter: Because they don't have any labeled data.
+
+140
+00:27:14.080 --> 00:27:17.569
+Danny Malter: So what we did in this approach, or what Airbnb did in this approach.
+
+141
+00:27:17.680 --> 00:27:20.790
+Danny Malter: Is take a bunch of photos and do clustering.
+
+142
+00:27:21.020 --> 00:27:40.339
+Danny Malter: And as you can see, the photos on the left are mostly indoor photos, the photos on the right are mostly outdoor photos. So, by doing clustering, the model was able to create these two distinct clusters. We have our Y label here, and our x-axis label here, so we have our X, that's meant to be an X, that's a bad X.
+
+143
+00:27:40.350 --> 00:27:42.009
+Danny Malter: Let me rewrite that…
+
+144
+00:27:42.820 --> 00:27:55.189
+Danny Malter: We have our X label and our Y, and it doesn't really matter what's on the X and what's on the Y, like, the features being picked up out of these clusters could be things like the colors, the pixels,
+
+145
+00:27:55.190 --> 00:28:07.630
+Danny Malter: you know, different shapes of the image. It doesn't matter for the most part. The most part… most important part of what I'm trying to stress here is that the unclustering approach, the clustering approach here was able to
+
+146
+00:28:07.630 --> 00:28:26.140
+Danny Malter: create two distinct clusters from our input images that we provided to it. So, let's call this cluster A, and we'll call this one cluster B. Now, again, it's unsupervised, so the model's not telling us what cluster A and cluster B are. A data scientist would have to go and analyze some of the images.
+
+147
+00:28:26.280 --> 00:28:37.879
+Danny Malter: of cluster A and B to come up with that class themselves. So by doing so, okay, let's assume Class A are all the indoor photos, so we'll class… call Class A indoor.
+
+148
+00:28:37.880 --> 00:28:48.369
+Danny Malter: And Class B are all the outdoor photos, I'm just gonna say O for outdoor, I'll say outs for outdoor. Class B are all of the outdoor photos.
+
+149
+00:28:48.380 --> 00:28:57.349
+Danny Malter: Now, I love this example because, as I mentioned earlier, real world, machine learning is difficult, there's complicated cases.
+
+150
+00:28:57.350 --> 00:29:08.860
+Danny Malter: Okay, what about all these cases right here in the middle? Let me grab a new color. What about all these cases in the middle here? We have a bunch of dots, like this one right here, where I drew a circle around.
+
+151
+00:29:08.880 --> 00:29:11.380
+Danny Malter: So we call that an indoor or outdoor photo.
+
+152
+00:29:11.490 --> 00:29:33.040
+Danny Malter: Well, honestly, maybe it doesn't matter. Maybe it's just a difficult case, maybe it's an outdoor patio that's screened in, so it's kind of outdoors, but it's sort of indoors as well. Maybe there isn't a right or wrong answer for every single use case, and there's going to be, plenty of examples, maybe like this, that you might come across in your
+
+153
+00:29:33.040 --> 00:29:46.269
+Danny Malter: problem. So what might you do with that? Okay, well, we could do whatever it's closest to, so if this is the center of the indoor, we could take the distance and measure that distance. Maybe we take this,
+
+154
+00:29:46.420 --> 00:29:53.760
+Danny Malter: The middle of the outdoor, we take that distance, and okay, maybe it's closer, this is closer to indoor, so we'll call it indoor.
+
+155
+00:29:53.820 --> 00:30:08.209
+Danny Malter: Or maybe we run another algorithm, and we take the… or a third algorithm, and between three different models, we take the majority vote. So two times this photo maybe was indoor, one time it was outdoor, so let's call this an indoor photo.
+
+156
+00:30:08.290 --> 00:30:16.959
+Danny Malter: But the point is, it's sometimes some cases are just difficult to predict on. You're not going to always have a clear black and white answer.
+
+157
+00:30:20.580 --> 00:30:38.289
+Danny Malter: All right, and then lastly, large language model approach. So we could use a language model to do a lot of this work as well, and you're probably thinking as we're going through the last 30 minutes or so, why the heck would we not just use ChatGPT, OpenAI model, Claude model, etc? There's a lot of good reasons.
+
+158
+00:30:38.290 --> 00:30:48.099
+Danny Malter: Those models are going to… possibly hallucinate in some cases. Now, for an example, like, the room types,
+
+159
+00:30:48.100 --> 00:31:07.770
+Danny Malter: you know, might not seem like ChatGPT… OpenAI or Cloud Model would hallucinate, but what happens when we start to get into some of those complicated images, like maybe this one? You know, maybe sometimes you feed in images like this, an OpenAI model might say it's a kitchen, because there's a sink and drawers there, and other times it might say it's a living room.
+
+160
+00:31:07.910 --> 00:31:16.869
+Danny Malter: That might not seem like hallucination, but it's not giving you consistency in your responses like you might get if you train your own machine learning model.
+
+161
+00:31:17.170 --> 00:31:24.970
+Danny Malter: Another possible downside of using a language model for this type of problem would be the latency, the speed of getting a response.
+
+162
+00:31:25.250 --> 00:31:43.389
+Danny Malter: So, if you're running a website like Airbnb, where you have hundreds of thousands of users on your platform, maybe at any given time, if not millions of users at any given time, you might need responses in milliseconds. You're not going to get millisecond response time from a large language model.
+
+163
+00:31:44.120 --> 00:31:48.640
+Danny Malter: You will be able to get millisecond response time from training your own machine learning model.
+
+164
+00:31:49.390 --> 00:32:07.229
+Danny Malter: And then lastly, there's going to be a higher cost associated to using a language model to do this type of problem. So, if you are using a language model, well, now every time somebody hits your website, you have to pay maybe, you know, it might be very small, a fraction of a penny to one cent per API call.
+
+165
+00:32:07.230 --> 00:32:12.130
+Danny Malter: Well, if you train your own machine learning model, you're just paying for wherever that model is being hosted.
+
+166
+00:32:12.180 --> 00:32:27.139
+Danny Malter: So it's much cheaper also. It's… once the models… once both models exist, it's much cheaper to have your own internal model than to be using a language model, because you're probably making an API call out to OpenAI or Cloud or wherever else.
+
+167
+00:32:27.470 --> 00:32:39.300
+Danny Malter: Now, there is a higher upfront cost for training your own machine learning model, because a problem like this, it might take one to two months for somebody on your team to be able to train that model in the first place.
+
+168
+00:32:39.400 --> 00:32:54.979
+Danny Malter: But yes, a language model absolutely can identify. There's a TV monitor, you know, in this case, it actually misclassified a stove. This is not a stove, obviously. Sofa, pillow, you know, clock on the wall, etc.
+
+169
+00:32:54.990 --> 00:33:12.989
+Danny Malter: And then a language model could also take it one step further and be able to describe, you know, there's a window along the right wall with plenty of sunlight that comes through. So if you remember from the very first slide that I brought up, why was Airbnb going through this whole problem to begin with?
+
+170
+00:33:12.990 --> 00:33:16.959
+Danny Malter: to make the platform more uniform. A lot of the experience.
+
+171
+00:33:16.960 --> 00:33:26.779
+Danny Malter: is up to the description the host puts on their website. Well, what if the host doesn't put up a good website? We can ensure a good description always with the language model.
+
+172
+00:33:27.030 --> 00:33:28.260
+Danny Malter: So,
+
+173
+00:33:28.560 --> 00:33:44.010
+Danny Malter: That would be another… another appropriate reason maybe why Airbnb would want to consider maybe using a combination of a convolutional neural network to first identify the room type or the objects, and then maybe use a language model to do the description.
+
+174
+00:33:44.850 --> 00:33:53.219
+Danny Malter: And then, some people have already mentioned in the chat, there are open source computer vision algorithms out there that you could use to train on your own data.
+
+175
+00:33:53.400 --> 00:34:01.279
+Danny Malter: So, YOLO, for one, we have, TensorFlow architecture we can use, there's plenty of others as well. So, when I…
+
+176
+00:34:01.420 --> 00:34:06.089
+Danny Malter: teach people this. I always like to stress the pros and cons of using
+
+177
+00:34:06.090 --> 00:34:22.930
+Danny Malter: more traditional approaches, a CNN versus a language model. Both absolutely have a lot of pros, both absolutely have a lot of cons to them as well. Ultimately, you, as maybe the product owner, the project manager, need to decide what is going to be the most appropriate.
+
+178
+00:34:22.929 --> 00:34:46.730
+Danny Malter: But you can only make that decision if you at least have some type of understanding on, okay, we could use a language model because we're going to be able to get out to market quicker, but, oh, by the way, we run the risk of the model hallucinating, and what if we're working on something so important that even one hallucination could be detrimental to, maybe our company? Well, if that's the case, you probably want to rely on training your own model
+
+179
+00:34:46.730 --> 00:34:47.750
+Danny Malter: in-house.
+
+180
+00:34:51.969 --> 00:34:53.980
+Danny Malter: Okay,
+
+181
+00:34:57.540 --> 00:35:11.480
+Danny Malter: So, question, I think, on the clustering. Give Legos to kids and tell them to sort the Legos. They will, according to shape or colors, like you said, but how do you tell the training what sort of clusters you want? In this case, the…
+
+182
+00:35:11.920 --> 00:35:17.059
+Danny Malter: You're not… you're not telling the model what types of clusters you want.
+
+183
+00:35:17.160 --> 00:35:33.879
+Danny Malter: the algorithm, and this is where, you know, data science is a science, so sometimes we need to test different algorithms. You're not automatically going to get a cluster, nice clusters like you did here, Philippe, but the model is learning very similarly. Shapes, colors,
+
+184
+00:35:34.130 --> 00:35:37.609
+Danny Malter: Designs,
+
+185
+00:35:37.690 --> 00:35:51.219
+Danny Malter: I guess, shapes, again, like, what makes up a bed is going to be unique within, sort of, within different types of photos, and for whatever reason, the model was able to learn that all of these photos here have maybe the…
+
+186
+00:35:51.220 --> 00:35:57.789
+Danny Malter: characteristics of what make up an indoor photo. Okay, what makes up an indoor photo? Maybe darker colors?
+
+187
+00:35:57.790 --> 00:36:16.879
+Danny Malter: maybe, the shapes we have, like, here we have the shape of a bed, we have a lot of white walls, or, like, maybe because the wall's painted, we have just flat colors that the model's able to distinguish, so very similarly to how a kid would sort Legos here. And what makes up an outdoor? Okay, well, we have a lot of blue colors.
+
+188
+00:36:16.880 --> 00:36:29.649
+Danny Malter: We have a lot of green colors, because those are trees, etc. So, the model is learning in a very similar way than, what a child would do when they're sorting Legos. So that's actually a really good example that you provided.
+
+189
+00:36:39.480 --> 00:36:40.930
+Danny Malter: Anything else?
+
+190
+00:36:51.110 --> 00:36:57.199
+Danny Malter: So you let the kids sort the Legos, and let the kids use their imagination.
+
+191
+00:36:58.200 --> 00:37:01.809
+Danny Malter: I have a son, but haven't gotten to the LEGO phase yet.
+
+192
+00:37:05.880 --> 00:37:18.869
+Danny Malter: Alright, so some practical, deep learning use cases, just staying on the topic of, deep learning. I don't have actually too much more content here, so I could either wrap up a little bit earlier today, or if you have other questions.
+
+193
+00:37:18.870 --> 00:37:33.029
+Danny Malter: You know, please think about those now, and we'll get to those in a little bit. Real-world use cases, and this is not a new use case, trust me, I know this has been around for many years now, and I think Apple's only gotten around to it maybe this year, which is
+
+194
+00:37:33.030 --> 00:37:47.960
+Danny Malter: just shows how far Apple's come from, some of its competitors in this space, but being able to remove objects out of the background, that's all… that's… maybe many of you have used this before, and you didn't even realize it was a neural network. This is a neural network identifying
+
+195
+00:37:48.030 --> 00:37:59.220
+Danny Malter: doing some type of object detection or boundary around the object, in this case, and then figuring out what should have been in the background. So, first, identify the people.
+
+196
+00:37:59.220 --> 00:38:12.590
+Danny Malter: And then, basically, it's a predictive problem. It's predicting what should be in that space if those people were not there. Okay, well, we have the sky, so let's fill it in with something that looks similar to the sky in this case.
+
+197
+00:38:13.520 --> 00:38:26.729
+Danny Malter: Manufacturing quality control. So, maybe we have some type of product coming down an assembly line, and we need to identify if there's a defect product before we ship that out to a customer.
+
+198
+00:38:27.260 --> 00:38:44.820
+Danny Malter: How would we do this problem? Well, we would have a convolutional neural network, probably, a trained model to identify what a good bottle cap is versus a bad bottle cap. This is a great example of why you probably would not use a vision model. A vision model would have a very difficult time with a problem like this.
+
+199
+00:38:44.830 --> 00:38:48.179
+Danny Malter: So, the Airbnb use cases may be a little bit more…
+
+200
+00:38:48.770 --> 00:39:06.089
+Danny Malter: clear-cut, black and white, this absolutely, I can promise you, a vision model probably would not be able to handle well. And it's a very important problem, especially for a large, large corporation that maybe sends out hundreds of millions of their products in bottles every single year.
+
+201
+00:39:06.130 --> 00:39:23.890
+Danny Malter: So, I can almost gear… I, you know, I don't work for any… well, I used to work for Molson Coors, so I didn't work on a problem like this specifically, but I can almost guarantee most manufacturing companies that ship out a lot of product every year absolutely have computer vision problems, just like what we walked through with the Airbnb use case.
+
+202
+00:39:23.890 --> 00:39:28.619
+Danny Malter: Identifying maybe defected products like this before they get shipped out.
+
+203
+00:39:28.760 --> 00:39:42.299
+Danny Malter: And then you can take this even a step further, if there's some type of IoT, or some type of alerting system, the menu… the warehouse, or the assembly line automatically stops, or maybe a human gets involved to pull out that product.
+
+204
+00:39:42.300 --> 00:39:48.860
+Danny Malter: Maybe there's an IoT device, a robotic device even that goes so far as take that product out automatically.
+
+205
+00:39:54.270 --> 00:40:08.350
+Danny Malter: Alright, and then, self-driving cars, for the most part, use similar technology. I mean, there's other technology as well that goes into a self-driving car, like LiDAR detection for identifying how far away something is, but
+
+206
+00:40:08.350 --> 00:40:20.459
+Danny Malter: There's probably thousands of different neural networks going on at any given time in self-driving cars, identifying traffic lights, people, trucks, etc, to be able to make decisions.
+
+207
+00:40:21.530 --> 00:40:41.019
+Danny Malter: Medical space, computer vision problems are very popular, so predicting heart disease, for example, is a very common problem. This we've talked about a little bit. Again, you would need a radiologist to be the medical expert and label those images, and then a machine learning engineer or data scientist could go train those models.
+
+208
+00:40:41.020 --> 00:40:45.480
+Danny Malter: So in this case, a normal heart you have here, right in the middle.
+
+209
+00:40:45.650 --> 00:41:02.980
+Danny Malter: You have an MRI after a heart attack, as you can see, and I'm not a medical doctor, but you can see all the black dots around here, and then an MRI of a lack of blood flow showing part of the heart, maybe… maybe in this case, the heart's a little bit smaller, shaped for whatever reason. So.
+
+210
+00:41:02.980 --> 00:41:10.450
+Danny Malter: Having a doctor go and label these 3 images, or hundreds or thousands of images, you can use those images to feed in
+
+211
+00:41:10.660 --> 00:41:24.210
+Danny Malter: to a convolutional neural network and be able to come out with a probability. So now when a new customer comes in… well, not a customer, a new patient in this case comes in, the model might spit out there's a 90% probability this is a normal heart.
+
+212
+00:41:24.390 --> 00:41:38.769
+Danny Malter: And, you know, we're not at the point where, at least in the US, where AI is only, or machine learning is only making that recommendation, a doctor is using that information to speed up the work and allow them to do other things.
+
+213
+00:41:39.060 --> 00:41:41.489
+Danny Malter: I find this very interesting, because…
+
+214
+00:41:41.770 --> 00:42:00.789
+Danny Malter: problems like this, predicting heart disease, is actually a problem that I had worked on, not in a real-world situation, but in a university setting, in probably around 2015, I want to say, so, what, 11 years ago? And at that time, I promise you, all the talk was…
+
+215
+00:42:00.940 --> 00:42:08.049
+Danny Malter: Radiology is a dead profession, nobody should be a radiologist, machine learning is gonna take over. This was 11 years ago.
+
+216
+00:42:08.320 --> 00:42:16.519
+Danny Malter: as far as I've seen, and I haven't looked recently, but as far as I've seen the last time I did look, there are more radiologists now in the United States than there were 11 years ago.
+
+217
+00:42:16.850 --> 00:42:29.430
+Danny Malter: So, I'm not here to tell you in this example that AI is gonna, you know, not take anyone's jobs. It absolutely probably will, but, I just do think that's a little bit of an ironic or interesting
+
+218
+00:42:29.590 --> 00:42:31.270
+Danny Malter: Interesting,
+
+219
+00:42:32.430 --> 00:42:40.480
+Danny Malter: You know, example where the news, the media, of course, like to hype up and make everything seem like the world is ending, and then in reality.
+
+220
+00:42:41.340 --> 00:42:59.379
+Danny Malter: the evidence hasn't necessarily been there. Even with AI, I've yet to really see what one industry, and maybe you know of one, but I feel like you would hear about it, absolutely, if it happened. There hasn't been an industry yet, and maybe there will be an industry where the jobs are all removed in the near short term.
+
+221
+00:42:59.440 --> 00:43:07.579
+Danny Malter: But had you asked people 2 years ago, you'd go back to the media articles and the news articles two, three years ago, you would think the world was ending by now.
+
+222
+00:43:07.650 --> 00:43:09.610
+Danny Malter: And we haven't gotten there, so…
+
+223
+00:43:09.710 --> 00:43:12.319
+Danny Malter: I guess we'll all see what happens in the future.
+
+224
+00:43:17.460 --> 00:43:19.150
+Danny Malter: Alright,
+
+225
+00:43:23.440 --> 00:43:29.999
+Danny Malter: So, Philippe saying plant disease detection, labs are getting less business. Do you want to explain that one a little bit?
+
+226
+00:43:35.300 --> 00:43:38.659
+Philippe Giboulot: Sure, I can, but there's lots of music in the background.
+
+227
+00:43:38.660 --> 00:43:39.530
+Danny Malter: All good, Ken here.
+
+228
+00:43:39.530 --> 00:43:40.339
+Philippe Giboulot: Can you hang on?
+
+229
+00:43:40.340 --> 00:43:42.159
+Danny Malter: No, yeah, yeah, we don't hear it.
+
+230
+00:43:43.420 --> 00:43:44.699
+Philippe Giboulot: You can't hear me? Okay.
+
+231
+00:43:45.570 --> 00:43:50.770
+Philippe Giboulot: I'm working for agriculture for a company called Nestle, globally.
+
+232
+00:43:51.640 --> 00:44:05.020
+Philippe Giboulot: And they're working with 500,000 farms, and lots of people need to have plant disease detection, but it's super expensive, and it's very slow. Sometimes you get the results, but it's too late.
+
+233
+00:44:05.550 --> 00:44:10.299
+Philippe Giboulot: So the planned disease detection, you can do it by phone. Actually, I did an app for this.
+
+234
+00:44:10.940 --> 00:44:17.259
+Philippe Giboulot: And the farmer can have an answer straight away, so there's a need to send a sample to the lab.
+
+235
+00:44:17.480 --> 00:44:21.500
+Philippe Giboulot: Or can already send the sample to the lab and just wait.
+
+236
+00:44:21.790 --> 00:44:23.740
+Philippe Giboulot: But at least it has an answer.
+
+237
+00:44:23.870 --> 00:44:28.749
+Philippe Giboulot: So, basically, the labs have much less volume of business because of this.
+
+238
+00:44:30.430 --> 00:44:32.100
+Danny Malter: Hmm, got it.
+
+239
+00:44:32.690 --> 00:44:39.660
+Danny Malter: Okay, so it's kind of shifting, like, where the source of information comes from in your example. Yeah, it's interesting, and there…
+
+240
+00:44:39.850 --> 00:44:56.520
+Danny Malter: whether good or bad, there's a lot… the agriculture space is a very interesting one with computer vision. There's a lot, like, the big companies in the United States, at least, John Deere, Caterpillar, they've been working on these types of problems for many, many years.
+
+241
+00:44:56.630 --> 00:45:13.549
+Danny Malter: Integrating computer vision models directly into, for example, tractors as they're going over some type of farmland for pest control, disease control, predicting how the quality of the land that they're going over, and so on.
+
+242
+00:45:17.510 --> 00:45:28.450
+Danny Malter: Okay. Alright, thanks for sharing that. Last, two slides here. I want to do a quick review on, evaluating machine learning models, and then those are the last two slides that I have.
+
+243
+00:45:28.450 --> 00:45:47.690
+Danny Malter: When we think about evaluating a predictive problem, we could have a regression problem where we would evaluate in… with a metric like root-mean squared error. So in this case, let's say we're predicting home prices. I'm going to do this in US dollars here, and we maybe have number of bedrooms on our x-axis. So.
+
+244
+00:45:47.780 --> 00:45:52.209
+Danny Malter: Given the number of bedrooms in a home, if you have
+
+245
+00:45:52.340 --> 00:45:54.900
+Danny Malter: You know, just for the sake of this example.
+
+246
+00:45:55.100 --> 00:46:06.789
+Danny Malter: It'd be rare if somebody has 10 bedrooms in their home, but for the sake of this example, if somebody has 2 bedrooms in their home, we're predicting, you know, maybe $200,000 for the price of the home.
+
+247
+00:46:07.090 --> 00:46:12.529
+Danny Malter: Well, when we build a predictive model to do this, we need to evaluate how well our model is doing.
+
+248
+00:46:12.530 --> 00:46:29.909
+Danny Malter: And in order to evaluate how well our model is doing, we need to evaluate how well our predictions are versus the actuals. And that's how we get to a metric like root-mean squared error. So, we don't need to get into the math here, it's actually more simple than it looks, but we're really just comparing the differences between our
+
+249
+00:46:29.910 --> 00:46:34.799
+Danny Malter: Predicted value, our red line, versus what the actual values were.
+
+250
+00:46:34.800 --> 00:46:43.970
+Danny Malter: In general, we want to minimize that as much as possible. We want our prediction to be as close to our actuals as they can be.
+
+251
+00:46:44.230 --> 00:47:03.940
+Danny Malter: Now, the caveat to that, and the big caveat, is that we don't want to overfit our model as well. So we always want to consider, if we're building a model that fits our line too well, sorry if this is hard to see, this color, but if we build a model that fits our historic data too well, what that means is we're overfitting to our historic data.
+
+252
+00:47:04.030 --> 00:47:23.679
+Danny Malter: And why that's bad is because future data that we might come across is very unlikely to fit this pattern exactly. You know, future data, we're gonna have data points up here, over here, over here, over here. It's not gonna fit this blue pattern exactly like the historic data pattern.
+
+253
+00:47:23.740 --> 00:47:35.939
+Danny Malter: And that's why when it comes to regression, we oftentimes want to generalize our model as much as possible. We want it to be applicable to a wide variety of cases, not just fit our historic data perfectly.
+
+254
+00:47:36.810 --> 00:47:44.069
+Danny Malter: And then from a supervised classification example, we have a confusion matrix. So…
+
+255
+00:47:44.370 --> 00:48:01.250
+Danny Malter: The way we read this confusion matrix here is we have our predicted on our top, our actuals, or our real values, and the way we read this is, let's say we're predicting heart disease. 100 times we predicted heart disease, 100 times it actually was heart disease. So these were correct predictions.
+
+256
+00:48:01.520 --> 00:48:05.100
+Danny Malter: Zero times we predicted heart disease when it actually was.
+
+257
+00:48:05.350 --> 00:48:07.769
+Danny Malter: Technically, this is a correct prediction.
+
+258
+00:48:07.960 --> 00:48:11.839
+Danny Malter: 10 times we predicted heart disease.
+
+259
+00:48:12.560 --> 00:48:17.079
+Danny Malter: when it actually was not heart disease, so these were incorrect predictions.
+
+260
+00:48:17.120 --> 00:48:29.960
+Danny Malter: 90 times we predicted no heart disease when there actually was no heart disease, so these were correct predictions. So, in general, our accuracy is going to be our correct answers, 100 plus 90,
+
+261
+00:48:29.960 --> 00:48:38.760
+Danny Malter: Divided by our total population, 100 plus 90 plus 10 plus 0, our total accuracy is 95% in this case.
+
+262
+00:48:39.710 --> 00:48:56.570
+Danny Malter: That might sound pretty good, but accuracy alone is not the only metric that one should use to evaluate the performance of a model, and that's why precision, recall, sensitivity, specificity, these other metrics become more important. The reason being so…
+
+263
+00:48:57.170 --> 00:49:07.010
+Danny Malter: The example I always give when it comes to heart disease, you'd rather tell somebody they have heart disease when they actually don't than to tell somebody they don't have heart disease when they actually do.
+
+264
+00:49:07.060 --> 00:49:17.450
+Danny Malter: One is gonna be a monetary error, or cause monetary, you know, mistake. The other is a life and death situation. So.
+
+265
+00:49:17.470 --> 00:49:31.779
+Danny Malter: Of course, that's an extreme example, but just like the Airbnb use case, predicting between bedrooms and living rooms, maybe a bedroom is more important to predict, not all of your classes are equal, so they should not be all treated equally as well.
+
+266
+00:49:31.780 --> 00:49:50.399
+Danny Malter: We can build a model that gets a 99% accuracy, but if all of your incorrect cases are telling people they have heart disease when they actually… sorry, that they don't have heart disease when they actually do, let's say, for example, instead of zero, we, you know, this was, 50 times we predicted somebody doesn't have heart disease when they actually do.
+
+267
+00:49:50.480 --> 00:49:56.530
+Danny Malter: versus 10 times we predicted heart disease when they actually don't. Well, this is much worse.
+
+268
+00:49:57.010 --> 00:50:02.170
+Danny Malter: This is much worse than this one right here, the bottom right. Bottom left, sorry.
+
+269
+00:50:02.360 --> 00:50:08.209
+Danny Malter: So, not all of your incorrect cases are… should be necessarily treated equal, depending on the situation.
+
+270
+00:50:11.560 --> 00:50:22.249
+Danny Malter: Alright, we do have about 8 minutes left, that's all the slides I have for you all, so I will stop sharing and open it up if there's any discussion or questions anybody has.
+
+271
+00:50:25.040 --> 00:50:30.669
+Rangarajan Raman (Cohort 13): Hey, this is Ranga. Danny, good session. I think I represent the medical device industry, Philippe in particular.
+
+272
+00:50:30.820 --> 00:50:42.149
+Rangarajan Raman (Cohort 13): So I think many of the slides that you showed resonated with the work that we do in the background. So, you were spot on in saying that, like, the number of radiologists has gone up in the last 11 years, and
+
+273
+00:50:42.520 --> 00:50:49.809
+Rangarajan Raman (Cohort 13): Americas, yeah, Philippe can also wait for this. Even in Singapore, that's the case. What they say, really, right now is,
+
+274
+00:50:49.810 --> 00:51:05.209
+Rangarajan Raman (Cohort 13): We are data-rich, model-rich, but insights and judgment poor. So that's why we need more number of radiologists to really use the right set of models to really predict the right stuff. So that's one thing I… it resonated with me completely, what you said.
+
+275
+00:51:05.220 --> 00:51:12.140
+Rangarajan Raman (Cohort 13): Second is, the way we evaluate the models is the background of the radiologists who are working with the deep learning models is.
+
+276
+00:51:12.370 --> 00:51:29.860
+Rangarajan Raman (Cohort 13): minimize false positives and minimize to false negatives. These are the two outcomes they require. So if you put it in a linear equation, these are the two things they require. Rest of them are fine. You need to have high precision, high accuracy. The critical outcomes for medical device industry, especially in the cardiology, radiology.
+
+277
+00:51:29.950 --> 00:51:41.239
+Rangarajan Raman (Cohort 13): false positives and false negatives both need to be really extremely at a minimum. So then the model passes. That's how it is. That particular page resonated with me completely. It's not like either are.
+
+278
+00:51:41.490 --> 00:51:44.780
+Rangarajan Raman (Cohort 13): Both need to be at a minimum. Yeah, yeah.
+
+279
+00:51:45.460 --> 00:51:47.770
+Danny Malter: Yeah, thanks for sharing. Thank you.
+
+280
+00:51:49.930 --> 00:51:55.650
+Danny Malter: Anyone else have, like, questions, or just comments, or any other stuff going on in the news they want to bring up?
+
+281
+00:52:10.170 --> 00:52:22.459
+Danny Malter: All right, well, I won't force it, so there's nothing else we can, wrap up, so thank you all for coming on, have a good rest of the day. Again, I don't have an office hour next week, because this is that office hour, and then I'll, hopefully see you the following week.
+
+282
+00:52:22.940 --> 00:52:23.820
+Kunle Babs (13): Absolutely.
+
+283
+00:52:23.820 --> 00:52:24.250
+Rangarajan Raman (Cohort 13): Very much.
+
+284
+00:52:24.250 --> 00:52:24.910
+Kunle Babs (13): student.
+

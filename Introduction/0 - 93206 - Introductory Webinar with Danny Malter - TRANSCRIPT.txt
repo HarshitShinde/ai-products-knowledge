@@ -1,0 +1,1182 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:00.560
+Danny Malter: Go ahead.
+
+2
+00:00:00.560 --> 00:00:01.660
+Denis Tambwe: I didn't get…
+
+3
+00:00:01.660 --> 00:00:05.300
+Danny Malter: cord, yeah, Denis, go ahead and then we'll get started.
+
+4
+00:00:05.300 --> 00:00:09.150
+Denis Tambwe: So, it is the same that we had last, last week?
+
+5
+00:00:09.320 --> 00:00:24.189
+Danny Malter: Yeah, I'm not sure who led the other one, but, if you were on the other introductory webinar, there's probably gonna be 99% repetition, so you're more than happy… you're more than welcome to, join off, maybe if you want to stick on just to see, but it's up to you.
+
+6
+00:00:24.590 --> 00:00:25.720
+Denis Tambwe: Okay, thanks.
+
+7
+00:00:27.070 --> 00:00:45.799
+Danny Malter: Okay, hello everyone. So, my name is Danny Malter, I'm one of the program leaders for this course. So again, welcome to the introductory webinar. Again, if you were on any of the other… I believe there's at least one other introductory webinar, as there's multiple program leaders in this course. If you were on that one, again, there's gonna be probably mostly repetition, so…
+
+8
+00:00:45.800 --> 00:00:54.849
+Danny Malter: You're more than welcome to hop off or stay on if you want to, but that is up to you. I will go ahead and get started, so this is a recorded session.
+
+9
+00:00:54.960 --> 00:01:01.940
+Danny Malter: Again, my name is Danny Malter, one of the program leaders in the course. I'll do an introductory of myself in just a second here.
+
+10
+00:01:01.940 --> 00:01:17.030
+Danny Malter: Today's session, probably about maybe a little over half an hour, we'll go through the course, what it's about, and also walk through Canvas, which is where the course is hosted. So, it would be great to see people on video if you are on… if you are happy to come on video.
+
+11
+00:01:17.030 --> 00:01:25.390
+Danny Malter: Either way, please do make sure you're on mute. There's also the chat. I'm gonna try to do my best to monitor the chat as we go through, if there are any questions.
+
+12
+00:01:25.500 --> 00:01:42.710
+Danny Malter: Typically, I'm on a dual monitor. Today, I'm only on one screen, so I'll try my best to see any questions coming through the chat, or we'll get to those at the end. Likely, most of your questions will probably be answered throughout the next 30 minutes, so just do keep that in mind. And at the end of my session, I'm happy to open it up for you all to
+
+13
+00:01:42.900 --> 00:01:46.460
+Danny Malter: Ask away any orientation-related questions.
+
+14
+00:01:46.700 --> 00:01:56.879
+Danny Malter: So while we're waiting for people to join, we'll get started in just a second here. If you want to introduce yourself in the chat, say who you are, where you're coming from today, and anything else about you.
+
+15
+00:02:29.130 --> 00:02:32.249
+Danny Malter: Okay, Jenny from Columbia, welcome.
+
+16
+00:02:32.590 --> 00:02:43.510
+Danny Malter: Luisa from Germany, welcome. Dave in Chicago, that's where I'm located as well, Dave, although currently in Florida. Nicaragua, Carlos, Brazil.
+
+17
+00:02:44.110 --> 00:02:52.109
+Danny Malter: I see, welcome… London, Denver, Southern California, India…
+
+18
+00:02:52.260 --> 00:03:01.040
+Danny Malter: Dallas, Puerto Rico, Barcelona, Louisiana. So, as you guys can see, this is a worldwide cohort, drawn toward this class. Valencia, Portland.
+
+19
+00:03:01.040 --> 00:03:12.709
+Danny Malter: Which is great to see. We'll get an opportunity to meet each other. There'll also be a networking session as well. You can communicate through to people on campus, so it's always great to be able to meet people from all
+
+20
+00:03:12.840 --> 00:03:37.830
+Danny Malter: walks of life across the world, see how people are using AI in different ways, and in the networking session, for those that do join in the future, it's always interesting. Similar problems, maybe you work in different industries, but you'll realize a lot of people are trying to solve the same types of problems. It's very applicable. Doesn't matter if it's maybe a marketing use case or a finance use case, the solution might be very similar, or the industry might be different, but the solution
+
+21
+00:03:37.830 --> 00:03:39.389
+Danny Malter: Might be very similar.
+
+22
+00:03:39.800 --> 00:03:43.289
+Danny Malter: Okay, so let's go on,
+
+23
+00:03:43.430 --> 00:04:02.839
+Danny Malter: The… today's session, again, about 30 minutes or so, we'll do some introductions on the faculty, we'll walk through what the course is all about, do a quick demo on Canvas, which is where the course is hosted, and then I'll open it up for any questions at the end. So please try to hold off on questions, probably until we get to the end, as likely a lot of them will be answered.
+
+24
+00:04:03.510 --> 00:04:22.000
+Danny Malter: Okay, introductions here. So the course is broken out by 6 different faculty. I'm not going to necessarily go through in detail each one of these faculty members. You're more than welcome to as we, dive deeper, if you want to do a deeper dive into each one of these professors, but
+
+25
+00:04:22.000 --> 00:04:28.660
+Danny Malter: I will point out, I think see it as a strength of this course, because, for example, the first half of the course
+
+26
+00:04:28.660 --> 00:04:44.259
+Danny Malter: is more on the technical, machine learning side. That's where some of the professors, like Professor Subarana, Professor Bonning, will have more time. And then as we get into things like more of applied machine learning, how do we apply a lot of the concepts into thinking about
+
+27
+00:04:44.260 --> 00:04:52.190
+Danny Malter: Network externalities is a topic of this course, or product design, that's where some of the other professors will have a little bit more, time
+
+28
+00:04:52.630 --> 00:05:00.270
+Danny Malter: focused, on the course. So, all of these different minds brought together to put together this one course.
+
+29
+00:05:00.480 --> 00:05:17.490
+Danny Malter: Quickly on myself, I mentioned earlier, we're program leaders. Basically, you could think about us like a teaching assistant, learning facilitator, so I'll be hosting office hours weekly, which I'll mention in just a little bit here. I'm also here to help you throughout any course content.
+
+30
+00:05:17.490 --> 00:05:21.350
+Danny Malter: For technical support, we do have a separate technical team.
+
+31
+00:05:21.380 --> 00:05:45.110
+Danny Malter: But I'll explain how you can get ahold of that technical team in just a little bit here. Full-time, my role is a VP of Data Science and Machine Learning for an identity verification company in the U.S. I'm based out of the Chicagoland area. If you want to check out my website, if you're interested, I do a lot of sports analytics on the side, but my whole career has been in data science, machine learning.
+
+32
+00:05:45.200 --> 00:05:51.239
+Danny Malter: AI, so really, that's all I've ever focused on and what I enjoy doing most.
+
+33
+00:05:51.950 --> 00:06:07.060
+Danny Malter: And I've also been teaching, both with MIT, Kellogg Business School from Northwestern, as well as some other universities for probably about close to around 7 or 8 years ago, various iterations of data science, machine learning, and AI courses.
+
+34
+00:06:09.480 --> 00:06:24.490
+Danny Malter: Alright, so what will you all learn in this course here? There's a lot of material that will… on this slide, I'll try to hit some of the high notes here. In the early parts of the course, we'll talk at a very high level about the AI design process.
+
+35
+00:06:24.490 --> 00:06:35.220
+Danny Malter: We'll talk in a deeper level in some of the early weeks on machine learning concepts, like machine learning algorithms, what are various algorithms that you would use for different situations.
+
+36
+00:06:35.370 --> 00:06:50.440
+Danny Malter: We'll have a whole week module around neural networks and what we call deep learning. We'll talk about why we would use a neural network versus more of a traditional machine learning approach. We'll have a week on generative AI. A whole module will be focused specifically on generative AI.
+
+37
+00:06:50.620 --> 00:07:01.489
+Danny Malter: And that's all at the beginning, the first 5 weeks of the course, and then the last 4 weeks of the course are more on the human-computer interactions, so how do we think about applying our product or design
+
+38
+00:07:01.570 --> 00:07:21.040
+Danny Malter: to the way that users might interact with our product? How do we think about superminds and network externalities? So as maybe users are using our products in different ways we didn't think about, how are maybe they connected to Internet of Things or other company products, having this network externality effect?
+
+39
+00:07:21.210 --> 00:07:32.680
+Danny Malter: And then, finally, the course will wrap up with one final capstone project. So we'll walk through a business use case, and also the capstone will be focused on a product or a project of your choice.
+
+40
+00:07:32.680 --> 00:07:46.889
+Danny Malter: that takes into account all of the previous week's material, and sort of wraps it up into one overall assignment. So you don't need to necessarily know what you want to do for your capstone right now, if you're not sure, but ideally, as you're thinking about going through this course.
+
+41
+00:07:46.890 --> 00:07:56.729
+Danny Malter: The point of the course is for you to get the most out of it as much as possible, so it's always great if you do want to focus on a product or a project of your choice.
+
+42
+00:07:57.310 --> 00:08:13.270
+Danny Malter: Alright, so the course is broken out into 9 weeks, 10 of you can count the orientation week, which we're in right now. Every week, every module is released on a Thursday. I do not have the ability to release that early, so if you are going out of town or have something coming up.
+
+43
+00:08:13.270 --> 00:08:17.739
+Danny Malter: Unfortunately, you do need to wait for the module to open up to see that week's material.
+
+44
+00:08:17.840 --> 00:08:41.709
+Danny Malter: I will also be hosting an office hour, so there'll be one office hour per week, per learning facilitator or program leader. I believe there's at least one other program leader in this course. It sounds like there was already another orientation session, so every program leader will host their own office hour. You're more than welcome to attend all the office hours, pick and choose whichever program leader you learn best from.
+
+45
+00:08:41.710 --> 00:08:53.289
+Danny Malter: No hurt feelings if you want to go to somebody else's office hour. But the office hours are live, time for you to interact with myself, other program leaders, as well as other students in this course.
+
+46
+00:08:53.610 --> 00:09:08.800
+Danny Malter: So on the left-hand side, you can see that I already mentioned previously the first half of the course heavily loaded on a lot of the machine learning, technical concepts, deep learning concepts, and week 5 will focus specifically on generative AI concepts.
+
+47
+00:09:08.800 --> 00:09:15.959
+Danny Malter: There'll also be a few live sessions from Professor Subarana thrown into the course as well. He does a great job in these sessions around
+
+48
+00:09:15.960 --> 00:09:34.929
+Danny Malter: language models, Agentic AI we're talking about in a current run of the course, and also generative AI concepts. And then we stop with the heavy technical aspects, and I stress this a lot because I don't want people to come in surprised that this is going to be 9 grueling weeks of technical
+
+49
+00:09:34.930 --> 00:09:52.180
+Danny Malter: topics and concepts. I did not specifically design the course, but I can only imagine they first front-loaded the course with these heavy concepts so we could start to think and understand more from the business and product side how we actually go… might go apply some of these concepts. So, starting in week 6,
+
+50
+00:09:52.390 --> 00:10:10.049
+Danny Malter: We'll take the brakes off of the, we'll step on the brakes from these heavy concepts and talk about more of the applied, the business side, computer interfaces, SuperMinds, which I mentioned earlier, is a concept out of MIT, and then more research and AI design aspects in Week 8 and Week 9.
+
+51
+00:10:12.740 --> 00:10:36.470
+Danny Malter: Alright, a lot of material on this slide as well. I'm going to highlight some of the key points. So, coming down the first column here, we have our workbooks. Workbooks are required assignments to finish the course. So, and by the way, these slides will all be shared with you. There are 5 required workbooks in Modules 1, 6, 7, 8, and 9. Again, I don't have the ability to open those up early, so you will have to wait
+
+52
+00:10:36.470 --> 00:10:38.219
+Danny Malter: For that module to open up.
+
+53
+00:10:38.220 --> 00:10:58.180
+Danny Malter: So, I'll say it one more time, all workbooks are required to pass this course. There will always be a rubric to follow, guiding you through the assignment, as well as instructions for the assignment. In the end, all the assignments are essentially pass or fail, so you'll get, I believe, just one point or zero points for an incomplete assignment.
+
+54
+00:10:58.260 --> 00:11:22.279
+Danny Malter: The Week 9 capstone will be, provided feedback from your program leaders for on-time submissions. So I'll say that one more time so it's very clear, no, make sure it's nothing unexpected. If you do want feedback on your final capstone in week 9, you will have to wait for week 9 to open up, and I promise you one week will be enough time for the capstone. It's really just a final project.
+
+55
+00:11:22.280 --> 00:11:28.049
+Danny Malter: Call to capstone, final assignment called a capstone, but you do need to submit that on time.
+
+56
+00:11:28.190 --> 00:11:31.499
+Danny Malter: To receive feedback from your, program leaders.
+
+57
+00:11:31.620 --> 00:11:45.849
+Danny Malter: Alright, second column here, the Q&A. So, we'll go through Canvas in a little bit here. There will always be Q&A boards, discussion boards available on Canvas for each module. So, Module 1 will have its own Q&A board, Module 2, and so on.
+
+58
+00:11:45.850 --> 00:11:54.090
+Danny Malter: I will be monitoring the Q&A boards, the other program leaders will be monitoring the Q&A boards as well. Those are not graded, completely optional.
+
+59
+00:11:54.340 --> 00:12:01.149
+Danny Malter: Self-study activities. Most modules, I believe, have at least one, if not multiple, self-study activities.
+
+60
+00:12:01.170 --> 00:12:24.950
+Danny Malter: I will say some of the self-study activities do get very technical, and some even get very mathematical, as we talk about some of the heavy concepts, like neural networks. These are really just there for supplemental information or extra material for those that are interested. That's why this is all optional. You do not, absolutely do not need to do the heavy math. This is not a mathematical course.
+
+61
+00:12:24.950 --> 00:12:28.149
+Danny Malter: This is not even really intended to be
+
+62
+00:12:28.150 --> 00:12:36.380
+Danny Malter: a machine learning course, even though we do talk about some machine learning concepts, at some technical levels in Weeks 2, 3, and 4.
+
+63
+00:12:36.930 --> 00:12:50.950
+Danny Malter: Finally, on the right-hand side, this is optional, I'll probably say this a hundred times to make sure it's very clear to people, no confusion, some programming workbooks. So, the programming is all done through what we call Jupyter Notebooks.
+
+64
+00:12:51.190 --> 00:13:01.790
+Danny Malter: You do not need to download Python. This is all web browser based, and will be available in Modules 2, 3, 4, and 8. So overall, there are 11 optional
+
+65
+00:13:01.800 --> 00:13:12.480
+Danny Malter: programming assignments in Python in Modules 2, 3, 4, and 8. They are not graded. The solutions will always be available to you for self-learning for those interested.
+
+66
+00:13:12.480 --> 00:13:23.760
+Danny Malter: Again, why do we offer this? Well, it's just extra material. If you're interested, as we're talking about things like supervised machine learning, and you want to go build your own supervised machine learning model on a dataset.
+
+67
+00:13:23.760 --> 00:13:27.429
+Danny Malter: We offer you the opportunity in Python to do some of that stuff.
+
+68
+00:13:27.430 --> 00:13:50.270
+Danny Malter: So this is all on a program called M-Code on the bottom right. Again, do not need to download Python, please don't, because we're not here to help you download Python. It's all taken care of on a virtual machine, but you do need to wait until week 2 to, have the ability to open up that VM, all web browser-based, so as long as you have an internet connection, and probably would be better on a computer screen.
+
+69
+00:13:50.490 --> 00:13:54.230
+Danny Malter: you have the ability to do these optional Jupyter notebooks.
+
+70
+00:13:57.230 --> 00:14:12.340
+Danny Malter: Okay, so, the required assignments, again, I'll say this because it's very important, there are 5 required assignments to complete this course, so that is in Modules 1, 6, 7, 8, and 9. Over on the right-hand side are what the workbooks are about.
+
+71
+00:14:12.340 --> 00:14:25.229
+Danny Malter: All the workbooks are… no coding required, no math required, they will all be very prompt-based assignments. So, typically there's maybe 5 or 6 various questions, throughout the assignment, and
+
+72
+00:14:25.230 --> 00:14:35.839
+Danny Malter: you know, you'll be tasked to answer those questions in English sentences or, you know, bullet points, however you want to go about submitting your assignment. So.
+
+73
+00:14:36.380 --> 00:14:46.340
+Danny Malter: Technical requirements for AI in week 1, keep it high level, human-computer interface in Week 6, and you can see, we skip over required assignments over the technical weeks.
+
+74
+00:14:46.380 --> 00:14:56.869
+Danny Malter: Creating and organizing superminds in Week 7, we'll talk about some generative adversarial networks in Week 8, that's what GAN models are. And then finally, your capstone project, which is
+
+75
+00:14:57.080 --> 00:15:12.030
+Danny Malter: focused on a product or project of your choice. All assignments are always due 7 days after they're released. If you do need to submit for an extension, you're running behind, you're going out of town, there is an option on Canvas to submit for an extension.
+
+76
+00:15:12.210 --> 00:15:20.869
+Danny Malter: And then, again, I said it earlier, but I'll say it again, if you want feedback on your capstone project in Week 9, you do need to submit that on time.
+
+77
+00:15:21.610 --> 00:15:25.979
+Danny Malter: It will still be graded if it's submitted late, you just won't receive feedback.
+
+78
+00:15:27.920 --> 00:15:44.730
+Danny Malter: Okay, the Jupyter Notebooks. Optional, optional, optional. Don't want to add any confusion here, this is not a programming course. For those interested, if you're not interested in programming, just, you know, zone me out for this one slide here. If you are interested in doing some of these Python assignments.
+
+79
+00:15:44.730 --> 00:15:59.609
+Danny Malter: Here's an example of what we'll learn in those Python assignments. We won't spend time, by the way, in office hours, unless somebody brings up a question, I'll try to answer it, but, it's really just extra material if you're interested as we learn through the course.
+
+80
+00:15:59.610 --> 00:16:08.869
+Danny Malter: training and testing of a data set. This is a very basic concept in machine learning, breaking up data and training and testing. Now, we'll talk about these concepts throughout the course.
+
+81
+00:16:08.880 --> 00:16:23.569
+Danny Malter: But if you want to actually go apply it to real-world data, in Python, that's what the assignment… this optional activity is for. Various machine learning algorithms, like logistic regression, support vector machines, that's what SVMs are.
+
+82
+00:16:23.570 --> 00:16:29.009
+Danny Malter: We'll do neural networks, if you want to do a neural network, convolutional neural network, and then your own
+
+83
+00:16:29.010 --> 00:16:46.320
+Danny Malter: scan model, generative adversarial network, and the last optional activity. So, they're good activities. Again, the solutions are always available for you. It's meant for you to walk through and sort of self-learn if you want to do these. And if you don't, again, you know, just completely…
+
+84
+00:16:46.710 --> 00:16:52.640
+Danny Malter: So completely over your head, that's totally fine as well. Not everybody is interested in doing that in this course.
+
+85
+00:16:53.430 --> 00:17:03.970
+Danny Malter: Okay, office hours, I said this a little bit already, but every… I will host an office hour every week. I believe my office hour… let me just confirm my schedule here…
+
+86
+00:17:04.050 --> 00:17:18.520
+Danny Malter: is, for this course, every Monday at 5 p.m. Eastern Time, US time, so all the calendar on Canvas, which I'll show you in just a second here, you can always find your local time zone as well.
+
+87
+00:17:18.520 --> 00:17:32.159
+Danny Malter: And you could always change the time zone to your local time zone in Canvas. So, every program leader or learning facilitator will host one office hour per week for one hour. During this office hour, it's time for live questions.
+
+88
+00:17:32.340 --> 00:17:42.879
+Danny Malter: I can't speak for the other program leaders, but I will always come in with prepared material as well. We'll go through examples. If you have questions about assignments, you're more than welcome to ask those.
+
+89
+00:17:42.880 --> 00:18:00.490
+Danny Malter: I typically do ask people if they have a specific topic that they know they want covered. In my office hour, feel free to reach out and just let me know. You know, I can speak offhand on most topics, but every once in a while, it might be good to just come in prepared a little bit, especially if it's a much deeper topic.
+
+90
+00:18:00.490 --> 00:18:07.970
+Danny Malter: You do not need to attend office hours, but we highly encourage it. It is the only live office… live time throughout this course.
+
+91
+00:18:08.350 --> 00:18:16.040
+Danny Malter: All office hours, if you cannot make them, will always be recorded, and all the slides for office hours will be posted to Canvas.
+
+92
+00:18:16.620 --> 00:18:32.840
+Danny Malter: Take note of that worldtimebuddy.com, or there's plenty of other websites out there if you need to do… if you do need to convert. All the times by default in Canvas are in UTC time, but I believe there's a setting in Canvas I'll walk you through where you can change that to your local time zone.
+
+93
+00:18:35.210 --> 00:18:56.819
+Danny Malter: Okay, I'm gonna quickly walk through Canvas, we won't spend too much time, and then we will… that was about 20 minutes, maybe about 10 more minutes, and then I'll open it up for any questions that you all might have that I didn't answer. So, Canvas is where the course is hosted. This is where you can see basically everything from the learning material, office hours, you can get access to the Zoom links.
+
+94
+00:18:56.820 --> 00:19:12.640
+Danny Malter: You can update your profile, you can communicate with other students through the discussion boards, as well as all the grading will be in Canvas. I'd say if you have never used Canvas, it's pretty easy, definitely a little bit of a learning curve the first time maybe using it, but overall, it's pretty easy to
+
+95
+00:19:12.640 --> 00:19:13.660
+Danny Malter: get around.
+
+96
+00:19:14.150 --> 00:19:22.429
+Danny Malter: Alright, first thing on Canvas, the course dashboard. Anytime there's a course announcement, this will go on the course dashboard.
+
+97
+00:19:22.430 --> 00:19:35.820
+Danny Malter: Probably by default, your settings will send out email alerts as well. Every once in a while, something might change, like this orientation got changed up… I had to change it up a couple hours.
+
+98
+00:19:35.820 --> 00:19:54.469
+Danny Malter: It's not often we'll change office hours around, we try to limit it as much as possible, but stuff does happen, things do come up, and we'll always notify ahead of time, usually at least 24 hours, if there's a change, unless it's some type of emergency where a session needs to be canceled or updated.
+
+99
+00:19:54.940 --> 00:20:05.489
+Danny Malter: Also, occasionally, your learning facilitators will send out material as well that's maybe supplemental to what we're learning in the course. You can always find that on the course dashboard, too.
+
+100
+00:20:06.830 --> 00:20:23.520
+Danny Malter: Alright, so there's a lot of pictures here, a lot of them are going to be a little bit repetitive. As each module opens up, that's where you'll see the module information. So here's an example from Module 2. This is where you'll find all of the video material, the professor lecture material, as well as
+
+101
+00:20:23.520 --> 00:20:31.119
+Danny Malter: Potential assignments, or optional, discussion boards, or optional assignments, as well in that module.
+
+102
+00:20:33.920 --> 00:20:51.409
+Danny Malter: Okay, live sessions tab on the left-hand side of Canvas is where you can find all the webinars from faculties, as well as office hours. So, I've mentioned earlier, Professor Subrana, I can't speak exactly what's going on in this course, but I'll just say from past sessions, past runs of this course.
+
+103
+00:20:51.410 --> 00:21:12.520
+Danny Malter: Professor Subrana has done 3 live sessions throughout this course, so he'll do 3 live sessions. They usually focus on topics like language models, Agentic AI, and then all the other live sessions in this course are from your program leaders. All the other lecture material from the professors are all, recorded material that will be released, each module, one at a time.
+
+104
+00:21:14.530 --> 00:21:23.859
+Danny Malter: Profile, we do encourage people to update their profile on Canvas, change your name, your image, just that way when you're communicating with other students, they know who you are.
+
+105
+00:21:24.800 --> 00:21:27.439
+Danny Malter: You can go ahead and edit your profile.
+
+106
+00:21:28.650 --> 00:21:44.909
+Danny Malter: Also, people like to connect on LinkedIn as well. I usually recommend, just mention you're coming maybe from this course. At least for myself, I get a lot of random LinkedIn connection requests. I usually will always connect with students, but it's just nice to,
+
+107
+00:21:44.910 --> 00:21:55.500
+Danny Malter: it's good to just know up front you're from the course, so I don't necessarily need to go into Canvas and look up to see if this is one of my students. And it probably goes for other people as well in the course.
+
+108
+00:21:56.760 --> 00:22:06.989
+Danny Malter: Classmates. You can find all your classmates. I believe, you can only see people's names, no other information, just for PII purposes.
+
+109
+00:22:06.990 --> 00:22:19.729
+Danny Malter: But if you do need to look up a name, I believe that should be available to you all in Canvas, which is why we recommend just updating your name to what you want, maybe a picture, as well as a description if you want to put in a description.
+
+110
+00:22:22.240 --> 00:22:40.360
+Danny Malter: Okay, communications, I already mentioned. Any announcements will always be… go out on Canvas, and likely your email settings will send you an email alert as well. You can change your notifications if you want to. If you're getting too many email requests, go in and change your notifications. Calendar, this is an important one.
+
+111
+00:22:40.390 --> 00:22:44.730
+Danny Malter: So this is where all the course sessions, live sessions, will be.
+
+112
+00:22:45.650 --> 00:22:46.700
+Danny Malter: put on.
+
+113
+00:22:46.700 --> 00:23:05.720
+Danny Malter: If you do want to sync this to your own personal calendar, down here on the bottom right, you can do that. Don't necessarily… we're not gonna walk through that on this slide. If you do need technical help, you can ask the technical support on Canvas, maybe, but this will give you the option to sync that calendar to your
+
+114
+00:23:05.720 --> 00:23:08.840
+Danny Malter: Google Calendar, your ICAL, whatever calendar.
+
+115
+00:23:09.130 --> 00:23:19.899
+Danny Malter: you choose. So, again, all the sessions on here will default to UTC time, unless you have gone into your profile settings and changed your time zone to your local time zone.
+
+116
+00:23:24.770 --> 00:23:44.340
+Danny Malter: Alright, grading. All the grading will be available on Canvas. I mentioned earlier, all the assignments are basically pass-fail, so there will be a rubric to follow, but you'll either get 1 point or 0 points for that assignment. And then all the optional assignments are obviously zero out of zero, but they show up in the gradebook.
+
+117
+00:23:44.620 --> 00:23:48.689
+Danny Malter: I will say, just on the topic of grading, you know.
+
+118
+00:23:48.930 --> 00:24:07.690
+Danny Malter: the intent of this course, and I can't necessarily speak for the other program leaders, but I'll just say for myself, I've graded probably thousands and thousands and thousands of assignments across tens of thousands of students in various courses, similar to this one, and I've been doing an iteration of this course for many years.
+
+119
+00:24:08.320 --> 00:24:27.120
+Danny Malter: First of all, it's very easy to tell if people are just copying and pasting from generative AI. Now, this is an AI course. Of course, use AI to help you on assignments. You should not use AI to just upload the assignment and say, spit me out an answer, and then copy-paste that solution as your own work.
+
+120
+00:24:27.220 --> 00:24:33.859
+Danny Malter: I'll say back to you, what is the point of doing that? I mean, I've seen everything before, but…
+
+121
+00:24:33.990 --> 00:24:40.700
+Danny Malter: Yeah, there's really… I don't think we need to hash on it too much, there's really no point of doing that, you're not really getting any value out of the course.
+
+122
+00:24:40.900 --> 00:24:53.879
+Danny Malter: Where you should be using AI and maybe help you think about an assignment, maybe structure your response in a different way, maybe help you think through a problem, or maybe go back and forth on questions to help you
+
+123
+00:24:53.880 --> 00:25:04.769
+Danny Malter: understand what you're doing a little bit better. It's okay to use… of course, I think you should use ChatGPT or Cloud or whatever language model of your choice to do assignments, but again.
+
+124
+00:25:05.250 --> 00:25:07.820
+Danny Malter: Please don't just copy and paste responses.
+
+125
+00:25:08.030 --> 00:25:10.870
+Danny Malter: The other thing, when it comes to submitting assignments.
+
+126
+00:25:11.030 --> 00:25:24.510
+Danny Malter: please put in at least a little bit of effort. Again, I've seen it all. If you're gonna submit a response with literally just 3, 5 words, and think that's good enough to complete an assignment, you're not going to get credit for that assignment.
+
+127
+00:25:25.000 --> 00:25:38.109
+Danny Malter: As you'll see when these assignments open up, there's a little bit of a text box for you to submit your response in. By no means am I asking people to write paragraphs and paragraphs and novels. There's no point of that. That's not what the intent of the assignments are.
+
+128
+00:25:38.110 --> 00:25:45.359
+Danny Malter: But at the same time, please put in at least a little bit of work if you're going to, submit your assignment and expect to get credit for it.
+
+129
+00:25:45.760 --> 00:26:01.500
+Danny Malter: Alright, I'll… hopefully that's enough on that topic. I don't need to speak anymore on that. Okay, notifications, already talked about. Assignment extension. If you do need to submit for an assignment extension, the course is usually pretty generous about this.
+
+130
+00:26:01.780 --> 00:26:15.110
+Danny Malter: There's an assignment extension. You don't need to come to myself or any other program leader to ask for an extension. You can just go into Canvas and submit for one. I think it just asks you what the reason for the extension is, but I think for the most part, they will,
+
+131
+00:26:15.110 --> 00:26:28.220
+Danny Malter: they, as in the course, will accept those assignment extension requests. They do like, though, that you actually proactively submit for an extension, though, so they're aware, maybe why a late assignment is being done.
+
+132
+00:26:29.120 --> 00:26:46.089
+Danny Malter: Okay, support. So over on the left-hand side, there also is a support link, so I'll draw that one down here. If you do have questions, now there's various types of questions you might have in the course. There are maybe general questions that are applicable to everyone in the course.
+
+133
+00:26:46.090 --> 00:27:04.939
+Danny Malter: Probably the best place to put those types of questions are on the Q&A board. So inside each module, I'll go back to… sorry, I'm making you dizzy here… I'll go back to my modules. Inside the modules tab, so in Week 1 module, you'll see a Module 1 Discussion Board, Module 2 Discussion Board.
+
+134
+00:27:04.980 --> 00:27:18.099
+Danny Malter: If you have a question about course content, and it's not necessarily a private question, or just a topic you want to bring up, that's probably the best place for that. That way, anybody can answer that question, and I also will be monitoring those questions as well.
+
+135
+00:27:18.470 --> 00:27:30.309
+Danny Malter: If you have a specific question to me, the best place to ask that is through the support tab. So, when you click on the support link, you'll open up to this page.
+
+136
+00:27:30.590 --> 00:27:48.710
+Danny Malter: And I'm not sure why they make you do double-click here, but up on the top right, there is a submit a request. And they're also typically, depending on the hours of the day, is live chat support as well on Canvas through Emeritus. So, this request, if it's applicable to myself, will get routed out from our support team, they'll send that to me.
+
+137
+00:27:48.810 --> 00:28:02.909
+Danny Malter: I usually get back to people within hours, I mean, at the very least, usually 24 hours, maybe if it's over a weekend, a little bit longer than that, but those questions, I promise you, will get properly routed to me or the other program leader.
+
+138
+00:28:03.070 --> 00:28:21.480
+Danny Malter: If you have technical questions, this is also the best place as well, as Emeritus has technical support people that can walk you through any technical types of questions you might be having as well. And by technical questions, I mean a page isn't loading on your computer, something like that. If it's a technical question, maybe
+
+139
+00:28:21.480 --> 00:28:27.350
+Danny Malter: About the course that would get related, routed probably to your program leader.
+
+140
+00:28:27.420 --> 00:28:45.300
+Danny Malter: Do keep in mind, we try to answer questions as best we can. We try to answer questions, though, that are specific to the course content. So, you know, while we offer programming optional activities in this course, it's not a programming course. It's not a Python course, so you'll not necessarily get
+
+141
+00:28:45.430 --> 00:28:50.940
+Danny Malter: full-level Python support in this course for those that are going through those activities.
+
+142
+00:28:51.580 --> 00:28:57.340
+Danny Malter: Not to say we won't help you, but just, you know, there's a… this isn't a Python course, per se.
+
+143
+00:28:59.490 --> 00:29:16.689
+Danny Malter: Okay, last slide here, just some recommendations, and then I'll open it up for questions. Of course, we recommend people attending office hours, but I'll just say firsthand, it's always great to meet people, and especially people that are recurring, office hour attendees, I always appreciate that, whether it's my office hours or
+
+144
+00:29:16.690 --> 00:29:19.520
+Danny Malter: Another program leader,
+
+145
+00:29:19.550 --> 00:29:35.139
+Danny Malter: Do your best to complete as many activities. Now, again, some of the activities will be very technical, some activities, there's the optional Python, maybe you're not interested in, but the more activities you do, absolutely, you're gonna probably get more value out of the course.
+
+146
+00:29:35.160 --> 00:29:46.920
+Danny Malter: We do ask people, please participate as much as possible in the Q&A. We monitor those, all answer questions, again, all answer discussion board posts. It just makes for a better overall experience for everybody.
+
+147
+00:29:47.090 --> 00:29:52.900
+Danny Malter: And then finally, I believe the course sends out weekly feedback surveys. If you don't mind.
+
+148
+00:29:52.900 --> 00:30:03.869
+Danny Malter: quickly filling those out. You know, this course, versions of this course, and I promise you this course has been updated over time many times. I've been on a part of this course from MIT for
+
+149
+00:30:03.870 --> 00:30:18.569
+Danny Malter: close to 5 or 6 years now. We're constantly updating the course based on feedback we've gotten from previous students to make for the best experience that you all are going to get out of this run of the course, so we just ask for a little feedback in return for that.
+
+150
+00:30:19.180 --> 00:30:36.840
+Danny Malter: Okay, so that is all I want to walk through today. Oh yeah, last slide I forgot about AI note-taking, so again, this is an AI course, but per MIT policy, I'll just read this out loud, MIT does not allow the use of AI note-taking bots during live sessions for IP protection.
+
+151
+00:30:36.890 --> 00:30:56.750
+Danny Malter: So please be aware that if an AI bot is detected, it will be removed from the Zoom session. As a reminder, all live sessions are recorded and posted on the learning platform. If you cannot attend a live session, you will be able to watch the recording. Thank you for your understanding. So that is, directly from MIT and their policy for this course.
+
+152
+00:30:58.110 --> 00:31:09.629
+Danny Malter: Okay, a lot of material, a lot of topics, a lot of, a lot there, a lot of talking from me, so I will stop and open it up to you all for any questions.
+
+153
+00:31:12.860 --> 00:31:21.880
+Danny Malter: And if you do have a question, the best way, maybe so we're not talking over each other, there's a hand-raising fee. If you click react, you can raise your hand on Zoom, and I'm happy to call on you.
+
+154
+00:31:23.360 --> 00:31:25.769
+Danny Malter: Marc… Marcin? Marcin?
+
+155
+00:31:25.930 --> 00:31:27.520
+Marcin: Hi, nice to meet you.
+
+156
+00:31:27.520 --> 00:31:28.499
+Danny Malter: That's been Joel.
+
+157
+00:31:28.500 --> 00:31:44.319
+Marcin: This question will be equally for you as for others. So, probably as many of you, I'm juggling personal life and work life, two different calendars, one Microsoft, one Google. I've tried importing the calendar feed into both calendars, and it seems that only Microsoft is synchronized, but Google
+
+158
+00:31:44.320 --> 00:31:55.329
+Marcin: shows the original times of calls, which makes the juggling of the two really difficult. And I wonder whether others have experienced the same issue, or whether maybe you know a fix, or whether it's a known issue.
+
+159
+00:31:55.950 --> 00:32:05.749
+Danny Malter: I don't know anything off the top of my head, I'll… if anybody has done that, I'll let you speak up. I'll say first, did you, did you update your time zone in Canvas?
+
+160
+00:32:06.200 --> 00:32:07.010
+Marcin: I did.
+
+161
+00:32:07.010 --> 00:32:07.640
+Danny Malter: Yeah.
+
+162
+00:32:08.800 --> 00:32:17.930
+Danny Malter: I… you can try reaching out as a support ticket, maybe somebody from the Emeritus team might be able to help you with that, would probably be best, unless somebody wants to… thinks they can answer that question.
+
+163
+00:32:19.180 --> 00:32:20.419
+Marcin: I will do, thanks.
+
+164
+00:32:20.420 --> 00:32:25.449
+Danny Malter: Yeah, so, shh, it looks like there's confirmation about it being confusing.
+
+165
+00:32:25.570 --> 00:32:35.730
+Danny Malter: Yeah, I… sorry I can't speak on that, but I would just say the support team on Canvas hopefully should be able to help. Those are the types of problems they're there for, issues they're there for.
+
+166
+00:32:42.340 --> 00:32:42.900
+Muneiah Ponnapa: Excuse me.
+
+167
+00:32:42.900 --> 00:32:47.760
+Danny Malter: Yeah, maybe a Google bug, somebody said to… yeah. Yeah, go ahead, Muneh?
+
+168
+00:32:47.760 --> 00:32:50.499
+Muneiah Ponnapa: Yeah, I have a question here, like,
+
+169
+00:32:50.630 --> 00:32:54.029
+Muneiah Ponnapa: When can we access the assignments for this week?
+
+170
+00:32:54.470 --> 00:33:07.769
+Danny Malter: So, I believe we're still in the orientation week, so what I've been told at least Thursdays is where the… when each module will open up, so you will have to wait until Thursday. I don't know the exact time, but all the modules will be released on Thursdays.
+
+171
+00:33:08.210 --> 00:33:11.130
+Danny Malter: I could look up the time if you give me a second here.
+
+172
+00:33:14.930 --> 00:33:17.790
+Danny Malter: Let me see at least what it says on mine.
+
+173
+00:33:25.530 --> 00:33:30.700
+Danny Malter: Let's see… So, this should be opened up…
+
+174
+00:33:31.730 --> 00:33:36.870
+Danny Malter: So it will unlock on August 27th, which is Thursday, at…
+
+175
+00:33:37.570 --> 00:33:43.280
+Danny Malter: I'm on… probably it's on my Central Time. I think 9 AM Eastern Time.
+
+176
+00:33:43.400 --> 00:33:49.679
+Danny Malter: United States time, or, you know, New York time, it should open up for you all.
+
+177
+00:33:51.560 --> 00:33:52.559
+Muneiah Ponnapa: Thank you, sir.
+
+178
+00:33:55.790 --> 00:33:56.740
+Danny Malter: Vitaly.
+
+179
+00:33:57.240 --> 00:34:07.560
+Vitaly Podo: Hi, Danny, thank you for the introduction today. I'm wondering how soon are usually… are your presentations usually available online?
+
+180
+00:34:07.710 --> 00:34:10.880
+Danny Malter: They usually go up pretty immediately,
+
+181
+00:34:11.239 --> 00:34:19.019
+Danny Malter: Usually they're up within, like, 10 or 15 minutes. If they're not, at the very least, a couple hours or the day, yeah. Usually, though, right away.
+
+182
+00:34:19.600 --> 00:34:19.940
+Vitaly Podo: Thank you.
+
+183
+00:34:19.949 --> 00:34:29.019
+Danny Malter: It just depends if the program leader remembers to send over their slides. Usually we do, right away. They just usually wait for our slides, and then they'll upload the video recording.
+
+184
+00:34:29.480 --> 00:34:30.760
+Vitaly Podo: Perfect. Thanks a lot.
+
+185
+00:34:31.010 --> 00:34:32.040
+Danny Malter: Rodrigo.
+
+186
+00:34:33.010 --> 00:34:40.989
+Rodrigo Camargo: Hey, Danny! So, for the examples that you're gonna use on the course that you mentioned, are they in a specific industry?
+
+187
+00:34:41.179 --> 00:34:42.809
+Rodrigo Camargo: That's your plan, or how do you…
+
+188
+00:34:42.810 --> 00:34:55.089
+Danny Malter: Not necessarily. I think the course does a good job touching on lots of different industries. It doesn't… I wouldn't say there's, like, one particular industry the course focuses heavily on.
+
+189
+00:34:55.400 --> 00:35:06.389
+Rodrigo Camargo: But you're gonna be focusing on, on things… I just want to make sure that, examples are not what my CEO calls, saving time for coffee.
+
+190
+00:35:06.500 --> 00:35:15.009
+Rodrigo Camargo: like, on AI, right? It's like, they're gonna be meaningful, right, with ROI, impactful, examples, or it's.
+
+191
+00:35:15.010 --> 00:35:15.450
+Danny Malter: Yeah, I…
+
+192
+00:35:15.450 --> 00:35:18.039
+Rodrigo Camargo: It's gonna be more like, under high-level…
+
+193
+00:35:18.310 --> 00:35:27.120
+Danny Malter: No, not… no, not high level. I do think, the course gets very deep, especially in weeks 1 through 5.
+
+194
+00:35:27.240 --> 00:35:35.340
+Danny Malter: I'll say those leagues specifically are more focused on… The…
+
+195
+00:35:36.650 --> 00:35:52.279
+Danny Malter: machine learning concepts and, like, AI concepts more than industry as a whole. And then when we get to more of the design, the business side in weeks 6 through 8, we'll touch on various topics. I think most of the topics are probably more,
+
+196
+00:35:52.610 --> 00:35:58.839
+Danny Malter: like, internet type of company use cases. There's a couple other use cases, though, as well, but…
+
+197
+00:36:00.000 --> 00:36:02.260
+Danny Malter: And I'm happy to go any direction.
+
+198
+00:36:02.260 --> 00:36:27.219
+Rodrigo Camargo: I just want to make sure, yeah, yeah, I was just trying to understand if it's gonna be one of those that's saying, oh, it helps me so much to post on my YouTube about my company and helping with the marketing, which is all great, but it's not really where money is, so I'm trying to understand the AI from the real business case. I mean, manufacturing and supply chain, so all the examples I see is about automation and posting, oh, it saved my life, you know, post is everything for me. It's like, that's so useless.
+
+199
+00:36:27.220 --> 00:36:27.840
+Rodrigo Camargo: for me.
+
+200
+00:36:27.840 --> 00:36:35.930
+Rodrigo Camargo: And I… I want to see is how do we use AI, right, to really optimize the beta, how to really hit the beta, right, how to…
+
+201
+00:36:35.930 --> 00:36:48.539
+Rodrigo Camargo: optimize the cycle time on a factory, or how to optimize the workflow of a FP&A person or a controller. So those are the areas that I was trying to see, rather than…
+
+202
+00:36:48.790 --> 00:36:54.189
+Rodrigo Camargo: very hypothetical, saving time for coffee, making my presentation nicer.
+
+203
+00:36:54.190 --> 00:37:12.539
+Danny Malter: Yeah, that's not… this isn't like a, oh, we're gonna teach you how to use Claude type of a course. I'd say give week one a… let week one go through, and then as, like, in office hours, maybe if you want to dive into… you don't feel like we're hitting on your industry use case, any program leader could probably speak to it in office hours.
+
+204
+00:37:12.540 --> 00:37:13.250
+Rodrigo Camargo: Awesome.
+
+205
+00:37:14.570 --> 00:37:15.510
+Rodrigo Camargo: Awesome, thanks.
+
+206
+00:37:15.520 --> 00:37:17.360
+Danny Malter: Yeah, Aravinds, go ahead.
+
+207
+00:37:19.630 --> 00:37:23.190
+Aravindh Chandra Boopathy: Hi, Danny. Thank you for your presentation.
+
+208
+00:37:23.360 --> 00:37:33.360
+Aravindh Chandra Boopathy: Just have a few questions regarding any prerequisite documents that we need to have, or, to set up the courses,
+
+209
+00:37:33.360 --> 00:37:34.080
+Danny Malter: Nope.
+
+210
+00:37:34.870 --> 00:37:38.780
+Danny Malter: As long as you have an internet connection and you can access Canvas, you're good to go.
+
+211
+00:37:39.140 --> 00:37:40.759
+Danny Malter: No, prerequisition.
+
+212
+00:37:40.760 --> 00:37:44.559
+Aravindh Chandra Boopathy: What I'm asking, so, do we need to install Python, or what.
+
+213
+00:37:44.560 --> 00:37:56.179
+Danny Malter: Nope, nope, all of that, if you choose to do that, it'll all be, web browser based, so as long… again, as long as you have an internet connection, and in that case, probably a computer screen, you're good to go.
+
+214
+00:37:56.520 --> 00:37:59.140
+Danny Malter: But you just, you do need to wait for those modules to open up.
+
+215
+00:37:59.610 --> 00:38:06.089
+Aravindh Chandra Boopathy: So, are we going to use the cloud or chat GPT? So, any AI models, or do we need to subscribe for the Azure?
+
+216
+00:38:06.420 --> 00:38:08.390
+Aravindh Chandra Boopathy: Azure AA or anything like that?
+
+217
+00:38:08.390 --> 00:38:24.800
+Danny Malter: You… so the course doesn't offer anything, but you're more than welcome throughout the course to use whatever language model of your choice for any assignments, whether they're program or required assignments, and we can also talk about various of, like, pros and cons of different models, maybe in office hours as well.
+
+218
+00:38:28.100 --> 00:38:29.939
+Aravindh Chandra Boopathy: Yeah, okay, okay, then. Okay.
+
+219
+00:38:30.310 --> 00:38:32.600
+Danny Malter: I see in the chat…
+
+220
+00:38:32.790 --> 00:38:39.469
+Danny Malter: Do we get capstone projects early? No. So you do not. To get capstone early, you need to wait for week 9 to open up.
+
+221
+00:38:43.350 --> 00:38:54.289
+Danny Malter: The grading for the capstone, so again, all assignments are due 7 days from the release date, so you'll have 7 days from the release date for that capstone, to submit it if you do want feedback.
+
+222
+00:38:59.940 --> 00:39:05.040
+Danny Malter: Okay, Rodrigo, is there another question, or still he ended up… Oh, okay.
+
+223
+00:39:05.040 --> 00:39:08.380
+Rodrigo Camargo: Nice, sorry for not going over.
+
+224
+00:39:11.370 --> 00:39:12.700
+Danny Malter: Aravinds, yes?
+
+225
+00:39:14.890 --> 00:39:28.910
+Aravindh Chandra Boopathy: Yes, Denis just having one more question regarding this, assignments. So, for the assignments, actually, we are a team of, you know, four people who have taken this course. So we'll be…
+
+226
+00:39:28.950 --> 00:39:36.980
+Aravindh Chandra Boopathy: doing assignments based on our, our company's project. So, what if in case it got delayed or something like that?
+
+227
+00:39:38.490 --> 00:39:45.660
+Danny Malter: Sorry, can you… are you… are you saying, like, if you did assignments together? Or are you just saying you had overlapping topics?
+
+228
+00:39:46.950 --> 00:39:54.000
+Aravindh Chandra Boopathy: It's regarding the assignments, so you said, there'll be some, set of assignments we need to do for each of the modules, right?
+
+229
+00:39:54.140 --> 00:39:56.830
+Aravindh Chandra Boopathy: Yep. For the assessment.
+
+230
+00:39:57.710 --> 00:40:09.460
+Aravindh Chandra Boopathy: So… so what we are planning, so we are… we are going to do the assignments based on our company's project. So, in case if it got delayed or something like that, so…
+
+231
+00:40:09.770 --> 00:40:11.920
+Aravindh Chandra Boopathy: How can we take it forward?
+
+232
+00:40:12.190 --> 00:40:17.620
+Danny Malter: Yeah, you'll… I mean, the cores can't necessarily wait on that. You'll have to,
+
+233
+00:40:18.170 --> 00:40:27.310
+Danny Malter: I mean, you'll have to take that up. If you, for whatever reason, like, wanted to wait because it lines up with your company, I mean, you'll have to, submit…
+
+234
+00:40:27.470 --> 00:40:32.050
+Danny Malter: Into the course, maybe a reason why you're submitting late in that case?
+
+235
+00:40:36.090 --> 00:40:50.059
+Danny Malter: Sorry, I just can't necessarily speak on that topic, it's not my decision there. Rolf, quickly in the chat, I see, yeah, number of European… number of sessions in… late in the night in Europe,
+
+236
+00:40:50.530 --> 00:40:54.950
+Aravindh Chandra Boopathy: So, how many assignments will be there to complete this course?
+
+237
+00:40:55.250 --> 00:41:01.109
+Danny Malter: Five assignments, so if you need review on that, you could always go back in this recording and those slides that I went over. There's the five apartments.
+
+238
+00:41:01.110 --> 00:41:02.900
+Aravindh Chandra Boopathy: 5 ass… 5 assignments, okay.
+
+239
+00:41:02.900 --> 00:41:03.450
+Danny Malter: Yeah.
+
+240
+00:41:03.720 --> 00:41:13.979
+Danny Malter: So Rolf, I… yeah, we try our best to accommodate people as many… across many time zones as possible, and that's why the sessions are always recorded as well. But,
+
+241
+00:41:14.720 --> 00:41:20.939
+Danny Malter: Unfortunately, Rolf, I'm sorry, it's just what it is, is the times that they're currently set to is what the office hours will be at.
+
+242
+00:41:21.700 --> 00:41:23.270
+Aravindh Chandra Boopathy: Understood, understood, yeah.
+
+243
+00:41:23.800 --> 00:41:25.269
+Danny Malter: London, go ahead.
+
+244
+00:41:28.280 --> 00:41:43.090
+London Beaubouef: I was curious to know if there is a GitLab or a GitHub to where I can see if there's, like… because I saw you… you said there's, like, examples that you said of, like, AI code that was, like, for… that was written in Python. Is that, like, hosted on, like, a GitLab or a GitHub?
+
+245
+00:41:43.440 --> 00:41:46.240
+Danny Malter: All the, there will always be…
+
+246
+00:41:46.620 --> 00:41:59.090
+Danny Malter: a solutions file available. When those Python optional activities open up, there will always be a solutions file that you can download and walk through as you go through those optional activities.
+
+247
+00:41:59.720 --> 00:42:04.029
+Danny Malter: It's not on GitHub, I think it maybe is just a PDF, or maybe on Google Cotelab.
+
+248
+00:42:05.070 --> 00:42:10.220
+London Beaubouef: Okay, is, I think that's it. Alright, thank you.
+
+249
+00:42:10.800 --> 00:42:12.520
+Danny Malter: Vitaly, another question?
+
+250
+00:42:12.520 --> 00:42:18.920
+Vitaly Podo: Yeah, one more question, please. If we do get an assignment, a request to extend, for an extension.
+
+251
+00:42:19.410 --> 00:42:23.979
+Vitaly Podo: Do we still get the assignment graded and get the feedback?
+
+252
+00:42:25.410 --> 00:42:27.610
+Danny Malter: Yeah, so, so,
+
+253
+00:42:27.980 --> 00:42:35.040
+Danny Malter: The only feedback on the assignments will be on the capstone project, and then there's a grading team as part of the course that will…
+
+254
+00:42:35.200 --> 00:42:40.169
+Danny Malter: grade the… what is it? Assignments 1, 6, 7, and 8.
+
+255
+00:42:40.310 --> 00:42:44.659
+Danny Malter: If they're late, they'll still be graded, but then only the final capstone will receive feedback.
+
+256
+00:42:46.060 --> 00:42:46.880
+Vitaly Podo: Thank you.
+
+257
+00:42:53.970 --> 00:43:08.779
+Danny Malter: Okay, Marc… Marcin… sorry, I forgot, it was Marcin or Marcin says the tech support just got back about the Google issue, so apparently there's a 12 to 24 hour Google lag with the syncing, so thanks for adding that information.
+
+258
+00:43:09.900 --> 00:43:11.570
+Danny Malter: London, yes.
+
+259
+00:43:13.130 --> 00:43:16.919
+London Beaubouef: Since we have the, for the office hours, instead they're live.
+
+260
+00:43:17.190 --> 00:43:27.840
+London Beaubouef: how is that… how would that be different from, like, regular office hours? Like, would we still be, like, expected to, like, set up appointments, or is it, like, me, like, schedule a time? I'm sorry, what?
+
+261
+00:43:27.840 --> 00:43:46.500
+Danny Malter: So there's no one-on-one office hours in this course, so if you do have questions… now, they are live. Again, I do come in with prepared material, but my… I get most enjoyment out of office hours if we sort of get off topic, and people are just asking questions, so the intent of office hours is time for you. If there's questions.
+
+262
+00:43:46.610 --> 00:43:56.630
+Danny Malter: You know, as it relates to product or your business use case you want to talk about, more than happy to go over those, but it will be open to all students that attend those office hours, as well as being recorded.
+
+263
+00:43:57.510 --> 00:44:01.379
+London Beaubouef: Is there any way to where you can schedule one-on-one time? Is that an option?
+
+264
+00:44:01.790 --> 00:44:05.550
+Danny Malter: Unfortunately not, there's not in this course any one-on-one office hour time.
+
+265
+00:44:06.250 --> 00:44:06.940
+London Beaubouef: Okay.
+
+266
+00:44:12.640 --> 00:44:29.779
+Danny Malter: Dhamo, yeah, there should be a way to get… set up your notifications in Canvas. I walked through that as my slides. I know I was going through a little bit quick, but in your Canvas settings, you should be able to set up calendar notifications. I think you also get calendar event notifications, 24 hours before all the sessions.
+
+267
+00:44:29.940 --> 00:44:38.849
+Dhamo: No, I'm not talking about those notifications, but when I import the feed, right, the calendar events into my calendar.
+
+268
+00:44:39.510 --> 00:44:43.139
+Dhamo: I don't see, you know, the reminders being set up.
+
+269
+00:44:44.720 --> 00:44:45.810
+Dhamo: Puts on… on the…
+
+270
+00:44:45.810 --> 00:44:51.740
+Danny Malter: I'm not sure I'm gonna be able to help you, so you might have to reach out to the, support on that type of question.
+
+271
+00:44:52.420 --> 00:44:53.050
+Dhamo: Okay.
+
+272
+00:44:57.530 --> 00:44:58.150
+Danny Malter: Okay.
+
+273
+00:45:02.210 --> 00:45:18.539
+Danny Malter: Alright, last question, then maybe we'll wrap up. This one was directed to me in the chat. Do we get any use cases for the capstone, or do we need to come up with your own use case? So the capstone is intended for your own use case. If you need help coming up with an idea, I'm more than happy to, but it's intended for you to focus on a…
+
+274
+00:45:18.660 --> 00:45:20.509
+Danny Malter: Product of your own.
+
+275
+00:45:21.540 --> 00:45:27.629
+Danny Malter: Okay, and the last one, and then I'll wrap up. Vitaly, I see you nodding your head here. Would you have any suggested readings?
+
+276
+00:45:28.140 --> 00:45:39.340
+Danny Malter: I mean, there's no required material coming into this course. You know, where do I keep up with stuff? Now, it's always changing, it's hard. I think connecting with…
+
+277
+00:45:39.850 --> 00:45:52.140
+Danny Malter: people in the space on LinkedIn is a good one, just to see what people are posting around this. Now, there's a lot of, I'll say, like, buzzwords and garbage you see on LinkedIn as well, so you need to be able to feed through that type of stuff.
+
+278
+00:45:52.500 --> 00:45:59.780
+Danny Malter: you know, one for me, not necessarily specific to this course, I try to stay with, like, neutral,
+
+279
+00:46:00.380 --> 00:46:04.010
+Danny Malter: news sites… Axios, has a…
+
+280
+00:46:04.300 --> 00:46:12.579
+Danny Malter: Axios has one that usually has a… one specific to AI, and they're always real quick to keep up with stuff, especially maybe, like.
+
+281
+00:46:12.710 --> 00:46:32.290
+Danny Malter: AI regulations going on in the United States, or various things like that, so I like to just keep up with that, so that way in the morning, I could… first thing I see is, you know, oh, you know, there was a meeting between Sam Altman and the other leads in the U.S. government about various regulations. That's how I keep up with that stuff, and I know that's not about your question specifically, Vitaly.
+
+282
+00:46:32.290 --> 00:46:35.300
+Danny Malter: But otherwise, all the material for this course will be available
+
+283
+00:46:35.300 --> 00:46:54.180
+Danny Malter: in those modules as well. Some topics, I mean, to be honest, YouTube is probably the best place. When we talk about neural networks, I mean, you could have a whole course about neural networks, and we fit it into about 2 weeks. So, when we get to those modules, I'm happy to share resources that I know are good resources on YouTube that I like to go to.
+
+284
+00:46:56.190 --> 00:46:59.419
+Danny Malter: And what is the highest level of math we can get into?
+
+285
+00:46:59.550 --> 00:47:06.360
+Danny Malter: Yeah, so the course does, like… and this will be more of the optional aspects, London, but we do talk about things like,
+
+286
+00:47:06.680 --> 00:47:22.509
+Danny Malter: forward and backward propagation and, you know, derivatives. Like, calculus is how neural networks work. Now, it's not required that you know calculus or remember calculus, you know, most of us probably, if you have taken calculus, you haven't taken it since
+
+287
+00:47:22.510 --> 00:47:37.389
+Danny Malter: college or maybe in high school. So absolutely not a requirement of the course, but some of the optional activities do get into that level of mathematics for those that are interested in seeing at a very deep level, how these topics work.
+
+288
+00:47:38.990 --> 00:47:39.830
+Danny Malter: So…
+
+289
+00:47:40.690 --> 00:47:56.900
+Danny Malter: Alright, I'm gonna go ahead and wrap up. I think we've hit on a lot of questions here, and hopefully any confusion was, any… hopefully there was no confusion, but hopefully any confusion has been answered on anything. So again, you will have to wait until Thursday for the course to open… week 1 to open up.
+
+290
+00:47:56.900 --> 00:48:01.060
+Danny Malter: You could always reach out to your program leaders through Canvas, and…
+
+291
+00:48:01.180 --> 00:48:05.919
+Danny Malter: Looking forward to the course, and looking forward to maybe meeting you, some of you, in office hours.
+
+292
+00:48:07.060 --> 00:48:11.280
+Danny Malter: So, thank you all, have a good rest of the week, and see you soon.
+
+293
+00:48:11.750 --> 00:48:12.799
+Marcin: Thank you, bye.
+
+294
+00:48:12.800 --> 00:48:13.230
+Danny Malter: Hi, everyone.
+
+295
+00:48:13.230 --> 00:48:14.399
+Luisa Munoz: Thank you, Brad.
+

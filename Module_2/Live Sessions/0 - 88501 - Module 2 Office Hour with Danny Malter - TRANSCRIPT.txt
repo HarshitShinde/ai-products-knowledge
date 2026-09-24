@@ -1,0 +1,1358 @@
+WEBVTT
+
+1
+00:00:01.460 --> 00:00:08.619
+Danny Malter: Hello, welcome everyone to Week 2 Office Hour. Thank you all for coming on today. Happy Labor Day for those
+
+2
+00:00:08.780 --> 00:00:10.160
+Danny Malter: In the US?
+
+3
+00:00:10.270 --> 00:00:28.469
+Danny Malter: So, we'll continue on with Week 2 material. Before I get into some of the material today, when I go… typically, in my office hours, I'll go through any questions that came in to me previous to the office hours, so please, if you do have questions that come up during the week that you want to discuss during office hour, let's
+
+4
+00:00:28.560 --> 00:00:34.960
+Danny Malter: go ahead and reach out to me, and I'm happy to take those on, typically, as long as they're applicable, of course, to that week.
+
+5
+00:00:35.310 --> 00:00:49.889
+Danny Malter: So, one question that came up, I think is a good one. What are all things we need to worry about when we think about software development plan? So, when it comes to implementing, let's say, AI model, maybe you're plugging into
+
+6
+00:00:49.940 --> 00:01:08.929
+Danny Malter: an Anthropic model, or an OpenAI model, and by the way, we could talk about the new OpenAI model a little bit. I personally have not used it yet, would be curious if anybody else has had an opportunity to use it, and how it maybe compares to Fable from Anthropic. It's just the pace of these new models coming out, I can't even keep up with them all.
+
+7
+00:01:08.930 --> 00:01:19.639
+Danny Malter: Nonetheless, back to the question, what are all the things we need to worry about when we think about software development? So, when we're… maybe we're plugging in via Python code to an OpenAI API,
+
+8
+00:01:19.640 --> 00:01:31.330
+Danny Malter: Maybe we're using a tool like Amazon Bedrock. We'll talk about Bedrock throughout my office hours. Bedrock is like a marketplace of different language models that you can access through Amazon Web Services.
+
+9
+00:01:31.550 --> 00:01:51.219
+Danny Malter: Or maybe you're just training your own machine learning model. So in Module 2 is the first week where you'll have an opportunity to do an optional Python assignment, where we talk about things like splitting up your data into a training and a test set, so you can actually train a model and then test it and see how it does against an unseen dataset.
+
+10
+00:01:51.560 --> 00:02:01.949
+Danny Malter: We need to think about how to write reproducible code, smart code, efficient code, and maybe if you're using a language model, the prompts that are going to go into that.
+
+11
+00:02:02.340 --> 00:02:16.330
+Danny Malter: Now, it's one thing to just write code and train a machine learning model, or just write code that plugs in a prompt into an API, but if you're going to implement a model into a production, website, product, IoT device.
+
+12
+00:02:16.330 --> 00:02:23.070
+Danny Malter: We need to think about how to write efficient code, and that's where the concept of machine learning operations comes into play.
+
+13
+00:02:23.070 --> 00:02:40.980
+Danny Malter: ML Ops, machine learning operations, is essentially taking software development and machine learning and marrying those two concepts together. We might need to think about, are we going to use a GPU? Now, if we are training a machine learning model, just because we are doing that doesn't mean it requires a GPU.
+
+14
+00:02:41.110 --> 00:02:57.090
+Danny Malter: But maybe you have billions of rows of data, and you want to train a neural network. Or maybe you want to train a computer vision model. Okay, that is a concept we'll talk about over the next few weeks, and in that case, you likely will need a GPU, or we could rent out access to a GPU via AWS.
+
+15
+00:02:57.870 --> 00:03:12.239
+Danny Malter: If we're going to do an API through OpenAI, Anthropic, any other provider where you might be using a language model, or just an API in general, we need to think about the cost associated to that. And when it comes to language models, I think one of the
+
+16
+00:03:12.630 --> 00:03:15.640
+Danny Malter: I don't know if it's a secret, necessarily, but…
+
+17
+00:03:15.640 --> 00:03:33.310
+Danny Malter: these language models are actually pretty cheap nowadays. If you're making a call, let's say you are using AWS Bedrock, which I highly encourage you all to go look into if you're interested in. Now, the benefits of Bedrock is that Amazon take care of all the computing resources, so you just need to plug in via an API to any of the model
+
+18
+00:03:33.320 --> 00:03:44.769
+Danny Malter: any model that you want to use. And most of the major models are available on Bedrock, except for a lot of the OpenAI models. But the cost of using a model on Bedrock, let's say you're just inputting
+
+19
+00:03:44.900 --> 00:03:50.850
+Danny Malter: you know, and the cost varies, so I can't just say that this is going to be the cost per API call, but let's say you have
+
+20
+00:03:50.940 --> 00:03:57.500
+Danny Malter: 20 input words and 50 output words, and that'd be probably even on the larger side for most people's use…
+
+21
+00:03:57.560 --> 00:04:07.239
+Danny Malter: use cases, we're talking a fraction of a US penny per API call. So overall, the costs are generally pretty low. Of course, if you're going to do that across
+
+22
+00:04:07.270 --> 00:04:21.279
+Danny Malter: maybe millions of users, you need to think about scaling, and maybe Bedrock isn't maybe the best place if you do want to scale, because there are limitations to Bedrock. So I would encourage you all to use Bedrock. If you're going to try to implement Bedrock, especially at a large
+
+23
+00:04:21.350 --> 00:04:26.449
+Danny Malter: Corporate enterprise, you know, other things to take into account in that regards.
+
+24
+00:04:26.790 --> 00:04:37.439
+Danny Malter: Machine learning, though, in general, if you're training our own machine learning model, a lot of those are just free and open source. Alright, the pipeline, so we need to think about how we're going to get access to the data.
+
+25
+00:04:37.440 --> 00:04:51.359
+Danny Malter: Do we use a language like SQL, maybe, to pull the data? You might use a language like Python or a data analyst to clean the data and explore the data. Maybe Python to train the machine learning model, or plug into your language model API.
+
+26
+00:04:51.360 --> 00:05:07.729
+Danny Malter: you get some model, and maybe you have a dashboard as well for monitoring your model, like metrics, or other ways you might want to evaluate that model. So there's orchestration tools out there, like Apache Airflow. You can do that all in Databricks as well. So Databricks is,
+
+27
+00:05:07.730 --> 00:05:17.950
+Danny Malter: they're just blowing up lately as far as valuations of their company, but truly, Databricks is a good product. I use it. Databricks is basically just an all-encompassing
+
+28
+00:05:17.950 --> 00:05:26.329
+Danny Malter: data science, machine learning, language model, type of tool. You can just do a lot of things inside of Databricks relatively easily.
+
+29
+00:05:26.560 --> 00:05:43.279
+Danny Malter: you might not want to think about the engineering. So, how are we going to piece everything together from an engineering perspective? And then AI-specific challenges would be things like model drift. We'll talk about that concept near the end of the course. What happens where we don't… maybe we train a machine learning model.
+
+30
+00:05:43.280 --> 00:05:46.989
+Danny Malter: And we trained it in 2025, and it worked very well.
+
+31
+00:05:46.990 --> 00:06:08.980
+Danny Malter: But maybe our user base in 2026 is slightly different. We, you know, previously had a lot of Gen X, and now we have a lot of millennial customers for whatever reason, so they behave differently. Well, that model that we built in 2025 might no longer be applicable to our user base in 2026. Or we could build a better model now with a different type of user base that we could train on.
+
+32
+00:06:09.130 --> 00:06:23.359
+Danny Malter: If we're using a language model, we need to think about things like hallucinations and bias in that model. You possibly have data quality issues, and we always want to consider monitoring and retraining models over time. So, I think one,
+
+33
+00:06:23.450 --> 00:06:46.199
+Danny Malter: misconception, maybe, around machine learning and AI is that, okay, we've got this model up and running, awesome job, let's pat ourselves on the back. No, that's just year one, like, if this was a baby, that's just year one. We need to now monitor this model every single month, six months, every year, maybe retrain that model, as I just gave that example. Your user base may be changed.
+
+34
+00:06:46.200 --> 00:06:49.150
+Danny Malter: Which would be a reason why we want to retrain that model.
+
+35
+00:06:49.150 --> 00:07:04.210
+Danny Malter: Maybe a year from now, better algorithms are available, and we want to try using a different algorithm on the same data set. So there's a lot of reasons why you would want to retrain your model, but most importantly, your model absolutely will start to decay over time if you don't
+
+36
+00:07:04.210 --> 00:07:22.000
+Danny Malter: consider using a different algorithm, or retrain it if we're doing traditional machine learning. Maybe in a language model world, we want to be able to upload a new model, going from, you know, Claude Sonnet to Claude Opus, and now we're on Cloud Fable as the best of the anthropic models out there.
+
+37
+00:07:22.440 --> 00:07:30.619
+Danny Malter: Okay, so long-winded answer to that question. Are there any, oops, sorry, are there any questions I could take on this topic here?
+
+38
+00:07:42.770 --> 00:08:07.540
+Danny Malter: Okay, one more. I'll make this a little bit shorter. What does a data acquisition process typically look like? So, from acquiring data standpoint, now, if we're gonna do any type of machine learning or AI, we need some type of data. Maybe you already have data available to you internally. So, if you're at a large company, that might be in varying teams. The marketing team might have access to data that might be applicable to you.
+
+39
+00:08:07.540 --> 00:08:30.649
+Danny Malter: Maybe the finance team has data applicable to the project that you're doing. Maybe there's an analytics or data science team that has data available. The engineering team might have website data that might be available to you. So I've seen it before, especially at the large companies. Every team's sort of internally competing with each other, and they have access to data that could be very useful.
+
+40
+00:08:30.670 --> 00:08:33.030
+Danny Malter: For the project that you're trying to solve for.
+
+41
+00:08:33.190 --> 00:08:52.469
+Danny Malter: Maybe we need to go out and purchase data. This tends to be costly, so when we purchase data, we could purchase bulk data that might be applicable to your project. We also could purchase data through an API, so every time we make an API call, maybe you're paying 2, 3, 4, 5, 6, 7, 8 cents per API call, which
+
+42
+00:08:52.470 --> 00:09:00.229
+Danny Malter: Sounds relatively cheap, but if you do that, you know, across millions of API calls, it could start to add up. Tens of millions of API calls.
+
+43
+00:09:00.560 --> 00:09:14.500
+Danny Malter: Maybe we're doing… we wanna… we can collect open source data. So open source data would be just being, freely available data out there on the internet that we could maybe get for free, or scrape in a legal way.
+
+44
+00:09:14.500 --> 00:09:21.020
+Danny Malter: So, plenty of ways that we might want to acquire data. And then, is it possible to acquire pre-annotated data?
+
+45
+00:09:21.020 --> 00:09:36.389
+Danny Malter: So one topic that we talked about at the end of last office Hour, and we'll talk about today, is supervised machine learning. So with supervised machine learning, we're making predictions, and we need a label in order to make a prediction. So your label could be whatever it is you're trying to predict on.
+
+46
+00:09:36.400 --> 00:09:42.770
+Danny Malter: If you're trying to predict how much money a customer's gonna spend with you in the next
+
+47
+00:09:43.160 --> 00:09:58.540
+Danny Malter: 2 months? Well, we need a data set with how much money people have spent with us in the last two months. If you want to predict what type of item a user is going to purchase in their shopping cart, you need a data set with the label of what people have historically have purchased.
+
+48
+00:09:58.660 --> 00:10:15.389
+Danny Malter: If you want to predict whether or not an MRI image has cancer, well, we need to have historic MRI images labeled by doctors, physicians, whether or not a given MRI does or does not have cancer associated to it. So that would be your annotation, your label. Now.
+
+49
+00:10:15.460 --> 00:10:32.960
+Danny Malter: Labeling could be very tedious. We could use a language model to label for us. I will say I've gone down this route before, you're open to hallucinations, so even with some of the better language models out there, you know, 95 times out of 100, you might get a perfect label, but those 5 times it hallucinates.
+
+50
+00:10:32.960 --> 00:10:42.250
+Danny Malter: That could be a real problem if you're using this model in production. We could also have our internal data science team label. Maybe you need,
+
+51
+00:10:42.250 --> 00:10:56.310
+Danny Malter: domain experts to label, so, like, the cancer example, you would want actual physicians to help do that type of labeling. You also could outsource labeling, so there are tools out there, like Amazon Web Services has a tool called,
+
+52
+00:10:56.600 --> 00:10:59.009
+Danny Malter: And now, of course, I'm drawing a blank on it.
+
+53
+00:11:01.850 --> 00:11:26.239
+Danny Malter: I'm… wow, I'm just completely losing thought on what… there's so many AWS applications out there, but they have an application out there that you can actually outsource labeling as well, whether it be to people internally in your company, or you can even pay people externally to do labeling for you. So, labeling is a very tedious part of a data science project if you don't have data labeled for you, or a machine learning project, but it is extremely important, because if you don't have good labeling.
+
+54
+00:11:26.410 --> 00:11:43.649
+Danny Malter: then you're not going to be able to build a good machine learning model. Just at a very basic example that I can give you, let's say we want to build an application where we're detecting different types of trees. So we have a bunch of pictures of trees, and, you know, maybe we have
+
+55
+00:11:44.030 --> 00:11:51.390
+Danny Malter: You know, different… different types of trees here, and we have people going in and labeling all these different images, and
+
+56
+00:11:51.740 --> 00:12:01.679
+Danny Malter: You know, these two trees, the tree 1 and Tree 2 are the same type of tree, but one person labeled it as a maple tree, and another person labeled it as an oak tree.
+
+57
+00:12:01.680 --> 00:12:26.219
+Danny Malter: So if people don't label consistently, your machine learning model is always going to be a little bit confused as doing learning. So that's why it's also really important not just to have people do labeling, but to people that actually understand the business problem, or the problem that you're trying to solve to do labeling, so that we label both of these maybe as properly a maple tree, or both properly as an oak tree, or whatever type of tree it might have been.
+
+58
+00:12:26.990 --> 00:12:44.170
+Danny Malter: Alright, so I see a question in the chat. I know how to annotate for computer vision or acoustic hearing, but that is one piece by one piece, super tedious. I understand that in a semi-supervised AI, AI may annotate itself. So yeah, absolutely, there are, like,
+
+59
+00:12:44.840 --> 00:12:53.140
+Danny Malter: I've used it before. Now, you run the risk, though, even in a non-AI world, you run the risk that the…
+
+60
+00:12:53.250 --> 00:13:00.670
+Danny Malter: AI… like, an AI machine learning model is never going to be 100% accurate, and that's the problem, Philippe, or a language model, so…
+
+61
+00:13:00.990 --> 00:13:12.110
+Danny Malter: if… if you're gonna rely on AI or machine learning to do labeling for you, and you're okay with a little hallucination, I don't know why you necessarily would be, but okay, maybe that's a risk that you're willing to take on.
+
+62
+00:13:12.230 --> 00:13:26.800
+Danny Malter: Now, Amazon Web Services, and I talk about AWS a lot, because that's the world that I'm in. There's… every… all these big cloud providers are just copycats of each other, so you can do all the same stuff, probably, in Google Cloud and Azure world.
+
+63
+00:13:27.170 --> 00:13:41.480
+Danny Malter: But Amazon Web Services has a tool called SageMaker Labeling, and after you do a certain amount of labeling fill-up, AWS, if you choose this option, will spit up an instance and automatically label for you.
+
+64
+00:13:41.500 --> 00:13:57.819
+Danny Malter: Now, it'll automatically label for you, but that labeling might not be 100% correct. So now, if you train a machine learning model off of data that was not 100% correct when it was labeled, you're not going to be able to build as good of a model as if you took the time to do the labeling properly. So there's…
+
+65
+00:13:57.820 --> 00:14:07.220
+Danny Malter: There's pros and cons to both. I'm not saying it's a bad thing, it definitely speeds up the effort, but you run the risk that now your model is not as good as you could have possibly built.
+
+66
+00:14:07.630 --> 00:14:09.489
+Danny Malter: So, yeah, I'll leave it at that.
+
+67
+00:14:13.060 --> 00:14:31.880
+Danny Malter: Okay, another cool one in the space, too, just on the topic of labeling computer vision, a company doing a lot of cool things, RoboFlow, so I'll put this one into the chat. And there's open source tools to do labeling as well, but RoboFlow has a lot of cool no-code solutions for doing labeling and training computer vision models.
+
+68
+00:14:32.190 --> 00:14:49.679
+Danny Malter: And by the way, we'll talk about in my office hour, what are the pros and cons of running or training a traditional computer vision model versus using a language vision model to do your computer vision. Now, it seems like the obvious one, at least, you know, I think it maybe sounds obvious, why not just use
+
+69
+00:14:49.680 --> 00:15:05.710
+Danny Malter: the best OpenAI Astra, or whatever the new model is, or Cloud Fable to do any type of computer vision. Well, there's a lot of cons to that as well. If you're relying on… you need to rely on near 100% accuracy, I don't know that today I would leave that up to
+
+70
+00:15:05.710 --> 00:15:30.469
+Danny Malter: a vision model, you also have higher costs, maybe, associated to a vision model versus training that internally. You also run the risk of longer latency speeds, so a vision model might take 1 to 2 seconds to get a response back, and if you're trying to build a computer vision model that gives a response back to your customers on a mobile app, you maybe want millisecond response time. So, we'll get into all these topics as well.
+
+71
+00:15:30.470 --> 00:15:37.359
+Danny Malter: But there's a lot of reasons why we'd still want to stick with traditional machine learning over using a language model.
+
+72
+00:15:40.860 --> 00:16:01.319
+Danny Malter: Okay, alright, let's move on. So, some of the topics we'll cover over these next few weeks here, we'll talk about machine learning, and I… most of my slides, I'll never just copy material from the lecture material. You could go back and watch lectures, but this one's a good high-level overview of topics we'll cover in this course. So, supervised machine learning, we covered at the end of my office hour.
+
+73
+00:16:01.320 --> 00:16:03.929
+Danny Malter: Last week is where we want to make predictions.
+
+74
+00:16:04.310 --> 00:16:15.519
+Danny Malter: Now, there's various buckets that fall into supervised learning. For the most part, the two most popular would be classification and regression. So, classification is where we want to predict a class.
+
+75
+00:16:15.520 --> 00:16:34.560
+Danny Malter: yes or no, somebody's gonna churn or not churn, somebody's gonna purchase a red t-shirt, blue t-shirt, or a yellow t-shirt from our website. Those would be one of three different classes. A regression problem would be predicting a numeric value. So, predicting home prices, predicting how much money somebody's gonna spend, customer lifetime value, etc.
+
+76
+00:16:34.600 --> 00:16:50.999
+Danny Malter: Unsupervised learning is when we want to infer information from unlabeled data. So we don't have a label, we don't have historic items that users have purchased to build a predictive model like that. We don't have how much money people have spent in the past with us to build a model to predict that.
+
+77
+00:16:51.200 --> 00:17:05.999
+Danny Malter: We could still use machine learning, but it would be unsupervised. So the most popular type of unsupervised learning would be clustering, where we might use an algorithm, like k-means, we'll talk about algorithms a little bit today, to cluster our users into different groups.
+
+78
+00:17:06.359 --> 00:17:11.409
+Danny Malter: And then a concept that we won't spend too much time in the course, but we'll touch on it here and there.
+
+79
+00:17:11.410 --> 00:17:32.409
+Danny Malter: Semi-supervised learning, one of the more popular types of semi-supervised learning would be reinforcement learning, where the go-to example would be a self-driving car. So as you're teaching a self-driving car, you want to teach a car to stay within the boundary line. We'll cover this concept in a later office hour, but, you know, as your car moves in a specific direction.
+
+80
+00:17:32.410 --> 00:17:51.479
+Danny Malter: It takes a direction… it takes a step, and it lands outside my boundary line. Okay, that's a bad job car. Let's penalize our car in our code, and, you know, our car starts going back in this direction. Okay, well, that's a good job. Let's give it a score of plus one. And now our car… you do this over and over and over, like Pavlov's dog, for those from,
+
+81
+00:17:51.480 --> 00:18:09.700
+Danny Malter: maybe your high school or college, psychology classes, you do it over and over and over by rewarding or penalizing your car, and the car starts to learn, okay, well, clearly I should be staying within the boundary line, because that's what… that's how I get rewarded in this situation. So that's the idea of reinforcement learning.
+
+82
+00:18:13.580 --> 00:18:23.699
+Danny Malter: Alright, before we do any type of machine learning, we need to figure out what type of data that we have. Now, most machine learning algorithms that you might train your own model with
+
+83
+00:18:23.810 --> 00:18:41.339
+Danny Malter: like to be in what we call a structured data format. So structured data would be any type of structure associated to your data. It could be relational tables with columns and rows. You know, most of you, at least, at the very least, you know, in Excel, for example, is a structure. There's columns and rows to it.
+
+84
+00:18:41.480 --> 00:18:48.850
+Danny Malter: Could be a CSV format, could be log data, as long as there's structure, or maybe some type of sensor or time series data.
+
+85
+00:18:49.160 --> 00:18:53.710
+Danny Malter: So, from a language model or AI perspective with relational data.
+
+86
+00:18:54.100 --> 00:19:14.079
+Danny Malter: We can, you know, churn prediction, credit scoring, customer lifetime value I've talked about a little bit. We might do some type of segmentation or forecasting, broad detection, or… excuse me, or from a time series perspective, maybe algorithmic trading or some type of predictive maintenance associated to your
+
+87
+00:19:14.270 --> 00:19:15.350
+Danny Malter: problem.
+
+88
+00:19:15.490 --> 00:19:24.649
+Danny Malter: With unstructured data, unstructured data is just data that's not in structure. So raw text, images, audio, video type of data.
+
+89
+00:19:24.650 --> 00:19:39.159
+Danny Malter: With unstructured data, we can turn it into structured data. That's where data engineering comes into play. So again, if you're going to train your own machine learning model, typically we like that data to be in some type of structured format before feeding it into an algorithm.
+
+90
+00:19:39.420 --> 00:20:01.319
+Danny Malter: Of course, though, we could still use a language model for a lot of this as well. So you might use a language model with text to summarize or spit out new text. You could use a multimodal model to analyze images, visual search, ask what's inside of this image, same thing with audio. And then video is really just a sequence of images. We'll talk about that in future office hours.
+
+91
+00:20:01.660 --> 00:20:06.100
+Danny Malter: Okay, so let's talk about training our own model.
+
+92
+00:20:06.940 --> 00:20:16.439
+Danny Malter: And… okay, well, I guess before that. Okay, what does it mean to have labeled data again? This is a very important concept. I think sometimes people get lost on.
+
+93
+00:20:16.470 --> 00:20:39.259
+Danny Malter: the label is just the variable you have in a historic data set that you might want to predict on. So if you want to build a churn prediction model, we needed a data set with a column whether or not people have historically churned. If you don't have this column here, we don't have a label to build a churn prediction model.
+
+94
+00:20:39.260 --> 00:20:43.050
+Danny Malter: So the label is really just whatever variable it is you're trying to predict on.
+
+95
+00:20:49.080 --> 00:21:01.829
+Danny Malter: Okay, another example, marketing wants to predict each customer's lifetime value. Is this supervised or unsupervised learning? Oh, I'll leave it up to you, if you want to throw into the chat. Is this a supervised or unsupervised learning problem?
+
+96
+00:21:12.040 --> 00:21:16.280
+Danny Malter: I got a supervised with a question mark. Supervised…
+
+97
+00:21:31.640 --> 00:21:35.729
+Danny Malter: So the key point here, so I'm gonna change that question mark next time.
+
+98
+00:21:35.730 --> 00:21:59.990
+Danny Malter: To an exclamation point. Yeah, so the key point here is marketing wants to predict. Yeah, so you are making an assumption, of course, that the data is labeled, but anytime you see the word predict, that's a, indicator of predictive learning. So this would be probably some type of regression, where you have, on our x-axis here, various futures, maybe 10-year spend engagement. On the y-axis, maybe in U.S. dollars here, so
+
+99
+00:21:59.990 --> 00:22:05.670
+Danny Malter: Given the tenure, given the spend, you're gonna predict what… what,
+
+100
+00:22:05.670 --> 00:22:18.020
+Danny Malter: oops, how much money, or what the customer lifetime value is of a given customer. Sorry, I meant to go to the red line there. So, given this X value, you'd be predicting this Y value.
+
+101
+00:22:20.970 --> 00:22:29.810
+Danny Malter: Okay, and then last one, marking groups users into segments using k-means clustering. Is this supervised or unsupervised?
+
+102
+00:22:35.890 --> 00:22:38.340
+Danny Malter: Chris says, unsupervised.
+
+103
+00:22:38.530 --> 00:23:00.529
+Danny Malter: Unsupervised, unsupervised. Okay, great, you all are listening. So this is… clustering is an unsupervised learning approach. So again, we're not making predictions, we don't have a label that we're making predictions on, but we could still group users, so maybe we grouped users based on monthly spend here on our x-axis, and engagement, which might be logins on our y-axis, so…
+
+104
+00:23:00.530 --> 00:23:12.540
+Danny Malter: In other words, what this is saying is users that don't spend a lot of money with us, but have high engagement, fall into this cluster A. So the model isn't predicting that these given users are
+
+105
+00:23:12.540 --> 00:23:23.459
+Danny Malter: any label associated to them, but through this unsupervised learning approach, we can analyze, okay, let's go look at all of the users in cluster A, and let's call them,
+
+106
+00:23:23.630 --> 00:23:33.220
+Danny Malter: you know, our freebie users. These are the users that don't like to spend money with us, but still like to use our product, for whatever reason. You can also, by the way, turn
+
+107
+00:23:33.320 --> 00:23:35.469
+Danny Malter: Clustering into supervised learning.
+
+108
+00:23:35.470 --> 00:24:00.429
+Danny Malter: So, we can go back into our data set. This is one really good approach sometimes in machine learning. Let's say user 1 falls in cluster A, user 2 is in cluster B, etc. Well, we could go back, we don't have our label, but we could go back and say, okay, well, user 1 was in cluster A, user 2 was in cluster B, and now, with our other variables, variable 2, variable 3,
+
+109
+00:24:00.430 --> 00:24:04.579
+Danny Malter: We can now use this as our label.
+
+110
+00:24:04.580 --> 00:24:27.290
+Danny Malter: So we didn't originally have something to predict on, but now we started with an unsupervised learning approach to cluster our users, use that cluster now to feed in a predicted model. So now, given a new user comes into our dataset, we can predict, okay, now we have user, you know, 100 down here, let's predict, given variable 2,
+
+111
+00:24:27.290 --> 00:24:34.700
+Danny Malter: In variable 3, we could predict which cluster user 100's gonna fall into. Maybe they fall into cluster C.
+
+112
+00:24:35.460 --> 00:24:39.029
+Danny Malter: For whatever reason, you might want to do predictive modeling there.
+
+113
+00:24:42.280 --> 00:24:47.889
+Danny Malter: Okay, so supervised versus unsupervised. Supervised, we train a machine learning model.
+
+114
+00:24:49.760 --> 00:24:53.090
+Danny Malter: Now, an important concept in supervised learning
+
+115
+00:24:53.390 --> 00:25:09.110
+Danny Malter: is that we want to split our data into a training dataset and a validation data set. And sometimes we might split out a separate validation and a test dataset. The most important part, though, is you hold out data to validate your model against.
+
+116
+00:25:09.420 --> 00:25:23.300
+Danny Malter: So, in this example, we have our available data, and available data doesn't mean all the available data in the world, it just means, okay, I have some data that I'm going to use to build a machine learning model. Now, of this data that I'm going to use.
+
+117
+00:25:23.300 --> 00:25:38.189
+Danny Malter: We typically would break out maybe 60-70% of that data into our training data set, which we have right here, our training data set, and then the remainder would go into a validation, or in this case, we have a separate validation and test data set.
+
+118
+00:25:38.500 --> 00:25:52.270
+Danny Malter: Now, the reason why we do this is that we use the training data to train our machine learning models, so the model sees this data and learns from it. The optimizer adjusts weights to minimize error on these examples.
+
+119
+00:25:52.450 --> 00:26:08.139
+Danny Malter: So let's say we're predicting customer lifetime value, we have some available data to us. Of all this available data, we split up 60% into our training, 20% into a validation, and then 20% into a separate test dataset.
+
+120
+00:26:08.370 --> 00:26:22.689
+Danny Malter: The validation is where we tune and compare various models against each other, and then we might test it on a completely unseen data set, just to ensure we're not overfitting our model. Overfitting is a concept we'll talk about.
+
+121
+00:26:22.690 --> 00:26:28.759
+Danny Malter: Probably over various office hours, but the general idea of overfitting is that
+
+122
+00:26:28.760 --> 00:26:35.790
+Danny Malter: We built a model that works really well on our training data, but on the unseen data, the model did not perform well.
+
+123
+00:26:35.940 --> 00:26:40.659
+Danny Malter: Well, if we are overfitting a model to our training data, what that means is
+
+124
+00:26:40.660 --> 00:26:57.049
+Danny Malter: let's go ahead and release this model into production, it's not going to perform well. It only worked well on this training data, but the model, for whatever reason, was overfit to our training data, and isn't going to make good predictions on unseen data that was not part of that training process.
+
+125
+00:26:57.920 --> 00:27:00.570
+Danny Malter: So let's talk about that a little bit more.
+
+126
+00:27:01.190 --> 00:27:13.739
+Danny Malter: on… I think we'll cover that on the next slide, a little bit more overfitting. So, what does it mean to train a machine learning model? So, again, we have our data set, we break it up into a training dataset and a validation data set.
+
+127
+00:27:13.740 --> 00:27:26.200
+Danny Malter: Now, when we train our model, let's say we're building a model to learn, how much a house is gonna cost, given the square footage, the number of bedrooms, the age of the home, etc.
+
+128
+00:27:26.280 --> 00:27:40.679
+Danny Malter: We're gonna use all of these data points and feed it into a model, an algorithm, maybe, like, k nearest neighbors, random forest, decision tree, gradient boosting, these are algorithms we'll talk about over the next few weeks.
+
+129
+00:27:40.700 --> 00:27:49.100
+Danny Malter: To learn, okay, given a 3-bedroom home that's 10 years old, this is typically the house value.
+
+130
+00:27:49.200 --> 00:28:05.839
+Danny Malter: Given a home that has 4 bedrooms and is typically 5 years old, you know, those typically fall in the range of 180 to, you know, $200K. I don't know whether you could find a house in the United States for that cost these days, but let's just go with the example here.
+
+131
+00:28:05.880 --> 00:28:24.870
+Danny Malter: Now, we're going to train our machine learning models, so through this training process, your model, your algorithm is going through all this data, finding all of these connections. Given all these variables, these input variables, square footage, bedroom, and age, this is what the target variable, your actual home value, it typically is.
+
+132
+00:28:25.220 --> 00:28:31.539
+Danny Malter: And then we're going to make predictions. So our model is going to predict, and we want to minimize the error as much as possible.
+
+133
+00:28:31.540 --> 00:28:52.809
+Danny Malter: So, our model for this use case, for row 1… whoops, sorry, for row 1 here, our model predicted $128,000, when in reality it was $130,000. For row 2, our model maybe predicted $177,000 when it actually was $180,000.
+
+134
+00:28:52.920 --> 00:29:01.970
+Danny Malter: And we go through this for every single record, and we can calculate what our error was, or in this case, just the difference between our predicted value and our actual value.
+
+135
+00:29:03.140 --> 00:29:05.449
+Danny Malter: So, we… what my…
+
+136
+00:29:05.500 --> 00:29:23.110
+Danny Malter: We might want to measure our error through a value, like mean absolute error, a root mean squared error. We're not going to get into the details of those, but those would be typically how you measure how well your model is performing. And through this process, we can see whether or not our model is overfitting to our training data.
+
+137
+00:29:23.150 --> 00:29:39.279
+Danny Malter: Because now, we will apply the same model, so this is the output, maybe, that our model provided. You know, Y, which is our predicted home value, is equal to some value that our model learned.06 times the square footage, plus
+
+138
+00:29:39.280 --> 00:29:55.180
+Danny Malter: 0.3 times the number of bedrooms, minus 1.2 times age, add 50. Now, your model is coming up with this equation. You spit in square footage, bedrooms, and age into this equation, and you get some output Y, which is your predicted home value.
+
+139
+00:29:55.470 --> 00:30:02.129
+Danny Malter: Now, we're going to use this same model against our unseen data set, our validation, or our test dataset.
+
+140
+00:30:02.260 --> 00:30:10.170
+Danny Malter: And why we do that is to see, okay, let's see how this model works now on a dataset that was not used as part of the training.
+
+141
+00:30:10.920 --> 00:30:29.480
+Danny Malter: And you might get something like this. So you might get a very good accuracy on our training dataset. So let's say our model performed 99% accurate on our training dataset, but when we use this model against a test dataset, an unseen data set, you know, maybe it's only getting a 52% accuracy.
+
+142
+00:30:29.480 --> 00:30:35.510
+Danny Malter: Well, this is overfitting. This means our model works really well to our training data, the data it trained on.
+
+143
+00:30:35.510 --> 00:30:38.889
+Danny Malter: But on our unseen data, we're doing a poor job.
+
+144
+00:30:38.890 --> 00:30:54.520
+Danny Malter: So we're overfitting. There's no black and white rule, necessarily, to what is or is not considered overfitting, but we generally want our accuracy from our test set, or our validation set, to be as close to our training data set as possible. So, a good…
+
+145
+00:30:54.520 --> 00:31:08.830
+Danny Malter: A good example would be maybe on our training data set, we got a 99% accuracy on our model, and on our validation data set, or our test dataset, we got a 98% accuracy. Now, it should be expected our model's going to perform maybe a little bit worse.
+
+146
+00:31:08.830 --> 00:31:15.940
+Danny Malter: Because this is the data that was not used for training, so it's more representative of what we might see in the real world.
+
+147
+00:31:15.940 --> 00:31:16.720
+Danny Malter: So…
+
+148
+00:31:16.720 --> 00:31:31.849
+Danny Malter: Overfitting is very important in machine learning to be able to understand before you put a model out into the real world. One of the worst things you could possibly do when it comes to machine learning or AI is your model is overfitting, and you don't realize it.
+
+149
+00:31:31.980 --> 00:31:48.529
+Danny Malter: Because what that means is you'll think your model is performing well, but in reality, your model is going to be performing poorly. Probably one of the worst things you could do when it comes to machine learning. Think your model's doing well, but in reality, you put it out into production, and it's going to be performing poorly.
+
+150
+00:31:49.650 --> 00:32:07.190
+Danny Malter: And so question, if we're not happy with the equation, what do we do? Well, let's say your model… let's say… so, it wouldn't be like you're unhappy with the equation. What you'd be happy… unhappy with, maybe, would be the accuracy or the metric that you're using to evaluate how well your model's performing.
+
+151
+00:32:07.190 --> 00:32:11.880
+Danny Malter: So let's say our mean absolute error is, is, you know.
+
+152
+00:32:12.240 --> 00:32:30.229
+Danny Malter: $50,000. We're always plus or minus $50,000 in our prediction. That's probably not too great. We want to get lower that a little bit to get maybe… we're striving to a mean absolute error of $5,000, or $10,000 might be acceptable. So, what you might do in that situation, we could
+
+153
+00:32:30.290 --> 00:32:32.340
+Danny Malter: Try a different algorithm?
+
+154
+00:32:32.390 --> 00:32:51.310
+Danny Malter: maybe you need more data, maybe we need to clean our data better, maybe there's too much noise in the data, you could possibly create new variables from your existing variables. So these would be all part of what we call the exploratory data analysis process. Before we train a machine learning model, we want to go through all these steps.
+
+155
+00:32:51.310 --> 00:32:56.939
+Danny Malter: To get us the best possible dataset that we can get for doing that type of predictive problem.
+
+156
+00:32:57.070 --> 00:33:04.280
+Danny Malter: And by the way, in the real world, sometimes machine learning is very difficult on real-world data. When we run machine learnings and,
+
+157
+00:33:04.590 --> 00:33:20.209
+Danny Malter: You know, maybe in a course like this, the data's already pretty clean for you, you plug it into an algorithm, you get some response. In the real world, data's messy, and the reality is, building predictive models for your use cases might be very difficult. So.
+
+158
+00:33:20.440 --> 00:33:32.999
+Danny Malter: You know, while you might get models in our course, like, 98, 99% accuracy, maybe on your problem, on your company data that's very messy, the best you can possibly do is
+
+159
+00:33:33.430 --> 00:33:51.000
+Danny Malter: 80% accuracy, 82% accuracy. But typically, what we would, at the very least, to answer your question on, you know, what if we're not happy with the output that we get, you try a different algorithm and compare. You can't really say that Model 1 is good or bad, really, until you've built a Module 2 to compare it against.
+
+160
+00:33:52.240 --> 00:34:11.709
+Danny Malter: Or you have some other way of measuring the accuracy. So, let's say we have a classification problem where, you know, let's go back to my tree example. We're identifying what types of trees… let me grab an empty page here. We're building a model maybe to identify types of trees.
+
+161
+00:34:11.710 --> 00:34:34.660
+Danny Malter: And we have a bunch of trees, and we're asking… we can test, maybe, okay, let's see how well our model predicts the tree versus a human labeler. Maybe our model could predict the correct tree at a 95% accuracy, and a human labeler only gets an 85% accuracy. Maybe that's good, maybe that's not good, it's going to depend on the business situation.
+
+162
+00:34:34.659 --> 00:34:36.570
+Danny Malter: Ultimately to decide on.
+
+163
+00:34:36.580 --> 00:34:45.710
+Danny Malter: And maybe the model saves time, and that's a plus to using the model over a human labeler, even if the human labeler and the model are equal.
+
+164
+00:34:48.630 --> 00:34:49.699
+Danny Malter: Okay.
+
+165
+00:34:49.800 --> 00:35:13.940
+Danny Malter: Alright, so through this training process, where we split up data into a training and test data set, another popular process is what we call K-fold cross-validation. So, in K-fold cross-validation, the concept is you might run your model 5 different times, you iterate through 5 different times, and take the average error amongst all 5 models to get what your truly expected error is going to be.
+
+166
+00:35:13.940 --> 00:35:19.489
+Danny Malter: So the concept here is that we have our data set, and we break it up into 5 different chunks here.
+
+167
+00:35:19.490 --> 00:35:28.559
+Danny Malter: In chun… in iteration 1, our first… oops, I keep grabbing… not grabbing my pen… the first 20% of data…
+
+168
+00:35:28.560 --> 00:35:38.330
+Danny Malter: The second 20% of data, the third 20% of data, and the fourth 20% of data would go into your training data set, and then your fifth
+
+169
+00:35:38.440 --> 00:35:41.109
+Danny Malter: 20% of data would go into your test data set.
+
+170
+00:35:41.390 --> 00:35:45.410
+Danny Malter: In iteration 2, you're gonna take chunk 1, 2,
+
+171
+00:35:45.410 --> 00:36:05.199
+Danny Malter: 3, and 5 is part of your training data, and then test data set will be the fourth 20% of data, and so on, and so on, and so on. And the reason why we do this is to ensure, maybe when we trained our data, there was a little bit of bias, and what type of data went into our training versus what went into our testing.
+
+172
+00:36:05.440 --> 00:36:20.020
+Danny Malter: So this would give us a little bit more diversity of our data in each iteration of training to ensure we're not overfitting because of any biases in our data. So an example that I can give you is, let's say we're building a fraud detection model.
+
+173
+00:36:20.100 --> 00:36:28.879
+Danny Malter: And, you know, a good data scientist would randomize your data before inserting it into your training data, but let's say we're building a fraud model.
+
+174
+00:36:28.940 --> 00:36:47.329
+Danny Malter: And we have 1 million rows of data. Well, most users have never committed fraud, probably, in your data set. You know, maybe 0.1% of users have committed fraud. So let's say we have some target variable, T for target. Now, this user has not committed fraud, not committed fraud, not committed fraud, and so on, and this user has committed fraud.
+
+175
+00:36:47.330 --> 00:37:04.349
+Danny Malter: Well, if you just take the first 70% of your data and put it into your training data set, all of those users are not going to have committed fraud, so your model will never learn what it means to commit fraud. And this is actually more important to predict people who have committed fraud than people who are not going to commit fraud.
+
+176
+00:37:04.400 --> 00:37:23.769
+Danny Malter: So again, a good concept here is you just randomly select, but still, even a random selection, you might end up with no users or very few users in your training data set. So through this process of capable cross-validation, it's just, again, a way to ensure we're not biasing our training dataset in any specific way.
+
+177
+00:37:25.390 --> 00:37:31.950
+Danny Malter: Yeah, is 5-fold a standard iteration that is wildly followed? Yeah, 5-fold cross-validation would typically be, like.
+
+178
+00:37:32.020 --> 00:37:43.310
+Danny Malter: a starting point. You know, I never say, like, this is the only way to do something, but the, you know, if you're gonna use K-fold cross-validation, probably 3 or 5-fold would be good. Now.
+
+179
+00:37:43.310 --> 00:37:54.260
+Danny Malter: It might depend also on the amount of data you have, because if you have… you're training a model, and this might be more rare, but it's still possible, you're training a model on billions of rows of data.
+
+180
+00:37:54.260 --> 00:38:10.029
+Danny Malter: you know, maybe that model takes an hour or two, or a couple hours to train. Well, now if you're doing that 5 times, it's five times three hours, and maybe you're… want to move on and do other things. So those are all considerations to, take into account when doing something like this.
+
+181
+00:38:11.680 --> 00:38:18.679
+Danny Malter: Okay, so let's talk algorithms now. Are there any… let me pause. Are there any questions? Other questions?
+
+182
+00:38:22.890 --> 00:38:26.430
+Sushmitha Ungarala: There was a question on the chart from Chris regarding the accuracy…
+
+183
+00:38:26.430 --> 00:38:28.380
+Danny Malter: Yeah, I missed that one. Thank you.
+
+184
+00:38:28.890 --> 00:38:38.909
+Danny Malter: Chris, an accuracy of 80% or so seems very inaccurate. Not necessarily Chris, because sometimes… maybe it's just a difficult problem. Now, like.
+
+185
+00:38:39.310 --> 00:38:47.159
+Danny Malter: You know, and 80%, too, like, yeah, if you're predicting heart disease, maybe 80% is terrible, but if you're predicting
+
+186
+00:38:47.300 --> 00:38:55.789
+Danny Malter: You have a clothing shop, and you're predicting if somebody wants a pair of t-shirts, or, like, a t-shirt, or a pair of pants from your website.
+
+187
+00:38:55.830 --> 00:39:02.200
+Danny Malter: Maybe 80% is as good as you're possibly gonna get, or you have a whole range of sports equipment, maybe you're selling on your website.
+
+188
+00:39:02.200 --> 00:39:16.420
+Danny Malter: and you're building a classification model, maybe 80% actually could be a good model. So, the 20%, to get back to your question, the 20% would be considered hallucination, right? Not necessarily. Hallucinations would be more so with language models.
+
+189
+00:39:16.500 --> 00:39:28.060
+Danny Malter: where your language model thinks it's correct, and you're just kind of making up an answer, but it's making it seem like it's actually correct. What I'm talking about here would be more traditional machine learning, so…
+
+190
+00:39:28.250 --> 00:39:42.060
+Danny Malter: Maybe you're predicting, again, let's just get to, like, you have a website with a bunch of different items that you sell on your website, and these are all brand new users that… that are,
+
+191
+00:39:42.740 --> 00:39:54.899
+Danny Malter: coming into your website, and you're predicting user 1 is going to purchase item A, user 2 is gonna purchase item B, user 3 purchased item C, and so on. So this would be your prediction.
+
+192
+00:39:54.900 --> 00:40:08.449
+Danny Malter: And then you can see what they actually predicted. So, what did they actually predict? I'll say ACT for actual. What they actually purchased… okay, user 1 actually did purchase item A. User 2 actually purchased item D.
+
+193
+00:40:08.450 --> 00:40:17.710
+Danny Malter: User 3 actually purchased item C, and so on. So this is how we could go and actually measure how well our model is performing. Okay, this was a correct case.
+
+194
+00:40:17.710 --> 00:40:34.989
+Danny Malter: this was incorrect, this was correct, and so on and so on and so on. Do that for every single user, and that's how we can get to our overall accuracy. So, yeah, 80%, I understand, yeah, doesn't sound very good, but actually on complicated real-world problems, 80% maybe is about as
+
+195
+00:40:34.990 --> 00:40:38.069
+Danny Malter: Good as you're… you might get with the particular models.
+
+196
+00:40:42.750 --> 00:40:57.519
+Danny Malter: Philippe, I don't get the difference between the test dataset and the validation. So, yeah, going back to this, a test, and maybe it's my fault for making this a little bit confusing. The test dataset and validation dataset are both unseen data sets. They're both…
+
+197
+00:40:58.140 --> 00:41:15.590
+Danny Malter: You know, I usually just do a training and a validation data set, to be honest, Philippe, but the proper way would be a training dataset, a validation data set, and then just to be very certain you have another unseen data set that we might call a test dataset. So, you know, an example of this is, let's say we're building a model.
+
+198
+00:41:16.360 --> 00:41:26.829
+Danny Malter: We build our model. Let's have a time component to this, might make a little bit more sense. We train a model. Here, let me go back to an empty page here. Let's, let's,
+
+199
+00:41:28.410 --> 00:41:32.450
+Danny Malter: Let's say we're training… sorry, let me find an empty page…
+
+200
+00:41:34.340 --> 00:41:38.860
+Danny Malter: Let's say we're training a model on data from…
+
+201
+00:41:39.200 --> 00:41:45.269
+Danny Malter: January, let's see, it's September now,
+
+202
+00:41:46.470 --> 00:41:56.859
+Danny Malter: let's say it's January through July, or let's say January through June, we use to train our machine learning model, and then you might use
+
+203
+00:41:57.030 --> 00:42:04.070
+Danny Malter: June through July, I mean, obviously these timescales aren't maybe correct, to…
+
+204
+00:42:05.620 --> 00:42:22.010
+Danny Malter: maybe validate our model to see that it's working well, or test… you know, it doesn't matter, the test and validation are just both unseen data sets, and then before, and now it's September, so before we're really certain we want to put this model out into production, okay, let's do it one more time against,
+
+205
+00:42:22.010 --> 00:42:28.720
+Danny Malter: July through August, let's see how this model… oops, let's see how… yeah, test data set here, let's see how this model performs.
+
+206
+00:42:28.740 --> 00:42:41.620
+Danny Malter: Really, the main point is both validation and tests, Philippe would just be data that was not used as part of your training process. Just unseen data, but you still have the same input variables to run your model against.
+
+207
+00:42:48.940 --> 00:42:55.259
+Danny Malter: Okay, so let's talk about algorithms a little bit. We have about 15 minutes here.
+
+208
+00:42:55.390 --> 00:43:15.679
+Danny Malter: You know, this is not a data science machine learning course, but this course does get a little bit heavy these first few weeks into some of these concepts. So, when we think about a classification problem, you might use a linear classifier. So, in this example, let's say we are, just to make it very simple, we're selling t-shirts, green t-shirts or red t-shirts.
+
+209
+00:43:16.620 --> 00:43:17.670
+Danny Malter: Now…
+
+210
+00:43:18.290 --> 00:43:27.950
+Danny Malter: how do we know in the future, given a new user, what type of t-shirt they might purchase? So let's say a new user on our dataset is over here.
+
+211
+00:43:27.960 --> 00:43:52.880
+Danny Malter: Well, if we build a good linear classifier, our linear classifier would learn to split, from our historic data, what it means to be a green data point versus a red data point, and ideally, we would predict this data point to be green because it's above our classifier. So, this would… this is just an example of how a classification algorithm is working, through going and analyzing your data and learning how to split
+
+212
+00:43:52.880 --> 00:43:57.799
+Danny Malter: out the difference… the differences between each class. Now.
+
+213
+00:43:57.800 --> 00:44:01.789
+Danny Malter: Now, what makes machine learning, by the way, so powerful?
+
+214
+00:44:01.840 --> 00:44:03.989
+Danny Malter: Is maybe at a small scale.
+
+215
+00:44:04.030 --> 00:44:22.970
+Danny Malter: Yeah, if we had this amount of data points, we could plot this out and learn, okay, you know, given a high X value, whatever your X value is here, and a small Y value, these tend to be our red data points, and almost like clustering. Given a low X value and a high Y value, those tend to be our green data points.
+
+216
+00:44:23.070 --> 00:44:36.939
+Danny Malter: But now to do this across hundreds of thousands or millions of users, that's where the power of machine learning comes into play. A computer could learn these patterns in maybe a matter of minutes that otherwise would take a lifetime for a human to do.
+
+217
+00:44:37.120 --> 00:44:44.310
+Danny Malter: So, popular linear classifier algorithms would be logistic regression, and then support vector machines.
+
+218
+00:44:47.400 --> 00:45:11.820
+Danny Malter: A nonlinear classifier would look something like this. So, a more complicated data might fall into a nonlinear type of classification. So, in a linear classifier, we have a straight line. As we move one unit over on the X value, we move one unit up on the Y value. A nonlinear classifier, we don't have that type of pattern. So this would be a more realistic aspect of what your real-world data might look like.
+
+219
+00:45:11.990 --> 00:45:21.389
+Danny Malter: Now, with a nonlinear classifier, we might use an algorithm like a decision tree, random forest model, we'll talk about these algorithms,
+
+220
+00:45:21.390 --> 00:45:32.640
+Danny Malter: in more detail in just a bit here. Support vector machine, and if you have a lot of data, we'll talk about, maybe in week 3 or 4, why we would use neural networks, we might use a neural network. So, in this case.
+
+221
+00:45:32.640 --> 00:45:52.570
+Danny Malter: Anything inside our classification line would be green, anything outside of the boundary would be predicted as red. So we get a new data point up here, okay, we'll predict that data point to be red. If we get a new data point that falls inside of our linear… sorry, our non-linear classifier, we would predict that data point to be green.
+
+222
+00:45:58.090 --> 00:46:06.089
+Danny Malter: Okay, so an example of a decision tree. Decision trees are popular machine learning algorithms in the business world because they're very explainable.
+
+223
+00:46:06.200 --> 00:46:29.330
+Danny Malter: So why you might want to use a decision tree, it's an easy algorithm to use, it generally performs pretty well in regards to accuracy, and again, the explainability would be the most important reasons why you might use a decision tree. So maybe for your use case, you work in finance, you might be audited, or maybe you work for a public company, you might be audited for that reason, and you need to go explain.
+
+224
+00:46:29.330 --> 00:46:34.690
+Danny Malter: Why did we give this person a loan? Or give this person a credit, or give this person a discount?
+
+225
+00:46:34.760 --> 00:46:44.349
+Danny Malter: Well, if you use an algorithm like a neural network, you're not going to be able to explain that. If you need to be able to explain that, you better use an explainable machine learning algorithm.
+
+226
+00:46:44.350 --> 00:47:01.150
+Danny Malter: i.e, decision tree. So, an example of an output of a decision tree would be something like this. The algorithm learns from your data what the most important variables are, and in this case, our model has learned, our algorithm has learned, that contract type was the most important variable.
+
+227
+00:47:01.180 --> 00:47:08.289
+Danny Malter: So, when we break up contract type based on month-to-month, or one to two years, we could follow through the tree.
+
+228
+00:47:08.530 --> 00:47:18.740
+Danny Malter: So anyone on a month-to-month plan would go in this direction. If your tenure is less than 12 months, you can keep going in this direction, and here's the predicted churn rate.
+
+229
+00:47:18.780 --> 00:47:29.080
+Danny Malter: If you're on a month-to-month plan with a 10-year that's not less than 12 months, you move into this direction, and we're predicting that 71 of those 90 people will stay.
+
+230
+00:47:29.390 --> 00:47:36.739
+Danny Malter: If you're on a 1- or 2-year plan, you follow this direction. Monthly charge is greater than $80,
+
+231
+00:47:36.980 --> 00:47:57.610
+Danny Malter: we're gonna predict you're gonna churn 54 of 75 times. So, we could take a decision tree output, bring that to your finance team, your marketing team, explain the outputs and results, and help them understand why… okay, why is it important that we give these people discounts versus these types of people? Well, it's because we're predicting if you
+
+232
+00:47:57.610 --> 00:48:07.690
+Danny Malter: are on a month-to-month plan, and you've called into our call center 10 times, and you haven't used our product in 2 weeks, there's a high likelihood that that user is going to churn, maybe in the next
+
+233
+00:48:07.690 --> 00:48:11.489
+Danny Malter: One month or two months, whatever time period you're measuring churn at.
+
+234
+00:48:14.460 --> 00:48:33.680
+Danny Malter: Okay, taking decision trees one step further, we get into this concept called bagging, and this is where we're gonna get in the next slide under random forest models. So bagging is the idea, or bootstrap aggregation is the idea that we take a random subset of training data and train one tree, and then we repeat with many independent samples
+
+235
+00:48:33.680 --> 00:48:39.089
+Danny Malter: Each producing its own tree. So we combine this over many iterations.
+
+236
+00:48:39.090 --> 00:48:55.340
+Danny Malter: We could take the majority vote, if it's a classification, or an average for regression. So, whereas I just showed you, with the decision tree, we use one single tree, in a bagging approach, we use many different trees and take the average or the majority vote.
+
+237
+00:48:55.340 --> 00:48:59.189
+Danny Malter: on our prediction. So an example here is
+
+238
+00:48:59.190 --> 00:49:01.209
+Danny Malter: This would be a random forest model.
+
+239
+00:49:01.580 --> 00:49:16.479
+Danny Malter: instead of running one single tree that maybe just would have predicted, okay, given this user, we're gonna predict they're gonna purchase item A or item B, had we just run one single decision tree, maybe we would have predicted this user to purchase item A,
+
+240
+00:49:16.480 --> 00:49:38.700
+Danny Malter: But when we run many different trees and take the majority vote, okay, well, tree 2 predicted Class B, Tree 3 predicted Class B, Tree 4 predicted Class A, and so on and so on and so on, and take the majority over all of those trees, we might predict that this single individual actually is going to predict item B instead of item A.
+
+241
+00:49:38.700 --> 00:49:48.419
+Danny Malter: So, typically, in machine learning, a random forest model is more accurate than a single decision tree because of this concept of running many different trees.
+
+242
+00:49:48.420 --> 00:50:00.510
+Danny Malter: In parallel against different iterations or samples of your data to get a better estimation or a better prediction on what you… whatever it is you're trying to predict.
+
+243
+00:50:01.320 --> 00:50:03.150
+Danny Malter: Now, on the dime side.
+
+244
+00:50:03.440 --> 00:50:28.140
+Danny Malter: Random forest models, you lose out a little bit of explainability. Now, they can give you some explainability. You can still get things like, here were the most important variables that led to my predictions, but you can't go back and show somebody 100 different trees to your finance team and say, okay, well, because this person went this direction on this tree, but this direction on this tree, that'd be way too complicated to go through. So you do lose out on a little bit of explainability.
+
+245
+00:50:28.150 --> 00:50:30.410
+Danny Malter: When it comes to random forest models.
+
+246
+00:50:31.690 --> 00:50:47.550
+Danny Malter: Good question, how many different trees might we use? Now, probably, I would, if I'm using an algorithm, like a library in Python, a random forest library, I'll probably just use the default. There might be 100 trees, 200 trees, but
+
+247
+00:50:47.690 --> 00:50:55.819
+Danny Malter: It's a good question, but in any data science approach, again, it's about testing different methods. So maybe you start with 100 trees.
+
+248
+00:50:55.820 --> 00:51:13.720
+Danny Malter: And then you try 200 trees, and okay, maybe 200 trees is taking forever, so we cut it back down to 75 trees, and compare the accuracy when we run 100 trees versus 75 trees. Well, if the accuracies are the same, you might as well go with the smaller model, the 75 tree, so…
+
+249
+00:51:13.720 --> 00:51:19.779
+Danny Malter: In general, when it comes to machine learning, what I say is try to keep things as simple as possible.
+
+250
+00:51:19.780 --> 00:51:34.360
+Danny Malter: If you have two approaches, Occam's Razor, if you have two models, one is very complicated and one is simple, and they both give you similar results, we should stick with the simpler model. There's going to be a lot of benefits down the road to using the simpler model.
+
+251
+00:51:35.910 --> 00:51:45.720
+Danny Malter: And sometimes, by the way, it's not so much about how many trees you're running, because that's just going to be more computational time. We do, though, want to consider how many layers of the tree do we have.
+
+252
+00:51:45.740 --> 00:51:49.500
+Danny Malter: If we have too many layers of the tree, we could start to overfit our model.
+
+253
+00:51:49.500 --> 00:52:08.959
+Danny Malter: So we don't want too few… one other concept of machine learning, sometimes it's like the Goldilocks rules. We don't want to do something too vague or too general, but we don't want to do something too specific, because then we'll lead to overfitting. So we also want to find the right balance of how many layers deep our tree is in a random forest model for that training.
+
+254
+00:52:10.960 --> 00:52:32.690
+Danny Malter: Okay, and then lastly, my last slide here, then I'll open it up, whatever questions we have left. K nearest neighbors. Now, maybe I should start with this algorithm, but I like this slide the most of this, deck here, because I think it's a great example of how machine learning works. If you just break it down, pen and paper type of example, we have blue data points and red data points.
+
+255
+00:52:33.040 --> 00:52:41.420
+Danny Malter: And, our star represents a new user, so we're not sure. Is this new user gonna purchase a blue t-shirt or a red t-shirt from our store?
+
+256
+00:52:41.450 --> 00:53:05.580
+Danny Malter: Well, the star is smack in the middle of both our blue data points. We learned about linear classifiers, we saw, and if we have a linear classifier, our linear classifier is going to look something like this. Anything to the left is gonna be blue, anything to the right is gonna be red, and the star is smack in the middle. Well, in the real world, data's very complicated, and not all of your users that you might be predicting on, or if you have a B2B problem.
+
+257
+00:53:05.630 --> 00:53:07.869
+Danny Malter: Are going to be very black and white.
+
+258
+00:53:07.930 --> 00:53:24.059
+Danny Malter: So, what do we do in a situation like this? Well, let's say we use an algorithm, like k nearest neighbors. Now, what this algorithm does, when K is set to a value of 3, so K is equal to 3, we take the 3 closest data points to our star.
+
+259
+00:53:24.280 --> 00:53:43.120
+Danny Malter: which we get 2 red and 1 blue, so we'll predict that K equals to 3 is going to be predicted to be red, because we had 2 red stars and 1 blue star in this, in this, circle here. When we run K is equal to 7, well, we get… let's take our, our, our,
+
+260
+00:53:44.030 --> 00:54:02.370
+Danny Malter: oops, sorry, our 7 closest would be inside this outer circle. We have 4 blue and 3 red, so we predict our star to be blue. So with one model, we predicted red. Another model, we predicted blue. We already knew this was a complicated star to be predicting, so let's run K is equal to 5.
+
+261
+00:54:02.370 --> 00:54:05.979
+Danny Malter: It's usually good to run an odd number of approaches.
+
+262
+00:54:05.980 --> 00:54:17.449
+Danny Malter: When K is equal to 5, we get… let me change my color here… we have maybe these 5 closest data points, we have 3 red and 2 blue, so we'll predict our star to be blue.
+
+263
+00:54:17.480 --> 00:54:30.760
+Danny Malter: Then now, like a bootstrap aggregation approach, let's take the majority vote. Two times we predicted blue, one time we predicted red, so let's just predict our star, in this case, to be blue.
+
+264
+00:54:30.950 --> 00:54:37.619
+Danny Malter: Now, not every case is going to be black and white, again. Not all machine learning is easy to do. We're not always going to get every case.
+
+265
+00:54:37.680 --> 00:54:53.820
+Danny Malter: correct, but this is maybe the best that we can do in this situation. So, I like this slide for two reasons. One, it breaks down. Not all algorithms are very complicated. Some algorithms are very simple. Again, pen and paper, we could break this down and do it, but on millions of users.
+
+266
+00:54:53.820 --> 00:55:00.080
+Danny Malter: It might take you a lifetime to do, and again, that's where the power of machine learning comes into play.
+
+267
+00:55:00.100 --> 00:55:24.249
+Danny Malter: And then the other reason I like this slide is because it shows the complication of real-world data. Of course, if the star is over here, and we run this algorithm, it's going to be obvious the star is always going to be blue. And of course, if we put the star here, it's obvious the star is always going to be red, but it's those difficult cases that are the ones that are hard to predict. Maybe we run different algorithms, too, and do some type of majority vote across
+
+268
+00:55:24.380 --> 00:55:30.129
+Danny Malter: different algorithms. That's what we would call an ensemble approach to machine learning.
+
+269
+00:55:30.580 --> 00:55:39.430
+Danny Malter: So, okay, that is all the slide material I have to go through today. Again, we have a few minutes left. If there are any questions, I'm happy to…
+
+270
+00:55:39.710 --> 00:55:40.990
+Danny Malter: Take those now.
+
+271
+00:55:42.530 --> 00:55:44.030
+Danny Malter: Yes, Chris, go ahead.
+
+272
+00:55:44.630 --> 00:55:46.339
+Chris Chay: Hi, can you hear me okay?
+
+273
+00:55:48.450 --> 00:55:49.390
+Danny Malter: Yep.
+
+274
+00:55:49.390 --> 00:55:57.649
+Chris Chay: Okay, great. So, can you explain the difference between the… what you just mentioned, the difference between the bootstrap aggregation, where you…
+
+275
+00:55:57.770 --> 00:56:08.449
+Chris Chay: have multiple votes, and you aggregate them, versus the ensemble learning, or the ensemble not learning, ensemble vote, like, the voting? Because they seem kind of, like, similar, but…
+
+276
+00:56:08.450 --> 00:56:08.970
+Danny Malter: Got it?
+
+277
+00:56:08.970 --> 00:56:09.770
+Chris Chay: different.
+
+278
+00:56:10.150 --> 00:56:16.080
+Danny Malter: There could be a little bit of crossover, but, like, I would consider an ensemble approach more…
+
+279
+00:56:16.110 --> 00:56:34.059
+Danny Malter: maybe you're using two different algorithms and averaging out those algorithms together. I would say that's more likely to fall in the realm of ensemble approach. And there is a crossover again, so I'm trying to just, like, break it down as simple as possible, versus bootstrap aggregation.
+
+280
+00:56:34.090 --> 00:56:47.389
+Danny Malter: which could be considered an ensemble approach as well, let me find this slide, is that every single tree is getting its own independent random sample of data.
+
+281
+00:56:47.680 --> 00:57:02.989
+Danny Malter: in bagging approach. So, we start from the same pool of data every single time, but this tree here, tree 1, might randomly get all of this data, and tree 2
+
+282
+00:57:03.230 --> 00:57:17.420
+Danny Malter: And now we build a tree 2, tree 2 is grabbing another random sample of data. So we're just getting its own independent sample data in bootstrap aggregation to build up many single trees, and then take, again, the majority vote, or an average across all of those trees.
+
+283
+00:57:17.460 --> 00:57:25.179
+Danny Malter: But I would call this an ensemble as well. This is an ensemble, it's doing, it's an ensemble of different approaches, different…
+
+284
+00:57:25.500 --> 00:57:29.260
+Danny Malter: Trees to make one final output prediction.
+
+285
+00:57:29.810 --> 00:57:35.679
+Chris Chay: Gotcha. And are the trees in this bagging example on the right different from the other trees?
+
+286
+00:57:37.110 --> 00:57:56.449
+Danny Malter: the… the… the tree itself might be different, because tree 1… like, in this example, tree 1 predicted, like, this is… now, this is a single individual user. I'm trying to… sorry, change my color here. You know, for this given user, we're predicting, are they gonna purchase A or B?
+
+287
+00:57:56.480 --> 00:58:09.249
+Danny Malter: okay, tree 1 predicted class A, and tree 2 predicted class B. So the tree itself might be different, but that's okay, because we're running maybe 100 different trees and taking the majority across all of them.
+
+288
+00:58:11.100 --> 00:58:20.930
+Chris Chay: Okay, gotcha. My second question is, in one of the earlier examples, you showed a table between the supervised versus unsupervised.
+
+289
+00:58:21.130 --> 00:58:24.339
+Chris Chay: And then you had a table on the left.
+
+290
+00:58:24.510 --> 00:58:31.880
+Chris Chay: called Unlabeled Data, and on the right, labeled data. It seemed to me like they were all labeled.
+
+291
+00:58:32.060 --> 00:58:35.890
+Chris Chay: Yeah, that one. Except the label data table had an extra column.
+
+292
+00:58:35.890 --> 00:58:43.569
+Danny Malter: Well, they're all labeled, but the main… the main, like, what is a label? The label is really,
+
+293
+00:58:43.880 --> 00:58:51.359
+Danny Malter: the variable that you want to do a supervised learning on. So, like, the point I'm trying to make here is if you…
+
+294
+00:58:51.360 --> 00:59:09.119
+Danny Malter: want to build a churn prediction model, but you don't have this variable called churn on a historic data set, then you don't have a label to build that type of model. So yeah, in this unlabeled data, we could still build a 10-year model, we could build an income prediction model, but we can't build a churn prediction model.
+
+295
+00:59:10.420 --> 00:59:14.060
+Chris Chay: So I thought the unlabeled, or the…
+
+296
+00:59:14.220 --> 00:59:16.919
+Chris Chay: I guess, in a unsupervised learning.
+
+297
+00:59:17.060 --> 00:59:22.240
+Chris Chay: The model does not have access to the label for the data itself.
+
+298
+00:59:22.470 --> 00:59:26.369
+Chris Chay: Such as… Classifies by clustering them?
+
+299
+00:59:26.770 --> 00:59:35.059
+Danny Malter: No, we can still use… we can still use… so this data set on the left-hand side, we could still do clustering, so maybe we do clustering in our clusters
+
+300
+00:59:35.060 --> 00:59:49.979
+Danny Malter: Like, we could still cluster, based on age, income, and tenure, we still figure out, okay, we have this cluster over here, and this cluster over here, and this cluster A are people with a lower income and higher age group, maybe, for example.
+
+301
+00:59:50.240 --> 01:00:02.830
+Danny Malter: That would be based on two variables, it gets a little bit more complicated to visually see that when we got more variables than that, but absolutely, that is… clustering and unsupervised learning is still using the data that you have, it's just not doing any type of prediction.
+
+302
+01:00:04.250 --> 01:00:06.219
+Chris Chay: Okay, okay, gotcha, alright, thanks.
+
+303
+01:00:07.780 --> 01:00:11.089
+Zahid Hussain: Hey, Ebru, sorry, Danny, I have a question about,
+
+304
+01:00:11.510 --> 01:00:15.480
+Zahid Hussain: enough for us. How to find optimum number of trees? I know you mentioned.
+
+305
+01:00:15.480 --> 01:00:25.739
+Danny Malter: Yeah, it kind of goes back to what I was saying earlier. Now, anytime I'm doing machine learning, I'll probably, for the most part, start with default. So most libraries you're using, if you do these Python exercises.
+
+306
+01:00:25.740 --> 01:00:49.939
+Danny Malter: that we go through, the optional Python exercises. You'll notice that there's default parameters usually associated to these libraries. Those would probably do a generally good job, but there is no single answer that I can give you. So you might start with, you know, why I can't say K equals 3 or 7, it's gonna depend on things like the amount of data that you have, the diversity of data, the complexity of data might,
+
+307
+01:00:49.940 --> 01:00:51.080
+Danny Malter: Add it.
+
+308
+01:00:51.080 --> 01:00:59.999
+Danny Malter: a little bit, it depends if we have outliers, because, like, let's say, for example, we have a bunch of… a few outliers, whoops, and then I'll wrap up after this,
+
+309
+01:01:00.020 --> 01:01:04.150
+Danny Malter: Let's say we have… now I lost my slide, sorry.
+
+310
+01:01:07.500 --> 01:01:09.279
+Danny Malter: Let me reshare…
+
+311
+01:01:10.520 --> 01:01:14.789
+Zahid Hussain: Is there some math behind to choose some optimum K or number of trees?
+
+312
+01:01:15.380 --> 01:01:23.250
+Danny Malter: The probably is, I'm not sure, to be honest, off the top of my head,
+
+313
+01:01:23.470 --> 01:01:38.649
+Danny Malter: There probably could be, but I don't even know that, like, they're a mathematical equations, because the example that I'm about to give, let's say that you have some outliers in your data over here, and we choose K equals to,
+
+314
+01:01:43.010 --> 01:02:00.720
+Danny Malter: I guess the point I'm trying to make is, like, we choose a K value that's too small, maybe we're generalizing too much. If we choose a K value that's too high, like, we choose… there's a star over here, and we choose k equals to 7,
+
+315
+01:02:00.790 --> 01:02:18.929
+Danny Malter: maybe that's gonna give us these data points, which is, like, this star is really closer to these four blue data points, but because it's k equals to 7, we have these 3 data points also part of what we're considering to be that star. And, like, maybe these are really different types of users.
+
+316
+01:02:19.030 --> 01:02:38.390
+Danny Malter: So that's why the exploration is really… the understanding your data is really important before just randomly going and using various parameters. And that's why, also, it's important to test different approaches. Okay, let's test a model with k equals to 3, 5, 7, 9. Let's compare all the accuracies against each other and see which model ultimately performed the best.
+
+317
+01:02:39.430 --> 01:02:41.630
+Zahid Hussain: So, accuracy that, affected…
+
+318
+01:02:42.100 --> 01:02:46.339
+Zahid Hussain: to determine how… what is the value of K, right? Is this okay, fair enough?
+
+319
+01:02:46.840 --> 01:02:48.669
+Danny Malter: Sorry, can you say that again?
+
+320
+01:02:49.300 --> 01:02:52.529
+Zahid Hussain: So, accuracy is one of the factors to choose number of k.
+
+321
+01:02:53.360 --> 01:03:13.030
+Danny Malter: In this case, accuracy, yeah, maybe you're striving off accuracy. We'll talk in future… in, not… we'll talk in future accuracies, I was gonna say. We'll talk in future office hours, why accuracy alone is not a good metric, but generally speaking, accuracy is gonna be a good metric, but accuracy could also be misleading. So, you could build a model with a 99% accuracy.
+
+322
+01:03:13.030 --> 01:03:18.919
+Danny Malter: But, like, maybe the 1% you're getting wrong are just detrimental to the problem that you're trying to solve for.
+
+323
+01:03:19.060 --> 01:03:27.540
+Danny Malter: Versus a model that gets a 98% accuracy, but the ones you're getting wrong, it's okay. So, yeah, we'll talk about that in a future Office Hour, that concept.
+
+324
+01:03:28.880 --> 01:03:30.000
+Zahid Hussain: Okay, thank you.
+
+325
+01:03:31.170 --> 01:03:52.190
+Danny Malter: Okay, alright, last question, then I'm gonna wrap up, just so there's no confusion here. Yeah, so every week, I don't know if there's two or three program leaders, myself being one of them, I know Bruce, at least, is one of their… will host our own office hours, so you do not need to attend both office hours. You're more than welcome to, if you want any clarification.
+
+326
+01:03:52.190 --> 01:03:57.120
+Danny Malter: Also, you know, I of course appreciate people coming to my office Hour Live, but
+
+327
+01:03:57.120 --> 01:04:10.909
+Danny Malter: for whatever reason, you feel like you learn better from Bruce, or you enjoy the… you like the time that Bruce's office hours are, you know, no hurt feelings there. You need to do what's best for you, but you don't need to… absolutely don't need to attend both office hours in a given week.
+
+328
+01:04:11.700 --> 01:04:22.270
+julia: Denny, hi, quick question, and thank you for the class. Do you have any, supplementary notes for people who've never used M-code, or Python before, or advice on where we should go?
+
+329
+01:04:24.350 --> 01:04:35.049
+Danny Malter: I don't, you know, everything in the course already is, like, they already give to you. Now, M-code is a Jupyter notebook, so let me put this in the chat, and probably YouTube is the best place.
+
+330
+01:04:35.050 --> 01:04:35.890
+julia: Yeah, okay.
+
+331
+01:04:35.890 --> 01:04:43.119
+Danny Malter: to learn, like, it's not so much about M-code. M-code is just the platform, it's really your coding, and it's called a Jupyter Notebook.
+
+332
+01:04:43.160 --> 01:04:56.539
+Danny Malter: So I would Google, like, YouTube, maybe Jupyter Notebook tutorial would be a good starting place there, and then for Python, let's see… Code Academy, Code…
+
+333
+01:04:56.890 --> 01:05:08.390
+Danny Malter: Code Academy, I think there's no E in there, it's all one word. Code Academy, is a good one. There's one other good Python, let me see, really quickly…
+
+334
+01:05:19.900 --> 01:05:31.669
+Danny Malter: I think at a very, like, very, very simple level, W3 School has a good Python tutorial, so it's called W3 School, has a good Python tutorial as well, and then let me see, maybe one more.
+
+335
+01:05:32.840 --> 01:05:52.570
+Danny Malter: Yeah, those two places, there would be plenty of, learning between Code Academy and W3 School. And Ian, if you have questions on the coding, by the way, we're open to answering those in office hours. Now, it's typically good if you let us know ahead of time so we can prepare a little bit, but just do know this is not a programming course, so at least I try not to emphasize too much time on that.
+
+336
+01:05:57.540 --> 01:06:15.979
+Danny Malter: Okay. All right, last, last one, then I'm gonna wrap up. How many Module Office Hours… how are Module Office Hours different from networking sessions? Module Office Hours are about learning content. The networking session will be an opportunity for you to meet other students in this course. It'll be all virtual on Zoom, but I think people… it sounds…
+
+337
+01:06:16.070 --> 01:06:29.349
+Danny Malter: maybe a little silly meeting people in a networking session on Zoom, but I promise you, people will come away from these networking sessions really appreciating the time. So I do highly encourage you to try to make time for those networking sessions that we have in the course.
+
+338
+01:06:31.270 --> 01:06:38.519
+Danny Malter: Okay, alright, I need to wrap up. Thank you all for coming on, and we will see you next week, hopefully. Have a good rest of the week.
+
+339
+01:06:39.050 --> 01:06:40.029
+Sushmitha Ungarala: Thank you.
+

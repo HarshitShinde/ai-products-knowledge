@@ -1,0 +1,1370 @@
+WEBVTT
+
+1
+00:00:01.810 --> 00:00:02.800
+Dr. Amanda Fetch: Hey!
+
+2
+00:00:03.420 --> 00:00:04.890
+Dr. Amanda Fetch: Welcome.
+
+3
+00:00:05.360 --> 00:00:09.400
+Dr. Amanda Fetch: Let's see, I should be sharing, let's start up the slides…
+
+4
+00:00:17.750 --> 00:00:26.779
+Dr. Amanda Fetch: Okay, so before we jump in, as we're recording, I wanted to touch on a little bit of housekeeping. So I'm traveling to…
+
+5
+00:00:26.780 --> 00:00:38.670
+Dr. Amanda Fetch: DC next week for a speaking engagement. So with that being said, I had to switch around my sessions, that's why we're meeting today, but our typical time, I believe, is Wednesdays,
+
+6
+00:00:38.840 --> 00:00:53.369
+Dr. Amanda Fetch: 1PM Eastern Time, I think is at 4pm? I have to look, but I have it in the intro webinar slides. But just wanted to note that our next session, so if you're interested in attending my sessions, will be, Wednesday, September 16th.
+
+7
+00:00:53.730 --> 00:00:59.169
+Dr. Amanda Fetch: So, it didn't drop off the calendar or disappear or anything. I just had to do some finagling. I have…
+
+8
+00:00:59.290 --> 00:01:11.899
+Dr. Amanda Fetch: Few other engagements. I don't think my other speaking engagements will affect your cohort, but we'll see. But that's why, some of these things… typically, that's what happens if I gotta…
+
+9
+00:01:11.900 --> 00:01:27.099
+Dr. Amanda Fetch: speak or something, I gotta change some things around. So, so with that being said, let's go ahead and jump in. This week is full of materials, so there's a lot. So one other piece of housekeeping before we jump in, and I mentioned this in
+
+10
+00:01:27.360 --> 00:01:42.059
+Dr. Amanda Fetch: pretty much a lot of my sessions you would hear about in the intro webinar, so if you haven't watched my webinar, yes, the content's similar, but it also kind of discusses how we structure our sessions, things like that. I also think
+
+11
+00:01:42.130 --> 00:01:56.459
+Dr. Amanda Fetch: either Module 1 or the intro webinar, I, asked the tech team to post out the, so there's two things, and I'm not going to go over these because, this stuff is optional and bonus stuff.
+
+12
+00:01:56.590 --> 00:02:04.499
+Dr. Amanda Fetch: So it's kind of your job if you're interested to find it, or if you can't find it, reach back out to me or the tech team and ask. But…
+
+13
+00:02:04.590 --> 00:02:18.709
+Dr. Amanda Fetch: I have a guide for the optional exercises, so as I mentioned in the intro webinar, I don't cover any kind of coding or anything in sessions, because we don't have a lot of time, and so I cover what's actually required versus optional stuff. So optional stuff…
+
+14
+00:02:18.710 --> 00:02:30.720
+Dr. Amanda Fetch: are more sidebars, but I did develop a quick start guide, so if you want to dig into the exercises, you can… this is one tool to use, so that, I think, like I said, it's with intro Webinar, but I'll push it out again this week.
+
+15
+00:02:30.720 --> 00:02:50.680
+Dr. Amanda Fetch: The other thing is… and so somebody asked if I'd put these up before, I don't do that, because they literally go along with my slides, okay? So, if as I'm going today, and you're like, oh, she's too fast, and I don't know what this is, and I don't know what… before you totally freak out and ask 10,000 questions, which there's not a lot of time live in weeks 2 and 3,
+
+16
+00:02:51.040 --> 00:03:06.949
+Dr. Amanda Fetch: That does not mean you can't ask questions, okay? What that means is, if we don't get into it live, or if you want to go deeper, reach out to us on the side. We literally provide that one-on-one for these particular reasons. But what I do encourage is, though.
+
+17
+00:03:07.040 --> 00:03:21.279
+Dr. Amanda Fetch: My, my additional PDF literally parallels my slides, and so I go into deeper explanations on the stuff I'm gonna go over. So, it could be a question you have if you go into the supplemental material that's answered.
+
+18
+00:03:21.500 --> 00:03:35.719
+Dr. Amanda Fetch: That doesn't mean it is, it just means it could be. So, that's one thing I typically caution, is weeks 2 and 3 are like a fire hose. Attend the session, if you have high level, fine, but digest the slides, digest the supplemental.
+
+19
+00:03:35.720 --> 00:03:43.330
+Dr. Amanda Fetch: And then see if there's still questions, and then come back and ask, right? So again, not saying you can't ask now, I don't want to portray that message.
+
+20
+00:03:43.330 --> 00:03:49.099
+Dr. Amanda Fetch: It's just a lot of these things could be their own discussions, so sometimes it does make sense to do sidebars.
+
+21
+00:03:49.100 --> 00:04:01.820
+Dr. Amanda Fetch: Right? And then also, if there's a particular topic, hey, we're talking about GANs, I want more material. Fine. Then we'll do that, right? So again, I just want to note that they're supplemental to 2, 3, and, Session 4.
+
+22
+00:04:01.910 --> 00:04:13.519
+Dr. Amanda Fetch: Because Session 4 is focused a lot on… I think that one's medical use cases and supply chain something. So I have a supplemental PDF that just goes over a couple other additional use cases. Anyway…
+
+23
+00:04:13.540 --> 00:04:24.959
+Dr. Amanda Fetch: that's all supplemental bonus stuff that's going to be put out in Canvas in the resources tab with my live session, okay? So, again, keep that in mind. So, you know, I kind of prepared you for this.
+
+24
+00:04:24.980 --> 00:04:34.039
+Dr. Amanda Fetch: In the intro webinar, where I said, if you haven't looked at coding, if you haven't done these things in a while, some people freak out, they say, oh, I want to drop, this isn't for me.
+
+25
+00:04:34.150 --> 00:04:36.279
+Dr. Amanda Fetch: Please don't do that, okay?
+
+26
+00:04:36.550 --> 00:04:48.450
+Dr. Amanda Fetch: This is designed so that you can go back in and review or dig in if you want to, okay? None of this is part of any required assignment or the capstone at all, okay? But…
+
+27
+00:04:48.910 --> 00:04:56.020
+Dr. Amanda Fetch: It introduces, for those who haven't seen it, or reintroduces, for those who haven't looked at it in 20 years.
+
+28
+00:04:56.080 --> 00:05:12.569
+Dr. Amanda Fetch: or somebody who wants to dig further, they're a developer, and they're like, oh, I didn't do it this way, or I didn't see this thing. And then you're like, can I have further resources, or can I do whatever, and then go crazy and go down rabbit holes? That's the purpose of this. So you're gonna see in my slides, yes, there's some algorithms.
+
+29
+00:05:12.660 --> 00:05:20.450
+Dr. Amanda Fetch: I've had people ask me, what's the X sub 1 plus the… and I stop them right in their tracks. That's not the purpose of this program at all. I'm gonna show it to you.
+
+30
+00:05:20.490 --> 00:05:28.410
+Dr. Amanda Fetch: But those kind of dissections have nothing to do with what's required, which, remember, we don't have a lot of time, so I focus on what's actually required.
+
+31
+00:05:28.440 --> 00:05:47.279
+Dr. Amanda Fetch: But I show it so that you can say, oh, you know what, this equation… can you provide me with something I'd like to dig in further on that. It's a sidebar because we don't… it's not necessary for this, but do you mind, Amanda, can you give me something on this? And I'm gonna say, absolutely, and then I'll send you over, right? But what we don't want to do is spend too much time picking on things that have nothing to do with
+
+32
+00:05:47.280 --> 00:05:53.260
+Dr. Amanda Fetch: why we're here, which is strategy, product development, specs, right?
+
+33
+00:05:53.260 --> 00:05:54.589
+Dr. Amanda Fetch: And,
+
+34
+00:05:54.680 --> 00:06:05.060
+Dr. Amanda Fetch: again, going through all the required stuff. This is optional sidebar stuff, okay? So, anyway, so just keep that in mind as we go through, and you're like, I don't know what the x plus 1 minus the…
+
+35
+00:06:05.120 --> 00:06:10.410
+Dr. Amanda Fetch: Please don't focus on that. Focus on the use cases that I'm gonna share with you, okay?
+
+36
+00:06:10.410 --> 00:06:32.190
+Dr. Amanda Fetch: That's really, quite honestly, what the majority of us are here for, is… is how I can think about enough to be dangerous, oh, a binary classification. I have a yes-no, or I have a whatever problem. That makes sense, so I'm going to dig into that, because that sounds like something that makes sense. Not what is the regression equation, okay? But again, we show it to you so you have it.
+
+37
+00:06:32.200 --> 00:06:41.980
+Dr. Amanda Fetch: That if you want to do a deeper dive, you can do that. Okay, enough disclaimers, let's actually get in. Week 2 is Artificial Intelligence Tech Fundamentals, and we're focusing on machine learning.
+
+38
+00:06:42.110 --> 00:06:45.950
+Dr. Amanda Fetch: So… This week,
+
+39
+00:06:46.380 --> 00:07:05.970
+Dr. Amanda Fetch: high level here, learning outcomes, basically looking at, analyzing the models, tools, algorithms, classifying points using a linear model, looking at the concepts of train, validate, and test, and then also running machine algorithms in Python. So again, that's the bonus optional stuff, right? Now.
+
+40
+00:07:06.380 --> 00:07:09.940
+Dr. Amanda Fetch: Before we go any further in Weeks 2 and 3, Okay?
+
+41
+00:07:10.110 --> 00:07:16.629
+Dr. Amanda Fetch: Something that you need to keep in mind here is, we're gonna dig into a bunch of algorithms and a bunch of use cases.
+
+42
+00:07:16.760 --> 00:07:31.719
+Dr. Amanda Fetch: Never should this be a one-size-fits-all if somebody tells you that it's a red flag, okay? One thing I'm gonna tell you, and I have junk floating behind me, my research was in machine learning, looking at basically anomaly detection for junk in space.
+
+43
+00:07:31.720 --> 00:07:43.820
+Dr. Amanda Fetch: Okay. Spoiler alert, I use DBScan, okay? I wanted to pull out the noise, I wanted to pull out the anomalies, and we could go into a whole… a whole segment on that, okay? The point is, I use dbscan.
+
+44
+00:07:43.870 --> 00:07:47.130
+Dr. Amanda Fetch: Okay? Now, when we go through the material.
+
+45
+00:07:47.220 --> 00:07:50.030
+Dr. Amanda Fetch: Can't remember if it's this week or next week, we pushed GANs.
+
+46
+00:07:50.060 --> 00:08:07.299
+Dr. Amanda Fetch: Okay? I don't use GANs for that at all. I'm not even gonna… well, I shouldn't say I'm not gonna look at them, but for me, it didn't make sense. Okay, so that's why I give this disclaimer. I don't want anybody to say, well, they said here this use case… these are examples to test and try. So if you leave with nothing else.
+
+47
+00:08:07.410 --> 00:08:09.440
+Dr. Amanda Fetch: Out of this whole program.
+
+48
+00:08:09.660 --> 00:08:10.690
+Dr. Amanda Fetch: Test.
+
+49
+00:08:10.810 --> 00:08:12.380
+Dr. Amanda Fetch: Okay, retest.
+
+50
+00:08:12.410 --> 00:08:32.360
+Dr. Amanda Fetch: Work through some things. Never say this is it. That's very dangerous, especially in the world we're living in, where things are changing, like, you know, some people are, like, daily, weekly, a lot, okay? So if you're stuck in one way, very dangerous. So just be open-minded and understand these are one example, or two, or three, or whatever it might be. So…
+
+51
+00:08:32.460 --> 00:08:33.400
+Dr. Amanda Fetch: Moving on.
+
+52
+00:08:33.409 --> 00:08:39.340
+Dr. Amanda Fetch: High-level chart, I won't dig into too much. You can look at a lot of these things again on your own time and kind of dig in there and see.
+
+53
+00:08:39.340 --> 00:08:53.720
+Dr. Amanda Fetch: I like this breakdown because it shows you the sort of different areas from supervised, semi-supervised, unsupervised, and kind of, again, the breakdown of some of the different algorithms, and models, or whatever we want to say that you can… you can be digging into.
+
+54
+00:08:53.720 --> 00:08:56.700
+Dr. Amanda Fetch: So, high level on this, though.
+
+55
+00:08:56.920 --> 00:09:02.480
+Dr. Amanda Fetch: supervised Basically, training an algorithm using labeled data, okay?
+
+56
+00:09:02.790 --> 00:09:22.419
+Dr. Amanda Fetch: Semi, little combination between supervised and unsupervised, where we use maybe a small amount, give or take, we use some labeled data, and then we also combine with unlabeled data. So, obviously, semi is a mix of both, okay? Now, unsupervised deals with that unlabeled data.
+
+57
+00:09:22.520 --> 00:09:36.780
+Dr. Amanda Fetch: Okay, so that's kind of what I was mentioning, clustering. Okay, now on this slide, look, it doesn't even say anything about DB Scan, GANs aren't specifically, you know, listed there, whatever it is, but I just told you I use DBScan.
+
+58
+00:09:36.950 --> 00:09:37.930
+Dr. Amanda Fetch: Now.
+
+59
+00:09:38.260 --> 00:09:52.859
+Dr. Amanda Fetch: again, there's… there's… this is not all-encompassing, but it's a nice snapshot, and so we're going to dig into some of these different types. The other very important thing, so again, some of these, if you take nothing away from these things, okay, the life cycle.
+
+60
+00:09:53.200 --> 00:10:01.279
+Dr. Amanda Fetch: So understanding, I gotta gather my data, I gotta prep it. Many argue prep is where you're gonna spend the bulk of your time, and some argue it's the most important.
+
+61
+00:10:01.390 --> 00:10:10.989
+Dr. Amanda Fetch: Okay, because it very skews… very much skews your results, okay, based on number 2. Actually, some may say one's even more important, because do I even have what I need?
+
+62
+00:10:10.990 --> 00:10:24.620
+Dr. Amanda Fetch: Right? So 1 and 2 are kind of, like, really gotta put thought into this, okay? Then we gotta analyze it, then we gotta train it, we gotta test it, then maybe we deploy it out in the world if it's good enough, right? So just knowing that high-level cycle is important.
+
+63
+00:10:25.530 --> 00:10:40.350
+Dr. Amanda Fetch: Okay, basic, what do I want to say? Basic concepts and terminology. So, again, enough to be dangerous. Nobody is… well, actually, I don't know that there's quiz questions on this, but if there's one or two quiz questions, just high level, but…
+
+64
+00:10:40.350 --> 00:10:50.280
+Dr. Amanda Fetch: Nobody's gonna ask you in the required assignments to rattle these definitions off, okay? Again, this is something enough to be dangerous in the world of data science. So…
+
+65
+00:10:50.520 --> 00:10:58.639
+Dr. Amanda Fetch: Overfitting. Okay, a lot of times, model's too complex now. Now I have noise coming in. I don't know if this pattern I could trust.
+
+66
+00:10:58.840 --> 00:11:15.520
+Dr. Amanda Fetch: Okay, is it true? And a lot of times it leads to poor generalization, which means when I use it on new data, or try to push that out there in the world, now all of a sudden it doesn't do so well. It kind of tricked me into thinking, oh, this is the best thing ever. Then when I actually use it in the real world, now it's not so good, right? A lot of times it has to do with overfitting.
+
+67
+00:11:15.590 --> 00:11:24.539
+Dr. Amanda Fetch: Underfitting, now it's too simple. I have nothing in there. I have two attributes, whatever it is, and it just can't learn patterns from that. There's just not enough information.
+
+68
+00:11:24.700 --> 00:11:38.239
+Dr. Amanda Fetch: Right? And a lot of times, maybe you have a low accuracy, or different metrics are off. So anyway, underfitting. Buance, various… okay, balancing simplicity, okay, which technically we'll call it bias.
+
+69
+00:11:38.270 --> 00:11:49.950
+Dr. Amanda Fetch: Okay, and then some more complexity, so a variance of a model to achieve performance. Okay, so again, some kind of trade-off here between the simplicity of your model and the complexity.
+
+70
+00:11:50.200 --> 00:12:01.119
+Dr. Amanda Fetch: Okay? Which is kind of what I just said, right? So hyperparameter now, in tuning. So basically, the process when I get in the model, and I want to adjust
+
+71
+00:12:01.150 --> 00:12:08.160
+Dr. Amanda Fetch: these different weights, adjust my different, what I want to say, attributes, parameters, hyperparameters.
+
+72
+00:12:08.160 --> 00:12:24.710
+Dr. Amanda Fetch: This is where it kind of starts getting dangerous, because people use these words interchangeably, right? This is my attribute, this is, you know, again, my parameter, whatever it is. A lot of times, attribute's more your data, right? Parameter might be a parameter within that algorithm you're actually adjusting.
+
+73
+00:12:24.750 --> 00:12:37.460
+Dr. Amanda Fetch: Okay, so that's how I personally like to look at the two of these. But I will tell you, there's people that have been data science for… data scientists for decades, they'll say parameter, they just say a random word, it's like, okay, now you're confusing me, what does that mean, right?
+
+74
+00:12:37.460 --> 00:12:48.249
+Dr. Amanda Fetch: So technically, to me, the parameter, again, is that part of the algorithm I'm tuning versus my data and my attribute, the variables of data I'm feeding it, right?
+
+75
+00:12:48.250 --> 00:12:51.930
+Dr. Amanda Fetch: Okay, so that's kind of the high-level sort of terminology here.
+
+76
+00:12:52.410 --> 00:12:53.450
+Dr. Amanda Fetch: This…
+
+77
+00:12:53.680 --> 00:13:09.469
+Dr. Amanda Fetch: Again, these graphics, I'm not going to go over too deep, because you can kind of dissect them and see what, you know, lies where. We already kind of went into the definitions, but pulling this out for, again, your kind of, you know, just for your FYI. So we have the supervised version, unsupervised.
+
+78
+00:13:09.470 --> 00:13:27.370
+Dr. Amanda Fetch: This… this kind of quick graphic I like because, you know, plucked it directly out of the material, because again, it kind of gives that overlap of, again, what supervised, unsupervised, and semi-supervised are, and talking a little bit about the inputs of that and outputs, and how they're relating to each other.
+
+79
+00:13:28.530 --> 00:13:32.940
+Dr. Amanda Fetch: Okay, so… gave a disclaimer at the beginning, right?
+
+80
+00:13:33.300 --> 00:13:50.889
+Dr. Amanda Fetch: So, here's my, you know, I gave my disclaimer. Here are some examples of these things. So, high level, we're going to talk about some of these different types, some examples. We already said this is not the end-all be-all, so you don't need to say, hey, Amanda, I would never use this for this, I don't know what that is, I wouldn't do… perfect. Great.
+
+81
+00:13:51.020 --> 00:13:53.280
+Dr. Amanda Fetch: A lot of times, we lead with what we know.
+
+82
+00:13:53.440 --> 00:13:57.919
+Dr. Amanda Fetch: And then we build upon it, that's fine. This is not a one-size-fits-all. So…
+
+83
+00:13:58.210 --> 00:14:12.619
+Dr. Amanda Fetch: Digging in, starting with parametric models, okay? Those are your models, these are the basic ones you've probably heard of. A lot of times, if you're learning data science, you work on, like, the Titanic and Kaggle, or housing prices,
+
+84
+00:14:12.620 --> 00:14:23.509
+Dr. Amanda Fetch: So, you know, those are typically the use cases or the scenarios they kind of put you in, where you're looking at linear and logistic regressions. Now, what parametric model really is?
+
+85
+00:14:23.680 --> 00:14:33.980
+Dr. Amanda Fetch: Okay, is I'm figuring out some kind of a defined set of parameters, okay, regardless of the size of my actual data set. And so I have some kind of structure
+
+86
+00:14:34.350 --> 00:14:52.169
+Dr. Amanda Fetch: Okay, between the inputs and the outputs. That, to me, is the important part of the definition. There's some kind of structure being involved, okay? And I'm using it for a straightforward predictive task, okay? Maybe forecasting, binary classification, okay? So there's some examples. In the essence of time, I'm not going to dig into all the examples, you can kind of…
+
+87
+00:14:52.410 --> 00:15:11.120
+Dr. Amanda Fetch: you know, look at those kind of on your own kind of thing. Non-parametric, okay, unlike parametric, okay, now we have things like decision trees. Okay, k-nearest neighbors, random forests. Now, what these algorithms are doing, and there is… there is not a predetermined form of an input and an output relationship.
+
+88
+00:15:11.530 --> 00:15:20.830
+Dr. Amanda Fetch: for example, decision trees, and we're going to go through this, so I'm not going to take too much time. It's like a yes, no, I have a different path I could be taking, so how am I predefining that when I don't know what my path is?
+
+89
+00:15:20.890 --> 00:15:25.510
+Dr. Amanda Fetch: So logic… think about these things logically. Don't worry about the really techy stuff.
+
+90
+00:15:25.520 --> 00:15:45.280
+Dr. Amanda Fetch: Logically speaking, from a strategic standpoint, you know, that's kind of the difference of this, right? I'm predetermining a parametric, this is what I'm following. Non-parametric, now, I like the decision tree example, because now I know I'm making decisions, and my path is changing based on yeses, nos, or answers, right? I'm going to take different paths.
+
+91
+00:15:45.520 --> 00:15:46.420
+Dr. Amanda Fetch: So…
+
+92
+00:15:46.600 --> 00:16:03.580
+Dr. Amanda Fetch: Moving on to discriminative models, now I'm focused on predicting outputs based specifically on my inputs, okay? Those are your neural networks. A lot of times we see this in, like, image classifications. You know, these are… now we're starting to dab a little bit in speech recognition.
+
+93
+00:16:03.610 --> 00:16:17.769
+Dr. Amanda Fetch: Okay? But then, that also parallels, remember I said there's not one-size-fits-all in these things, because now I'm starting to sound a little similar to generative models, okay? And some of the use cases we use, chat GPT, you know, things like this.
+
+94
+00:16:18.060 --> 00:16:26.769
+Dr. Amanda Fetch: Models… I shouldn't say that, because that's not a model, that's a toll. GPT, whatever we're up to now, 5, I don't even know where we're at, okay?
+
+95
+00:16:26.870 --> 00:16:37.140
+Dr. Amanda Fetch: Anyway, the models basically learn pattern structure of existing data so that we can generate new or similar data points. So think of your, you know, again, the tools
+
+96
+00:16:37.140 --> 00:16:47.370
+Dr. Amanda Fetch: you're using Claude, ChatGPT. Again, those are the tools, not the models. You need to think about the background models, which is why I've said your GPTs and what have you.
+
+97
+00:16:47.410 --> 00:17:06.029
+Dr. Amanda Fetch: are, again, learning patterns, okay, and structure of existing data so I can generate new or similar points. Now, GANs, I gave the disclaimer on GANs that one of the use cases is anomaly detection, and I said, I don't use that for anomaly detection, but that's because my use case
+
+98
+00:17:06.240 --> 00:17:11.749
+Dr. Amanda Fetch: Okay, is different. It's not necessarily images, it's behaviors. So…
+
+99
+00:17:11.970 --> 00:17:19.570
+Dr. Amanda Fetch: It's another way you have to break these things down when you're researching what might make sense for your use case, okay? So now GANs…
+
+100
+00:17:19.980 --> 00:17:21.929
+Dr. Amanda Fetch: Okay, that's a type.
+
+101
+00:17:22.040 --> 00:17:37.200
+Dr. Amanda Fetch: of generative model, okay? We're gonna really… I hate to say beat this, that's kind of graphic. We're gonna get into detail on GANs, so I'm not gonna spend a lot of time now, okay? But GANs have a generator and a discriminator.
+
+102
+00:17:37.530 --> 00:17:44.489
+Dr. Amanda Fetch: Generators creating new data, discriminators evaluating how real or fake that is. Okay, and they're kind of always bumping heads.
+
+103
+00:17:44.540 --> 00:17:57.130
+Dr. Amanda Fetch: Okay, where the generator's trying to fool that discriminator. Discriminator tries to get better at telling real data from the fake, and they're butting heads. Okay. Again, we're gonna come back to that specifically. I think there's a whole module on GAMs.
+
+104
+00:17:57.130 --> 00:18:06.219
+Dr. Amanda Fetch: So, we'll… probably, if you have tons of GANS questions, I'll probably say, let's pause, because we're gonna really go into GANs, in later modules, so…
+
+105
+00:18:06.490 --> 00:18:08.620
+Dr. Amanda Fetch: One thing, a bit of housekeeping.
+
+106
+00:18:08.750 --> 00:18:15.069
+Dr. Amanda Fetch: And this actually is where I'm gonna pause for a second today, but I pull in your assignments.
+
+107
+00:18:15.150 --> 00:18:21.629
+Dr. Amanda Fetch: Just to, like, jog and say, oh, okay, there was this study question on XYZ, so as you're planning and going through the material.
+
+108
+00:18:21.640 --> 00:18:39.269
+Dr. Amanda Fetch: You can say, oh, okay, I don't have time for a lot of this, but oh, this one's on, you know, different examples. I kind of want to see what other people are saying. I'm going to get out there, and I'm going to participate in this particular one, because I want to see what people are doing, I want to get feedback, whatever it is, right? So I pull… I pluck those so you can see them through the slides, it's like housekeeping.
+
+109
+00:18:39.270 --> 00:19:03.890
+Dr. Amanda Fetch: But this is going to be my first stopping point today. So, we have a lot to cover, so I won't take too long here, but let's pause. Any comments, thoughts the discussion was based on that activity, so if anybody did dig in, what are some examples, of tools or, you know, again, the sort of algorithms being used, or examples, if you participate in this discussion, if you want to share any?
+
+110
+00:19:04.030 --> 00:19:10.180
+Dr. Amanda Fetch: If not, we'll kind of keep pressing forward. Let's go ahead and pause. Any thoughts on this, or anyone want to share?
+
+111
+00:19:18.880 --> 00:19:21.809
+Dr. Amanda Fetch: Might be too early. Once we start really digging in.
+
+112
+00:19:22.220 --> 00:19:24.150
+Dr. Amanda Fetch: I feel like there'll be more…
+
+113
+00:19:24.270 --> 00:19:30.780
+Dr. Amanda Fetch: like, wanting to kind of dive deeper into some of this. So… That being said.
+
+114
+00:19:31.030 --> 00:19:41.749
+Dr. Amanda Fetch: now is the scary part, for those who are like, look, Amanda, I haven't seen this in, like, a good 20 years. So, like, you gotta, like, talk to me, like, whatever, you know, like…
+
+115
+00:19:42.010 --> 00:19:46.640
+Dr. Amanda Fetch: you know, somebody seeing this for the first time, because I have no idea what you're doing here. Okay, fine.
+
+116
+00:19:46.800 --> 00:19:55.289
+Dr. Amanda Fetch: Again, this is why I'm gonna present some stuff, okay, and I'm gonna give you a PDF that digs in a little deeper, but…
+
+117
+00:19:55.800 --> 00:20:12.610
+Dr. Amanda Fetch: What I say is, as I go through a lot of these, okay, focus on the strategy and focus on the use cases. That's really what this program's geared towards, but to do that, we kind of have to show you the back end, okay? So, let's start in with linear classification. Now.
+
+118
+00:20:13.050 --> 00:20:20.750
+Dr. Amanda Fetch: And I try to pluck these things from the material so you can go back in the material and look, right? So these shouldn't be foreign, you know, they should be in the material.
+
+119
+00:20:20.950 --> 00:20:21.890
+Dr. Amanda Fetch: Anyway.
+
+120
+00:20:22.270 --> 00:20:35.879
+Dr. Amanda Fetch: Starting with the top left, okay? This is what a simple linear classifier looks like. So I have a straight line, which is my decision boundary, and I need to separate two classes of data. In this case, I have some positives and minuses.
+
+121
+00:20:35.880 --> 00:20:49.830
+Dr. Amanda Fetch: Okay, floating around here. That line is going to help me classify new data points based on which side of the line it falls on when I run these things through that equation, okay? So, the top right, on the other hand, is showing the process of training this thing.
+
+122
+00:20:49.980 --> 00:20:56.270
+Dr. Amanda Fetch: So now, when I'm training, okay, that line is not kind of static and staying where it is, I'm adjusting that thing.
+
+123
+00:20:56.340 --> 00:21:09.869
+Dr. Amanda Fetch: Okay? I'm adjusting it to better separate those points. As I'm training, as I'm going in there and tweaking, this thing's moving, right? So I make sure that I need to get to a point where I feel a little bit more confident in the decisions.
+
+124
+00:21:09.910 --> 00:21:21.109
+Dr. Amanda Fetch: Okay. Now, bottom row, couple things going on here. Bottom left, I'm looking at, as the data becomes more complex, okay, a line's not going to cut it for me anymore.
+
+125
+00:21:21.230 --> 00:21:28.420
+Dr. Amanda Fetch: Okay? I need to put this into some sort of a higher dimensional space. So let's say I have to go from a 2D to a 3D now.
+
+126
+00:21:28.500 --> 00:21:42.399
+Dr. Amanda Fetch: Okay, now I'm starting to talk about things like a linear boundary, okay, instead of just a line kind of a thing. Okay, so it parallels off that, okay, but I need to think about a higher dimensional space, just to take away.
+
+127
+00:21:42.500 --> 00:22:01.540
+Dr. Amanda Fetch: Now, the bottom middle here, this one, I think maybe is a little bit easier to understand. Non-linear, this thing's all over the place. It's curved, it's, you know, kind of all everywhere. So now I have a curve. Okay, so I feel like it's on… typically, if you get nothing on the slides, like, oh, I see that's curved. So that's non-linear, right? Now, the bottom right.
+
+128
+00:22:01.600 --> 00:22:04.189
+Dr. Amanda Fetch: This thing is completely 3D now.
+
+129
+00:22:04.410 --> 00:22:09.570
+Dr. Amanda Fetch: Okay? It's like the shape of something, like a blob, I don't know where it is.
+
+130
+00:22:09.570 --> 00:22:32.150
+Dr. Amanda Fetch: So I need a plane to get on this thing, because I have, like, again, just kind of think of a shape inside of a cube. Like, how are you going to put a line through this, right? You need something, again, more complex. So now I'm going from a 2D now to a full 3D, where I need to get that whole shape kind of pulled in, and I need to figure that thing out. So that's kind of when we start, again, going to these higher dimensions. Okay.
+
+131
+00:22:32.410 --> 00:22:43.689
+Dr. Amanda Fetch: That was a high-level explainer. Now, getting to the good stuff, where I told you I'm gonna show you an equation, okay? No need to memorize this. If you never see it again, perfect, if you don't want to, but…
+
+132
+00:22:44.590 --> 00:22:49.689
+Dr. Amanda Fetch: Little bit digging in, and some of the use cases when you'd use something like this, okay?
+
+133
+00:22:49.960 --> 00:22:59.779
+Dr. Amanda Fetch: formula, the equation for it's there. High level, I will explain some of this, okay, in that we have a W with, like, a little zero there, right?
+
+134
+00:22:59.890 --> 00:23:06.729
+Dr. Amanda Fetch: W sub 0. Okay, now what that is, is it's some kind of a constant. Okay, it's helping me shift my line.
+
+135
+00:23:07.310 --> 00:23:13.759
+Dr. Amanda Fetch: Okay, now I have W's, more W's in here, right? I have W sub 1 and W sub 2. Okay, those are my weights.
+
+136
+00:23:14.280 --> 00:23:20.679
+Dr. Amanda Fetch: So now I'm gonna think, how heavily weighted, how much should this be,
+
+137
+00:23:20.950 --> 00:23:35.709
+Dr. Amanda Fetch: how much attention should I pay to this thing? Okay, so it… and let's say we're looking at, like, fruit, right? We want to see the size of a piece of fruit and the color. Okay, how heavily am I going to weight size versus color to identify fruit?
+
+138
+00:23:35.880 --> 00:23:51.919
+Dr. Amanda Fetch: Okay? That's what the W's are there for. Then I have some X's mixed in here, okay? Those are the values of the features, okay? So again, that… all of these levers, and we're going to get into a little deeper on this, like buy-ins and variance, and again, different things, weights,
+
+139
+00:23:51.920 --> 00:24:04.310
+Dr. Amanda Fetch: Just know that all those different factors are kind of levers we're going to pull, right, in order to make this line the best sort of… best we can get separator of our points, okay, that can help us classify these things.
+
+140
+00:24:04.310 --> 00:24:13.030
+Dr. Amanda Fetch: Now, not going to dig too deep, because in my supplemental, I really break down these scenarios, but high level, I'll just maybe talk about… I'll pick college admission, but…
+
+141
+00:24:13.030 --> 00:24:24.649
+Dr. Amanda Fetch: I break down in the supplemental PDF what each of the values are, and how you'd attribute it, and things like that, so you can get… dig deeper into these examples. But we'll do one, we'll do college admission.
+
+142
+00:24:24.680 --> 00:24:28.030
+Dr. Amanda Fetch: So if I'm thinking about college admission, okay.
+
+143
+00:24:28.070 --> 00:24:31.229
+Dr. Amanda Fetch: I'm thinking about, let's say, GPA and test scores.
+
+144
+00:24:31.740 --> 00:24:41.799
+Dr. Amanda Fetch: If I go back to that equation, that jumbled thing, okay, GPA maybe is my X sub 1, okay? Test scores may be my X sub 2.
+
+145
+00:24:41.930 --> 00:24:50.699
+Dr. Amanda Fetch: So now what that is, again, as I mentioned earlier, is values, and now I'm starting to think about how I want to attribute this
+
+146
+00:24:50.950 --> 00:24:54.329
+Dr. Amanda Fetch: How does pulling those levers affect the outcome?
+
+147
+00:24:54.430 --> 00:25:02.020
+Dr. Amanda Fetch: Okay, is, I guess, an easier, strategic way to think about this. Now, my goal of this thing is deciding whether I should admit a student or not.
+
+148
+00:25:02.080 --> 00:25:05.829
+Dr. Amanda Fetch: Okay? So what the model's gonna do is we're gonna create that line.
+
+149
+00:25:05.860 --> 00:25:19.169
+Dr. Amanda Fetch: Going back to that decision boundary, and we're going to separate out students who get admitted from those who don't, based on their GPA and test scores. So, of course, if a student's data, you know, their GPA and test scores fall on one side of the line, we're going to admit them, the other they don't.
+
+150
+00:25:19.170 --> 00:25:31.419
+Dr. Amanda Fetch: Okay, that's really the bare bones of how you kind of break down some of these things. And then there's a credit risk example and a customer churn, that you can kind of dig in as well, if you'd like to on that front.
+
+151
+00:25:31.420 --> 00:25:36.949
+Dr. Amanda Fetch: So… This slide goes into
+
+152
+00:25:37.180 --> 00:25:43.049
+Dr. Amanda Fetch: how good, so kind of, how can I trust… how… how well can I trust this thing? And…
+
+153
+00:25:43.180 --> 00:26:01.219
+Dr. Amanda Fetch: I guess pivoting off some of the basic definitions I kind of talked about at the beginning of this, right? So, if I look at the left side, okay, I have a red line, and I know colors may be a little difficult to see here, but there's kind of like a curving line there that's attributed to this x sub 1.
+
+154
+00:26:01.540 --> 00:26:20.590
+Dr. Amanda Fetch: Now, when I look at this thing, okay, and I see some solid circles, and I see some open circles, okay, this thing looks to me like all the solids are on one side, and all the un… you know, the opens are on the other. So I look at this, and I think, this is wonderful, because it did exactly what I wanted.
+
+155
+00:26:20.650 --> 00:26:23.980
+Dr. Amanda Fetch: Well, the issue with that is that's obviously very complex.
+
+156
+00:26:24.160 --> 00:26:35.209
+Dr. Amanda Fetch: Okay? And we get out to the real world, if we build it like this, how well is that going to generalize when there's a little bit off here and there? It's probably going to be, like, just cause devastating consequences for all I know.
+
+157
+00:26:35.340 --> 00:26:41.810
+Dr. Amanda Fetch: But the point is, it's too complex, okay? Now, if I look at the second one, Okay.
+
+158
+00:26:41.920 --> 00:26:51.430
+Dr. Amanda Fetch: Yeah, it looks like there's one, you know, open on the wrong side, one closed on the… you know, so there's one or two kind of off there, but…
+
+159
+00:26:51.590 --> 00:26:57.640
+Dr. Amanda Fetch: It works fairly well, and now, obviously, that's much less complex for me, okay?
+
+160
+00:26:57.780 --> 00:27:01.159
+Dr. Amanda Fetch: Now, a key to this, okay.
+
+161
+00:27:01.350 --> 00:27:04.059
+Dr. Amanda Fetch: Isn't to just make no errors.
+
+162
+00:27:04.240 --> 00:27:12.570
+Dr. Amanda Fetch: Okay? Because there's a lot of problems that can arise, and we're going to dig into these things later in later modules, okay? We're trying to learn, kind of, basics right now.
+
+163
+00:27:12.870 --> 00:27:23.439
+Dr. Amanda Fetch: There's a lot of things, a lot of, bad things that can happen, okay, based on, like, complexity and things like this, if you start making things more complex than they need to be.
+
+164
+00:27:23.580 --> 00:27:40.920
+Dr. Amanda Fetch: Okay, so thinking about how complex do you need to actually get the job done, okay, and utilize it for your specific use case. So again, we'll kind of dig into this more in other examples, as modules progress. Now, the bottom thing of this.
+
+165
+00:27:41.220 --> 00:27:50.300
+Dr. Amanda Fetch: is basically understanding how good a model is, you have to divide your data into three parts, okay? Your training, your validation, and your test.
+
+166
+00:27:50.590 --> 00:27:56.920
+Dr. Amanda Fetch: So your test is that part of your data that you're setting aside to see how well the model does on completely new data.
+
+167
+00:27:56.940 --> 00:28:11.440
+Dr. Amanda Fetch: Okay? Now, again, we want to test how it can perform in the real world, okay? Outside of the data it was trained on. Now, that leads me into the training data. Now, that's what we actually train it on, right? That's what we're using to teach the model.
+
+168
+00:28:11.720 --> 00:28:18.169
+Dr. Amanda Fetch: Now, the validation, okay, is just kind of that third chunk. Now that's going to help us fine-tune our model.
+
+169
+00:28:18.280 --> 00:28:35.990
+Dr. Amanda Fetch: Okay? It's going to make sure it's not just memorizing things, and memorizing that training data, but we're making sure by validating it's actually using or learning useful patterns. Okay, so again, very high level on how to kind of, think about the different steps of the problem.
+
+170
+00:28:36.080 --> 00:28:44.880
+Dr. Amanda Fetch: let's see, this is the first, I think, exercise. Yeah, this is your… one of your first ones, so like I said, I pulled those out. So…
+
+171
+00:28:45.310 --> 00:28:47.280
+Dr. Amanda Fetch: Moving on to decision trees.
+
+172
+00:28:47.390 --> 00:28:48.300
+Dr. Amanda Fetch: Okay.
+
+173
+00:28:48.470 --> 00:28:58.529
+Dr. Amanda Fetch: This captures those basic elements. Again, a lot of this stuff is really broken down, so I'll do, like, high-level things, and then let you kind of take away and really, like, geek out on some of this, but…
+
+174
+00:28:59.270 --> 00:29:16.609
+Dr. Amanda Fetch: The blue, so those sort of decision nodes, okay, labeled decision nodes, their function is representing a point where a decision is made based on a specific condition or feature, okay? So it might be… it doesn't have to be yes or no, okay? Is X greater than Y, for example?
+
+175
+00:29:16.740 --> 00:29:23.559
+Dr. Amanda Fetch: Now, I tricked you, because yeah, the answer probably still is yes or no, but thinking high level on the design of this.
+
+176
+00:29:23.590 --> 00:29:33.799
+Dr. Amanda Fetch: Okay? Is, again, coming up with a proper set of questions or decision nodes, okay, which depends on
+
+177
+00:29:33.810 --> 00:29:47.780
+Dr. Amanda Fetch: how we kind of navigate through a path. And again, I mentioned this could change, right? Problem to problem, we could have… well, you should, absolutely, have a different set of questions on how you're kind of navigating through this. Now I have branches, so I have lines that connect these things.
+
+178
+00:29:47.820 --> 00:29:52.250
+Dr. Amanda Fetch: Okay? Those are possible outcomes of the decision at each node.
+
+179
+00:29:52.320 --> 00:29:56.599
+Dr. Amanda Fetch: Okay, so we're either gonna lead to, I need to ask more questions.
+
+180
+00:29:56.940 --> 00:30:15.290
+Dr. Amanda Fetch: Okay, or I'm gonna lead to those leaves, okay, which is my final decision, and now it's my classification. It's what I actually come out with Class A, Class B, whatever it might be, okay, and a classification problem. Or it could be numerical if I'm using some kind of regression, or a percentage, or whatever it is.
+
+181
+00:30:15.550 --> 00:30:30.079
+Dr. Amanda Fetch: But anyways, this is kind of like the bare bones of how Decision Tree works. Now, again, take out the technical, when would I actually use something like this? Because that's all I care about, right? I'm here to know about use cases. So, one use case is predicting equipment failures.
+
+182
+00:30:30.160 --> 00:30:35.969
+Dr. Amanda Fetch: Okay, so now what I would do here, when I'm building this thing, is I would think about, okay.
+
+183
+00:30:36.110 --> 00:30:43.650
+Dr. Amanda Fetch: Looking at temperature readings, is it above, and I'm making it up, 100 degrees, whatever it could be, right? Yes, no? Okay, that's one thing.
+
+184
+00:30:43.650 --> 00:30:56.540
+Dr. Amanda Fetch: Okay. Vibration levels. How… what level is it at? How is it vibrating? Whatever that might be. Operational hours. How much is this thing downtiming? Right? It's always out… whatever it is. It's always dying.
+
+185
+00:30:56.610 --> 00:31:04.670
+Dr. Amanda Fetch: Okay? That leads me through all these sort of scenarios, through my nodes and my branches, to lead me to that leaf of…
+
+186
+00:31:04.750 --> 00:31:08.249
+Dr. Amanda Fetch: You know, again, what is… it could be anything from…
+
+187
+00:31:08.480 --> 00:31:22.509
+Dr. Amanda Fetch: We would potentially break down to, again, different classifications of risk, high risk. It could literally be a lot of different scenarios, right? But again, this is just one example of how you would kind of break down and use a decision tree to answer your question.
+
+188
+00:31:22.770 --> 00:31:41.979
+Dr. Amanda Fetch: Now, a couple topics that surround decision trees, and random forests, so high level, again, we… this starts to get really too deep for what you need for this program, but I, you know, high level, we'll go over some of this. So there's processes out there. Bootstrapping, okay, or bagging.
+
+189
+00:31:42.390 --> 00:31:59.619
+Dr. Amanda Fetch: Now, basically, they're ensemble… called ensemble methods, okay? A lot of times you use them with decision trees. So why do we care? Why would we do this? Now, bootstrapping, typically what happens is, we generate multiple data sets from our original data set by randomly sampling
+
+190
+00:31:59.620 --> 00:32:16.100
+Dr. Amanda Fetch: with what's called replacement, okay? So basically what we're doing is we make sure that each bootstrap sample might have some observations repeated, maybe we're leaving some others out, so we're thinking of different combinations, right? So now we have variability across our samples.
+
+191
+00:32:16.370 --> 00:32:31.030
+Dr. Amanda Fetch: Okay, now bagging, okay, I leverage bootstrapping to improve my performance and stability of this, okay? And a lot of times, again, I'll use that in decision trees, and we might have… so there's a sort of a left side here and a right side.
+
+192
+00:32:31.060 --> 00:32:39.610
+Dr. Amanda Fetch: So the left side is my single model, okay? That's traditional, considered a traditional approach. I have a single model, I'm training it on my entire data set.
+
+193
+00:32:39.660 --> 00:32:54.829
+Dr. Amanda Fetch: Okay, now we know there could be overfitting there, might not capture that variability that we wanted. So now what do we do? We use the process we just said. Now we go to the bagging, right? So now we're not just going to use that one model, we're going to create those multiple models.
+
+194
+00:32:54.860 --> 00:33:00.340
+Dr. Amanda Fetch: Okay? Training them on different bootstrap samples, and then we run those things in parallel.
+
+195
+00:33:00.680 --> 00:33:08.439
+Dr. Amanda Fetch: Okay? Now, the reason, again, why we care about this is hopefully it reduces variance. So what does that even mean? Okay.
+
+196
+00:33:08.980 --> 00:33:27.139
+Dr. Amanda Fetch: hopefully it reduces the variation, or what I might say, in different predictions, right? Now we're starting to come in closer to similar numbers and results, okay? And hopefully that means our model becomes more stable, so that we generalize off of it. Out in the real world, we have more reliable outcomes.
+
+197
+00:33:27.400 --> 00:33:44.940
+Dr. Amanda Fetch: Okay. Also, accuracy. Most people, if you know nothing else, accuracy typically would trigger something, right? We need it to work well. We need it to be accurate, make sure it's right, quote, right, kind of a thing. As correct as it possibly can be. So, a lot of times when you have these aggregated predictions.
+
+198
+00:33:45.240 --> 00:33:59.169
+Dr. Amanda Fetch: you know, even just the common sense here, if you have more than one thing working on it versus one, probably more than one might get closer to being right than one, right? So that… that's pretty much literally the thought process behind that thing. Now.
+
+199
+00:33:59.340 --> 00:34:15.079
+Dr. Amanda Fetch: I didn't check, I think this site's still up, but this is just an FYI for fun, if you want to start playing around and designing your own decision trees based on use cases, okay? It's kind of a cool application. I think they're still letting you do some for free, which is why I put it out there, but…
+
+200
+00:34:15.080 --> 00:34:19.729
+Dr. Amanda Fetch: If you want, you know, dabble around in there, you could play around with designing some.
+
+201
+00:34:20.570 --> 00:34:26.449
+Dr. Amanda Fetch: This, I'm not going to spend too much time on this, because I basically already covered these concepts, but…
+
+202
+00:34:26.730 --> 00:34:35.210
+Dr. Amanda Fetch: What I will say is, little bit about random forest, though. We have something called an instance at the top, my input.
+
+203
+00:34:35.469 --> 00:34:40.739
+Dr. Amanda Fetch: data I need to classify or predict, okay? Now I have a bunch of trees in there.
+
+204
+00:34:40.739 --> 00:34:56.050
+Dr. Amanda Fetch: So my random force has multiple decision trees. You can go back and, you know, look back through what a decision tree means. Tree 1, 2, 3 to the nth amount of trees. Each tree, trained on a different random subset of the data and features, okay? Then they're going to make their predictions.
+
+205
+00:34:56.170 --> 00:35:10.800
+Dr. Amanda Fetch: In the end, the majority voting wins. Okay, in this one, I have 1A, 2Bs, probably Class B is what we're gonna go with, okay? That's a very simpleized way of how this thing works. Now, again, coming back to actual examples of this thing. Inventory optimization.
+
+206
+00:35:11.200 --> 00:35:19.250
+Dr. Amanda Fetch: Okay, if I use a random force in that scenario, okay, I can predict optimal stock levels for various products.
+
+207
+00:35:19.560 --> 00:35:22.409
+Dr. Amanda Fetch: Okay? Across multiple store locations now.
+
+208
+00:35:22.560 --> 00:35:30.399
+Dr. Amanda Fetch: So I can look at factors like historical sales data, seasonal trends, supplier lead times, storage costs. Each tree
+
+209
+00:35:30.610 --> 00:35:48.159
+Dr. Amanda Fetch: in my forest might focus on different aspects. One of them might look at sales, one of them might look at holidays, inventory needs, whatever it is. Now I combine all these results, and also, that's not the only way to do this, okay? That's one… remember we said one way. You might come to me and say, Amanda, I'd organize it some… perfect.
+
+210
+00:35:48.330 --> 00:36:07.489
+Dr. Amanda Fetch: That's one way to do it, okay? Now, when I combine the results of this thing, now I can provide recommendations on how much stock to hold at each location, minimize my stock outs and my excess inventory. So that's, again, one use case of this thing. This, you know, another activity if you want to dig out there.
+
+211
+00:36:08.430 --> 00:36:18.890
+Dr. Amanda Fetch: on, kind of, tree diagrams, you had a couple different activities. Okay, now we start getting… do I want to say a little bit more technical? Maybe, potentially. Okay, so…
+
+212
+00:36:19.590 --> 00:36:24.319
+Dr. Amanda Fetch: Bayesian methods, Gaussian, you know, normal distribution. So…
+
+213
+00:36:24.550 --> 00:36:28.840
+Dr. Amanda Fetch: Typically, with Bayesian methods, okay, or analysis.
+
+214
+00:36:29.000 --> 00:36:47.809
+Dr. Amanda Fetch: After I see something new, okay, and I'm gonna dig into this, so I'm not gonna spend too much time. Maybe it's a weather update, don't just stick to your original forecast, you update what… on what you just saw, okay? Then we have likelihood rolled in, couple different factors. I'm gonna dig in more on another slide, so I'm not gonna get too deep here. This is more kind of like the entry to this thing.
+
+215
+00:36:47.950 --> 00:36:55.780
+Dr. Amanda Fetch: Bay's role is actually a simple formula that helps you mix old knowledge and your new knowledge, okay, to come up with a better understanding.
+
+216
+00:36:55.910 --> 00:37:11.109
+Dr. Amanda Fetch: So, it's almost like combining ingredients of a recipe to get a perfect… a perfect dish, whatever it might be. So, spoiler alert, the other slides are going to dig into this, so this is kind of like an intro to this thing. So this slide now breaks it down for you, okay? So…
+
+217
+00:37:11.310 --> 00:37:24.840
+Dr. Amanda Fetch: here's the ugly calculations, or the equations, I should say. So, what does this stuff actually mean, okay, with an example. Now, if I start at kind of like that first term, okay, what we're trying to figure out
+
+218
+00:37:25.280 --> 00:37:30.449
+Dr. Amanda Fetch: Okay, probability of event A happening, given that B has occurred.
+
+219
+00:37:30.550 --> 00:37:35.240
+Dr. Amanda Fetch: Okay. It's cloudy. Given that it's cloudy, event B,
+
+220
+00:37:35.630 --> 00:37:38.570
+Dr. Amanda Fetch: What's the chance it's going to rain, event A?
+
+221
+00:37:38.980 --> 00:37:50.599
+Dr. Amanda Fetch: Okay. Now, I look at this P, basically, it's like a P with a line A, you know, the second term in the equation, okay? That's my likelihood.
+
+222
+00:37:50.990 --> 00:38:00.759
+Dr. Amanda Fetch: Now, we talked about this earlier a little bit, I just… spoiler on the last slide. Now, this is the probability of seeing event B if I know A has happened.
+
+223
+00:38:00.960 --> 00:38:20.889
+Dr. Amanda Fetch: So if I go back in my weather example, this could be the chance of seeing clouds if I know it's gonna rain, right? So, that's like that weird likelihood term. Now, my third term in this thing, okay, that's my prior knowledge. Now, what that is, the probability of A happening before I even think about B.
+
+224
+00:38:21.140 --> 00:38:23.560
+Dr. Amanda Fetch: So before I look up and look at the clouds.
+
+225
+00:38:23.860 --> 00:38:35.449
+Dr. Amanda Fetch: How likely is it to rain based on my general knowledge? Weather patterns, for example. Okay. Then I have my fourth term. Probability of B happening just randomly, just on its own.
+
+226
+00:38:36.100 --> 00:38:42.480
+Dr. Amanda Fetch: How likely am I going to see clouds? Doesn't matter if it's gonna rain or not. How likely will I see the clouds?
+
+227
+00:38:42.640 --> 00:38:49.940
+Dr. Amanda Fetch: Okay, so now what Bayes' theorem basically does is combine what I know about the likelihood
+
+228
+00:38:50.790 --> 00:38:58.179
+Dr. Amanda Fetch: With my prior knowledge, to update my belief about the probability of A happening, giving B.
+
+229
+00:38:58.380 --> 00:39:07.339
+Dr. Amanda Fetch: Okay. Another example, just, you know, high level. Again, these are in the, supplementals, but Medical diagnosis, okay?
+
+230
+00:39:07.580 --> 00:39:10.640
+Dr. Amanda Fetch: Trying to determine if a patient has a disease.
+
+231
+00:39:10.900 --> 00:39:15.459
+Dr. Amanda Fetch: Okay. A… Could be the event that I have the disease.
+
+232
+00:39:15.930 --> 00:39:18.970
+Dr. Amanda Fetch: B could be the event that I tested positive.
+
+233
+00:39:19.190 --> 00:39:34.760
+Dr. Amanda Fetch: Okay, so if I use Bayes' theorem, I can update the probability that the patient actually has the disease based on the test result, how reliable the test is, basically, the likelihood, and things like this. There's other examples that I… that I'll pull out, so…
+
+234
+00:39:34.760 --> 00:39:42.109
+Dr. Amanda Fetch: Again, you can kind of dig in there. In the essence of time, we jam a lot in these sessions, so, you could dig in more in there.
+
+235
+00:39:42.140 --> 00:39:57.149
+Dr. Amanda Fetch: this, digging into some other algorithms, so again, remember these equations you're not going to be tested on by any means, so just high level what these things are, and so you can see what they look like from, like, a algebraic, or however you want to say it, terms.
+
+236
+00:39:57.540 --> 00:40:01.959
+Dr. Amanda Fetch: regression, ridge regression, OLS, and gradient descent. So…
+
+237
+00:40:02.300 --> 00:40:05.189
+Dr. Amanda Fetch: Thinking about regression in general, okay?
+
+238
+00:40:05.450 --> 00:40:12.740
+Dr. Amanda Fetch: Basically, that's the relationship between a dependent variable and one or more independent variables to predict an outcome.
+
+239
+00:40:12.940 --> 00:40:28.169
+Dr. Amanda Fetch: Now, we include this regularization, this R that's kind of highlighted off, to avoid overfitting, okay? That's really the basics you need to know. So a lot of times we use this for predicting housing prices, okay? Maybe we'll look at factors like size, bedrooms, location.
+
+240
+00:40:28.770 --> 00:40:40.850
+Dr. Amanda Fetch: Now, ridge regression on the right, now it's a regression technique that I'm penalizing a large… so this sounds a little technical, and then we'll dissect it. I'm penalizing,
+
+241
+00:40:41.220 --> 00:40:45.830
+Dr. Amanda Fetch: Basically, large coefficients to manage what's called multicollinearity.
+
+242
+00:40:45.860 --> 00:41:02.069
+Dr. Amanda Fetch: Okay? With multi-collinearity, basically, is… is if I have independent variables that are highly correlated with each other, they really kind of skew how they behave, okay? Now I… it's really hard for me to determine an individual effect now, because these things are constantly playing off each other.
+
+243
+00:41:02.120 --> 00:41:16.149
+Dr. Amanda Fetch: Okay, so now I'm going to penalize that thing so I can prove my model stability. So something like that is like stock prices, for example. Dealing with correlated economic indicators. Okay, we might use ridge regression in those cases.
+
+244
+00:41:16.420 --> 00:41:24.509
+Dr. Amanda Fetch: Now, OLS, okay, Ordinary Leaf Squares, minimizes the square difference between the actual, so whatever I observed.
+
+245
+00:41:24.650 --> 00:41:38.660
+Dr. Amanda Fetch: Okay? And the predicted values made by the model. Now, I'm not using regularization to limit complexity in this case, okay? So basically, in English, the model was focusing on fitting the data as closely as possible.
+
+246
+00:41:38.750 --> 00:41:51.929
+Dr. Amanda Fetch: I might overfit, okay, because there's no regularization here, okay, especially if my data's very noisy, or as many variables. So maybe we'd use this on something like estimating an exam score based on study time or something.
+
+247
+00:41:52.180 --> 00:42:02.480
+Dr. Amanda Fetch: Then I have GD gradient descent. So I have this process, and I'm gradually tweaking the model settings. So I'm gradually tweaking those parameters to reduce errors, okay?
+
+248
+00:42:02.490 --> 00:42:16.010
+Dr. Amanda Fetch: Could be optimizing delivery routes. Algorithm keeps making those changes, right? Even when you're in the… in your car, right? May start making these changes to the route. Checks if it's better, repeating it until it finds the most efficient path.
+
+249
+00:42:16.390 --> 00:42:31.070
+Dr. Amanda Fetch: Goal of that, obviously, is to minimize your time, or hopefully, your distance, right? Now, one other kind of thing to tack on to this is SGD. So, on top of gradient descent, stochastic gradient descent. So.
+
+250
+00:42:31.820 --> 00:42:42.919
+Dr. Amanda Fetch: Really, what this is in layman's terms is it's really a more efficient, faster way of, using gradient descent that updates our model parameters after each individual data point.
+
+251
+00:42:42.940 --> 00:42:58.320
+Dr. Amanda Fetch: Okay, so that's a lot of times ideal for, like, a larger data set, but anyway, we're… it's a more, do I want to say, again, more optimized, faster way of… of sort of updating your parameters. So it's kind of, like, one step ahead of your, GD kind of thing.
+
+252
+00:42:58.500 --> 00:43:05.059
+Dr. Amanda Fetch: So, here we won't spend a lot of time on logistic regression, because we have a whole, use case and example, but
+
+253
+00:43:05.200 --> 00:43:22.729
+Dr. Amanda Fetch: When to think about logistic regression, way to predict if something belongs to one of two categories, okay? So the example I provided, which is very typical, is why we picked this, right, is a spam versus not spam, okay, based on your input data. So…
+
+254
+00:43:23.090 --> 00:43:34.150
+Dr. Amanda Fetch: If we want to dissect this a little bit, we have an input feature space, okay? So, predicting whether email is spam or not, maybe it's number of times certain words appear in an email, whatever it might be.
+
+255
+00:43:34.150 --> 00:43:47.259
+Dr. Amanda Fetch: Then I look at a linear function, that Z. So, again, thinking back to that line on a graph. So, helping us decide how to weigh the different features, like deciding which words are most important in predicting spam.
+
+256
+00:43:47.400 --> 00:44:03.129
+Dr. Amanda Fetch: Okay? Then we add nonlinearity, so we have functions, which we'll get into some functions a little bit more, but, basically pass it through a special function, in this case sigmoid function, which squashes down this result into a number between 0 and 1.
+
+257
+00:44:03.430 --> 00:44:05.999
+Dr. Amanda Fetch: Hence, a probability.
+
+258
+00:44:06.000 --> 00:44:24.260
+Dr. Amanda Fetch: what's the probability of this thing happening? So keep in mind, a lot of times that's what we use sigmoid functions for, okay? And so again, that kind of leads us further down, that in this case, let's say it's 0.85 it knocks out, so 85% probability that this email is spam. Now, we need to figure out how well this thing's doing.
+
+259
+00:44:24.440 --> 00:44:32.760
+Dr. Amanda Fetch: So sometimes, you know, well, you really should do it, well, pretty much all the time, but looking at log likelihood loss, okay, log loss.
+
+260
+00:44:32.760 --> 00:44:51.699
+Dr. Amanda Fetch: measure how well our model is doing. So we compare those predicted probabilities with the actual class, if it is spam or not spam, and then we use this log likelihood metric, basically. Helps us figure out how wrong the predictions actually are. And then there's ways to optimize and things like that, which
+
+261
+00:44:51.940 --> 00:45:05.049
+Dr. Amanda Fetch: Again, go kind of a little bit deep for this course and program, so I'd say focus more on the use case and things like that, but you can kind of dig in further if you'd want on kind of some of those additional aspects of this.
+
+262
+00:45:05.200 --> 00:45:19.000
+Dr. Amanda Fetch: SVM, so support vector machines. Key components of this is basically a loss function, okay, which we kind of just talked about. So we want to minimize our loss by encouraging correctly classified points.
+
+263
+00:45:19.000 --> 00:45:29.219
+Dr. Amanda Fetch: To be far from the boundary, and when that happens, we apply a larger penalty, okay, for misclassified points, and then a smaller loss for points that are near whatever that margin might be.
+
+264
+00:45:29.360 --> 00:45:36.930
+Dr. Amanda Fetch: Now, we bake in regularization here, which we already talked about, so remember, regularization is only there to control our complexity.
+
+265
+00:45:37.030 --> 00:45:42.519
+Dr. Amanda Fetch: Okay, prevent overfitting, adding a penalty if our model gets too complex, right?
+
+266
+00:45:42.570 --> 00:45:54.549
+Dr. Amanda Fetch: And then that inference at the end, so once we kind of train this thing. The SVM classifies new data based on its distance from what is considered a hyperplane, with points further from that boundary.
+
+267
+00:45:54.550 --> 00:46:13.400
+Dr. Amanda Fetch: we classify them with more confidence now. So a lot of times, you know, if you've seen out there and you've dug in, kind of classifying digits, 0 and 1, a lot of times for vector machines are used in those kind of a use cases. So again, you can, if this interests you, you can kind of dig in a little further, on the side.
+
+268
+00:46:13.430 --> 00:46:35.660
+Dr. Amanda Fetch: This one I won't really spend time on, because we've went through a lot of this, already, so this is kind of just plucked this out of the, material, just for your FYI. You can kind of go back in and look at some of this, you know, talks a little bit about evaluation metrics, and again, goes a little bit deeper than the kind of overarching purpose of the course, but, anyway, just for your kind of information.
+
+269
+00:46:35.660 --> 00:46:40.410
+Dr. Amanda Fetch: Un activity also on SVMs, optional if you want to dig in.
+
+270
+00:46:41.580 --> 00:46:48.559
+Dr. Amanda Fetch: This, of course, I'm biased, is my favorite part, since that's what my research really was in, was in clustering.
+
+271
+00:46:48.560 --> 00:47:09.909
+Dr. Amanda Fetch: But couple… couple variations of, unstructured anal clustering, PCA, so if I have a principal components analysis, and I pull that plot, basically, all that's doing is visually showing us main patterns and data, okay? We're just, again, reducing complexity in our data.
+
+272
+00:47:09.910 --> 00:47:25.310
+Dr. Amanda Fetch: the algorithm finds these patterns without us labeling it, so again, it's looking at similar behaviors, or similar characteristics and grouping things statistically. It's pretty much the easiest way to say it. K-means is very popular if you're starting out.
+
+273
+00:47:25.670 --> 00:47:38.879
+Dr. Amanda Fetch: And that's how I personally started out, with this unstructured process and clustering. Basically, what k-means does is it could start by kind of guessing where the clusters might be, assign data to the nearest guest group.
+
+274
+00:47:38.880 --> 00:47:55.430
+Dr. Amanda Fetch: then it updates group centers based on points assigned, and we kind of keep repeating this process until it kind of sort of stops changing. Now, one thing about k-means, and the reason why I didn't… one of the reasons, there's many reasons why I didn't use k-means in my analysis is,
+
+275
+00:47:55.790 --> 00:48:05.340
+Dr. Amanda Fetch: You have to decide up front how many clusters, okay? Now, yes, of course, there's ways to do that, right? But again, you do have to specify. The other thing is, everything's pushed somewhere.
+
+276
+00:48:05.440 --> 00:48:13.139
+Dr. Amanda Fetch: So I typically say this is great for personalization and, like, marketing campaigns and segmentation, okay? Because it's not the end of the world.
+
+277
+00:48:13.140 --> 00:48:37.949
+Dr. Amanda Fetch: If we group somebody who, you know, purchases luxury items, but they like yellow sweaters versus blue sweaters, okay? They bought sweaters. That's not going to cause a life-altering event. Now, if I have something in space that's going to clash into something, that could cause a life-altering event, or a medical diagnosis, okay? Those things, we need to pull out anomalies and really say, I can't push this somewhere. And if I don't get it and it doesn't go anywhere, I need to stop and analyze it on its own, whatever it might be.
+
+278
+00:48:37.950 --> 00:48:51.839
+Dr. Amanda Fetch: be. But I can't push it and just say it's part of another point. So that's one of the examples of when you wouldn't want to kind of just focus on k-mains, for example. And I kind of already went through an example of, like, personalization and things like this.
+
+279
+00:48:52.030 --> 00:49:11.560
+Dr. Amanda Fetch: Hierarchical clustering, basically if you work with, like, dendrograms and things like this, they're… they're similar, like, tree-like structures, and they're… they, again, visually show us how items are grouped together. So, we have a y-axis, you can see, is attributed to height, and so that indicates how similar or different our clusters are.
+
+280
+00:49:11.560 --> 00:49:17.080
+Dr. Amanda Fetch: So, the higher it is, the more different they are, okay? When it starts to kind of top off a little lower, they're more similar.
+
+281
+00:49:17.120 --> 00:49:35.889
+Dr. Amanda Fetch: And so you can see here, we have things like non-anomalous cycles, so non… no anomaly, non-anomalous, anomalous, can't say it, means pretty normal behavior, what we'd expect. Now we have anomalous, so now it's kind of deviating from that norm. Now, if it's highly anomalous, now that we'd want to pay attention to, right?
+
+282
+00:49:35.890 --> 00:49:40.409
+Dr. Amanda Fetch: Now, again, a lot of times I say, a lot of these are pre-assessments of risk.
+
+283
+00:49:40.410 --> 00:49:50.129
+Dr. Amanda Fetch: Right? Ways of grouping things to say, yeah, I want to pay attention to those, because I don't really know what they're doing, right? So again, different ways to kind of looking at these things.
+
+284
+00:49:50.150 --> 00:50:10.660
+Dr. Amanda Fetch: This, I mentioned, and I did a spoiler alert on you could use, like, Bayesian optimization and pull it back to, like, a recipe or something like this. So, I have a whole cookie recipe that helps you kind of visualize this. In the essence of time, we don't have a lot left, so I'll let you read through that, but high level, I'll go over just some of the, what's kind of listed out here on the slide. So.
+
+285
+00:50:10.960 --> 00:50:29.460
+Dr. Amanda Fetch: Basically, what happens here is we start with a few known data points. Okay, those are my red dots. They represent trial options that I've already tested. Now, depending on how the point… how well the point performs, okay, that basically shows me a true cost.
+
+286
+00:50:29.630 --> 00:50:36.339
+Dr. Amanda Fetch: Okay. Then, a model is basically created off this to predict how other untested options might perform.
+
+287
+00:50:36.430 --> 00:50:52.479
+Dr. Amanda Fetch: So, it gives me a modeled cost, showing estimated results for other options, and how certain those estimates are, which is that kind of shaded blue area on the slide, so that shaded area. Then we have exploration and acquisition. So, as I move away from those tested points, not exploring.
+
+288
+00:50:52.590 --> 00:50:54.010
+Dr. Amanda Fetch: I have more uncertainty.
+
+289
+00:50:54.450 --> 00:51:00.879
+Dr. Amanda Fetch: Now, the acquisition function wrapped in there helps me decide where to test next.
+
+290
+00:51:01.400 --> 00:51:15.450
+Dr. Amanda Fetch: And it does that by balancing two goals. One, I have to reduce uncertainty, so when I'm exploring those new areas. The other one is finding where the best or the lowest true cost is lying, okay? So I improve on what I consider my current, quote, best.
+
+291
+00:51:15.520 --> 00:51:33.640
+Dr. Amanda Fetch: And so what happens is over time, so this is a process, over time, by testing more options using this method, hopefully the model becomes more accurate. Now we narrow down where the true optimal solution lies. And so I have a whole example you can use by, like, testing ingredients for a cookie recipe, that ties back into this.
+
+292
+00:51:33.750 --> 00:51:47.510
+Dr. Amanda Fetch: So we're kind of, I think, getting towards the end here, so we're about right on time. This slide's on reinforcement learning. So again, looking at an approach, machine learning approach, of course, where a learner interacts with an environment.
+
+293
+00:51:47.690 --> 00:51:53.840
+Dr. Amanda Fetch: And I'm learning through trial and error, okay? Now, the process involves the learner observing the current state.
+
+294
+00:51:54.210 --> 00:51:57.149
+Dr. Amanda Fetch: Deciding to take an action based on that.
+
+295
+00:51:57.640 --> 00:52:15.200
+Dr. Amanda Fetch: Now, the environment's going to give me feedback in the form of a reward, okay, depending on how I do, or how the robotic dog does, whatever it is. And the state changes, okay, and transitions to a new state. Learner keeps repeating that cycle, aiming to maximize the long-term rewards over time.
+
+296
+00:52:15.200 --> 00:52:29.279
+Dr. Amanda Fetch: So, you know, an example of this is kind of having this dog, you know, we have a robot dog navigating a maze. The learner is the robot, making decisions based on the observed state, where I'm at find… well, not me, but where the dog is in the maze.
+
+297
+00:52:29.280 --> 00:52:37.039
+Dr. Amanda Fetch: Tries different actions, so it's going to choose different paths, and then it learns which choices are leading to the goal, which is a reward for finding the exit.
+
+298
+00:52:37.130 --> 00:52:42.149
+Dr. Amanda Fetch: Okay, so again, just kind of one example on that front, you had
+
+299
+00:52:42.470 --> 00:52:47.369
+Dr. Amanda Fetch: Exercise. Drag and drop on regression, different algorithms.
+
+300
+00:52:47.370 --> 00:53:03.040
+Dr. Amanda Fetch: clustering exercise if you want to dig into some code. And it looks like we ended up right on time, so before we dive in to any additional, thoughts or, or, you know, comments, questions here, one more if you joined us late.
+
+301
+00:53:03.500 --> 00:53:04.760
+Dr. Amanda Fetch: Perfect.
+
+302
+00:53:04.920 --> 00:53:14.550
+Dr. Amanda Fetch: I'll have the tech team push out the Jupyter Notebook Guide, which you probably could have already gotten, because I think I asked them to do it for the intro webinar. Anyway…
+
+303
+00:53:14.660 --> 00:53:22.510
+Dr. Amanda Fetch: This will walk you through how to use EM code. How to open it up, how to restart, do different things, so this will guide you.
+
+304
+00:53:22.630 --> 00:53:38.679
+Dr. Amanda Fetch: This is pretty much self-explanatory that pretty much guides you through everything. If you have something you just can't figure out at all, it's dead, then that's when I'd say put in a technical ticket, and I literally say that in here. This thing you're gonna see now, because I already went through it, is my slides, most of them, right?
+
+305
+00:53:38.680 --> 00:53:52.130
+Dr. Amanda Fetch: Alls we did here is we dug in a little deeper in explaining some of this, okay? So if some of it went over your head, and like, for example, college admission, I went high level, this and my monitor's kind of conking out here, it'll be easier to see.
+
+306
+00:53:52.280 --> 00:54:16.990
+Dr. Amanda Fetch: goes into those, for example, these examples, right? Digging into the credit risk, how you would apply linear classification, customer churn. So again, pretty much all these slides, you know, let's dig into the end here, the cookie, you know, I said we'll walk you through a cookie problem or example, you know, how to use the ingredients on that, what was it, the theorem and different things. All that stuff is in here. Now I think I lost it again, but the
+
+307
+00:54:16.990 --> 00:54:24.209
+Dr. Amanda Fetch: The point is, if you dig in, you'll find these. Oh, here it is here. And then it kind of walks through going through different recipes and stuff like that, so…
+
+308
+00:54:24.940 --> 00:54:31.079
+Dr. Amanda Fetch: That being said, I will be providing you, again, the transcript, the slides.
+
+309
+00:54:31.290 --> 00:54:47.720
+Dr. Amanda Fetch: As I mentioned, if you've attended some of my other sessions, or you've been in the leadership program, I mentioned this is a lot different. This is a lot of content in a very small amount of time. We try to make it as digestible as possible. I personally try to focus on
+
+310
+00:54:47.720 --> 00:55:01.130
+Dr. Amanda Fetch: Only what's going to help you, number one, in the real world, day-to-day, number two, you know, which goes hand-in-hand with use cases, which is why I have a bunch of them in there. The other part of this is focusing on how to complete the assignments.
+
+311
+00:55:01.130 --> 00:55:12.870
+Dr. Amanda Fetch: Okay, so all the optional stuff we're not going to cover live. Does that mean you're working through the exercise, there's some code in there, and you're like, what does this mean? We kind of learned about it, I don't know, I want to ask.
+
+312
+00:55:12.870 --> 00:55:35.809
+Dr. Amanda Fetch: put in a support ticket, right? Ask us. That's what we're here for. Now, now, depending on if it's broken, like I said in the other thing, that's for the tech team. If it's, you know, I don't really understand this content, can you assist me? It'll also push out, I think, who do we have in this cohort? Myself, Bruce, and Danny. You can ask for us. So if you're like, oh, Amanda's nuts, I can't… I don't like how she explains, I need, like, Bruce.
+
+313
+00:55:35.950 --> 00:55:49.409
+Dr. Amanda Fetch: you could say that, and we'll get you Bruce, right? So that, that, I feel, is very important to put out there, because we all have different styles. Anyway, I've talked too much, and I probably have no voice. Thoughts, comments, questions?
+
+314
+00:55:58.760 --> 00:56:05.789
+Philippe Giboulot: Yes, hi, Amanda. Hi. I apologize in advance, English is not my native language, so let's see if you understand me.
+
+315
+00:56:06.110 --> 00:56:15.749
+Philippe Giboulot: I've learned already a few different MVPs using AI. It's either computer vision, acoustic.
+
+316
+00:56:17.160 --> 00:56:19.749
+Philippe Giboulot: Or a legal tech, or different stuff.
+
+317
+00:56:21.210 --> 00:56:24.199
+Philippe Giboulot: Do you have anywhere, somewhere in your head.
+
+318
+00:56:24.300 --> 00:56:37.280
+Philippe Giboulot: a decision tree where anyone is coming to you because AI is so different, there are so many different people using AI, so different interests. Do you have some… somewhere in your head…
+
+319
+00:56:37.490 --> 00:56:39.770
+Philippe Giboulot: A decision tree.
+
+320
+00:56:40.250 --> 00:56:44.749
+Philippe Giboulot: Like, the question you would ask to the person in front of you.
+
+321
+00:56:45.000 --> 00:56:49.860
+Philippe Giboulot: So that you would know straight away what sort of AI you would need to use.
+
+322
+00:56:53.290 --> 00:57:06.469
+Dr. Amanda Fetch: So, great question. So, the easiest way, what I would say is I can push out some materials on this, on how to determine, kind of what algorithm to use based on different use cases and scenarios.
+
+323
+00:57:06.470 --> 00:57:18.310
+Dr. Amanda Fetch: And how to kind of dissect that problem. I think that's kind of, the direction you were going, so absolutely, we can pull some further readings on that. I've… other cohorts have popped up, the same questions have surfaced, so…
+
+324
+00:57:18.350 --> 00:57:27.670
+Dr. Amanda Fetch: We'll go ahead and push that out. Now, where that'll push out is, you know, as far as housekeeping, we have different sections, so I happen to be A, but that is no concern to others.
+
+325
+00:57:27.670 --> 00:57:43.119
+Dr. Amanda Fetch: So I'll put it in my section, but in… and you should, let me double check, you should… everybody should have access to the cafe boards out there. So that cafe board, a lot of times, when we push out extra materials, I push it to the cafe because everybody can access it.
+
+326
+00:57:43.120 --> 00:57:56.699
+Dr. Amanda Fetch: Okay, so I would say also look in the CAFE board, and I'll get those resources pushed out. I mentioned it at the beginning, but I'm doing traveling, so I'll try to get those out. Sometimes it takes me a couple days, but I'm going to be traveling, so I'll try to get that out today.
+
+327
+00:57:56.700 --> 00:58:09.850
+Dr. Amanda Fetch: So, keep, you know, everybody kind of, if you have interest in that, keep your eyes peeled on that. If, you know, a couple days go by, you can't find it or it's missing, you could put in a support ticket, too, and we could help you find it or get the resources to you.
+
+328
+00:58:09.850 --> 00:58:13.440
+Dr. Amanda Fetch: Kind of like his last resort. But good, great, great question, by the way, Philippe.
+
+329
+00:58:13.900 --> 00:58:14.979
+Philippe Giboulot: Thank you so much, Amanda.
+
+330
+00:58:15.570 --> 00:58:16.470
+Dr. Amanda Fetch: Yeah.
+
+331
+00:58:16.580 --> 00:58:18.719
+Dr. Amanda Fetch: Other comments or questions?
+
+332
+00:58:33.850 --> 00:58:53.540
+Dr. Amanda Fetch: Okay, well, if not, I know, like I said, the next two weeks are chock full of info. You know, we get mixed reviews, some are like, oh, this is just too much, it's nuts. So I try to, again, bring it down to reality, so that you see what's shown, but, you know, thinking about how you can actually, use this in real life. And…
+
+333
+00:58:53.540 --> 00:59:12.679
+Dr. Amanda Fetch: where your focus should be, right? Versus the optional stuff that you can do in your spare time and kind of dig in further, which, again, we're more than happy to assist on that. Now, of course, again, you know, if you have to drop, you know, we went… actually, we're right on time, so today's been an amazing session. I guess I kind of scooted through.
+
+334
+00:59:12.830 --> 00:59:13.930
+Dr. Amanda Fetch: But…
+
+335
+00:59:14.040 --> 00:59:33.049
+Dr. Amanda Fetch: you know, again, always ask your questions, but you could reach out on the side. Never be afraid to reach out. Ask us. You know, I have some people that'll come to me every module, and they're like, Amanda, this, that, you know, can you provide? That's what I'm here for, okay, is to assist. The content can only go so deep.
+
+336
+00:59:33.230 --> 00:59:52.969
+Dr. Amanda Fetch: And, you know, everybody's paying money and putting time into this, right? So how can you get the most bang for your buck? That's what we're here to assist for. And then in the end, again, to kind of reiterate, once you push out those capstones, get those in on time, and you're going to get another perspective on your idea, right? We'll provide you that feedback as well. So, so yeah!
+
+337
+00:59:53.270 --> 01:00:06.189
+Dr. Amanda Fetch: So, thank you, everyone, for joining. If there's nothing else, we can go ahead and close. Again, this was recorded, but if you missed at the beginning, I mentioned, as I'll be traveling and doing some speaking, my next session
+
+338
+01:00:06.190 --> 01:00:15.639
+Dr. Amanda Fetch: I think isn't until, Wednesday, September 16th. So remember, don't think I fell off the earth, or… well, I kind of, in a way, did, but…
+
+339
+01:00:15.640 --> 01:00:24.520
+Dr. Amanda Fetch: I'll resurface on the 16th, but again, you can reach out to me in the interim, okay? Any questions, thoughts, please reach out, you know, that's what we're here for, but…
+
+340
+01:00:25.280 --> 01:00:44.209
+Dr. Amanda Fetch: Okay, again, thank you for joining. We'll go ahead and we'll get these slides and everything up. Housekeeping-wise, usually the tech team, they kind of vet through, go through some things, so it might take a day or two to get that turned around for you, and then we'll get, per Philippe's question, we'll get some additional materials as to how to kind of dissect some of this. So, great question, so…
+
+341
+01:00:44.210 --> 01:00:47.450
+Dr. Amanda Fetch: Alright, with that being said, take care, have a great weekend.
+
+342
+01:00:48.940 --> 01:00:49.850
+Rangarajan Raman (Cohort 13): Thanks, Ananda.
+

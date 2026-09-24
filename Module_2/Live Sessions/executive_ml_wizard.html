@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Executive ML Map (Interactive Decision Matrix)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0B132B;
+            --glass-bg: rgba(30, 41, 59, 0.7);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --glass-border-hover: rgba(96, 165, 250, 0.5);
+            --glass-border-selected: #60A5FA;
+            --text-main: #F8FAFC;
+            --text-muted: #94A3B8;
+            --accent: #60A5FA;
+            --accent-glow: rgba(96, 165, 250, 0.4);
+            --good-bg: rgba(6, 78, 59, 0.5);
+            --good-text: #34d399;
+            --bad-bg: rgba(127, 29, 29, 0.5);
+            --bad-text: #f87171;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            background: radial-gradient(circle at top right, #1e3a8a 0%, #0B132B 50%);
+            background-attachment: fixed;
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        header {
+            padding: 30px 5% 15px;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.2rem;
+            color: var(--accent);
+            margin-bottom: 8px;
+            text-shadow: 0 0 20px var(--accent-glow);
+        }
+
+        p.subtitle {
+            color: var(--text-muted);
+            font-size: 1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Breadcrumb Bar */
+        .breadcrumb-bar {
+            position: sticky;
+            top: 0;
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--glass-border);
+            padding: 12px 5%;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        .breadcrumb-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .breadcrumb-item:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+
+        .breadcrumb-item.active {
+            background: rgba(96, 165, 250, 0.15);
+            border-color: var(--accent);
+            color: white;
+        }
+
+        .breadcrumb-separator {
+            color: var(--text-muted);
+            font-size: 1.2rem;
+            line-height: 1;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px 20px;
+            width: 90%;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .animate-fade-in {
+            animation: fadeIn 0.4s ease-out forwards;
+        }
+
+        .question-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .question-desc {
+            color: var(--text-muted);
+            margin-bottom: 25px;
+            text-align: center;
+            font-size: 0.95rem;
+        }
+
+        /* Compact Options Grid */
+        .options-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            width: 100%;
+            max-width: 900px;
+            margin-bottom: 20px;
+        }
+
+        .option-chip {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            padding: 8px 16px;
+            cursor: pointer;
+            transition: all 0.2s ease-out;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            height: 40px;
+        }
+
+        .option-chip:hover {
+            border-color: var(--glass-border-hover);
+            background: rgba(45, 60, 85, 0.8);
+            transform: translateY(-2px);
+        }
+
+        .option-chip.selected {
+            border-color: var(--glass-border-selected);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3), 0 0 15px var(--accent-glow);
+            background: rgba(30, 58, 138, 0.5);
+            transform: translateY(-2px);
+        }
+
+        .option-chip.unselected {
+            opacity: 0.5;
+            border-color: transparent;
+            background: rgba(15, 23, 42, 0.4);
+        }
+        
+        .option-chip.unselected:hover {
+            opacity: 0.8;
+        }
+
+        .option-icon {
+            font-size: 1.2rem;
+            line-height: 1;
+        }
+
+        .option-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: white;
+            white-space: nowrap;
+        }
+
+        /* Option Detail Area */
+        .option-detail-area {
+            width: 100%;
+            max-width: 800px;
+            background: rgba(15, 23, 42, 0.4);
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 10px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .option-detail-desc {
+            color: #e2e8f0;
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .use-case-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--accent);
+            margin-bottom: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .use-case-tags {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .use-case-tag {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #cbd5e1;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+        }
+
+        /* Results Layout */
+        .results-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 20px;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .result-card {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border-selected);
+            border-radius: 16px;
+            padding: 25px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+        }
+
+        .result-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 4px;
+            background: linear-gradient(90deg, var(--accent), transparent);
+        }
+
+        .alg-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding-bottom: 12px;
+        }
+
+        .alg-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: white;
+            min-width: 0;
+            overflow-wrap: anywhere;
+        }
+
+        .alg-usecase {
+            color: var(--accent);
+            font-style: italic;
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+            line-height: 1.5;
+            padding-left: 10px;
+            border-left: 3px solid var(--accent);
+        }
+
+        .executive-fit {
+            background: rgba(96, 165, 250, 0.12);
+            border: 1px solid rgba(96, 165, 250, 0.25);
+            border-radius: 10px;
+            padding: 12px 14px;
+            color: #dbeafe;
+            font-size: 0.92rem;
+            line-height: 1.45;
+            margin-bottom: 16px;
+        }
+
+        .decision-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 12px;
+            margin-bottom: 15px;
+        }
+
+        .decision-fact {
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 10px;
+            padding: 12px;
+            min-width: 0;
+        }
+
+        .decision-label {
+            color: var(--accent);
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            margin-bottom: 6px;
+            text-transform: uppercase;
+        }
+
+        .decision-value {
+            color: #e2e8f0;
+            font-size: 0.88rem;
+            line-height: 1.45;
+            overflow-wrap: anywhere;
+        }
+
+        .pros-cons {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+            flex-grow: 1;
+        }
+
+        .pc-section {
+            background: rgba(0,0,0,0.3);
+            border-radius: 12px;
+            padding: 15px;
+        }
+
+        .metrics-section {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px dashed rgba(255,255,255,0.1);
+        }
+
+        .metric-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 8px;
+        }
+
+        .metric-tag {
+            background: rgba(96, 165, 250, 0.15);
+            border: 1px solid rgba(96, 165, 250, 0.3);
+            color: #93c5fd;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .badge.good { background-color: var(--good-bg); color: var(--good-text); }
+        .badge.bad { background-color: var(--bad-bg); color: var(--bad-text); }
+
+        ul {
+            margin: 0;
+            padding-left: 20px;
+            color: #e2e8f0;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        li { margin-bottom: 6px; }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 768px) {
+            .results-container { grid-template-columns: 1fr; }
+            .decision-grid { grid-template-columns: 1fr; }
+            h1 { font-size: 1.8rem; }
+            .question-title { font-size: 1.5rem; }
+            .option-chip { padding: 8px 12px; }
+            .option-title { font-size: 0.85rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>AI Strategy Matrix</h1>
+        <p class="subtitle">Navigate the decision tree to find the right ML algorithm.</p>
+    </header>
+
+    <div class="breadcrumb-bar" id="breadcrumb-bar">
+        <!-- Rendered via JS -->
+    </div>
+
+    <div class="container" id="tree-container">
+        <!-- Rendered via JS -->
+    </div>
+
+    <script>
+        // Data Models
+        const treeData = {
+            root: {
+                title: "Start",
+                icon: "🏠",
+                question: "What is your primary strategic objective?",
+                desc: "Select the core capability you are trying to unlock with AI.",
+                options: [
+                    { 
+                        id: "supervised", 
+                        title: "Predictive Analytics (Supervised)", 
+                        desc: "Learn from labeled historical data to make future predictions.", 
+                        icon: "🎯",
+                        useCases: ["Churn Prediction", "Sales Forecasting", "Lead Scoring", "Fraud Detection", "Customer Segmentation", "Price Optimization", "Demand Planning", "Product Recommendations", "Inventory Levels"]
+                    },
+                    { 
+                        id: "unsupervised", 
+                        title: "Discovery on Raw Data (Unsupervised)", 
+                        desc: "Find hidden structures, clusters, or anomalies in unlabeled data.", 
+                        icon: "🔍",
+                        useCases: ["Anomaly Detection", "Customer Segmentation", "Document Scanning", "Image Search", "Logo Detection", "Audio Classification"]
+                    },
+                    { 
+                        id: "reinforcement", 
+                        title: "Optimization via Trial (Reinforcement)", 
+                        desc: "Train agents and active learners to optimize long-term rewards or reduce uncertainty.", 
+                        icon: "🤖",
+                        useCases: ["Ad Delivery Optimization", "Dynamic A/B Testing", "Autonomous Navigation", "Strategic Simulation", "Resource Allocation"]
+                    }
+                ]
+            },
+            supervised: {
+                title: "Predictive Analytics",
+                icon: "🎯",
+                question: "What specific type of prediction do you need?",
+                desc: "Choose the output format of your desired model.",
+                options: [
+                    { 
+                        id: "classification", 
+                        title: "Categorization", 
+                        desc: "Use when you have labeled examples and need a yes/no, risk tier, routing, or category decision.", 
+                        icon: "🗂️",
+                        useCases: ["Spam Filtering", "Credit Scoring", "Medical Diagnosis", "Document Routing", "Sentiment Analysis", "Customer Churn"]
+                    },
+                    { 
+                        id: "regression", 
+                        title: "Forecasting", 
+                        desc: "Use when the business question needs a numeric estimate, forecast, price, quantity, or score.", 
+                        icon: "📈",
+                        useCases: ["Revenue Forecasting", "Price Prediction", "Population Growth", "Ad Spend ROI", "Oil Production"]
+                    },
+                    { 
+                        id: "ensemble", 
+                        title: "High-Accuracy Combining", 
+                        desc: "Use for tabular business data when accuracy and robustness matter more than simple explanation.", 
+                        icon: "🧩",
+                        useCases: ["Loan Default Prediction", "Housing Prices", "Complex Buying Behavior", "Insurance Claims"]
+                    },
+                    { 
+                        id: "timeseries", 
+                        title: "Temporal Forecasting", 
+                        desc: "Predicting future sequential events based strictly on historical timelines.", 
+                        icon: "⏳",
+                        useCases: ["Quarterly Demand", "Weather Forecasting", "Supply Chain", "Financial Risk", "Seasonal Sales"]
+                    }
+                ]
+            },
+            unsupervised: {
+                title: "Discovery on Raw Data",
+                icon: "🔍",
+                question: "What kind of patterns are you looking to discover?",
+                desc: "Select the discovery method for your raw data.",
+                options: [
+                    { 
+                        id: "clustering", 
+                        title: "Segmentation", 
+                        desc: "Use when you have unlabeled customers, products, locations, or behaviors and need natural segments.", 
+                        icon: "📊",
+                        useCases: ["Marketing Campaigns", "City Planning", "Organizational Structures", "Traffic Patterns"]
+                    },
+                    { 
+                        id: "dimensionality", 
+                        title: "Simplification", 
+                        desc: "Use when too many variables obscure the signal or executives need a simpler driver view.", 
+                        icon: "📉",
+                        useCases: ["Dashboard Distillation", "Genetics Visualization", "Data Compression"]
+                    },
+                    { 
+                        id: "association", 
+                        title: "Sequence Discovery", 
+                        desc: "Discovering hidden 'If A then B' correlations across massive databases.", 
+                        icon: "🔗",
+                        useCases: ["Market Basket Analysis", "Cross-Sell/Upsell", "Purchase Pattern Mining"]
+                    },
+                    { 
+                        id: "anomaly", 
+                        title: "Threat ID", 
+                        desc: "Identifying rare, exceptional, or highly suspicious events.", 
+                        icon: "🚨",
+                        useCases: ["Cybersecurity Threats", "Manufacturing Defects", "Retail Loss Prevention"]
+                    },
+                    { 
+                        id: "generative", 
+                        title: "Synthesis & Ambiguity", 
+                        desc: "Use for ambiguous, variable, open-ended work such as text, knowledge synthesis, summarization, reasoning support, or media generation.", 
+                        icon: "🎨",
+                        useCases: ["Genome Analysis", "Scientific Simulation", "Pattern Reproduction"]
+                    }
+                ]
+            },
+            reinforcement: {
+                title: "Optimization via Trial",
+                icon: "🤖",
+                question: "What is the operational domain for the learning agent?",
+                desc: "Select the environment type for interaction and learning.",
+                options: [
+                    { 
+                        id: "continuous", 
+                        title: "Autonomous Operations", 
+                        desc: "Systems that learn dynamic strategies and continuous control.", 
+                        icon: "🏎️",
+                        useCases: ["Self-Driving Cars", "Drone Navigation", "Robotics Control"]
+                    },
+                    { 
+                        id: "gameai", 
+                        title: "Strategic Simulation", 
+                        desc: "Training agents to compete, collaborate, and discover novel strategies.", 
+                        icon: "♟️",
+                        useCases: ["Logistics Strategy", "Wargame Simulation", "Multi-Agent Competition"]
+                    },
+                    { 
+                        id: "explore", 
+                        title: "Active Learning", 
+                        desc: "Balancing testing of new strategies vs capitalizing on known winners, reducing uncertainty.", 
+                        icon: "⚖️",
+                        useCases: ["Ad Delivery", "Dynamic A/B Testing", "Clinical Trial Guidance", "Scientific Data Collection"]
+                    }
+                ]
+            }
+        };
+
+        const resultsData = {
+            classification: [
+                {
+                    name: "Logistic Regression",
+                    type: "Supervised classification",
+                    bestUseCase: "Binary classification where leaders need probabilities, not just yes/no labels.",
+                    coreLogic: "Models log-odds as a weighted combination of business drivers.",
+                    assumptions: "Best when the decision boundary is close to linear and inputs are not heavily collinear.",
+                    executiveFit: "A strong first choice for regulated, explainable risk decisions such as churn, default, approval, and escalation.",
+                    good: ["Probabilistic and highly interpretable.", "Very fast to train and test.", "Easy to benchmark against more complex models."],
+                    bad: ["Weak with highly non-linear boundaries.", "Requires careful feature design for interactions.", "Can underfit complex behavior."],
+                    whenNotToUse: "Avoid when the outcome depends on complex non-linear combinations of many variables.",
+                    realWorldExample: "Spam detection, customer churn scoring, and loan default probability.",
+                    metrics: ["ROC-AUC", "Log Loss", "Brier Score"]
+                },
+                {
+                    name: "Decision Tree",
+                    type: "Supervised classification or regression",
+                    bestUseCase: "Transparent rule-based decisions that executives, operators, and auditors can inspect.",
+                    coreLogic: "Recursively splits data into yes/no branches that isolate groups with different outcomes.",
+                    assumptions: "Few strict statistical assumptions, but performance depends on representative training data.",
+                    executiveFit: "Use when trust, auditability, and policy explanation matter more than maximum predictive accuracy.",
+                    good: ["Extremely easy for non-technical stakeholders to understand.", "Handles both numerical and categorical data.", "Can expose useful operational rules."],
+                    bad: ["Highly prone to overfitting noisy data.", "Small data changes can produce a very different tree.", "Often less accurate than ensembles."],
+                    whenNotToUse: "Avoid for noisy or very complex datasets unless pruning and validation are in place.",
+                    realWorldExample: "Loan default screening and policy triage.",
+                    metrics: ["Accuracy", "Gini Impurity", "F1 Score"]
+                },
+                {
+                    name: "Support Vector Machine (SVM)",
+                    type: "Supervised classification",
+                    bestUseCase: "Max-margin classification where classes are separable in a transformed feature space.",
+                    coreLogic: "Finds the decision boundary with the widest margin; kernels can model non-linear boundaries.",
+                    assumptions: "Needs appropriate scaling, kernel choice, and reasonably separable classes.",
+                    executiveFit: "Useful for specialized high-dimensional problems, but less appealing when scale and operational simplicity dominate.",
+                    good: ["Works well in high dimensions.", "Can solve non-linear problems via kernels.", "Strong regularization can generalize well."],
+                    bad: ["Slow on large datasets.", "Kernel selection is technical.", "Less transparent than linear models or trees."],
+                    whenNotToUse: "Avoid for very large, noisy, frequently retrained datasets.",
+                    realWorldExample: "Facial recognition or identity validation prototypes.",
+                    metrics: ["ROC Curve", "Calibration Plot", "Precision-Recall Curve"]
+                },
+                {
+                    name: "Bayesian Models / Naive Bayes",
+                    type: "Supervised classification",
+                    bestUseCase: "Fast text or categorical classification with limited training cost.",
+                    coreLogic: "Uses Bayes theorem with a simplifying assumption that features contribute independently.",
+                    assumptions: "The Naive Bayes variant assumes independent features, which is rarely fully true but often useful.",
+                    executiveFit: "A practical baseline for routing text, tickets, emails, and documents when speed matters.",
+                    good: ["Fast training period.", "Good with text and categorical data.", "Naturally expresses uncertainty as probabilities."],
+                    bad: ["Fails when feature dependency dominates.", "Zero-frequency issues need smoothing.", "Can be too simple for complex multivariate behavior."],
+                    whenNotToUse: "Avoid when correlated features drive the decision or when calibration is mission-critical.",
+                    realWorldExample: "Sentiment analysis, spam filtering, and document routing.",
+                    metrics: ["Log Loss", "F1 Score", "Confusion Matrix"]
+                },
+                {
+                    name: "K-Nearest Neighbors (KNN)",
+                    type: "Supervised classification or regression",
+                    bestUseCase: "Finding closest historical matches for low-volume, similarity-based decisions.",
+                    coreLogic: "Classifies or estimates a new case based on the majority vote or average of nearby examples.",
+                    assumptions: "Needs meaningful distance metrics and feature scaling.",
+                    executiveFit: "Intuitive for recommendation or matching workflows, but weak for large operational systems.",
+                    good: ["Simple and easy to explain.", "No separate training phase.", "Can work for classification and regression."],
+                    bad: ["Slow and memory-heavy on large data.", "Sensitive to noise and outliers.", "Performs poorly in high-dimensional spaces."],
+                    whenNotToUse: "Avoid for high-dimensional, noisy, or large real-time datasets.",
+                    realWorldExample: "Recommendation systems and nearest-customer matching.",
+                    metrics: ["Accuracy", "F1 Score", "Confusion Matrix"]
+                },
+                {
+                    name: "Neural Networks (MLP)",
+                    type: "Supervised deep learning",
+                    bestUseCase: "Complex non-linear patterns in structured data when simpler models plateau.",
+                    coreLogic: "Learns weighted combinations of features through layers with activation functions.",
+                    assumptions: "Needs enough labeled data, scaled inputs, and validation discipline.",
+                    executiveFit: "Consider when accuracy upside justifies lower interpretability and more engineering effort.",
+                    good: ["Strong non-linear learning power.", "Flexible across many prediction tasks.", "Can model interactions without manual feature rules."],
+                    bad: ["Needs large data and tuning.", "Harder to explain than trees or regression.", "Can be costly to operate."],
+                    whenNotToUse: "Avoid for small datasets, low-compute environments, or decisions requiring transparent reasoning.",
+                    realWorldExample: "Image classification support, conversion prediction, and complex risk scoring.",
+                    metrics: ["Cross-Entropy Loss", "Top-k Accuracy", "F1 Score"]
+                },
+                {
+                    name: "Convolutional Neural Network (CNN)",
+                    type: "Supervised deep learning for spatial data",
+                    bestUseCase: "Images, video frames, sensor grids, and other spatial patterns.",
+                    coreLogic: "Uses convolution and pooling layers to learn local visual or spatial features.",
+                    assumptions: "Best when data has grid-like spatial structure and enough labeled examples.",
+                    executiveFit: "Use for visual inspection, medical imaging, manufacturing QA, and computer vision workflows.",
+                    good: ["Excellent for images and video.", "Learns features automatically.", "Often state of the art for vision tasks."],
+                    bad: ["High resource demand.", "Requires labeled media and GPU workflows.", "Hard to audit in regulated settings."],
+                    whenNotToUse: "Avoid for sequence or text data, small data, or low-compute deployments.",
+                    realWorldExample: "Self-driving vision, defect detection, and medical image classification.",
+                    metrics: ["Cross-Entropy Loss", "Top-k Accuracy", "F1 Score"]
+                },
+                {
+                    name: "Transformer (BERT / GPT)",
+                    type: "Supervised or self-supervised NLP model",
+                    bestUseCase: "Language-heavy classification, routing, extraction, search, chat, and translation.",
+                    coreLogic: "Uses attention mechanisms and positional encoding to weigh context across long inputs.",
+                    assumptions: "Benefits from large pretraining data, careful evaluation, and governance for generated or interpreted text.",
+                    executiveFit: "Best when ambiguity, context, variability, or natural language drives the workflow.",
+                    good: ["Handles long context better than older sequence models.", "Fast and versatile at inference with hosted APIs.", "Can support many text and knowledge-work tasks."],
+                    bad: ["Heavy compute and large-model dependency.", "May hallucinate or misread instructions.", "Requires privacy and quality controls."],
+                    whenNotToUse: "Avoid for small projects that need deterministic, cheap, fully explainable outputs.",
+                    realWorldExample: "ChatGPT-style assistants, translation tools, contract summarization, and support triage.",
+                    metrics: ["Human Eval", "Task Accuracy", "Latency"]
+                }
+            ],
+            regression: [
+                {
+                    name: "Linear / OLS Regression",
+                    type: "Supervised regression",
+                    bestUseCase: "Predicting continuous values where a simple, explainable baseline is valuable.",
+                    coreLogic: "Fits a weighted line through the data to minimize prediction error.",
+                    assumptions: "Linearity, independence, stable variance, and limited outlier influence.",
+                    executiveFit: "The right baseline for forecasts and pricing conversations where clarity matters.",
+                    good: ["Simple, interpretable, and fast.", "Useful benchmark for any numeric prediction project.", "Low implementation cost."],
+                    bad: ["Sensitive to outliers.", "Misses non-linear relationships.", "Can oversimplify business systems."],
+                    whenNotToUse: "Avoid when data has strong non-linearity or complex interactions.",
+                    realWorldExample: "House price prediction, baseline revenue forecasting, and price estimation.",
+                    metrics: ["R-Squared", "RMSE", "MAE"]
+                },
+                {
+                    name: "Polynomial / Ridge / Lasso Regression",
+                    type: "Supervised regularized regression",
+                    bestUseCase: "Numeric forecasting with many variables where overfitting needs to be controlled.",
+                    coreLogic: "Adds polynomial terms or coefficient penalties so the model balances fit and simplicity.",
+                    assumptions: "Still depends on engineered relationships and an appropriate penalty strength.",
+                    executiveFit: "Good when leaders need a more robust regression without jumping to black-box models.",
+                    good: ["Handles multi-variable relationships better than basic linear regression.", "Ridge reduces unstable large coefficients.", "Lasso can remove weak variables."],
+                    bad: ["Penalty choices require tuning.", "Still an approximation of complex systems.", "Interpretability drops as feature engineering grows."],
+                    whenNotToUse: "Avoid when the real signal is highly non-linear and feature engineering cannot capture it.",
+                    realWorldExample: "Ad spend ROI, pricing elasticity, and constrained forecasting.",
+                    metrics: ["Adjusted R-Squared", "RMSE", "MAE"]
+                },
+                {
+                    name: "Gaussian Process Regression",
+                    type: "Supervised probabilistic regression",
+                    bestUseCase: "Small, expensive datasets where uncertainty intervals matter.",
+                    coreLogic: "Uses kernels to infer a distribution over possible functions and prediction confidence.",
+                    assumptions: "The chosen kernel should reflect the business process and data scale.",
+                    executiveFit: "Excellent for R&D, oil, clinical, or scientific optimization where each new data point is costly.",
+                    good: ["Provides explicit confidence intervals.", "Highly effective on small expensive datasets.", "Flexible modeling via kernels."],
+                    bad: ["Scales poorly with high dimensions.", "Mathematically opaque to stakeholders.", "Computationally heavy on massive datasets."],
+                    whenNotToUse: "Avoid for massive, high-dimensional production prediction workloads.",
+                    realWorldExample: "Oil production optimization with upper and lower confidence bounds.",
+                    metrics: ["Log Marginal Likelihood", "RMSE", "Predictive Variance"]
+                }
+            ],
+            ensemble: [
+                {
+                    name: "Random Forest / Bagging",
+                    type: "Supervised ensemble",
+                    bestUseCase: "Robust tabular predictions for classification or continuous outputs.",
+                    coreLogic: "Trains many trees on bootstrapped samples and averages their predictions.",
+                    assumptions: "Works best when trees provide diverse signals and real-time latency is not extreme.",
+                    executiveFit: "A dependable default when leaders want accuracy without fragile single-tree behavior.",
+                    good: ["High accuracy and robust performance.", "Reduces decision-tree overfitting.", "Handles many feature types well."],
+                    bad: ["Slower than linear models.", "Less interpretable than one tree.", "Can be memory intensive."],
+                    whenNotToUse: "Avoid when real-time results or simple interpretability are mandatory.",
+                    realWorldExample: "Fraud detection, insurance claims, and credit risk.",
+                    metrics: ["Out-of-Bag Error", "ROC Curve", "Calibration Plot"]
+                },
+                {
+                    name: "Gradient Boosting (XGBoost, LightGBM, CatBoost)",
+                    type: "Supervised ensemble",
+                    bestUseCase: "High-performance tabular modeling where accuracy is the top priority.",
+                    coreLogic: "Builds trees sequentially so each new tree corrects prior errors.",
+                    assumptions: "Requires tuning, validation, and monitoring to control overfitting.",
+                    executiveFit: "Often the strongest executive recommendation for high-value structured prediction problems.",
+                    good: ["State-of-the-art accuracy on tabular business data.", "Optimized libraries are fast.", "Can capture complex interactions."],
+                    bad: ["Overfitting risk without tuning.", "Harder to explain than simpler models.", "More setup effort than Random Forest."],
+                    whenNotToUse: "Avoid when interpretability matters more than marginal accuracy.",
+                    realWorldExample: "Credit scoring, churn prediction, and loan default prediction.",
+                    metrics: ["Log Loss", "RMSE", "Precision-Recall Curve"]
+                }
+            ],
+            timeseries: [
+                {
+                    name: "ARIMA / Seasonal Decomposition",
+                    type: "Time-series forecasting",
+                    bestUseCase: "Stable historical series with trend and seasonality.",
+                    coreLogic: "Uses past values, differencing, and moving averages to model temporal structure.",
+                    assumptions: "Typically needs stationarity or transformation before modeling.",
+                    executiveFit: "A reliable standard for explainable demand, capacity, and financial planning baselines.",
+                    good: ["Designed for time dependencies.", "Handles seasonal cycles well.", "Mathematically grounded."],
+                    bad: ["Struggles with shocks.", "Limited external-variable support.", "Requires stationarity work."],
+                    whenNotToUse: "Avoid when external variables or sudden regime changes dominate the forecast.",
+                    realWorldExample: "Quarterly demand, weather-like seasonality, and inventory planning.",
+                    metrics: ["AIC / BIC", "MAPE", "RMSE"]
+                },
+                {
+                    name: "LSTM / Recurrent Neural Networks (RNNs)",
+                    type: "Supervised sequence modeling",
+                    bestUseCase: "Sequential patterns where order and memory matter.",
+                    coreLogic: "Uses feedback loops over time to carry information from earlier observations.",
+                    assumptions: "Needs sequential structure, enough data, and careful training to avoid vanishing gradients.",
+                    executiveFit: "Best for complex sequence data, but often overkill for ordinary business seasonality.",
+                    good: ["Time-series and text ready.", "Can ingest many external variables.", "Learns short- and long-term dependencies."],
+                    bad: ["Slow and compute-heavy to train.", "Hard to interpret.", "Can be fragile on long sequences."],
+                    whenNotToUse: "Avoid for simple trends, small datasets, or long sequences where attention models are better.",
+                    realWorldExample: "Stock prediction, supply-chain risk, and sensor-sequence forecasting.",
+                    metrics: ["MSE / MAE", "Validation Loss Curves"]
+                },
+                {
+                    name: "Prophet (by Meta)",
+                    type: "Business time-series forecasting",
+                    bestUseCase: "Automated business forecasts with holidays, missing data, and clear seasonality.",
+                    coreLogic: "Uses an additive model for trend, seasonality, holidays, and events.",
+                    assumptions: "Works best when seasonal patterns and event effects are meaningful.",
+                    executiveFit: "A strong operational choice for analysts who need quick, explainable forecasts at scale.",
+                    good: ["Handles holidays and special events.", "Fast and easy to tune.", "Good default for daily business series."],
+                    bad: ["Weak for high-frequency streams.", "Can underperform custom deep models on extreme complexity.", "Not built for spatial data."],
+                    whenNotToUse: "Avoid for sub-daily signals, complex multivariate dynamics, or spatial forecasting.",
+                    realWorldExample: "Daily sales, workforce capacity, and call-center volume planning.",
+                    metrics: ["MAPE", "RMSE", "Coverage"]
+                }
+            ],
+            clustering: [
+                {
+                    name: "K-Means Clustering",
+                    type: "Unsupervised clustering",
+                    bestUseCase: "Fast segmentation when clusters are compact and roughly spherical.",
+                    coreLogic: "Assigns points to the nearest cluster center and updates centers until stable.",
+                    assumptions: "Assumes spherical, similarly sized clusters and a meaningful choice of K.",
+                    executiveFit: "Good for a first segmentation pass when the business can act on a small number of groups.",
+                    good: ["Fast and easy to implement.", "Scales well to large datasets.", "Simple to explain."],
+                    bad: ["Needs K in advance.", "Sensitive to scale and outliers.", "Weak for non-spherical segments."],
+                    whenNotToUse: "Avoid for non-spherical data or when the number of groups is unknown and unstable.",
+                    realWorldExample: "Customer segmentation and regional demand grouping.",
+                    metrics: ["Silhouette Score", "Elbow Method", "Davies-Bouldin Index"]
+                },
+                {
+                    name: "Hierarchical Clustering",
+                    type: "Unsupervised clustering",
+                    bestUseCase: "Understanding nested relationships and data structure.",
+                    coreLogic: "Builds a nested dendrogram by repeatedly merging or splitting groups.",
+                    assumptions: "Requires a meaningful distance metric and manageable dataset size.",
+                    executiveFit: "Useful when leaders need a visual hierarchy, not just flat segments.",
+                    good: ["No need to define K upfront.", "Produces an intuitive dendrogram.", "Reveals nested structure."],
+                    bad: ["Memory and compute intensive.", "Poor fit for very large datasets.", "Sensitive to scaling choices."],
+                    whenNotToUse: "Avoid for very large datasets or high-frequency segmentation pipelines.",
+                    realWorldExample: "Gene expression analysis and organizational taxonomy discovery.",
+                    metrics: ["Cophenetic Correlation", "Silhouette Score"]
+                },
+                {
+                    name: "DBSCAN (Density-Based)",
+                    type: "Unsupervised clustering",
+                    bestUseCase: "Arbitrary-shaped clusters with noise or outliers.",
+                    coreLogic: "Grows clusters from dense regions and labels sparse points as noise.",
+                    assumptions: "Needs density parameters that match the data distribution.",
+                    executiveFit: "Strong for geospatial or operational hotspots where clusters are irregular.",
+                    good: ["Finds weirdly shaped clusters.", "Does not require K.", "Noise tolerant and shape-flexible."],
+                    bad: ["Fails with varying densities.", "Struggles in sparse high-dimensional data.", "Density tuning can be unintuitive."],
+                    whenNotToUse: "Avoid for sparse high-dimensional data or clusters with highly variable density.",
+                    realWorldExample: "Geospatial clustering, traffic hotspots, and field-service anomalies.",
+                    metrics: ["Silhouette Score", "Noise Ratio"]
+                }
+            ],
+            dimensionality: [
+                {
+                    name: "Principal Component Analysis (PCA)",
+                    type: "Dimensionality reduction",
+                    bestUseCase: "Reducing many correlated variables into fewer drivers.",
+                    coreLogic: "Finds directions of maximum variance in the covariance matrix.",
+                    assumptions: "Assumes large-variance directions are important and features are scaled.",
+                    executiveFit: "Useful for simplifying dashboards, improving models, and compressing data.",
+                    good: ["Noise reduction and speed-up.", "Reduces correlated features.", "Can mitigate overfitting."],
+                    bad: ["Hard to interpret components.", "Some information loss.", "Can hide business meaning."],
+                    whenNotToUse: "Avoid when every original feature must remain directly interpretable.",
+                    realWorldExample: "Image compression, executive dashboard distillation, and genetics visualization.",
+                    metrics: ["Explained Variance Ratio", "Reconstruction Error"]
+                },
+                {
+                    name: "t-SNE / Isomap",
+                    type: "Dimensionality reduction for visualization",
+                    bestUseCase: "Exploring and visualizing complex high-dimensional data.",
+                    coreLogic: "Preserves local neighbor structure while projecting data into two or three dimensions.",
+                    assumptions: "Best for visual exploration, not production feature extraction.",
+                    executiveFit: "Useful for executive storytelling and research exploration, not as the final decision engine.",
+                    good: ["Excellent 2D visual separation.", "Preserves local structure.", "Great for discovery workshops."],
+                    bad: ["Slow on massive datasets.", "Tuning-sensitive.", "Not reliable for predictive features."],
+                    whenNotToUse: "Avoid when the reduced variables must feed a stable production model.",
+                    realWorldExample: "R&D dataset maps, genetic clusters, and product embedding exploration.",
+                    metrics: ["KL Divergence", "Neighborhood Preservation"]
+                }
+            ],
+            association: [
+                {
+                    name: "Apriori / FP-Growth",
+                    type: "Unsupervised association rule learning",
+                    bestUseCase: "Discovering if-this-then-that purchase, usage, or behavior patterns.",
+                    coreLogic: "Finds item sets and rules that occur together more often than expected.",
+                    assumptions: "Requires transactional data and meaningful thresholds for support and confidence.",
+                    executiveFit: "Easy to turn into merchandising, cross-sell, bundling, and recommendation actions.",
+                    good: ["Produces explicit rules.", "Highly intuitive for executives.", "Scales across large transaction logs."],
+                    bad: ["Can generate too many weak rules.", "Correlation is not causation.", "Thresholds need governance."],
+                    whenNotToUse: "Avoid when causal impact is required without experimentation.",
+                    realWorldExample: "Market basket analysis and cross-sell/upsell campaigns.",
+                    metrics: ["Support", "Confidence", "Lift"]
+                }
+            ],
+            anomaly: [
+                {
+                    name: "Isolation Forest",
+                    type: "Unsupervised anomaly detection",
+                    bestUseCase: "Fast structural outlier detection in tabular or high-dimensional data.",
+                    coreLogic: "Randomly partitions data; anomalies are easier to isolate in fewer splits.",
+                    assumptions: "Assumes anomalies are rare and structurally different from normal cases.",
+                    executiveFit: "A pragmatic first choice for alerts where labeled fraud or defect data is scarce.",
+                    good: ["Fast execution.", "Scales to high dimensions.", "Purpose-built for outliers."],
+                    bad: ["Weak on contextual anomalies.", "Can miss clustered anomalies.", "Outputs scores that need thresholds."],
+                    whenNotToUse: "Avoid when anomalies are only unusual in context, such as time, user, or location.",
+                    realWorldExample: "Cybersecurity alerts, retail loss prevention, and unusual claims.",
+                    metrics: ["Anomaly Score", "Precision/Recall if Labeled"]
+                },
+                {
+                    name: "Autoencoders for Anomaly Detection",
+                    type: "Unsupervised neural representation learning",
+                    bestUseCase: "Compression, denoising, and anomaly detection in images, signals, or complex patterns.",
+                    coreLogic: "Learns to encode data into a compact representation and reconstruct it; large reconstruction errors flag anomalies.",
+                    assumptions: "Needs mostly normal training data and a symmetric encoder-decoder design.",
+                    executiveFit: "Useful when defects are subtle and manual feature rules do not capture normal behavior.",
+                    good: ["Effective denoising.", "Learns non-linear normal patterns.", "Works without manual outlier labels."],
+                    bad: ["Can overfit or learn anomalies as normal.", "Black-box behavior.", "High compute cost."],
+                    whenNotToUse: "Avoid when compression is not needed or training data is contaminated with many anomalies.",
+                    realWorldExample: "Fraud detection, manufacturing micro-defect detection, and signal anomaly monitoring.",
+                    metrics: ["Reconstruction Error", "False Positive Rate"]
+                }
+            ],
+            generative: [
+                {
+                    name: "Large Language Models (LLMs / Transformers)",
+                    type: "Generative AI and language reasoning",
+                    bestUseCase: "Ambiguous, variable, text-heavy, or knowledge-work tasks where deterministic rules are too brittle.",
+                    coreLogic: "Transformer attention predicts and transforms language using context from large pretraining and instructions.",
+                    assumptions: "Needs evaluation, privacy controls, retrieval or grounding for facts, and human oversight for high-stakes work.",
+                    executiveFit: "A first-class option for ambiguity, uncertainty, synthesis, summarization, drafting, support, and human-in-the-loop decisions.",
+                    good: ["Versatile across many business workflows.", "Strong zero-shot and few-shot capability.", "Can handle open-ended language and context."],
+                    bad: ["Hallucination risk.", "Privacy and vendor-risk considerations.", "Outputs can vary without controls."],
+                    whenNotToUse: "Avoid for deterministic calculations, fully explainable regulated decisions, or tasks without quality-review paths.",
+                    realWorldExample: "ChatGPT-style assistants, contract review, customer support copilots, and executive brief synthesis.",
+                    metrics: ["Human Eval", "Groundedness", "Task Success", "Latency"]
+                },
+                {
+                    name: "Generative Adversarial Networks (GANs)",
+                    type: "Generative deep learning",
+                    bestUseCase: "Generating or simulating realistic samples where adversarial training is useful.",
+                    coreLogic: "A generator creates examples while a discriminator learns to detect fakes.",
+                    assumptions: "Requires careful balance between generator and discriminator training.",
+                    executiveFit: "Consider for specialized simulation or synthetic data; less friendly than modern diffusion for mainstream image generation.",
+                    good: ["Can generate realistic samples.", "Useful for simulation and pattern reproduction.", "Models reverse probability-style questions."],
+                    bad: ["Difficult to train.", "Prone to mode collapse.", "Requires specialized expertise."],
+                    whenNotToUse: "Avoid when training stability and predictable coverage are more important than experimental flexibility.",
+                    realWorldExample: "Genome pattern simulation and synthetic image data.",
+                    metrics: ["Inception Score", "Frechet Inception Distance"]
+                },
+                {
+                    name: "Diffusion Models",
+                    type: "Generative AI for media",
+                    bestUseCase: "High-quality image, video, and design asset generation.",
+                    coreLogic: "Learns to reverse a noise process step by step to generate realistic media.",
+                    assumptions: "Needs compute, prompt controls, and review for brand, safety, and rights issues.",
+                    executiveFit: "Best for creative production, prototyping, and marketing workflows with human review.",
+                    good: ["Excellent image quality.", "More stable than GANs.", "Strong text-to-image performance."],
+                    bad: ["Inference can be compute-heavy.", "May struggle with exact text or layout.", "Requires IP and brand governance."],
+                    whenNotToUse: "Avoid when precise geometry, exact text rendering, or deterministic compliance output is required.",
+                    realWorldExample: "Campaign concepts, product mockups, and visual ideation.",
+                    metrics: ["FID", "CLIP Score", "Human Review"]
+                }
+            ],
+            continuous: [
+                {
+                    name: "Proximal Policy Optimization (PPO) / Actor-Critic",
+                    type: "Reinforcement learning",
+                    bestUseCase: "Continuous control where an agent learns actions from simulated feedback.",
+                    coreLogic: "Learns policies and value estimates while limiting updates to keep training stable.",
+                    assumptions: "Requires a safe simulator, well-designed rewards, and extensive evaluation before deployment.",
+                    executiveFit: "A fit for robotics and autonomous control, not most ordinary enterprise decisioning.",
+                    good: ["Handles continuous action spaces.", "Can self-correct through feedback.", "State of the art for many control tasks."],
+                    bad: ["Complex to train and tune.", "Unsafe to learn directly in the real world.", "Reward design is hard."],
+                    whenNotToUse: "Avoid without a high-fidelity simulator and clear safety boundaries.",
+                    realWorldExample: "Drone navigation, robotics control, and autonomous vehicle routing.",
+                    metrics: ["Cumulative Reward", "Episode Length", "Value Loss"]
+                }
+            ],
+            gameai: [
+                {
+                    name: "Deep Q-Learning (DQN) / MCTS",
+                    type: "Reinforcement learning for strategy",
+                    bestUseCase: "Strategic simulation where agents can learn through many trials.",
+                    coreLogic: "Learns action values or searches possible futures to choose high-reward actions.",
+                    assumptions: "Requires a reliable simulation environment and large volumes of trial experience.",
+                    executiveFit: "Useful for strategy labs, logistics simulations, and game-like operations research.",
+                    good: ["Can discover novel strategies.", "Handles complex game states.", "Learns from trial rather than fixed rules."],
+                    bad: ["Requires millions of simulated interactions.", "Can forget earlier experiences.", "Strategies may fail if the environment changes."],
+                    whenNotToUse: "Avoid when the environment cannot be simulated or rules change too often.",
+                    realWorldExample: "Logistics strategy, wargame simulation, and competitive planning.",
+                    metrics: ["Win Rate", "Cumulative Reward", "Elo Rating"]
+                }
+            ],
+            explore: [
+                {
+                    name: "Multi-Armed Bandits (Contextual / Epsilon-Greedy)",
+                    type: "Reinforcement learning / online optimization",
+                    bestUseCase: "Live experiments where the system should shift traffic toward winners while still learning.",
+                    coreLogic: "Balances exploration of uncertain choices with exploitation of known high performers.",
+                    assumptions: "Needs measurable rewards, guardrails, and tolerance for some exploratory traffic.",
+                    executiveFit: "Best for ad delivery, personalization, and dynamic A/B testing where learning speed has financial value.",
+                    good: ["Optimizes during the test.", "Shifts traffic dynamically.", "Requires little pretraining."],
+                    bad: ["Sacrifices some short-term value to explore.", "Can be skewed by early data.", "Struggles if user behavior shifts mid-campaign."],
+                    whenNotToUse: "Avoid when exploration is unacceptable or outcomes are delayed beyond the test window.",
+                    realWorldExample: "Ad delivery optimization and dynamic A/B testing.",
+                    metrics: ["Cumulative Regret", "CTR Improvement"]
+                },
+                {
+                    name: "Bayesian Optimization (Semi-Supervised Active Learning)",
+                    type: "Active learning / optimization",
+                    bestUseCase: "Choosing the next expensive experiment, test, or data point to reduce uncertainty.",
+                    coreLogic: "Uses a surrogate model and acquisition function to select the most informative next trial.",
+                    assumptions: "Works best when each experiment is costly and the search space is manageable.",
+                    executiveFit: "Strong for clinical, scientific, pricing, and process optimization where waste is expensive.",
+                    good: ["Guides new data collection.", "Handles noise well.", "Blends prior evidence with new observations."],
+                    bad: ["Scales poorly in very wide search spaces.", "Depends on the surrogate model.", "Requires careful experiment design."],
+                    whenNotToUse: "Avoid when tests are cheap enough for broad random exploration or the search space is poorly defined.",
+                    realWorldExample: "Clinical trial guidance, scientific data collection, and process tuning.",
+                    metrics: ["Expected Improvement", "Minimum Target Found"]
+                }
+            ]
+        };
+
+        // State Machine
+        // Array of selected IDs representing the path
+        let state = [];
+
+        // DOM Handles
+        const breadcrumbBar = document.getElementById('breadcrumb-bar');
+        const treeContainer = document.getElementById('tree-container');
+
+        function navigateBack(levelIndex) {
+            if (levelIndex === -1) {
+                // Clicked root "Start"
+                state = [];
+            } else {
+                // Clicked a specific breadcrumb, slice the state array to keep up to that point
+                state = state.slice(0, levelIndex + 1);
+            }
+            render();
+        }
+
+        function handleSelect(id) {
+            // Find current node to know what level we are at conceptually
+            // Actually, we just push the selection to state.
+            state.push(id);
+            render();
+        }
+
+        function renderBreadcrumbs() {
+            let html = `<div class="breadcrumb-item ${state.length === 0 ? 'active' : ''}" onclick="navigateBack(-1)">
+                🏠 Start
+            </div>`;
+
+            let currentData = treeData.root;
+            
+            for (let i = 0; i < state.length; i++) {
+                const selectedId = state[i];
+                let selectedOption = null;
+                
+                // Find the option in the current data
+                if (currentData && currentData.options) {
+                    selectedOption = currentData.options.find(opt => opt.id === selectedId);
+                }
+
+                if (selectedOption) {
+                    html += `<div class="breadcrumb-separator">›</div>`;
+                    const isActive = (i === state.length - 1);
+                    html += `<div class="breadcrumb-item ${isActive ? 'active' : ''}" onclick="navigateBack(${i})">
+                        ${selectedOption.icon} ${selectedOption.title}
+                    </div>`;
+                    
+                    // Move currentData pointer deeper if there's a sub-tree
+                    currentData = treeData[selectedId];
+                } else {
+                    // It's a leaf node (algorithm list), breadcrumb ends here conceptually
+                    // Let's get the title from the previous level's option search
+                    // The algorithm ID itself is selectedId
+                    let prevData = i === 0 ? treeData.root : treeData[state[i-1]];
+                    if (prevData && prevData.options) {
+                        selectedOption = prevData.options.find(opt => opt.id === selectedId);
+                        if (selectedOption) {
+                            html += `<div class="breadcrumb-separator">›</div>`;
+                            const isActive = (i === state.length - 1);
+                            html += `<div class="breadcrumb-item ${isActive ? 'active' : ''}" onclick="navigateBack(${i})">
+                                ${selectedOption.icon} ${selectedOption.title}
+                            </div>`;
+                        }
+                    }
+                }
+            }
+
+            breadcrumbBar.innerHTML = html;
+            // Scroll breadcrumbs to end automatically if they overflow
+            breadcrumbBar.scrollLeft = breadcrumbBar.scrollWidth;
+        }
+
+        function renderCurrentLevel() {
+            let html = '';
+            
+            // Determine the current node ID based on state
+            let currentNodeId = 'root';
+            if (state.length > 0) {
+                currentNodeId = state[state.length - 1];
+            }
+
+            // Check if it's a results node (leaf)
+            if (resultsData[currentNodeId]) {
+                const items = resultsData[currentNodeId];
+                
+                // We should also find the selected option to display its use cases nicely at the top
+                let parentId = state.length > 1 ? state[state.length - 2] : 'root';
+                let selectedOption = treeData[parentId].options.find(opt => opt.id === currentNodeId);
+                
+                html += `
+                    <div class="animate-fade-in" style="width: 100%;">
+                        <h2 class="question-title">${selectedOption ? selectedOption.title : 'Recommended Algorithms'}</h2>
+                        <p class="question-desc">${selectedOption ? selectedOption.desc : 'Explore the methods below to solve your business problem.'}</p>
+                `;
+
+                if (selectedOption && selectedOption.useCases && selectedOption.useCases.length > 0) {
+                    html += `<div class="use-case-label">Business Applications</div>
+                             <div class="use-case-tags" style="margin-bottom: 30px;">`;
+                    selectedOption.useCases.forEach(uc => {
+                        html += `<div class="use-case-tag">${uc}</div>`;
+                    });
+                    html += `</div>`;
+                }
+
+                html += `<div class="results-container">`;
+
+                items.forEach(item => {
+                    const bestUseCase = item.bestUseCase || item.usecase || 'Explore the method below to assess fit.';
+                    const decisionFacts = [
+                        ["Type", item.type],
+                        ["Core Logic", item.coreLogic],
+                        ["Assumptions", item.assumptions],
+                        ["Avoid When", item.whenNotToUse],
+                        ["Real-World Example", item.realWorldExample]
+                    ].filter(([, value]) => value);
+                    let factsList = decisionFacts.map(([label, value]) => `
+                        <div class="decision-fact">
+                            <div class="decision-label">${label}</div>
+                            <div class="decision-value">${value}</div>
+                        </div>
+                    `).join('');
+                    let prosList = item.good ? item.good.map(i => `<li>${i}</li>`).join('') : '';
+                    let consList = item.bad ? item.bad.map(i => `<li>${i}</li>`).join('') : '';
+                    let metricsList = item.metrics ? item.metrics.map(m => `<div class="metric-tag">${m}</div>`).join('') : '';
+
+                    html += `
+                        <div class="result-card">
+                            <div class="alg-header">
+                                <span class="alg-title">${item.name}</span>
+                            </div>
+                            <div class="alg-usecase">🎯 Best for: ${bestUseCase}</div>
+                            ${item.executiveFit ? `<div class="executive-fit">${item.executiveFit}</div>` : ''}
+                            ${factsList ? `<div class="decision-grid">${factsList}</div>` : ''}
+                            
+                            <div class="pros-cons">
+                                <div class="pc-section">
+                                    <span class="badge good">✓ PROS</span>
+                                    <ul>${prosList}</ul>
+                                </div>
+                                <div class="pc-section">
+                                    <span class="badge bad">✕ RISKS</span>
+                                    <ul>${consList}</ul>
+                                </div>
+                            </div>
+                            ${metricsList ? `
+                            <div class="metrics-section">
+                                <span class="badge" style="background: rgba(255,255,255,0.1); color: #cbd5e1; margin-bottom: 5px;">📊 Key Performance Metrics</span>
+                                <div class="metric-tags">${metricsList}</div>
+                            </div>
+                            ` : ''}
+                        </div>
+                    `;
+                });
+
+                html += `</div></div>`;
+            } else if (treeData[currentNodeId]) {
+                // It's a question node
+                const data = treeData[currentNodeId];
+                
+                html += `
+                    <div class="animate-fade-in" style="width: 100%; display: flex; flex-direction: column; align-items: center;">
+                        <h2 class="question-title">${data.question}</h2>
+                        <p class="question-desc">${data.desc}</p>
+                        
+                        <div class="options-grid">
+                `;
+
+                data.options.forEach(opt => {
+                    // Use onmouseover to show details if we want, or just a simple click handler
+                    // Let's implement click to select
+                    html += `
+                        <div class="option-chip" onclick="handleSelect('${opt.id}')" onmouseenter="showDetail('${opt.id}')" onmouseleave="hideDetail()">
+                            <div class="option-icon">${opt.icon}</div>
+                            <div class="option-title">${opt.title}</div>
+                        </div>
+                    `;
+                });
+
+                html += `</div>`;
+
+                // Subtitle Area for hovered option details
+                html += `
+                    <div id="option-detail-panel" class="option-detail-area" style="opacity: 0; transition: opacity 0.3s; pointer-events: none;">
+                        <div id="option-detail-desc" class="option-detail-desc"></div>
+                        <div class="use-case-label">Business Applications</div>
+                        <div id="option-detail-usecases" class="use-case-tags"></div>
+                    </div>
+                `;
+
+                html += `</div>`;
+            }
+
+            treeContainer.innerHTML = html;
+        }
+
+        // We store options globally for the hover effect lookup
+        function getOptionById(id) {
+            let currentNodeId = 'root';
+            if (state.length > 0) {
+                currentNodeId = state[state.length - 1];
+            }
+            if (treeData[currentNodeId] && treeData[currentNodeId].options) {
+                return treeData[currentNodeId].options.find(opt => opt.id === id);
+            }
+            return null;
+        }
+
+        window.showDetail = function(id) {
+            const panel = document.getElementById('option-detail-panel');
+            const desc = document.getElementById('option-detail-desc');
+            const usecases = document.getElementById('option-detail-usecases');
+            
+            if (!panel || !desc || !usecases) return;
+
+            const opt = getOptionById(id);
+            if (opt) {
+                desc.textContent = opt.desc;
+                usecases.innerHTML = '';
+                if (opt.useCases && opt.useCases.length > 0) {
+                    opt.useCases.forEach(uc => {
+                        usecases.innerHTML += `<div class="use-case-tag">${uc}</div>`;
+                    });
+                }
+                panel.style.opacity = '1';
+            }
+        };
+
+        window.hideDetail = function() {
+            const panel = document.getElementById('option-detail-panel');
+            if (panel) {
+                panel.style.opacity = '0';
+            }
+        };
+
+        function render() {
+            renderBreadcrumbs();
+            renderCurrentLevel();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Initial Render
+        render();
+
+    </script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"b539d72557bb44bda7f9d2a1ed82dec3","spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>

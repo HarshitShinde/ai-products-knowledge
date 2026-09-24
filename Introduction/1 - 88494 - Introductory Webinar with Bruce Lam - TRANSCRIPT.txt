@@ -1,0 +1,2242 @@
+WEBVTT
+
+1
+00:00:04.190 --> 00:00:06.340
+Bruce Lam: Welcome, welcome, everyone!
+
+2
+00:00:07.020 --> 00:00:16.069
+Bruce Lam: Good afternoon, good evening, and… Hopefully not good morning. Let me know if it's morning for you.
+
+3
+00:00:17.310 --> 00:00:18.030
+Chris Lee (RA): Hello.
+
+4
+00:00:19.120 --> 00:00:24.530
+Bruce Lam: Hello, hello, welcome, welcome. Welcome to Designing and Building AI Products and Services.
+
+5
+00:00:24.800 --> 00:00:26.970
+Bruce Lam: through MIT Pro.
+
+6
+00:00:27.450 --> 00:00:33.629
+Bruce Lam: Give me a few, like, just a minute or two to let other folks in, and while I'm doing that.
+
+7
+00:00:33.920 --> 00:00:37.359
+Bruce Lam: We'll go over quickly the course.
+
+8
+00:00:37.640 --> 00:00:44.689
+Bruce Lam: Or at least this module, this introductory module, we're going to talk about, introduce you to the faculty who we have here, which is a really…
+
+9
+00:00:44.790 --> 00:00:50.829
+Bruce Lam: Amazing group of folks who are gonna be with you live and asynchronously throughout this term.
+
+10
+00:00:51.030 --> 00:00:53.460
+Bruce Lam: We are going to look over the course
+
+11
+00:00:53.970 --> 00:01:03.629
+Bruce Lam: Material, and we are going to talk about office hours and completion requirements, and walk you through the platform, so you'll be super comfortable with everything.
+
+12
+00:01:03.850 --> 00:01:17.349
+Bruce Lam: And so, welcome, welcome. Let me go ahead and start this. Several of you are already answering these questions, so please go ahead and do that. Would love to know where you're from. I can see your names there.
+
+13
+00:01:17.530 --> 00:01:21.119
+Bruce Lam: We'd love to know your reason, your motivation for enrolling.
+
+14
+00:01:21.700 --> 00:01:23.799
+Bruce Lam: And the industry that you're in.
+
+15
+00:01:24.000 --> 00:01:30.129
+Bruce Lam: Specifically because that way I can tailor some of our office hours to different industries of interest.
+
+16
+00:01:31.560 --> 00:01:38.379
+Bruce Lam: Venu, is… is there a lot of echo from anybody else, or is it just, is it just one or two people?
+
+17
+00:01:42.320 --> 00:01:43.599
+Chris Lee (RA): Yep, no echo there.
+
+18
+00:01:44.110 --> 00:01:45.410
+Bruce Lam: Okay, thank you, Chris.
+
+19
+00:01:45.850 --> 00:01:50.470
+Bruce Lam: Let me finish letting people in, and then we will get started.
+
+20
+00:02:07.160 --> 00:02:10.339
+Bruce Lam: I see another Bruce in here. It's very rare.
+
+21
+00:02:17.350 --> 00:02:25.830
+Bruce Lam: Okay, I think that is… Critical mass. So let's go ahead and get started.
+
+22
+00:02:25.940 --> 00:02:32.859
+Bruce Lam: Well, welcome, welcome. I have been so excited all day long to get to kick this off and meet you all.
+
+23
+00:02:33.230 --> 00:02:35.869
+Bruce Lam: It's my huge privilege to be here with you.
+
+24
+00:02:36.120 --> 00:02:39.340
+Bruce Lam: And I'll let… I'll introduce myself in a moment.
+
+25
+00:02:39.470 --> 00:02:47.079
+Bruce Lam: And probably more importantly, we have an amazing lineup of faculty here who are going to join us, sometimes live, in person.
+
+26
+00:02:47.370 --> 00:02:53.350
+Bruce Lam: Mostly through asynchronous videos. You'll meet every one of these individuals through the asynchronous videos.
+
+27
+00:02:53.760 --> 00:03:04.280
+Bruce Lam: Primarily, you'll see Brian, Professor Asubirana, he is the director and the founding director of the… so many different initiatives and labs over here at MIT.
+
+28
+00:03:04.400 --> 00:03:16.849
+Bruce Lam: Dwayne Boning is a professor of electrical engineering, and we'll get to hear from him. Stephanie Muller, we'll get to hear from her on the week around human-computer interfaces. Super interesting work that she's doing there.
+
+29
+00:03:16.970 --> 00:03:20.670
+Bruce Lam: Thomas Malone, very, very interesting gentleman.
+
+30
+00:03:20.910 --> 00:03:24.210
+Bruce Lam: Founding director of the Center for Collective Intelligence.
+
+31
+00:03:24.570 --> 00:03:32.339
+Bruce Lam: Andrew Lippman is gonna… is the Associate Director for the MIT Media Lab. His section, I think that's week 7?
+
+32
+00:03:32.670 --> 00:03:34.979
+Bruce Lam: We could talk about generative AI,
+
+33
+00:03:35.160 --> 00:03:39.179
+Bruce Lam: For generating, obviously, because of his faculty specialty.
+
+34
+00:03:39.310 --> 00:03:50.590
+Bruce Lam: Video and audio and things like that, and then Bruce Lawler is gonna join us for one section as well. He's the Managing Director for the MIT Machine Intelligence for Manufacturing and Operations.
+
+35
+00:03:53.810 --> 00:03:57.610
+Bruce Lam: Okay, let me make sure I'm not missing anything critical in the chat.
+
+36
+00:03:58.470 --> 00:04:03.209
+Bruce Lam: And I have two peers, two colleagues who'll be joining me this term.
+
+37
+00:04:03.310 --> 00:04:18.570
+Bruce Lam: You can kind of think of us as your homeroom teachers. Dr. Amanda Fetch is in the aerospace field. Very, very amazing teacher and a great person, definitely get to know her. Danny Moulter is in the field of identity detection.
+
+38
+00:04:18.690 --> 00:04:23.479
+Bruce Lam: He's the VP of Machine Learning and Data for his company.
+
+39
+00:04:23.710 --> 00:04:26.530
+Bruce Lam: And we will be your team this term.
+
+40
+00:04:26.850 --> 00:04:31.150
+Bruce Lam: Amanda will be Section A, I'm Section B, and Danny is Section C.
+
+41
+00:04:31.250 --> 00:04:35.080
+Bruce Lam: I'll explain that a little more in a minute, but I really don't…
+
+42
+00:04:35.310 --> 00:04:41.139
+Bruce Lam: be concerned about that. You can go to any office hours section, you can go to every office hours section.
+
+43
+00:04:41.400 --> 00:04:48.150
+Bruce Lam: The only differentiator is when we grade your assignments. Whoever your
+
+44
+00:04:48.550 --> 00:04:59.209
+Bruce Lam: Cohort… whichever Cohort you're assigned to, so if you're assigned to Cohort B with me, I will be grading your assignments. If you're in Cohort A, it'll be with Amanda, and then C with Danny.
+
+45
+00:05:01.290 --> 00:05:15.109
+Bruce Lam: Now, as for myself, I am a Section B Learning Facilitator, and I like to say that I help people and organizations recognize patterns and realize possibilities. And you can see how that kind of ties into the entire machine learning AI field.
+
+46
+00:05:15.380 --> 00:05:25.999
+Bruce Lam: I got my start, with an undergraduate degree in chemical engineering from CU Boulder. I went and worked at Shell for 13 years in automation and optimization engineering.
+
+47
+00:05:26.220 --> 00:05:35.380
+Bruce Lam: I made it to engineering team leader, and saw that the future of that discipline was going to be machine learning. It wasn't quite called AI at the time yet.
+
+48
+00:05:35.670 --> 00:05:37.330
+Bruce Lam: So, went back to school.
+
+49
+00:05:37.630 --> 00:05:43.439
+Bruce Lam: I got a couple of different degrees, one an MBA from the Haas School of Business, and a master's in Data Science.
+
+50
+00:05:43.730 --> 00:05:46.540
+Bruce Lam: at, the Berkeley School of Information.
+
+51
+00:05:46.820 --> 00:05:50.240
+Bruce Lam: Went and worked at a startup, went and started a startup.
+
+52
+00:05:50.480 --> 00:06:08.939
+Bruce Lam: And then went to Electronic Arts, where I was a product manager doing data science, AI, and machine learning for the FIFA franchise and the Battlefield franchise. So if you're a fan, I have lots of stories that I can share throughout the term about how AI uses AI for building games and engaging their customers and players.
+
+53
+00:06:09.070 --> 00:06:22.680
+Bruce Lam: I did a brief stint at DoorDash as their principal AI product manager for their finance and accounting team, and in week one, I'll share my experience there, because it very much follows the AI product development lifecycle.
+
+54
+00:06:23.050 --> 00:06:27.499
+Bruce Lam: Currently, founder, starting a company called Devstream Labs, which does
+
+55
+00:06:27.920 --> 00:06:33.460
+Bruce Lam: Automation for complex compiled code bases, low-level machine language and coding.
+
+56
+00:06:33.780 --> 00:06:40.060
+Bruce Lam: And currently also teach a couple of courses at UC Berkeley for Haas and their Executive Ed program.
+
+57
+00:06:40.200 --> 00:06:44.020
+Bruce Lam: And of course, I'm here with you for this particular term.
+
+58
+00:06:44.130 --> 00:06:45.890
+Bruce Lam: Which is a huge, huge privilege.
+
+59
+00:06:46.800 --> 00:06:49.729
+Bruce Lam: Would love to connect with you. First of all.
+
+60
+00:06:50.120 --> 00:06:55.629
+Bruce Lam: There's a referral link for this program, gotta say that as part of the spiel.
+
+61
+00:06:56.690 --> 00:07:08.990
+Bruce Lam: you can either… you can refer your friends, and with the credit that you get from that, you can either, you know, reduce your course fee, or apply that course credit to a different course that you want to take through MIT. It's a great program, I just gotta plug that.
+
+62
+00:07:09.330 --> 00:07:19.019
+Bruce Lam: Please do connect with me on LinkedIn. I love getting to know you all, and this is not just a one and done. I keep in touch with so many participants from these cohorts and programs.
+
+63
+00:07:19.300 --> 00:07:34.050
+Bruce Lam: even hired a couple of them at the company that I'm starting at, so… that I'm founding, so you never know what's gonna happen. And it's quite funny, there's another Bruce… there are many Bruce Lambs out there on LinkedIn, but there's one particularly on the right here.
+
+64
+00:07:34.190 --> 00:07:38.790
+Bruce Lam: Who says that, my students often confuse him for me.
+
+65
+00:07:38.960 --> 00:07:48.839
+Bruce Lam: And, you know, gave me some kind words that seems like these courses are great, so maybe he'll take one someday. So, connect with the one on the left, Devstream Labs, not the one on the right.
+
+66
+00:07:49.260 --> 00:07:56.099
+Bruce Lam: Unless you're looking for a job, then the one on the right seems he's a recruiter or something, so maybe you should connect with him after all.
+
+67
+00:07:57.720 --> 00:08:01.020
+Bruce Lam: Okay, and now, in addition to…
+
+68
+00:08:01.900 --> 00:08:08.450
+Bruce Lam: learning about you in the chat, which I'll have to look later to see what kind of patterns and trends I can see to…
+
+69
+00:08:09.540 --> 00:08:13.879
+Bruce Lam: create case studies, For this cohort. This is you.
+
+70
+00:08:14.010 --> 00:08:20.620
+Bruce Lam: This particular demographic, not too different than usual, although a little different.
+
+71
+00:08:21.160 --> 00:08:26.380
+Bruce Lam: You can see the vast majority of us here have 20-plus years of experience.
+
+72
+00:08:27.100 --> 00:08:40.150
+Bruce Lam: That's about a normal breakdown for this course. This is industry, no response. IT products, there's typically a little bit… a slightly higher percentage in IT products, so it's a little bit lower, this term, so that's interesting.
+
+73
+00:08:40.340 --> 00:08:41.150
+Bruce Lam: Oh, no.
+
+74
+00:08:41.270 --> 00:08:45.289
+Bruce Lam: IT products, and then there's IT services. Okay, so that's… that's about right then.
+
+75
+00:08:46.450 --> 00:08:59.700
+Bruce Lam: And then top function… Looks like IT, project management, engineering, consulting, And then titles… CEO, director, product managers.
+
+76
+00:09:00.610 --> 00:09:07.119
+Bruce Lam: This is you, welcome to the course. And yeah, would love to get to know you more, looking forward to get to know you more over the next 9 weeks.
+
+77
+00:09:08.870 --> 00:09:15.749
+Bruce Lam: Okay, more required text here, so I'll just read this for you so that we make sure we're covering everything, we're all on the same page.
+
+78
+00:09:16.700 --> 00:09:24.600
+Bruce Lam: When you are done with this course, you should be able to compare and contrast the stages and components of the AI design process model.
+
+79
+00:09:24.930 --> 00:09:29.580
+Bruce Lam: Analyze and categorize different machine learning algorithms in given scenarios.
+
+80
+00:09:29.830 --> 00:09:35.909
+Bruce Lam: Analyze and categorize different convolutional, deep, recurrent neural network algorithms in the given scenarios.
+
+81
+00:09:36.240 --> 00:09:44.750
+Bruce Lam: Apply the four stages of the AI design process model to solve a health-related technical problem. That's one of the case studies, one of the homework assignments that you'll have.
+
+82
+00:09:44.930 --> 00:09:49.780
+Bruce Lam: Define human-computer interaction and explore the frontier for developing such interactions.
+
+83
+00:09:50.050 --> 00:09:53.329
+Bruce Lam: Identify and compare the five basic types of super minds.
+
+84
+00:09:53.520 --> 00:09:56.440
+Bruce Lam: And how they address various functions and problems.
+
+85
+00:09:56.710 --> 00:10:07.730
+Bruce Lam: Predict AI opportunities in media for commerce, such as the society transforms from enabling analog to digital business processes, and analyze the steps to build a business case
+
+86
+00:10:07.880 --> 00:10:22.219
+Bruce Lam: Through assessing the needs of the stakeholder, mapping the process, cost modeling, assessing technical readiness, prioritizing opportunities, and asking key questions. And that's going to be your capstone project. That last bullet summarizes perfectly your capstone project.
+
+87
+00:10:24.320 --> 00:10:26.680
+Bruce Lam: And I'll allude to that a couple more times.
+
+88
+00:10:27.310 --> 00:10:36.199
+Bruce Lam: As I take a little bit of a break from the regularly scheduled, mandated content that we have to share, I wanted to share this with you. It's something I've been working on, and I've been improving
+
+89
+00:10:36.350 --> 00:10:41.689
+Bruce Lam: Every quarter or so, These are what I consider to be the milestones
+
+90
+00:10:41.810 --> 00:10:52.069
+Bruce Lam: in looking backwards in the field of artificial intelligence to figure out where we've… why we are where we are, have we seen these patterns before? So let me run you through this really quickly.
+
+91
+00:10:52.200 --> 00:10:59.609
+Bruce Lam: There are a couple of key aha moments in here. So, going back to the 1800s, 1805, 1809…
+
+92
+00:10:59.760 --> 00:11:07.759
+Bruce Lam: That's the timeframe where we started looking at data distributions, understanding that we can do sort of minimizations to get…
+
+93
+00:11:07.880 --> 00:11:16.609
+Bruce Lam: predictions, Then, in 1950, that's when the Turing test was invented, which is the ability to
+
+94
+00:11:17.260 --> 00:11:20.970
+Bruce Lam: Tell if something is a machine or a human or not.
+
+95
+00:11:21.200 --> 00:11:28.349
+Bruce Lam: And then… In 1958 timeframe, that's where the concept of the perceptron
+
+96
+00:11:28.480 --> 00:11:32.410
+Bruce Lam: came to life. The concept of perceptron is the artificial neuron.
+
+97
+00:11:32.570 --> 00:11:39.839
+Bruce Lam: the components of the neural network, and we'll be learning about neural networks. By the end of this course, you will be very comfortable with
+
+98
+00:11:40.000 --> 00:11:42.570
+Bruce Lam: Neural networks, all the components.
+
+99
+00:11:42.810 --> 00:11:44.530
+Bruce Lam: What is a parameter?
+
+100
+00:11:44.710 --> 00:11:51.120
+Bruce Lam: I'll say this probably 5 times throughout the course, that every large language model is…
+
+101
+00:11:51.600 --> 00:11:53.269
+Bruce Lam: Built on a neural network.
+
+102
+00:11:53.930 --> 00:11:57.739
+Bruce Lam: But not every neural network is a large language model.
+
+103
+00:11:58.990 --> 00:12:07.839
+Bruce Lam: So we're going to learn about many different deep learning techniques in this particular course. All of them are neural networks, but not all of them are large language models.
+
+104
+00:12:08.840 --> 00:12:19.770
+Bruce Lam: Okay, now 1960s, this is when we start to get into the term of machine learning, and in 1969, 1970, this is when we had our first AI winter.
+
+105
+00:12:19.900 --> 00:12:27.609
+Bruce Lam: And this was because in 1970, we didn't have enough compute power to create these giant neural networks.
+
+106
+00:12:28.950 --> 00:12:33.270
+Bruce Lam: shruti, I will…
+
+107
+00:12:33.940 --> 00:12:41.529
+Bruce Lam: I'll share a little bit about that, but you should probably be taking some notes, but we will be recording every one of these modules, we'll have transcripts.
+
+108
+00:12:41.760 --> 00:12:44.290
+Bruce Lam: And I'll show you that in a few minutes.
+
+109
+00:12:45.430 --> 00:12:51.009
+Bruce Lam: So, with the compute power that we had in the 1970s, we could only build a neural network of one layer.
+
+110
+00:12:51.680 --> 00:12:59.460
+Bruce Lam: And in that neural network of one layer, we could not do complex computations. We couldn't even compute an exclusive OR criteria.
+
+111
+00:12:59.700 --> 00:13:02.839
+Bruce Lam: And so that was really the start of the first AI winter.
+
+112
+00:13:03.810 --> 00:13:09.630
+Bruce Lam: Then we went from trying to develop neural networks into what were called expert systems.
+
+113
+00:13:09.810 --> 00:13:24.399
+Bruce Lam: Expert systems were very, very complex, large, if-then or else, kind of more traditional machine… more traditional computer science, what we consider to be computer science, or programming, or coding today, but giant, giant systems.
+
+114
+00:13:24.600 --> 00:13:28.900
+Bruce Lam: And that was the age of the expert systems in the 1980s.
+
+115
+00:13:29.790 --> 00:13:41.919
+Bruce Lam: 1986 is an interesting year, because in 2024, if you remember, there was a gentleman named Jeffrey Hinton and his team who won the Nobel Prize in Physics, I believe?
+
+116
+00:13:42.470 --> 00:13:55.510
+Bruce Lam: for not creating or inventing backpropagation, but for popularizing it, showing how powerful it could be. And we'll show you how powerful backpropagation could be, too. We'll… in the neural network section in a few weeks here.
+
+117
+00:13:56.090 --> 00:14:02.230
+Bruce Lam: But then, in 1987, This is when we had the second AI winter.
+
+118
+00:14:02.380 --> 00:14:16.039
+Bruce Lam: Because of two reasons. One, we were building these gigantic compute infrastructure mainframes to do really, really impressive workloads, but they were super expensive, and then the personal computer came around.
+
+119
+00:14:16.130 --> 00:14:25.509
+Bruce Lam: Making this compute power readily available to everyone, collapsing the demand and the market for those LISP workstations, what they were called.
+
+120
+00:14:26.010 --> 00:14:30.889
+Bruce Lam: Alright, now we get into the 1990s, where machine learning was really taking off.
+
+121
+00:14:31.010 --> 00:14:34.690
+Bruce Lam: 1995, 1997, these are the,
+
+122
+00:14:34.820 --> 00:14:50.690
+Bruce Lam: support vector machine algorithms, the random forest algorithms. These are really tried and true algorithms that work really, really well. In 1997, IBM created the Deep Blue Machine to play chess against Kasparov, one of the greatest chess players at the time, and probably still today.
+
+123
+00:14:51.900 --> 00:14:57.019
+Bruce Lam: 2009, 2010 timeframe. This is where you started getting
+
+124
+00:14:57.270 --> 00:15:02.509
+Bruce Lam: Computer Vision Technologies at ImageNet by Fei-Fei Li. If you've heard of Fei Fei Li, she's one of the
+
+125
+00:15:02.870 --> 00:15:10.719
+Bruce Lam: foremost, she's called the godmother of AI these days out of Stanford, developing the next generation of techniques that she calls world models.
+
+126
+00:15:10.980 --> 00:15:13.469
+Bruce Lam: And that's… her work started in 2009 there.
+
+127
+00:15:13.930 --> 00:15:20.800
+Bruce Lam: 2014 is when generative adversarial networks were created, and then you'll revisit those in a week.
+
+128
+00:15:21.110 --> 00:15:26.570
+Bruce Lam: the week about, media creation. We'll talk about generative adversarial networks.
+
+129
+00:15:27.440 --> 00:15:34.960
+Bruce Lam: And then 2016-2017 was a really, really pivotal timeframe. A couple of things happened. 2016…
+
+130
+00:15:35.120 --> 00:15:37.670
+Bruce Lam: And I'll show you this video clip in a few weeks.
+
+131
+00:15:38.400 --> 00:15:43.330
+Bruce Lam: Google DeepMind created an algorithm called AlphaGo that actually beat
+
+132
+00:15:43.560 --> 00:15:55.969
+Bruce Lam: I think it was the reigning world champion of this game called Go in an incredible, incredible way. So not only did the algorithm beat the human expert, but it did it in a way that had never been seen before.
+
+133
+00:15:56.320 --> 00:15:58.520
+Bruce Lam: And then 2017,
+
+134
+00:15:58.680 --> 00:16:06.269
+Bruce Lam: a couple of different things happened. The Economist, which is a British publication, published on their front page an article saying.
+
+135
+00:16:06.460 --> 00:16:10.279
+Bruce Lam: That the world's most valuable resource is no longer oil.
+
+136
+00:16:10.780 --> 00:16:14.159
+Bruce Lam: Or, said a different way, that data is the new oil.
+
+137
+00:16:14.450 --> 00:16:21.179
+Bruce Lam: And that was incredible. Then 2017, a little… that same year, Google released a pivotal paper
+
+138
+00:16:21.430 --> 00:16:31.980
+Bruce Lam: about the transformer architecture called Attention is All You Need. And that particular paper is the foundation of every large language model that we have today.
+
+139
+00:16:33.880 --> 00:16:39.529
+Bruce Lam: So 2022 was the ChatGPT moment where ChatGPT was released.
+
+140
+00:16:39.770 --> 00:16:45.470
+Bruce Lam: People were astounded that you could actually interact with a neural network for the first time.
+
+141
+00:16:45.670 --> 00:16:50.580
+Bruce Lam: But then 2023 is really when it started becoming quite powerful, ChatGPT4.
+
+142
+00:16:50.790 --> 00:17:00.340
+Bruce Lam: Of course, everyone started releasing models then, you know, Gemini had their own model at DeepMind. Meta released their Llama 3 open weights model. OpenAI went to a reasoning model.
+
+143
+00:17:00.690 --> 00:17:04.099
+Bruce Lam: 2024 is when we started exploring a…
+
+144
+00:17:04.329 --> 00:17:09.010
+Bruce Lam: Agents, and 2025 was supposed to be the year of agents.
+
+145
+00:17:09.490 --> 00:17:11.680
+Bruce Lam: We had a couple of…
+
+146
+00:17:12.650 --> 00:17:25.749
+Bruce Lam: Forks in the road, late 2025, in the winter, December, it was even maybe on Christmas Day, to make a statement. Deepseek released their first reasoning model, that was a fraction of the cost to train.
+
+147
+00:17:25.890 --> 00:17:33.370
+Bruce Lam: as the model that OpenAI had released a few months earlier. And so that was a really pivotal moment there.
+
+148
+00:17:35.710 --> 00:17:37.500
+Bruce Lam: Sorry, is somebody asking a question?
+
+149
+00:17:37.500 --> 00:17:49.009
+Tolib Sanni: No, I heard… I remember that. Yeah, because my, my brother, he's… he's into cybersecurity, and he was talking about how, you know, they literally, like, slashed the budget compared to ChatGPT.
+
+150
+00:17:49.520 --> 00:17:53.509
+Bruce Lam: Exactly, it was a huge moment, huge moment, 2025 in the winter.
+
+151
+00:17:53.960 --> 00:18:02.439
+Bruce Lam: Then 2025, later on at that layer, you know, Quad released, 4, so what are we on, like, 5.8-something at this point.
+
+152
+00:18:02.640 --> 00:18:05.680
+Bruce Lam: or Cloud 5, Fable 5 is out right now.
+
+153
+00:18:06.130 --> 00:18:16.829
+Bruce Lam: And then, so 2025 was supposed to be the year of agents, but instead it was the year of vibe coding. So, 2025 was labeled the year of vibe coding. 2026?
+
+154
+00:18:17.030 --> 00:18:19.399
+Bruce Lam: Maybe it'll be the year of agents, we'll see.
+
+155
+00:18:19.810 --> 00:18:24.530
+Bruce Lam: 2026, earlier this year, there was a big…
+
+156
+00:18:25.830 --> 00:18:41.190
+Bruce Lam: controversy over what was called OpenClaw, which was an agent operating system, and local… people were buying Mac Minis like crazy, you couldn't find them, you probably still can't find them, and that was so they could run these local large language models.
+
+157
+00:18:41.320 --> 00:18:41.870
+Bruce Lam: Odd.
+
+158
+00:18:41.870 --> 00:18:44.079
+Tolib Sanni: I run the… I run an open clock.
+
+159
+00:18:44.270 --> 00:18:52.239
+Bruce Lam: There you go, there you go. We're gonna have a lot of great conversations then throughout this course. So that was 2026, and so that's kind of where we are now.
+
+160
+00:18:52.660 --> 00:19:05.669
+Bruce Lam: 2027, this is a… it's a backward-looking chart there. So we'll see, but we'll be living through this. I love… one of the reasons why I love this specific course is because I have to change it every single term.
+
+161
+00:19:05.860 --> 00:19:17.719
+Bruce Lam: Because things are moving and shaking and changing so fast. So I'm sure while we are in this course together in the next 9 weeks, we will be going and seeing through and discussing these changes and these technological changes together.
+
+162
+00:19:18.900 --> 00:19:19.950
+Bruce Lam: Very exciting.
+
+163
+00:19:20.310 --> 00:19:23.459
+Bruce Lam: Alright, well, that was a little detour, hopefully that was interesting.
+
+164
+00:19:23.940 --> 00:19:27.570
+Bruce Lam: And I'm back to the regular scheduled program here.
+
+165
+00:19:28.500 --> 00:19:32.729
+Bruce Lam: 2011. You know what? That's really, really good. Did I… did I miss that one?
+
+166
+00:19:33.050 --> 00:19:38.869
+Bruce Lam: 20… oh, I did. Okay, no, that's awesome. I'll put that in there. Yeah, thanks so much.
+
+167
+00:19:39.820 --> 00:19:41.979
+Bruce Lam: Okay, 9 weeks?
+
+168
+00:19:42.590 --> 00:19:51.449
+Bruce Lam: This is orientation week right now. The modules always release on Thursday. That's when your homework will be due, that's when the new sections will open.
+
+169
+00:19:51.570 --> 00:20:06.580
+Bruce Lam: There will be 3 office hours every week, one for each facilitator. Again, you can go to any of them, you can go to all of them. I'll show you the schedule in a second here, we're all in different time zones, so for better or for worse.
+
+170
+00:20:06.800 --> 00:20:24.410
+Bruce Lam: If there's someone who is in a different time zone that works better for you, please definitely go there. The material is not the same at all. We all bring our own perspectives and our experiences to office hours every week to help you learn the material better, to make it stick, to make it more practical. So they're all very, very different.
+
+171
+00:20:25.120 --> 00:20:29.769
+Bruce Lam: I do want to warn you about a couple of different weeks throughout the course.
+
+172
+00:20:30.400 --> 00:20:36.049
+Bruce Lam: Week 1 is quite straightforward, and you'll have your first homework assignment there. People really like Week 1.
+
+173
+00:20:36.530 --> 00:20:48.660
+Bruce Lam: Week 2, though, starts to ramp up in complexity very, very quickly, because we go straight from something very practical and hands-on, and something that you could actually do, to…
+
+174
+00:20:48.860 --> 00:20:50.820
+Bruce Lam: learning about
+
+175
+00:20:51.180 --> 00:21:00.090
+Bruce Lam: supervised, unsupervised, and reinforcement learning all in one week. So it's very, very dense. Week 2 is super dense. The professors…
+
+176
+00:21:00.200 --> 00:21:02.610
+Bruce Lam: For better or for worse, this is MIT.
+
+177
+00:21:02.810 --> 00:21:07.320
+Bruce Lam: They're PhDs, they're super brilliant, and they talk in…
+
+178
+00:21:08.150 --> 00:21:16.929
+Bruce Lam: in math, so they'll bring up a lot of equations. I mean, you've probably seen a lot of them in your time, it's just probably been a while.
+
+179
+00:21:17.130 --> 00:21:21.420
+Bruce Lam: So it's a little overwhelming, a little intimidating sometimes, so please do…
+
+180
+00:21:21.600 --> 00:21:30.540
+Bruce Lam: Spend extra time, or budget to spend extra time, On weeks 2 and 3, And then from there.
+
+181
+00:21:31.280 --> 00:21:38.070
+Bruce Lam: I think you start getting a lot more comfortable with the terminology, then we… we start talking about generative AI and,
+
+182
+00:21:38.650 --> 00:21:44.720
+Bruce Lam: deep learning and, what, Modules 4 and 5, and then it's kind of downhill from there. So we ramp up super quick.
+
+183
+00:21:45.000 --> 00:21:47.959
+Bruce Lam: Get quite high in terms of complexity.
+
+184
+00:21:48.110 --> 00:21:51.629
+Bruce Lam: And then… Take you down to the finish line.
+
+185
+00:21:53.630 --> 00:22:00.429
+Bruce Lam: And so, throughout this course, you will have five Homework assignments that are graded.
+
+186
+00:22:00.710 --> 00:22:06.789
+Bruce Lam: Modules 1, 6, 7, 8, 9, so you'll have one starting this week in Module 1.
+
+187
+00:22:07.090 --> 00:22:20.969
+Bruce Lam: And then you won't have one, you get a bit of a break, you won't have one for 2, 3, 4, 4, 5, and then I'll start back up at 6. And then you'll have a back-to-back. 6, 7, 8, 9. And 9 is a workbook, and that workbook is your capstone project.
+
+188
+00:22:23.170 --> 00:22:34.810
+Bruce Lam: So every week, we will also have Q&A discussion modules per week. Definitely please participate in those. A couple of questions always come up, which is…
+
+189
+00:22:35.660 --> 00:22:40.809
+Bruce Lam: Do I have to share information about the company that I work for? And the answer is no.
+
+190
+00:22:40.920 --> 00:22:56.059
+Bruce Lam: These are really for reinforcing the material, for people to… for us to help each other. I like to say that all of us are smarter than any of us, so based on all of our individual experiences, can we help shine some light on these topics and give practical examples?
+
+191
+00:22:56.710 --> 00:23:00.479
+Bruce Lam: Those are not graded, those are optional, but very, very good.
+
+192
+00:23:00.930 --> 00:23:19.330
+Bruce Lam: There are several self-study activities. I get the question a lot, that if I… I completed the optional quiz, or the reinforcement, the quiz to help me learn things, but I didn't get any points for it, well, that's because the points don't count towards your course completion.
+
+193
+00:23:19.920 --> 00:23:23.710
+Bruce Lam: And I'll show you this here in a minute. We do have quite a few
+
+194
+00:23:23.950 --> 00:23:35.269
+Bruce Lam: Jupyter notebooks. There is no requirement for you to know how to code or have any background in coding, and so I'll show you what this looks like. It's very, very approachable.
+
+195
+00:23:35.670 --> 00:23:37.840
+Bruce Lam: It's a lot of reading.
+
+196
+00:23:37.940 --> 00:23:42.210
+Bruce Lam: Answering some questions, changing a few variables,
+
+197
+00:23:42.540 --> 00:23:49.279
+Bruce Lam: They're all fully functional workbooks, they're all fully functional machine learning algorithms that you should definitely take a copy of.
+
+198
+00:23:49.420 --> 00:23:54.260
+Bruce Lam: To use as your foundation for your work, or your project, or your products and services.
+
+199
+00:23:55.530 --> 00:24:02.729
+Bruce Lam: But I don't want you to be intimidated at all. There was no requirement to have any background or know how to code, but I will show you
+
+200
+00:24:02.840 --> 00:24:04.309
+Bruce Lam: How to get comfortable with that.
+
+201
+00:24:05.090 --> 00:24:07.470
+Bruce Lam: Let me go ahead and…
+
+202
+00:24:07.740 --> 00:24:14.219
+Bruce Lam: This is a different view of the 5 assignments that you have to do in weeks 1, 6, 7, 8, and 9.
+
+203
+00:24:14.590 --> 00:24:16.229
+Bruce Lam: Here are the due dates.
+
+204
+00:24:16.690 --> 00:24:21.780
+Bruce Lam: Don't trust me on this. I wrote this by hand on these due dates, but what you should trust
+
+205
+00:24:22.040 --> 00:24:26.280
+Bruce Lam: is in Canvas, you should go to your calendar.
+
+206
+00:24:26.550 --> 00:24:36.540
+Bruce Lam: And let me actually do this now, this is a good… this makes sense to do now. So two things, or at least two things. When you're in Canvas, this is what it should look like. I believe it should be open for everyone.
+
+207
+00:24:36.710 --> 00:24:40.499
+Bruce Lam: One of the first things that I do is I go to my account here, and it's gonna look…
+
+208
+00:24:40.970 --> 00:24:47.059
+Bruce Lam: a little bit different for you, because I have the teacher view, you have the student view, so bear with me.
+
+209
+00:24:47.220 --> 00:24:48.210
+Bruce Lam: I think…
+
+210
+00:24:48.450 --> 00:24:57.019
+Bruce Lam: the locations are a little different, but the… the sequence should be very similar. So I go to my account, I go to Settings.
+
+211
+00:24:57.350 --> 00:25:04.729
+Bruce Lam: And under settings, I can change both the language and the time zone, right here. So go to Edit Settings.
+
+212
+00:25:04.980 --> 00:25:11.070
+Bruce Lam: And then I can change the language and the time zone. And once I do that, then my calendar
+
+213
+00:25:11.220 --> 00:25:13.949
+Bruce Lam: We'll be up to date with the proper time zones.
+
+214
+00:25:14.720 --> 00:25:16.770
+Bruce Lam: and then I can…
+
+215
+00:25:16.960 --> 00:25:23.219
+Bruce Lam: Look at what's due and what's coming due, and as you can see, this is where we are right now at this introductory webinar.
+
+216
+00:25:24.040 --> 00:25:31.240
+Bruce Lam: Danny's gonna have one on Monday, and then next Wednesday, Amanda's gonna have hers.
+
+217
+00:25:31.970 --> 00:25:37.420
+Bruce Lam: And what's nice about this is you can download the calendar feed, and so you can put this onto your…
+
+218
+00:25:37.710 --> 00:25:44.749
+Bruce Lam: You know, your work calendar or your personal calendar, and once you've updated the time zones and everything, that should sync properly.
+
+219
+00:25:45.090 --> 00:25:47.860
+Bruce Lam: Now, what I don't know is if
+
+220
+00:25:48.310 --> 00:26:00.039
+Bruce Lam: there is a change in the schedule for some reason, let's say somebody's sick, and they have to reschedule their office hours, I don't know if this feed automatically syncs, or if you have to come back and get a new version of it.
+
+221
+00:26:01.630 --> 00:26:06.309
+Bruce Lam: If that makes sense. Does anyone have any quick questions immediately on that?
+
+222
+00:26:15.680 --> 00:26:23.569
+Bruce Lam: Okay, let's keep moving through the slide deck, and then we'll actually go back to Canvas and do a walkthrough. There was a schedule change email today, it didn't update my calendar, just a heads up, okay.
+
+223
+00:26:24.380 --> 00:26:30.879
+Bruce Lam: Good to know, Martin, that's… Interesting. I did not get a schedule change email today, I don't think.
+
+224
+00:26:31.200 --> 00:26:32.540
+Bruce Lam: I'll have to go look and see.
+
+225
+00:26:33.250 --> 00:26:44.300
+Bruce Lam: Okay, so this is the Jupyter Notebook. So there are 10 of them. We take you all the way from data ingestion, testing and training, and splitting your data sets, all the way…
+
+226
+00:26:44.430 --> 00:26:49.470
+Bruce Lam: through real machine learning algorithms. And this is how they work.
+
+227
+00:26:49.730 --> 00:26:53.369
+Bruce Lam: There are modules within the emeritus
+
+228
+00:26:53.820 --> 00:26:59.070
+Bruce Lam: In… within the Canvas platform, by emeritus called M-Code.
+
+229
+00:26:59.370 --> 00:27:05.050
+Bruce Lam: EM code, and so they'll start in week 2, so if I go to week 2, I'll find one.
+
+230
+00:27:05.630 --> 00:27:13.680
+Bruce Lam: They're, like, they are these… Let's see, Red, assignment.
+
+231
+00:27:13.890 --> 00:27:19.969
+Bruce Lam: Optional assignments with zero points, but you would click on this assignment, Assignment 2.1, Testing and Training, for example.
+
+232
+00:27:20.560 --> 00:27:27.070
+Bruce Lam: And then you'll go and you'll click this button, it'll open up a new window, and it does take…
+
+233
+00:27:27.350 --> 00:27:31.380
+Bruce Lam: A solid minute, at least, after you click that button.
+
+234
+00:27:31.510 --> 00:27:40.289
+Bruce Lam: And, to save your time, and I actually don't think they're open yet for this cohort for this term, I just went into last terms, and once you open it, it looks like this.
+
+235
+00:27:40.640 --> 00:27:47.120
+Bruce Lam: And you'll just find the file that says ipynb, and that's called Interactive Python Notebook.
+
+236
+00:27:47.470 --> 00:27:50.099
+Bruce Lam: And so what this does is it creates
+
+237
+00:27:50.640 --> 00:28:00.589
+Bruce Lam: the Python notebook application for you, so you don't have to worry about downloading or installing anything or any packages. It's all self-contained in this environment.
+
+238
+00:28:00.900 --> 00:28:03.370
+Bruce Lam: And you just read through the instructions.
+
+239
+00:28:03.770 --> 00:28:12.679
+Bruce Lam: And when there's a little code block, it'll tell you what to do. In the code below, we start by importing necessary libraries and modules. You click on that code block, and then you push play.
+
+240
+00:28:12.890 --> 00:28:22.729
+Bruce Lam: And it thinks a little bit, and it should import properly, and then you'll just follow the steps, and then read what it says for the outputs. Week 2 is very, very straightforward.
+
+241
+00:28:22.860 --> 00:28:33.460
+Bruce Lam: As you keep going, you'll start being required to change the code a little bit, to say, hey, if I want to change an answer here, for example.
+
+242
+00:28:33.700 --> 00:28:49.519
+Bruce Lam: or change the code a little bit if you want to change your train test split size. Like, for example, right now, it says size equals blank, and so they want you to fill in the size to be 0.3, and the random state equal to 1, 2, 3, and so it just walks you through, literally.
+
+243
+00:28:49.690 --> 00:28:53.889
+Bruce Lam: Where you need to change the code and run it, and you can change it to different things, too, to see what happens.
+
+244
+00:28:55.270 --> 00:28:57.609
+Bruce Lam: And what's maybe just as important
+
+245
+00:28:57.960 --> 00:29:04.229
+Bruce Lam: is… the Solutions Guide is right here, and if you click on this, it will download a…
+
+246
+00:29:04.580 --> 00:29:18.180
+Bruce Lam: that interactive Python notebook, that IPYNB, and what we recommend you to do is go to Google Colab, because once this term is over, you will no longer have access to the M-code platform.
+
+247
+00:29:18.450 --> 00:29:22.740
+Bruce Lam: But you will have access to Google Colab if you…
+
+248
+00:29:23.680 --> 00:29:25.760
+Bruce Lam: You know, if you have a Google account.
+
+249
+00:29:26.290 --> 00:29:29.699
+Bruce Lam: And then you can go ahead and open… I think I have this one somewhere.
+
+250
+00:29:31.800 --> 00:29:35.559
+Bruce Lam: Python. I don't think there's any SQL, Shawn. It's all Python.
+
+251
+00:29:36.620 --> 00:29:41.389
+Bruce Lam: Let's see, let me see if I can find this exact one, which is the training and testing one.
+
+252
+00:29:41.880 --> 00:29:45.149
+Bruce Lam: If not, then I'll just open a random one.
+
+253
+00:29:45.430 --> 00:29:56.349
+Bruce Lam: And it's literally the same thing, so you have a tutorial here, and so… and you, instead of having the… there is a play button up here, but there's also a play button inside the code block as well.
+
+254
+00:29:56.510 --> 00:30:01.249
+Bruce Lam: So you just hit that, it'll run the code, and then you get to read the outputs, and then…
+
+255
+00:30:01.500 --> 00:30:03.949
+Bruce Lam: You know, read what they want you to do.
+
+256
+00:30:04.860 --> 00:30:12.180
+Bruce Lam: So Pretty straightforward there. So don't be intimidated, we walk you through, we handhold, And,
+
+257
+00:30:12.740 --> 00:30:13.400
+Tolib Sanni: at their own.
+
+258
+00:30:13.400 --> 00:30:14.840
+Bruce Lam: They're all quite good. Go ahead.
+
+259
+00:30:16.040 --> 00:30:16.570
+Tolib Sanni: Thanks.
+
+260
+00:30:17.900 --> 00:30:18.830
+Bruce Lam: Was there a question?
+
+261
+00:30:22.330 --> 00:30:33.569
+Muneiah Ponnapa: Hi, Bruce. This is Mune here. So, do we have any N number of times for the wrong answers or quizzes? Is there any second or third attempt?
+
+262
+00:30:34.060 --> 00:30:34.500
+Bruce Lam: Yes.
+
+263
+00:30:35.590 --> 00:30:38.799
+Bruce Lam: Yes, yes, yes. Yes, I think you can submit as many times as you want.
+
+264
+00:30:39.110 --> 00:30:40.069
+Bruce Lam: For the quizzes.
+
+265
+00:30:40.440 --> 00:30:48.909
+Muneiah Ponnapa: Okay, thank you. And, I have another question. How would we will get certificate after completion of the course? Would there be any…
+
+266
+00:30:49.090 --> 00:30:52.400
+Muneiah Ponnapa: POSS criteria, like, blocks are great?
+
+267
+00:30:52.790 --> 00:30:56.250
+Bruce Lam: Yes, yes, very good question. It's like you knew with the next slide.
+
+268
+00:30:56.380 --> 00:31:00.149
+Bruce Lam: Let me… let me go to the next slide, because that's exactly right.
+
+269
+00:31:00.420 --> 00:31:01.620
+Bruce Lam: There are p…
+
+270
+00:31:01.620 --> 00:31:02.549
+Muneiah Ponnapa: Thank you, Bruce.
+
+271
+00:31:02.550 --> 00:31:05.199
+Bruce Lam: Of course, thank you so much. So…
+
+272
+00:31:05.440 --> 00:31:20.710
+Bruce Lam: There… there is criteria to pass the course, and I believe I have a slide about that coming up. For those of you, though, I don't want you to stress. I mean, especially for my cohorts, my sections, if you're gonna… if you… we know you're all working professionals, if you have to submit something late, if you have extra time.
+
+273
+00:31:20.710 --> 00:31:26.169
+Bruce Lam: We're not gonna mark you down. Don't stress about that. I'll show you how to submit an assignment extension request.
+
+274
+00:31:26.390 --> 00:31:28.990
+Bruce Lam: But for those of you who want to…
+
+275
+00:31:29.460 --> 00:31:35.369
+Bruce Lam: make it a little more interesting. There are 3 assignments, Workbook 7, 8, and the capstone.
+
+276
+00:31:35.550 --> 00:31:38.740
+Bruce Lam: Capstone specifically, I will be hand-selecting
+
+277
+00:31:38.970 --> 00:31:52.900
+Bruce Lam: X percent a number of assignments that really go above and beyond and demonstrate that you've learned the material, and then you can post that on LinkedIn, saying, oh, hey, I got an exemplary assignment from MIT, and so we have that.
+
+278
+00:31:53.040 --> 00:32:03.229
+Bruce Lam: But there's no curve, so everyone can get 100% in this course, everyone can get an A, so don't stress about that. I really believe that you do your best learning when you're not worrying about your grades.
+
+279
+00:32:03.450 --> 00:32:06.449
+Bruce Lam: So, for those of you who want to go.
+
+280
+00:32:06.590 --> 00:32:13.260
+Bruce Lam: and do a little extra, this is an option for that. Shawn, I think for my, for example.
+
+281
+00:32:13.630 --> 00:32:25.089
+Bruce Lam: you know, I don't know how big this particular cohort is, but let's say a cohort last term, I think I might have given out 15 exemplary assignments, and I think that might be 10%.
+
+282
+00:32:26.560 --> 00:32:27.440
+Bruce Lam: Maybe.
+
+283
+00:32:28.730 --> 00:32:31.899
+Bruce Lam: Okay, very good. Here is, again.
+
+284
+00:32:32.040 --> 00:32:37.130
+Bruce Lam: I just want to give you an overview of the office hours, but don't take this…
+
+285
+00:32:37.280 --> 00:32:39.809
+Bruce Lam: As gospel, look at the calendar.
+
+286
+00:32:39.960 --> 00:32:46.290
+Bruce Lam: Amanda is gonna be on Thursdays and Fridays, Thursdays or Fridays, depending on the week.
+
+287
+00:32:46.390 --> 00:33:01.609
+Bruce Lam: And she will be at 10 a.m. Eastern Time, which is quite early for me. So, she's kind of the early person, or 3 p.m. UTC, if that's a time that you prefer. I'm going to be on Thursdays or Fridays.
+
+288
+00:33:01.830 --> 00:33:05.239
+Bruce Lam: Around 5 p.m. Eastern, 10 p.m. UTC,
+
+289
+00:33:05.520 --> 00:33:13.090
+Bruce Lam: Unfortunately, Danny is gonna be at the same time, but on a different day, so hopefully that works out.
+
+290
+00:33:13.390 --> 00:33:15.160
+Bruce Lam: Would one of us work out for you?
+
+291
+00:33:15.810 --> 00:33:20.980
+Bruce Lam: I definitely recommend you go to at least one section from everyone, just to see who you… resonate with.
+
+292
+00:33:21.300 --> 00:33:24.869
+Bruce Lam: Really, you can go to any and all office hours.
+
+293
+00:33:25.060 --> 00:33:31.920
+Bruce Lam: And what we do in office hours is I definitely share, extra reading material, case studies.
+
+294
+00:33:32.250 --> 00:33:39.830
+Bruce Lam: We'll review the content, we'll go over homework assignments at week 6… at week 6 before…
+
+295
+00:33:40.210 --> 00:33:50.789
+Bruce Lam: it releases… I'll give you a supplemental guide for how to complete Assignment 6, because even though it's very good on human-computer interaction and human-computer interfaces.
+
+296
+00:33:51.310 --> 00:33:52.870
+Bruce Lam: It is…
+
+297
+00:33:53.680 --> 00:33:58.960
+Bruce Lam: it asks for a lot that we don't get time to cover, so I'll give you a supplemental guide there, for example.
+
+298
+00:34:01.640 --> 00:34:11.190
+Muneiah Ponnapa: I have one question, like, do we have any system configurations? Do we have to install any software in my local machine, or not required?
+
+299
+00:34:11.540 --> 00:34:13.429
+Bruce Lam: Nope, not at all. Not at all.
+
+300
+00:34:13.969 --> 00:34:20.529
+Muneiah Ponnapa: Okay, thank you. And for AGB RAM would be sufficient, i3 mission would be okay?
+
+301
+00:34:21.130 --> 00:34:25.879
+Bruce Lam: Yeah, that should be fine. This is all cloud-based, so there's no… there's no local compute required.
+
+302
+00:34:26.290 --> 00:34:27.900
+Muneiah Ponnapa: Sure, thanks a lot, Burris.
+
+303
+00:34:28.219 --> 00:34:46.139
+Bruce Lam: Good question. And then Patrick, oh, yes, yeah, please, please go, if you're… if this is what you're asking, Amanda is going to be doing her course intro, which is going to be very similar to this one, although, of course, with her own spin, that's next Wednesday. Danny is this coming Monday. Please definitely go to those.
+
+304
+00:34:46.830 --> 00:34:48.750
+Bruce Lam: If that's what you're asking, Patrick.
+
+305
+00:34:53.980 --> 00:34:55.429
+Bruce Lam: Okay, fantastic.
+
+306
+00:34:56.960 --> 00:35:07.069
+Bruce Lam: Yes. Oh, very good, very good question. Let me do that now before I forget. I have, like, a cheat sheet at the end that shows me all the things to show you so I don't forget, and this is one of them.
+
+307
+00:35:07.430 --> 00:35:11.549
+Bruce Lam: Every week, every live session will be recorded.
+
+308
+00:35:11.680 --> 00:35:17.480
+Bruce Lam: And in… it'll be on your Canvas platform under this tab here called Live Sessions.
+
+309
+00:35:17.850 --> 00:35:22.120
+Bruce Lam: We'll open this right now. Well, this is the June cohort, so we'll be able to see some things.
+
+310
+00:35:22.320 --> 00:35:26.770
+Bruce Lam: So, for example, here was my last introductory webinar. We'll click on that.
+
+311
+00:35:26.910 --> 00:35:28.659
+Bruce Lam: You can play it here.
+
+312
+00:35:30.280 --> 00:35:34.850
+Bruce Lam: And underneath, we will have the slide decks.
+
+313
+00:35:35.020 --> 00:35:37.069
+Bruce Lam: All of the slide decks will be here.
+
+314
+00:35:37.260 --> 00:35:41.120
+Bruce Lam: And the transcript, as well.
+
+315
+00:35:41.570 --> 00:35:42.740
+Bruce Lam: Of this module.
+
+316
+00:35:44.050 --> 00:35:51.730
+Bruce Lam: And before I forget, this leads me to another piece. Every week, every module, there are…
+
+317
+00:35:51.960 --> 00:35:57.829
+Bruce Lam: resources. So, for example, in Module 1, I can't remember if it's at the beginning or the end.
+
+318
+00:35:58.310 --> 00:36:02.129
+Bruce Lam: I think it might be at the end…
+
+319
+00:36:03.820 --> 00:36:09.109
+Bruce Lam: There are these two really critical documents, one that gives you
+
+320
+00:36:09.430 --> 00:36:16.049
+Bruce Lam: A… an overview of what you would be expected to learn for that module, and the other one is a transcript of all of the
+
+321
+00:36:17.310 --> 00:36:22.219
+Bruce Lam: Asynchronous videos, all of the videos of the professors that were recorded in this module.
+
+322
+00:36:22.610 --> 00:36:25.770
+Bruce Lam: And so, it must be in the wrap.
+
+323
+00:36:27.520 --> 00:36:33.720
+Bruce Lam: Or, or here. Let me see, is it in module resources? Oh, here it is. Quick reference guide and transcript right here.
+
+324
+00:36:35.430 --> 00:36:41.130
+Bruce Lam: So I would rec- highly, highly recommend that you download both of these, Every week.
+
+325
+00:36:41.550 --> 00:36:48.340
+Bruce Lam: And then you go into Notebook LM. If you haven't used that before, it's a really fantastic platform.
+
+326
+00:36:49.960 --> 00:36:51.819
+Bruce Lam: And then create a notebook.
+
+327
+00:36:52.410 --> 00:37:01.180
+Bruce Lam: upload all the resources from the week, and it will give you, kind of, summaries and study guides. You can make mind maps and even your own
+
+328
+00:37:01.410 --> 00:37:16.819
+Bruce Lam: podcasts, so you can listen to the material again, maybe when you're exercising or running or something like that. It's really, really fantastic. You'll see I use it quite a bit to help me generate some charts and slide content so that I can explain concepts to you better.
+
+329
+00:37:17.330 --> 00:37:18.690
+Bruce Lam: Let's see…
+
+330
+00:37:19.170 --> 00:37:29.269
+Bruce Lam: Yes, that's right, venu. After… I would say within a few hours of the conclusion of this section, I will send off the slide deck to the program team.
+
+331
+00:37:29.560 --> 00:37:34.099
+Bruce Lam: And they will upload it to the live sessions by this evening.
+
+332
+00:37:35.250 --> 00:37:41.220
+Bruce Lam: Antonio, that's right, you don't need to install Jupyter Notebook at all. It's all baked in the platform.
+
+333
+00:37:42.360 --> 00:37:45.440
+Bruce Lam: So, to your question, Javier,
+
+334
+00:37:45.760 --> 00:37:50.290
+Bruce Lam: This is for the networking session. We are going to have…
+
+335
+00:37:50.470 --> 00:37:58.530
+Bruce Lam: That's a good question. Let me double-check this one for Danny. Let me see. That might be a typo on my part. So again, don't trust the dates that I manually put in here.
+
+336
+00:37:58.960 --> 00:38:01.740
+Bruce Lam: It's… Let me just double check.
+
+337
+00:38:02.140 --> 00:38:03.790
+Bruce Lam: For you, I just had it open.
+
+338
+00:38:09.010 --> 00:38:14.989
+Bruce Lam: Hmm… Danny, where… when are you having your office?
+
+339
+00:38:18.770 --> 00:38:25.140
+Bruce Lam: Okay, let's see… Danny is going to have his on… September 8th?
+
+340
+00:38:25.710 --> 00:38:32.989
+Bruce Lam: Yeah, it is the same day. I'll have to tell the program too about that, and so maybe I'll move mine or something so that we don't have it at the same day at the same time.
+
+341
+00:38:33.230 --> 00:38:36.389
+Bruce Lam: So… Thank you so much for pointing that out, Javier.
+
+342
+00:38:38.500 --> 00:38:48.469
+Bruce Lam: Very, very good. Okay, so I def… I got you the Jupyter Notebook, or now it's called, Jupiter Notebook and the Notebook LM, Gemini Notebook. Highly, highly recommend.
+
+343
+00:38:48.790 --> 00:38:50.219
+Bruce Lam: I'm doing that.
+
+344
+00:38:50.350 --> 00:38:54.509
+Bruce Lam: Now, let's go ahead and make sure I didn't miss anything through the platform.
+
+345
+00:38:55.270 --> 00:39:02.290
+Bruce Lam: Few things, if you… Are curious about which cohort you happen to be in.
+
+346
+00:39:02.630 --> 00:39:04.670
+Bruce Lam: Then you would just go to…
+
+347
+00:39:05.150 --> 00:39:08.700
+Bruce Lam: Let me get the right one, AI Pro… August.
+
+348
+00:39:10.740 --> 00:39:16.650
+Bruce Lam: go to People, and then you can type in your name, and it'll show you which particular cohort you're in.
+
+349
+00:39:17.180 --> 00:39:21.299
+Bruce Lam: Which is Again, not that big of a deal.
+
+350
+00:39:21.680 --> 00:39:23.650
+Bruce Lam: So I'm in Section B.
+
+351
+00:39:25.310 --> 00:39:32.399
+Bruce Lam: And… The only other caveat with the sectioning is that within
+
+352
+00:39:32.610 --> 00:39:38.480
+Bruce Lam: the Q&A can't communicate across sections, so we do have this cafe.
+
+353
+00:39:38.620 --> 00:39:40.660
+Bruce Lam: And just meet your fellow participants.
+
+354
+00:39:40.810 --> 00:39:45.149
+Bruce Lam: Where you can… Talk across all of the sections.
+
+355
+00:39:46.440 --> 00:39:47.480
+Bruce Lam: So,
+
+356
+00:39:47.860 --> 00:39:56.760
+Bruce Lam: I definitely know Amanda will be posting things in the cafe, I'll be posting the study guides that I create in the cafe for everyone to use.
+
+357
+00:39:57.360 --> 00:40:01.030
+Bruce Lam: So that is how you communicate across the cohorts.
+
+358
+00:40:02.950 --> 00:40:08.219
+Bruce Lam: Okay, I think we went over a lot of this. There's an announcement section in Canvas.
+
+359
+00:40:08.810 --> 00:40:14.689
+Bruce Lam: And there is… let's see… oh, you can create your own… you can put… you can…
+
+360
+00:40:15.680 --> 00:40:23.430
+Bruce Lam: Change the settings on your announcements to see how often they come in, whether they're grouped together, whether you want them daily or as soon as they arrive.
+
+361
+00:40:23.630 --> 00:40:26.460
+Bruce Lam: So that you're not inundated with announcements.
+
+362
+00:40:26.860 --> 00:40:29.479
+Bruce Lam: Again, a plug for the…
+
+363
+00:40:29.880 --> 00:40:33.220
+Bruce Lam: Referral program, that is, that is quite good.
+
+364
+00:40:34.200 --> 00:40:38.680
+Bruce Lam: And… Here's more about the referral program.
+
+365
+00:40:38.900 --> 00:40:41.280
+Bruce Lam: And definitely connect on LinkedIn.
+
+366
+00:40:41.890 --> 00:40:48.210
+Bruce Lam: We went over the live sessions, we went over the modules. Does anyone have any questions about the platform at this point?
+
+367
+00:40:49.060 --> 00:40:50.790
+Bruce Lam: We went over the calendar.
+
+368
+00:40:51.030 --> 00:40:52.600
+Bruce Lam: Over the calendar feed.
+
+369
+00:40:53.300 --> 00:41:00.220
+Bruce Lam: a gradebook. I think this is something that you would care about on your end. On my end, it looks a lot different.
+
+370
+00:41:00.430 --> 00:41:07.029
+Bruce Lam: But you can see the progress that you've made. I do get a question every once in a while.
+
+371
+00:41:09.840 --> 00:41:21.379
+Bruce Lam: that near the end of the course, because the capstone is worth more, it looks like you may not pass, but that's not the case. As soon as you complete the capstone, then you will have enough points to pass the course.
+
+372
+00:41:21.710 --> 00:41:27.039
+Bruce Lam: Ali saying, I see everyone's currently in Section C. Is that true? Let me see, because I saw Bruce in Section B with me.
+
+373
+00:41:27.300 --> 00:41:29.760
+Bruce Lam: But let me see, let me look again.
+
+374
+00:41:31.010 --> 00:41:36.189
+Bruce Lam: Okay, there you go. So, are you saying, Ali, that there's a lot of people in Section C? So, yeah, here we go, Section A…
+
+375
+00:41:36.570 --> 00:41:41.900
+Bruce Lam: Section B… Yeah, so it looks like there's a distribution.
+
+376
+00:41:42.940 --> 00:41:46.660
+Ali Sanei: Yeah, on my end, when I look at it, everybody's in Section C.
+
+377
+00:41:46.840 --> 00:41:51.410
+Bruce Lam: That makes sense, that makes sense, and we have differences. Section C is Danny.
+
+378
+00:41:52.340 --> 00:41:54.840
+Bruce Lam: Section C's daddy. Very good. Thank you for that.
+
+379
+00:41:55.360 --> 00:42:04.259
+Samsung SM-G998U: Hey, Bruce, could you, touch upon the capstone project a little bit? Is it, like, single, a group, effort, or, you know, what are we looking at?
+
+380
+00:42:04.480 --> 00:42:16.140
+Bruce Lam: Yep, it's a single, individual assignment. It's gonna be a workbook, just like your other… after you do week one, you'll be very familiar with the workbook format. It's a PDF, a fillable PDF,
+
+381
+00:42:16.470 --> 00:42:17.740
+Bruce Lam: And,
+
+382
+00:42:18.870 --> 00:42:27.730
+Bruce Lam: Yeah, it'll take you a couple hours to do, I think. Especially if you are keeping up and going to office hours and everything, the capstone should be very, very straightforward.
+
+383
+00:42:30.710 --> 00:42:40.249
+Bruce Lam: Okay, so let's see, Sam says in C, Jonathan says, elaborate on the meaning of the various sections. So, honestly, Jonathan, the sections don't mean a lot, don't stress out about it at all.
+
+384
+00:42:40.500 --> 00:42:51.800
+Bruce Lam: You can go to… for those of you who are in B, if you're in my office hours, fantastic, great to see you, but you don't have to just come to B. You can go to C, you can go to A, you can go to all of them.
+
+385
+00:42:51.870 --> 00:43:06.419
+Bruce Lam: The only distinction for sections is for grading. So, for Section B, I will be grading your assignments, I will be grading your capstone, Amanda will be grading Section A assignments and capstones, and Daddy will be doing Section C.
+
+386
+00:43:06.980 --> 00:43:08.990
+Bruce Lam: So that's really the only…
+
+387
+00:43:09.640 --> 00:43:21.339
+Bruce Lam: nuance, and the other logistical nuance is that you can't communicate across sections within the modules. So let's say you have a friend in section…
+
+388
+00:43:21.610 --> 00:43:24.289
+Bruce Lam: you're in Section B, and you're a friend in Section A.
+
+389
+00:43:24.400 --> 00:43:27.450
+Bruce Lam: And you have a Q&A prompt about
+
+390
+00:43:27.850 --> 00:43:37.310
+Bruce Lam: generative AI in music, and you want to tag them and talk to them about it, you can't do that. You have to go to the cafe and have that discussion there in the cafe.
+
+391
+00:43:37.630 --> 00:43:39.870
+Bruce Lam: That's the only, only nuance.
+
+392
+00:43:41.990 --> 00:43:49.100
+Bruce Lam: Okay, there you go, there's the gradebook. Here we go. This will show you in the gradebook as well how many points you've accumulated.
+
+393
+00:43:49.320 --> 00:43:57.560
+Bruce Lam: and how many points you need to pass the course. Of course, it's a little bit tricky because there are weightings to the… the capstone project.
+
+394
+00:43:58.160 --> 00:43:59.840
+Bruce Lam: So don't freak out about that.
+
+395
+00:44:00.610 --> 00:44:16.749
+Bruce Lam: Let's see, Canvas Profile, you should all already have that set up, I would assume. Oh, this is very good. Okay, so assignment extension process. Again, we know, and we highly respect that you're all working professionals, you're super busy.
+
+396
+00:44:17.380 --> 00:44:23.149
+Bruce Lam: Actually, one more thing, because we're on assignment extension, if you're traveling for work or something.
+
+397
+00:44:23.590 --> 00:44:29.250
+Bruce Lam: and you need to extend your assignment, no problem at all. There's 3 ways to do it.
+
+398
+00:44:29.360 --> 00:44:32.999
+Bruce Lam: One is you look at the chat bot here on the left.
+
+399
+00:44:33.300 --> 00:44:35.850
+Bruce Lam: This one actually takes you to a real person.
+
+400
+00:44:35.960 --> 00:44:42.080
+Bruce Lam: And you just go extension request here, and then you type it in, and then it's granted no problem at all.
+
+401
+00:44:43.040 --> 00:44:49.050
+Bruce Lam: The other way is there should be, in your view, I don't see it, there should be a…
+
+402
+00:44:49.370 --> 00:44:53.550
+Bruce Lam: a sidebar tab that says Assignment Extension in the student view.
+
+403
+00:44:54.500 --> 00:44:57.720
+Bruce Lam: And the third one is the support.
+
+404
+00:44:58.200 --> 00:45:00.679
+Bruce Lam: tab right here. You go to support here.
+
+405
+00:45:01.190 --> 00:45:06.129
+Bruce Lam: And that'll launch this other portal for Emeritus. You submit a request up here.
+
+406
+00:45:06.780 --> 00:45:15.140
+Bruce Lam: And it will… you just say, hey, I'm traveling for work, and I would like to extend my assignment, and it's never a problem, it's never been a problem.
+
+407
+00:45:15.560 --> 00:45:21.399
+Bruce Lam: I think the easiest way is to go through the chat interface on the… down here.
+
+408
+00:45:21.510 --> 00:45:23.099
+Bruce Lam: But that's not the only way.
+
+409
+00:45:23.240 --> 00:45:27.810
+Bruce Lam: And I was gonna remember, there's one more detail that I thought of when I was describing that.
+
+410
+00:45:28.240 --> 00:45:30.940
+Bruce Lam: Chat interface, assignment extension.
+
+411
+00:45:33.760 --> 00:45:36.090
+Bruce Lam: I can't remember, I should have just said it. Okay.
+
+412
+00:45:36.260 --> 00:45:37.990
+Bruce Lam: Hey, Bruce, I'm sorry.
+
+413
+00:45:37.990 --> 00:45:52.249
+Samsung SM-G998U: Can I ask you about the assignment extension? I noticed that they're all due, like, on Thursday for us, like, 12.30 Eastern Time, which is kind of awkward, and then the new assignments are also released on Thursday.
+
+414
+00:45:52.550 --> 00:45:54.160
+Samsung SM-G998U: So, which means for…
+
+415
+00:45:54.330 --> 00:46:00.379
+Samsung SM-G998U: those of us that are working, we gotta do it that weekend. Are we given enough information to actually
+
+416
+00:46:00.550 --> 00:46:11.059
+Samsung SM-G998U: do it without attending the, you know, like, the office hours? And if we can't, and we look for extension, how long can we get?
+
+417
+00:46:11.810 --> 00:46:15.550
+Bruce Lam: All great questions. I would say that…
+
+418
+00:46:17.910 --> 00:46:22.270
+Bruce Lam: So, it's… there's a lot of… there's a lot of really good nuance to your question.
+
+419
+00:46:22.890 --> 00:46:33.659
+Bruce Lam: First of all, the extensions are at least a week, so that's… there's no problem there, it should give you plenty of time. The capstone, you know, for extenuating circumstances, I've seen it go longer.
+
+420
+00:46:34.220 --> 00:46:38.720
+Bruce Lam: Your second question about, will you be able to attend enough office hours to get enough context?
+
+421
+00:46:39.030 --> 00:46:44.890
+Bruce Lam: Maybe, and that's… that's actually a nuance as well. Our first office hours, I will be having them
+
+422
+00:46:45.690 --> 00:47:01.110
+Bruce Lam: like, a day after, for the first few weeks, it'll be the day after the content is released, so you can… you get a few hours, maybe a day, to look at the content, and then you can come to office hours, I'll help reinforce that, and then you have 5 more days before the assignment's due.
+
+423
+00:47:02.670 --> 00:47:11.519
+Bruce Lam: That being said, after the… networking session that changes, because that networking session takes one of our slots.
+
+424
+00:47:11.680 --> 00:47:24.909
+Bruce Lam: And then after that week, we'll be looking backwards by a week, if that makes sense. So we'll be ahead of the curve for the first 2 or 3 weeks, and then we'll be looking backwards. That being said, Assignment 1 is very straightforward.
+
+425
+00:47:25.030 --> 00:47:31.370
+Bruce Lam: So you should have no problem with that. And then by the time we get to 6, 7, 8, you should be in a pretty good rhythm.
+
+426
+00:47:32.090 --> 00:47:33.819
+Bruce Lam: But that was a really good question.
+
+427
+00:47:36.800 --> 00:47:38.340
+Bruce Lam: So Antonio.
+
+428
+00:47:38.590 --> 00:47:47.710
+Bruce Lam: Yes and no. Until next Thursday, what you would want to do is go and start looking over all of the module material, of which there is… there's quite a bit.
+
+429
+00:47:47.960 --> 00:47:50.870
+Bruce Lam: So watch the videos, do the exercises.
+
+430
+00:47:51.230 --> 00:47:53.029
+Bruce Lam: That's what you have to do.
+
+431
+00:47:53.350 --> 00:47:55.759
+Bruce Lam: Until the assignment comes open.
+
+432
+00:47:58.690 --> 00:48:00.520
+Bruce Lam: Oh, I remembered, I remembered.
+
+433
+00:48:00.810 --> 00:48:06.559
+Bruce Lam: If you are traveling, people always ask, is there a way to download
+
+434
+00:48:06.810 --> 00:48:15.689
+Bruce Lam: either the live session videos or the in-module videos, and I haven't figured out a way to do that.
+
+435
+00:48:15.870 --> 00:48:23.110
+Bruce Lam: legally kosher. I'm sure there's some way that you can record the screen or something, but there's no download button. So.
+
+436
+00:48:23.280 --> 00:48:29.739
+Bruce Lam: just to reiterate a little bit, what I'd highly, highly recommend, especially if you're traveling, is to go to the end of the module.
+
+437
+00:48:29.930 --> 00:48:35.829
+Bruce Lam: go to the Quick Reference Guide, and transcripts. So the transcripts… Our word for word.
+
+438
+00:48:36.010 --> 00:48:49.370
+Bruce Lam: what the professors talk about in the videos. So if you take the transcripts and you upload them into your Notebook LM, have it generate an overview or study guide or transcript for you, now you can take, essentially, the videos on the go.
+
+439
+00:48:52.120 --> 00:48:54.650
+Bruce Lam: So, that's the best way I've found to do that.
+
+440
+00:48:56.970 --> 00:48:58.360
+Bruce Lam: That was what I forgot.
+
+441
+00:48:58.670 --> 00:49:03.030
+Bruce Lam: Okay, yes, okay, so if it's still locked… oh.
+
+442
+00:49:03.330 --> 00:49:07.240
+Bruce Lam: It should open… Not today, let me look at the calendar.
+
+443
+00:49:12.900 --> 00:49:15.199
+Bruce Lam: Let's see, it's always the introduction… oh, I see.
+
+444
+00:49:16.830 --> 00:49:22.270
+Bruce Lam: So this… it's due on the 3rd, so it's not gonna open until the 27th.
+
+445
+00:49:22.930 --> 00:49:26.019
+Bruce Lam: Yeah, would have been nice to get a head start,
+
+446
+00:49:28.150 --> 00:49:31.770
+Bruce Lam: Yeah, sorry about that, that's, that is the case.
+
+447
+00:49:33.190 --> 00:49:37.330
+Bruce Lam: Wow, interesting. We're gonna have office hours next week before the module starts.
+
+448
+00:49:39.150 --> 00:49:42.640
+Bruce Lam: It's interesting. I'll have to ask the program team about that, if that was intentional or not.
+
+449
+00:49:44.000 --> 00:49:48.190
+Bruce Lam: Okay, well, we're gonna have really, really proactive office hours next week, then.
+
+450
+00:49:48.800 --> 00:49:55.930
+Bruce Lam: You're gonna get a huge introduction to the content. Actually, yeah, so you'll be ready to do the homework assignment right after office hours.
+
+451
+00:49:56.770 --> 00:50:03.030
+Bruce Lam: Yes, Antonio, I will go ask the program team about those two things, about, Danny and my…
+
+452
+00:50:03.500 --> 00:50:09.320
+Bruce Lam: Networking session being on the same day at the same time, and also if we can unlock the course early.
+
+453
+00:50:10.620 --> 00:50:14.450
+Bruce Lam: don't hold your breath. I'm not sure that's possible, but I will ask.
+
+454
+00:50:15.460 --> 00:50:21.990
+Bruce Lam: Here are some frequently asked questions. I think that we have gone over…
+
+455
+00:50:22.540 --> 00:50:28.909
+Bruce Lam: a number of them, but for questions like this, about the platform, like, about the platform opening, Antonio.
+
+456
+00:50:29.170 --> 00:50:39.409
+Bruce Lam: Things like that, I really don't have any power over. So we do have to talk to program support, so if you do write a ticket, I can paste this in the chat, maybe…
+
+457
+00:50:40.270 --> 00:50:44.630
+Bruce Lam: And so if we all ping them together, they are usually very responsive.
+
+458
+00:50:44.940 --> 00:50:48.219
+Bruce Lam: So let me go ahead and just, I guess, type it in, so that's a screenshot.
+
+459
+00:50:48.440 --> 00:50:52.780
+Bruce Lam: Program support… At AM.
+
+460
+00:50:55.730 --> 00:50:59.490
+Bruce Lam: Let me see… program support at Emeritus…
+
+461
+00:51:00.470 --> 00:51:07.230
+Bruce Lam: Okay, so that's the email, so if we all ping them, they might be willing to open the course early, I'm not sure. Can't guarantee it.
+
+462
+00:51:07.550 --> 00:51:12.650
+Bruce Lam: And so we went over this already. Fortunately, there's a support tab. You can submit a ticket.
+
+463
+00:51:13.380 --> 00:51:18.420
+Bruce Lam: And then, I think it was Mooney who was asking before, when your course is over.
+
+464
+00:51:18.610 --> 00:51:24.240
+Bruce Lam: I try to grade the capstones over the weekend. It's a lot of fun, and a lot of work.
+
+465
+00:51:24.410 --> 00:51:32.140
+Bruce Lam: And hopefully… By that next week, after you submit your capstone, you will have this certificate available.
+
+466
+00:51:32.270 --> 00:51:36.279
+Bruce Lam: in your Canvas profile that you can then download and share.
+
+467
+00:51:39.090 --> 00:51:48.149
+Bruce Lam: Yes, so this is actually quite good. I do like the Emeritus chat bot inside… the platform.
+
+468
+00:51:48.820 --> 00:52:02.050
+Bruce Lam: it's… it's pretty clever, and it's… it's good for not giving you the assignments. I'd say it won't do your homework for you, but it is LLM-powered. It can point you in the direction, you know, you could say, when is…
+
+469
+00:52:02.510 --> 00:52:04.629
+Bruce Lam: When is workbook?
+
+470
+00:52:05.130 --> 00:52:08.799
+Bruce Lam: one due, and I think that should tell you the answer.
+
+471
+00:52:09.060 --> 00:52:15.880
+Bruce Lam: And then, there you go, September 3rd. I can say, when will… Module 1.
+
+472
+00:52:17.590 --> 00:52:19.370
+Bruce Lam: Let's see if it knows that, I'm not sure.
+
+473
+00:52:22.800 --> 00:52:24.170
+Bruce Lam: Yep, 27
+
+474
+00:52:25.000 --> 00:52:32.249
+Bruce Lam: And then when you go into different sections, like, as you go to Module 2, it actually has the context for Module 2. So it'll give you…
+
+475
+00:52:32.980 --> 00:52:43.989
+Bruce Lam: You could ask it about the key topics, the key concepts. If you get confused on something, you can ask the chatbot here, so it's always at your side, and it is quite good in my experience.
+
+476
+00:52:51.550 --> 00:52:52.240
+Bruce Lam: Okay.
+
+477
+00:52:52.430 --> 00:52:54.140
+Bruce Lam: Let's see… oh.
+
+478
+00:52:54.420 --> 00:53:04.750
+Bruce Lam: So these are some questions that you can ask the chatbots, and for academic questions, questions on the material, you can raise a support ticket, and those will go directly to me.
+
+479
+00:53:05.470 --> 00:53:11.870
+Bruce Lam: That is the best way to do it. There is a…
+
+480
+00:53:12.670 --> 00:53:17.230
+Bruce Lam: An inbox, like an email system, but it's a little bit tricky.
+
+481
+00:53:17.680 --> 00:53:22.940
+Bruce Lam: You can try to use it. I do get them directly to my inbox, usually.
+
+482
+00:53:23.490 --> 00:53:28.930
+Bruce Lam: So if it's something more casual, definitely send it to me through the inbox.
+
+483
+00:53:29.090 --> 00:53:31.979
+Bruce Lam: But if it's something that requires a…
+
+484
+00:53:33.470 --> 00:53:38.230
+Bruce Lam: a ticket, then definitely go through the support ticketing process. So this is, like…
+
+485
+00:53:39.020 --> 00:53:43.510
+Bruce Lam: Not… like, if you want to schedule a one-on-one with me, for example, then we can go through
+
+486
+00:53:43.790 --> 00:53:53.580
+Bruce Lam: the inbox. And by the way, I do that. More than happy to set up some time with you, one-on-one, to talk about your ideas, to talk about your capstone project before it's due.
+
+487
+00:53:53.820 --> 00:53:57.339
+Bruce Lam: If you need any help or support that way, more than happy to do that.
+
+488
+00:53:59.120 --> 00:54:02.669
+Bruce Lam: And, I think we got through everything.
+
+489
+00:54:02.850 --> 00:54:06.800
+Bruce Lam: Here are some tips for success. Definitely office hours to me.
+
+490
+00:54:06.980 --> 00:54:11.259
+Bruce Lam: We put a lot of effort and passion into them to help you really get the most out of this course.
+
+491
+00:54:11.490 --> 00:54:18.539
+Bruce Lam: We do have a weekly survey, and we do take those super seriously, and try to change things as much as possible, as fast as we can.
+
+492
+00:54:18.700 --> 00:54:21.789
+Bruce Lam: So those are a gift to us, so thank you for doing that.
+
+493
+00:54:22.030 --> 00:54:27.790
+Bruce Lam: A fair warning, if you do decide to come to my office hours, Section B,
+
+494
+00:54:28.050 --> 00:54:35.720
+Bruce Lam: We do tend to go over about 10 or 15 minutes, just because there's so much material to cover.
+
+495
+00:54:37.120 --> 00:54:42.629
+Bruce Lam: So, just a fair warning that if you are coming to Office Hours B with me, that…
+
+496
+00:54:42.840 --> 00:54:47.439
+Bruce Lam: book a little extra time afterwards. Or it's okay if you don't need to leave early, I take no offense to that.
+
+497
+00:54:47.800 --> 00:54:52.819
+Bruce Lam: Jonathan says, question on given content, does the LLM use the module materials?
+
+498
+00:54:52.940 --> 00:54:53.610
+Bruce Lam: Oh.
+
+499
+00:54:55.140 --> 00:55:06.049
+Bruce Lam: I… I believe… good question, Jonathan. I believe, based on what… when I've used it, it does reference… it's like a rag, in that it's kind of locked and referenced… referencing the material.
+
+500
+00:55:06.330 --> 00:55:07.979
+Bruce Lam: Inside the module itself.
+
+501
+00:55:09.200 --> 00:55:15.689
+Bruce Lam: Okay, Shruti, if you miss a live session, it's really not a big deal. There is no attendance taken.
+
+502
+00:55:17.210 --> 00:55:21.560
+Bruce Lam: Definitely with the professors, when they're doing their live sessions, it is…
+
+503
+00:55:22.230 --> 00:55:24.689
+Bruce Lam: They're very, very good, so…
+
+504
+00:55:24.980 --> 00:55:34.370
+Bruce Lam: And you can ask them the questions that you've been holding off on, so I highly recommend that you can make those when… when you can, to make all of those. I think there's 4 of them near the end of the term.
+
+505
+00:55:34.910 --> 00:55:44.929
+Bruce Lam: And if you don't… if you can't, really, no big deal, no stress, they will be recorded, and the recordings will be posted in the Live Sessions tab over here.
+
+506
+00:55:47.030 --> 00:55:53.999
+Samsung SM-G998U: So, Bruce, if we have questions for you about the course content or whatnot, what is the best
+
+507
+00:55:54.160 --> 00:55:57.040
+Samsung SM-G998U: Way to, get in touch with you. Just…
+
+508
+00:55:57.290 --> 00:56:00.579
+Samsung SM-G998U: Post things in, like, the cafe, or…
+
+509
+00:56:01.380 --> 00:56:08.010
+Bruce Lam: Okay, so, good question. There's a few different ways. Cafe, I'm not as good at, because cafe doesn't ping me.
+
+510
+00:56:08.130 --> 00:56:11.490
+Bruce Lam: Cafe is kind of a general area, so…
+
+511
+00:56:11.690 --> 00:56:15.640
+Bruce Lam: You can… if you want to talk to me directly, you can definitely go through the inbox.
+
+512
+00:56:15.720 --> 00:56:34.490
+Bruce Lam: If you… if it's a question that you think other people will have, which usually is, so I highly encourage you to just post it in here, in the Q&A for the… at the end of the module, right here. The Q&A discussion board for Section B, if you're in my section, then just posts something here, and I try to check this every day or every other day.
+
+513
+00:56:35.630 --> 00:56:42.820
+Bruce Lam: But you can always just email me, too, if you want. I mean, just don't abuse it, you know, so I'll just leave my email, Bruce.am, at Berkeley.
+
+514
+00:56:44.000 --> 00:56:46.260
+Bruce Lam: And also, LinkedIn is good.
+
+515
+00:56:46.470 --> 00:56:50.200
+Bruce Lam: Javier, is it okay to collect material? I thought those would have copyright control usage on purpose.
+
+516
+00:56:50.970 --> 00:56:55.960
+Bruce Lam: Yeah, so Notebook LM is a RAG system, Javier, so it does not…
+
+517
+00:56:56.480 --> 00:57:06.580
+Bruce Lam: distribute the information, like, to Google, it just references this, and actually, if I did a demo here, you would see that if I uploaded our course material here, and I said.
+
+518
+00:57:06.720 --> 00:57:09.380
+Bruce Lam: you know, how do I make a chocolate cake? It would say, hey.
+
+519
+00:57:09.750 --> 00:57:13.510
+Bruce Lam: I can't give you that answer, that's not in the reference material, so…
+
+520
+00:57:13.630 --> 00:57:17.030
+Bruce Lam: it's pretty locked down, so I do recommend that.
+
+521
+00:57:20.040 --> 00:57:21.609
+Bruce Lam: Unless you thumbs up.
+
+522
+00:57:22.680 --> 00:57:23.360
+Bruce Lam: Okay.
+
+523
+00:57:23.620 --> 00:57:28.519
+Bruce Lam: Very good, excellent, and we are right on time today, which will be rare.
+
+524
+00:57:30.280 --> 00:57:31.930
+Bruce Lam: Are there any questions?
+
+525
+00:57:33.630 --> 00:57:43.220
+JavierBuendiaGamboa: No, just letting you know that you can, in Notebook LM, if you, thumbs up, if you agree to use that information for the LLM, for the
+
+526
+00:57:43.560 --> 00:57:51.700
+JavierBuendiaGamboa: for the model, you can, you know, that will be shared with the, with the model, and that information will be shared, and, you know.
+
+527
+00:57:51.890 --> 00:57:59.740
+JavierBuendiaGamboa: with the model, and I thought that there was some kind of copyright on the documentation of this course, that's why I'm asking.
+
+528
+00:58:00.030 --> 00:58:05.540
+Bruce Lam: I see, I see, I see. That was… that's a different perspective. Very good. Very good. I think you could turn it off?
+
+529
+00:58:06.670 --> 00:58:07.510
+Bruce Lam: I'm so…
+
+530
+00:58:07.510 --> 00:58:07.830
+JavierBuendiaGamboa: Yeah.
+
+531
+00:58:07.830 --> 00:58:08.309
+Bruce Lam: If you're concerned.
+
+532
+00:58:08.310 --> 00:58:20.770
+JavierBuendiaGamboa: You can turn it off, you can turn it off, and unless you agree to share that information with the model, not book Adam, we will take it, probably, right? Your conversation and your info.
+
+533
+00:58:20.770 --> 00:58:30.959
+JavierBuendiaGamboa: But, you know, I just… I'm just asking if we are okay to share it, that I thought that we wouldn't, able to… to do so.
+
+534
+00:58:30.990 --> 00:58:34.159
+JavierBuendiaGamboa: Okay, just to be clear on that, right?
+
+535
+00:58:34.350 --> 00:58:37.909
+Bruce Lam: Yeah, you won't get in trouble with me, Javier.
+
+536
+00:58:38.270 --> 00:58:40.580
+Bruce Lam: Yep, you know, use it, just use it responsibly, you know.
+
+537
+00:58:40.580 --> 00:58:41.190
+JavierBuendiaGamboa: Respectful.
+
+538
+00:58:41.190 --> 00:58:43.280
+Bruce Lam: and, I should…
+
+539
+00:58:43.280 --> 00:59:04.780
+JavierBuendiaGamboa: Okay, just let you know that, you know, there are some ways to share it with the model, with those tools, right? There is no… there is no always private information, the one that we are sharing. So, for any guy in this chat, or in this session, just be careful with that, to share information from your business or personal, and so on.
+
+540
+00:59:04.780 --> 00:59:11.650
+JavierBuendiaGamboa: Because… because that can be shared, and, you know… Okay, so because… Kind of.
+
+541
+00:59:11.650 --> 00:59:13.460
+Bruce Lam: Very, very good, very good.
+
+542
+00:59:14.320 --> 00:59:18.219
+Bruce Lam: Very, very good warning there, Javier. Thank you for sharing that. Really do appreciate that.
+
+543
+00:59:18.530 --> 00:59:22.540
+Bruce Lam: Okay, everyone, and Shruti, did you figure it out? You just go to Notebook…
+
+544
+00:59:22.540 --> 00:59:23.060
+Denis Tambwe: Excuse me.
+
+545
+00:59:23.060 --> 00:59:24.140
+Bruce Lam: dot com.
+
+546
+00:59:24.390 --> 00:59:25.549
+Denis Tambwe: I have a question.
+
+547
+00:59:26.690 --> 00:59:27.859
+Denis Tambwe: Oh, can you hear me?
+
+548
+00:59:28.780 --> 00:59:35.429
+Denis Tambwe: Is it possible to know the duration of the course… the courses in advance, so that we can better organize?
+
+549
+00:59:37.130 --> 00:59:38.870
+Denis Tambwe: For each class, for example.
+
+550
+00:59:38.870 --> 00:59:39.580
+Bruce Lam: Oh.
+
+551
+00:59:39.580 --> 00:59:46.849
+Denis Tambwe: Yeah, to know it's gonna take 1 hour or 2 hours so that we can organize ourselves better with our, you know, daily work.
+
+552
+00:59:47.400 --> 00:59:53.900
+Bruce Lam: Yes, so if you're gonna come to my live sections, they are gonna go, I would say, an hour and 15.
+
+553
+00:59:54.200 --> 01:00:09.139
+Bruce Lam: at most, it's gonna go a little over an hour, though, for my sections. The professors, the live sections, those are always very prompt. They will end at exactly the one-hour mark. The other facilitators, I can't… I don't know.
+
+554
+01:00:12.880 --> 01:00:14.180
+Bruce Lam: Good question, though.
+
+555
+01:00:14.910 --> 01:00:18.919
+Bruce Lam: All right, yes, and I am very much looking forward to meeting all of you.
+
+556
+01:00:19.120 --> 01:00:20.150
+Bruce Lam: There you go, Rob.
+
+557
+01:00:20.270 --> 01:00:28.670
+Bruce Lam: 60 to 90 minutes. All right, thank you all, have a wonderful week, and we'll see you next week for our first Office Hours. All right, take care. Thanks so much.
+
+558
+01:00:29.130 --> 01:00:30.109
+Sport: Thanks, Bruce.
+
+559
+01:00:30.230 --> 01:00:31.220
+Bruce Lam: Thank you, everybody.
+
+560
+01:00:31.600 --> 01:00:32.430
+Bruce Lam: Bye!
+

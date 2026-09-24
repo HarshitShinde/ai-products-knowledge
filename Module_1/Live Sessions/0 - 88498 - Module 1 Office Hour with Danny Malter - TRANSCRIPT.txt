@@ -1,0 +1,1590 @@
+WEBVTT
+
+1
+00:00:01.480 --> 00:00:09.690
+Danny Malter: All right, we're up and recording, so again, hello everyone, welcome to Week 1 Office Hour. So, for those that were not on orientation, or
+
+2
+00:00:09.690 --> 00:00:32.380
+Danny Malter: At least not the orientation with me. My name is Danny Malter. I'm one of the program leaders, learning facilitators in this course. So, what that means, I'll be hosting an hour office hour… one hour office Hour every week at this time. If anything comes up where we ever need to change the time, I'll make sure… do my best to, have the team alert you as far out in advance.
+
+3
+00:00:32.960 --> 00:00:36.150
+Danny Malter: So, let's go ahead and get started on week one.
+
+4
+00:00:36.270 --> 00:00:48.940
+Danny Malter: As… well, typically in my office hours, I'll come in with prepared material, so I'll come in with prepared slides. If y'all have questions, I'm more than happy to take those questions as we go through office hours.
+
+5
+00:00:48.940 --> 00:01:02.290
+Danny Malter: If there's a question for a larger topic, maybe something that needs a little bit more planning or thoughts, please let me know of those questions ahead of time, and I'm happy to prepare for those questions as we go through my office hour.
+
+6
+00:01:02.970 --> 00:01:07.649
+Danny Malter: As it comes with questions, just a little bit of reminder from some orientation material.
+
+7
+00:01:07.760 --> 00:01:11.209
+Danny Malter: There's various types of questions that one might ask in this course.
+
+8
+00:01:11.210 --> 00:01:28.540
+Danny Malter: Most questions, for the most part, should probably be addressed on the discussion board, so your program leaders in this course will monitor those discussion board questions and comments and respond back. If the question is applicable to everyone, please put those in the discussion board.
+
+9
+00:01:28.570 --> 00:01:37.420
+Danny Malter: If you have a question directed specifically to your program leader, for whatever reason, you can reach out to us directly on Canvas through the support link.
+
+10
+00:01:37.690 --> 00:01:45.729
+Danny Malter: So the support link will open up a question box to fill out, and those will get routed directly to myself or the other program leaders.
+
+11
+00:01:45.810 --> 00:01:52.320
+Danny Malter: There are a lot of students in this course, so I'd just like to remind people, please be as specific as possible when asking questions.
+
+12
+00:01:52.370 --> 00:02:11.920
+Danny Malter: It just helps me or the other program leader, or whoever else answer your question better, gets to the point of the question a little bit quicker. So, a good question on assignment 2.1, question 3, maybe include a screenshot if it's necessary or might help explain the question a little bit more.
+
+13
+00:02:13.320 --> 00:02:14.370
+Danny Malter: Okay.
+
+14
+00:02:16.430 --> 00:02:21.570
+Danny Malter: One thing I want to get into as well, before we get into some of the material from Module 1,
+
+15
+00:02:21.850 --> 00:02:33.770
+Danny Malter: a theme of what we'll talk about throughout this course, because it's often high importance of people that take this course, what is it going to cost me to build out a machine learning system, some type of AI product?
+
+16
+00:02:34.090 --> 00:02:50.639
+Danny Malter: Now, I can't give you some magic answer. Every problem, every product, depending on the people you have, it's gonna… varying levels of cost associated to it, but what I can do throughout my office hours is help you come to some conclusion of your own.
+
+17
+00:02:50.780 --> 00:02:56.769
+Danny Malter: So, some of the topics and themes that we'll talk about over the next 9 weeks…
+
+18
+00:02:57.010 --> 00:03:10.989
+Danny Malter: GPU costs. Well, first of all, why would we even need to use a GPU? Well, if you're going to build out your own AI product, maybe you need to consider a GPU. Okay, again, why do we need a GPU? Well, we'll talk about things like a neural network.
+
+19
+00:03:11.030 --> 00:03:24.359
+Danny Malter: Why would we need to use a neural network? Well, a neural network needs to be trained on a GPU, a graphical processing unit versus a CPU, which is more likely what your local laptop is made up of.
+
+20
+00:03:24.840 --> 00:03:38.610
+Danny Malter: If you need access to a GPU, well, you can go out and rent those through Amazon Web Services, Google Cloud, Azure, you can get various access in various other places as well, but there's going to be a cost associated to that.
+
+21
+00:03:38.720 --> 00:03:41.909
+Danny Malter: Maybe you need to go out and find your own training data.
+
+22
+00:03:41.910 --> 00:03:58.919
+Danny Malter: Well, if you need to purchase data, that's going to be relatively expensive. Maybe you can go out and get third-party open-source data, so free data. Maybe we can scrape data. Maybe you build a product first, and your users are using your product, and you're using that data to do further machine learning models.
+
+23
+00:03:59.240 --> 00:04:01.490
+Danny Malter: We need to think about things like…
+
+24
+00:04:01.800 --> 00:04:20.850
+Danny Malter: cleaning of our data, bias of our data, we need to think about, monitoring our models over time, so if you're going to implement any type of machine learning or AI model, even if it's using an model like GPT or Claude.
+
+25
+00:04:20.850 --> 00:04:26.440
+Danny Malter: Okay, what happens a year from now when that model is no longer applicable to the current data that we're using?
+
+26
+00:04:26.440 --> 00:04:29.809
+Danny Malter: So that is the process model monitoring, and there's various
+
+27
+00:04:29.810 --> 00:04:47.580
+Danny Malter: tools out there to help you monitor models over time, what we might do is monitor the accuracy over time. So we could look for changes in accuracy. Okay, well, a year ago, this model was getting a 93% accuracy on our data. Maybe today it's only getting a 90% accuracy.
+
+28
+00:04:47.950 --> 00:05:00.770
+Danny Malter: And then finally, maybe you're doing some type of per query pricing in production, so you're hitting an OpenAI API, or you're hitting a Google Places API, or a Cloud API.
+
+29
+00:05:00.850 --> 00:05:20.749
+Danny Malter: We'll talk about Amazon Bedrock. Amazon Bedrock is a marketplace of various foundation models that you can use on AWS. And there's going to be a cost to using those language models every time you hit a query to one of those language models. Now, I would say, in general, the cost of language models has come down a lot.
+
+30
+00:05:20.990 --> 00:05:38.120
+Danny Malter: So, for the most part, if you're using a language model, hitting an API on something like Amazon Bedrock, we're talking maybe a fraction of a penny, US penny, per API call, so relatively cheap. Now, they could get more costly if we're doing more complicated
+
+31
+00:05:38.120 --> 00:05:51.069
+Danny Malter: queries against our model, but for the most part, relatively cheap there. So, lots of different things to consider, lots of different prices to take into account. One thing we didn't talk about here is storing of data. If you have data you want to store.
+
+32
+00:05:51.120 --> 00:06:07.609
+Danny Malter: That's relatively cheap. The cost of employees is probably one of the higher costs associated to any type of product you might be thinking about. But again, if you have questions or comments, I'm happy to take those, but these are going to be overarching themes we'll discuss throughout the next few weeks.
+
+33
+00:06:10.790 --> 00:06:29.459
+Danny Malter: Alright, so let's get into the, design… AI design process. So, stage one, we have here the intelligence. So, stage one, we have broken out into, performance metrics and scope, which we'll get into in the next two slides here. So, performance metrics being the quality, how the quality is measured.
+
+34
+00:06:29.530 --> 00:06:48.649
+Danny Malter: accuracy I just talked about. When we build out a machine learning model, we want to think about how we're going to measure this model. How do we know if the model is actually working well in production? Even if you're using a language model, maybe to do some type of prediction for you, we can measure accuracy, and we want to store and measure that accuracy over time.
+
+35
+00:06:49.160 --> 00:07:04.019
+Danny Malter: The usability, the robustness, can we easily plug and play new models as they come out? So maybe today we're using GPT for… I can't even keep track of all the version numbers, and 6 months from now, can we easily integrate a new model into our system?
+
+36
+00:07:04.260 --> 00:07:14.699
+Danny Malter: If so, maybe it's easy to ingest one model into another. Does the prompt we were using previously hold true for the prompt on the new model? Maybe it does, maybe it doesn't.
+
+37
+00:07:14.940 --> 00:07:25.900
+Danny Malter: And then the scope, so the exact problem it solves, and the boundaries of what it should and shouldn't handle. So, if we're considering an AI model, language model, do we have the proper guardrails in place?
+
+38
+00:07:26.000 --> 00:07:35.980
+Danny Malter: Guardrails can come at the beginning in the prompt, or guardrails can come after the model has spit out a response, maybe filtering out certain words out of our model.
+
+39
+00:07:36.430 --> 00:07:42.090
+Danny Malter: From a machine learning model standpoint, we'll talk about traditional machine learning models as well.
+
+40
+00:07:42.090 --> 00:07:56.749
+Danny Malter: Are we… maybe the scope includes having explainability associated to our model. So, perhaps you work in a financial industry, and we need to be able to explain, okay, why are we giving this person a loan, but not this person a loan?
+
+41
+00:07:56.750 --> 00:08:02.020
+Danny Malter: Well, some algorithms give that type of explainability, some algorithms don't.
+
+42
+00:08:02.350 --> 00:08:04.860
+Danny Malter: Which we call more black box algorithms.
+
+43
+00:08:04.930 --> 00:08:18.889
+Danny Malter: So when it comes to performance metrics, we have things like the predictive accuracy, and accuracy alone is not the only measurement one might use in machine learning. There are other metrics as well. Sometimes accuracy alone can be very misleading.
+
+44
+00:08:18.890 --> 00:08:37.829
+Danny Malter: Accuracy, we could build a model detecting breast cancer, for example, that has a 99% accuracy, but maybe the 1% that we're getting wrong are all telling people they don't have cancer when they actually do have cancer. So that necessarily wouldn't be the best model in the world, even though the accuracy is relatively high.
+
+45
+00:08:38.150 --> 00:08:49.460
+Danny Malter: Efficiency, how fast is the model? Especially if we're going to be putting a model into production. We need to think about latency. How quickly do we get a response from the model?
+
+46
+00:08:49.630 --> 00:08:59.779
+Danny Malter: And as we think about language models, and I'll talk about this over the next few weeks in office hours, I always like to stress to people, think about the pros and cons.
+
+47
+00:08:59.960 --> 00:09:16.279
+Danny Malter: of using traditional machine learning models, and we'll talk about what does traditional machine learning even mean, versus a language model. Now, a language model is going to be relatively easy to use. Maybe you're doing something like computer vision, object detection.
+
+48
+00:09:16.280 --> 00:09:22.719
+Danny Malter: You upload an image to a language model, or a multimodal vision model, and say, tell me what's in this model.
+
+49
+00:09:22.780 --> 00:09:26.180
+Danny Malter: And maybe you're doing some type of,
+
+50
+00:09:26.560 --> 00:09:35.570
+Danny Malter: tree detection, or plant detection. Maybe you're building an app that anyone can take a picture of a plant, and you tell the person what type of plant that is.
+
+51
+00:09:35.630 --> 00:09:52.860
+Danny Malter: Well, if you're using a vision model, a language model, you're probably talking maybe around 1 second to get a response for a very good one. Maybe slightly faster for some of the smaller models, but we're talking maybe 1, 2, 3 seconds to get a response for a problem like that.
+
+52
+00:09:52.970 --> 00:09:59.950
+Danny Malter: Well, maybe for your use case, we need to get millisecond response time, and that's where building your own
+
+53
+00:10:00.050 --> 00:10:13.020
+Danny Malter: convolutional neural network, your own neural network, to solve that type of problem might be better. So if speed is the most important thing that you're considering, traditional machine learning might be a better approach than using a language model.
+
+54
+00:10:13.360 --> 00:10:23.700
+Danny Malter: Robustness, how does the model… how does the performance hold up with noisy, missing data in the real world? How does it hold up to real-world data?
+
+55
+00:10:23.700 --> 00:10:36.310
+Danny Malter: And then, of course, the fairness, ethics, and then usability. Does it meet the user needs and context, not just when you are testing the model? So again, usability and robustness go a little bit hand-in-hand there.
+
+56
+00:10:37.750 --> 00:10:42.070
+Danny Malter: Alright, scope, and then I'll stop talking, open it up for any questions.
+
+57
+00:10:42.300 --> 00:10:56.189
+Danny Malter: Things to consider here, we have the problem framing, so what exact questions are you answering? Now, as somebody that leads a machine learning and AI team and works very closely with the engineering team, I often find that the business sometimes lacks
+
+58
+00:10:56.440 --> 00:11:12.819
+Danny Malter: the problem framing. Maybe the business thinks they know what they want, but it's hard to get the details of exactly what they want, and sometimes in the real world, they're, you know, the engineering team goes and builds a product, but it isn't exactly what the business had intended for, or vice versa.
+
+59
+00:11:13.320 --> 00:11:26.469
+Danny Malter: Use case boundaries, have we considered all the various types of real-world situations and boundaries that our machine learning or AI model might spit out? For AI that might specifically deal with guardrails in place?
+
+60
+00:11:26.570 --> 00:11:35.369
+Danny Malter: A good example here, I had seen one online. I didn't see evidence of this actually being true, but it was a funny example. Chipotle.
+
+61
+00:11:35.400 --> 00:11:49.889
+Danny Malter: somebody had posted on LinkedIn about a few months ago that they were using the Chipotle support app to ask Python questions. So, again, I don't know that this is necessarily true, it was funny, I'll just pretend that it's true, but if it was true, the people that built this
+
+62
+00:11:49.890 --> 00:11:57.470
+Danny Malter: chatbot for Chipotle clearly didn't consider various guardrails that it should only answer questions about Chipotle and not Python.
+
+63
+00:11:58.830 --> 00:12:20.160
+Danny Malter: All right, let's see what else that I want to cover here. Data fit is going to be an important concept that we talk about over the next few weeks as well. So, a concept in machine learning, which we'll probably talk about more in weeks 2 and Weeks 3, is called fitting your model to data. So, we don't want to overfit. We don't want to build models that do really well to our historic data.
+
+64
+00:12:20.300 --> 00:12:38.899
+Danny Malter: But when we go apply those models to the real world, unseen data that our model has never seen before, it doesn't necessarily perform as well. So maybe we're doing… I'll stick with the credit example that I was talking about earlier. Maybe we're building a model to detect who is or is not worthy of receiving credit.
+
+65
+00:12:38.900 --> 00:12:49.150
+Danny Malter: And our model is scoring really well against our historic data, but maybe there was some type of business change, or users change, or customer base changed.
+
+66
+00:12:49.150 --> 00:13:03.620
+Danny Malter: Therefore, the model that used to be working really well doesn't work as well in the real world. That's what we call data drift. So the underlying data has drifted versus when we originally trained the model. Therefore, we need to maybe retrain a new model
+
+67
+00:13:03.800 --> 00:13:08.560
+Danny Malter: On up-to-date on more recent data that we might have.
+
+68
+00:13:09.490 --> 00:13:16.930
+Danny Malter: So, alright, let me pause there. I feel like there was a lot of… thrown at you all. Are there any questions or comments from anyone?
+
+69
+00:13:20.400 --> 00:13:32.889
+Danny Malter: Yeah, ATWA, go ahead. And you can also use the, if you hover over… let's see, what is it, the chats? No, not chat. My view is a little bit different. There's a way to raise your hand on Zoom, too, I'm happy to call on you, but ATWA, go ahead.
+
+70
+00:13:33.780 --> 00:13:44.109
+ATWA NAIL OTHMAN - Robovisor: Yes, hi. I do have a question you pointed out, something interesting, an example about the cancer situation. So…
+
+71
+00:13:44.270 --> 00:14:00.700
+ATWA NAIL OTHMAN - Robovisor: What would be the answer for that, if, 99.9% precision, it's not a metric to evaluate this, or the precision is not a metric to evaluate the solution. What would it be, then?
+
+72
+00:14:01.530 --> 00:14:18.629
+Danny Malter: Yeah, I mean, it's gonna be a couple different approaches. I can't say, like, automatically this approach versus this approach would work better, but maybe we don't have enough, maybe you didn't have enough data of cancer patients or non-cancer patients in your data, so you have what we call an imbalanced data set.
+
+73
+00:14:18.630 --> 00:14:25.369
+Danny Malter: Now, in machine learning, we want to… if we have a binary classification problem, in this case, cancer, no cancer.
+
+74
+00:14:25.410 --> 00:14:29.719
+Danny Malter: Ideally, we want as close to 50-50 in our data set as possible.
+
+75
+00:14:29.720 --> 00:14:45.989
+Danny Malter: In the real world, we're gonna have a very imbalanced data set. We're gonna have maybe 99% of data of people that don't have cancer, or have not committed fraud. 1% of our data has committed fraud, or maybe does have cancer. So maybe we need more use cases of what it means to be… have cancer in our case.
+
+76
+00:14:46.320 --> 00:14:56.810
+Danny Malter: Maybe the algorithm we chose wasn't the best algorithm. Maybe we need some type of ensemble approach. Maybe we combine two different algorithms together and take the average score of both of those.
+
+77
+00:14:57.280 --> 00:15:04.410
+Danny Malter: maybe better cleaning of our data, we need to maybe enhance the quality of the images, maybe they're a little bit blurry. So, those are…
+
+78
+00:15:04.580 --> 00:15:10.690
+Danny Malter: Again, there's not one answer, per se, but those are some of the things to consider that might help in a situation like that.
+
+79
+00:15:11.650 --> 00:15:19.610
+ATWA NAIL OTHMAN - Robovisor: But just, if I understood it right, what you mentioned are methods and not a metric.
+
+80
+00:15:21.360 --> 00:15:25.350
+ATWA NAIL OTHMAN - Robovisor: In that case, specifically, what would be a good metric?
+
+81
+00:15:25.750 --> 00:15:36.840
+Danny Malter: Oh, so usually the opposite of… yeah, so we'll get to this in a future Office Hour. You could look up a confusion matrix. A confusion matrix is how we would typically evaluate
+
+82
+00:15:36.840 --> 00:15:56.519
+Danny Malter: classification problem. So there's where you can measure precision and recall. That's where you would look at things like what your true positives and your false negative rates are. So, yeah, a confusion matrix would be the… not the metric itself, but the confusion… within a confusion matrix, you can get
+
+83
+00:15:56.520 --> 00:16:01.319
+Danny Malter: About 4 or 5 different metrics that you might use to evaluate the result of a model.
+
+84
+00:16:02.580 --> 00:16:04.050
+ATWA NAIL OTHMAN - Robovisor: Perfect. Thank you.
+
+85
+00:16:07.090 --> 00:16:08.350
+Danny Malter: Anyone else?
+
+86
+00:16:10.500 --> 00:16:16.659
+iPhone: Do we have a, consolidation for the large language model design, like,
+
+87
+00:16:16.760 --> 00:16:28.039
+iPhone: For example, do we have configuration, back-end configuration, to change the large language models while using AI?
+
+88
+00:16:29.530 --> 00:16:33.360
+Danny Malter: I'm not sure I'm understanding your question, if you can elaborate a little bit.
+
+89
+00:16:34.270 --> 00:16:41.610
+iPhone: Suppose we have several models, GPT, Gemini, And, Anthropic.
+
+90
+00:16:41.860 --> 00:16:45.019
+iPhone: So, which one would be the better LLM?
+
+91
+00:16:46.760 --> 00:16:59.029
+Danny Malter: We'll talk about language models in future office hours a little bit more in depth. You know, there isn't, when it comes to language models, getting off topic a little bit here, but when it comes to language models, what I typically stress to people is
+
+92
+00:16:59.040 --> 00:17:10.409
+Danny Malter: don't assume that one model is just, like, the best model. Now, in general, yeah, GPT models, ChetGPT is a pretty good all-purpose model that probably does
+
+93
+00:17:10.640 --> 00:17:22.110
+Danny Malter: 80-90% of users' needs, but if you have very specific problems, like maybe you're… you have a coding problem, okay, Cloud Opus, I find to be, do a very good job.
+
+94
+00:17:22.770 --> 00:17:32.289
+Danny Malter: If you have more of a reasoning model, a reasoning use case you're trying to solve for, there are other models that do better at reasoning. There's other models that do better at computer vision.
+
+95
+00:17:33.270 --> 00:17:39.589
+Danny Malter: Claude has some computer vision models. GPT has separate computer vision models as well.
+
+96
+00:17:39.900 --> 00:17:44.529
+Danny Malter: And then Meta, I know, has a good… has a good vision model as well, called Meta Maverick, so…
+
+97
+00:17:44.660 --> 00:18:00.320
+Danny Malter: we need to consider those when we're deciding on which model to use, and then also it comes down to cost a little bit. So, within the COD world, for example, you know, COD just released COD Fable, which is their new, like, top-of-the-line
+
+98
+00:18:00.320 --> 00:18:13.329
+Danny Malter: top-shelf model, Claude Fable also runs through tokens very quickly. So, maybe Claude Fable and Claude Sonnets both do the same thing for your use case.
+
+99
+00:18:13.370 --> 00:18:28.540
+Danny Malter: okay, it's gonna make sense to use Cloud Sonnet in that use case. Maybe, though, Cloud Fable does a little bit better than Cloud Sonnet for your use case. So maybe you consider the extra token cost, because you're getting the extra value out of Cloud Fable versus Cloud Sonnet.
+
+100
+00:18:28.540 --> 00:18:33.709
+Danny Malter: So, I can't say use Gemini or use COD, but what I can say is
+
+101
+00:18:34.570 --> 00:18:51.800
+Danny Malter: you know, don't… don't just assume that one model's always going to be the best. And I'll be the first to admit, I'm totally all in on the Anthropic cloud world, and it's hard to sort of get out of that. It's like, you know, if you're a Gmail user, you're never going to switch to another mail server.
+
+102
+00:18:51.800 --> 00:18:58.580
+Danny Malter: sort of the same, that's why they tried so hard to trap people in to begin with, but I find, in general, the Anthropic model is overall
+
+103
+00:18:58.910 --> 00:19:06.560
+Danny Malter: do a very good job for my use cases, and then I pick and choose between Cloud Opus and Sonnet and Fable based on my needs.
+
+104
+00:19:08.380 --> 00:19:09.760
+iPhone: Okay, thank you, Danny.
+
+105
+00:19:15.680 --> 00:19:39.790
+Danny Malter: All right, let's keep moving on. So, second stage here, we have the business process, broken down by the strategic, where AI can strengthen the company's competitive position, and then the operational, where AI can improve day-to-day. So, strategic, some considerations here, we have the best products player, so offer AI built on the best technology possible, and this goes a little bit to that conversation, I guess, is
+
+106
+00:19:39.830 --> 00:19:51.329
+Danny Malter: Is when we think about building solutions, if we're going to be using language models in our solution, we absolutely should be considering building our product in a way that we can easily
+
+107
+00:19:51.390 --> 00:20:02.309
+Danny Malter: ingest a new language model into the future. Or maybe we use a combination of different language models and average those results out as one overall result.
+
+108
+00:20:02.360 --> 00:20:25.869
+Danny Malter: Sometimes we have a tiered approach. So maybe one language model does step one, and then we use the results of step one and feed that into language model number two. So an example of that might be doing some type of data analysis. Maybe first we have the language model come up with the SQL to write the code, and then we get the results of the SQL and feed that into a new language model to get the analysis
+
+109
+00:20:26.000 --> 00:20:27.240
+Danny Malter: Of that result.
+
+110
+00:20:27.710 --> 00:20:39.850
+Danny Malter: Total customer… total customer solutions player, so combining AF features to make the product most useful to target customers, and then, network externalities is a concept we'll talk about.
+
+111
+00:20:39.850 --> 00:20:48.289
+Danny Malter: around week 7, I believe. So as we think about building and designing our product, as users
+
+112
+00:20:48.340 --> 00:21:04.499
+Danny Malter: touch and interact with our products in different ways, what are other considerations that we're going to need to take into account? How are we going to scale our products, maybe? What other features might come with network externalities that we hadn't necessarily considered in the first place?
+
+113
+00:21:04.760 --> 00:21:21.289
+Danny Malter: And then on the operational side, a couple considerations here, determining the business process, so, you know, where AI is actually going to add the most benefits, and then, measurable gains. How are we actually going to improve speed and accuracy? And I will say, when it comes to
+
+114
+00:21:22.080 --> 00:21:32.760
+Danny Malter: when it comes to AI models specifically, especially for those that have maybe integrated Anthropic, Claude into your business and the teams.
+
+115
+00:21:33.650 --> 00:21:37.900
+Danny Malter: I don't think there is a great way now to measure… now, like.
+
+116
+00:21:37.900 --> 00:22:00.970
+Danny Malter: I can say with certainty that Cod, I could do a lot more with COD, and the speed at what I can move is… is just astronomically faster than what it used to be, but it's hard to put an actual number to how much faster, how much better am I because of COD? So I'm pretty curious to hear if other people have opinions on that, better ways to measure.
+
+117
+00:22:00.970 --> 00:22:07.559
+Danny Malter: I do think it's a struggle for a lot of companies. They're starting to realize, maybe, that they're investing a lot of money
+
+118
+00:22:07.610 --> 00:22:19.969
+Danny Malter: into Cloud or OpenAI integrated into their company, and then the CFO goes and asks, what's the value that we're getting out of this, and it's hard to actually come up with specific answers. Now.
+
+119
+00:22:19.970 --> 00:22:27.909
+Danny Malter: Now, that's on the AI, the language model side. With machine learning, maybe you're building a traditional machine learning model.
+
+120
+00:22:27.910 --> 00:22:42.649
+Danny Malter: Now, when it comes to a traditional machine learning model, I'll stick with the same example, credit scoring. Now, we can actually go and measure, okay, how well is our model doing today versus how well it did a year ago? Or maybe we run some A-B tests.
+
+121
+00:22:42.650 --> 00:23:04.240
+Danny Malter: where you build a recommendation model for our website, for a company like Amazon, we could actually run an A-B test to see, okay, these people came to our website off the default, what our UX designers thought were the best products to show. These people came with what the recommendation model showed, and we could actually measure the monetary value, the
+
+122
+00:23:04.300 --> 00:23:14.129
+Danny Malter: the amount of additional people, maybe the amount of time people spend on our website based on the results of our machine learning model by doing some type of A-B testing.
+
+123
+00:23:17.270 --> 00:23:38.330
+Danny Malter: Alright, third stage here, technology. So, we'll talk about, in this course, the IP associated. So, if you're going to go out and use a language model, now, all the IP really is in that language model, but where you can maybe add your own IP would be maybe a creative architecture of how to use that specific model.
+
+124
+00:23:38.330 --> 00:23:41.039
+Danny Malter: On your own proprietary data.
+
+125
+00:23:41.040 --> 00:23:56.709
+Danny Malter: So, we'll talk in this course about concepts like RAG models, retrieval, augmented generation, and an example of a RAG model would be building a chatbot off of your own proprietary data. So, with a RAG model, maybe you go out and use
+
+126
+00:23:57.070 --> 00:24:11.469
+Danny Malter: Claude, for example, as the base model. Now, you didn't train Claude, you didn't build Claude, anyone else could go use Claude as well, but nobody else can go use Claude and build a RAG model on your own proprietary data, assuming your data is proprietary.
+
+127
+00:24:11.470 --> 00:24:21.700
+Danny Malter: So, if you were, for example, to build a chatbot on your data, that is how we can take a language model and turn it into a little bit more of your own intellectual property.
+
+128
+00:24:21.900 --> 00:24:28.520
+Danny Malter: That's on the AI side. Now, I always try to bring stuff to both the AI language models, as well as machine learning.
+
+129
+00:24:28.740 --> 00:24:41.959
+Danny Malter: When it comes to machine learning, you're likely training your own and building your own models that nobody else can go out and just use that model, because you specifically train that model against your own data.
+
+130
+00:24:42.160 --> 00:24:52.789
+Danny Malter: And then the data approach, so what data is available to us? Do we need to go out and purchase data? Do we need to go work with another team in our company to access data?
+
+131
+00:24:52.790 --> 00:25:02.410
+Danny Malter: are we allowed to use this data? Does it contain PII? Maybe you can't actually use that for any type of machine learning because of HIPAA or GDPR laws.
+
+132
+00:25:02.410 --> 00:25:19.209
+Danny Malter: maybe if you're a global company, you're allowed to use U.S. data only in the US, European data only in Europe, and so on. So, IP, and then the data approach as far as the AI technology. When it comes to technology, we'll also cover my office hours.
+
+133
+00:25:19.520 --> 00:25:39.090
+Danny Malter: compute resources as well, so I talked about that a little bit earlier, but if you're going to train your own machine learning models, things to consider would be, where's this model going to be trained? Can we train it on our local computer? Do we need to rent out a GPU? Is it a neural network? If so, we likely need a GPU, and so on.
+
+134
+00:25:41.390 --> 00:26:00.489
+Danny Malter: Fourth stage here, we have the software development. So, you know, this is an interesting one, because obviously with Claude and AI coding, a lot has changed in the world of software development in the last two years. I'll say at my company, probably 99, if not 100%, of code now is being written by Claude.
+
+135
+00:26:00.490 --> 00:26:13.469
+Danny Malter: Took a little bit of time to get there, but I think for the most part, everybody's fully on board with writing code with Cloud. It just does a better job, it goes faster, and there's downsides to AI code as well, but
+
+136
+00:26:13.470 --> 00:26:20.260
+Danny Malter: in general, I think the upside is well worth it. When it comes to implementing AI and machine learning models.
+
+137
+00:26:20.710 --> 00:26:35.299
+Danny Malter: from a software development standpoint, it's important to consider, you know, is this code usable? Especially if we're going to try to release a model into production. Well, we need our code to be written efficiently, smartly.
+
+138
+00:26:35.300 --> 00:26:46.789
+Danny Malter: Can somebody else maybe come in and understand our code? Well, nowadays, maybe Claude can always help that person in the future understand the code. If we're releasing it, maybe into a product.
+
+139
+00:26:46.790 --> 00:26:54.610
+Danny Malter: Perhaps we need to build an API around our model. So, just as an example, when you go onto Amazon.com.
+
+140
+00:26:55.160 --> 00:27:06.410
+Danny Malter: And I like to use Amazon as an example, just because we've all probably been there. You go onto Amazon.com, you are seeing specific recommendations to you, likely based off of some type of recommendation model.
+
+141
+00:27:06.410 --> 00:27:19.259
+Danny Malter: Well, what that means is, as soon as you hit Amazon, there's some user ID associated to your login, they run their model, and within a millisecond, they're spitting out, probably, responses, which are the recommendations that you see.
+
+142
+00:27:19.260 --> 00:27:28.369
+Danny Malter: So, similarly, maybe in your product, you have some type of machine learning model where when a user comes onto your application or your website.
+
+143
+00:27:28.370 --> 00:27:37.860
+Danny Malter: Boom, the model goes off and runs, maybe 100, 200 milliseconds for that model to run, and then the user sees what that result is. Maybe the result is,
+
+144
+00:27:38.000 --> 00:27:47.180
+Danny Malter: no credit approval, yes or no, you got approved or not. Maybe it's some type of identity approval. It could be any type of machine learning model in that use case.
+
+145
+00:27:50.020 --> 00:28:07.059
+Danny Malter: Risks here, things to consider, software… so the… from a software development side, adversarial attacks and lack of generalization, so that could… specifically with AI coding, sometimes AI code could generalize a little bit more, or make assumptions.
+
+146
+00:28:07.060 --> 00:28:10.830
+Danny Malter: That human developers maybe otherwise would have considered.
+
+147
+00:28:10.830 --> 00:28:29.160
+Danny Malter: And then AI cancer, so unallied growth, you know, draining the system over time, or as I mentioned a little bit earlier, maybe engineering and business not necessarily aligned perfectly with what the products at hand should really be doing, or what the users are intending.
+
+148
+00:28:29.160 --> 00:28:36.670
+Danny Malter: One topic that I like to bring up in my office hours, as we think about AI, and especially around software development.
+
+149
+00:28:36.790 --> 00:28:47.339
+Danny Malter: Is right now, we live in this world where we have product owners, and a lot of people that take this course tend to be product owners, or maybe project managers, and we have our software developers.
+
+150
+00:28:47.420 --> 00:28:57.799
+Danny Malter: And, you know, the software developers are writing the code, they're probably using cloud code. The project managers are managing the work, writing the Jira tickets, making sure the work gets done.
+
+151
+00:28:58.100 --> 00:29:09.920
+Danny Malter: I am of the strong belief that these two roles need to merge in the future, or I should say, the best people, the best employees in the next few years will be the ones that have
+
+152
+00:29:09.970 --> 00:29:14.650
+Danny Malter: The business understanding that a good project manager might have.
+
+153
+00:29:14.680 --> 00:29:33.350
+Danny Malter: And also, some aspect of technical skills that they can at least do a little bit of coding with a tool like Cloud. Now, we might always need at least a few very well software developers to do the final 5% for releasing code into production, but
+
+154
+00:29:33.660 --> 00:29:35.589
+Danny Malter: Having software developers
+
+155
+00:29:36.850 --> 00:29:49.530
+Danny Malter: I'd say a software developer that doesn't understand the business, but is using Claude, can maybe finish their work faster, but they're still only doing the work that they were provided to do, maybe in that two-week sprint.
+
+156
+00:29:49.540 --> 00:30:03.849
+Danny Malter: Versus a software developer that understands the business and can think a little bit outside the box can also work faster, but also do things beyond maybe what just the general tasks they were provided to do over a two-week sprint.
+
+157
+00:30:05.750 --> 00:30:25.459
+Danny Malter: So, and Raphael says, definitely not the first time I heard this predicted hybrid role. So, and the reason why I say that is because, you know, I am not a trained self-developer myself. I've used Cloud to build websites, and do things way beyond I ever would have done, or necessarily had interest to do, and I do find enjoyment doing coding in Cloud, but
+
+158
+00:30:25.460 --> 00:30:28.230
+Danny Malter: I… I…
+
+159
+00:30:28.290 --> 00:30:50.299
+Danny Malter: you know, like, right now, I understand… in my company, I understand the business so well that I could use Cloud to maybe get us 90, 95% of the way there, and then hand it off… what I've done is hand it off to our software developers, and they literally finish off the 5%. I… sometimes I wish my software developers would just think a little bit more outside the box, or understand a business where they could just go do that on their own, but…
+
+160
+00:30:50.340 --> 00:30:54.799
+Danny Malter: Either way, that's what I think the most valuable employees will be in the next few years.
+
+161
+00:30:55.690 --> 00:31:01.820
+Danny Malter: Alright, before I change topics here, any questions, comments from any of the previous slides?
+
+162
+00:31:05.900 --> 00:31:10.860
+Danny Malter: I do always like when office hours are interactive, so please, if you do have questions, feel free to ask.
+
+163
+00:31:14.030 --> 00:31:20.109
+Chris Chay: And then, I did have a question. If we have multiple ideas.
+
+164
+00:31:20.400 --> 00:31:33.240
+Chris Chay: For the… for, like, different projects and whatnot. Can we submit multiple, like, workbooks so that we get feedback on… on the different ones?
+
+165
+00:31:33.930 --> 00:31:38.899
+Danny Malter: So the only feedback that you'll be provided is going to be on the final capstone project.
+
+166
+00:31:39.350 --> 00:31:50.989
+Danny Malter: Weeks 1 through 8, or there's… well, there's not a required workbook in every module. You can review the orientation. I think it's weeks 1, 5, 6, 7, and 8, and 9, maybe?
+
+167
+00:31:50.990 --> 00:31:52.389
+Chris Chay: Yeah, it's limited, right.
+
+168
+00:31:52.790 --> 00:32:11.640
+Danny Malter: Those are going to be the weeks with required modules, and those have very specific prompts to follow. Week 9 will be the final capstone, which will be an option to work on a product of your choice. Now, some of the previous assignments might allow you to focus a little bit more on your product of your choice, but not all of them necessarily do.
+
+169
+00:32:12.360 --> 00:32:14.989
+Danny Malter: The final capstone, though, absolutely does.
+
+170
+00:32:15.360 --> 00:32:19.469
+Danny Malter: And you will be provided feedback on the capstone if it's submitted on time.
+
+171
+00:32:21.070 --> 00:32:21.680
+Chris Chay: So…
+
+172
+00:32:21.940 --> 00:32:25.440
+Anne Moon: Oh, go ahead, Chris, and then I'll jump on to yours, if that's okay, after.
+
+173
+00:32:25.630 --> 00:32:31.419
+Chris Chay: Yeah, sure. So, then, at least for the capstone, can we submit multiple capstone projects?
+
+174
+00:32:33.060 --> 00:32:40.210
+Danny Malter: I guess? Yeah, I mean, I don't see why not.
+
+175
+00:32:40.680 --> 00:32:41.909
+Chris Chay: Okay. I mean, because.
+
+176
+00:32:41.910 --> 00:32:43.970
+Danny Malter: I've never had anyone do that before.
+
+177
+00:32:43.970 --> 00:33:02.560
+Chris Chay: Yeah, because I think the… I mean, the course content is excellent, and I get that only few of the workbooks are required, hence, like, a grade, but I think the feedback from you guys is really, I think, one of the most precious things that I think we can take away from this course, so I would appreciate that. Great. All right, thanks, Danny.
+
+178
+00:33:03.590 --> 00:33:04.650
+Danny Malter: And.
+
+179
+00:33:04.650 --> 00:33:07.530
+Anne Moon: Okay, so I have a quick question on that workbook.
+
+180
+00:33:07.640 --> 00:33:25.329
+Anne Moon: and maybe it's just the way it's worded, you know, there's several questions within it, but it said, you know, 150 words. Is it only… is it 150 words for the whole… every… is it individually 150 words for each answer, or is it for the whole workbook? I'm trying to stay within.
+
+181
+00:33:25.330 --> 00:33:26.800
+Danny Malter: I don't,
+
+182
+00:33:26.800 --> 00:33:27.980
+Anne Moon: That was a little confusing.
+
+183
+00:33:28.020 --> 00:33:35.980
+Danny Malter: Yeah, that tends to come up, and they haven't fixed that. I think probably 150 words… what's 150 words? Probably…
+
+184
+00:33:36.490 --> 00:33:39.239
+Danny Malter: each response, I wanna say?
+
+185
+00:33:39.570 --> 00:33:49.219
+Anne Moon: So, that's what I assumed, but when I used the chatbot to ask, it actually said 150 total, and I'm like, what am I writing? Two words per…
+
+186
+00:33:49.220 --> 00:33:50.150
+Danny Malter: Oh, yeah.
+
+187
+00:33:50.150 --> 00:33:58.250
+iPhone: Sorry for the interruption, I have asked this question, you were right, like, it is for, each question 150 words.
+
+188
+00:33:59.050 --> 00:34:03.030
+Anne Moon: Yeah, but when I asked the chatbot, it told me total, so I thought…
+
+189
+00:34:03.030 --> 00:34:06.220
+Danny Malter: Oh, the, Canvas chatbot, you're saying?
+
+190
+00:34:06.220 --> 00:34:07.030
+Anne Moon: Yeah,
+
+191
+00:34:07.030 --> 00:34:07.630
+Danny Malter: Yeah.
+
+192
+00:34:08.170 --> 00:34:20.339
+Danny Malter: Yeah, I'll take that back and try to get them to be more specific, but yeah, I would say 150. In general, when it comes to the assignments, the space they provide you, I'd say, is probably sufficient.
+
+193
+00:34:20.630 --> 00:34:27.190
+Danny Malter: You know, like, whether you want to do sentences or bullet points, it doesn't really matter, as long as you're getting it across.
+
+194
+00:34:27.550 --> 00:34:28.890
+Anne Moon: Content-wise. Okay.
+
+195
+00:34:30.790 --> 00:34:31.790
+Anne Moon: Thank you.
+
+196
+00:34:31.790 --> 00:34:32.350
+Danny Malter: Yo.
+
+197
+00:34:33.560 --> 00:34:34.900
+Danny Malter: Anything else?
+
+198
+00:34:35.350 --> 00:34:37.209
+Antonio Bulcão: Yeah, I had a question, sorry.
+
+199
+00:34:37.659 --> 00:34:39.809
+Antonio Bulcão: I, I, I…
+
+200
+00:34:39.940 --> 00:34:55.209
+Antonio Bulcão: Nice, thank you for the office hours. I'm from a non-technical background, so I'm first-time coding because of blood and everything else. And you started talking about maybe we're gonna get into more detail as the course advances, but…
+
+201
+00:34:55.420 --> 00:34:58.989
+Antonio Bulcão: I… I have a very hard time
+
+202
+00:34:59.740 --> 00:35:06.189
+Antonio Bulcão: knowing how much effort, I mean, Claude is going to take to develop something that
+
+203
+00:35:06.420 --> 00:35:23.500
+Antonio Bulcão: I want them to develop, right? So I start, and then I don't know how much time it's gonna finish, how much tokens it's gonna take, and then you start asking about budgeting. Is there… how do we start thinking about budgeting, or knowing, at least ballpark?
+
+204
+00:35:23.810 --> 00:35:25.270
+Antonio Bulcão: How much time?
+
+205
+00:35:25.270 --> 00:35:25.760
+Danny Malter: I mean.
+
+206
+00:35:25.760 --> 00:35:26.510
+Antonio Bulcão: Tokens, these things.
+
+207
+00:35:26.510 --> 00:35:30.809
+Danny Malter: Things can be done very cheap, so, like, where tokens…
+
+208
+00:35:31.640 --> 00:35:37.000
+Danny Malter: start to matter, maybe more, is if you're making an API call out.
+
+209
+00:35:37.060 --> 00:35:46.359
+Danny Malter: to Claude, so, like, maybe in your live product, as people hit your website, you're making an API call to Anthropic or OpenAI,
+
+210
+00:35:46.420 --> 00:36:00.890
+Danny Malter: there you would maybe want to consider tokens a little bit more. For your use case, if you're trying to build something and do cloud code, I would recommend to you all spend $20, $20 on the Cloud Pro plan.
+
+211
+00:36:01.050 --> 00:36:19.670
+Danny Malter: And with COD Pro, you know, the only thing you're tracked on are tokens, and if you run out of… if you maximize your tokens, because you're just churning through code over a specific period of time, all that's going to happen is Anthropic says, you know, you can't use this model for the next 12 hours, or something, until.
+
+212
+00:36:19.670 --> 00:36:23.239
+Antonio Bulcão: Yeah, yeah, I got it, but… so…
+
+213
+00:36:23.540 --> 00:36:34.759
+Antonio Bulcão: I probably… I'm probably very, very inefficient in terms of token use, because I probably go back and forth on specs and everything else that I ask him to do. But then, yeah, I'm running…
+
+214
+00:36:34.950 --> 00:36:43.400
+Antonio Bulcão: there are some things that, like, take days, and I wish I knew how to know and plan around how much time it would take because of the.
+
+215
+00:36:43.400 --> 00:36:45.210
+Danny Malter: Do you know which model you're using?
+
+216
+00:36:45.860 --> 00:36:47.659
+Antonio Bulcão: I use Claude, and…
+
+217
+00:36:47.660 --> 00:36:50.210
+Danny Malter: Do you know which cloud model? Do you know which cloud model?
+
+218
+00:36:50.430 --> 00:36:56.600
+Antonio Bulcão: I make it delegate to make plan with Opus or Fable, and then execute with…
+
+219
+00:36:56.600 --> 00:37:14.980
+Danny Malter: Because Fable will turn through tokens, like, Fable, you'll turn through tokens in, like, a minute. I would recommend sticking with Opus, probably for most Cloud cases. If you're ha- if Opus is having a lot of trouble on something, I would maybe move to try Fable just for that use case, then move back to Opus.
+
+220
+00:37:16.440 --> 00:37:23.550
+Danny Malter: So, I… I haven't found that on the Claude… pro plan…
+
+221
+00:37:23.740 --> 00:37:40.879
+Danny Malter: if you're coding efficiently for the most case, you probably shouldn't necessarily have running out of tokens. Now, you definitely can be, like, I've been there before, where you're just in product development mode, and you do run out of tokens, but at the very least, it's like…
+
+222
+00:37:40.980 --> 00:37:53.029
+Danny Malter: you know, maybe for a couple hours until your tokens reset in that case. So, just for anyone out there, if you're interested in doing some coding of your own, again, I would recommend spend $20 on the Cloud Pro plan.
+
+223
+00:37:53.030 --> 00:37:55.710
+Danny Malter: Cod… Code with Cod Opus.
+
+224
+00:37:55.710 --> 00:38:14.849
+Danny Malter: You can code inside of the Cloud desktop application. I know I'm saying a lot of Cloud, Claude, Claude words, but Cloud has a desktop application that you can download to your computer. You can use Cloud Code within other tools as well, like VS Code, if you're more familiar with coding, but you can just use the application directly on your computer as well, and build stuff.
+
+225
+00:38:16.080 --> 00:38:19.650
+Danny Malter: So, I don't know, Antonio, hopefully, maybe that helps a little bit, you know, if it doesn't.
+
+226
+00:38:19.650 --> 00:38:24.889
+Antonio Bulcão: Yeah, I think I'm a little bit further on the tinkering side. I've been
+
+227
+00:38:25.090 --> 00:38:28.130
+Antonio Bulcão: messing around with Claude and Codex, and I'm…
+
+228
+00:38:28.390 --> 00:38:39.629
+Antonio Bulcão: But I just wanted to know if there's a way to… someone put the question in here in the chat, so… is there a way that we can know the token cost before starting a project? So that's…
+
+229
+00:38:39.820 --> 00:38:56.740
+Antonio Bulcão: I have no idea if something's gonna take very long, and sometimes it's taking too long, and I interrupt Todd and say, you're taking too long, and then he says, yeah, I… yeah, I was doing something I exaggerated, and comes back to Earth. So it's,
+
+230
+00:38:56.740 --> 00:38:57.170
+Danny Malter: I don't know that…
+
+231
+00:38:57.170 --> 00:38:58.210
+Antonio Bulcão: Pretty hard to know.
+
+232
+00:38:58.210 --> 00:39:04.290
+Danny Malter: know what the token cost is gonna be, because every project's a little bit different, but you could also add,
+
+233
+00:39:04.580 --> 00:39:16.629
+Danny Malter: you know, especially if COD is maybe trying to spit up agents, you can give COD rules. So maybe you build a, like, there's skills in COD, or maybe you prompt at the beginning that, like, I don't want you to ever…
+
+234
+00:39:16.880 --> 00:39:28.540
+Danny Malter: think for more than 30 seconds, or I don't want you spinning up extra agents, like, just do the task at hand, and stay focused. That possibly might help you as well.
+
+235
+00:39:29.410 --> 00:39:42.789
+Antonio Bulcão: Yeah, well, I'm certain that experienced software developers are much more productive and efficient than someone non-technical like me. I just was wondering if there's any tips, like, what do these guys do that
+
+236
+00:39:42.930 --> 00:39:47.110
+Antonio Bulcão: They're probably much more productive and efficient on tokens than.
+
+237
+00:39:47.110 --> 00:39:54.390
+Danny Malter: Well, the… the Enterprise plans, they give you a lot more tokens, too, so that's definitely one. You don't have… you almost, like…
+
+238
+00:39:54.480 --> 00:40:14.460
+Danny Malter: if you're on the Enterprise plan with Anthropic, which is maybe $200 a month, I think, for the Enterprise Pro plan, which is relatively cheap per seed for a company, for the value you get out of it, you almost don't even need to think about token cost being efficient, because they give you access to so many more tokens than the Pro plan does.
+
+239
+00:40:15.820 --> 00:40:27.200
+Danny Malter: So it's an interesting point you make. I guess the point I'm trying to make is, because they give you access to so many more, and again, I'm not a trained software developer, but you almost don't even need to think about it as much, because it's never…
+
+240
+00:40:27.430 --> 00:40:34.119
+Danny Malter: I rarely have heard it be an issue of any developers on my team that they've ran out of tokens on the Enterprise plan.
+
+241
+00:40:35.060 --> 00:40:41.420
+Antonio Bulcão: I think I'm using too much of the time, but I'm on the $100 plan, and I really.
+
+242
+00:40:41.420 --> 00:40:42.200
+Danny Malter: Oh, really?
+
+243
+00:40:42.200 --> 00:40:43.830
+Antonio Bulcão: So, 5-hour window.
+
+244
+00:40:43.830 --> 00:40:44.300
+Danny Malter: That's…
+
+245
+00:40:44.300 --> 00:40:46.140
+Antonio Bulcão: So that's why I'm not.
+
+246
+00:40:46.140 --> 00:40:55.779
+Danny Malter: If you're on the $100 plan, that changes my thought, but yeah, maybe we'll follow it up next office Hour, but I would say just stay off of Fable as much as possible, because that alone just churns up a lot.
+
+247
+00:40:55.780 --> 00:40:56.590
+Antonio Bulcão: Yeah, okay, thanks.
+
+248
+00:40:56.590 --> 00:41:03.740
+Danny Malter: Okay, I'm just going through the chat quickly…
+
+249
+00:41:06.830 --> 00:41:17.160
+Danny Malter: I come from med tech background, don't have a detailed project, can I submit a hypothetical case now for week one? Yeah, absolutely. Doesn't have to be what you're gonna focus on in the capstone.
+
+250
+00:41:19.220 --> 00:41:24.280
+Danny Malter: I'm using Cloud Code plus DeepSeek on VS Code.
+
+251
+00:41:25.190 --> 00:41:34.129
+Danny Malter: is around $8. Yeah, I mean, it's hard to say what a total project's gonna be, but, like, these models are relatively cheap nowadays, overall.
+
+252
+00:41:36.840 --> 00:41:41.380
+Danny Malter: Yeah.
+
+253
+00:41:42.020 --> 00:41:51.980
+Danny Malter: Okay, and like, one other thought, just one other thought, too, and then we'll move on, is, you know, there's better open source models now, too, so,
+
+254
+00:41:51.990 --> 00:42:03.980
+Danny Malter: Meta, for example… well, there's better small language models, I should say. So Meta has open-sourced all of their language models, which really just means you can use that model for free.
+
+255
+00:42:04.080 --> 00:42:11.220
+Danny Malter: And they're trying their best to allow you to use these language models on your local machines.
+
+256
+00:42:11.220 --> 00:42:27.420
+Danny Malter: in a relatively efficient manner. So it's going to be interesting over the next couple years as the smaller language models start to get better. Now, we're not nearly at a place yet where the small language models are nearly as good as, you know, the cod opuses of the world. There's still a lot of value to why you would pay
+
+257
+00:42:27.420 --> 00:42:36.959
+Danny Malter: Anthropic and OpenAI for the better models if you're doing things like code, but for your everyday use case, you know, you just want to summarize your emails.
+
+258
+00:42:37.270 --> 00:42:54.779
+Danny Malter: you probably, honestly, could get away with some small language models that you could just download to your local machine. And they're relatively clunky right now, too, so I'm not suggesting that's something that you necessarily, absolutely want to do, but we're… we're probably not far from the day where there's a language model on your machine. And I know Apple
+
+259
+00:42:55.660 --> 00:43:03.559
+Danny Malter: I'm not sure about Google and Samsung. I would assume they're, if not doing this, going to be doing this sometime soon, but at least on the…
+
+260
+00:43:03.650 --> 00:43:18.420
+Danny Malter: on the latest iPhone and the new iPhone coming out, I think, next week, the new Siri is supposedly a Google language model that's deployed specifically on your machine to do things like, hey, can you go and summarize the last, you know.
+
+261
+00:43:18.420 --> 00:43:34.070
+Danny Malter: text messages that I had with this person. So you're not actually making a call out to OpenAI or Cloud, and I think they're going to give you the ability to do that in the newest iOS coming out, from what I've seen, but there's going to be an actual language model on your local machine.
+
+262
+00:43:34.600 --> 00:43:45.430
+Danny Malter: So that'll really be… I don't know if it'll be a game changer. Do you really need a Siri to summarize your text messages? I don't know, but we'll see what comes from that.
+
+263
+00:43:47.050 --> 00:43:56.490
+Danny Malter: Alright, we have about 15 minutes left. Let me go through for about 10 more minutes, and then I'll open it up. Just wanted to quickly touch on some machine learning, high-level.
+
+264
+00:43:56.490 --> 00:43:57.530
+Samson Tsav: Hello, Danny.
+
+265
+00:43:57.980 --> 00:43:59.510
+Danny Malter: Yeah, hey there.
+
+266
+00:44:00.070 --> 00:44:02.869
+Samson Tsav: Yeah, this is Samson here. I just have a quick question.
+
+267
+00:44:03.080 --> 00:44:03.510
+Danny Malter: Sure.
+
+268
+00:44:04.260 --> 00:44:10.909
+Samson Tsav: you know… All the AI systems we're building nowadays are being embedded in softwares.
+
+269
+00:44:11.030 --> 00:44:14.810
+Samson Tsav: the traditional softwares that you have. So, is there a need for…
+
+270
+00:44:15.120 --> 00:44:23.489
+Samson Tsav: someone working in the AI industry to partner with the software, a typical software engineer, so that they will produce a final product.
+
+271
+00:44:25.660 --> 00:44:30.070
+Danny Malter: Sorry, can you repeat that? Is there… is there a need for somebody with
+
+272
+00:44:30.190 --> 00:44:33.580
+Danny Malter: AI to partner with a software engineer?
+
+273
+00:44:34.460 --> 00:44:42.459
+Samson Tsav: Yes, someone who is basically in the air engineering space, working alongside the software engineer to come up with the product.
+
+274
+00:44:50.460 --> 00:44:54.310
+Danny Malter: When you see AI engineer, like, what do you think in there? How do you define that?
+
+275
+00:44:55.640 --> 00:45:00.009
+Samson Tsav: As someone who basically works with the foundation models.
+
+276
+00:45:01.300 --> 00:45:09.550
+Samson Tsav: Maybe I'm just… I'm just good at working with calling APIs in the foundation models while somebody else, builds a traditional application.
+
+277
+00:45:10.300 --> 00:45:28.129
+Danny Malter: Yeah, definitely. I mean, I'll give you an example on my team. I can't get into specifics, but, you know, I have machine learning engineers on my team, which, maybe in your definition, AI engineer, where we have… we build machine learning models, and then we work with our software developers to take the results of our models, and maybe they go and
+
+278
+00:45:28.130 --> 00:45:32.540
+Danny Malter: Implement them directly into our website or into our product that our users might interact with.
+
+279
+00:45:33.740 --> 00:45:37.890
+Danny Malter: So, today, absolutely, there's still a need for both those to be working together.
+
+280
+00:45:39.180 --> 00:45:41.470
+Samson Tsav: Alright, thank you very much, Daniel.
+
+281
+00:45:41.470 --> 00:45:42.030
+Danny Malter: Yo.
+
+282
+00:45:42.550 --> 00:45:43.680
+Danny Malter: ATWA, go ahead.
+
+283
+00:45:46.110 --> 00:45:56.490
+ATWA NAIL OTHMAN - Robovisor: Yes, I have a question. So, I do have a project that I've been working on it for a while. I mean, it's a product, it's not my startup.
+
+284
+00:45:57.120 --> 00:45:59.819
+ATWA NAIL OTHMAN - Robovisor: And can that be used?
+
+285
+00:46:00.890 --> 00:46:03.630
+ATWA NAIL OTHMAN - Robovisor: As the project for the course?
+
+286
+00:46:04.410 --> 00:46:16.779
+Danny Malter: Yeah, yeah, the intent of the, you know, any assignment that focuses on you choosing a product, the intent of this course is for you to get the most value out of the course, so we absolutely encourage you to,
+
+287
+00:46:16.780 --> 00:46:28.630
+Danny Malter: to do a product, project of your choice, and I'll say everything submitted in this course stays in the course only. It's, you know, I'm… my eyeballs, or the other program leaders' eyeballs, are the only ones that are going to be seeing, your submissions.
+
+288
+00:46:29.900 --> 00:46:39.749
+ATWA NAIL OTHMAN - Robovisor: Okay, and… in that case… Like, working on the assignment here, like, some questions are…
+
+289
+00:46:40.310 --> 00:46:49.150
+ATWA NAIL OTHMAN - Robovisor: Are a path to the project, you know, like, things that we went over already, or in a different stage.
+
+290
+00:46:49.440 --> 00:46:54.079
+ATWA NAIL OTHMAN - Robovisor: What is the recommended approach for that?
+
+291
+00:46:56.620 --> 00:47:00.320
+Danny Malter: Is that something that you've already completed in the real world?
+
+292
+00:47:00.620 --> 00:47:01.410
+ATWA NAIL OTHMAN - Robovisor: Yes.
+
+293
+00:47:02.860 --> 00:47:09.500
+Danny Malter: I think it's fine, I mean, I would say, like, if… If,
+
+294
+00:47:10.790 --> 00:47:15.249
+Danny Malter: I don't know the exact question off the top of my head, but I mean, I would say if it's…
+
+295
+00:47:17.950 --> 00:47:35.989
+Danny Malter: don't do it just to submit the response and, like, get a passing grade. If it's part of the actual, like, process of your answer, then I think it's totally fine. If it's already… if it's a real-world thing you've been working on, and you already completed that part, and you just want to explain as part of your submission how you did that, I think that's fine.
+
+296
+00:47:37.160 --> 00:47:37.900
+ATWA NAIL OTHMAN - Robovisor: Okay.
+
+297
+00:47:38.180 --> 00:47:44.139
+ATWA NAIL OTHMAN - Robovisor: And a question of the assignment here in regards to…
+
+298
+00:47:45.060 --> 00:47:52.640
+ATWA NAIL OTHMAN - Robovisor: The data wasn't clear for me, let me see if I can, let me get here…
+
+299
+00:47:54.950 --> 00:48:02.050
+ATWA NAIL OTHMAN - Robovisor: Okay, choosing one of the examples, exploring the video lessons, what data approach will you use? Why is it your…
+
+300
+00:48:02.260 --> 00:48:05.230
+ATWA NAIL OTHMAN - Robovisor: Chosen approach to best suited to your case.
+
+301
+00:48:06.040 --> 00:48:12.369
+ATWA NAIL OTHMAN - Robovisor: Am I right? Is that one of the slides you just showed as well? That, it's…
+
+302
+00:48:12.620 --> 00:48:15.880
+ATWA NAIL OTHMAN - Robovisor: The two possible approaches of something,
+
+303
+00:48:16.530 --> 00:48:20.570
+ATWA NAIL OTHMAN - Robovisor: More open, or sort of closed-source system.
+
+304
+00:48:20.570 --> 00:48:25.769
+Danny Malter: Well, your data approach… let's see, where was… I mean, a data approach might be,
+
+305
+00:48:25.780 --> 00:48:40.770
+Danny Malter: you know, do we need to go out and purchase data? Do we use open source data to solve our problem? Do we already have the data? You can possibly think about where are we going to store the data? Are we already keeping it stored somewhere? Do we need to…
+
+306
+00:48:40.900 --> 00:48:48.139
+Danny Malter: put it into a database to query off of, in order to train machine learning models.
+
+307
+00:48:48.560 --> 00:49:04.839
+Danny Malter: if we want to build a chatbot, you know, you know, I wouldn't expect you to know this now, we'll talk about these concepts, but you might need to put your data into some type of embedding database, because that's what a retrieval augmented generation models use.
+
+308
+00:49:04.840 --> 00:49:05.190
+ATWA NAIL OTHMAN - Robovisor: as well.
+
+309
+00:49:05.190 --> 00:49:13.290
+Danny Malter: So that all could possibly be… I'm getting a little bit detailed, maybe, but that all possibly is part of your data approach. Maybe we need to…
+
+310
+00:49:14.480 --> 00:49:23.890
+Danny Malter: Build a freemium product, and by users using the free product we're collecting data off of that we might use for future machine learning models.
+
+311
+00:49:25.000 --> 00:49:25.950
+ATWA NAIL OTHMAN - Robovisor: I see.
+
+312
+00:49:26.260 --> 00:49:28.160
+ATWA NAIL OTHMAN - Robovisor: Okay, well, in my case, so…
+
+313
+00:49:28.790 --> 00:49:37.290
+ATWA NAIL OTHMAN - Robovisor: The product is already running, and we use, commercial models. We build the agents over them.
+
+314
+00:49:37.500 --> 00:49:38.969
+ATWA NAIL OTHMAN - Robovisor: And,
+
+315
+00:49:39.460 --> 00:49:56.340
+ATWA NAIL OTHMAN - Robovisor: the data is, what the customer provides, and the tests we make. Yes, we do, use RAG and other techniques to go over the data that the customer provides to try to get a good answer to the problem.
+
+316
+00:49:56.500 --> 00:49:58.200
+ATWA NAIL OTHMAN - Robovisor: But that's…
+
+317
+00:49:59.320 --> 00:50:06.529
+ATWA NAIL OTHMAN - Robovisor: that's why I had a little confusion here, but I think I understood what you… what you said and how you can answer it here.
+
+318
+00:50:06.730 --> 00:50:07.450
+Danny Malter: Okay.
+
+319
+00:50:07.710 --> 00:50:23.259
+Danny Malter: Let me keep moving on. Just a few slides, and then I'll stop, and we can take the rest of the time for questions. I want to quickly just talk about machine learning. We'll cover more in week two, but a little bit of a teaser here. So, if you remember from orientation, the first
+
+320
+00:50:23.840 --> 00:50:37.940
+Danny Malter: what is it, like, 4 weeks are probably heavily front-loaded on the machine learning, or on week 5, we'll spend a whole module on Gen AI concepts, and week 6 through 9 is more on the business-applied side of using these concepts.
+
+321
+00:50:38.350 --> 00:50:51.470
+Danny Malter: So, next week, we'll talk a lot about machine learning. What is machine learning? It's a branch of artificial intelligence. It's concerned about the construction and study of systems that can learn from data. So, there's two types of machine learning that we'll talk about in this course.
+
+322
+00:50:51.590 --> 00:50:55.079
+Danny Malter: Supervised machine learning is when we make predictions.
+
+323
+00:50:55.400 --> 00:51:13.039
+Danny Malter: So, you might be predicting home prices, you might be predicting who's given credit or not given credit, you might be predicting which item somebody's gonna purchase from your website, you might be predicting if there's cancer, not cancer. Those are all supervised learning problems because they're predictions.
+
+324
+00:51:13.170 --> 00:51:23.999
+Danny Malter: And then we have unsupervised learning, which is where we don't have a label, so your label would be your target variable. If you're predicting home prices, you need a historic data set of home prices.
+
+325
+00:51:24.000 --> 00:51:33.930
+Danny Malter: Well, if you don't have that field, you're not sure what you want to predict on, we could still run machine learning, but we could do what's called unsupervised learning, in which case we're most likely doing clustering.
+
+326
+00:51:34.280 --> 00:51:37.769
+Danny Malter: So, with supervised learning, as you can see on this slide.
+
+327
+00:51:37.800 --> 00:51:49.899
+Danny Malter: Typically, that's broken… well, not typically. Supervised learning is broken out into what we call regression and classification. Regression would be predicting numeric values, so home prices.
+
+328
+00:51:49.900 --> 00:52:07.130
+Danny Malter: Customer lifetime value scores, how much money somebody's maybe going to spend with you, and then classification would be predicting any type of class problem. So, is the tumor benign or malignant? Is somebody going to churn or not churn? Is somebody going to purchase a blue t-shirt or a red t-shirt from our website?
+
+329
+00:52:09.190 --> 00:52:26.630
+Danny Malter: Other supervised learning techniques, we might use neural networks, so we'll talk about neural networks in weeks 3 and 4, and why we would use a neural network versus a traditional machine learning algorithm, but neural networks are what we call black box algorithms. They do very good at making predictions.
+
+330
+00:52:26.630 --> 00:52:31.790
+Danny Malter: But they don't give a lot of explainability, if any explainability, to how we got to the results.
+
+331
+00:52:32.090 --> 00:52:51.729
+Danny Malter: And then we'll also talk about some computer vision in this course as well, in computer vision techniques, convolutional neural networks versus using, maybe, a language vision model. So an example of a computer vision model would be training a model to detect handwritten digits. This is like a 101 use case that's been around for many, many years now.
+
+332
+00:52:52.150 --> 00:53:00.549
+Danny Malter: But in this case, we upload maybe the handwritten digit of the number 2, and the model has been trained on all digits, 0 through 9.
+
+333
+00:53:00.680 --> 00:53:18.920
+Danny Malter: The final output would be, this is maybe a 90% probability, this is the number 2, maybe there's a 5% probability it's the number 7, because it maybe looks a little bit like the number 7, and so on. So because the number 2 is the highest probability, we'll predict this digit to be the number 2.
+
+334
+00:53:19.150 --> 00:53:30.639
+Danny Malter: Other real-world use cases, things like self-driving cars. Now, there's more, like, technology that goes into a self-driving car, like LiDAR detection, and I'm sure other technologies I'm not even aware of, but…
+
+335
+00:53:30.640 --> 00:53:39.289
+Danny Malter: A self-driving car is seeing and using predictive models to identify various things. Cars, traffic lights, bicycles, and so on.
+
+336
+00:53:39.350 --> 00:53:51.070
+Danny Malter: And then, you know, we've spent a lot of time talking about cancer and non-cancer. Here's an example on the right-hand side of, heart disease, and this is a use case that's been around for many years now as well.
+
+337
+00:53:51.070 --> 00:54:07.270
+Danny Malter: An interesting one we'll talk about later on, and jobs, and AI, and how AI is affecting jobs. This is one where people were saying 15 years ago, there's no reason to ever be a radiologist, because AI, machine learning is going to be doing that work. Well, at least in the U.S, all…
+
+338
+00:54:07.310 --> 00:54:23.240
+Danny Malter: available data that I've seen recently, there has never been a drop in radiology. If anything, there's more radiologists now than when people were saying this. But nonetheless, you know, here's an example where we can feed in a bunch of images of good hearts and bad hearts.
+
+339
+00:54:23.240 --> 00:54:29.099
+Danny Malter: We maybe have a medical expert or radiologist go and label those images, and we can train a machine learning model
+
+340
+00:54:29.100 --> 00:54:32.899
+Danny Malter: To predict, okay, given this new image that we haven't seen before.
+
+341
+00:54:32.990 --> 00:54:36.350
+Danny Malter: Is it likely to have heart disease or not?
+
+342
+00:54:36.860 --> 00:54:40.960
+Danny Malter: So those are all predictive problems, which we call supervised machine learning.
+
+343
+00:54:41.120 --> 00:54:55.490
+Danny Malter: Then with unsupervised learning is where we don't have a label, so we're inferring information. We might use techniques like clustering, we might do some type of anomaly detection, which sometimes takes into account business knowledge as well.
+
+344
+00:54:55.490 --> 00:55:07.560
+Danny Malter: So an example of clustering would be something like this. We have a bunch of unlabeled data on the left-hand side, and we could cluster, we could use machine learning to figure out similarities of our data.
+
+345
+00:55:07.560 --> 00:55:19.560
+Danny Malter: And the results here might be this green cluster, blue cluster, and red cluster. And because it's unsupervised learning, it's not… the model isn't telling us what each cluster represents.
+
+346
+00:55:19.720 --> 00:55:29.559
+Danny Malter: a data scientist, or a user, or maybe COD, has to go and figure out what each cluster represents. So, cluster, green cluster.
+
+347
+00:55:29.810 --> 00:55:48.009
+Danny Malter: maybe, we realize are most of our loyalty members, so these are very loyal members, and maybe Cluster B, these are people that spend a lot of money with us, so we call these our money clusters, and so on. So, the model itself was able to figure out the similarities, but an analyst has to actually go and put a label
+
+348
+00:55:48.010 --> 00:55:50.660
+Danny Malter: Associated to each cluster.
+
+349
+00:55:51.300 --> 00:56:11.829
+Danny Malter: And then finally, anomaly detection, which would typically fall under unsupervised learning. So this might be things like fraud detection, identity theft detection, anything with Internet of Things technology, so maybe some type of warehousing, or heavy machinery, detecting if something is going to maybe fail ahead of time, so we can
+
+350
+00:56:11.920 --> 00:56:18.429
+Danny Malter: Alert, make an alert that somebody could go look at that machine and maybe fix the problem before it becomes a bigger one.
+
+351
+00:56:19.510 --> 00:56:27.410
+Danny Malter: So, alright, machine learning, we have supervised machine learning and unsupervised machine learning, which we'll talk heavily about in this course.
+
+352
+00:56:27.830 --> 00:56:32.289
+Danny Malter: So that's all the slides I have to go through. We have a few minutes left. Chris, go ahead.
+
+353
+00:56:32.970 --> 00:56:51.020
+Chris Chay: Yeah, so quick question. So, based on what you just said, essentially, the unsupervised learning, which is clustering, is essentially the same as supervised learning's classification, but the only difference is that the labels are missing. Then does it make sense that
+
+354
+00:56:51.120 --> 00:57:05.439
+Chris Chay: You typically would have unsupplying in whatever data that you want to try to get something out of, and then it then becomes essentially a classification exercise in the future.
+
+355
+00:57:05.440 --> 00:57:18.560
+Danny Malter: You could possibly turn… yeah, you could possibly turn it into supervised, so if you don't have a label, you could possibly first do unsupervised learning. Okay, we'll call this loyalty, I'll just say loyal.
+
+356
+00:57:18.630 --> 00:57:36.470
+Danny Malter: for loyalty, these people are, again, money spenders. So now we know, we could go back in our data set, we have user 1, user 2. Maybe this is user 1, this is user 2. Okay, well, now we know, well, user 1 was a loyalty member, user 2 was a high earner. So now we're essentially creating
+
+357
+00:57:36.470 --> 00:57:42.110
+Danny Malter: This new target variable that we could do predictive modeling on now when a new user comes in.
+
+358
+00:57:42.110 --> 00:57:49.939
+Danny Malter: And maybe we use all the other variables, variable 2, variable 3, and so on. So when… now when a new user comes into our system.
+
+359
+00:57:49.940 --> 00:57:55.210
+Danny Malter: As long as we have variable 2 and variable 3, we can predict which
+
+360
+00:57:55.460 --> 00:57:59.569
+Danny Malter: Which cluster they're going to fall into for maybe marketing purposes.
+
+361
+00:58:00.710 --> 00:58:07.169
+Chris Chay: Interesting, okay. I have an unrelated question. I think after I turned in the…
+
+362
+00:58:07.370 --> 00:58:24.560
+Chris Chay: assignment, I think a new module appeared, I think. It's called Possible Solutions, but it looked like it already had some answers in there. Is that, like, an example of how to do it? Like, we get access to after we turn it in? Like, nobody ever talked about that.
+
+363
+00:58:24.560 --> 00:58:35.780
+Danny Malter: I think that's what they do, I'm not totally sure, to be honest, so that's not a new module. Every module opens up on Thursdays, so modules will be, like, week one is its own module. But yeah, I think once you submit
+
+364
+00:58:36.030 --> 00:58:42.959
+Danny Malter: At least some of the… some of the optional exercises, then some responses show only after you've made a submission.
+
+365
+00:58:44.570 --> 00:58:46.260
+Chris Chay: Gotcha, okay, thanks, appreciate it.
+
+366
+00:58:47.140 --> 00:58:56.250
+Anne Moon: I have a question on that. So when you… did you submit the workbook and you got a possible solution, or was that… because I saw possible solutions just in the,
+
+367
+00:58:56.640 --> 00:59:00.519
+Anne Moon: The chat, like, when you responded to an exercise.
+
+368
+00:59:03.590 --> 00:59:20.190
+Chris Chay: maybe it looked like… because what I did was I opened up all of the tabs for the ones that I needed to work on, and so I didn't see possible solutions initially, and then I went through and did all of the exercises and, you know, the optional ones and whatnot, and then I… and then the status said I didn't actually complete it, so I looked.
+
+369
+00:59:20.190 --> 00:59:32.519
+Chris Chay: And I saw a new one called Possible Solutions, opened that up, it looked exactly like the module that, like, the workbook we're supposed to turn in, except this one already had some, like, answers in there.
+
+370
+00:59:32.530 --> 00:59:35.049
+Chris Chay: But I couldn't really do anything else with it, so…
+
+371
+00:59:35.260 --> 00:59:39.620
+Chris Chay: I was curious, I was a little confused, because nobody ever brought that up before.
+
+372
+00:59:40.440 --> 00:59:40.990
+Anne Moon: Okay.
+
+373
+00:59:41.100 --> 00:59:41.650
+Anne Moon: Good to know.
+
+374
+00:59:41.650 --> 00:59:47.160
+Danny Malter: Okay, yeah, I'm not totally sure, but it's likely that those will show only after submission.
+
+375
+00:59:48.410 --> 00:59:52.570
+Danny Malter: Okay, I'll take one more, and then we'll wrap up. Satwick, go ahead.
+
+376
+00:59:56.490 --> 00:59:58.899
+Satwick Sat Sharma: I have a similar caution,
+
+377
+00:59:59.070 --> 01:00:05.659
+Satwick Sat Sharma: I'm, a bit behind in completing that assignment. Would a late submission be okay within this week?
+
+378
+01:00:05.660 --> 01:00:14.559
+Danny Malter: Yeah, you can review the orientation that was discussed, so you can go and, make an assignment… you can make a request for an assignment extension on Canvas.
+
+379
+01:00:14.820 --> 01:00:16.029
+Satwick Sat Sharma: On Canvas? Okay.
+
+380
+01:00:16.890 --> 01:00:19.079
+Anne Moon: It's not due until Wednesday, right?
+
+381
+01:00:19.620 --> 01:00:28.570
+Danny Malter: They're always due 7 days from the release, so every module's opened up on Thursday, and then due 7 days from whenever it's opened up.
+
+382
+01:00:28.570 --> 01:00:32.630
+Anne Moon: So, the Thursday. Okay, thanks. That's what I thought. I was like, it's… there's still a few days.
+
+383
+01:00:32.630 --> 01:00:39.910
+Danny Malter: I don't know the exact time, I think they're all 9 AM Eastern Time, that's the time zone that MIT is in.
+
+384
+01:00:39.910 --> 01:00:42.620
+Manny's iPhone: Yeah, it's Thursday at noon Eastern time.
+
+385
+01:00:43.410 --> 01:00:45.529
+Satwick Sat Sharma: Okay, so we… I still have some time to complete it.
+
+386
+01:00:45.530 --> 01:00:46.350
+Manny's iPhone: Yeah, you have time.
+
+387
+01:00:46.350 --> 01:00:47.470
+Satwick Sat Sharma: You have text.
+
+388
+01:00:47.470 --> 01:00:49.480
+Anne Moon: That was just my point, too.
+
+389
+01:00:49.610 --> 01:00:52.229
+Chris Chay: Mine's at 1230 Eastern Time.
+
+390
+01:00:52.230 --> 01:00:55.369
+Manny's iPhone: Yeah, that's about… that's about right, though. I know it was around 12, yeah.
+
+391
+01:00:55.500 --> 01:00:56.700
+Manny's iPhone: That's… that's right.
+
+392
+01:00:57.120 --> 01:00:59.190
+iPhone: I have one question here.
+
+393
+01:00:59.310 --> 01:01:09.620
+iPhone: So, Module 2, 3, 4, 5, there will be no assignment, we don't have to take any assignment, for the certification, am I right?
+
+394
+01:01:09.620 --> 01:01:20.680
+Danny Malter: Yeah, you can review the orientation, in here, but there's no requ… Module 5, I'm drawing a blank on the top of my head, but there's no required assignments in at least Module 2, 3, and 4.
+
+395
+01:01:21.250 --> 01:01:22.479
+iPhone: Thank you, Denny. Tarshall.
+
+396
+01:01:24.950 --> 01:01:33.210
+Danny Malter: Okay. All right, I'm gonna go ahead and wrap up. We are at the top of the hour, but thank you all for coming on, and hopefully we'll see you all in future office hours, and have a good rest of the week.
+
+397
+01:01:33.610 --> 01:01:37.299
+Manny's iPhone: You too, thank you, Danny. Thank you.
+

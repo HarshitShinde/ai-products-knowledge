@@ -1,0 +1,2454 @@
+WEBVTT
+
+1
+00:00:00.100 --> 00:00:02.320
+Bruce Lam: Okay, welcome back, everyone.
+
+2
+00:00:04.570 --> 00:00:08.100
+Bruce Lam: Good afternoon, happy Friday!
+
+3
+00:00:08.710 --> 00:00:15.559
+Bruce Lam: For those of you who are sharing Friday with me, Is anyone on Saturday?
+
+4
+00:00:19.240 --> 00:00:20.189
+Rangarajan Raman (Cohort 13): Yes, I am.
+
+5
+00:00:20.770 --> 00:00:22.060
+Bruce Lam: Happy Saturday!
+
+6
+00:00:23.300 --> 00:00:25.190
+Bruce Lam: Must be Saturday morning.
+
+7
+00:00:26.030 --> 00:00:27.689
+Rangarajan Raman (Cohort 13): Yep, Singapore 5A, and…
+
+8
+00:00:27.850 --> 00:00:36.670
+Bruce Lam: Oh, man, well… Thanks for joining us, rock, rangar… Rangarajan.
+
+9
+00:00:36.670 --> 00:00:37.550
+Rangarajan Raman (Cohort 13): Rangarajan.
+
+10
+00:00:37.790 --> 00:00:40.609
+Bruce Lam: Rajan. Yeah, thank you. Thanks for joining us. Good to see you again.
+
+11
+00:00:40.610 --> 00:00:40.959
+Rangarajan Raman (Cohort 13): Thank you.
+
+12
+00:00:40.960 --> 00:00:48.980
+Bruce Lam: Alright, so how was week one, everyone? Now we're starting week two. I think… seems like everyone got through it well. I had… I saw a really good discussion.
+
+13
+00:00:49.120 --> 00:00:56.820
+Bruce Lam: On a discussion board about… Shared data context, or how do you know where your data is? What's trustworthy?
+
+14
+00:00:57.040 --> 00:01:03.249
+Bruce Lam: It's one of the first issues you run into. I remember when I was at Electronic Arts, we even had this kind of almost
+
+15
+00:01:03.480 --> 00:01:09.440
+Bruce Lam: A social network with respect to known, good data sources.
+
+16
+00:01:09.700 --> 00:01:12.899
+Bruce Lam: And you would go in there, and you could…
+
+17
+00:01:13.110 --> 00:01:20.389
+Bruce Lam: say, yes, I used this data source to solve this problem, and I can vouch that this was a source of truth.
+
+18
+00:01:20.630 --> 00:01:23.569
+Bruce Lam: So then everyone else could go in there and say, oh, hey, you know.
+
+19
+00:01:23.690 --> 00:01:29.239
+Bruce Lam: The people who… the analytics folks, data scientists, say, hey, this is a good source of truth to use for your modeling.
+
+20
+00:01:29.460 --> 00:01:34.189
+Bruce Lam: And so it would… it would bring some… some trust to that data source there.
+
+21
+00:01:35.450 --> 00:01:39.689
+Bruce Lam: So, if you don't know what I'm talking about, go ahead and check out that discussion in Section B, it's very good.
+
+22
+00:01:41.410 --> 00:01:49.670
+Bruce Lam: So I just finished up last term, as well, for this course, and at the very end, of course, I wish I'd done it sooner, so I'm doing it sooner this term.
+
+23
+00:01:50.010 --> 00:01:54.310
+Bruce Lam: I wish we would have put together a group to keep in touch.
+
+24
+00:01:54.540 --> 00:02:03.440
+Bruce Lam: And I'll just bring it up now, we can do it, during the networking session, but if anyone is interested, because we're not allowed to do it, we've asked MIT doesn't want us
+
+25
+00:02:03.720 --> 00:02:06.800
+Bruce Lam: to set up, like, a LinkedIn group or something like that.
+
+26
+00:02:06.980 --> 00:02:11.679
+Bruce Lam: But if anyone is interested, we could definitely share that and put it in the…
+
+27
+00:02:12.180 --> 00:02:16.890
+Bruce Lam: In the cafe, so that everyone from all the cohorts can sign up and keep in touch.
+
+28
+00:02:17.030 --> 00:02:20.330
+Bruce Lam: Not urgent, just came to mind, so I wanted to share that.
+
+29
+00:02:20.570 --> 00:02:24.640
+Bruce Lam: And if you're interested in taking the lead on that, I'm sure everyone would appreciate that.
+
+30
+00:02:25.830 --> 00:02:36.789
+Bruce Lam: And if there aren't any burning questions, we do have a lot of material to cover today, so I told you… hopefully I've warned you that week two gets really
+
+31
+00:02:37.120 --> 00:02:39.109
+Bruce Lam: Steep, really fast.
+
+32
+00:02:39.270 --> 00:02:46.470
+Bruce Lam: Don't stress, don't worry, you don't need to memorize these equations, there aren't going… there isn't going to be a test. I'll actually show you
+
+33
+00:02:46.580 --> 00:02:52.489
+Bruce Lam: Hopefully, articulate with a diagram Why the professors do this, or at least one
+
+34
+00:02:53.130 --> 00:02:58.180
+Bruce Lam: One motivation for why they want you to have at least the fundamental statistics.
+
+35
+00:03:00.160 --> 00:03:02.979
+Bruce Lam: Okay, so let's go ahead and get moving.
+
+36
+00:03:03.260 --> 00:03:12.199
+Bruce Lam: Here's the agenda for today. We're gonna talk about machine learning, because machine learning is one of the core components of artificial intelligence.
+
+37
+00:03:12.530 --> 00:03:17.130
+Bruce Lam: In fact, it's really interesting, just a couple weeks ago, Netflix released a paper
+
+38
+00:03:17.240 --> 00:03:24.279
+Bruce Lam: And I've actually kind of done some work on it, and we'll look at that paper in week 9, so it'll be…
+
+39
+00:03:24.550 --> 00:03:26.599
+Bruce Lam: 3 or 4… I know, it'll be 8.
+
+40
+00:03:27.470 --> 00:03:44.350
+Bruce Lam: it'll be maybe 3 months old by the time we get to it, but it'll stay relatively new. My point is that up until very, very recently, Netflix was running the recommender systems on traditional machine learning, deep learning, and only very recently were they able to switch to
+
+41
+00:03:45.090 --> 00:03:48.149
+Bruce Lam: an LLM-based or LLM-enhanced
+
+42
+00:03:48.290 --> 00:04:01.990
+Bruce Lam: recommendation system, which did perform better, but by only a little, little bit. So, the point that I'm trying to make here is that we'll look at prediction versus classification, unsupervised versus supervised learning.
+
+43
+00:04:02.190 --> 00:04:09.119
+Bruce Lam: And if you can incorporate these into your products and services, you're gonna get the majority of the value.
+
+44
+00:04:09.470 --> 00:04:14.640
+Bruce Lam: And it's really… you really need to get into the deep learning space, the AI space, when you want to extract that.
+
+45
+00:04:15.140 --> 00:04:15.980
+Bruce Lam: you know.
+
+46
+00:04:16.110 --> 00:04:30.629
+Bruce Lam: that margin, that last little, you know, 5%, 10%, that's the trends, the pattern that I'm seeing now. Of course, you can use the AI systems to help you develop your machine learning algorithms and help you implement those into your products and services.
+
+47
+00:04:31.180 --> 00:04:37.070
+Bruce Lam: but I wouldn't… I would…
+
+48
+00:04:37.890 --> 00:04:43.080
+Bruce Lam: Advise against going straight into deep learning as your first option.
+
+49
+00:04:43.300 --> 00:04:48.929
+Bruce Lam: And we'll see a couple of examples today of why that is. You lose something, there's always a trade-off.
+
+50
+00:04:49.250 --> 00:04:55.210
+Bruce Lam: The more advanced your algorithm gets, the more… Precise and accurate it gets.
+
+51
+00:04:55.320 --> 00:05:00.759
+Bruce Lam: At least for the time being, you lose a lot of interpretability and observability.
+
+52
+00:05:01.050 --> 00:05:03.700
+Bruce Lam: I think I showed a little example last week about that.
+
+53
+00:05:03.980 --> 00:05:04.660
+Bruce Lam: Okay.
+
+54
+00:05:04.820 --> 00:05:10.040
+Bruce Lam: And throughout the course, I will be sharing these term cheat sheets with you, because I know that there are folks
+
+55
+00:05:10.220 --> 00:05:24.909
+Bruce Lam: here who are from different walks of life. Some have never seen machine learning ever before, and some know it better than I do, live and breathe it every single day. And so this is to get us all on the same page. I mean, I've already used several of these terms today.
+
+56
+00:05:25.050 --> 00:05:28.339
+Bruce Lam: And, if you didn't know what I was talking about, I…
+
+57
+00:05:28.610 --> 00:05:33.990
+Bruce Lam: I apologize for that, but here is just a cheat sheet, a term sheet, to get us all on the same page.
+
+58
+00:05:34.110 --> 00:05:37.810
+Bruce Lam: On the left here, these are some very, very commonly used terms.
+
+59
+00:05:38.170 --> 00:05:48.089
+Bruce Lam: On the right is something that I found very useful, you know, about a decade ago when I was getting into the space, because I came from a different discipline. I came from engineering, science and engineering background.
+
+60
+00:05:48.610 --> 00:05:53.600
+Bruce Lam: And… Just learning the terminology, learning the jargon of data science.
+
+61
+00:05:53.880 --> 00:06:04.739
+Bruce Lam: was… was already a challenge, but then I found this little… I call it a Rosetta Stone, where in the disciplines that I was in, we would have, yeah, data points. Oh, that makes sense. I know what data points are. I know what samples are.
+
+62
+00:06:05.290 --> 00:06:11.960
+Bruce Lam: Records and rows. I get that, I can see that. But then, for some reason, in data science, we call that observations.
+
+63
+00:06:12.330 --> 00:06:13.340
+Bruce Lam: It's all the same.
+
+64
+00:06:14.230 --> 00:06:24.849
+Bruce Lam: Columns, you get that, columns, or attributes, or independent variables, or explanatory variables, we call those features. Those are the features that we can engineer and put into our models.
+
+65
+00:06:25.550 --> 00:06:28.250
+Bruce Lam: The outcome, the target, the predictor.
+
+66
+00:06:28.440 --> 00:06:33.999
+Bruce Lam: That is called the dependent variable, or the outcome, or the output, or the class or label in classification.
+
+67
+00:06:34.340 --> 00:06:42.440
+Bruce Lam: So, just a cheat sheet that helps you translate from other disciplines, other work, into the world of AI and data science.
+
+68
+00:06:42.710 --> 00:06:44.770
+Bruce Lam: And Diane, thank you so much for sharing that.
+
+69
+00:06:47.390 --> 00:06:50.530
+Bruce Lam: Another cheat sheet that I want to share early, early on
+
+70
+00:06:50.880 --> 00:06:57.610
+Bruce Lam: This is really good from Ashwarya. She… I actually had her brother in one of my courses, so that was really fun.
+
+71
+00:06:57.750 --> 00:07:09.699
+Bruce Lam: When I showed this, I said, oh, I really love this cheat sheet, and then he said, oh, hey, that's my sister. I said, oh, say hi for me. So here are, you know, generative AI, AGI, artificial general intelligence, artificial superintelligence.
+
+72
+00:07:09.790 --> 00:07:22.370
+Bruce Lam: Foundation models. We'll talk… we'll decompose almost every one of these definitions throughout the course, but in case it's all very new to you, here's a nice cheat sheet. Here's even RAG, which some folks were talking about in the discussion.
+
+73
+00:07:23.550 --> 00:07:26.190
+Bruce Lam: Any questions so far about either one of these slides?
+
+74
+00:07:32.390 --> 00:07:33.979
+Bruce Lam: Okay, let's keep rolling about it.
+
+75
+00:07:34.530 --> 00:07:37.729
+Bruce Lam: Okay, so what the heck is machine learning?
+
+76
+00:07:37.890 --> 00:07:45.140
+Bruce Lam: And I love this quote from Cassie Kosakoff, who was the chief decision scientist for Google.
+
+77
+00:07:45.500 --> 00:07:56.369
+Bruce Lam: their first, in fact, chief decision scientist. She left a couple years ago to do her own thing, and she says she likes to make these really profound, short.
+
+78
+00:07:56.520 --> 00:08:03.440
+Bruce Lam: Perhaps oversimplified statements of these super complex topics, so that we could have a discussion.
+
+79
+00:08:03.910 --> 00:08:05.519
+Bruce Lam: She says, machine learning?
+
+80
+00:08:05.930 --> 00:08:07.540
+Bruce Lam: It's just a thang labeler.
+
+81
+00:08:08.500 --> 00:08:10.760
+Bruce Lam: What are we stressing about? It's just a thing labeler.
+
+82
+00:08:11.600 --> 00:08:16.230
+Bruce Lam: What do you think about that? Is that profound, or is that an oversimplification?
+
+83
+00:08:26.190 --> 00:08:31.230
+Bruce Lam: Kenny, this is profound? I think so. There is a little bit of a unified theory there, for sure.
+
+84
+00:08:36.010 --> 00:08:41.349
+Bruce Lam: Very good. I like that when we have a little bit of a debate. I think it's also a bit of an oversimplification.
+
+85
+00:08:41.679 --> 00:08:45.310
+Bruce Lam: Why? Why do you think it's a little bit of an oversimplification?
+
+86
+00:08:45.810 --> 00:08:46.579
+Bruce Lam: Excuse me, sir.
+
+87
+00:08:46.580 --> 00:08:58.649
+Sushmitha Ungarala: reading the sentence, machine learning is a thing labeler, without any background, I wouldn't understand what that is. Since I reviewed Module 1, maybe, like, the Unit 101,
+
+88
+00:08:58.720 --> 00:09:08.639
+Sushmitha Ungarala: I know, okay, what does that mean? But if I'm, like, a 5-year-old, I wouldn't… so is it the thingy enemies? Would it label the car's model? So it could be anything, right? Yeah.
+
+89
+00:09:10.590 --> 00:09:23.530
+Bruce Lam: Exactly. So, I mean, even in that… that short discussion there, first of all, very good, there was still a little bit of truth there, even though it was oversimplification, there's still… yeah, I mean, it does describe what some of these machine learning algorithms can do.
+
+90
+00:09:23.990 --> 00:09:32.550
+Bruce Lam: And so, if we go a little deeper into a different article and a TED talk that she made, or it wasn't… no, it wasn't quite a TED talk, but it's very similar to a TED talk.
+
+91
+00:09:32.790 --> 00:09:39.240
+Bruce Lam: What she's trying to say Is that before machine learning, really took hold.
+
+92
+00:09:39.920 --> 00:09:43.890
+Bruce Lam: We would have to use traditional coding, computer science.
+
+93
+00:09:44.200 --> 00:09:48.020
+Bruce Lam: To explain to the computers with instructions.
+
+94
+00:09:48.250 --> 00:10:07.979
+Bruce Lam: how to act and how to behave. You know, if you see this, then do this. You know, for each item in this series, perform these functions, perform these actions. While this is true, or while this is false, you know, we had these loops that we would have to explain with these oftentimes very, very sophisticated, complex instructions.
+
+95
+00:10:08.470 --> 00:10:15.119
+Bruce Lam: But then when machine learning came along, we could then explain to the computers using examples.
+
+96
+00:10:15.630 --> 00:10:18.619
+Bruce Lam: So, and this photo of the cat here on the left.
+
+97
+00:10:19.650 --> 00:10:22.519
+Bruce Lam: For those of you who have maybe a computer science background.
+
+98
+00:10:22.790 --> 00:10:25.860
+Bruce Lam: What would it take for us to build an algorithm
+
+99
+00:10:25.980 --> 00:10:29.060
+Bruce Lam: To determine if there is a cat in this picture.
+
+100
+00:10:30.490 --> 00:10:34.579
+Bruce Lam: Just roughly, like, very high level, what does that even begin to look like?
+
+101
+00:10:48.750 --> 00:10:54.100
+Bruce Lam: Yeah, Pankash, right? It's… It is a lot.
+
+102
+00:10:55.060 --> 00:11:03.699
+Bruce Lam: Okay, the first thing we'd have to do is somehow decompose it, maybe by pixel, that would take a lot of effort, and then go pixel by pixel, find the edges.
+
+103
+00:11:04.040 --> 00:11:12.770
+Bruce Lam: Determine where the shapes are, determine the relative position of the eyes and the nose, and maybe we could tell
+
+104
+00:11:13.200 --> 00:11:16.569
+Bruce Lam: If there's a cat in this exact picture.
+
+105
+00:11:16.930 --> 00:11:25.839
+Bruce Lam: But then, if the cat's colors changed to white, then we would be in trouble, and then we'd have a whole lot more if statements, and a whole lot more loops.
+
+106
+00:11:27.520 --> 00:11:31.590
+Bruce Lam: Yeah, so we could do a convolutional method, that's for sure.
+
+107
+00:11:31.850 --> 00:11:35.910
+Bruce Lam: Instead, what we can do now with machine learning.
+
+108
+00:11:36.210 --> 00:11:39.810
+Bruce Lam: Is show thousands, hundreds of thousands of examples
+
+109
+00:11:40.110 --> 00:11:54.950
+Bruce Lam: And now the algorithm, the computer vision, the machine vision algorithms will learn on its own those features. We could use a convolutional method, for sure, in addition, to help, and we'll discuss that in a couple of weeks, so if this is a new term to you, we will go over this as well.
+
+110
+00:11:56.640 --> 00:11:58.570
+Bruce Lam: Long story short, with
+
+111
+00:11:59.230 --> 00:12:07.100
+Bruce Lam: With code, this was a very, very complex task. With machine learning, it becomes fairly straightforward.
+
+112
+00:12:08.020 --> 00:12:12.969
+Bruce Lam: Now, so what? How does this affect us in the world of building AI products and services?
+
+113
+00:12:13.470 --> 00:12:15.249
+Bruce Lam: Okay, well, this is the key.
+
+114
+00:12:15.520 --> 00:12:20.600
+Bruce Lam: The data is the key. Those… Clean…
+
+115
+00:12:21.020 --> 00:12:26.680
+Bruce Lam: exemplary data sets. That is the key to all of this working.
+
+116
+00:12:27.490 --> 00:12:31.309
+Bruce Lam: And, with respect to large language models, and
+
+117
+00:12:31.460 --> 00:12:34.460
+Bruce Lam: Those kinds of systems were running out of data.
+
+118
+00:12:35.090 --> 00:12:35.930
+Bruce Lam: So…
+
+119
+00:12:38.470 --> 00:12:45.170
+Bruce Lam: And as proof to that, this was an article that came out, just April of this year, so a few months ago.
+
+120
+00:12:45.470 --> 00:12:46.560
+Bruce Lam: where…
+
+121
+00:12:46.940 --> 00:12:58.250
+Bruce Lam: Meta was using their systems to, they were telling their employees that they were going to be monitoring all of their keystrokes, all of their mouse button clicks, all of this information.
+
+122
+00:12:58.470 --> 00:13:01.730
+Bruce Lam: And they really didn't have a choice to opt out of it.
+
+123
+00:13:03.840 --> 00:13:08.619
+Bruce Lam: why were they doing this? Right? And so this is from Zuckerberg himself, and…
+
+124
+00:13:08.750 --> 00:13:12.210
+Bruce Lam: Oh, man, I just… this really did just work. Let me click on this link.
+
+125
+00:13:14.860 --> 00:13:17.019
+Bruce Lam: Okay, just a really quick audio clip of…
+
+126
+00:13:17.020 --> 00:13:30.789
+Audio shared by Bruce Lam: We're in a phase where basically the AI models learn from having really… from watching really smart people do things. And if you're trying to get it to be able to be able to do certain capabilities.
+
+127
+00:13:30.830 --> 00:13:34.739
+Audio shared by Bruce Lam: Having it be able to observe really smart people doing those things.
+
+128
+00:13:34.740 --> 00:13:59.230
+Audio shared by Bruce Lam: is very important. So, if we're trying to teach the models coding, for example, then having people internally build tools or solve tasks that help teach the model how to code, we think is going to dramatically increase our model's coding ability faster than what others in the industry have the capability to do, who don't have thousands and thousands of extremely strong engineers at their company.
+
+129
+00:13:59.720 --> 00:14:10.499
+Audio shared by Bruce Lam: So, that's one example. Another thing that our system needs to be very good at is using computers. So, the way that you get a system to be good at using computers
+
+130
+00:14:10.500 --> 00:14:21.950
+Audio shared by Bruce Lam: is by having it watch really smart people use computers. So, that's basically the essence of what we are trying to do here. We are… we're rolling it out in a way that is, like.
+
+131
+00:14:21.960 --> 00:14:23.360
+Audio shared by Bruce Lam: You know, it's like we, we're…
+
+132
+00:14:23.530 --> 00:14:40.710
+Audio shared by Bruce Lam: basically, we're not, like, actually… no human or anything is, like, looking at or watching what your, what people are doing on their computers. The content is sort of, you know, stripped out, in, like, as much as is possible. It's, like, none of the data is being used for, like.
+
+133
+00:14:40.800 --> 00:15:00.599
+Audio shared by Bruce Lam: looking at what people are doing, or surveillance, or performance tracking, or anything like that. It's purely just, like, we are using this to feed a very large amount of content into the AI model, so that way it can learn how smart people use computers to accomplish tasks. I think that this is going to be a very big advantage, if we can do it.
+
+134
+00:15:01.320 --> 00:15:03.749
+Audio shared by Bruce Lam: I mentioned my optimism a minute ago, and we…
+
+135
+00:15:04.020 --> 00:15:04.580
+Bruce Lam: Okay.
+
+136
+00:15:04.800 --> 00:15:18.690
+Bruce Lam: So that is Zuckerberg's take on teaching the machines through examples. In fact, he wants the best examples in the world, and they… he thinks Meta has some of the best engineers and workers they have in the world, and it's hard to debate that.
+
+137
+00:15:19.030 --> 00:15:24.870
+Bruce Lam: The consequences, like I was alluding to before, though, of building a system Goodbye.
+
+138
+00:15:26.720 --> 00:15:30.130
+Bruce Lam: Of building a system that is so…
+
+139
+00:15:30.620 --> 00:15:42.170
+Bruce Lam: opaque, where you're just trusting the system to learn the nuances, is just… what is this? April, May, June, a couple, two, three months later, they actually have to pause that entire program.
+
+140
+00:15:42.430 --> 00:15:43.730
+Bruce Lam: Because…
+
+141
+00:15:44.460 --> 00:15:58.860
+Bruce Lam: of the opacity, because they weren't able to understand what did the system learn, what did it ingest, and it ended up ingesting some really sensitive data, and then other people who were testing the model could recall that data, could have the system say, hey, you know, how much…
+
+142
+00:15:58.920 --> 00:16:06.080
+Bruce Lam: you know, how much money did we spend on XYZ? And then it would just spit it out, and it was just information that you weren't supposed to have.
+
+143
+00:16:06.490 --> 00:16:07.480
+Bruce Lam: Tolib.
+
+144
+00:16:07.910 --> 00:16:09.379
+Bruce Lam: People all have so quick.
+
+145
+00:16:11.820 --> 00:16:16.889
+Bruce Lam: Yeah, I see. So they're gonna learn both the good and the bad. That's very true, too. That's very true, too.
+
+146
+00:16:17.420 --> 00:16:31.320
+Bruce Lam: Okay, so you're seeing these concepts of machine learning evolve now in real time, explaining with examples instead of instructions, and the consequences… and they are trying, like I was alluding to, they are trying to go for the last mile.
+
+147
+00:16:31.450 --> 00:16:39.290
+Bruce Lam: I mean, the intelligence already of these systems, these large language model AI systems, is tremendous. And to get to the next level.
+
+148
+00:16:39.680 --> 00:16:42.890
+Bruce Lam: This is what it takes. New data, better data.
+
+149
+00:16:43.940 --> 00:16:49.069
+Bruce Lam: Okay, so I hope that example was relevant, and it helps you understand why we're talking about machine learning.
+
+150
+00:16:49.510 --> 00:16:50.220
+Bruce Lam: Okay.
+
+151
+00:16:50.980 --> 00:16:54.810
+Bruce Lam: Now, the question is, and I get… You know.
+
+152
+00:16:55.110 --> 00:17:00.299
+Bruce Lam: I will apologize on the professors of the program's behalf if last week you had to take some…
+
+153
+00:17:00.610 --> 00:17:03.349
+Bruce Lam: Some painkillers for your headaches, because of the…
+
+154
+00:17:03.500 --> 00:17:06.799
+Bruce Lam: The really, really technical depth that our professors go into.
+
+155
+00:17:07.109 --> 00:17:20.300
+Bruce Lam: First of all, they're all PhDs. This may just be how they think, right? They're just very, very technical people. You enrolled at a course at MIT, and you're getting a taste of how things really are. It takes a lot to keep up.
+
+156
+00:17:20.569 --> 00:17:25.310
+Bruce Lam: But why I think they do this is because, in my experience building
+
+157
+00:17:25.540 --> 00:17:30.660
+Bruce Lam: Data science, deploying data science, machine learning, AI into production.
+
+158
+00:17:32.210 --> 00:17:39.640
+Bruce Lam: Especially today, with large language models, we all have these incredible hacking skills at our disposal.
+
+159
+00:17:39.840 --> 00:17:47.130
+Bruce Lam: Any one of us today, this weekend, could build A pretty much production-ready product.
+
+160
+00:17:47.400 --> 00:17:51.989
+Bruce Lam: By prompting, using any of the various hardnesses that are out there.
+
+161
+00:17:52.240 --> 00:17:56.979
+Bruce Lam: And we all have some sort of subject matter expertise, so we know the problems in our field.
+
+162
+00:17:57.250 --> 00:18:02.829
+Bruce Lam: We understand… There are pain points to be solved. We could all start companies this weekend.
+
+163
+00:18:03.140 --> 00:18:07.859
+Bruce Lam: And what we found is that if we just combine the hacking skills and the subject matter expertise.
+
+164
+00:18:08.240 --> 00:18:11.510
+Bruce Lam: Oftentimes, these products tend to fail.
+
+165
+00:18:12.080 --> 00:18:21.610
+Bruce Lam: And the reason that they fail is because the underlying math and statistics knowledge is missing, so it doesn't understand the edge cases, and that's actually this example here.
+
+166
+00:18:21.760 --> 00:18:28.510
+Bruce Lam: I would hope that Meta understands the underlying
+
+167
+00:18:29.660 --> 00:18:38.669
+Bruce Lam: weaknesses in their approach, but clearly somebody didn't, and they had to pause this program, and so I just want to avoid… this was… that's actually a perfect example.
+
+168
+00:18:39.240 --> 00:18:45.710
+Bruce Lam: Just combining hacking and subject matter expertise without the underlying understanding of how the models and technology work.
+
+169
+00:18:46.120 --> 00:18:49.260
+Bruce Lam: So, just want to give you the best shot of success, so…
+
+170
+00:18:50.010 --> 00:18:55.079
+Bruce Lam: Hope that helps, and hope that makes you feel a little better when you're just like, why the heck are we looking at all these equations?
+
+171
+00:18:57.100 --> 00:19:06.269
+Bruce Lam: And then to put machine learning into perspective, here's a nice little VIN diagram. And I like to say that artificial intelligence is like the subject matter, it's like the physics.
+
+172
+00:19:06.430 --> 00:19:14.880
+Bruce Lam: of everything. And then machine learning is a layer with, you know, a sub-discipline with artificial intelligence. This would be, like, astrophysics, or maybe…
+
+173
+00:19:16.640 --> 00:19:29.760
+Bruce Lam: statics, or something like that, some sort of really fundamental component. And then within machine learning is the neural network. That is a very powerful component of machine learning.
+
+174
+00:19:29.950 --> 00:19:36.280
+Bruce Lam: And then, if you want to take neural networks even farther, you go into deep learning. And then deep learning is really…
+
+175
+00:19:36.390 --> 00:19:45.190
+Bruce Lam: what generative AI is. And so, I'll say this again several more times throughout this course, you know, every single large language model is a neural network.
+
+176
+00:19:45.950 --> 00:19:52.970
+Bruce Lam: But not every neural network is a large language model. There are many other neural networks out there that do lots of different things.
+
+177
+00:19:53.610 --> 00:19:55.479
+Bruce Lam: And we'll learn about lots of them in this course.
+
+178
+00:19:58.330 --> 00:20:04.120
+Bruce Lam: And to start, we're going to go through supervised and unsupervised machine learning.
+
+179
+00:20:04.870 --> 00:20:13.330
+Bruce Lam: Supervised machine learning is when you have historical data, historical examples that are either pre-categorized or pre-labeled.
+
+180
+00:20:13.650 --> 00:20:15.980
+Bruce Lam: And you use that to predict
+
+181
+00:20:16.200 --> 00:20:18.090
+Bruce Lam: Something that's gonna happen in the future.
+
+182
+00:20:18.360 --> 00:20:24.440
+Bruce Lam: Or classify something, a new data set, a new customer, a new SKU.
+
+183
+00:20:24.550 --> 00:20:28.000
+Bruce Lam: And then have that automatically classify into a certain group.
+
+184
+00:20:29.290 --> 00:20:33.710
+Bruce Lam: On the unsupervised learning side, it's really about pattern recognition.
+
+185
+00:20:34.070 --> 00:20:38.660
+Bruce Lam: And complexity reduction, or dimensionality reduction.
+
+186
+00:20:38.940 --> 00:20:43.000
+Bruce Lam: So this is when you have all of this data, and it hasn't been labeled historically.
+
+187
+00:20:43.330 --> 00:20:47.149
+Bruce Lam: So you can either cluster it, find similarity,
+
+188
+00:20:48.500 --> 00:20:52.739
+Bruce Lam: Find different features that are very similar, and create the groups of those.
+
+189
+00:20:53.090 --> 00:21:04.340
+Bruce Lam: You can do dimensionality reduction, which is when you have something that has so many, so many, so many features. We actually talked about wine today. You know, wine can be described so many, so many, so many ways.
+
+190
+00:21:04.520 --> 00:21:15.370
+Bruce Lam: But in order for us to grasp it and understand it, be able to sell it, and understand it amongst ourselves, we need a way to reduce that. So that's why we have red wine and white wine, for example.
+
+191
+00:21:15.710 --> 00:21:21.819
+Bruce Lam: And then there's association, which is really very much about… Pattern recognition.
+
+192
+00:21:24.010 --> 00:21:32.020
+Bruce Lam: And so here is a nice little table of supervised, unsupervised reinforcement learning. We don't do too much reinforcement learning in this particular course.
+
+193
+00:21:32.530 --> 00:21:34.780
+Bruce Lam: Supervised learning is very good.
+
+194
+00:21:34.970 --> 00:21:39.940
+Bruce Lam: at… predicting based on historical data. It's very clear.
+
+195
+00:21:40.250 --> 00:21:46.489
+Bruce Lam: It has… can have very high accuracy, but it requires label training data
+
+196
+00:21:47.040 --> 00:21:51.630
+Bruce Lam: It may not perform as well on tasks that have missing data.
+
+197
+00:21:51.760 --> 00:21:54.099
+Bruce Lam: And it can be prone to overfitting.
+
+198
+00:21:54.700 --> 00:22:04.849
+Bruce Lam: Unsupervised, once again, it's if you don't have labeled data. It's very good at finding, hidden patterns within your… maybe you do even have labeled data.
+
+199
+00:22:05.160 --> 00:22:12.389
+Bruce Lam: and you want to understand where your high-value customers are, you would use this unsupervised learning approach. Maybe
+
+200
+00:22:12.510 --> 00:22:21.340
+Bruce Lam: The parameters or characteristics of those customers aren't exactly what they appear to be on the service, or there are some really nuanced hidden ones.
+
+201
+00:22:21.710 --> 00:22:23.840
+Bruce Lam: Does not require label data.
+
+202
+00:22:24.180 --> 00:22:29.159
+Bruce Lam: The biggest challenge of unsupervised learning, as we'll see, I'll show you two examples here shortly.
+
+203
+00:22:29.300 --> 00:22:33.149
+Bruce Lam: Is it requires human interpretation.
+
+204
+00:22:33.350 --> 00:22:36.359
+Bruce Lam: after the algorithm has been run. So it'll find you the pattern.
+
+205
+00:22:36.540 --> 00:22:39.379
+Bruce Lam: But you have to go back, look at the data again.
+
+206
+00:22:39.610 --> 00:22:43.699
+Bruce Lam: And say, hey, what… how do I then label this pattern for the future?
+
+207
+00:22:44.020 --> 00:22:47.629
+Bruce Lam: So then, unsupervised learning can then become supervised learning.
+
+208
+00:22:47.810 --> 00:22:59.400
+Bruce Lam: And in fact, it's a very good idea to use unsupervised learning upstream of supervised learning. So find those patterns, use those patterns to become the features of your algorithm.
+
+209
+00:23:00.530 --> 00:23:01.910
+Bruce Lam: And then run the algorithm.
+
+210
+00:23:04.280 --> 00:23:05.020
+Bruce Lam: Okay.
+
+211
+00:23:05.310 --> 00:23:18.080
+Bruce Lam: And semi-supervised learning is… and this is a map of the algorithms, a lot… we'll learn almost all of these algorithms in these… oh, upstream, Tolib. So, before. So, in terms of your process,
+
+212
+00:23:18.540 --> 00:23:26.089
+Bruce Lam: So the machine learning process, you know, data acquisition would be the very first thing that you do, data cleaning, data acquisition, then after that.
+
+213
+00:23:26.190 --> 00:23:40.119
+Bruce Lam: You might be tempted to go directly into supervised learning, but you can do unsupervised… so you do your cleaning, then you do your data exploration, and then you can do your unsupervised to find the patterns, to create the variables for your supervised.
+
+214
+00:23:40.720 --> 00:23:42.109
+Bruce Lam: Does that make sense? Does that help?
+
+215
+00:23:45.480 --> 00:23:47.740
+Bruce Lam: Okay, awesome. Thank you so much for asking that.
+
+216
+00:23:48.140 --> 00:23:49.820
+Bruce Lam: I have just a little map.
+
+217
+00:23:50.220 --> 00:24:05.830
+Bruce Lam: We will learn about k-means, principal component analysis, linear regression, logistic regression, we'll learn a lot of these algorithms in this course, so buckle up. I do… I did create this. Let me go ahead and pull it up for you, and I will attach this as supplementary material.
+
+218
+00:24:06.260 --> 00:24:10.609
+Bruce Lam: I should have brought it up a little earlier, so forgive me for that.
+
+219
+00:24:10.980 --> 00:24:16.940
+Bruce Lam: Let me find it really quick… And it's this one…
+
+220
+00:24:17.820 --> 00:24:28.479
+Bruce Lam: So it's going to be, an HTML file, so when I attach it, either… I'll either put it in the cafe, or I'll attach it to the slides.
+
+221
+00:24:28.860 --> 00:24:46.380
+Bruce Lam: when we upload the slides, and the way that you use it is interactive. You can say, hey, do I want to do something, supervised, predictive, or unsupervised, where I'm looking for patterns? And it'll actually show you at the bottom here the different business applications for each one of these types of
+
+222
+00:24:46.550 --> 00:24:53.049
+Bruce Lam: classes, and then you can click in there, and then if you… it's based on predictive analytics, do you want to do categorization, forecasting?
+
+223
+00:24:53.260 --> 00:24:56.170
+Bruce Lam: Combining, or time series forecasting.
+
+224
+00:24:56.440 --> 00:25:00.200
+Bruce Lam: And then it'll show you the different business applications below that, too, for each one of them.
+
+225
+00:25:00.670 --> 00:25:02.809
+Bruce Lam: So if you want to do categorization.
+
+226
+00:25:02.920 --> 00:25:11.149
+Bruce Lam: It'll then show you the different types of algorithms that live in this category, and the pros and cons of each.
+
+227
+00:25:13.720 --> 00:25:17.250
+Bruce Lam: I hope you find that helpful, a little gift for me to you.
+
+228
+00:25:17.430 --> 00:25:20.029
+Bruce Lam: And… Oh, thank you.
+
+229
+00:25:20.450 --> 00:25:32.539
+Bruce Lam: And if you want something that's slightly more complex, and maybe you can put in your pocket, this is a pretty good cheat sheet as well. It's not quite as applied, so it doesn't show you
+
+230
+00:25:32.990 --> 00:25:37.539
+Bruce Lam: The business use cases, for example, but it does have… it does show you some.
+
+231
+00:25:37.870 --> 00:25:43.420
+Bruce Lam: So this is another example. If you can't… don't have access to a computer, you can use this one.
+
+232
+00:25:44.010 --> 00:25:49.149
+Bruce Lam: Okay, so now let's go ahead into that… oh, it's my privilege, I appreciate you all.
+
+233
+00:25:49.730 --> 00:26:00.879
+Bruce Lam: Let's go ahead into the work process that we were just talking about, where we've done our data acquisition, now we're going to do our exploratory data analysis to understand what's going on.
+
+234
+00:26:01.150 --> 00:26:04.519
+Bruce Lam: And I will try to trick you several times in this course.
+
+235
+00:26:04.990 --> 00:26:09.900
+Bruce Lam: Because it's so important to look at your data, to visualize your data.
+
+236
+00:26:10.280 --> 00:26:14.130
+Bruce Lam: And oftentimes, for speed, Or…
+
+237
+00:26:14.910 --> 00:26:22.149
+Bruce Lam: really just for speed in this world that we live in, we will skip that step, and we'll say, hey, just tell me what the average is. What's the average result here?
+
+238
+00:26:23.090 --> 00:26:26.439
+Bruce Lam: And what would you say if I were to tell you
+
+239
+00:26:26.790 --> 00:26:33.009
+Bruce Lam: that across every one of these diagrams, the star, the circle, the X,
+
+240
+00:26:33.540 --> 00:26:36.370
+Bruce Lam: The… the scatter… the random scatter plot there.
+
+241
+00:26:36.550 --> 00:26:38.430
+Bruce Lam: and the Tyrannosaurus Rex.
+
+242
+00:26:38.780 --> 00:26:46.680
+Bruce Lam: Each one of these diagrams has the exact same Mean and standard deviation.
+
+243
+00:26:46.880 --> 00:26:50.349
+Bruce Lam: across the X and the Y axis, respectively.
+
+244
+00:26:53.430 --> 00:26:57.609
+Bruce Lam: That means if you were to ask for, what's the average? I'll tell you what the average is.
+
+245
+00:26:58.570 --> 00:27:01.899
+Bruce Lam: But does that mean that it's going up? Or does that mean it's going down?
+
+246
+00:27:02.630 --> 00:27:07.810
+Bruce Lam: You won't know unless you look at the diagram itself. Thanks a deal.
+
+247
+00:27:08.380 --> 00:27:12.640
+Bruce Lam: And this is what I call The flaw of averages.
+
+248
+00:27:12.920 --> 00:27:14.560
+Bruce Lam: Yes, granted.
+
+249
+00:27:14.760 --> 00:27:22.050
+Bruce Lam: Every algorithm that we'll talk about is built upon the law of averages, or the law of large numbers.
+
+250
+00:27:22.520 --> 00:27:29.350
+Bruce Lam: However, this problem very much exists as well, and I've seen this bite so many people in my time.
+
+251
+00:27:29.610 --> 00:27:33.829
+Bruce Lam: Where… And I think this is one of the best cartoons to ever describe it, too.
+
+252
+00:27:33.960 --> 00:27:41.150
+Bruce Lam: The cartoon says, the flaw of averages, a statistician drowns while crossing a river that is only 3 feet deep.
+
+253
+00:27:41.400 --> 00:27:42.960
+Bruce Lam: on average.
+
+254
+00:27:43.830 --> 00:27:47.319
+Bruce Lam: That means that there is this valley here that's 3 feet deep.
+
+255
+00:27:47.630 --> 00:27:51.160
+Bruce Lam: I mean, that is more than 3 feet deep, and then there is some sort of a hill
+
+256
+00:27:51.380 --> 00:27:53.999
+Bruce Lam: Over here, that you probably can't see.
+
+257
+00:27:54.350 --> 00:27:59.069
+Bruce Lam: And on average, those two do balance out to be 3 feet deep, and you should be fine.
+
+258
+00:27:59.490 --> 00:28:01.660
+Bruce Lam: But this can really catch you.
+
+259
+00:28:01.970 --> 00:28:16.760
+Bruce Lam: And so that's… please always visualize multiple steps in exploratory, and I'll show you a few examples here. When the algorithm has been created, too, visualize again, but visualize the model performance across
+
+260
+00:28:17.080 --> 00:28:19.180
+Bruce Lam: Its entire spectrum.
+
+261
+00:28:19.670 --> 00:28:20.420
+Bruce Lam: Okay.
+
+262
+00:28:20.910 --> 00:28:33.219
+Bruce Lam: The train-test split. So after you've done your exploratory data analysis and you are getting ready to do supervised learning specifically, you need to take your data set and split it up into 3 different groups.
+
+263
+00:28:34.750 --> 00:28:37.430
+Bruce Lam: Oh, venu, very good question.
+
+264
+00:28:37.650 --> 00:28:43.030
+Bruce Lam: So, it'll be in the slide deck, and the slide deck will be under Live Sessions.
+
+265
+00:28:43.700 --> 00:28:46.480
+Bruce Lam: Go into live sessions, and then…
+
+266
+00:28:47.170 --> 00:28:53.910
+Bruce Lam: Let's say week 1 with me was here, and all of us, Amanda and Danny, will all have the same setup here.
+
+267
+00:28:54.700 --> 00:28:59.310
+Bruce Lam: We'll go to resources, and then you'll have the PDF of the module here.
+
+268
+00:28:59.550 --> 00:29:03.300
+Bruce Lam: So then, that's where the cheat sheet will be.
+
+269
+00:29:07.230 --> 00:29:10.549
+Bruce Lam: Okay, so you want to be able to train your data?
+
+270
+00:29:11.720 --> 00:29:22.280
+Bruce Lam: and then validate and test your data. So, you want to split it up. And I know sometimes, if your company is large enough, or your idea is big enough, you should have no problem getting fresh data.
+
+271
+00:29:22.750 --> 00:29:25.329
+Bruce Lam: But for others, you have, let's say.
+
+272
+00:29:25.820 --> 00:29:30.289
+Bruce Lam: Several 10,000, 100,000 rows, and that's… that's it. That's all you have.
+
+273
+00:29:30.430 --> 00:29:39.690
+Bruce Lam: So that's when you have to be really careful with this process. So in your training set, you need to randomly distribute and have a…
+
+274
+00:29:41.100 --> 00:29:48.209
+Bruce Lam: A representative distribution of your Topic of interest within every single stage.
+
+275
+00:29:48.480 --> 00:29:57.060
+Bruce Lam: And this becomes a problem when you have low frequency high-impact Scenarios.
+
+276
+00:29:57.160 --> 00:30:02.789
+Bruce Lam: So let's say you're trying to build a self-driving algorithm for a self-driving car.
+
+277
+00:30:03.130 --> 00:30:09.360
+Bruce Lam: And unfortunately, fortunately and unfortunately, You don't have a lot of data on
+
+278
+00:30:09.490 --> 00:30:19.569
+Bruce Lam: people running red lights or running stop signs, because people don't do it that often. But let's say that's what you're trying to predict for. That is what you're trying to predict and prevent.
+
+279
+00:30:19.970 --> 00:30:28.289
+Bruce Lam: But if you don't have a lot of that, a lot of those incidences, you have to make sure with the ones that you do have that you can distribute them fairly
+
+280
+00:30:28.550 --> 00:30:31.739
+Bruce Lam: Across your training, your validation, and your test set.
+
+281
+00:30:32.360 --> 00:30:40.999
+Bruce Lam: That's super, super critical. And if you can't, if you don't have enough data for that, that's where simulation comes in, that's where synthetic data comes in.
+
+282
+00:30:41.250 --> 00:30:47.929
+Bruce Lam: And we'll talk about a couple of different synthetic data approaches, and about a company that made a lot of money
+
+283
+00:30:48.080 --> 00:30:50.420
+Bruce Lam: On creating high-quality synthetic data.
+
+284
+00:30:52.390 --> 00:30:54.150
+Bruce Lam: And if you don't.
+
+285
+00:30:54.520 --> 00:31:02.929
+Bruce Lam: distribute properly, you run into overfitting, and this is one of the best pictures of overfitting. It makes me smile every single time here on the right here.
+
+286
+00:31:03.200 --> 00:31:18.899
+Bruce Lam: So what this is demonstrating is you are trying to create a new mattress specifically for side sleepers. Okay, amazing! Let's go get a whole bunch of data on side sleepers to figure out the ideal, perfect mattress. Well, our dataset just happened to contain in our training data
+
+287
+00:31:19.040 --> 00:31:22.419
+Bruce Lam: People who sleep on their left-hand side, on their left.
+
+288
+00:31:23.040 --> 00:31:26.030
+Bruce Lam: And then we say, hey, this is the perfect bed for side sleepers.
+
+289
+00:31:26.520 --> 00:31:31.409
+Bruce Lam: But for those of you who are laughing with your camera off right now, you all know this is a horrible idea.
+
+290
+00:31:31.530 --> 00:31:34.109
+Bruce Lam: Right? But that's the problem with overfitting.
+
+291
+00:31:36.240 --> 00:31:42.999
+Bruce Lam: And so, within supervised learning, there are two major approaches. One is called classification, where you try to find groups.
+
+292
+00:31:43.170 --> 00:31:46.520
+Bruce Lam: The other one is called prediction, where you're trying to predict outcomes.
+
+293
+00:31:47.050 --> 00:31:51.989
+Bruce Lam: And the major fundamental algorithms are linear and logistic regression.
+
+294
+00:31:52.320 --> 00:32:02.820
+Bruce Lam: And this is an analogy that I learned from one of you, one of the participants of one of these courses, and it just stuck with me. I just absolutely love it. So I said, hey, I'm going to share this with everyone else going forward.
+
+295
+00:32:03.210 --> 00:32:19.430
+Bruce Lam: So the way that you sort out the difference between logistic and linear regression, logistic regression being the classification algorithm, linear regression being the prediction algorithm, it's very confusing because they both start with L, they both end with regression.
+
+296
+00:32:19.560 --> 00:32:20.829
+Bruce Lam: But here we go.
+
+297
+00:32:21.070 --> 00:32:24.140
+Bruce Lam: So, you would use logistic regression.
+
+298
+00:32:24.920 --> 00:32:29.520
+Bruce Lam: To predict whether it's going to rain or not tomorrow.
+
+299
+00:32:30.200 --> 00:32:33.270
+Bruce Lam: So, logistic regression, the classification algorithm.
+
+300
+00:32:33.420 --> 00:32:35.820
+Bruce Lam: Can help you predict the likelihood
+
+301
+00:32:36.140 --> 00:32:38.829
+Bruce Lam: Of an outcome, rain or not.
+
+302
+00:32:39.380 --> 00:32:46.140
+Bruce Lam: So, with logistic regression, We can say there is a 70% chance of rain tomorrow.
+
+303
+00:32:47.080 --> 00:32:54.749
+Bruce Lam: Then, with linear regression, we can predict how much rain there's going to be tomorrow, how many inches of rain.
+
+304
+00:32:55.750 --> 00:33:05.600
+Bruce Lam: So, with linear regression, we can say there's going to be 2 inches of rain. So, logistic regression says, hey, there's a 70% of… 77… 70% chance of rain.
+
+305
+00:33:05.830 --> 00:33:08.099
+Bruce Lam: And then the linear regression would say.
+
+306
+00:33:08.410 --> 00:33:12.190
+Bruce Lam: And there is likely going to be 3 inches.
+
+307
+00:33:12.580 --> 00:33:20.100
+Bruce Lam: So, venu, decision trees are… and we're going to go into decision trees here in 2 minutes. Decision trees are a…
+
+308
+00:33:22.060 --> 00:33:29.080
+Bruce Lam: an evolution of the prediction algorithm of linear regression. And it's a little difficult, because you can use them to
+
+309
+00:33:29.200 --> 00:33:35.109
+Bruce Lam: predict classes, like, predict the outcomes of different classes. So we'll talk about… look at that in just 2 minutes here.
+
+310
+00:33:35.670 --> 00:33:36.370
+Bruce Lam: Okay.
+
+311
+00:33:38.620 --> 00:33:48.630
+Bruce Lam: Okay, really good AI, ML, and data and deep learning use cases across different industries, because there are folks from very, very many different industries here.
+
+312
+00:33:49.030 --> 00:34:04.559
+Bruce Lam: In fact, we had one person last time was like, hey, I love this stuff, it's super interesting, but where do we use this in government security? I was like, well, here you go, government security. You can do facial recognition, cybersecurity, event prediction, weather and climate prediction, like we just talked about.
+
+313
+00:34:04.780 --> 00:34:12.209
+Bruce Lam: So, hopefully this is a good cheat sheet. You can look at your industry, get some ideas. These are the tried and true applications that are known to work.
+
+314
+00:34:13.179 --> 00:34:18.340
+Bruce Lam: And, in this course, if you really want to get hands-on, which I highly…
+
+315
+00:34:18.590 --> 00:34:22.850
+Bruce Lam: I advise you do. There is a fun, open…
+
+316
+00:34:23.310 --> 00:34:29.449
+Bruce Lam: open license package called Orange Data Mining, and I'll just go… I'll just pull it up.
+
+317
+00:34:30.080 --> 00:34:37.920
+Bruce Lam: It is… I like to describe it as a graphical user interface for Python, and so you don't need to know how to code at all.
+
+318
+00:34:38.320 --> 00:34:39.469
+Bruce Lam: And…
+
+319
+00:34:40.730 --> 00:34:56.389
+Bruce Lam: this particular application will allow you to run every single algorithm that we discuss in this course. There are little tutorials where you have these little nodes, you drag a node in, upload your dataset to it, it'll tell you if you want to run a…
+
+320
+00:34:56.520 --> 00:35:06.110
+Bruce Lam: linear logistic regression, or polynomial regression. The next module that you need is some sort of, like, standardization module, and then you can hook up other
+
+321
+00:35:06.290 --> 00:35:10.439
+Bruce Lam: Modules to it, you can do neural networks, you can do decision trees.
+
+322
+00:35:10.770 --> 00:35:18.340
+Bruce Lam: So if you're going to really be hands-on with this course, it's a package that I highly, highly advise you play with.
+
+323
+00:35:18.710 --> 00:35:25.819
+Bruce Lam: And let's say you say, okay, Bruce, I'll try it, sure. I need some data. Well, I'll show this again, too, when it gets closer to Capstone.
+
+324
+00:35:26.120 --> 00:35:39.209
+Bruce Lam: A really good resource here, kegel.com, for data, and they have all kinds of data on here. It started out as a data science competition platform. I've competed in some of the competitions.
+
+325
+00:35:39.580 --> 00:35:46.780
+Bruce Lam: And over time, they've just, you know, amassed 734,000, high-quality datasets from
+
+326
+00:35:46.890 --> 00:36:00.499
+Bruce Lam: because Bitcoin and fruit, to football, to research data. I would guess if… there's very little that I have that people have said, you know, I'm looking for this data set. Most of the time, there's some version of it in here, and you can use it.
+
+327
+00:36:00.720 --> 00:36:03.259
+Bruce Lam: You can use it for your, for your ideas.
+
+328
+00:36:09.370 --> 00:36:14.520
+Bruce Lam: Okay, so let's jump into… Decision trees.
+
+329
+00:36:14.970 --> 00:36:15.630
+Bruce Lam: Oh.
+
+330
+00:36:16.090 --> 00:36:24.660
+Bruce Lam: Thank you so much. Okay, so decision trees. So, this is, let's say, a very powerful tool. This is one of my go-to tools.
+
+331
+00:36:24.980 --> 00:36:26.919
+Bruce Lam: All the time.
+
+332
+00:36:27.240 --> 00:36:33.979
+Bruce Lam: So, you can see the very first thing that we do, just like we did before, is we start off with exploratory data analysis. We plot all of our data.
+
+333
+00:36:34.160 --> 00:36:41.599
+Bruce Lam: This is a… an artistical… artistic interpretation of what's called a… correlation matrix.
+
+334
+00:36:41.910 --> 00:36:45.160
+Bruce Lam: I'll show you one in a few weeks that's much more detailed.
+
+335
+00:36:45.450 --> 00:36:56.130
+Bruce Lam: But we just want to understand our data by visualizing it first. In this particular case, what we're trying to do is predict whether a given house is in San Francisco.
+
+336
+00:36:56.300 --> 00:36:57.620
+Bruce Lam: Or in New York.
+
+337
+00:36:57.980 --> 00:37:07.479
+Bruce Lam: I mean, you might say this is… it's a toy example, it's pretty silly, you know, you could use the zip code and figure out if it's there or not, but we're gonna just use the features
+
+338
+00:37:07.590 --> 00:37:18.759
+Bruce Lam: of the data. The first chart that we're going to look at is elevation versus price per square foot. And what we can see immediately is that if we were to use the decision tree and make our first split.
+
+339
+00:37:19.000 --> 00:37:27.309
+Bruce Lam: It would be good to split on elevation, because houses that are at higher elevations tend to have a higher likelihood of being in San Francisco.
+
+340
+00:37:27.440 --> 00:37:32.309
+Bruce Lam: And houses that are at low elevations and very, very, very expensive.
+
+341
+00:37:32.480 --> 00:37:35.400
+Bruce Lam: I happen to have a very high likelihood of being in New York.
+
+342
+00:37:35.800 --> 00:37:40.300
+Bruce Lam: Okay, so that's just an example of how we make our first split in our decision tree.
+
+343
+00:37:41.680 --> 00:37:47.250
+Bruce Lam: And we want to look at every single feature or variable that we have compared against every other variable.
+
+344
+00:37:48.140 --> 00:37:53.879
+Bruce Lam: And, we'll go ahead and do that split, and it'll show us that the most
+
+345
+00:37:54.300 --> 00:37:59.010
+Bruce Lam: The best split, the most descriptive
+
+346
+00:37:59.180 --> 00:38:09.249
+Bruce Lam: split of these two locations, New York and San Francisco, is going to be based off of elevation. And that's how we draw the first split, the first node of our decision tree.
+
+347
+00:38:09.990 --> 00:38:16.320
+Bruce Lam: And the algorithm that's used to determine this is… is one of two. There are two different ones. One is called entropy.
+
+348
+00:38:16.490 --> 00:38:20.709
+Bruce Lam: And the other one is called, information gain, IG.
+
+349
+00:38:20.850 --> 00:38:22.590
+Bruce Lam: So, either.
+
+350
+00:38:23.180 --> 00:38:32.609
+Bruce Lam: What entropy does is it says, if I take this elevation data, and then I split it again, can I get a really clean set? This is a very low entropy…
+
+351
+00:38:33.230 --> 00:38:34.090
+Bruce Lam: Leaf.
+
+352
+00:38:35.130 --> 00:38:48.250
+Bruce Lam: And if I can get a very low entropy leaf, then I'll do it, and that'll be how we determine the first set. And this is all done automatically. When you run the decision tree algorithm, you don't have to tell it what to split on. It'll find that split point and report it out.
+
+353
+00:38:49.120 --> 00:39:00.740
+Bruce Lam: And this is the training phase. So we've taken our data, and now we're training the algorithm. It's going through, it's automatically making these leaves and these nodes and these branches
+
+354
+00:39:01.120 --> 00:39:06.829
+Bruce Lam: And what we have to determine as humans, though, is how deep do we want to go?
+
+355
+00:39:07.470 --> 00:39:11.419
+Bruce Lam: The deeper that we make the tree, the more accurate it's going to become.
+
+356
+00:39:12.040 --> 00:39:20.640
+Bruce Lam: But the more likely we are going to be to overfit. That we'll end up with one little leaf somewhere that is, like, some sort of…
+
+357
+00:39:21.490 --> 00:39:23.129
+Bruce Lam: Really, really rare.
+
+358
+00:39:23.240 --> 00:39:25.789
+Bruce Lam: House. That really won't show up anywhere else.
+
+359
+00:39:26.170 --> 00:39:36.329
+Bruce Lam: And then we'll overfit, and you'll see what happens there. So, we've trained our algorithm, that was the training step up above. Now we're going into our testing step. We're going to try to make some predictions.
+
+360
+00:39:36.520 --> 00:39:40.979
+Bruce Lam: Alright, so here come all of our data into our decision tree, and they're going to be separated.
+
+361
+00:39:41.210 --> 00:39:46.370
+Bruce Lam: Into New York and San Francisco, and so far in trading, we're 100% accuracy.
+
+362
+00:39:46.770 --> 00:39:50.550
+Bruce Lam: Which should be a red flag whenever you see something with
+
+363
+00:39:50.660 --> 00:39:55.590
+Bruce Lam: A performance metric that's that is hot, that that is that high, you should become… get really skeptical.
+
+364
+00:39:55.930 --> 00:39:57.579
+Bruce Lam: That is way too high.
+
+365
+00:39:57.820 --> 00:40:02.980
+Bruce Lam: So now we're going to the testing phase, where we say, okay, we have a good algorithm here, let's go ahead and test.
+
+366
+00:40:03.290 --> 00:40:08.129
+Bruce Lam: Bring a whole new, brand new data set in that we've never seen before.
+
+367
+00:40:08.370 --> 00:40:14.709
+Bruce Lam: to see how well the algorithm does, and you can see already it's making some errors here. It's classifying some houses.
+
+368
+00:40:14.900 --> 00:40:21.149
+Bruce Lam: As being in San Francisco, when they really should be in New York, or vice versa. Actually, these are the San Francisco ones.
+
+369
+00:40:21.530 --> 00:40:30.650
+Bruce Lam: The green ones. So, our test accuracy is only 89%, so we've dropped… 10%.
+
+370
+00:40:31.440 --> 00:40:34.720
+Bruce Lam: Over this process, due to overfitting.
+
+371
+00:40:35.050 --> 00:40:39.839
+Bruce Lam: So what we should do is balance the trade-off between the depth
+
+372
+00:40:40.100 --> 00:40:45.140
+Bruce Lam: And the accuracy, in order to get a more reliable, robust model that we can deploy into production.
+
+373
+00:40:49.230 --> 00:40:56.940
+Bruce Lam: Okay, and the next algorithm to go one level higher, so we're actually kind of increasing complexity, increasing performance, increasing power.
+
+374
+00:40:57.090 --> 00:40:59.180
+Bruce Lam: is the random forest.
+
+375
+00:40:59.960 --> 00:41:04.230
+Bruce Lam: So the random forest is a series of decision trees.
+
+376
+00:41:04.950 --> 00:41:08.029
+Bruce Lam: But, the way that they're created is very interesting.
+
+377
+00:41:08.620 --> 00:41:13.060
+Bruce Lam: Or, it's either really… it's gonna be either really interesting to you, or it's gonna give you some…
+
+378
+00:41:13.090 --> 00:41:29.859
+Bruce Lam: some nightmares. Do you remember whether you were doing some sort of standardized testing? There were these crazy problems in statistics where you would reach your hand into this closed bag of marbles, you would pull out some marbles, and some would be red, and some would be blue.
+
+379
+00:41:29.870 --> 00:41:38.040
+Bruce Lam: And then you would look at that, you would write down, you know, how many red, how many blue, how many orange, what size they were, and then you would put them back into the bag.
+
+380
+00:41:38.110 --> 00:41:44.190
+Bruce Lam: And the entire idea was if you could sample enough that you could predict the population…
+
+381
+00:41:44.430 --> 00:41:50.310
+Bruce Lam: distribution inside this bag. Do you remember this problem, and how crazy it felt at the time?
+
+382
+00:41:52.570 --> 00:41:57.470
+Bruce Lam: Does anybody remember having to do, you know, Statistics in high school.
+
+383
+00:41:57.780 --> 00:42:02.239
+Bruce Lam: Okay, good deal. This is… yes, this… I never understood.
+
+384
+00:42:02.340 --> 00:42:09.210
+Bruce Lam: Exactly. I was like, why are we doing this? Well, this is why. That would make sense to me. So, what a random forest is…
+
+385
+00:42:09.330 --> 00:42:25.839
+Bruce Lam: is a series, exactly. All of you, thank you so much. Finally, some folks who can remember these things. Okay, so you reach into the bag, you pull out one decision tree that's kind of randomly created. It still has the fundamental principles of splitting, making the best split.
+
+386
+00:42:25.940 --> 00:42:33.989
+Bruce Lam: But they have different numbers of depths, different numbers of leaves, which you can control. And you can control the number
+
+387
+00:42:34.300 --> 00:42:37.180
+Bruce Lam: Of trees that you want, that you want to combine.
+
+388
+00:42:37.410 --> 00:42:48.199
+Bruce Lam: So, you make one decision tree, you pull it out of the bag, then you put it back in the bag, you make another one and do the same thing over and over, and each one of these decision trees predicts the outcome.
+
+389
+00:42:48.740 --> 00:42:51.069
+Bruce Lam: And then, you vote.
+
+390
+00:42:51.380 --> 00:42:55.870
+Bruce Lam: The algorithm votes or averages the final result and gives you a result.
+
+391
+00:42:56.750 --> 00:43:03.029
+Bruce Lam: And this algorithm is so incredibly powerful. This is just one step removed from deep learning.
+
+392
+00:43:03.230 --> 00:43:07.570
+Bruce Lam: And much, much more explainable. You can actually see what's going on.
+
+393
+00:43:07.810 --> 00:43:19.780
+Bruce Lam: And at Electronic Arts, on certain… this is the fundamentes, and when we were implementing a… a…
+
+394
+00:43:20.180 --> 00:43:25.910
+Bruce Lam: an older sibling of this algorithm called xGBoost, we were able to increase performance, you know.
+
+395
+00:43:26.220 --> 00:43:29.580
+Bruce Lam: Propensity to spend by, like, 30%.
+
+396
+00:43:29.860 --> 00:43:33.979
+Bruce Lam: By understanding what, you know, the behavior of the users.
+
+397
+00:43:34.170 --> 00:43:41.790
+Bruce Lam: And predicting what their next likely behavior was going to be, and then surfacing that action to them. Say, hey, if you want to
+
+398
+00:43:41.980 --> 00:43:47.089
+Bruce Lam: We can tell that you're trying to achieve this, and so here's something to help you along the way.
+
+399
+00:43:47.320 --> 00:43:50.370
+Bruce Lam: Yeah, so incredible, incredible technology there.
+
+400
+00:43:51.820 --> 00:43:52.500
+Bruce Lam: Okay.
+
+401
+00:43:52.780 --> 00:43:57.869
+Bruce Lam: So, let's go ahead and take a look at a very practical example.
+
+402
+00:43:58.510 --> 00:44:03.930
+Bruce Lam: of how to use, random forests, let's say. This was actually one of my homework assignments in grad school.
+
+403
+00:44:04.260 --> 00:44:21.550
+Bruce Lam: We are going to… we have this telecommunications data set, where we have the… this is an old one, that's why it was available. Where you have the number of minutes, when that mattered, the number of minutes that you use on your phone, international calls, overages, customer service calls, all the information that we have on a given customer.
+
+404
+00:44:21.710 --> 00:44:39.899
+Bruce Lam: and the label of whether they churned or not. And churn means they left our service, they left our company, they left our product. So our goal here is to predict whether, based on the behavior of a given customer, we can
+
+405
+00:44:40.110 --> 00:44:43.850
+Bruce Lam: Predict a likelihood that they're gonna leave and stop our service.
+
+406
+00:44:44.290 --> 00:44:56.450
+Bruce Lam: And this is very important because, in some research that we did at Electronic Arts, we found that it was 5 times more expensive to acquire a new user, a new customer, than it was to retain one.
+
+407
+00:44:56.600 --> 00:44:59.070
+Bruce Lam: So, customer retention is super important.
+
+408
+00:44:59.190 --> 00:45:02.580
+Bruce Lam: And, this is how we… we can… do that.
+
+409
+00:45:03.010 --> 00:45:05.630
+Bruce Lam: So, our homework assignment was to run 3 different
+
+410
+00:45:05.900 --> 00:45:23.019
+Bruce Lam: predictive machine learning algorithms, one called the support vector machine, the random forest, of course, and then kNearest Neighbors. Support vector machine, we don't talk a lot about in this course, but it is really trying to find the maximum separation between two groups, and find these hyperplanes.
+
+411
+00:45:23.100 --> 00:45:30.500
+Bruce Lam: Where you could actually really squeeze the two groups apart, and then identify them. K-nearest neighbors, you're really looking for centers.
+
+412
+00:45:30.820 --> 00:45:34.320
+Bruce Lam: Of commonality, centers of mass.
+
+413
+00:45:34.970 --> 00:45:51.279
+Bruce Lam: And regardless, whenever you're doing classification algorithms, you will generate what is called a confusion matrix. And it is quite confusing, but what this tells you is the true positives, the true negatives, the false positives, and the false negatives.
+
+414
+00:45:52.390 --> 00:46:04.469
+Bruce Lam: look at the time here, I… this is something that you should just do once or twice, just to make sure you understand that if you're trying to predict a hot dog, for example, and you get a can of Coca-Cola, is that a false positive, or is that a false negative?
+
+415
+00:46:04.760 --> 00:46:10.180
+Bruce Lam: And the reason why we need to generate these matrices is because this is how we get
+
+416
+00:46:10.290 --> 00:46:21.269
+Bruce Lam: the summary statistics, the accuracy, which we use way too often and way too loosely. I would encourage you to not use accuracy by itself.
+
+417
+00:46:21.650 --> 00:46:34.019
+Bruce Lam: Use accuracy, recall, and precision all together, because your recall and precision metrics, these are the ones where subject matter expertise comes in. These are the ones that matter
+
+418
+00:46:34.720 --> 00:46:41.659
+Bruce Lam: based on your business model, based off of your product, based off your company. And I'll give you an analogy to…
+
+419
+00:46:41.800 --> 00:46:43.250
+Bruce Lam: Understand this right now.
+
+420
+00:46:43.920 --> 00:46:50.939
+Bruce Lam: So, recall is to a call center, As precision is to pregnancy.
+
+421
+00:46:53.260 --> 00:46:58.289
+Bruce Lam: So what that means is, In recall, like in a call center.
+
+422
+00:46:58.470 --> 00:47:00.409
+Bruce Lam: You really don't care how many you get wrong.
+
+423
+00:47:00.720 --> 00:47:05.690
+Bruce Lam: You can call a thousand, a hundred thousand, a million people, it doesn't matter.
+
+424
+00:47:06.050 --> 00:47:08.439
+Bruce Lam: As long as you can find the one.
+
+425
+00:47:08.660 --> 00:47:13.509
+Bruce Lam: who is going to answer the phone and buy your product? If you can find the one, you have high recall.
+
+426
+00:47:15.420 --> 00:47:19.110
+Bruce Lam: Precision, on the other hand, with respect to pregnancy tests.
+
+427
+00:47:19.750 --> 00:47:25.690
+Bruce Lam: is quite a bit different. If you take a pregnancy test, and that test says you're pregnant.
+
+428
+00:47:25.880 --> 00:47:31.000
+Bruce Lam: It better be right, because your life is about to change dramatically.
+
+429
+00:47:32.270 --> 00:47:37.590
+Bruce Lam: The opposite is not as important. If you take a test, and it says you're not pregnant.
+
+430
+00:47:37.820 --> 00:47:39.549
+Bruce Lam: But you actually are.
+
+431
+00:47:39.680 --> 00:47:42.609
+Bruce Lam: It's not as big of a deal, because you can take the test again.
+
+432
+00:47:43.010 --> 00:47:47.849
+Bruce Lam: But as soon as it shows a certain indication, it better be right.
+
+433
+00:47:47.970 --> 00:47:49.280
+Bruce Lam: And that's precision.
+
+434
+00:47:49.670 --> 00:47:52.179
+Bruce Lam: And unfortunately, you can't have both.
+
+435
+00:47:52.690 --> 00:48:00.700
+Bruce Lam: There is something called an F1, or an F.5, or an F2 score, which tries to set your
+
+436
+00:48:00.990 --> 00:48:03.410
+Bruce Lam: Performance based off of
+
+437
+00:48:03.960 --> 00:48:09.620
+Bruce Lam: a… a balance, like, so, the F1 score is a harmonic mean of recall and precision.
+
+438
+00:48:09.820 --> 00:48:16.369
+Bruce Lam: But, inevitably, if your recall goes up, your position's gonna go down, and vice versa.
+
+439
+00:48:16.510 --> 00:48:19.090
+Bruce Lam: They are inversely related, and you can't have both.
+
+440
+00:48:20.130 --> 00:48:24.360
+Bruce Lam: So make sure that, again, you visualize your performance curve, and you know your business model.
+
+441
+00:48:24.500 --> 00:48:28.590
+Bruce Lam: You know your product model so that you can properly
+
+442
+00:48:28.710 --> 00:48:31.580
+Bruce Lam: Select your precision and recall characteristics.
+
+443
+00:48:31.960 --> 00:48:39.660
+Bruce Lam: This is another visualization, with respect to classification that is super, super important, called the ROC curve, and we'll see this again in Neural Networks Week.
+
+444
+00:48:40.170 --> 00:48:44.700
+Bruce Lam: Where if you have this top left purple…
+
+445
+00:48:44.870 --> 00:48:53.010
+Bruce Lam: Right angle, this is a perfect classifier. And if you have this diagonal red line here, this is as good as being random, so just useless.
+
+446
+00:48:54.330 --> 00:49:03.949
+Bruce Lam: So remember this, definitely ask for these curves, but I'm going to show you another curve here to try to trick you in 2 minutes that looks a lot like the rock curve.
+
+447
+00:49:04.080 --> 00:49:12.730
+Bruce Lam: But it's kind of the opposite. It's called a calibration plot, where this diagonal line is going to be ideal. You want diagonal.
+
+448
+00:49:12.890 --> 00:49:15.020
+Bruce Lam: So kind of the opposite of the rock curve.
+
+449
+00:49:15.460 --> 00:49:19.630
+Bruce Lam: Alright, so let's go all the way back to the problem that we're trying to solve here with supervised learning.
+
+450
+00:49:20.030 --> 00:49:22.200
+Bruce Lam: So I ran the 3 different algorithms.
+
+451
+00:49:22.410 --> 00:49:28.819
+Bruce Lam: The support vector machine came with an accuracy of, like, 92%, a recall of 50%, and precision of 87.
+
+452
+00:49:30.110 --> 00:49:35.740
+Bruce Lam: The random forest was 94, recall 66, and Precision 93.
+
+453
+00:49:36.090 --> 00:49:41.719
+Bruce Lam: And then, k nearest neighbors, 90% on accuracy, 50% recall.
+
+454
+00:49:41.860 --> 00:49:43.240
+Bruce Lam: 80% on precision.
+
+455
+00:49:44.030 --> 00:49:51.070
+Bruce Lam: Seems like we have a clear winner, right? With what all of you say, based on these summary statistics, random forest is the top across the board.
+
+456
+00:49:53.050 --> 00:49:56.859
+Bruce Lam: Yes, Jeremiah. They are primarily used for classification algorithms.
+
+457
+00:49:58.450 --> 00:50:04.450
+Bruce Lam: Man, I can't… you are sharp, you are… you are on the ball, Sushmitha. Very, very good.
+
+458
+00:50:04.580 --> 00:50:05.680
+Bruce Lam: It depends.
+
+459
+00:50:05.860 --> 00:50:07.890
+Bruce Lam: And it depends on your business model.
+
+460
+00:50:08.130 --> 00:50:12.410
+Bruce Lam: So, if we look at the calibration plot, We can understand
+
+461
+00:50:12.690 --> 00:50:15.580
+Bruce Lam: Why the random forest performed the best.
+
+462
+00:50:16.250 --> 00:50:24.639
+Bruce Lam: In summary. And remember, this is… I tried to trick you a little bit, where the diagonal line is ideal in the calibration plot. It's the opposite.
+
+463
+00:50:24.750 --> 00:50:28.980
+Bruce Lam: In the rock curve, but in a calibration plot, you want to be closer to the diagonal.
+
+464
+00:50:29.390 --> 00:50:30.890
+Bruce Lam: The random forest…
+
+465
+00:50:31.220 --> 00:50:38.879
+Bruce Lam: Undershoots this line quite a bit for low predictive probabilities, and overshoots this line for high predictive probabilities.
+
+466
+00:50:39.810 --> 00:50:47.199
+Bruce Lam: And that's why, on average, it performs the best, because it's just like that flaw of averages problem. There's a valley, and then a hill over here.
+
+467
+00:50:47.560 --> 00:50:53.309
+Bruce Lam: That might be okay. That might be exactly what you need for your organization, for your company, for your product.
+
+468
+00:50:53.750 --> 00:50:59.279
+Bruce Lam: But, if you want something that is more stable across the board, that actually the k nearest neighbor
+
+469
+00:50:59.400 --> 00:51:02.609
+Bruce Lam: Hugs this calibration line much, much better.
+
+470
+00:51:03.010 --> 00:51:09.179
+Bruce Lam: So this is where your subject matter expertise really comes in, and you have to know, how is my business designed to operate?
+
+471
+00:51:09.840 --> 00:51:13.500
+Bruce Lam: Regardless how this fits into your operating model.
+
+472
+00:51:13.590 --> 00:51:30.020
+Bruce Lam: So that we've created a prediction model here for churn. Now, when we have a high likelihood of churn, let's do something about it. Let's intervene while we can, and let's use our other algorithms to create personalized intervention, to really deeply understand our customers.
+
+473
+00:51:30.460 --> 00:51:39.280
+Bruce Lam: and then implement an intervention to try to retain them. And if we can do that, guess what? You kick off this virtuous cycle, where they stay.
+
+474
+00:51:39.770 --> 00:51:46.389
+Bruce Lam: We get more of their data, we can train a better model over time, and then you get this virtuous cycle of being able to retain your customers.
+
+475
+00:51:46.820 --> 00:51:54.740
+Bruce Lam: And that really is how you build trust. You build trust by engaging personalized, improving those insights, and that's all based off of
+
+476
+00:51:54.890 --> 00:51:57.340
+Bruce Lam: The availability and the quality of your data.
+
+477
+00:51:58.610 --> 00:52:04.549
+Bruce Lam: And we always run out of time, because we try to do supervised and unsupervised in the same week, which is… it's a lot.
+
+478
+00:52:04.930 --> 00:52:13.319
+Bruce Lam: Okay, so we're going to switch gears really, really hard here from unsupervised… from supervised, where we have labeled data, to unsupervised, where we have unlabeled data.
+
+479
+00:52:13.520 --> 00:52:19.720
+Bruce Lam: And one of the most powerful algorithms in the unsupervised space is the Principal Component Analysis, or PCA.
+
+480
+00:52:20.550 --> 00:52:30.210
+Bruce Lam: And the best way that I can describe this one is with an analogy of wine. First of all, how many people drink wine here? How many people understand, you know, the nuances of wine? How many are, you know.
+
+481
+00:52:30.490 --> 00:52:33.080
+Bruce Lam: Connoisseurs, or fans of wine.
+
+482
+00:52:38.610 --> 00:52:51.460
+Bruce Lam: Okay, we got a couple, we got a couple. Okay, well, if I say something wrong, you know, don't worry, I don't either. So, if I just said something wrong, please correct me. So, wine, as I understand it, is super, super complex.
+
+483
+00:52:51.660 --> 00:53:01.580
+Bruce Lam: There are characteristics like acidity, viscosity, tannins, oakiness, sulfur content, color.
+
+484
+00:53:01.690 --> 00:53:11.039
+Bruce Lam: fruitiness, you know, oakiness, you know, all of these, and there's probably a hundred more characteristics, and I think one of the assignments that we have, one of the optional
+
+485
+00:53:11.590 --> 00:53:13.559
+Bruce Lam: Notebooks is about wine.
+
+486
+00:53:13.800 --> 00:53:17.080
+Bruce Lam: And you'll see all the different characteristics that you can have here.
+
+487
+00:53:17.400 --> 00:53:24.100
+Bruce Lam: And somehow, some amazing way, as human beings, we were able to take all of those intricate nuances
+
+488
+00:53:24.260 --> 00:53:27.510
+Bruce Lam: And say, hey, this is a red wine. This is a white wine.
+
+489
+00:53:27.630 --> 00:53:39.669
+Bruce Lam: And for those of you who drink it, all of a sudden, into your mind, you flood all of these characteristics. If I say it's a white-white, you're like, oh, it's a little lighter and a little less acidic, oh, and it's, of course, clearer, it's not as dark.
+
+490
+00:53:39.760 --> 00:53:48.239
+Bruce Lam: And if I say it's a Pinot or a Chardonnay, you know, you automatically have all of these sensations that flood into your system. Isn't that incredible, first of all?
+
+491
+00:53:48.400 --> 00:53:54.809
+Bruce Lam: And second of all, principal component analysis was a mathematical attempt At recreating that.
+
+492
+00:53:54.930 --> 00:53:56.750
+Bruce Lam: human capability.
+
+493
+00:53:57.850 --> 00:54:02.399
+Bruce Lam: And the way that it works is it takes all of that noisy data, all of those
+
+494
+00:54:02.550 --> 00:54:07.859
+Bruce Lam: Tons of characteristics, and separates them into their principal components.
+
+495
+00:54:08.710 --> 00:54:13.870
+Bruce Lam: into their principal colors. And the prism is a good analogy for how it works, fundamentally.
+
+496
+00:54:14.170 --> 00:54:20.449
+Bruce Lam: And if you are in the science or biosciences space, this might resonate with you.
+
+497
+00:54:20.950 --> 00:54:26.090
+Bruce Lam: The principal component analysis is very much analogous to chromatography.
+
+498
+00:54:26.250 --> 00:54:34.219
+Bruce Lam: And if you have done this experiment before, or if you have kids, this is a really fun one. If you take a strip of,
+
+499
+00:54:34.610 --> 00:54:35.800
+Bruce Lam: paper towel.
+
+500
+00:54:35.910 --> 00:54:44.409
+Bruce Lam: and you put a little black dot at the bottom. If you're using, like, a Sharpie, which is solvent-based, you would then put it into, like, some isopropyl alcohol.
+
+501
+00:54:44.670 --> 00:54:53.040
+Bruce Lam: or if you're using, like a Crayola water-based marker, you would put it into some water. And what you'll see, because the inks are
+
+502
+00:54:53.450 --> 00:54:56.640
+Bruce Lam: Dissolvable or soluble in those liquids.
+
+503
+00:54:56.820 --> 00:55:00.589
+Bruce Lam: That it will separate up the paper into its component colors.
+
+504
+00:55:01.890 --> 00:55:06.130
+Bruce Lam: And this is used quite frequently in…
+
+505
+00:55:06.660 --> 00:55:15.850
+Bruce Lam: Marketing, marketing analysis, marketing analytics, where the respondent to your survey is the piece of paper, the survey is data collected.
+
+506
+00:55:16.150 --> 00:55:30.809
+Bruce Lam: The factors are the benefits, the principal components are going to be the colors, and then your analysis is this process. Jeremiah, there you go. Thank you so much. And we'll actually have a couple of other chromatography examples coming up here in this course, so…
+
+507
+00:55:30.980 --> 00:55:44.280
+Bruce Lam: you're in a good space. Alright, so really quickly, this is the example. So this is excerpted, it's truncated from the actual study that we did, but it was for a popular snack food company running a marketing analysis.
+
+508
+00:55:44.420 --> 00:55:49.549
+Bruce Lam: And we asked 30 different people, the following 6 questions…
+
+509
+00:55:49.800 --> 00:55:54.339
+Bruce Lam: On a 7-point scale, 1 being strongly disagree, seven being strongly agree.
+
+510
+00:55:54.730 --> 00:56:05.920
+Bruce Lam: Question 1, it's important for my snacks to have low calories. Question two, the balance of flavors is important in my snacks. Number three, snacks should have good nutritious value.
+
+511
+00:56:06.040 --> 00:56:09.640
+Bruce Lam: Number 4, I prefer snacks that are easy to carry with me.
+
+512
+00:56:09.830 --> 00:56:13.020
+Bruce Lam: Number 5, high fiber content is not
+
+513
+00:56:13.230 --> 00:56:19.960
+Bruce Lam: an important quality for my snack choices, and number 6. The most important consideration in buying snacks is taste.
+
+514
+00:56:20.460 --> 00:56:24.580
+Bruce Lam: You know, it's an excerpt from our study, and
+
+515
+00:56:24.820 --> 00:56:29.300
+Bruce Lam: They're okay questions, okay? They're not the best questions, but they're also not the worst. They're okay.
+
+516
+00:56:30.450 --> 00:56:35.499
+Bruce Lam: So you take the 30 responses, you run them through a principal component analysis algorithm.
+
+517
+00:56:35.620 --> 00:56:38.630
+Bruce Lam: And find that, this is really interesting here.
+
+518
+00:56:40.510 --> 00:56:41.270
+Bruce Lam: Thanks.
+
+519
+00:56:41.690 --> 00:56:52.450
+Bruce Lam: Okay, this… what you find here is that the top two components, the top two factors, actually explain 82%
+
+520
+00:56:52.790 --> 00:56:55.160
+Bruce Lam: Of the variance in the data.
+
+521
+00:56:55.470 --> 00:56:57.009
+Bruce Lam: Which is actually quite good.
+
+522
+00:56:57.240 --> 00:57:05.460
+Bruce Lam: And I didn't have time to go over this, but in linear regression, when you… and some of you may have run these models, you get this R squared.
+
+523
+00:57:05.630 --> 00:57:14.299
+Bruce Lam: this coefficient called the R squared, and a lot of people say that, hey, that is the accuracy. Well, it's not. So what the R squared is in your linear regression model
+
+524
+00:57:14.650 --> 00:57:25.009
+Bruce Lam: is the proportion of variability that you could explain in your data. So if you had a linear regression model that had 82% R-squared, that would be pretty darn good.
+
+525
+00:57:25.070 --> 00:57:34.869
+Bruce Lam: In our unsupervised learning model, we also have 82% here in this particular case, which is pretty darn good. So two factors can explain 82%
+
+526
+00:57:35.130 --> 00:57:45.420
+Bruce Lam: of the variability in the responses from our respondents. And the way that we determine, too, is looking at the trade-offs, saying, hey.
+
+527
+00:57:45.620 --> 00:57:48.680
+Bruce Lam: If I go to 3, I can get to 89%.
+
+528
+00:57:49.190 --> 00:57:57.919
+Bruce Lam: But that's only an increase of 7%, whereas I got a substantially at 36% from going from 1 to 2, so I get diminishing returns.
+
+529
+00:57:58.070 --> 00:58:02.389
+Bruce Lam: So, there is a judgment call here. Unsupervised learning, there is a little bit of art to it.
+
+530
+00:58:02.860 --> 00:58:05.150
+Bruce Lam: I'm my professor in this particular course.
+
+531
+00:58:06.280 --> 00:58:19.909
+Bruce Lam: How is the principle determined? That's… So if you, in the session this week, the professors talk about the computation of the eigenvalues and the eigenvectors, and it's using that matrix multiplication and that linear algebra to determine
+
+532
+00:58:20.140 --> 00:58:26.269
+Bruce Lam: the principal components. So, every principal component is one of the eigenvalues.
+
+533
+00:58:26.870 --> 00:58:29.180
+Bruce Lam: One of the eigenvectors. So…
+
+534
+00:58:29.940 --> 00:58:33.300
+Bruce Lam: My professor, in this case, when I learned this, said that…
+
+535
+00:58:33.440 --> 00:58:37.389
+Bruce Lam: In order to prevent overfitting, what you do is you find
+
+536
+00:58:37.590 --> 00:58:46.030
+Bruce Lam: The elbow of where you get your diminishing returns, your elbow on this screen plot here, you take your elbow and minus 1.
+
+537
+00:58:46.790 --> 00:58:51.639
+Bruce Lam: Which I think is pretty good. There's other schools of thought that say, hey, find the elbow, use the elbow.
+
+538
+00:58:51.770 --> 00:58:56.989
+Bruce Lam: My professor was a little bit conservative, they said, find the elbow, subtract one, and use two components.
+
+539
+00:58:57.660 --> 00:59:00.959
+Bruce Lam: Okay, and this is what this looks like, so Component 1, Component 2.
+
+540
+00:59:02.480 --> 00:59:09.680
+Bruce Lam: And what you realize, again, it's unlabeled, so we found a pattern here. It should be a fairly profound pattern.
+
+541
+00:59:10.500 --> 00:59:18.160
+Bruce Lam: I like to say we will find a personality, which is amazing. You ask these questions from the survey, and you can actually
+
+542
+00:59:18.450 --> 00:59:22.220
+Bruce Lam: Infer your respondents' personalities.
+
+543
+00:59:23.010 --> 00:59:30.849
+Bruce Lam: And, in this particular case, we have Personality 1, or Component 1, and Personality 2, Component 2.
+
+544
+00:59:31.190 --> 00:59:40.989
+Bruce Lam: And we were able to discern that because Component 2 was strong in questions 1, 3, and 5. Component 1 was strong in questions 2, 4, and 6.
+
+545
+00:59:41.370 --> 00:59:45.150
+Bruce Lam: And so, usually I say, hey, do you remember what those were? But for time, I'll just tell you.
+
+546
+00:59:45.450 --> 00:59:50.050
+Bruce Lam: 2, 4, and 6, the even-numbered ones, were about flavors, texture, and taste.
+
+547
+00:59:50.160 --> 00:59:54.060
+Bruce Lam: So these folks are very interested in their snacks tasting good.
+
+548
+00:59:54.400 --> 01:00:05.910
+Bruce Lam: Component number two was really about nutrition value, low-calorie nutrition value, and remember, fiber content was negatively worded, and that's… this is actually good. It helps us really define this component quite well.
+
+549
+01:00:06.010 --> 01:00:10.930
+Bruce Lam: So now we have two personality types who took our survey. One of them that is very much taste.
+
+550
+01:00:11.150 --> 01:00:14.980
+Bruce Lam: Seeking, and the other one that's very much nutrition.
+
+551
+01:00:15.100 --> 01:00:21.610
+Bruce Lam: health-seeking. Now it's our job to say how many of each, what fraction of our respondents were
+
+552
+01:00:22.140 --> 01:00:33.499
+Bruce Lam: health-conscious, and is that a big enough market for us to release a new product? Right? So now, just off of that simple survey, we have these great insights. And that's using, unsupervised, put analysis.
+
+553
+01:00:36.140 --> 01:00:39.650
+Bruce Lam: Just a few minutes, I know I always go over… okay.
+
+554
+01:00:39.930 --> 01:00:43.090
+Bruce Lam: This is a little model that I've been putting together, I'm still working on here.
+
+555
+01:00:43.230 --> 01:00:51.040
+Bruce Lam: where I think in the news we see, we think about using artificial intelligence, especially generative artificial intelligence, Oops.
+
+556
+01:00:58.940 --> 01:01:04.619
+Bruce Lam: Hello, hello? Testing? Sorry, I hit my… hit the off button on my… Microphone, could you hear me?
+
+557
+01:01:05.910 --> 01:01:06.350
+Rangarajan Raman (Cohort 13): Yep.
+
+558
+01:01:06.350 --> 01:01:17.599
+Bruce Lam: Okay, thank you. Okay, where we tend to see the application in the product, where it is an external customer-facing loop, like a chatbot or a customer service agent, for example.
+
+559
+01:01:18.300 --> 01:01:33.040
+Bruce Lam: But these algorithms that I've shown you today, those can very much be internal. So, in the exploratory descriptive analytics phase, you can use a large language model or a coding agent to help you improve your process internally there, improve your algorithm.
+
+560
+01:01:33.040 --> 01:01:39.970
+Bruce Lam: make your principal component analysis more flexible, more explainable, more automated. So you have these internal
+
+561
+01:01:40.200 --> 01:01:41.779
+Bruce Lam: AI loops as well.
+
+562
+01:01:41.980 --> 01:01:47.250
+Bruce Lam: And they all are based off of this… these human intelligence pillars, which is…
+
+563
+01:01:47.340 --> 01:02:02.430
+Bruce Lam: These systems don't understand why our business exists, why do we act, they don't understand the context, which is what we have to provide, the domain expertise, and of course, oversight and control, our guardrails, observability, our safety. These are all human-level
+
+564
+01:02:02.770 --> 01:02:09.010
+Bruce Lam: Important critical aspects, and they're gonna become increasingly more important every single day.
+
+565
+01:02:09.390 --> 01:02:14.380
+Bruce Lam: An example of that is, I ran this experiment a couple months ago,
+
+566
+01:02:14.990 --> 01:02:17.660
+Bruce Lam: 3.1 Pro was just, you know.
+
+567
+01:02:17.980 --> 01:02:20.049
+Bruce Lam: that the new model's out now for Gemini.
+
+568
+01:02:20.220 --> 01:02:27.790
+Bruce Lam: So what this was, is this was a Jupyter notebook that I was running to make predictions on
+
+569
+01:02:28.930 --> 01:02:33.619
+Bruce Lam: Credit level, so how much credit should we issue to this new applicant?
+
+570
+01:02:34.200 --> 01:02:37.549
+Bruce Lam: And based off of annual income credit scores and employment.
+
+571
+01:02:37.920 --> 01:02:46.220
+Bruce Lam: And when you run the actual multivariable linear regression algorithm, the answer comes out to be $14,186.02.
+
+572
+01:02:46.700 --> 01:02:52.569
+Bruce Lam: So then I went to Gemini 3.1 Pro, which was, as of a few months ago, was the state-of-the-art model from
+
+573
+01:02:53.090 --> 01:02:59.940
+Bruce Lam: Google, and I gave it all the data, I copied and pasted the exact same data set into here, and I said.
+
+574
+01:03:00.220 --> 01:03:01.790
+Bruce Lam: What should the credit score be?
+
+575
+01:03:02.210 --> 01:03:10.749
+Bruce Lam: And it actually went through a pretty good description of, oh, this is a multivariable regression model. It actually gave me the equations of the model.
+
+576
+01:03:11.110 --> 01:03:17.999
+Bruce Lam: And then it kind of stopped, and then it just used the first… I don't actually know if it computed anything, but it said that
+
+577
+01:03:18.380 --> 01:03:28.870
+Bruce Lam: Based off of the first, like, 5 rows of data, you should issue a credit of $16,816, which is not right, and it would be an over
+
+578
+01:03:29.150 --> 01:03:30.810
+Bruce Lam: Issuance of credits.
+
+579
+01:03:31.540 --> 01:03:37.069
+Bruce Lam: Because it didn't understand the context, and it chose not to run the computation, and instead.
+
+580
+01:03:37.620 --> 01:03:41.119
+Bruce Lam: Kind of guess when it was running out of context.
+
+581
+01:03:41.380 --> 01:03:46.100
+Bruce Lam: And… what was interesting is I ran this exact same scenario.
+
+582
+01:03:46.210 --> 01:03:50.439
+Bruce Lam: on Gemini 3 Flash, which is the lower intelligence model.
+
+583
+01:03:50.750 --> 01:03:59.899
+Bruce Lam: And instead of doing all of this reasoning and trying to brute force it, it actually spun up a coding notebook and wrote an algorithm
+
+584
+01:04:00.210 --> 01:04:02.930
+Bruce Lam: To run the multivariable linear regression instead.
+
+585
+01:04:03.270 --> 01:04:07.629
+Bruce Lam: So, this is priming you, because sometimes people get really obsessed with
+
+586
+01:04:07.790 --> 01:04:14.699
+Bruce Lam: what's the latest model? What is the best model? You know, Astra, GPT Astra just came out, it's incredible.
+
+587
+01:04:14.800 --> 01:04:15.660
+Bruce Lam: Well…
+
+588
+01:04:15.850 --> 01:04:23.739
+Bruce Lam: Satya Nadella, who is the CEO of Microsoft, he just said, don't use frontier intelligence for non-frontier problems.
+
+589
+01:04:23.970 --> 01:04:35.040
+Bruce Lam: So there are some very, very high-value problems that we can solve using AI to assist us, and not having to rely necessarily purely on these frontier intelligences.
+
+590
+01:04:36.980 --> 01:04:42.930
+Bruce Lam: Okay, since we're out of time, I'm just gonna have a couple of examples here for the Bayesian learning model as well.
+
+591
+01:04:43.240 --> 01:04:48.729
+Bruce Lam: This is about updating your prior beliefs, so if you have a baseline assumption that
+
+592
+01:04:53.410 --> 01:04:59.649
+Bruce Lam: So, if they're an employee and they're logging into the network that's legitimate, And that's your baseline assumption?
+
+593
+01:04:59.790 --> 01:05:05.779
+Bruce Lam: But then… all of a sudden, there's a login at 3 AM that happens to be…
+
+594
+01:05:05.910 --> 01:05:12.039
+Bruce Lam: malicious. Now you have new evidence, and you can go and update your prior beliefs.
+
+595
+01:05:12.160 --> 01:05:25.260
+Bruce Lam: And that's called a posterior belief. So it's the ability… it's an algorithm, again, it seems like a very human thing to do, but it's an algorithm that takes your new evidence and continuously updates the probability calculations for a given event.
+
+596
+01:05:26.540 --> 01:05:28.859
+Bruce Lam: So it's a really, really good piece of technology there.
+
+597
+01:05:29.020 --> 01:05:35.349
+Bruce Lam: And I think that's where we should stop today. I'm very impressed that we got through all of this content.
+
+598
+01:05:35.490 --> 01:05:38.610
+Bruce Lam: Are there any final questions before we start closing it down?
+
+599
+01:05:40.340 --> 01:05:47.600
+Rangarajan Raman (Cohort 13): Yeah, Bruce, Rangar here from Singapore. Overall, a very good session with plenty of examples. I was thinking,
+
+600
+01:05:47.790 --> 01:05:58.219
+Rangarajan Raman (Cohort 13): since I represent the CVO cohort Bash 13, at a very senior leadership level, these theoretical examples are really good fundamental
+
+601
+01:05:58.670 --> 01:06:04.069
+Rangarajan Raman (Cohort 13): stodes to really get to a point of October and, model building.
+
+602
+01:06:04.180 --> 01:06:09.560
+Rangarajan Raman (Cohort 13): But, or we, at some point of time in this course.
+
+603
+01:06:09.700 --> 01:06:13.850
+Rangarajan Raman (Cohort 13): Going to really look at live examples of
+
+604
+01:06:13.990 --> 01:06:19.360
+Rangarajan Raman (Cohort 13): big companies where they have really benefited from building these AI models, and unpack
+
+605
+01:06:19.510 --> 01:06:35.510
+Rangarajan Raman (Cohort 13): reverse to understand at what stages what we learned, right? So that'll be of great help learning via illustrations, because you seem to give a lot of examples, which is really great, but are we really going to look at it end-to-end at some point of time in this course? That's my question.
+
+606
+01:06:35.840 --> 01:06:53.279
+Bruce Lam: Yeah, yeah, we definitely will, we definitely will. That's coming up. So, this is the fundamentals, the beginning to build that foundation, and then we will look at how JP Morgan implemented their deep learning system for fraud detection, what they learned, the issues with the system, and how they were going to get around those issues, for example. So, that's coming up.
+
+607
+01:06:54.480 --> 01:06:55.160
+Rangarajan Raman (Cohort 13): Thanks.
+
+608
+01:06:55.640 --> 01:06:58.820
+Bruce Lam: Very good. Yes, there's no homework for Module 2, so…
+
+609
+01:06:59.110 --> 01:07:06.710
+Bruce Lam: Congratulations, you won't have homework again until Module 6, so take the time to… to get caught up, and…
+
+610
+01:07:07.190 --> 01:07:09.979
+Bruce Lam: Very good. Have a wonderful weekend, everyone, and
+
+611
+01:07:10.190 --> 01:07:12.870
+Bruce Lam: Rangjan, thanks for calling in from Singapore.
+
+612
+01:07:13.940 --> 01:07:15.220
+Rangarajan Raman (Cohort 13): Thanks, Bruce. Bye-bye.
+
+613
+01:07:15.220 --> 01:07:17.659
+Bruce Lam: Alright, thanks everyone. Have a good day, have a good weekend.
+

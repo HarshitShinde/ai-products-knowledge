@@ -1,0 +1,1894 @@
+WEBVTT
+
+1
+00:00:12.510 --> 00:00:19.319
+Dr. Amanda Fetch: Pause one moment while I readjust my screen and my notes here, and then we can jump right in.
+
+2
+00:00:43.270 --> 00:00:44.470
+Dr. Amanda Fetch: Okay.
+
+3
+00:00:51.050 --> 00:01:00.510
+Dr. Amanda Fetch: Let me also see… we keep having people trapped in the waiting… waiting room, so hold on one second, let me admit everybody and get that going as well.
+
+4
+00:01:01.530 --> 00:01:06.010
+Dr. Amanda Fetch: Let's see here… Stop sharing again for one moment.
+
+5
+00:01:35.010 --> 00:01:36.419
+Dr. Amanda Fetch: Oh, there we are.
+
+6
+00:01:38.400 --> 00:01:40.030
+Dr. Amanda Fetch: Second time…
+
+7
+00:01:51.940 --> 00:01:57.049
+Dr. Amanda Fetch: Okay, there we are. Now we should have people that aren't stuck in the waiting room.
+
+8
+00:01:57.180 --> 00:01:59.879
+Dr. Amanda Fetch: Okay, false start.
+
+9
+00:02:07.080 --> 00:02:24.440
+Dr. Amanda Fetch: Okay, so now we can actually dig in. Apologies for the little bit of housekeeping there to get started. Actually, one more piece of housekeeping, though, before we get started. I'm traveling and doing a speaking engagement, in DC this week, so I'm gonna be…
+
+10
+00:02:24.610 --> 00:02:29.529
+Dr. Amanda Fetch: Kind of out of commission, so you may have seen,
+
+11
+00:02:30.270 --> 00:02:33.099
+Dr. Amanda Fetch: I think this is you, let me just double check here.
+
+12
+00:02:33.270 --> 00:02:40.659
+Dr. Amanda Fetch: I think you have your second session on Friday, because I'm going to be out of commission, so just while we're live, I just wanted to speak to that. Yes.
+
+13
+00:02:40.840 --> 00:02:58.559
+Dr. Amanda Fetch: So you're gonna have a second session, so no worries, I mean, if you can't attend. Remember, these things are recorded, and we have, I think, Danny and Bruce are also facilitators this section, so if it's too quick of a turnaround or you can't make it, no worries, we'll get the recordings up and running, but I just wanted to speak to that, because I'll be, out of commission,
+
+14
+00:02:58.690 --> 00:03:06.630
+Dr. Amanda Fetch: next week, speaking somewhere. So, just wanted to knock that out as well, so that you're prepared, or if you don't see it on the calendar, it's because
+
+15
+00:03:06.710 --> 00:03:18.090
+Dr. Amanda Fetch: They're almost back-to-back, so as soon as the new content's released, we're going to do Module 2. One other thing I want to say before we dig in is Module 2, I have a supplemental PDF that goes along with my slides.
+
+16
+00:03:18.090 --> 00:03:27.949
+Dr. Amanda Fetch: So that'll be posted with the, resources, just like the slides, so you'll be able to see that. I have supplemental for, Modules 2, 3, and 4.
+
+17
+00:03:27.990 --> 00:03:37.839
+Dr. Amanda Fetch: Because 2 and 3 is very algorithm heavy, you don't need to know it for capstones or anything, it's just a refresher, but for those who actually want to look at the material and dig in a little bit.
+
+18
+00:03:37.840 --> 00:03:51.530
+Dr. Amanda Fetch: there's more of, like, a layman's terms or a high-level explanation guide, because we only have an hour and there's a lot of material, so it's… it's worked well to kind of lead the session, and then send off those supplemental materials, and then
+
+19
+00:03:51.530 --> 00:03:57.059
+Dr. Amanda Fetch: come back if you have further questions. So just keep your eyes peeled that those will be under the resources.
+
+20
+00:03:57.230 --> 00:04:11.469
+Dr. Amanda Fetch: So with that being said, we're a couple minutes in, so I kind of want to just, literally start and dig in here. So this week, the main purpose of the week is to just, discuss the high-level,
+
+21
+00:04:11.660 --> 00:04:27.709
+Dr. Amanda Fetch: MIT product design process, basically. So, four-step process, that we will be covering. Now, I mentioned, I gave a disclaimer in the office hours that I… I get it, it's… it is high level for a reason, because the next…
+
+22
+00:04:27.930 --> 00:04:44.750
+Dr. Amanda Fetch: 8 weeks, we're literally going to be going into use cases and ways of using it, so it's literally done on purpose that this is a high-level snapshot, okay? So just keep that in mind as we go through, bear with this module, because we just want to get you acclimated to the process.
+
+23
+00:04:44.750 --> 00:04:56.770
+Dr. Amanda Fetch: So with that being said, this slide I'm not going to dig into too much, because it's just, like, a nice refresher if you haven't seen some of these terms, or, you know, aren't exactly sure what the, quote, technical or academic
+
+24
+00:04:56.980 --> 00:05:07.979
+Dr. Amanda Fetch: some of the ways of thinking about some of these terms, but just very high level here. Ai branch of computer science focused on creating systems that replicate human-like intelligence and behaviors.
+
+25
+00:05:08.070 --> 00:05:27.209
+Dr. Amanda Fetch: Okay, that's what I'd say the main bulk of that one is. A machine learning subset of AI. So now we're enabling machines to learn from data, identify patterns, and make decisions. The key to this is minimal human intervention, not there is no human, right? Minimal. We need the human. We're gonna keep pushing human in the loop.
+
+26
+00:05:27.220 --> 00:05:34.979
+Dr. Amanda Fetch: throughout this program. NLP filled with an AI focuses on the interaction between computers and humans through natural language now.
+
+27
+00:05:35.280 --> 00:05:48.319
+Dr. Amanda Fetch: And, deep learning. So now that's more… a little bit more of an advanced technique. Now we use things, multi-layered, artificial neural networks, you know, that are what we consider deep neural networks.
+
+28
+00:05:48.320 --> 00:06:03.550
+Dr. Amanda Fetch: now we're looking at those very complex patterns, large amounts of data. And so, I like this visualization. It's very simple, but it just shows you AI is kind of like that overarching umbrella, right? And then within that, we have a couple different,
+
+29
+00:06:03.630 --> 00:06:18.530
+Dr. Amanda Fetch: areas, so again, you know, machine learning is kind of that smaller circle within that, you know, larger AI frame, indicating machine learning is a subset of that. Now, NLP dabbles within kind of all of these, right? So that's sort of,
+
+30
+00:06:19.280 --> 00:06:38.890
+Dr. Amanda Fetch: basically subset of AI, but we also have some overlap with machine learning as well, right? A little bit with the deep learning. And then we have that smallest circle, deep learning, which is sort of situated within machine learning, that's almost like a subset specialization of machine learning. So again, it's just a high-level graphic to kind of visualize how they're tied together.
+
+31
+00:06:38.950 --> 00:06:58.049
+Dr. Amanda Fetch: So what we're gonna go through today is, again, those four stages. So, intelligence, business process, AI technology, and tinkering. With that being said, too, just… I forgot to say this at the beginning. Typically in my sessions, we have breaks, so if you have, like, burning questions, just hold them, because I always bake in.
+
+32
+00:06:58.050 --> 00:07:04.849
+Dr. Amanda Fetch: This, if you've had programs with me in the past, some of the other programs I facilitate, there's a lot of time for questions. This…
+
+33
+00:07:04.850 --> 00:07:16.159
+Dr. Amanda Fetch: particular program is chock-full of material, so there's a lot of me talking. I apologize, but the point of these sessions is to basically present the material in a way that's easier to understand.
+
+34
+00:07:16.160 --> 00:07:36.550
+Dr. Amanda Fetch: So bear with me, but I still bake in, at bare minimum, as I'm talking, one discussion, okay? And that's where, yes, I'll have a discussion, but ask questions or do whatever. Now, within reason, because obviously if we have 200 questions and we have 60 minutes, and now we're already at 50, we can't get to all 200, right? So we're gonna get to some.
+
+35
+00:07:36.640 --> 00:07:51.189
+Dr. Amanda Fetch: Typically, I also stay after, as I've mentioned, so if you can't stay after, no worries. There's other ways to get ahold of us with questions, whether it's put in a support ticket, discussion boards, you know, not everybody checks their Canvas inbox, so I don't really advocate to that.
+
+36
+00:07:51.200 --> 00:07:59.740
+Dr. Amanda Fetch: first point of contact, I say, is put in that support ticket. People put them in consistently. Sometimes multiple tickets per modules. Don't be shy.
+
+37
+00:07:59.790 --> 00:08:18.890
+Dr. Amanda Fetch: That's a way to directly get to us. It's also easier if you say, hey, Amanda said this, I need Amanda. Hey, I need Danny, because he did X, they're gonna vet you straight to us, and we have 24 hours to respond. So to me, that's the most timely, efficient way to get your questions in, so don't feel like, oh, we're not gonna get to my questions, or it's rushed, or I gotta go, or…
+
+38
+00:08:19.210 --> 00:08:35.089
+Dr. Amanda Fetch: Absolutely not. We're literally here on the back end of this to make sure we address that for you. That's literally what we're here for, to provide additional readings, so don't be shy. The issue is you gotta actually ask us, right? So… so just keeping that in mind. Anyway.
+
+39
+00:08:35.360 --> 00:08:39.629
+Dr. Amanda Fetch: Stage one. Okay, so stage one is the intelligence side of this. Now.
+
+40
+00:08:39.789 --> 00:08:52.179
+Dr. Amanda Fetch: With that being said, one of the pieces of this that we have to think about is the performance metrics, okay? So identify the intelligence performance metrics that the AI is expected to achieve, okay?
+
+41
+00:08:52.180 --> 00:09:11.880
+Dr. Amanda Fetch: Now I'm speaking to things like accuracy, precision, recall, error rate, you know, things along those kind of lines. Also, we need to think about how AI is basically rapidly evolving, right? So, whether you're thinking about computer vision, whatever that might be, but how that's impacting the performance.
+
+42
+00:09:11.880 --> 00:09:19.800
+Dr. Amanda Fetch: Right? And we also need to set metrics that are comparable to or exceed human performance, right? Because…
+
+43
+00:09:19.800 --> 00:09:34.220
+Dr. Amanda Fetch: How many times do we think of something, whether… I like to use the summarization example consistently. I found when ChatGPT came out, this is my experience, it was summarizing, it wasn't pulling out all the points that I would pull out if I did it myself. I was giving it these, like.
+
+44
+00:09:34.220 --> 00:09:41.900
+Dr. Amanda Fetch: 150, you know, large documents and saying, pull out the important parts for me so I don't have to take all my time to read this thing, right?
+
+45
+00:09:41.900 --> 00:09:57.469
+Dr. Amanda Fetch: It wasn't working, okay? When I went back in, I was like, oh, no, I would have taken X, Y, and Z. It didn't even mention it at all, okay? Has it gotten better? Yeah, I think it has gotten better. Do some people just depend on it and they don't care? Yes, absolutely. Me, that's not exactly how I feel, so…
+
+46
+00:09:57.470 --> 00:09:59.050
+Dr. Amanda Fetch: With that being said.
+
+47
+00:09:59.060 --> 00:10:17.930
+Dr. Amanda Fetch: me taking the extra time, was it even worth it to begin with, right? So that's what I'm saying, are the things you're going to be thinking about. Does it make sense. I just… another sidebar, I literally just… so I chaired doctoral students also on the side here. Somebody working in geospatial intelligence and AI, looking at, does it make sense to use AI for this stuff?
+
+48
+00:10:17.950 --> 00:10:33.229
+Dr. Amanda Fetch: Like, is it actually saving us time and money? And the first part of the experiment was it wasn't. It actually was not. And then we're… and that's, like, one research study. We're seeing in a lot of examples in companies. Or it's screwing up so bad, we have to backpedal.
+
+49
+00:10:33.280 --> 00:10:40.349
+Dr. Amanda Fetch: So just, you know, these are things we want to keep in mind at the onset, as you're developing the strategy, rather than find that out.
+
+50
+00:10:40.410 --> 00:10:48.670
+Dr. Amanda Fetch: after you've cranked out pilots and, you know, whatever it might be, you should be vetting through some of this at the beginning, right? Anyway, with that being said, scope.
+
+51
+00:10:48.860 --> 00:11:03.710
+Dr. Amanda Fetch: Right? So, what is the scope of the project? Making sure that it's actually focusing on what you intended it to actually focus on, right? Aligning with the overall goals. That, you know, a lot of these things sound like they're common sense. Well, isn't everybody thinking about it?
+
+52
+00:11:03.830 --> 00:11:05.979
+Dr. Amanda Fetch: These are some of the problems we're encountering.
+
+53
+00:11:06.320 --> 00:11:10.729
+Dr. Amanda Fetch: Right? So, yes, maybe some people are thinking about it, but
+
+54
+00:11:10.910 --> 00:11:18.519
+Dr. Amanda Fetch: between the board, or your CEO, or somebody breathing down your neck, that they put millions into it, and you gotta crank out something regardless of it.
+
+55
+00:11:19.190 --> 00:11:21.180
+Dr. Amanda Fetch: Is that realistic?
+
+56
+00:11:21.440 --> 00:11:25.499
+Dr. Amanda Fetch: Because is that gonna cost you more money in the end when you crank out this product that's
+
+57
+00:11:25.580 --> 00:11:40.029
+Dr. Amanda Fetch: not really any good, or in this case, the scope. I'm all over the place, I don't even really know what the business case was for this anymore, because now I'm trying to add on 100 extra features. 100's extreme, but a couple extra features that
+
+58
+00:11:40.030 --> 00:11:48.619
+Dr. Amanda Fetch: now we're losing sight of what the actual problem even was we're solving, because we saw a competitor come out with this other bell and whistle, and now we gotta compete with it. That…
+
+59
+00:11:48.780 --> 00:11:59.719
+Dr. Amanda Fetch: you know, thinking through, does that logically make sense? Especially for a first launch, right? So these are some of the things we have to think about, as we're… as we're kind of digging in and designing this. So…
+
+60
+00:11:59.930 --> 00:12:12.280
+Dr. Amanda Fetch: example in the async, so this is kind of like a rhetorical question, self-driving vehicles is one of those things, like, what could possibly go wrong, right? And of course, I'm sure you can think of a myriad of things, since these have been out for quite some time now. Now.
+
+61
+00:12:12.640 --> 00:12:15.729
+Dr. Amanda Fetch: And the concept of this, right?
+
+62
+00:12:15.760 --> 00:12:38.080
+Dr. Amanda Fetch: the software, however you want to say it, right, that needs to… well, where the software needs to focus on are complex classification tasks, right? That's kind of what the bare bones of that really is, of what the capabilities are for an autonomous vehicle. So, detecting your traffic signals, pedestrians, other road elements, right? So, again.
+
+63
+00:12:38.080 --> 00:12:48.569
+Dr. Amanda Fetch: In order to do this, okay, we have to think about processing continuous video sequences, introducing more information and complexity, compared to if I just feed it a static image.
+
+64
+00:12:48.640 --> 00:13:08.180
+Dr. Amanda Fetch: Right? Maybe there's hidden traffic signals in there. You know, we have a need for a very low error rate, right? Because there could be death. So there's a lot that goes into this, and some of the challenges of what that might be. Now, if I loop that back in, okay, to thinking about the first stage of the process.
+
+65
+00:13:08.180 --> 00:13:15.449
+Dr. Amanda Fetch: Okay? Need to define performance metrics, scope of what this thing needs to focus on, okay? That could mean…
+
+66
+00:13:15.470 --> 00:13:23.399
+Dr. Amanda Fetch: choosing between, let's say, focusing on detecting traffic signals or identifying pedestrians, okay? Now…
+
+67
+00:13:23.440 --> 00:13:25.569
+Dr. Amanda Fetch: Obviously, we need to figure out both.
+
+68
+00:13:25.620 --> 00:13:37.839
+Dr. Amanda Fetch: But in the beginning, kind of thinking through some of those questions, right? Choose and metrics have to consider the evolving performance needs of this application, okay? So maybe that's thinking about reducing an error rate, which, again.
+
+69
+00:13:37.840 --> 00:13:49.610
+Dr. Amanda Fetch: and something like this, we almost want it to be, like, zero, right? Because there's a very high, obviously, there's a lot at stake. You know, what can go wrong with a self-driving vehicle? So…
+
+70
+00:13:49.750 --> 00:13:57.329
+Dr. Amanda Fetch: Again, you know, also scope, thinking about the intelligence required, and, operating under various conditions.
+
+71
+00:13:57.390 --> 00:14:06.490
+Dr. Amanda Fetch: Right? Looking at pedestrians, you know, infrared cameras, processing traffic signals, various conditions, whatever it might be. So just thinking about all those components.
+
+72
+00:14:06.490 --> 00:14:21.170
+Dr. Amanda Fetch: So, just to give you a heads up, too, when I… when I build my decks, I usually pull out your activities so that you could bucket your time or look aft… look at this after and say, oh, okay, there was an activity, I'll go back in and address that, or something like that. So I pull those out in the slides for you.
+
+73
+00:14:21.200 --> 00:14:23.370
+Dr. Amanda Fetch: Just as, like, an FYI.
+
+74
+00:14:24.450 --> 00:14:35.940
+Dr. Amanda Fetch: This slide digs into a little bit about NL… or sorry, NLP, and what exactly that is. I think most of us have touched on this at this point, right? Typically, but again.
+
+75
+00:14:35.960 --> 00:14:49.589
+Dr. Amanda Fetch: high level on this. This diagram touches on some of the, examples of how you can use NLP, right? So, branch of AI enables computers to understand, interpret, and generate human language.
+
+76
+00:14:50.230 --> 00:14:57.820
+Dr. Amanda Fetch: Whether it's summarizing long documents, I gave the example that, to me, it's… it's still not… it's never going to be perfect, but…
+
+77
+00:14:58.090 --> 00:15:07.049
+Dr. Amanda Fetch: sometimes I still question it's, you know, how great it is at doing some of these things, but summarizing long documents, translating documents, annotating news.
+
+78
+00:15:07.080 --> 00:15:26.259
+Dr. Amanda Fetch: Describing words, filling customer request forms, some of the various areas you can be using this for, and many of you have probably already worked on some of these, right? So again, figuring out, how to solve complex problems, again, coming back to just that, you know, sort of human language part of it. Now.
+
+79
+00:15:26.620 --> 00:15:34.099
+Dr. Amanda Fetch: little bit of, jargon here, just so you can get a little bit familiar with some of this, and kind of how this works.
+
+80
+00:15:34.330 --> 00:15:49.660
+Dr. Amanda Fetch: NER, so named Entity Recognition. Okay, so that's a task in LP where AI is trying to identify and classify important pieces of information in text, okay? So those pieces of information are known as entities.
+
+81
+00:15:49.820 --> 00:15:55.550
+Dr. Amanda Fetch: So, in this case, could be names of people, you know, places, dates, organizations.
+
+82
+00:15:55.710 --> 00:16:00.389
+Dr. Amanda Fetch: So if I have an example, Amazon was founded by Jeff Bezos in 1994.
+
+83
+00:16:00.990 --> 00:16:05.349
+Dr. Amanda Fetch: NER, by design, should recognize Amazon is the organization.
+
+84
+00:16:05.600 --> 00:16:20.760
+Dr. Amanda Fetch: Bezos is the person, 1994 is the date, okay? So it's helping the AI understand what these references are, right? Now, the positional tagging side, okay, now I'm thinking about understanding the role of each word in the sentence.
+
+85
+00:16:21.080 --> 00:16:22.140
+Dr. Amanda Fetch: So.
+
+86
+00:16:22.310 --> 00:16:32.059
+Dr. Amanda Fetch: Is this thing a noun, a verb, an adjective, based on that position and relationship with other words in that sense? So if I have the quick brown fox jumps over the lazy dog.
+
+87
+00:16:32.380 --> 00:16:42.029
+Dr. Amanda Fetch: Positional tagging is going to identify fox, dog as nouns, jumps as verb, and so on and so forth. So, it's,
+
+88
+00:16:42.150 --> 00:16:49.219
+Dr. Amanda Fetch: Well, I guess one other note on this, as we dig into this a little bit more, as we go through the modules,
+
+89
+00:16:49.360 --> 00:16:55.360
+Dr. Amanda Fetch: more complex tasks, so let's say we're talking about, like, sentiment analysis, okay?
+
+90
+00:16:55.960 --> 00:17:09.019
+Dr. Amanda Fetch: there's been a lot of advancements in some of this, right? Where… where we're going above and beyond some of what I'm addressing, and we're looking at on this slide, where it's the very basics, right? Now we can start to look at some of the context, and again, that's sentiment.
+
+91
+00:17:09.020 --> 00:17:22.300
+Dr. Amanda Fetch: more on, like, looking at the… well, I guess coming back to context, and seeing how the words are exactly being used, and things like that. We'll touch on this in some further modules, and a little bit deeper.
+
+92
+00:17:22.530 --> 00:17:40.429
+Dr. Amanda Fetch: this, just high… high up, and so this is actually… we will take a brief pause on this slide for a second, but just high level on the difference between LLMs and NLP applications, right? Because a lot of times, we hear people just kind of intermix and inter-talk about these things, right? So…
+
+93
+00:17:40.720 --> 00:17:43.549
+Dr. Amanda Fetch: Your model, obviously, that's your GPTs.
+
+94
+00:17:43.550 --> 00:18:01.689
+Dr. Amanda Fetch: Right? Whatever that might be, whatever we're up to now, right? BERT, things like this. Then your applications, of course, now we're talking about ChatGPT, Claude, you know, and those different applications. So being able to just, even in discussion, be able to identify that, because I know a lot of times people just use these things very interchangeably.
+
+95
+00:18:01.690 --> 00:18:07.359
+Dr. Amanda Fetch: So with that being said, I'll pause for a second, so this is, like, a first, you know, if you have any thoughts.
+
+96
+00:18:07.370 --> 00:18:14.220
+Dr. Amanda Fetch: comments, but just… and I think you had an activity addressing this as well. If anybody wants to discuss any,
+
+97
+00:18:14.700 --> 00:18:28.569
+Dr. Amanda Fetch: Do I want to say some, interesting use cases you've been seeing with LLMs, or NLP apps? And, you know, kind of for what purpose they've been used for. So, with that being said, let me see, Abhi, I think I see your hand up.
+
+98
+00:18:29.250 --> 00:18:44.370
+Abhi Banerjee: Yes, hey, hey, Amanda. So, so this is actually going, going back to the performance metric, so, so, so for the first assignment, I, went through the intelligence
+
+99
+00:18:44.950 --> 00:18:54.330
+Abhi Banerjee: a stage, and I'm looking at the performance, performance metric, and it's a Gen AI application to look at current affairs and to
+
+100
+00:18:54.680 --> 00:19:00.359
+Abhi Banerjee: To identify the macroeconomic variables, which would be
+
+101
+00:19:00.610 --> 00:19:05.410
+Abhi Banerjee: Acted by, say, the, the, the energy…
+
+102
+00:19:06.400 --> 00:19:21.840
+Abhi Banerjee: crisis. So, so what would be a performance metric there? Because it's a Gen AI model, right? So what would be a performance, metric, to track in such a place?
+
+103
+00:19:22.870 --> 00:19:36.769
+Dr. Amanda Fetch: Yeah, well, that's… I mean, for your use case, that's something you would really just have to dig into, right? So that's something you're just gonna have to put thought in to think about, but what I would guide you towards is those performance metrics. Typically, when you're at this high-level stage.
+
+104
+00:19:36.770 --> 00:19:50.889
+Dr. Amanda Fetch: is going to be time or efficiency. So, like, for example, I… you know, again, you're the expert in that area, so I can't speak a lot to that specific use case. But, like, for example, what I'm seeing a lot in the intelligence community is briefings.
+
+105
+00:19:50.920 --> 00:20:03.259
+Dr. Amanda Fetch: So, they still need the human because there's a lot you can't trust with what's spit out by these tolls, or if you feed it, like, I've seen solutions fed, like, a thousand pages of intelligence reports.
+
+106
+00:20:03.260 --> 00:20:13.800
+Dr. Amanda Fetch: The problem is, yes, we can look at everything in chronological order, but there could be different things, you know, that you need to pull out that are relevant that only the human might know. So, with that being said.
+
+107
+00:20:13.880 --> 00:20:19.769
+Dr. Amanda Fetch: Some of those cases are just literally being able to generate an intelligence report.
+
+108
+00:20:19.890 --> 00:20:32.599
+Dr. Amanda Fetch: I don't know, in a couple hours, but that's also with the caveat that a human's looking at it, versus I gotta now manually go through all this. So, I would say a lot of it's probably gonna be,
+
+109
+00:20:32.900 --> 00:20:42.680
+Dr. Amanda Fetch: speaking towards, like, either generative AI or just AI in general, on how you're reducing the human component, but not giving up the,
+
+110
+00:20:42.880 --> 00:20:49.290
+Dr. Amanda Fetch: what do I want to say? Not necessarily efficiency, because efficiency doesn't mean the accuracy is good, right? So I'd say…
+
+111
+00:20:49.310 --> 00:21:03.729
+Dr. Amanda Fetch: trying to maximize accuracy, though, with efficiency is kind of like that trade-off. So I'd say, yeah, you'd have to get out there and kind of really put some thought into it, but it's going to be those type of metrics, right? Because
+
+112
+00:21:03.810 --> 00:21:12.639
+Dr. Amanda Fetch: so I referenced one other statement on this, when I said about the student I was working with now, and they were looking at, because it's all about cost, right?
+
+113
+00:21:12.740 --> 00:21:20.670
+Dr. Amanda Fetch: Well, they found it's not necessarily cost-friendly, because obviously, to be more efficient, you're going to spend the money on that, so…
+
+114
+00:21:21.230 --> 00:21:27.089
+Dr. Amanda Fetch: I mean, you gotta… so that's the thing. It's not necessarily a savings of money, it's actually putting the money out front.
+
+115
+00:21:27.340 --> 00:21:29.870
+Dr. Amanda Fetch: And then seeing, over time.
+
+116
+00:21:29.990 --> 00:21:35.870
+Dr. Amanda Fetch: if you can, you know, do some kind of a cost saving. So, again, there's just… and I think…
+
+117
+00:21:36.050 --> 00:21:48.409
+Dr. Amanda Fetch: as we go through the modules, too, and really dig into these stages, because now you're just literally learning what stages to look at, I think it'll assist you, too, in pulling out what makes sense for your specific use case, also.
+
+118
+00:21:50.230 --> 00:21:51.710
+Abhi Banerjee: Thank you, that makes sense, yeah.
+
+119
+00:21:53.080 --> 00:21:55.499
+Dr. Amanda Fetch: Let's see, Diane, I see your hand went up.
+
+120
+00:22:05.900 --> 00:22:12.099
+Dr. Amanda Fetch: Let's see… you're not muted on my end, but I'm not able to hear you. I don't know if it's just me.
+
+121
+00:22:12.800 --> 00:22:14.090
+Chris Lee: We can't hear.
+
+122
+00:22:15.710 --> 00:22:16.989
+Diane Chan: Can you hear me?
+
+123
+00:22:17.690 --> 00:22:18.880
+Dr. Amanda Fetch: Yes, now we can.
+
+124
+00:22:18.880 --> 00:22:32.990
+Diane Chan: Okay, all right, sorry. Yeah, so, my question is, you know, for the scope, I was also, wondering if we should also put what's out of scope when we respond to the homework.
+
+125
+00:22:33.290 --> 00:22:34.500
+Diane Chan: the assignment.
+
+126
+00:22:34.650 --> 00:22:49.460
+Dr. Amanda Fetch: Well, that, yeah, that's a great question. That's up to you. So if it's helpful, absolutely, right? But of course, if it's more time-consuming to sit there and think about that. But I, I mean, I don't see anything wrong with that exercise. And the grading team, so…
+
+127
+00:22:49.460 --> 00:22:59.399
+Dr. Amanda Fetch: One housekeeping point to this is the grading team grades modules 1 through 8, and so us as the facilitators, we pull in and give you feedback on your final capstones.
+
+128
+00:22:59.740 --> 00:23:00.210
+Diane Chan: Okay.
+
+129
+00:23:00.420 --> 00:23:10.309
+Dr. Amanda Fetch: and so sometimes they give you feedback, sometimes they don't, so we can't promise what they're gonna do, but, you know, but I've never heard them say, you know, if you're going outside of the.
+
+130
+00:23:10.660 --> 00:23:15.770
+Dr. Amanda Fetch: question, really, as long as you're answering the question. So, could be a helpful exercise.
+
+131
+00:23:15.920 --> 00:23:24.690
+Diane Chan: Oh, great, thank you. And one more question regarding the assignment. Is each question, does it have to be at least 150 words, or…
+
+132
+00:23:25.010 --> 00:23:34.610
+Dr. Amanda Fetch: So typically… so, a couple caveats to that. One is, as executives, you shouldn't be sitting there and counting words. So, if the grading team is being strange.
+
+133
+00:23:34.680 --> 00:23:49.319
+Dr. Amanda Fetch: and saying, this is 99 words, I need… please let us know, because that… that really isn't the design. But yes, if you turn in, like, one sentence, and it's, like, 8 words, they're probably going to come back and say, beef it up. But… but that… that's a guideline.
+
+134
+00:23:49.500 --> 00:23:53.300
+Dr. Amanda Fetch: So you should… anywhere in that realm or go above that's also fine.
+
+135
+00:23:54.160 --> 00:23:55.289
+Diane Chan: Great, thank you.
+
+136
+00:23:55.290 --> 00:23:56.520
+Dr. Amanda Fetch: Yeah, of course.
+
+137
+00:23:57.220 --> 00:23:59.070
+Dr. Amanda Fetch: Chris, I see your hands up.
+
+138
+00:23:59.650 --> 00:24:14.890
+Chris Lee: Yeah, yeah, hi. Just a quick question. Obviously, we've been talking about LLMs, but I've been finding quite a bit of utility in small language models, so obviously we can articulate that, right, when we write up our business case, if we decide to take that path.
+
+139
+00:24:15.140 --> 00:24:16.920
+Dr. Amanda Fetch: Yep, absolutely.
+
+140
+00:24:17.270 --> 00:24:18.510
+Chris Lee: Okay, thank you.
+
+141
+00:24:18.750 --> 00:24:19.670
+Dr. Amanda Fetch: Yeah.
+
+142
+00:24:20.260 --> 00:24:24.180
+Dr. Amanda Fetch: Let's see, Deb will go to you, and then we'll keep pushing through some slides.
+
+143
+00:24:25.500 --> 00:24:38.209
+Deb Drexler: Someone mentioned about value and cost savings. One of the things that's been really helpful in showing that in dollar value to our executive leadership is to take… we have a standard model we use for cost avoidance.
+
+144
+00:24:38.260 --> 00:24:48.919
+Deb Drexler: And we tie that to money based on rates that we have for the types of folks using that particular tool or AI agent. So we can look at capacity of use, multiply it against those rates to say we're not
+
+145
+00:24:48.920 --> 00:24:58.329
+Deb Drexler: saving you money, but this is the avoidance from a time perspective, when we think of, you know, the value of the tool. So it's just something to think about when you're looking at that metric.
+
+146
+00:24:59.730 --> 00:25:05.840
+Dr. Amanda Fetch: Yeah, great share. Thank you for… thank you for jumping in on that one. So…
+
+147
+00:25:05.980 --> 00:25:21.829
+Dr. Amanda Fetch: Moving ahead here, couple more activities, so this is kind of directly in alignment with what I mentioned, if anybody wanted to jump in on any examples, but you could always share that in the self-study section. So with that being said, stage two of this.
+
+148
+00:25:21.830 --> 00:25:27.229
+Dr. Amanda Fetch: And this, I think, is where it kind of really starts to get interesting in thinking about what…
+
+149
+00:25:27.310 --> 00:25:34.260
+Dr. Amanda Fetch: from a strategic standpoint make sense, to focus on within your… within your product. So.
+
+150
+00:25:34.430 --> 00:25:47.419
+Dr. Amanda Fetch: With that being said, there's a couple different areas that, the asynchronous and the material focused on. First is product player. So, thinking about creating the best AI technology that's out there.
+
+151
+00:25:47.420 --> 00:26:02.940
+Dr. Amanda Fetch: Right? So, an example is the fingerprint recognition software, right? So you need to have the very best that's on the market. And so, with that being said, of course, your technology should be superior to others within the industry.
+
+152
+00:26:02.940 --> 00:26:15.740
+Dr. Amanda Fetch: Customer solutions player on that side of it, AI can assist, and creating a product that integrates all different types of necessary features that make it valuable and functional.
+
+153
+00:26:15.740 --> 00:26:24.239
+Dr. Amanda Fetch: for customers. So, maybe it's, you know, a security system that incorporates not just the fingerprint recognition now.
+
+154
+00:26:24.240 --> 00:26:35.840
+Dr. Amanda Fetch: But we have additional features like locks, intrusion alerts, police connections, right? Mobile app integrations. So now we're offering a few different, I guess, add-ons.
+
+155
+00:26:35.840 --> 00:26:50.119
+Dr. Amanda Fetch: Right, to this. And then network externalities. So now we're focusing on building a larger user base, where the value of the product or service increases as more people are using it, right? So, like, our social media and things like that. But…
+
+156
+00:26:50.120 --> 00:27:05.080
+Dr. Amanda Fetch: coming back to our fingerprint, right, that technology. Maybe we're looking to create some sort of a nationwide, country-wide type of fingerprint database that becomes more useful as more states, or maybe you're starting small, more…
+
+157
+00:27:05.080 --> 00:27:22.130
+Dr. Amanda Fetch: municipalities, that are surrounding, you start to participate, right? So you can start small, build on top of it, and then that value starts to increase. So again, couple high-level examples on that side of it. Now the operational side.
+
+158
+00:27:22.460 --> 00:27:29.149
+Dr. Amanda Fetch: is basically looking at, specific business processes that your AI is going to impact.
+
+159
+00:27:29.370 --> 00:27:48.849
+Dr. Amanda Fetch: Okay? So… and one other thing to think about is making this realistic, right? Realistic improvement targets. So, thinking about if we're applying AI, you know, one of the examples is to a call center or something like this, okay? The aim might have been to reduce uncompleted calls by 80%, right? Without increasing costs.
+
+160
+00:27:48.950 --> 00:28:08.100
+Dr. Amanda Fetch: Or if we're focusing on legal translations, maybe we want to lower cost by significantly, or, I'm sorry, significantly by having AI produce the first draft, right, that lawyers can then refine. And those are kind of touching on some of the examples I was giving before, but anyway, thinking about the business process itself.
+
+161
+00:28:08.100 --> 00:28:13.260
+Dr. Amanda Fetch: And what would make sense from almost, like, an optimization standpoint?
+
+162
+00:28:14.720 --> 00:28:24.639
+Dr. Amanda Fetch: Stage 3 is thinking more about the technology aspect, so one thing to kind of just put out there, this isn't, like, an IP or a law course by any means.
+
+163
+00:28:24.640 --> 00:28:37.919
+Dr. Amanda Fetch: but still thinking about, the intellectual property side of this, and the data strategy attached. So, figuring out, again, what technology makes sense, and should we think about patenting this thing?
+
+164
+00:28:37.930 --> 00:28:39.730
+Dr. Amanda Fetch: Right?
+
+165
+00:28:40.040 --> 00:29:01.319
+Dr. Amanda Fetch: thinking about also, rapid growth and evolution. You know, is there already patents existing out there? How does that play into your solution? Is there a way that you can either pivot off of that or change direction? Whatever it might be, right? But looking out there into the IP side of this equation and thinking about all those different patent considerations.
+
+166
+00:29:01.320 --> 00:29:10.420
+Dr. Amanda Fetch: Data strategy, so FANG was, was basically pushed out there, you know, your whole Facebook, Apple, Amazon, those sort of companies.
+
+167
+00:29:10.420 --> 00:29:15.439
+Dr. Amanda Fetch: And thinking about as, you know, the more data you possess.
+
+168
+00:29:15.440 --> 00:29:33.060
+Dr. Amanda Fetch: Okay, especially thinking about metadata starts to heavily influence your machine learning algorithms that you can apply. And so, with that being said, think about proper labeling, tagging, you know, using that metadata is essential to maximize your different sort of AI capabilities and things like that.
+
+169
+00:29:33.200 --> 00:29:49.749
+Dr. Amanda Fetch: Now, one thing I want to note, though, is obviously FANG isn't the only data approach, right? There's other strategies in this, but that is an approach that you could think about or consider as you're… as you're navigating through that strategy.
+
+170
+00:29:49.920 --> 00:29:57.450
+Dr. Amanda Fetch: This slide, so now we're touching on, sort of, a breakdown on how you can leverage,
+
+171
+00:29:57.710 --> 00:30:13.509
+Dr. Amanda Fetch: different, I guess we could call these almost, like, interconnected forces. So, thinking about network externality, system lock-in, and economies of scale. And so, thinking about these in order to gain maybe a long-term or a sustainable advantage in your market. So.
+
+172
+00:30:13.870 --> 00:30:23.929
+Dr. Amanda Fetch: Network externality. So, that's basically the idea that the value or service of your product increases as more people use it, right? So you may have heard of this as network effects.
+
+173
+00:30:23.940 --> 00:30:40.779
+Dr. Amanda Fetch: And so, again, coming back to that social media example, that becomes more attractive as more and more users come on, right? Then you have more networking and more value than rather it's literally just you, what's the point, right? If it's supposed to be some sort of a social connection or networking experience.
+
+174
+00:30:40.780 --> 00:30:45.860
+Dr. Amanda Fetch: System lock-in, that's when we sort of…
+
+175
+00:30:46.240 --> 00:30:57.959
+Dr. Amanda Fetch: force our consumers that if, you know, they want to switch products, that cost is high for them, right? So it makes them difficult to leave a platform. So, example of that,
+
+176
+00:30:58.140 --> 00:31:19.440
+Dr. Amanda Fetch: you know, I like to give the example of, like, Apple products or something like this, you know? Maybe you bought an iPad, or you have an iPhone, you have one of the products, right? And then you want to buy a tablet, or you want to buy a smartwatch, or whatever you want to do. And yes, I'd say in 2026, it's fair to say most of these products integrate fairly well together, that we don't necessarily have to get
+
+177
+00:31:19.440 --> 00:31:21.929
+Dr. Amanda Fetch: That specific brand.
+
+178
+00:31:22.050 --> 00:31:33.879
+Dr. Amanda Fetch: But I will tell you, at certain points, it is a lot easier that things just seamlessly kind of integrate together, right? So, they start to form this sort of system lock-in, that if I don't
+
+179
+00:31:33.880 --> 00:31:43.549
+Dr. Amanda Fetch: you know, tack on this product, it's going to be an issue, right? And it's going to be more of an annoyance, that it kind of forces me to stick to that brand, or stick to those kind of products.
+
+180
+00:31:43.630 --> 00:31:52.529
+Dr. Amanda Fetch: Economies of scale, so thinking about as a company benefits from network externalities and system lock-in.
+
+181
+00:31:52.530 --> 00:32:09.580
+Dr. Amanda Fetch: that revenue starts to grow, now we can reinvest in R&D, so in our research and development efforts, and hopefully that leads to, you know, access to more data, you know, better algorithms that we can build, further growth. And so then we have this sort of a cycle.
+
+182
+00:32:09.790 --> 00:32:13.920
+Dr. Amanda Fetch: That starts as these kind of pieces all sort of start working together.
+
+183
+00:32:14.130 --> 00:32:18.870
+Dr. Amanda Fetch: See another activity out there.
+
+184
+00:32:19.340 --> 00:32:31.439
+Dr. Amanda Fetch: Stage 4 of this process, so Stage 4 is focusing… focusing, sorry, more on tinkering, so between your software development and your AI cancers.
+
+185
+00:32:31.620 --> 00:32:32.490
+Dr. Amanda Fetch: So…
+
+186
+00:32:32.920 --> 00:32:42.869
+Dr. Amanda Fetch: Thinking about the software development side of this, and some of the key components you'd have to think about. One is code and data repository.
+
+187
+00:32:42.870 --> 00:33:02.400
+Dr. Amanda Fetch: Right? So basically thinking about version controlling within your systems, like GitHub, to make sure, you know, you sort of have this efficient code, you know, again, repository that you can kind of refer back to and look at different versions, version controls and things like this. Think about your data management across all the different stages of development.
+
+188
+00:33:02.440 --> 00:33:15.980
+Dr. Amanda Fetch: Your testing plan, right? An experimental plan. So, developing some kind of robust strategy to address, you know, software issues, aligning with business goals, thinking about GPU setups.
+
+189
+00:33:15.980 --> 00:33:24.690
+Dr. Amanda Fetch: You know, how we're going to officially manage our resources, you know, thinking about cloud environments, optimize computational efficiency, cost effectiveness.
+
+190
+00:33:24.690 --> 00:33:37.789
+Dr. Amanda Fetch: You know, all that leads into that budget planning. So, preparing for potential cost overruns by establishing budget planning, you know, and justifying things up front. Now, pretty much we could say across the board, a lot of times.
+
+191
+00:33:37.890 --> 00:33:56.550
+Dr. Amanda Fetch: this is easier said than done, right? Pretty much, it's a given you're gonna blow the budget, right? But by how much varies, but again, thinking about what areas are prone to that, being ahead of it, and saying, look, this is what we're budgeting now, this is what could occur, and just, again, strategically thinking through some of those, so we can start to get ahead of these things.
+
+192
+00:33:56.550 --> 00:34:05.969
+Dr. Amanda Fetch: Sushil, I see your hands up, but like I said, we have different points where we'll stop, so we're getting to that point now, so we can have you jump in in a moment. But here.
+
+193
+00:34:06.190 --> 00:34:10.729
+Dr. Amanda Fetch: Something to think about is reasons to pivot. And so.
+
+194
+00:34:10.800 --> 00:34:14.999
+Dr. Amanda Fetch: I stress this a lot, because as we go through the weeks.
+
+195
+00:34:15.030 --> 00:34:37.290
+Dr. Amanda Fetch: You know, we encourage, but you don't have to do this, that a lot of times we'll say, as you're thinking of an idea, it might be easy… easier to keep that same idea throughout the program, right? Keep thinking about that same thing so you can keep building on it, rather than week 9, now I'm going to go with something new and come up with everything from scratch. Which, you can still do that, but it might be easier to think about it.
+
+196
+00:34:37.290 --> 00:34:39.110
+Dr. Amanda Fetch: Now, with that being said.
+
+197
+00:34:39.210 --> 00:34:45.170
+Dr. Amanda Fetch: Let's say you get so far through this thing, and now we're at week 7 and 8, 9's a capstone, you're like, wait a minute.
+
+198
+00:34:45.350 --> 00:35:02.100
+Dr. Amanda Fetch: I don't even know if AI makes sense for this anymore. Like, the more I'm seeing, the more I feel like I'm gonna have challenges. I don't even know if I want to do this. I feel like this should even be a pivot. Like, and we should either go a different direction, or totally, like, cut this thing completely because of XYZ.
+
+199
+00:35:02.530 --> 00:35:11.089
+Dr. Amanda Fetch: That's all fair, that happens a lot, and so I don't want you to shy away from that or say, oh, now I gotta think of something else. I put all this…
+
+200
+00:35:11.190 --> 00:35:22.740
+Dr. Amanda Fetch: say that, right? Get to the point and say, look, I did all this vetting, I, you know, I went through all these different areas, here's what I looked at, but in the end, challenges are at XYZ,
+
+201
+00:35:22.740 --> 00:35:40.780
+Dr. Amanda Fetch: So I'm thinking maybe it makes sense that you might have to do a pivot, right? So, you know, there's a lot of reasons for that. You know, some of the reasons between, you know, open source models can change and get updated, technologies built on top of them, you know, we might need to keep retuning those, revamping them.
+
+202
+00:35:40.780 --> 00:35:44.740
+Dr. Amanda Fetch: You know, maybe your chatbot's responses are off.
+
+203
+00:35:44.740 --> 00:35:50.010
+Dr. Amanda Fetch: You know, changes in model architecture, updating your training data.
+
+204
+00:35:50.010 --> 00:36:09.850
+Dr. Amanda Fetch: You know, different things can occur that… those, I'd say, are pretty typical in standards. And those, I would probably say, you don't want to just scrap your project, just be aware of them and be able to get ahead of them so that you don't have devastating consequences where people say, oh, this response was totally off, this thing's awful, and people stop using your product. You know, you kind of want to
+
+205
+00:36:09.850 --> 00:36:26.520
+Dr. Amanda Fetch: try to get ahead of some of those things, you know, like model… model drift, which we're going to talk about all these things in later modules. But anyway, just… just thinking about what could be some reasons to pivot. So, I'll pause to show. I know you had a comment or a question, so…
+
+206
+00:36:26.520 --> 00:36:32.349
+Dr. Amanda Fetch: We'll go ahead and take that, and then if anybody else wants to jump in here, before we kind of move on.
+
+207
+00:36:32.630 --> 00:36:46.330
+Sushil Goyal: So, my question was around the data strategy, right? So, we are talking about hyperscalers here, which is the FAGs, but those are platforms which enable the data strategy, but that topic does not delve into, like.
+
+208
+00:36:46.440 --> 00:37:04.109
+Sushil Goyal: how do I go about collecting the data? Do I have the right relevant data? As you spoke about, like, tagging the data, all of those aspects, right? Because that's where I had a disconnect when I was going through this material. Like, suddenly there is a circle which draws the attention to a different
+
+209
+00:37:04.110 --> 00:37:11.369
+Sushil Goyal: direction, but the data strategy is just left to the FANG company. So how does it embed into the design aspect of it?
+
+210
+00:37:11.370 --> 00:37:21.430
+Sushil Goyal: Do we not need to look at the relevancy of data? Do we not need to look at the success metrics which we have established? Will the data enable all of those foundations and all of those stuff?
+
+211
+00:37:21.560 --> 00:37:25.879
+Sushil Goyal: That's what I was trying to understand from the design aspects of it.
+
+212
+00:37:27.480 --> 00:37:32.600
+Dr. Amanda Fetch: Yeah, so great question. So, as I said on that example, FANG is literally one example.
+
+213
+00:37:32.680 --> 00:37:44.339
+Dr. Amanda Fetch: So that… that basically tied in with the examples we were speaking, like, I was speaking to the fingerprint database and things like this, right? Thinking about network effects of your product and,
+
+214
+00:37:44.340 --> 00:37:56.349
+Dr. Amanda Fetch: Again, this kind of all tied hand-in-hand, but you're exactly correct. That's going to vary, and yes, it does… you will be thinking about, you know, how you're going to collect the data, how you're going to store the data,
+
+215
+00:37:56.480 --> 00:38:09.110
+Dr. Amanda Fetch: you know, how often you're gonna update your strategies, your models. As I mentioned, we know, so if you're building some kind of wrapper, something on top of existing, when there is a change, model drift is…
+
+216
+00:38:09.150 --> 00:38:12.570
+Dr. Amanda Fetch: extremely con… I mean, it happens when there's changes, so…
+
+217
+00:38:12.610 --> 00:38:30.429
+Dr. Amanda Fetch: figuring out on that aspect, which… that could dabble in a couple different areas, not necessarily completely the data strategy. But… but just to give you a spoiler alert, as we go through the modules, we're going to dig more into data, and we're also going to look at ways to,
+
+218
+00:38:30.450 --> 00:38:35.449
+Dr. Amanda Fetch: what do I want to say? Enhance your data set. So, so,
+
+219
+00:38:35.500 --> 00:38:37.979
+Dr. Amanda Fetch: More to come on that, but you're exactly.
+
+220
+00:38:37.980 --> 00:38:39.900
+Sushil Goyal: Yeah, yeah, okay, yeah, because…
+
+221
+00:38:40.080 --> 00:38:42.360
+Dr. Amanda Fetch: Yeah, that was one way of looking at it, yes.
+
+222
+00:38:42.360 --> 00:38:55.310
+Sushil Goyal: Correct, because I was looking to understand, right, like, how do you enable the product? Like, how do you establish the ontologies and the semantics around it? Because those are also design aspects. If you don't have a semantics and ontologies defined.
+
+223
+00:38:55.330 --> 00:39:05.490
+Sushil Goyal: your ultimate product will have no context of the data, so those are some aspects which you should bake into. Hopefully, the course touches upon those as well as we go along.
+
+224
+00:39:06.330 --> 00:39:23.319
+Dr. Amanda Fetch: Yes. Yep, so we'll be digging into more of this. Now, again, a lot of this is going to be higher levels, and then everybody would kind of dig in and, you know, obviously tailor it back to your, your use case, but the way you'll see as we prepare or work through modules, which is why I mentioned
+
+225
+00:39:23.410 --> 00:39:30.270
+Dr. Amanda Fetch: Bear with us this week, there's not a lot of examples, because we want to get you acclimated to the process, and then we're gonna be, like.
+
+226
+00:39:30.280 --> 00:39:42.370
+Dr. Amanda Fetch: I'd say probably after week 2 and 3, because 2 and 3 is also digging into some of the, the background of, like, some algorithms and, you know, what you can attribute to your use cases.
+
+227
+00:39:42.370 --> 00:39:50.469
+Dr. Amanda Fetch: But after that, definitely Modules 4 and on is going to be just nothing but use cases, and how you'd apply this process to a bunch of different problems.
+
+228
+00:39:50.480 --> 00:39:51.260
+Dr. Amanda Fetch: Okay.
+
+229
+00:39:51.640 --> 00:39:57.320
+Dr. Amanda Fetch: Thanks. So, more to come. Yes, absolutely. Let's see, Denis, I see your hand went up.
+
+230
+00:39:57.490 --> 00:40:14.610
+Denis Tambwe: Yes, I have two questions. I just came across some… a detail that I didn't see. The 45 minutes for the workbook, what does it mean? It means we have 45 minutes to do the, the, the work, and after that, if it exceeds that.
+
+231
+00:40:15.230 --> 00:40:18.959
+Denis Tambwe: is not good, or… because I just noticed…
+
+232
+00:40:19.490 --> 00:40:33.849
+Denis Tambwe: I have studied my workbook one, but I stopped because I'm busy doing all the stuff, and then I know that I have to finish that for tomorrow, at the latest. So, what does it mean, the 45 minutes? It is an approximations, or what it is?
+
+233
+00:40:34.640 --> 00:40:40.729
+Dr. Amanda Fetch: Yeah, so I think you hit it. So, yes, so it's just a proximate exactly what you said.
+
+234
+00:40:40.730 --> 00:40:41.570
+Denis Tambwe: Perfect.
+
+235
+00:40:41.570 --> 00:40:43.380
+Dr. Amanda Fetch: But we're gauging, you know.
+
+236
+00:40:43.380 --> 00:40:44.469
+Denis Tambwe: Try not to take more.
+
+237
+00:40:44.470 --> 00:41:03.029
+Dr. Amanda Fetch: than that, so one spoiler on that one is, I think the capstone also says something like a 90 minutes, because we don't want anyone, because, you know, you're busy, you have lives, like you said, you had to come back to it, we don't want anyone to think you have to spend, like, days or, like, 100 hours on, you know what I mean? So we want to…
+
+238
+00:41:03.410 --> 00:41:07.819
+Dr. Amanda Fetch: dial it back to make sure you understand. Don't spend too much time, but just enough to maybe get.
+
+239
+00:41:07.820 --> 00:41:08.330
+Denis Tambwe: Okay.
+
+240
+00:41:08.330 --> 00:41:09.889
+Dr. Amanda Fetch: It's flowing, kind of thing.
+
+241
+00:41:10.130 --> 00:41:14.509
+Denis Tambwe: And the second question is this, so now we studied another
+
+242
+00:41:14.740 --> 00:41:18.860
+Denis Tambwe: class with you, for example. For Workbook 2, would it be…
+
+243
+00:41:18.970 --> 00:41:25.070
+Denis Tambwe: Exactly the same workbook one that's gonna be deepened, or it's gonna be different?
+
+244
+00:41:26.030 --> 00:41:43.430
+Dr. Amanda Fetch: Yeah, so another great question. So, it will… so, it'll be geared towards the material of Module 2, so it's a good question that it's… that… let me say Modules 1 through 8 are going to be geared towards that particular module content, and then Module 9
+
+245
+00:41:43.430 --> 00:41:50.440
+Dr. Amanda Fetch: We'll be geared, you know, we'll… I don't think we throw out too many new concepts in Module 9, but that's gonna be sort of that,
+
+246
+00:41:50.440 --> 00:42:04.220
+Dr. Amanda Fetch: summarization of what you've done in Modules 1 through 8, where you apply kind of that entire strategy. But with that being said, also the design of it, consistently, even though you're gonna see,
+
+247
+00:42:04.220 --> 00:42:20.909
+Dr. Amanda Fetch: Coming into Modules 2 and 3, we're going to talk about algorithms, and there's, like, optional programming exercises. When you actually do the assignments that are required, they're a series of questions. So they're all going to be structured similar to what you've seen in Workbook 1.
+
+248
+00:42:25.520 --> 00:42:34.440
+Dr. Amanda Fetch: Okay, other questions, thoughts, before we move on? I think we actually made really good time today, so I think I just have one other slide, then we can open it back up.
+
+249
+00:42:39.010 --> 00:42:47.170
+Muneiah Ponnapa: Oh, I have one question, sure. So, will this AI replace the software developers in the future?
+
+250
+00:42:48.550 --> 00:43:03.489
+Dr. Amanda Fetch: Well, that's a million dollar question, so we can… we'll hold that one, and we'll talk about that when we… Great question. So let's pause on this one, let's knock out this last slide, and then let's open that back up. Great question.
+
+251
+00:43:03.490 --> 00:43:04.430
+Muneiah Ponnapa: Thank you.
+
+252
+00:43:05.580 --> 00:43:24.929
+Dr. Amanda Fetch: This one is, again, just, you know, another activity. This is your self-study on thinking about that, specifically on the software side of your development plan. But to kind of, sort of, just round this out, and then we'll open back up. So this is geared towards Stage 4 of the design process.
+
+253
+00:43:24.960 --> 00:43:29.430
+Dr. Amanda Fetch: And so, thinking about, potential problems.
+
+254
+00:43:29.540 --> 00:43:32.449
+Dr. Amanda Fetch: Pitfalls, that could occur.
+
+255
+00:43:32.450 --> 00:43:50.250
+Dr. Amanda Fetch: Now, what I will say before I get into that, though, is that whole software development aspect, which we kind of touched on a little bit high level, but again, there's a lot to unpack on the sort of software development side, and we're going to go through,
+
+256
+00:43:50.630 --> 00:43:59.249
+Dr. Amanda Fetch: So, in… let me just think of the highest level way to say this. Modules 2 and 3, again, we're going to look at different, algorithms and potential,
+
+257
+00:43:59.430 --> 00:44:10.749
+Dr. Amanda Fetch: applications of those algorithms that can apply to a similar use case you're looking at, so that's one side of this. Software, what I would say is what we don't do in the program, and that's on purpose.
+
+258
+00:44:10.750 --> 00:44:25.850
+Dr. Amanda Fetch: is we're not going to go in and say, okay, you know, should we use this software, that software to develop, and things like that, because it's consistently changing. So it's more about strategically thinking about what are the considerations as you're thinking about software, which I kind of touched on
+
+259
+00:44:25.850 --> 00:44:33.030
+Dr. Amanda Fetch: In the other slides back, couple slides back, this is more,
+
+260
+00:44:33.030 --> 00:44:51.019
+Dr. Amanda Fetch: now geared towards, sort of, that problems or pitfalls, right? So now we're thinking about things like adversarial attacks, you know, lack of generalization. So I mentioned, you know, also on top of lack of generation… generalization, model drift, and different instances that are
+
+261
+00:44:51.270 --> 00:45:05.819
+Dr. Amanda Fetch: I don't want to say completely out of your control, because they're out of your control to a point, but that doesn't mean there's nothing we could do to try to get ahead of it, or as they happen, mitigate them, right? So, it's not a complete lack of control. Some of these things we can strategically think about before they happen and plan.
+
+262
+00:45:05.830 --> 00:45:24.680
+Dr. Amanda Fetch: Accordingly, or have alerts, or whatever it might be, right? And then bias, of course. So, the AI inheriting the biases, either from the humans creating it, or from the training data, and, you know, we'll dig back into bias, but what I want you to think about in bias
+
+263
+00:45:24.740 --> 00:45:29.509
+Dr. Amanda Fetch: And again, as we progress through the program, there's interesting…
+
+264
+00:45:29.700 --> 00:45:49.450
+Dr. Amanda Fetch: what do I want to say? Issues with bias, because I think a lot of times we think, well, the humans are forgetting this population or doing this or that. Sometimes the data can lead us to bias, and so one example, so let's say you're in the financial industry or something like this. I… I'm based in New York City, okay?
+
+265
+00:45:49.590 --> 00:45:56.430
+Dr. Amanda Fetch: Now, let's say I'm applying for a loan, okay? I'm located in a specific zip code, I live in Queens.
+
+266
+00:45:56.610 --> 00:46:15.570
+Dr. Amanda Fetch: You know, and my zip code, let's say when the banking builds their algorithm and they look at things, let's say my zip code has a high propensity to default on loans, okay? So it has nothing to do with me as a human, but the data is showing that. Now, are you building your system that, from that financial perspective, we need to protect us as the bank?
+
+267
+00:46:15.930 --> 00:46:33.049
+Dr. Amanda Fetch: Or are you building it that you need to protect your end user so that you're fair? I can't answer that, because sometimes you might say, well, the data's telling us that. I'm not building that in. The data said the truth is that zip code is defaulting, so I'm going to lose money in that zip code.
+
+268
+00:46:33.090 --> 00:46:36.099
+Dr. Amanda Fetch: So I should not buy the data.
+
+269
+00:46:36.340 --> 00:46:39.130
+Dr. Amanda Fetch: You know, give those individuals loans.
+
+270
+00:46:39.350 --> 00:46:45.990
+Dr. Amanda Fetch: Now… from a moral standpoint, that's obviously wrong, right? But…
+
+271
+00:46:46.260 --> 00:46:55.780
+Dr. Amanda Fetch: You know, if you don't… if you don't think about all these things strategically, and you don't build the algorithm to say, don't just listen to the data, there… there's cases where… no, right?
+
+272
+00:46:55.940 --> 00:47:14.390
+Dr. Amanda Fetch: Those are the things we gotta think about, on top of the traditional bias. Well, I literally programmed it to do this. Now I programmed it to say, listen to the data, but I want you to focus on protecting me as the bank so I don't lose money, versus the humans out there, and that in itself, now you've created this whole other issue of bias, right?
+
+273
+00:47:14.390 --> 00:47:21.530
+Dr. Amanda Fetch: So there's a lot of different examples and scenarios to think about. Now, you might say, well, I can't think about all of them. We… of course.
+
+274
+00:47:21.530 --> 00:47:26.979
+Dr. Amanda Fetch: You know, that's part of the risk in developing. And as we go through different modules.
+
+275
+00:47:26.980 --> 00:47:42.830
+Dr. Amanda Fetch: There's other examples I'll kind of pull out and pop up with, of bias, or when a product's designed for a specific purpose, and you think you have guardrails put in, but based on user behaviors of the product, now it's behaving in a way you didn't plan for.
+
+276
+00:47:42.830 --> 00:48:01.659
+Dr. Amanda Fetch: Just because you didn't think about all the ways that users could actually utilize that product, right? So, there's a lot that can come out of this based on AI cancers that aren't just necessarily those stereotypical biases that we think of, right? It could be biased based on what the data is showing, but that's where it's so important
+
+277
+00:48:02.030 --> 00:48:21.150
+Dr. Amanda Fetch: to… and I'm a big proponent of this, is to keep that human in the loop, right? We need somebody, and somebody's gonna say, well, man, do the humans buy us? I get that, okay? But that's where we'll have the whole conversation about diversity, and I mean, we're gonna, like, go through all different, aspects of this, right? So there's a lot that's baked into that.
+
+278
+00:48:21.150 --> 00:48:30.800
+Dr. Amanda Fetch: that I'm not the one that's just making the decision, or the algorithm isn't the one just making the decision, that this is done together and with a whole
+
+279
+00:48:30.800 --> 00:48:39.760
+Dr. Amanda Fetch: diverse sort of team or outlook, right? So again, that's kind of like the wrap-up of this. We made pretty good time, though, today. We have… we have 10 minutes left, to…
+
+280
+00:48:40.000 --> 00:48:52.610
+Dr. Amanda Fetch: Another exercise, just based on kind of what I was saying about the AI cancers and what can go wrong. And then this, I think, ties into your actual workbook exercise, which some, you know, kind of asked some questions about already.
+
+281
+00:48:52.610 --> 00:49:04.540
+Dr. Amanda Fetch: But anyway, we can go ahead and come in. Great, great question on the… on the software as well. So we can either, maybe let's… let's go ahead and start with that one first. So any thoughts on the question that was posed?
+
+282
+00:49:04.630 --> 00:49:13.109
+Dr. Amanda Fetch: on kind of if, you know, developers will kind of go away, software will kind of take over, the AI will take over. Thoughts on this, if anybody wants to jump in on that first?
+
+283
+00:49:20.340 --> 00:49:30.810
+Chris Lee: Yeah, I could share some observations, you know, because one, I do, you know, sit on… I sit on an advisory board for a commercial AI company.
+
+284
+00:49:30.810 --> 00:49:41.819
+Chris Lee: And all these kind of… there is quite a bit of doomsday, right, around AI right now, but in reality, especially from that lens of sitting on that commercial company's advisory board.
+
+285
+00:49:41.820 --> 00:49:59.309
+Chris Lee: I'm telling you, there's… we still have a long way to go, you know, for a lot of this doomsday to play out, and I really believe that… and you made this point earlier, Amanda, around human in the loop, right? I'm really… we're really positioning AI, at least in my organization.
+
+286
+00:49:59.310 --> 00:50:10.669
+Chris Lee: around it making us more efficient and making us better, right, as humans, right? So we're still… it's interesting, because our company is really leaning into that piece of still…
+
+287
+00:50:10.700 --> 00:50:32.399
+Chris Lee: considering humanity in the equation, right? Not just looking at it purely from, oh, this is a takeout, we can, you know, improve, you know, the, you know, the bottom line by just, you know, taking out a whole bunch of jobs. So there is a lot of focus on that piece and evolving. I think it's probably better to think about
+
+288
+00:50:32.400 --> 00:50:44.380
+Chris Lee: what is the new role of software developers in this new context? You know, because that's the way you kind of survive these transformations. I mean, I think a lot of these doomsday
+
+289
+00:50:44.400 --> 00:50:49.760
+Chris Lee: tales, I think they could become self-fulfilling prophecies if we're not careful.
+
+290
+00:50:51.340 --> 00:51:00.110
+Dr. Amanda Fetch: Yeah, great thoughts. Other, other, either experiences, on this one, or just thoughts on that topic in general?
+
+291
+00:51:00.510 --> 00:51:14.420
+Deb Drexler: I have… I had a team of software developers who did some early adoption internal. I'm in aerospace and defense, so we're a little bit more cautious, and our customer requires a lot more regulation tied to it, similar to pharmaceuticals or other industries. And so, for us.
+
+292
+00:51:14.420 --> 00:51:21.979
+Deb Drexler: as we thought, we have kind of two tracks. We have mission AI, which is what we do for our customer, but then we have our own internal mechanisms for our enterprise.
+
+293
+00:51:22.060 --> 00:51:40.939
+Deb Drexler: And we're trying to align those governances, but what I'll say about our software developers on both sides of the house, those that are building functionally internally, and those that are building for our customer, what we found is they can do things faster, and with the speed of business today, it's taken the pressure off of them. So the good news story is.
+
+294
+00:51:40.940 --> 00:52:00.640
+Deb Drexler: Because they have an AI agent sitting next to them, doing some of the work that they had to do manually before, it frees their time up to be more strategic in the way they approach things. It's helped us to standardize the way we go about doing things using GitHub, and it's also provided capacity that we didn't have before to be able to meet the needs of our customer faster.
+
+295
+00:52:00.640 --> 00:52:06.469
+Deb Drexler: So I like to tell that side of the story, not that we're removing FTEs off of a list.
+
+296
+00:52:06.470 --> 00:52:25.250
+Deb Drexler: But that we've taken the value that's come from AI and produced better business outcomes. And so I think it's a lot of how we shape the story and tell the story, especially to executive leadership and our stakeholders, so that there's no misconception that somehow we're going to reduce our workforce, that we're actually, like you said, Chris, I agree completely, we're changing the way they do their work.
+
+297
+00:52:25.250 --> 00:52:35.389
+Deb Drexler: So they can be more effective. And it sounds pie in the sky, but that's truly what I've seen played out in the last 3 years since we've really taken charge in our company. So, thank you.
+
+298
+00:52:36.400 --> 00:52:41.560
+Chris Lotter: And I… I think, I think I agree there with Deb on the,
+
+299
+00:52:41.780 --> 00:52:49.550
+Chris Lotter: MedTech side, so medical devices. I used to be on the drug side, so I work for one of the largest CROs in the world.
+
+300
+00:52:49.690 --> 00:53:07.349
+Chris Lotter: And the same thing with my teams. We develop… what we develop is we can deliver faster to clients, and we can also tie in some of our sophistication in terms of just a lot of development and scripting that we do on our data science side.
+
+301
+00:53:07.420 --> 00:53:14.079
+Chris Lotter: And we just do these things faster, and I like to kind of tell my team, typically, you can do
+
+302
+00:53:14.210 --> 00:53:17.120
+Chris Lotter: You can do less, you can do more.
+
+303
+00:53:17.470 --> 00:53:21.630
+Chris Lotter: with less with AI, but you can also do more with more.
+
+304
+00:53:21.990 --> 00:53:34.929
+Chris Lotter: And I like to kind of think about it more in the sense of you can do more with more. So you don't necessarily need to cut FTEs, if you… if you utilize this. And especially in healthcare, same with defense.
+
+305
+00:53:34.930 --> 00:53:46.999
+Chris Lotter: I'm so regulated, there is no study you can do, any submission to any regulator at this point, where you say this has been completely automized. We do a lot of digital health stuff.
+
+306
+00:53:47.030 --> 00:53:57.020
+Chris Lotter: for AI models, etc, where we're running, all sorts of algorithms and stuff against what the typical physicians and so on will do.
+
+307
+00:53:57.030 --> 00:54:11.870
+Chris Lotter: So it is… I think it's definitely, more on the positive side for us as well. I do think one thing that seems to be, I think, is gonna be a challenge is
+
+308
+00:54:11.950 --> 00:54:25.720
+Chris Lotter: how to govern… not govern, but how to get around the bias piece. I think Anthropic and a couple of folks just finished up on a
+
+309
+00:54:25.840 --> 00:54:36.230
+Chris Lotter: study that they did, where it is interesting to see how little I would say…
+
+310
+00:54:37.090 --> 00:54:43.710
+Chris Lotter: Let's call it fake information, can be utilized regardless of how big the scale
+
+311
+00:54:43.850 --> 00:54:54.249
+Chris Lotter: of your AI, and is… so they found that, for instance, only 250 documents can skew
+
+312
+00:54:55.050 --> 00:54:56.710
+Chris Lotter: Regardless, you can have…
+
+313
+00:54:57.030 --> 00:55:11.440
+Chris Lotter: A ton, and you're gonna have a really large amount of supporting documentation, and it doesn't matter how big your model scales, it just needs 250 documents to skew it.
+
+314
+00:55:14.860 --> 00:55:22.699
+Dr. Amanda Fetch: Yeah, that's an interesting study, and that's something to think about, and that kind of comes back to that very basic example that I was…
+
+315
+00:55:23.020 --> 00:55:41.049
+Dr. Amanda Fetch: giving as well, that it's… it's really tough to… to have… have… so even in what you were saying, like, skewing results and things like this, to have it pull out what exactly the human would want to pull out is the easiest way, I feel like, to… to summarize that part. Rouba, I see your hand went up.
+
+316
+00:55:44.130 --> 00:55:53.440
+Rouba Trad: Thank you, Amanda. Well, this was a very fruitful discussion because, I am on the other side of the table, I am the customer.
+
+317
+00:55:53.520 --> 00:56:13.360
+Rouba Trad: in healthcare, I always meet with suppliers and companies, having all these AI products that have been being developed and so far. There are some interesting, efficiencies that have been provided that are really good in our field of work. My specialty is more in laboratory medicine.
+
+318
+00:56:13.530 --> 00:56:18.360
+Rouba Trad: However, I've been part of some workshops done by some pharmaceutical companies.
+
+319
+00:56:18.410 --> 00:56:37.709
+Rouba Trad: Whereby they're trying to create these algorithms of… for quick diagnosis, rendering that quick… providing these diagnoses quicker will have a better patient outcome. But you have… Amanda highlighted a very more important thing, is that most of these products so far that are not yet
+
+320
+00:56:38.000 --> 00:56:41.389
+Rouba Trad: Properly developed is what are their performance metrics.
+
+321
+00:56:41.550 --> 00:57:01.210
+Rouba Trad: the performance metrics really does not allow… align with the outcome that they are… they are aspired to, and that's where safety issues bring along, Yanni. When you want to provide certain metrics to diagnose an ICU patient, to provide them with the right
+
+322
+00:57:01.210 --> 00:57:02.270
+Rouba Trad: treatment.
+
+323
+00:57:02.310 --> 00:57:11.130
+Rouba Trad: to save lives, we… yeah, at this stage, I think it's too early to rely only on AI, rather than giving up the human experience and to identify
+
+324
+00:57:11.130 --> 00:57:26.370
+Rouba Trad: what is the possible outcome. So, as a customer, and as a healthcare provider, I think we are very cautious at these levels. We would love to see AI provide more information efficiently.
+
+325
+00:57:26.410 --> 00:57:43.350
+Rouba Trad: to make a better diagnosis, and as a lab, I would want to know about the patient history, the patient demographics, so that we can move faster rather than having it in the current system that you need to go from one screen to another.
+
+326
+00:57:43.350 --> 00:57:50.489
+Rouba Trad: However, how later on, moving to, robots and robots that might
+
+327
+00:57:51.120 --> 00:58:00.330
+Rouba Trad: exchange people's work. They might do even the technical part. I think in healthcare, it's… it's not yet
+
+328
+00:58:00.490 --> 00:58:04.579
+Rouba Trad: applicable in all domains, so I think that we need more time.
+
+329
+00:58:04.870 --> 00:58:07.879
+Rouba Trad: We are… we are at this stage very cautious.
+
+330
+00:58:10.360 --> 00:58:11.160
+Dr. Amanda Fetch: Yeah.
+
+331
+00:58:11.750 --> 00:58:14.500
+Dr. Amanda Fetch: Matt, did you want to jump in on this also?
+
+332
+00:58:23.030 --> 00:58:26.149
+Dr. Amanda Fetch: Let's see, we'll pause for a moment.
+
+333
+00:58:27.090 --> 00:58:30.789
+Matt Leipham Ellis: I'm sorry, I didn't realize I was muted. Thank you.
+
+334
+00:58:31.030 --> 00:58:36.619
+Matt Leipham Ellis: Yeah, all the comments have been interesting. I'll just try to add something.
+
+335
+00:58:36.990 --> 00:58:47.309
+Matt Leipham Ellis: to the question about software developers, because I hear several of us are in this space, or on the consuming side of, you know, software development.
+
+336
+00:58:47.870 --> 00:58:48.929
+Matt Leipham Ellis: And,
+
+337
+00:58:49.330 --> 00:58:57.219
+Matt Leipham Ellis: what I'm seeing right now, this is what I share with someone who's not as close to that, is the speed to proof of concept
+
+338
+00:58:57.450 --> 00:59:00.760
+Matt Leipham Ellis: Or even, what could someone do today that's…
+
+339
+00:59:00.950 --> 00:59:19.219
+Matt Leipham Ellis: useful or interesting, meaningful. What could they do without a software developer, just with an Agentic coding tool? And they can get to a proof of concept really well, using that, you know, natural language to describe what you want to do, what you're bringing in, what you want to get out.
+
+340
+00:59:19.560 --> 00:59:22.380
+Matt Leipham Ellis: And in some areas, like,
+
+341
+00:59:22.790 --> 00:59:29.000
+Matt Leipham Ellis: Data modeling, where everything is so structured and crisp already.
+
+342
+00:59:29.190 --> 00:59:36.110
+Matt Leipham Ellis: You might even get to an outcome that you could use internally for, you know, business metrics or anything, but,
+
+343
+00:59:36.890 --> 00:59:51.799
+Matt Leipham Ellis: human in the loop means, you know, right now, that, what these tools can produce on their own, it won't scale, right? It won't be maintainable once you are, like, you know, a few weeks into the project.
+
+344
+00:59:52.360 --> 01:00:09.199
+Matt Leipham Ellis: So, if someone is like, I have a… I have a gym with one location, and I don't want to pay somebody for, you know, software as a service to manage who's coming in, and what workouts they do, and how long those workouts take, that… that's something that they could do today, and it would be usable.
+
+345
+01:00:09.780 --> 01:00:18.609
+Matt Leipham Ellis: But it wouldn't scale well. And the other comment that I have, again, this is about where things are today, is that I'm seeing that
+
+346
+01:00:19.040 --> 01:00:24.900
+Matt Leipham Ellis: The software engineers that already have more of a senior mindset, they understand the business.
+
+347
+01:00:25.060 --> 01:00:33.599
+Matt Leipham Ellis: They understand, like, what their customers want, and they're really looking at it, like, from a product and a software engineering standpoint.
+
+348
+01:00:33.900 --> 01:00:41.410
+Matt Leipham Ellis: They're just thrilled by what's happening right now, and what these tools can help them do, how they augment their thinking.
+
+349
+01:00:41.700 --> 01:00:46.640
+Matt Leipham Ellis: And they take away some of the tedious parts, but there's still code reviewing, there's still…
+
+350
+01:00:47.270 --> 01:00:49.779
+Matt Leipham Ellis: Doing a lot of stuff themselves, so…
+
+351
+01:00:49.900 --> 01:00:55.200
+Matt Leipham Ellis: like you said, million dollar question as to how that improves, how quickly it improves, but…
+
+352
+01:00:55.630 --> 01:01:01.970
+Matt Leipham Ellis: Right now, it's hard to imagine that we're not gonna, at the very least, have, like, human architects, human directors.
+
+353
+01:01:02.080 --> 01:01:05.740
+Matt Leipham Ellis: Leading a lot of this, work, even if
+
+354
+01:01:05.870 --> 01:01:08.220
+Matt Leipham Ellis: Agents take over even more of it.
+
+355
+01:01:09.140 --> 01:01:15.779
+Deb Drexler: Hey, Matt, I agree with you on that. The fact that my software developers were so excited and found use cases for themselves
+
+356
+01:01:17.590 --> 01:01:26.759
+Deb Drexler: was a huge sign to me, right, that we were on the right track, because if they had been nervous about it and worried about their jobs, then I would have had something to think about, but…
+
+357
+01:01:26.760 --> 01:01:39.409
+Deb Drexler: They're finding value in it, and continuing to grow, expanding it, so my early adopters are now making sure every software developer starts with it, as opposed to, hey, you might want to use this. It's become a best practice. So, I agree with you.
+
+358
+01:01:39.410 --> 01:01:39.870
+Matt Leipham Ellis: Thank you.
+
+359
+01:01:39.870 --> 01:01:41.469
+Deb Drexler: And if they start to get nervous.
+
+360
+01:01:41.590 --> 01:01:49.379
+Deb Drexler: then I would revisit it, but because they're the ones using the tool and primarily being, they find value in it, that's where the value.
+
+361
+01:01:49.380 --> 01:01:49.790
+Matt Leipham Ellis: comes from.
+
+362
+01:01:49.790 --> 01:01:50.330
+Deb Drexler: from.
+
+363
+01:01:53.350 --> 01:01:55.140
+Dr. Amanda Fetch: PB, did you want to jump in?
+
+364
+01:01:56.670 --> 01:02:05.359
+Puneet: Yeah, I just, want to add on to what Matt said. So, like, when cloud came, everybody was skeptical that data centers will go away, softwares will have
+
+365
+01:02:05.400 --> 01:02:20.500
+Puneet: companies will have less, you know, value, but it just created more opportunities, right? And similarly, AI doesn't take away, you know, the software developer jobs, it just creates more opportunities, and as Matt said, like,
+
+366
+01:02:20.630 --> 01:02:38.020
+Puneet: Now, you can test your features more quickly, and rather add more value for your customers in a shorter period of time. So, earlier, it used to take, like, me being an architect, if I have an envision, and if I have to work with my team, it just takes, like, if it takes, like, 3 months for a prototype to test with your customers.
+
+367
+01:02:38.020 --> 01:02:44.600
+Puneet: Now, you can do the same thing in a week, or a sprint time. So it just adds, more value to what you are doing.
+
+368
+01:02:44.650 --> 01:02:50.749
+Puneet: So, AI doesn't take away jobs, it just… we have to repurpose, but what we have to be careful about is
+
+369
+01:02:50.760 --> 01:03:09.519
+Puneet: We need to have the right boundaries and governance around how we can use it and what we can do with it. And in that context, I actually had a question, because I'm joining from Netherlands, and here, as I understand, the companies are very cautious about
+
+370
+01:03:09.570 --> 01:03:24.819
+Puneet: you know, the data going outside Europe, so they call it Europe's digital sovereignty. So, which restricts the use cases of what we can achieve with AI. So, what is a thought on that, like, from this group, if someone has, like, how…
+
+371
+01:03:24.840 --> 01:03:30.770
+Puneet: to deal around it. So, specifically, we see, like, some banks are doing, now, startups with,
+
+372
+01:03:30.770 --> 01:03:45.979
+Puneet: tech companies within the Europe, so that they can build their own solution within the European boundaries, and so those kind of models are emerging now, but it's, like, everybody cannot do it, so for small companies, for small banks, or for small institutions.
+
+373
+01:03:46.360 --> 01:03:51.149
+Puneet: How to deal around that, sovereignty, data sovereignty, or digital sovereignty?
+
+374
+01:03:53.050 --> 01:03:57.219
+Dr. Amanda Fetch: Any thoughts, if anybody wants to jump in on PB's question?
+
+375
+01:04:01.000 --> 01:04:12.779
+Chris Lee: Yeah, I can give an example, because I'm in the biopharmaceutical industry, and we deal with the same thing, right? Because we have patient data, right, that is protected by governments all over the world. So, we tend to…
+
+376
+01:04:12.780 --> 01:04:25.589
+Chris Lee: obviously put the controls in place and document those controls and how we're handling, you know, whatever those regulatory expectations are, because it's not just in Europe, it's almost in every country going, there's a little bit of nuance.
+
+377
+01:04:25.590 --> 01:04:33.630
+Chris Lee: And even in Europe, you have the European level, and then you get down to the local country level, and it might be additive, so…
+
+378
+01:04:33.630 --> 01:04:45.999
+Chris Lee: there are ways to meet those regulatory burdens, or not burdens, but, you know, they're trying to protect, obviously, their citizens' data. You just have to work through it.
+
+379
+01:04:46.000 --> 01:04:54.979
+Chris Lee: in terms of, you know, not only process, but potentially where you process the data, too. So we've gone through a lot of different permutations.
+
+380
+01:04:54.980 --> 01:05:12.240
+Chris Lee: Of that, but it can be achieved. Now, is it going to be cheap? Sometimes it's not. So I think that's something to take into consideration when we go through this. From a regulatory standpoint, it is totally achievable. But what it costs, it could be a bit onerous.
+
+381
+01:05:15.690 --> 01:05:16.100
+Dr. Amanda Fetch: Thanks for.
+
+382
+01:05:16.100 --> 01:05:16.490
+Puneet: Oh, yeah.
+
+383
+01:05:16.490 --> 01:05:19.900
+Dr. Amanda Fetch: in on this, Chris. Sorry, somebody wants to jump in, please do.
+
+384
+01:05:20.930 --> 01:05:31.399
+Puneet: I just wanted to add on, like, yes, we also found ways to deal with it, but as I said, it restricts the possibility. So, if I have to share my customer data.
+
+385
+01:05:31.780 --> 01:05:44.740
+Puneet: to, let's say, a SaaS provider who offers mortgage solution, so they would like to have more and more customer data to train their models in order to provide us the best software package.
+
+386
+01:05:44.740 --> 01:05:57.780
+Puneet: But if we expose all our data to the SaaS provider, who has probably a data center, hosted outside Europe, it also exposes our customer data, in some sense, or the financial data to some sense, there.
+
+387
+01:05:57.820 --> 01:06:05.879
+Puneet: So, as our business needs to have that risk threshold, how much data they can expose, but it also restricts the value they get in return.
+
+388
+01:06:06.150 --> 01:06:08.840
+Puneet: So, that was the point.
+
+389
+01:06:10.140 --> 01:06:14.670
+Dr. Amanda Fetch: Yep, these are the same questions.
+
+390
+01:06:14.900 --> 01:06:24.529
+Dr. Amanda Fetch: that pretty one… pretty much everybody is… is… is facing, right? I mean, how to figure that out. Even going back to, I think, Chris, you were the one who brought up the small language model, right?
+
+391
+01:06:24.640 --> 01:06:28.409
+Dr. Amanda Fetch: Even that, I mean, it's a constant back and forth.
+
+392
+01:06:28.760 --> 01:06:38.140
+Dr. Amanda Fetch: do we use the small language model? And then there's been tests done, which we'll go through, I forget what module, where they actually saw the large language model did better. And it's like, what?
+
+393
+01:06:38.270 --> 01:06:40.929
+Dr. Amanda Fetch: It's only trained on that specific…
+
+394
+01:06:41.090 --> 01:06:55.289
+Dr. Amanda Fetch: So it's like, there's just so many, scenarios, and that's why… this program kind of has that framework to work through, but some of the other programs I'm facilitating with MIT, AI, AI leadership, and some of you have probably been in that one as well.
+
+395
+01:06:55.290 --> 01:07:03.670
+Dr. Amanda Fetch: some of those other programs, they really don't have frameworks, and some students get frustrated because they're like, I need that specific, you know, thing I'm gonna follow.
+
+396
+01:07:03.670 --> 01:07:15.990
+Dr. Amanda Fetch: But we're like… but the issue with that is, depending on, you know, you almost have to do this assessment of your organization, and how we were talking about industry, and risk, and, you know, resources, and budget, I mean…
+
+397
+01:07:15.990 --> 01:07:25.329
+Dr. Amanda Fetch: there's so many things you have to factor in that a one-size-fits-all in a lot of these scenarios just doesn't make sense. So it's just, thank you everyone who's been weighing in today to share
+
+398
+01:07:25.330 --> 01:07:38.139
+Dr. Amanda Fetch: what you're seeing, talking about your industry, your individual use cases, because that just helps everyone kind of vet through, right, where they're at in their journeys. Let's see, Denis, I see your hand went back up.
+
+399
+01:07:38.950 --> 01:07:44.160
+Denis Tambwe: Sorry, just a quick question. I don't know if there is a roadmap of
+
+400
+01:07:45.120 --> 01:07:57.119
+Denis Tambwe: specific courses that we can take after this one. Maybe my question is early, maybe I should wait until the end of this course, but is there a second course that you think that would be interesting to have after this one?
+
+401
+01:07:58.080 --> 01:08:03.620
+Dr. Amanda Fetch: Yeah, so there's different things we can definitely discuss, so we can definitely also,
+
+402
+01:08:03.820 --> 01:08:13.680
+Dr. Amanda Fetch: talk after the fact, but yeah, so just so one thing, and some I think I mentioned were in another one that I facilitate, so that one's AI leadership, basically.
+
+403
+01:08:13.740 --> 01:08:32.079
+Dr. Amanda Fetch: And so, it's more on, strategic leadership, I guess, do I want to say, throughout your entire organization? Might be the easiest way to say that, and almost starting some of those thought processes and how you would even begin this at a higher level, let's say, than the specific product development.
+
+404
+01:08:32.260 --> 01:08:47.910
+Dr. Amanda Fetch: If that makes sense. So that's one interesting course. But we can definitely connect offline as well. You know, definitely you could reach out, and we could discuss, depending on, you know, what exactly you're looking for, right? But that… that course, at one point, I think they were offering
+
+405
+01:08:47.910 --> 01:08:58.419
+Dr. Amanda Fetch: this one and that one, you know, as different… like, they were basically saying, you might want to consider this one if you take that one. I don't know that they're doing that anymore, because they're kind of letting people do their own thing.
+
+406
+01:08:58.460 --> 01:09:12.360
+Dr. Amanda Fetch: But that was one that kind of does tie into this a bit. But yeah, you can… if you want to reach out on the side as well, let me know if there's specific areas you're looking into, then I can see if I have, you know, thoughts. And that goes for everybody, of course, if you have
+
+407
+01:09:12.540 --> 01:09:18.929
+Dr. Amanda Fetch: you know, specific areas you want to dig into. But one thing I'll say on that, also, that I want to reiterate is
+
+408
+01:09:19.040 --> 01:09:23.519
+Dr. Amanda Fetch: Next week's 2 and 3, and I keep saying this, we're gonna really dig into the algorithms.
+
+409
+01:09:23.890 --> 01:09:32.180
+Dr. Amanda Fetch: don't feel flustered if we get into that, and you're like, I haven't looked at this stuff in 20 years. And quite honestly, I don't even want to know what this stuff is.
+
+410
+01:09:32.189 --> 01:09:51.910
+Dr. Amanda Fetch: think about it from a business context, and use case on, you know, does your problems, you know, or use cases marry up to some of these problems, and what might make sense so you could be dangerous enough in a conversation with maybe your development team or something like that. But with that being said, as we go through, and we come up, and I'm making it up, like,
+
+411
+01:09:51.910 --> 01:09:57.050
+Dr. Amanda Fetch: some of the different functions of LLMs or something like that. Some of this you might want to go
+
+412
+01:09:57.050 --> 01:10:05.440
+Dr. Amanda Fetch: On a more deep dive, or down a rabbit hole, and so you might say, hey, Amanda, do you have more references on… let's just use the example.
+
+413
+01:10:05.440 --> 01:10:23.410
+Dr. Amanda Fetch: the repercussions or the different scenarios where you might want to use a small language model versus a large language model, or just random different questions or points of, you know, topics you want to dig into further. Raise those to us as you're in these sessions, or reach out to us on the side, because another part of this
+
+414
+01:10:23.410 --> 01:10:28.360
+Dr. Amanda Fetch: Is, yes, you can take other full courses, but we also provide additional readings.
+
+415
+01:10:28.360 --> 01:10:37.290
+Dr. Amanda Fetch: Depending on what you want to dig into. And then I'll probably also say, okay, do you want to really geek out into, like, some deep, technical, scholarly stuff?
+
+416
+01:10:37.310 --> 01:10:50.849
+Dr. Amanda Fetch: Or do you want, like, a Bloomberg, Forbes, like, a high-level version? Most people say, can you give me a little of both? And so we'll provide further materials, but just be aware of that as well, that there's, you know, we can assist in,
+
+417
+01:10:50.940 --> 01:10:55.340
+Dr. Amanda Fetch: Outside of topics. And you'll see as we get into some of these discussions, too, a lot of questions.
+
+418
+01:10:55.450 --> 01:11:02.769
+Dr. Amanda Fetch: I don't want you to get frustrated, but I might say, and I know other facilitators do the same thing, because some questions can take up our whole time.
+
+419
+01:11:03.030 --> 01:11:08.280
+Dr. Amanda Fetch: So, a lot of times, we might say, okay, let's take that offline, or
+
+420
+01:11:08.280 --> 01:11:26.240
+Dr. Amanda Fetch: here's some readings, I'll send you over some readings on this thing, and then follow back up, or let me know where you want to dig in further, and then we take a lot of it offline, too, so that we can get you that, individualized attention and answer… not saying you can't ask these things live, it's just some things get really time-consuming that
+
+421
+01:11:26.240 --> 01:11:31.539
+Dr. Amanda Fetch: we might say, let's take it offline. But anyway, that was kind of like a long-winded way to say.
+
+422
+01:11:31.820 --> 01:11:47.869
+Dr. Amanda Fetch: you know, ask us questions, we'll provide further materials and references, and yes, if other courses, depending on which way you want to take it, let us know. With that being said, we're about 15 minutes over. As I mentioned, I, you know, I'm not going anywhere, so I can say if there's other questions, comments.
+
+423
+01:11:48.020 --> 01:12:03.170
+Dr. Amanda Fetch: But, yeah, great, great discussion today. Thank you, everybody, for contributing. That, that's a very important part of the, of the program, is… is all that diversity and perspective of what we're seeing out there. So, any other thoughts, comments?
+
+424
+01:12:08.910 --> 01:12:18.300
+Dr. Amanda Fetch: Okay, well, if not, as I mentioned, I apologize for this, like, back-to-back thing where I have to hold this up. Let me see. Smitha, I see, I think I see your hand went up.
+
+425
+01:12:18.580 --> 01:12:24.949
+Sushmitha Ungarala: Hey, Amanda, I don't have a comment, but I had a question about where to find assignments.
+
+426
+01:12:25.300 --> 01:12:29.359
+Sushmitha Ungarala: Is it in the left… left navigation section?
+
+427
+01:12:29.860 --> 01:12:47.580
+Dr. Amanda Fetch: So, let's see here. Now, I apologize, although it's not my fault of Canvas design, yours might look slightly different than mine, but if I go into a course, and let me see if I can find yours, or we'll pick a random one,
+
+428
+01:12:50.600 --> 01:12:55.990
+Dr. Amanda Fetch: I… I think if you've went through all the modules, you can then toggle back through the cards.
+
+429
+01:12:56.480 --> 01:13:09.059
+Dr. Amanda Fetch: But I don't know if you're able to see in modules if you're able to see this view, where you can see assignments, because to answer your question, there's not, like… I don't know that you have a view to see the
+
+430
+01:13:09.060 --> 01:13:23.530
+Dr. Amanda Fetch: just all the assignments, like… like I do, and I don't want to click here, because sometimes it'll show grades. So, what I typically recommend is, if you have this view where you can navigate through, you're going to literally see it'll… it'll call them required workbooks.
+
+431
+01:13:23.770 --> 01:13:36.899
+Dr. Amanda Fetch: That are graded, and I think for your program, I think it's 1, 5, 6, 7, 8, and 9, I think? Or 1… we have that listed out also in the intro webinar, the ones that are actually required to pass.
+
+432
+01:13:37.020 --> 01:13:42.600
+Dr. Amanda Fetch: But that's, as you navigate, you're gonna see. Also, the cards at the top, so if I…
+
+433
+01:13:43.040 --> 01:13:44.990
+Dr. Amanda Fetch: Go in somewhere here.
+
+434
+01:13:45.690 --> 01:13:50.860
+Dr. Amanda Fetch: You should be able to navigate towards the end, and you'll see, I think it's the paper, yeah.
+
+435
+01:13:51.190 --> 01:14:00.130
+Dr. Amanda Fetch: you should be able to navigate through these two, and you'll see the required workbooks that you can navigate this way as well. But unfortunately, there's not, like, I don't think a…
+
+436
+01:14:00.190 --> 01:14:13.800
+Dr. Amanda Fetch: specific place, you may not have that view that you can just see everything listed out. Also, they don't… they don't unlock assignments early, so I'm not sure if you can't see them anyway, there's not much we could show you, but but for…
+
+437
+01:14:13.800 --> 01:14:22.860
+Sushmitha Ungarala: In my view, I see, Module 1, Workbook Possible Solution, so is that the one for this week? Would you know?
+
+438
+01:14:23.030 --> 01:14:27.979
+Dr. Amanda Fetch: So, let me… I'm just gonna click on it here now. So, it should be,
+
+439
+01:14:30.800 --> 01:14:37.959
+Dr. Amanda Fetch: So it should… it should say the required workbook 1.1, and so if you actually download the workbook itself.
+
+440
+01:14:38.120 --> 01:14:41.910
+Dr. Amanda Fetch: There we are.
+
+441
+01:14:42.510 --> 01:14:48.400
+Dr. Amanda Fetch: Okay, so you should see this thing. Is this the one you're seeing out there, where you're going through the signals?
+
+442
+01:14:48.400 --> 01:14:52.029
+Sushmitha Ungarala: It's still locked for me, I think I need to complete all the coursework.
+
+443
+01:14:52.030 --> 01:14:52.730
+Dr. Amanda Fetch: Yes.
+
+444
+01:14:52.930 --> 01:15:02.560
+Dr. Amanda Fetch: Yeah, you'll have to go in, but it'll… and they all kind of look like this, where they'll be literally like a workbook where you go in and start answering the questions.
+
+445
+01:15:04.180 --> 01:15:08.289
+Sushmitha Ungarala: All right, yeah, that is my question. So it's found in the module itself, thank you.
+
+446
+01:15:09.100 --> 01:15:09.870
+Dr. Amanda Fetch: Yep.
+
+447
+01:15:10.980 --> 01:15:14.840
+Dr. Amanda Fetch: Let's see… Denis, I think I see your hand went off.
+
+448
+01:15:14.840 --> 01:15:16.260
+Denis Tambwe: Sorry, hello?
+
+449
+01:15:17.640 --> 01:15:19.650
+Dr. Amanda Fetch: Yes, yep, we can hear you.
+
+450
+01:15:22.270 --> 01:15:26.250
+Dr. Amanda Fetch: Not sure if you can hear us, but we can hear you on our end.
+
+451
+01:15:26.250 --> 01:15:28.500
+Denis Tambwe: Hello, can you hear… can you hear me?
+
+452
+01:15:28.690 --> 01:15:29.460
+Dr. Amanda Fetch: Yes.
+
+453
+01:15:29.460 --> 01:15:36.110
+Denis Tambwe: Oh, sorry, my internet connection was cutting, so I couldn't hear your answer. Did you…
+
+454
+01:15:36.270 --> 01:15:39.079
+Denis Tambwe: You want me to repeat the question, or…
+
+455
+01:15:39.080 --> 01:15:41.289
+Dr. Amanda Fetch: Yeah, I don't think I heard a question.
+
+456
+01:15:41.290 --> 01:15:52.790
+Denis Tambwe: Yeah, my question was, is there a roadmap of specific courses that we can take after this one in order to increase our knowledge, or to really, you know, what could be the next
+
+457
+01:15:52.950 --> 01:15:57.529
+Denis Tambwe: potential course that we can take after this one.
+
+458
+01:15:57.530 --> 01:16:17.520
+Dr. Amanda Fetch: Oh, yeah, so that's what I went through, that whole sort of scenario about you can ask us for additional resources. I mentioned the AI leadership course that I also facilitate, that they were speaking, that you could do those in conjunction. But I would say also, if you want to reach out, after the fact, and if it's easier to just literally put in a support ticket.
+
+459
+01:16:17.520 --> 01:16:33.060
+Dr. Amanda Fetch: You could put in a ticket as well, and then we'll follow back up with you, too, depending on if there's certain areas, you wanted to dig into. But yeah, as we go through the modules, too, what I had said was, different topics. If you have areas you want to dig into, let us know, and we'll provide you further reading as well.
+
+460
+01:16:33.060 --> 01:16:33.770
+Denis Tambwe: Okay.
+
+461
+01:16:34.080 --> 01:16:34.969
+Denis Tambwe: Thank you.
+
+462
+01:16:35.540 --> 01:16:36.760
+Dr. Amanda Fetch: Yeah, of course!
+
+463
+01:16:38.400 --> 01:16:41.709
+Dr. Amanda Fetch: Any other questions, comments before we break?
+
+464
+01:16:49.460 --> 01:17:05.439
+Dr. Amanda Fetch: Okay, well, if not, as I mentioned, you know, due to travel, if you're… came in late, our session… my… my session for Module 2 is going to be held this Friday. So we had to bump it up since I'll be out of commission next week in DC, so if you're interested to attend live.
+
+465
+01:17:05.520 --> 01:17:15.259
+Dr. Amanda Fetch: That'll be Friday. I think it's at, I'm looking now, I think it's at 1PM Eastern Time. Is it at 1 or is it noon? No, it looks like yours is at noon.
+
+466
+01:17:16.380 --> 01:17:29.270
+Dr. Amanda Fetch: Yeah. Okay, so for us, Module 2, is that… will be happening at noon, so it's up to you if you want to attend this one. Now, typically I say, you know, attend whatever resonates, things like this.
+
+467
+01:17:29.270 --> 01:17:40.099
+Dr. Amanda Fetch: since the material's opening so close, it may, if you can make it be beneficial to attend my session, this one, because I give you the supplemental material so early.
+
+468
+01:17:40.200 --> 01:17:59.110
+Dr. Amanda Fetch: in the week, you'll be able to have a supplemental and some slides that might assist you in navigating the material. So, it's up to you. Or, again, if you can't attend, through the weekend, I think they post… typically, they try to post a day or so after they get the slides, so they may post them over the weekend, that you'll still have some supplemental material that you can
+
+469
+01:17:59.110 --> 01:18:11.180
+Dr. Amanda Fetch: look through, since we're doing it so early, so it could be… that… that could be beneficial. But if not, again, you know, as I mentioned, everything will be posted after the fact, and my supplemental material will be out there as well.
+
+470
+01:18:11.350 --> 01:18:20.290
+Dr. Amanda Fetch: So… Alright, well then, I will see if you're able to attend. I'll see you again in a couple days. If not, I'll see you again in possibly about 2 weeks then.
+
+471
+01:18:20.850 --> 01:18:25.070
+Dr. Amanda Fetch: All right, so thank you, everyone. Great discussion today. Take care.
+
+472
+01:18:25.570 --> 01:18:26.360
+Lynda Tonery: Thank you.
+
+473
+01:18:26.360 --> 01:18:26.920
+Matt Leipham Ellis: Cheer.
+
